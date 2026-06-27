@@ -234,6 +234,40 @@
   color: #9d174d;
 }
 
+.intro-stats {
+  margin: 0 0 12px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.timeline-year {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1d4ed8;
+  letter-spacing: 0.04em;
+  padding: 12px 0 4px 44px;
+  margin-top: 4px;
+}
+
+.timeline-dot.birth {
+  background: #7c3aed;
+  border-color: #ede9fe;
+}
+
+.timeline-card.live {
+  border-left: 3px solid #2563eb;
+}
+
+.badge.live-tag {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.badge.category-诞生 {
+  background: #ede9fe;
+  color: #5b21b6;
+}
+
 .empty-state {
   color: #6b7280;
   text-align: center;

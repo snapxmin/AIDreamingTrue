@@ -1,6 +1,10 @@
 (async function init() {
-  const [events, competitors] = await Promise.all([loadEvents(), loadCompetitors()]);
-  const evolutionByCompetitor = buildEvolutionMap(events, competitors);
+  const [events, competitors, milestones] = await Promise.all([
+    loadEvents(),
+    loadCompetitors(),
+    loadMilestones()
+  ]);
+  const evolutionByCompetitor = buildEvolutionMap(events, milestones, competitors);
 
   const ui = {
     tabs: document.getElementById("competitorTabs"),
@@ -13,8 +17,7 @@
   };
 
   const state = {
-    activeId: resolveInitialCompetitor(competitors),
-    eventsById: indexEvents(events)
+    activeId: resolveInitialCompetitor(competitors)
   };
 
   renderTabs(competitors, state, ui, () => renderCompetitor(state, ui, evolutionByCompetitor, competitors));
@@ -43,19 +46,46 @@ const EVENT_COMPANY_BY_COMPETITOR = {
 
 const EVOLUTION_CATEGORIES = new Set(["产品", "工具生态", "商业", "投融资"]);
 
-function buildEvolutionMap(events, competitors) {
-  const keyEvents = dedupeEvolutionEvents(events.filter(isKeyEvolutionEvent));
+function buildEvolutionMap(events, milestones, competitors) {
+  const liveMilestones = events
+    .filter(isKeyEvolutionEvent)
+    .map((event) => eventToMilestone(event, competitors));
+
+  const merged = dedupeMilestones([...milestones, ...liveMilestones]);
   const map = new Map();
 
   competitors.forEach((competitor) => {
-    const eventCompany = EVENT_COMPANY_BY_COMPETITOR[competitor.id] || competitor.company;
-    const milestones = keyEvents
-      .filter((event) => event.company === eventCompany)
-      .sort((a, b) => new Date(b.date) - new Date(a.date));
-    map.set(competitor.id, milestones);
+    const items = merged
+      .filter((item) => item.competitorId === competitor.id)
+      .sort((a, b) => parseDate(b.date) - parseDate(a.date));
+    map.set(competitor.id, items);
   });
 
   return map;
+}
+
+function eventToMilestone(event, competitors) {
+  const competitor = competitors.find((item) => {
+    const eventCompany = EVENT_COMPANY_BY_COMPETITOR[item.id] || item.company;
+    return event.company === eventCompany;
+  });
+
+  return {
+    id: event.id,
+    competitorId: competitor?.id || "unknown",
+    date: event.date,
+    category: event.category,
+    topic: event.topic,
+    title: event.title,
+    summary: event.summary,
+    whyImportant: event.whyImportant,
+    impact: event.impact,
+    sourceUrl: event.sourceUrl,
+    sourceTier: event.sourceTier,
+    heat: event.heat,
+    growth: event.growth,
+    live: true
+  };
 }
 
 function isKeyEvolutionEvent(event) {
@@ -64,26 +94,25 @@ function isKeyEvolutionEvent(event) {
   return true;
 }
 
-function dedupeEvolutionEvents(events) {
+function dedupeMilestones(items) {
   const byKey = new Map();
 
-  events.forEach((event) => {
-    const key = `${event.date}|${event.company}|${normalizeTitle(event.title)}`;
+  items.forEach((item) => {
+    const key = `${item.competitorId}|${normalizeDate(item.date)}|${normalizeTitle(item.title)}`;
     const existing = byKey.get(key);
-    if (!existing || preferEvent(event, existing)) {
-      byKey.set(key, event);
+    if (!existing || preferMilestone(item, existing)) {
+      byKey.set(key, item);
     }
   });
 
   return Array.from(byKey.values());
 }
 
-function preferEvent(candidate, current) {
-  const candidateAuto = candidate.id.startsWith("auto-");
-  const currentAuto = current.id.startsWith("auto-");
-  if (candidateAuto && !currentAuto) return false;
-  if (!candidateAuto && currentAuto) return true;
-  return candidate.heat > current.heat;
+function preferMilestone(candidate, current) {
+  if (candidate.live && !current.live) return true;
+  if (!candidate.live && current.live) return false;
+  if ((candidate.heat || 0) > (current.heat || 0)) return true;
+  return candidate.id.startsWith("ms-") && !current.id.startsWith("ms-") ? false : true;
 }
 
 function normalizeTitle(title) {
@@ -92,8 +121,17 @@ function normalizeTitle(title) {
   return title.slice(0, 48).toLowerCase();
 }
 
-function indexEvents(events) {
-  return new Map(events.map((event) => [event.id, event]));
+function normalizeDate(date) {
+  return date.slice(0, 7);
+}
+
+function parseDate(date) {
+  const normalized = date.length === 4 ? `${date}-01-01` : date.length === 7 ? `${date}-01` : date;
+  return new Date(normalized).getTime();
+}
+
+function formatYear(date) {
+  return date.slice(0, 4);
 }
 
 function resolveInitialCompetitor(competitors) {
@@ -127,11 +165,18 @@ function renderCompetitor(state, ui, evolutionByCompetitor, competitors) {
   if (!competitor) return;
 
   const milestones = evolutionByCompetitor.get(competitor.id) || [];
-  renderIntro(competitor, milestones.length, ui.intro);
-  renderTimeline(milestones, ui, state.eventsById);
+  renderIntro(competitor, milestones, ui.intro);
+  renderTimeline(milestones, ui);
 }
 
-function renderIntro(competitor, milestoneCount, container) {
+function renderIntro(competitor, milestones, container) {
+  const sorted = milestones.slice().sort((a, b) => parseDate(a.date) - parseDate(b.date));
+  const founded = sorted[0];
+  const foundedLabel = founded ? formatDisplayDate(founded.date) : "未知";
+  const spanYears = founded ? new Date().getFullYear() - Number(formatYear(founded.date)) : 0;
+  const liveCount = milestones.filter((item) => item.live).length;
+  const historyCount = milestones.length - liveCount;
+
   container.innerHTML = `
     <div class="intro-grid">
       <div>
@@ -141,10 +186,13 @@ function renderIntro(competitor, milestoneCount, container) {
       <div class="intro-meta">
         <span class="intro-pill">${competitor.category}</span>
         <span class="intro-pill">${competitor.pricing || "定价未收录"}</span>
-        <span class="intro-pill">${milestoneCount} 个关键节点</span>
+        <span class="intro-pill">诞生于 ${foundedLabel}</span>
+        <span class="intro-pill">演进 ${spanYears > 0 ? `${spanYears}+ 年` : "进行中"}</span>
+        <span class="intro-pill">${milestones.length} 个节点</span>
       </div>
     </div>
     <p class="intro-notes">${competitor.notes || ""}</p>
+    <p class="intro-stats">完整历程：${historyCount} 个历史里程碑${liveCount > 0 ? ` + ${liveCount} 条最新动态` : ""}</p>
     <div class="intro-links">
       ${competitor.website ? `<a href="${competitor.website}" target="_blank" rel="noreferrer">产品官网</a>` : ""}
       ${competitor.changelogUrl ? `<a href="${competitor.changelogUrl}" target="_blank" rel="noreferrer">更新日志</a>` : ""}
@@ -152,65 +200,89 @@ function renderIntro(competitor, milestoneCount, container) {
   `;
 }
 
-function renderTimeline(milestones, ui, eventsById) {
+function formatDisplayDate(date) {
+  if (date.length === 4) return `${date} 年`;
+  if (date.length === 7) return date.replace("-", " 年 ") + " 月";
+  return date;
+}
+
+function renderTimeline(milestones, ui) {
   ui.timeline.innerHTML = "";
-  ui.count.textContent = `${milestones.length} 个节点`;
+  ui.count.textContent = `${milestones.length} 个节点 · 从诞生至今`;
   ui.empty.hidden = milestones.length > 0;
   ui.timeline.hidden = milestones.length === 0;
 
-  milestones.forEach((event, index) => {
+  let lastYear = null;
+
+  milestones.forEach((milestone, index) => {
+    const year = formatYear(milestone.date);
+    if (year !== lastYear) {
+      const divider = document.createElement("div");
+      divider.className = "timeline-year";
+      divider.textContent = `${year} 年`;
+      ui.timeline.appendChild(divider);
+      lastYear = year;
+    }
+
     const node = document.createElement("button");
     node.type = "button";
     node.className = "timeline-node";
-    node.dataset.id = event.id;
+    node.dataset.id = milestone.id;
     node.setAttribute("role", "listitem");
     node.innerHTML = `
       <div class="timeline-axis">
-        <span class="timeline-dot" aria-hidden="true"></span>
+        <span class="timeline-dot ${milestone.category === "诞生" ? "birth" : ""}" aria-hidden="true"></span>
         ${index < milestones.length - 1 ? '<span class="timeline-line" aria-hidden="true"></span>' : ""}
       </div>
-      <div class="timeline-card">
+      <div class="timeline-card ${milestone.live ? "live" : ""}">
         <div class="timeline-meta">
-          <time datetime="${event.date}">${event.date}</time>
-          <span class="badge category-${event.category}">${event.category}</span>
-          <span class="badge topic">${event.topic}</span>
-          <span class="badge ${event.sourceTier.toLowerCase()}">${event.sourceTier} 级来源</span>
+          <time datetime="${milestone.date}">${formatDisplayDate(milestone.date)}</time>
+          <span class="badge category-${milestone.category}">${milestone.category}</span>
+          <span class="badge topic">${milestone.topic}</span>
+          ${milestone.live ? '<span class="badge live-tag">最新动态</span>' : ""}
+          <span class="badge ${milestone.sourceTier.toLowerCase()}">${milestone.sourceTier} 级来源</span>
         </div>
-        <h3>${event.title}</h3>
-        <p>${truncate(event.summary, 140)}</p>
+        <h3>${milestone.title}</h3>
+        <p>${truncate(milestone.summary, 140)}</p>
         <span class="timeline-cta">点击查看详情 →</span>
       </div>
     `;
-    node.addEventListener("click", () => openDetail(event, ui));
+    node.addEventListener("click", () => openDetail(milestone, ui));
     ui.timeline.appendChild(node);
   });
 }
 
-function openDetail(event, ui) {
+function openDetail(milestone, ui) {
+  const heatBlock =
+    milestone.heat != null
+      ? `<span class="heat-tag">热度 ${milestone.heat}${milestone.growth != null ? ` · 增长 ${milestone.growth}` : ""}</span>`
+      : "";
+
   ui.modalDetail.innerHTML = `
-    <h2 id="modalTitle">${event.title}</h2>
+    <h2 id="modalTitle">${milestone.title}</h2>
     <div class="modal-meta">
-      <time datetime="${event.date}">${event.date}</time>
-      <span class="badge category-${event.category}">${event.category}</span>
-      <span class="badge topic">${event.topic}</span>
-      <span class="badge ${event.sourceTier.toLowerCase()}">${event.sourceTier} 级来源</span>
-      <span class="heat-tag">热度 ${event.heat} · 增长 ${event.growth}</span>
+      <time datetime="${milestone.date}">${formatDisplayDate(milestone.date)}</time>
+      <span class="badge category-${milestone.category}">${milestone.category}</span>
+      <span class="badge topic">${milestone.topic}</span>
+      ${milestone.live ? '<span class="badge live-tag">最新动态</span>' : ""}
+      <span class="badge ${milestone.sourceTier.toLowerCase()}">${milestone.sourceTier} 级来源</span>
+      ${heatBlock}
     </div>
     <section>
       <h3>摘要</h3>
-      <p>${event.summary}</p>
+      <p>${milestone.summary}</p>
     </section>
     <section>
       <h3>为什么重要</h3>
-      <p>${event.whyImportant}</p>
+      <p>${milestone.whyImportant}</p>
     </section>
     <section>
       <h3>影响分析</h3>
-      <p>${event.impact}</p>
+      <p>${milestone.impact}</p>
     </section>
     <section>
       <h3>来源</h3>
-      <p><a href="${event.sourceUrl}" target="_blank" rel="noreferrer">${event.sourceUrl}</a></p>
+      <p><a href="${milestone.sourceUrl}" target="_blank" rel="noreferrer">${milestone.sourceUrl}</a></p>
     </section>
   `;
   ui.modal.hidden = false;
@@ -242,6 +314,16 @@ function truncate(text, maxLength) {
 async function loadEvents() {
   try {
     const response = await fetch("./data/events.json");
+    if (!response.ok) return [];
+    return await response.json();
+  } catch (error) {
+    return [];
+  }
+}
+
+async function loadMilestones() {
+  try {
+    const response = await fetch("./data/milestones.json");
     if (!response.ok) return [];
     return await response.json();
   } catch (error) {
