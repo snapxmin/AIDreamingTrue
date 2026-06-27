@@ -1,0 +1,343 @@
+.evolution-page {
+  min-height: 100vh;
+}
+
+.evolution-header .header-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.nav-link {
+  flex-shrink: 0;
+  color: #dbeafe;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.competitor-nav {
+  margin: 16px 16px 0;
+  padding: 12px 16px;
+  overflow-x: auto;
+}
+
+.competitor-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.competitor-tab {
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.competitor-tab:hover {
+  border-color: #93c5fd;
+  background: #eff6ff;
+}
+
+.competitor-tab.active {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+}
+
+.evolution-main {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 16px;
+  padding: 16px;
+}
+
+.competitor-intro h2 {
+  margin: 0 0 4px;
+}
+
+.intro-company {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.intro-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.intro-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.intro-pill {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+.intro-notes {
+  margin: 0 0 12px;
+  line-height: 1.6;
+  color: #374151;
+}
+
+.intro-links {
+  display: flex;
+  gap: 12px;
+}
+
+.intro-links a {
+  color: #2563eb;
+  font-size: 14px;
+}
+
+.milestone-count {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 8px;
+}
+
+.timeline-node {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 16px;
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  padding: 0 0 20px;
+  cursor: pointer;
+}
+
+.timeline-axis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #2563eb;
+  border: 3px solid #dbeafe;
+  flex-shrink: 0;
+  margin-top: 18px;
+}
+
+.timeline-line {
+  width: 2px;
+  flex: 1;
+  background: #dbeafe;
+  margin-top: 4px;
+}
+
+.timeline-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px 16px;
+  background: #fff;
+  transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+}
+
+.timeline-node:hover .timeline-card,
+.timeline-node:focus-visible .timeline-card {
+  border-color: #2563eb;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.12);
+  transform: translateY(-1px);
+}
+
+.timeline-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.timeline-meta time {
+  font-weight: 600;
+  color: #111827;
+}
+
+.timeline-card h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.timeline-card p {
+  margin: 0;
+  color: #4b5563;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.timeline-cta {
+  display: inline-block;
+  margin-top: 10px;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.badge.topic {
+  background: #ede9fe;
+  color: #5b21b6;
+}
+
+.badge.category-产品 {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.badge.category-工具生态 {
+  background: #e0f2fe;
+  color: #075985;
+}
+
+.badge.category-商业 {
+  background: #ffedd5;
+  color: #9a3412;
+}
+
+.badge.category-投融资 {
+  background: #fce7f3;
+  color: #9d174d;
+}
+
+.empty-state {
+  color: #6b7280;
+  text-align: center;
+  padding: 32px 0;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.modal[hidden] {
+  display: none;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 24, 39, 0.55);
+}
+
+.modal-dialog {
+  position: relative;
+  width: min(720px, 100%);
+  max-height: calc(100vh - 48px);
+  overflow: auto;
+  background: #fff;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 20px 50px rgba(17, 24, 39, 0.25);
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 8px;
+  background: #f3f4f6;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  background: #e5e7eb;
+}
+
+.modal-detail h2 {
+  margin: 0 32px 12px 0;
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+.modal-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.heat-tag {
+  color: #6b7280;
+}
+
+.modal-detail section {
+  margin-bottom: 18px;
+}
+
+.modal-detail h3 {
+  margin: 0 0 8px;
+  font-size: 15px;
+}
+
+.modal-detail p {
+  margin: 0;
+  line-height: 1.6;
+  color: #374151;
+}
+
+.modal-detail a {
+  color: #2563eb;
+  word-break: break-all;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+@media (max-width: 960px) {
+  .evolution-main {
+    grid-template-columns: 1fr;
+  }
+
+  .evolution-header .header-row {
+    flex-direction: column;
+  }
+}

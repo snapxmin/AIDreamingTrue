@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>竞品特性演进历史 · AI Coding 信息平台</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./evolution.css" />
+  </head>
+  <body class="evolution-page">
+    <header class="top evolution-header">
+      <div class="header-row">
+        <div>
+          <h1>竞品特性演进历史</h1>
+          <p>追踪头部 AI Coding 产品的关键能力迭代与战略里程碑</p>
+        </div>
+        <a class="nav-link" href="./index.html">← 返回门户首页</a>
+      </div>
+    </header>
+
+    <nav class="panel competitor-nav" aria-label="竞品选择">
+      <div id="competitorTabs" class="competitor-tabs"></div>
+    </nav>
+
+    <main class="evolution-main">
+      <section class="panel competitor-intro" id="competitorIntro"></section>
+
+      <section class="panel timeline-section">
+        <div class="section-title">
+          <h2>演进时间线</h2>
+          <span id="milestoneCount" class="milestone-count"></span>
+        </div>
+        <div id="timeline" class="timeline" role="list"></div>
+        <p id="emptyTimeline" class="empty-state" hidden>暂无关键演进记录。</p>
+      </section>
+    </main>
+
+    <div id="detailModal" class="modal" hidden aria-hidden="true">
+      <div class="modal-backdrop" data-close="true"></div>
+      <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button type="button" class="modal-close" aria-label="关闭详情" data-close="true">×</button>
+        <article id="modalDetail" class="modal-detail"></article>
+      </div>
+    </div>
+
+    <script src="./evolution.js"></script>
+  </body>
+</html>
