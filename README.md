@@ -17,11 +17,11 @@
 这是一个纯静态 MVP，无需安装依赖。  
 直接打开以下文件即可：
 
-- `/home/runner/work/AIDreamingTrue/AIDreamingTrue/index.html`
+- `./index.html`
 
 ## 目录
 
-- `/home/runner/work/AIDreamingTrue/AIDreamingTrue/index.html`：页面结构
-- `/home/runner/work/AIDreamingTrue/AIDreamingTrue/styles.css`：样式
-- `/home/runner/work/AIDreamingTrue/AIDreamingTrue/app.js`：交互逻辑
-- `/home/runner/work/AIDreamingTrue/AIDreamingTrue/data/events.json`：示例事件数据
+- `./index.html`：页面结构
+- `./styles.css`：样式
+- `./app.js`：交互逻辑
+- `./data/events.json`：示例事件数据
