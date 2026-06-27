@@ -60,8 +60,18 @@ python3 scripts/collect_events.py --dry-run
 
 仓库已添加 GitHub Pages 自动部署工作流：
 
-- 工作流文件：`./.github/workflows/deploy-pages.yml`
-- 触发方式：推送到 `main` 分支，或手动运行工作流
+- 推送部署：`./.github/workflows/deploy-pages.yml`（推送到 `main` 时触发）
+- 定时采集发布：`./.github/workflows/daily-collect-and-publish.yml`（每天 08:30 北京时间自动采集并发布）
+
+### 定时任务
+
+每天 **08:30（北京时间 UTC+8）** 自动执行：
+
+1. 运行 `scripts/collect_events.py` 抓取竞品最新动态
+2. 将新事件合并写入 `data/events.json` 并提交到 `main`
+3. 部署更新后的门户到 GitHub Pages
+
+也可在 GitHub Actions 页面手动触发 **Daily collect and publish** 工作流。
 
 启用方式：
 
