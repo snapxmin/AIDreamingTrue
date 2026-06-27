@@ -1,11 +1,12 @@
 (async function init() {
-  const events = await loadEvents();
+  const [events, competitors] = await Promise.all([loadEvents(), loadCompetitors()]);
 
   const ui = {
     list: document.getElementById("eventList"),
     detail: document.getElementById("eventDetail"),
     count: document.getElementById("resultCount"),
     trend: document.getElementById("trendList"),
+    companyTags: document.getElementById("companyTags"),
     search: document.getElementById("searchInput"),
     time: document.getElementById("timeWindow"),
     category: document.getElementById("categoryFilter"),
@@ -21,11 +22,17 @@
     view: "all"
   };
 
+  const topCompanies = buildTopCompanies(competitors);
+
   hydrateSelect(ui.category, events.map((e) => e.category));
   hydrateSelect(ui.topic, events.map((e) => e.topic));
   hydrateSelect(ui.company, events.map((e) => e.company));
+  renderCompanyTags(topCompanies, ui, render);
 
-  const onChange = () => render();
+  const onChange = () => {
+    syncCompanyTags(topCompanies, ui);
+    render();
+  };
   [ui.search, ui.time, ui.category, ui.topic, ui.company].forEach((el) => {
     el.addEventListener("input", onChange);
     el.addEventListener("change", onChange);
@@ -120,6 +127,62 @@
   render();
 })();
 
+const EVENT_COMPANY_BY_COMPETITOR = {
+  cursor: "Cursor",
+  "github-copilot": "GitHub",
+  "devin-desktop": "Cognition",
+  "claude-code": "Anthropic",
+  replit: "Replit",
+  "google-jules": "Google",
+  kiro: "AWS"
+};
+
+function buildTopCompanies(competitors) {
+  return competitors.map((competitor) => ({
+    id: competitor.id,
+    label: competitor.name,
+    eventCompany: EVENT_COMPANY_BY_COMPETITOR[competitor.id] || competitor.company
+  }));
+}
+
+function renderCompanyTags(topCompanies, ui, render) {
+  ui.companyTags.innerHTML = "";
+
+  const allTag = document.createElement("button");
+  allTag.type = "button";
+  allTag.className = "company-tag active";
+  allTag.dataset.company = "all";
+  allTag.textContent = "全部";
+  allTag.addEventListener("click", () => selectCompanyTag("all", ui, render));
+  ui.companyTags.appendChild(allTag);
+
+  topCompanies.forEach((company) => {
+    const tag = document.createElement("button");
+    tag.type = "button";
+    tag.className = "company-tag";
+    tag.dataset.company = company.eventCompany;
+    tag.textContent = company.label;
+    tag.title = `筛选 ${company.label} 相关动态`;
+    tag.addEventListener("click", () => selectCompanyTag(company.eventCompany, ui, render));
+    ui.companyTags.appendChild(tag);
+  });
+}
+
+function selectCompanyTag(eventCompany, ui, render) {
+  ui.company.value = eventCompany;
+  syncCompanyTags(topCompanies, ui);
+  render();
+}
+
+function syncCompanyTags(topCompanies, ui) {
+  const activeCompany = ui.company.value;
+  Array.from(ui.companyTags.querySelectorAll(".company-tag")).forEach((tag) => {
+    const isAll = tag.dataset.company === "all" && activeCompany === "all";
+    const isMatch = tag.dataset.company === activeCompany;
+    tag.classList.toggle("active", isAll || isMatch);
+  });
+}
+
 async function loadEvents() {
   const fallback = [
     {
@@ -171,6 +234,26 @@ async function loadEvents() {
 
   try {
     const response = await fetch("./data/events.json");
+    if (!response.ok) return fallback;
+    return await response.json();
+  } catch (error) {
+    return fallback;
+  }
+}
+
+async function loadCompetitors() {
+  const fallback = [
+    { id: "cursor", name: "Cursor", company: "Anysphere" },
+    { id: "github-copilot", name: "GitHub Copilot", company: "GitHub / Microsoft" },
+    { id: "devin-desktop", name: "Devin Desktop", company: "Cognition" },
+    { id: "claude-code", name: "Claude Code", company: "Anthropic" },
+    { id: "replit", name: "Replit Agent", company: "Replit" },
+    { id: "google-jules", name: "Jules", company: "Google" },
+    { id: "kiro", name: "Kiro", company: "AWS" }
+  ];
+
+  try {
+    const response = await fetch("./data/competitors.json");
     if (!response.ok) return fallback;
     return await response.json();
   } catch (error) {
