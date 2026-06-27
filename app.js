@@ -30,7 +30,7 @@
   renderCompanyTags(topCompanies, ui, render);
 
   const onChange = () => {
-    syncCompanyTags(topCompanies, ui);
+    syncCompanyTags(ui);
     render();
   };
   [ui.search, ui.time, ui.category, ui.topic, ui.company].forEach((el) => {
@@ -170,11 +170,11 @@ function renderCompanyTags(topCompanies, ui, render) {
 
 function selectCompanyTag(eventCompany, ui, render) {
   ui.company.value = eventCompany;
-  syncCompanyTags(topCompanies, ui);
+  syncCompanyTags(ui);
   render();
 }
 
-function syncCompanyTags(topCompanies, ui) {
+function syncCompanyTags(ui) {
   const activeCompany = ui.company.value;
   Array.from(ui.companyTags.querySelectorAll(".company-tag")).forEach((tag) => {
     const isAll = tag.dataset.company === "all" && activeCompany === "all";
