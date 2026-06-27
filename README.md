@@ -25,3 +25,18 @@
 - `./styles.css`：样式
 - `./app.js`：交互逻辑
 - `./data/events.json`：示例事件数据
+
+## 部署到 GitHub Pages
+
+仓库已添加 GitHub Pages 自动部署工作流：
+
+- 工作流文件：`./.github/workflows/deploy-pages.yml`
+- 触发方式：推送到 `main` 分支，或手动运行工作流
+
+启用方式：
+
+1. 进入 GitHub 仓库 **Settings > Pages**
+2. 在 **Build and deployment** 中将 **Source** 设为 **GitHub Actions**
+3. 推送到 `main` 分支后，等待 `Deploy static site to Pages` 工作流完成
+
+部署完成后，站点会发布到 GitHub Pages 提供的公开地址。
