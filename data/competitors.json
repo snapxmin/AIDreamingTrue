@@ -1,0 +1,72 @@
+[
+  {
+    "id": "cursor",
+    "name": "Cursor",
+    "company": "Anysphere",
+    "category": "AI IDE",
+    "website": "https://cursor.com",
+    "changelogUrl": "https://cursor.com/changelog",
+    "pricing": "$20/mo Pro",
+    "notes": "VS Code fork，Tab 补全行业领先，2026年6月被 SpaceX 以 $60B 收购"
+  },
+  {
+    "id": "github-copilot",
+    "name": "GitHub Copilot",
+    "company": "GitHub / Microsoft",
+    "category": "AI 插件",
+    "website": "https://github.com/features/copilot",
+    "changelogUrl": "https://github.blog/changelog/",
+    "pricing": "$10-19/mo",
+    "notes": "跨 IDE 覆盖最广，企业合规能力强，2026年2月 Copilot CLI GA"
+  },
+  {
+    "id": "devin-desktop",
+    "name": "Devin Desktop",
+    "company": "Cognition",
+    "category": "AI IDE",
+    "website": "https://devin.ai/desktop",
+    "changelogUrl": "https://releases.sh/windsurf/releases",
+    "pricing": "$20/mo",
+    "notes": "原 Windsurf，2026年6月更名，含 SWE-1.6 自研模型与 Devin Cloud"
+  },
+  {
+    "id": "claude-code",
+    "name": "Claude Code",
+    "company": "Anthropic",
+    "category": "终端 Agent",
+    "website": "https://claude.ai/code",
+    "changelogUrl": "https://github.com/anthropics/claude-code/releases",
+    "pricing": "Claude Pro/Max 订阅",
+    "notes": "终端原生 Agent，MCP 生态最强，多文件重构能力突出"
+  },
+  {
+    "id": "replit",
+    "name": "Replit Agent",
+    "company": "Replit",
+    "category": "Vibe Coding 平台",
+    "website": "https://replit.com",
+    "changelogUrl": "https://docs.replit.com/updates",
+    "pricing": "订阅制",
+    "notes": "面向非专业开发者，Agent 4 支持并行任务与 Design Canvas"
+  },
+  {
+    "id": "google-jules",
+    "name": "Jules",
+    "company": "Google",
+    "category": "异步 Agent",
+    "website": "https://jules.google",
+    "changelogUrl": "https://jules.google",
+    "pricing": "免费/Pro $19.99/mo",
+    "notes": "GitHub 原生异步 Agent，自动修复 CI 失败"
+  },
+  {
+    "id": "kiro",
+    "name": "Kiro",
+    "company": "AWS",
+    "category": "Spec-Driven IDE",
+    "website": "https://kiro.dev",
+    "changelogUrl": "https://kiro.dev/blog",
+    "pricing": "预览期免费",
+    "notes": "Amazon Q Developer 继任者，规范驱动开发"
+  }
+]
