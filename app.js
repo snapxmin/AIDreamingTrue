@@ -27,26 +27,34 @@
   hydrateSelect(ui.category, events.map((e) => e.category));
   hydrateSelect(ui.topic, events.map((e) => e.topic));
   hydrateSelect(ui.company, events.map((e) => e.company));
-  renderCompanyTags(topCompanies, ui, render);
+  renderCompanyTags(topCompanies, ui);
 
   const onChange = () => {
     syncCompanyTags(ui);
     render();
   };
+
+  ui.companyTags.addEventListener("click", (event) => {
+    const tag = event.target.closest(".company-tag");
+    if (!tag) return;
+    ui.company.value = tag.dataset.company;
+    onChange();
+  });
+
   [ui.search, ui.time, ui.category, ui.topic, ui.company].forEach((el) => {
     el.addEventListener("input", onChange);
     el.addEventListener("change", onChange);
   });
   ui.heat.addEventListener("input", () => {
     ui.heatValue.textContent = ui.heat.value;
-    render();
+    onChange();
   });
   ui.tabs.forEach((tab) => {
     tab.addEventListener("click", () => {
       ui.tabs.forEach((it) => it.classList.remove("active"));
       tab.classList.add("active");
       state.view = tab.dataset.view;
-      render();
+      onChange();
     });
   });
 
@@ -61,6 +69,7 @@
       renderDetail(selected);
       markActive(selected.id);
     } else {
+      state.selectedId = null;
       ui.detail.innerHTML = "<p>暂无符合条件的数据。</p>";
     }
   }
@@ -145,7 +154,7 @@ function buildTopCompanies(competitors) {
   }));
 }
 
-function renderCompanyTags(topCompanies, ui, render) {
+function renderCompanyTags(topCompanies, ui) {
   ui.companyTags.innerHTML = "";
 
   const allTag = document.createElement("button");
@@ -153,7 +162,6 @@ function renderCompanyTags(topCompanies, ui, render) {
   allTag.className = "company-tag active";
   allTag.dataset.company = "all";
   allTag.textContent = "全部";
-  allTag.addEventListener("click", () => selectCompanyTag("all", ui, render));
   ui.companyTags.appendChild(allTag);
 
   topCompanies.forEach((company) => {
@@ -163,15 +171,8 @@ function renderCompanyTags(topCompanies, ui, render) {
     tag.dataset.company = company.eventCompany;
     tag.textContent = company.label;
     tag.title = `筛选 ${company.label} 相关动态`;
-    tag.addEventListener("click", () => selectCompanyTag(company.eventCompany, ui, render));
     ui.companyTags.appendChild(tag);
   });
-}
-
-function selectCompanyTag(eventCompany, ui, render) {
-  ui.company.value = eventCompany;
-  syncCompanyTags(ui);
-  render();
 }
 
 function syncCompanyTags(ui) {
