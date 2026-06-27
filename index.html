@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Coding 信息平台</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="top">
+      <h1>AI Coding 信息平台</h1>
+      <p>追踪近期 AI Coding 关键动态：产品、商业、用户故事与技术趋势</p>
+    </header>
+
+    <main class="layout">
+      <aside class="panel filters">
+        <h2>筛选</h2>
+        <input id="searchInput" type="search" placeholder="搜索关键词、公司、产品..." />
+
+        <label for="timeWindow">时间窗口</label>
+        <select id="timeWindow">
+          <option value="all">全部</option>
+          <option value="30">近 30 天</option>
+          <option value="90">近 90 天</option>
+        </select>
+
+        <label for="categoryFilter">分类</label>
+        <select id="categoryFilter">
+          <option value="all">全部</option>
+        </select>
+
+        <label for="topicFilter">专题</label>
+        <select id="topicFilter">
+          <option value="all">全部</option>
+        </select>
+
+        <label for="companyFilter">公司</label>
+        <select id="companyFilter">
+          <option value="all">全部</option>
+        </select>
+
+        <label for="heatFilter">最低热度</label>
+        <input id="heatFilter" type="range" min="0" max="100" value="0" />
+        <div class="range-value">当前：<span id="heatValue">0</span></div>
+      </aside>
+
+      <section class="panel content">
+        <div class="section-title">
+          <h2>近期事件流</h2>
+          <span id="resultCount"></span>
+        </div>
+        <div class="tabs">
+          <button class="tab active" data-view="all">全部</button>
+          <button class="tab" data-view="today">今日重点</button>
+          <button class="tab" data-view="week">本周重点</button>
+        </div>
+        <ul id="eventList" class="event-list"></ul>
+      </section>
+
+      <aside class="panel details">
+        <h2>事件详情</h2>
+        <article id="eventDetail" class="event-detail">
+          <p>请选择左侧事件查看详情。</p>
+        </article>
+      </aside>
+    </main>
+
+    <section class="panel trend">
+      <h2>趋势榜单</h2>
+      <ol id="trendList"></ol>
+    </section>
+
+    <section class="panel process">
+      <h2>内容生产链路</h2>
+      <ul>
+        <li><strong>采集：</strong>官方博客、发布会、GitHub、媒体、社区</li>
+        <li><strong>处理：</strong>去重、聚类、摘要、标签化、可信度评估</li>
+        <li><strong>审核：</strong>高影响事件人工校验</li>
+        <li><strong>发布：</strong>实时快讯 + 每日/每周精选</li>
+      </ul>
+    </section>
+
+    <section class="panel quality">
+      <h2>质量与运营机制</h2>
+      <ul>
+        <li>来源分级与溯源（A/B/C）</li>
+        <li>错误更正与版本记录</li>
+        <li>冷启动：先高质量精选，再扩展自动化覆盖</li>
+        <li>反馈回路：收藏、反馈、纠错、需求征集</li>
+      </ul>
+    </section>
+
+    <section class="panel roadmap">
+      <h2>阶段路线图</h2>
+      <ul>
+        <li><strong>MVP：</strong>事件流 + 分类 + 搜索 + 每日精选</li>
+        <li><strong>第二阶段：</strong>个性化推荐、邮件/IM 订阅、趋势分析</li>
+        <li><strong>第三阶段：</strong>行业报告、API、企业版监测看板</li>
+      </ul>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
