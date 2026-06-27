@@ -24,7 +24,37 @@
 - `./index.html`：页面结构
 - `./styles.css`：样式
 - `./app.js`：交互逻辑
-- `./data/events.json`：示例事件数据
+- `./data/events.json`：竞品事件数据（25 条真实动态）
+- `./data/competitors.json`：竞品监控列表（7 家）
+- `./scripts/collect_events.py`：数据采集脚本
+
+## 数据来源
+
+事件数据来自以下公开来源的人工整理与脚本辅助采集：
+
+| 类型 | 来源 |
+|------|------|
+| 产品 Release Notes | [Cursor Changelog](https://cursor.com/changelog)、[Claude Code Releases](https://github.com/anthropics/claude-code/releases)、[GitHub Changelog](https://github.blog/changelog/)、[Devin Blog](https://devin.ai/blog)、[Replit Blog](https://replit.com/blog) |
+| 投融资/商业 | TechCrunch、Bloomberg、SiliconANGLE |
+| 用户论坛反馈 | Hacker News 讨论帖、社区对比评测 |
+| 行业分析 | Analysis Atlas、社区开发者报告 |
+
+### 监控竞品
+
+Cursor、GitHub Copilot、Devin Desktop (Cognition)、Claude Code (Anthropic)、Replit Agent、Google Jules、AWS Kiro
+
+### 更新数据
+
+```bash
+# 查看监控来源
+python3 scripts/collect_events.py --sources
+
+# 抓取新数据并合并（支持 GitHub Releases、RSS）
+python3 scripts/collect_events.py
+
+# 预览模式，不写入文件
+python3 scripts/collect_events.py --dry-run
+```
 
 ## 部署到 GitHub Pages
 
