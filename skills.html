@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skill 库 · AI Coding 信息平台</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./skills.css" />
+  </head>
+  <body class="skills-page">
+    <header class="top skills-header">
+      <div class="header-row">
+        <div>
+          <h1>Skill 库</h1>
+          <p>策展业界 Top Agent Skills：GitHub Copilot、Cursor 等生态的安装指南与使用案例</p>
+        </div>
+        <nav class="site-nav" aria-label="站点导航">
+          <a class="nav-link" href="./index.html">门户首页</a>
+          <a class="nav-link" href="./evolution.html">竞品演进</a>
+          <a class="nav-link active" href="./skills.html" aria-current="page">Skill 库</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="panel skills-meta" id="skillsMeta"></section>
+
+    <nav class="panel platform-nav" aria-label="平台筛选">
+      <div id="platformTabs" class="platform-tabs"></div>
+    </nav>
+
+    <main class="skills-main">
+      <aside class="panel skills-filters">
+        <h2>筛选</h2>
+        <input id="skillSearch" type="search" placeholder="搜索 Skill 名称、标签、阶段..." />
+
+        <label for="phaseFilter">工程阶段</label>
+        <select id="phaseFilter">
+          <option value="all">全部阶段</option>
+        </select>
+
+        <label for="categoryFilter">分类</label>
+        <select id="categoryFilter">
+          <option value="all">全部分类</option>
+        </select>
+
+        <label class="checkbox-row">
+          <input id="featuredOnly" type="checkbox" />
+          仅显示 Top 精选
+        </label>
+
+        <div class="sync-info" id="syncInfo"></div>
+      </aside>
+
+      <section class="panel skills-content">
+        <div class="section-title">
+          <h2>Skill 列表</h2>
+          <span id="skillCount"></span>
+        </div>
+        <div class="tabs" id="phaseQuickTabs"></div>
+        <div id="skillGrid" class="skill-grid" role="list"></div>
+        <p id="emptySkills" class="empty-state" hidden>没有匹配的 Skill。</p>
+      </section>
+
+      <aside class="panel skill-detail-panel">
+        <h2>Skill 详情</h2>
+        <article id="skillDetail" class="skill-detail">
+          <p>请从左侧列表选择一个 Skill 查看详细介绍与使用案例。</p>
+        </article>
+      </aside>
+    </main>
+
+    <div id="skillModal" class="modal" hidden aria-hidden="true">
+      <div class="modal-backdrop" data-close="true"></div>
+      <div class="modal-dialog skill-modal-dialog" role="dialog" aria-modal="true">
+        <button type="button" class="modal-close" aria-label="关闭详情" data-close="true">×</button>
+        <article id="skillModalDetail" class="modal-detail"></article>
+      </div>
+    </div>
+
+    <script src="./skills.js?v=1"></script>
+  </body>
+</html>
