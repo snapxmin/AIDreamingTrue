@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Copilot 插件生态深度调研 · Canvas</title>
+    <link rel="stylesheet" href="./marketplace-canvas.css" />
+    <style>
+      .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+      .compare-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+      .compare-card h4 { margin: 0 0 8px; color: var(--accent); }
+      @media (max-width: 768px) { .compare-grid { grid-template-columns: 1fr; } }
+      .layer-card { border-left: 3px solid var(--accent); padding-left: 14px; margin-bottom: 16px; }
+      .layer-card h4 { margin: 0 0 6px; }
+      .layer-card p { margin: 0; font-size: 13px; color: var(--text-muted); }
+    </style>
+  </head>
+  <body class="canvas-page">
+    <header class="canvas-header">
+      <div>
+        <h1>GitHub Copilot 插件生态深度调研</h1>
+        <p id="reportMeta">加载数据中…</p>
+      </div>
+      <div style="display:flex;gap:8px;flex-shrink:0">
+        <a class="nav-link" href="./marketplace-canvas.html">Cursor 调研 →</a>
+        <a class="nav-link" href="./index.html">← 门户首页</a>
+      </div>
+    </header>
+
+    <div class="canvas-shell">
+      <nav class="canvas-toc" aria-label="报告目录">
+        <h2>目录</h2>
+        <a href="#summary">执行摘要</a>
+        <a href="#layers">四层生态架构</a>
+        <a href="#extensions">Copilot Extensions</a>
+        <a href="#cli">CLI Plugin Marketplaces</a>
+        <a href="#mcp">MCP Registry</a>
+        <a href="#primitives">原语与构建模型</a>
+        <a href="#cursor-compare">vs Cursor Marketplace</a>
+        <a href="#insights">深度洞察</a>
+        <a href="#explorer">扩展浏览器</a>
+        <a href="#methodology">采集方法论</a>
+      </nav>
+
+      <main class="canvas-main" id="canvasMain">
+        <p class="loading" id="loadingState">正在加载 copilot_ecosystem_report.json…</p>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script src="./copilot-canvas.js"></script>
+  </body>
+</html>
