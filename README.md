@@ -26,7 +26,10 @@
 - `./app.js`：交互逻辑
 - `./data/events.json`：竞品事件数据（25 条真实动态）
 - `./data/competitors.json`：竞品监控列表（7 家）
-- `./scripts/collect_events.py`：数据采集脚本
+- `./scripts/collect_events.py`：竞品事件采集脚本
+- `./scripts/collect_marketplace.py`：Cursor Marketplace 深度采集脚本
+- `./marketplace-canvas.html`：Marketplace 深度调研 Canvas 报告
+- `./data/marketplace_report.json`：Marketplace 结构化调研数据
 
 ## 数据来源
 
@@ -54,6 +57,12 @@ python3 scripts/collect_events.py
 
 # 预览模式，不写入文件
 python3 scripts/collect_events.py --dry-run
+
+# 采集 Cursor Marketplace 插件与自动化数据
+python3 scripts/collect_marketplace.py
+
+# 打开 Canvas 调研报告
+# ./marketplace-canvas.html
 ```
 
 ## 部署到 GitHub Pages
