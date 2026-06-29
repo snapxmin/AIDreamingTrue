@@ -46,6 +46,19 @@ body {
   background: rgba(255, 255, 255, 0.1);
 }
 
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.site-nav .nav-link.active,
+.site-nav .nav-link[aria-current="page"] {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
 .company-bar {
   display: flex;
   align-items: center;

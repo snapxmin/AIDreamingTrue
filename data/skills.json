@@ -1,0 +1,561 @@
+{
+  "meta": {
+    "lastUpdated": "2026-06-29T07:39:44Z",
+    "totalCount": 15,
+    "featuredCount": 12,
+    "sources": [
+      "awesome-copilot",
+      "cursor-superpowers"
+    ],
+    "discovery": {
+      "awesome-copilot": {
+        "platform": "GitHub Copilot",
+        "repo": "github/awesome-copilot",
+        "totalInRepo": 365,
+        "curatedCount": 11
+      },
+      "cursor-superpowers": {
+        "platform": "Cursor",
+        "repo": "obra/superpowers",
+        "totalInRepo": 14,
+        "curatedCount": 4
+      }
+    },
+    "note": "策展 Top Skills 围绕 AI 软件工程全链路；description 字段从远程 SKILL.md 自动同步，introduction/useCases 为门户策展内容。"
+  },
+  "sdePhases": [
+    "代码理解",
+    "多 Agent 协作",
+    "安全审查",
+    "实现",
+    "持续治理",
+    "测试评估",
+    "环境准备",
+    "规划拆解",
+    "调试排错",
+    "输出验证",
+    "需求设计"
+  ],
+  "platforms": [
+    "Cursor",
+    "GitHub Copilot"
+  ],
+  "categories": [
+    "Agent 治理",
+    "Agent 质量",
+    "LLM 应用 QA",
+    "上下文管理",
+    "仓库初始化",
+    "代码库分析",
+    "创意与方案",
+    "团队编排",
+    "完成前验证",
+    "实现规划",
+    "应用安全",
+    "测试驱动",
+    "问题定位",
+    "防幻觉"
+  ],
+  "skills": [
+    {
+      "id": "skill-001",
+      "slug": "ai-ready",
+      "name": "ai-ready",
+      "displayName": "AI Ready",
+      "platform": "GitHub Copilot",
+      "ecosystem": "awesome-copilot",
+      "category": "仓库初始化",
+      "sdePhase": "环境准备",
+      "rank": 1,
+      "featured": true,
+      "description": "Make any repo AI-ready — analyzes your codebase and generates AGENTS.md, copilot-instructions.md, CI workflows, issue templates, and more. Mines your PR review patterns and creates files customized to your stack. USE THIS SKILL when the user asks to \"make this repo ai-ready\", \"set up AI config\", or \"prepare this repo for AI contributions\".",
+      "introduction": "将任意代码仓库一键「AI 化」：分析技术栈与 PR 审查模式，自动生成 AGENTS.md、copilot-instructions.md、CI 工作流、Issue 模板等配置文件。这是 AI 辅助开发前的基础设施步骤，显著降低 Agent 进入陌生仓库时的理解成本。",
+      "useCases": [
+        {
+          "title": "新项目接入 Copilot Agent",
+          "scenario": "团队刚 fork 一个开源项目，希望 Copilot 能按项目规范写代码。",
+          "prompt": "make this repo ai-ready",
+          "expected": "生成 AGENTS.md 与 .github/copilot-instructions.md，并针对技术栈定制规则。"
+        },
+        {
+          "title": "Monorepo 多包规范",
+          "scenario": "仓库含前端、后端、基础设施多个子目录，需要分区 instructions。",
+          "prompt": "set up AI config for this monorepo with per-area instructions",
+          "expected": "为各子目录生成带 applyTo glob 的 instructions 文件。"
+        }
+      ],
+      "installCommand": "gh skill install github/awesome-copilot ai-ready",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/ai-ready",
+      "docsUrl": "https://awesome-copilot.github.com/skills/",
+      "tags": [
+        "AGENTS.md",
+        "copilot-instructions",
+        "CI"
+      ],
+      "triggers": [],
+      "remoteSynced": true
+    },
+    {
+      "id": "skill-002",
+      "slug": "acquire-codebase-knowledge",
+      "name": "acquire-codebase-knowledge",
+      "displayName": "Acquire Codebase Knowledge",
+      "platform": "GitHub Copilot",
+      "ecosystem": "awesome-copilot",
+      "category": "代码库分析",
+      "sdePhase": "代码理解",
+      "rank": 2,
+      "featured": true,
+      "description": "Use this skill when the user explicitly asks to map, document, or onboard into an existing codebase. Trigger for prompts like \"map this codebase\", \"document this architecture\", \"onboard me to this repo\", or \"create codebase docs\". Do not trigger for routine feature implementation, bug fixes, or narrow code edits unless the user asks for repository-level discovery.",
+      "introduction": "对现有代码库做系统性测绘，产出 7 份结构化文档（STACK、ARCHITECTURE、TESTING 等），附带 scan.py 可执行扫描脚本。每条结论要求有文件证据，适合 Agent 或新人快速建立心智模型。",
+      "useCases": [
+        {
+          "title": "接手遗留系统",
+          "scenario": "开发者加入项目，需要在两周内理解 10 万行代码的架构。",
+          "prompt": "map this codebase and document the architecture",
+          "expected": "在 docs/codebase/ 下生成 7 份带证据链的 Markdown 文档。"
+        },
+        {
+          "title": "PR 前影响面评估",
+          "scenario": "大功能改动前，需要弄清模块边界与集成点。",
+          "prompt": "create codebase docs focusing on integrations and testing",
+          "expected": "INTEGRATIONS.md 与 TESTING.md 标注关键依赖与测试策略。"
+        }
+      ],
+      "installCommand": "gh skill install github/awesome-copilot acquire-codebase-knowledge",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/acquire-codebase-knowledge",
+      "docsUrl": "https://awesome-copilot.github.com/skills/",
+      "tags": [
+        "onboarding",
+        "architecture",
+        "documentation"
+      ],
+      "triggers": [],
+      "remoteSynced": true
+    },
+    {
+      "id": "skill-003",
+      "slug": "brainstorming",
+      "name": "brainstorming",
+      "displayName": "Brainstorming",
+      "platform": "Cursor",
+      "ecosystem": "cursor-superpowers",
+      "category": "创意与方案",
+      "sdePhase": "需求设计",
+      "rank": 3,
+      "featured": true,
+      "description": "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation.",
+      "introduction": "在写任何功能代码之前，强制进入结构化头脑风暴：澄清意图、探索 2–3 种方案、分段展示设计并逐段获得用户确认。防止 AI「一上来就写代码」导致方向跑偏。",
+      "useCases": [
+        {
+          "title": "新功能立项",
+          "scenario": "产品提出模糊需求「加个导出功能」，实现路径不明确。",
+          "prompt": "I want to add an export feature for user data",
+          "expected": "Skill 引导追问格式、权限、数据量，输出分段设计文档供确认后再实现。"
+        },
+        {
+          "title": "重构方案选型",
+          "scenario": "单体服务需要拆分，有多种架构选项。",
+          "prompt": "help me brainstorm how to split this monolith",
+          "expected": "列出多种方案及权衡，用户选定后再进入实现阶段。"
+        }
+      ],
+      "installCommand": "Cursor Plugin: superpowers",
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/brainstorming",
+      "docsUrl": "https://github.com/obra/superpowers",
+      "tags": [
+        "design",
+        "requirements",
+        "superpowers"
+      ],
+      "triggers": [],
+      "remoteSynced": true
+    },
+    {
+      "id": "skill-004",
+      "slug": "structured-autonomy-plan",
+      "name": "structured-autonomy-plan",
+      "displayName": "Structured Autonomy Plan",
+      "platform": "GitHub Copilot",
+      "ecosystem": "awesome-copilot",
+      "category": "实现规划",
+      "sdePhase": "规划拆解",
+      "rank": 4,
+      "featured": true,
+      "description": "Structured Autonomy Planning Prompt",
+      "introduction": "将用户需求拆解为可提交的实现计划：研究代码上下文 → 按 commit 粒度拆分步骤 → 写入 plans/{feature}/plan.md。与 implement skill 配对，实现 Plan/Implement 两阶段自治。",
+      "useCases": [
+        {
+          "title": "复杂功能多 commit 交付",
+          "scenario": "需要在单个 PR 内分 5 个可独立验证的 commit 完成支付模块。",
+          "prompt": "plan the payment integration feature",
+          "expected": "生成含 Branch、Steps、Testing 字段的 plan.md，每步对应一个 commit。"
+        }
+      ],
+      "installCommand": "gh skill install github/awesome-copilot structured-autonomy-plan",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/structured-autonomy-plan",
+      "docsUrl": "https://awesome-copilot.github.com/skills/",
+      "tags": [
+        "planning",
+        "commits",
+        "PR"
+      ],
+      "triggers": [],
+      "remoteSynced": true
+    },
+    {
+      "id": "skill-005",
+      "slug": "create-implementation-plan",
+      "name": "create-implementation-plan",
+      "displayName": "Create Implementation Plan",
+      "platform": "GitHub Copilot",
+      "ecosystem": "awesome-copilot",
+      "category": "实现规划",
+      "sdePhase": "规划拆解",
+      "rank": 5,
+      "featured": true,
+      "description": "Create a new implementation plan file for new features, refactoring existing code or upgrading packages, design, architecture or infrastructure.",
+      "introduction": "为新建功能、重构或依赖升级创建正式实现计划文件，明确范围、风险与验证方式。属于 project-planning 插件核心 skill，适合企业级规范流程。",
+      "useCases": [
+        {
+          "title": "框架大版本升级",
+          "scenario": "React 17 → 19 升级，需要分阶段计划。",
+          "prompt": "create an implementation plan for upgrading React to 19",
+          "expected": "输出分阶段计划，含影响文件、回滚策略与测试检查点。"
+        }
+      ],
+      "installCommand": "gh skill install github/awesome-copilot create-implementation-plan",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/create-implementation-plan",
+      "docsUrl": "https://awesome-copilot.github.com/skills/",
+      "tags": [
+        "spec",
+        "refactor",
+        "upgrade"
+      ],
+      "triggers": [],
+      "remoteSynced": true
+    },
+    {
+      "id": "skill-006",
+      "slug": "test-driven-development",
+      "name": "test-driven-development",
+      "displayName": "Test-Driven Development",
+      "platform": "Cursor",
+      "ecosystem": "cursor-superpowers",
+      "category": "测试驱动",
+      "sdePhase": "实现",
+      "rank": 6,
+      "featured": true,
+      "description": "Use when implementing any feature or bugfix, before writing implementation code",
+      "introduction": "强制执行红-绿-重构循环：先写失败测试 → 最小实现通过 → 重构。对抗 AI 编码最常见的「看起来对、实际错」问题，是 Cursor Superpowers 生态的核心纪律 skill。",
+      "useCases": [
+        {
+          "title": "新 API 端点开发",
+          "scenario": "需要为 /api/users 添加分页查询接口。",
+          "prompt": "implement paginated user list endpoint using TDD",
+          "expected": "先输出失败测试，再写最小实现，最后重构并确认全部测试通过。"
+        }
+      ],
+      "installCommand": "Cursor Plugin: superpowers",
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/test-driven-development",
+      "docsUrl": "https://github.com/obra/superpowers",
+      "tags": [
+        "TDD",
+        "red-green-refactor",
+        "superpowers"
+      ],
+      "triggers": [],
+      "remoteSynced": true
+    },
+    {
+      "id": "skill-007",
+      "slug": "eval-driven-dev",
+      "name": "eval-driven-dev",
+      "displayName": "Eval-Driven Development",
+      "platform": "GitHub Copilot",
+      "ecosystem": "awesome-copilot",
+      "category": "LLM 应用 QA",
+      "sdePhase": "测试评估",
+      "rank": 7,
+      "featured": true,
+      "description": "",
+      "introduction": "面向 Python LLM 应用的评估驱动开发：定义 eval 标准 → 插桩 → 构建 golden dataset → 运行 pixie test → 分析结果。解决传统单元测试无法覆盖的非确定性 AI 输出质量问题。",
+      "useCases": [
+        {
+          "title": "RAG 问答质量回归",
+          "scenario": "知识库问答机器人回答偶尔幻觉，需要可重复评估。",
+          "prompt": "set up evals for our RAG chatbot to catch hallucinations",
+          "expected": "建立 eval criteria、测试数据集与 LLM-as-judge 评分流水线。"
+        }
+      ],
+      "installCommand": "gh skill install github/awesome-copilot eval-driven-dev",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/eval-driven-dev",
+      "docsUrl": "https://awesome-copilot.github.com/skills/",
+      "tags": [
+        "eval",
+        "LLM",
+        "pixie",
+        "golden-dataset"
+      ],
+      "triggers": [],
+      "remoteSynced": false
+    },
+    {
+      "id": "skill-008",
+      "slug": "security-review",
+      "name": "security-review",
+      "displayName": "Security Review",
+      "platform": "GitHub Copilot",
+      "ecosystem": "awesome-copilot",
+      "category": "应用安全",
+      "sdePhase": "安全审查",
+      "rank": 8,
+      "featured": true,
+      "description": "AI-powered codebase security scanner that reasons about code like a security researcher — tracing data flows, understanding component interactions, and catching vulnerabilities that pattern-matching tools miss. Use this skill when asked to scan code for security vulnerabilities, find bugs, check for SQL injection, XSS, command injection, exposed API keys, hardcoded secrets, insecure dependencies, access control issues, or any request like \"is my code secure?\", \"review for security issues\", \"audit this codebase\", or \"check for vulnerabilities\". Covers injection flaws, authentication and access control bugs, secrets exposure, weak cryptography, insecure dependencies, and business logic issues across JavaScript, TypeScript, Python, Java, PHP, Go, Ruby, and Rust.",
+      "introduction": "AI 驱动的代码安全审查：追踪数据流、审计依赖 CVE、扫描硬编码密钥，按 CRITICAL/HIGH/MEDIUM 分级并给出修复补丁建议。附带语言特定漏洞模式参考库。",
+      "useCases": [
+        {
+          "title": "合并前安全门禁",
+          "scenario": "PR 涉及认证模块改动，需在 merge 前做安全扫描。",
+          "prompt": "run security review on src/auth/",
+          "expected": "输出分级漏洞清单，每项含文件位置、类型与具体修复建议。"
+        }
+      ],
+      "installCommand": "gh skill install github/awesome-copilot security-review",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/security-review",
+      "docsUrl": "https://awesome-copilot.github.com/skills/",
+      "tags": [
+        "SAST",
+        "OWASP",
+        "secrets",
+        "CVE"
+      ],
+      "triggers": [],
+      "remoteSynced": true
+    },
+    {
+      "id": "skill-009",
+      "slug": "systematic-debugging",
+      "name": "systematic-debugging",
+      "displayName": "Systematic Debugging",
+      "platform": "Cursor",
+      "ecosystem": "cursor-superpowers",
+      "category": "问题定位",
+      "sdePhase": "调试排错",
+      "rank": 9,
+      "featured": true,
+      "description": "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes",
+      "introduction": "系统化调试流程：先复现 → 收集 runtime 证据 → 定位根因 → 再修复。禁止无证据的猜测性修复，专门针对 AI Agent 常见的「试一把」式 debug 坏习惯。",
+      "useCases": [
+        {
+          "title": "间歇性 500 错误",
+          "scenario": "生产环境 API 偶发 500，日志信息不足。",
+          "prompt": "debug intermittent 500 errors on /api/checkout",
+          "expected": "要求复现步骤与日志证据，形成假设树并逐一验证后再改代码。"
+        }
+      ],
+      "installCommand": "Cursor Plugin: superpowers",
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/systematic-debugging",
+      "docsUrl": "https://github.com/obra/superpowers",
+      "tags": [
+        "debug",
+        "root-cause",
+        "superpowers"
+      ],
+      "triggers": [],
+      "remoteSynced": true
+    },
+    {
+      "id": "skill-010",
+      "slug": "doublecheck",
+      "name": "doublecheck",
+      "displayName": "Doublecheck",
+      "platform": "GitHub Copilot",
+      "ecosystem": "awesome-copilot",
+      "category": "防幻觉",
+      "sdePhase": "输出验证",
+      "rank": 10,
+      "featured": true,
+      "description": "Three-layer verification pipeline for AI output. Extracts verifiable claims, finds supporting or contradicting sources via web search, runs adversarial review for hallucination patterns, and produces a structured verification report with source links for human review.",
+      "introduction": "三层验证流水线：提取可验证声明 → 网络搜索佐证/反驳 → 对抗性审查幻觉模式。输出带来源链接的验证报告，适合架构决策、合规分析等高风险 AI 输出场景。",
+      "useCases": [
+        {
+          "title": "技术选型报告核验",
+          "scenario": "Agent 生成数据库选型对比，需确认引用数据真实。",
+          "prompt": "doublecheck the database comparison you just wrote",
+          "expected": "逐条标注 VERIFIED / PLAUSIBLE / FABRICATION RISK 及来源 URL。"
+        }
+      ],
+      "installCommand": "gh skill install github/awesome-copilot doublecheck",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/doublecheck",
+      "docsUrl": "https://awesome-copilot.github.com/skills/",
+      "tags": [
+        "verification",
+        "hallucination",
+        "fact-check"
+      ],
+      "triggers": [],
+      "remoteSynced": true
+    },
+    {
+      "id": "skill-011",
+      "slug": "harness-engineering",
+      "name": "harness-engineering",
+      "displayName": "Harness Engineering",
+      "platform": "GitHub Copilot",
+      "ecosystem": "awesome-copilot",
+      "category": "Agent 治理",
+      "sdePhase": "持续治理",
+      "rank": 11,
+      "featured": true,
+      "description": "Adopt repository-level harness engineering for coding agents. Use when a user wants to prevent repeated AI coding-agent mistakes by turning failures into durable instructions, drift checks, regression tests, failure memory, and adoption reports tailored to the target repository.",
+      "introduction": "将 Agent 反复犯的错误沉淀为仓库级治理资产：instructions、约束、反馈回路、失败记忆、评估与漂移检查。Harness = Instructions + Constraints + Feedback + Memory + Evaluation + Governance。",
+      "useCases": [
+        {
+          "title": "Agent 反复犯同一错误",
+          "scenario": "Copilot 总在错误目录创建测试文件。",
+          "prompt": "improve the agent harness so tests always go in tests/",
+          "expected": "更新 instructions、添加 drift 检查或 CI 规则防止复发。"
+        }
+      ],
+      "installCommand": "gh skill install github/awesome-copilot harness-engineering",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/harness-engineering",
+      "docsUrl": "https://awesome-copilot.github.com/skills/",
+      "tags": [
+        "governance",
+        "drift-check",
+        "regression"
+      ],
+      "triggers": [],
+      "remoteSynced": true
+    },
+    {
+      "id": "skill-012",
+      "slug": "ai-team-orchestration",
+      "name": "ai-team-orchestration",
+      "displayName": "AI Team Orchestration",
+      "platform": "GitHub Copilot",
+      "ecosystem": "awesome-copilot",
+      "category": "团队编排",
+      "sdePhase": "多 Agent 协作",
+      "rank": 12,
+      "featured": true,
+      "description": "Bootstrap and run a multi-agent AI development team. Use when: starting a new software project with AI agents, setting up parallel dev/QA teams, creating sprint plans, writing brainstorm prompts with distinct agent voices, recovering a project workflow, or planning sprints.",
+      "introduction": "启动多 Agent AI 开发团队：定义 Producer/Dev/QA 角色、编写 sprint 计划、生成带 distinct voices 的 brainstorm prompt，支持并行开发与跨会话上下文延续。",
+      "useCases": [
+        {
+          "title": "Greenfield 项目启动",
+          "scenario": "从零开始用多个 Agent 并行开发 Web 应用。",
+          "prompt": "bootstrap an AI dev team for a new todo app",
+          "expected": "输出 project brief、sprint plan 与角色分工模板。"
+        }
+      ],
+      "installCommand": "gh skill install github/awesome-copilot ai-team-orchestration",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/ai-team-orchestration",
+      "docsUrl": "https://awesome-copilot.github.com/skills/",
+      "tags": [
+        "multi-agent",
+        "sprint",
+        "parallel"
+      ],
+      "triggers": [],
+      "remoteSynced": true
+    },
+    {
+      "id": "skill-013",
+      "slug": "verification-before-completion",
+      "name": "verification-before-completion",
+      "displayName": "Verification Before Completion",
+      "platform": "Cursor",
+      "ecosystem": "cursor-superpowers",
+      "category": "完成前验证",
+      "sdePhase": "输出验证",
+      "rank": 13,
+      "featured": false,
+      "description": "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always",
+      "introduction": "在声称任务完成、测试通过或 bug 已修复之前，必须运行验证命令并确认输出。Evidence before assertions — 防止 AI 未跑测试就宣布「已修复」。",
+      "useCases": [
+        {
+          "title": "修复后确认",
+          "scenario": "Agent 声称修复了 lint 错误。",
+          "prompt": "fix the lint errors and verify",
+          "expected": "实际运行 linter，展示通过输出后才标记完成。"
+        }
+      ],
+      "installCommand": "Cursor Plugin: superpowers",
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/verification-before-completion",
+      "docsUrl": "https://github.com/obra/superpowers",
+      "tags": [
+        "verification",
+        "evidence",
+        "superpowers"
+      ],
+      "triggers": [],
+      "remoteSynced": true
+    },
+    {
+      "id": "skill-014",
+      "slug": "agentic-eval",
+      "name": "agentic-eval",
+      "displayName": "Agentic Eval",
+      "platform": "GitHub Copilot",
+      "ecosystem": "awesome-copilot",
+      "category": "Agent 质量",
+      "sdePhase": "测试评估",
+      "rank": 14,
+      "featured": false,
+      "description": "|",
+      "introduction": "Agent 输出自我评估与迭代改进模式：Generate → Evaluate → Critique → Refine 循环，支持 rubric 评分与 LLM-as-judge，适合质量敏感的分析与代码生成任务。",
+      "useCases": [
+        {
+          "title": "报告质量提升",
+          "scenario": "自动生成的架构报告需要二次润色达到发布标准。",
+          "prompt": "generate architecture report with self-critique loop",
+          "expected": "首轮草稿后经自评迭代，按 rubric 打分直至达标。"
+        }
+      ],
+      "installCommand": "gh skill install github/awesome-copilot agentic-eval",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/agentic-eval",
+      "docsUrl": "https://awesome-copilot.github.com/skills/",
+      "tags": [
+        "self-critique",
+        "reflection",
+        "rubric"
+      ],
+      "triggers": [],
+      "remoteSynced": true
+    },
+    {
+      "id": "skill-015",
+      "slug": "context-map",
+      "name": "context-map",
+      "displayName": "Context Map",
+      "platform": "GitHub Copilot",
+      "ecosystem": "awesome-copilot",
+      "category": "上下文管理",
+      "sdePhase": "代码理解",
+      "rank": 15,
+      "featured": false,
+      "description": "Generate a map of all files relevant to a task before making changes",
+      "introduction": "在动手改代码前，生成与任务相关的文件地图，明确影响范围与依赖关系。属于 context-engineering 插件，最大化 Copilot 上下文效率。",
+      "useCases": [
+        {
+          "title": "大重构前摸底",
+          "scenario": "重命名核心模块前需弄清所有引用点。",
+          "prompt": "map all files relevant to renaming AuthService",
+          "expected": "列出直接/间接相关文件及修改优先级。"
+        }
+      ],
+      "installCommand": "gh skill install github/awesome-copilot context-map",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/context-map",
+      "docsUrl": "https://awesome-copilot.github.com/skills/",
+      "tags": [
+        "context",
+        "refactor",
+        "impact"
+      ],
+      "triggers": [],
+      "remoteSynced": true
+    }
+  ]
+}
