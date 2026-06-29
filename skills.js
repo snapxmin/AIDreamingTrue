@@ -181,7 +181,7 @@ function bindFilters(state, ui, onChange) {
 
 function applyFilters(skills, state) {
   return skills.filter((skill) => {
-    if (state.platform !== "all" && skill.platform !== state.platform) return false;
+    if (!skillMatchesPlatform(skill, state.platform)) return false;
     if (state.phase !== "all" && skill.sdePhase !== state.phase) return false;
     if (state.category !== "all" && skill.category !== state.category) return false;
     if (state.featuredOnly && !skill.featured) return false;
@@ -192,6 +192,7 @@ function applyFilters(skills, state) {
         skill.description,
         skill.introduction,
         skill.platform,
+        ...(skill.platforms || []),
         skill.sdePhase,
         skill.category,
         ...(skill.tags || [])
@@ -204,10 +205,31 @@ function applyFilters(skills, state) {
   });
 }
 
+function platformBadgeClass(platform) {
+  if (!platform) return "platform-default";
+  if (platform.includes("Cursor")) return "platform-cursor";
+  if (platform.includes("Copilot")) return "platform-copilot";
+  if (platform.includes("Claude")) return "platform-claude";
+  if (platform.includes("Codex")) return "platform-codex";
+  if (platform.includes("OpenCode")) return "platform-opencode";
+  return "platform-default";
+}
+
+function skillMatchesPlatform(skill, platformFilter) {
+  if (platformFilter === "all") return true;
+  const all = skill.platforms || [skill.platform];
+  return all.includes(platformFilter) || skill.platform === platformFilter;
+}
+
+function renderPlatformBadges(skill) {
+  const platforms = skill.platforms || [skill.platform];
+  return platforms
+    .map((p) => `<span class="badge ${platformBadgeClass(p)}">${escapeHtml(p)}</span>`)
+    .join("");
+}
 function renderSkillGrid(skills, state, ui) {
   ui.grid.innerHTML = skills
     .map((skill) => {
-      const platformClass = skill.platform.includes("Cursor") ? "platform-cursor" : "platform-copilot";
       return `
         <article class="skill-card${skill.id === state.activeId ? " active" : ""}" role="listitem" data-id="${escapeHtml(skill.id)}" tabindex="0">
           <div class="skill-card-header">
@@ -216,7 +238,7 @@ function renderSkillGrid(skills, state, ui) {
           </div>
           <p class="skill-desc">${escapeHtml(skill.description || skill.introduction || "")}</p>
           <div class="skill-tags">
-            <span class="badge ${platformClass}">${escapeHtml(skill.platform)}</span>
+            ${renderPlatformBadges(skill)}
             <span class="badge phase">${escapeHtml(skill.sdePhase)}</span>
             ${skill.featured ? '<span class="badge featured">精选</span>' : ""}
           </div>
@@ -272,7 +294,7 @@ function buildSkillDetailHtml(skill, inModal) {
   return `
     <h3>${escapeHtml(skill.displayName)} <span class="skill-rank">#${skill.rank}</span></h3>
     <div class="skill-tags" style="margin-bottom:12px">
-      <span class="badge ${skill.platform.includes("Cursor") ? "platform-cursor" : "platform-copilot"}">${escapeHtml(skill.platform)}</span>
+      ${renderPlatformBadges(skill)}
       <span class="badge phase">${escapeHtml(skill.sdePhase)}</span>
       <span class="badge">${escapeHtml(skill.category)}</span>
       ${skill.featured ? '<span class="badge featured">精选</span>' : ""}
@@ -347,6 +369,7 @@ function escapeHtml(value) {
     .replace(/"/g, "&quot;");
 }
 
+const FALLBACK_SKILLS = {
   meta: { totalCount: 2, featuredCount: 2, lastUpdated: new Date().toISOString() },
   sdePhases: ["环境准备", "实现"],
   platforms: ["GitHub Copilot", "Cursor"],
