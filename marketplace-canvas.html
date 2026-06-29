@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cursor Marketplace 深度调研 · Canvas</title>
+    <link rel="stylesheet" href="./marketplace-canvas.css" />
+  </head>
+  <body class="canvas-page">
+    <header class="canvas-header">
+      <div>
+        <h1>Cursor Marketplace 深度调研</h1>
+        <p id="reportMeta">加载数据中…</p>
+      </div>
+      <a class="nav-link" href="./index.html">← 返回门户首页</a>
+    </header>
+
+    <div class="canvas-shell">
+      <nav class="canvas-toc" aria-label="报告目录">
+        <h2>目录</h2>
+        <a href="#summary">执行摘要</a>
+        <a href="#architecture">架构与数据流</a>
+        <a href="#organization">内容组织方式</a>
+        <a href="#primitives">插件原语剖析</a>
+        <a href="#categories">分类全景</a>
+        <a href="#explorer">插件浏览器</a>
+        <a href="#automations">自动化工作流</a>
+        <a href="#official">官方 GitHub 仓库</a>
+        <a href="#insights">数据洞察</a>
+        <a href="#methodology">采集方法论</a>
+      </nav>
+
+      <main class="canvas-main" id="canvasMain">
+        <p class="loading" id="loadingState">正在加载 marketplace_report.json…</p>
+      </main>
+    </div>
+
+    <aside class="detail-panel" id="detailPanel" aria-hidden="true">
+      <button type="button" class="close-btn" id="closeDetail" aria-label="关闭">×</button>
+      <div id="detailContent"></div>
+    </aside>
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script src="./marketplace-canvas.js"></script>
+  </body>
+</html>
