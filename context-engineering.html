@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>上下文工程 · AI Coding 信息平台</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./context-engineering.css" />
+  </head>
+  <body class="ce-page">
+    <header class="top ce-header">
+      <div class="header-row">
+        <div>
+          <h1>上下文工程</h1>
+          <p>业界主流 Coding Agent 的上下文架构、检索算法与可扩展设计 · 来源：官方博客、技术文档、arXiv 论文 · 每 3 天自动更新</p>
+        </div>
+        <nav class="site-nav" aria-label="站点导航">
+          <a class="nav-link" href="./index.html">门户首页</a>
+          <a class="nav-link" href="./evolution.html">竞品演进</a>
+          <a class="nav-link" href="./skills.html">Skill 库</a>
+          <a class="nav-link" href="./mcp.html">MCP 库</a>
+          <a class="nav-link" href="./best-practices.html">最佳实践</a>
+          <a class="nav-link active" href="./context-engineering.html" aria-current="page">上下文工程</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="panel ce-meta" id="ceMeta"></section>
+
+    <nav class="panel ce-topic-nav" aria-label="主题筛选">
+      <div id="ceTopicTabs" class="ce-topic-tabs"></div>
+    </nav>
+
+    <nav class="panel ce-competitor-nav" aria-label="竞品筛选">
+      <div id="ceCompetitorTabs" class="ce-competitor-tabs"></div>
+    </nav>
+
+    <main class="ce-main">
+      <aside class="panel ce-filters">
+        <h2>筛选</h2>
+        <input id="ceSearch" type="search" placeholder="搜索标题、摘要、标签..." />
+
+        <label for="ceSourceFilter">来源类型</label>
+        <select id="ceSourceFilter">
+          <option value="all">全部来源</option>
+        </select>
+
+        <label class="checkbox-row">
+          <input id="ceCuratedOnly" type="checkbox" />
+          仅显示策展精选
+        </label>
+
+        <div class="sync-info" id="ceSyncInfo"></div>
+      </aside>
+
+      <section class="panel ce-content">
+        <div class="section-title">
+          <h2>文章列表</h2>
+          <span id="ceCount"></span>
+        </div>
+        <div id="ceList" class="ce-list" role="list"></div>
+        <p id="emptyCe" class="empty-state" hidden>没有匹配的文章。</p>
+      </section>
+
+      <aside class="panel ce-detail-panel">
+        <h2>详情</h2>
+        <article id="ceDetail" class="ce-detail">
+          <p>请从左侧列表选择一篇文章查看详情与来源链接。</p>
+        </article>
+      </aside>
+    </main>
+
+    <script src="./context-engineering.js?v=1"></script>
+  </body>
+</html>
