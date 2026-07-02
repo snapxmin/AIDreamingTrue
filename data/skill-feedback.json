@@ -1,0 +1,520 @@
+{
+  "meta": {
+    "lastUpdated": "2026-07-02T11:23:03Z",
+    "skillCount": 20,
+    "totalComments": 32,
+    "sources": [
+      "hacker-news",
+      "github",
+      "reddit"
+    ],
+    "note": "来自 HN / GitHub Issues / Reddit 的公开用户讨论，按相关性与热度筛选。"
+  },
+  "feedbackBySkill": {
+    "superpowers/brainstorming": {
+      "slug": "brainstorming",
+      "ecosystem": "superpowers",
+      "displayName": "Brainstorming",
+      "feedbackCount": 0,
+      "comments": []
+    },
+    "superpowers/test-driven-development": {
+      "slug": "test-driven-development",
+      "ecosystem": "superpowers",
+      "displayName": "Test-Driven Development",
+      "feedbackCount": 1,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jfiscman",
+          "date": "2026-05-19",
+          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
+          "url": "https://github.com/obra/superpowers/issues/1581",
+          "score": 13,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    "superpowers/writing-plans": {
+      "slug": "writing-plans",
+      "ecosystem": "superpowers",
+      "displayName": "Writing Plans",
+      "feedbackCount": 0,
+      "comments": []
+    },
+    "superpowers/systematic-debugging": {
+      "slug": "systematic-debugging",
+      "ecosystem": "superpowers",
+      "displayName": "Systematic Debugging",
+      "feedbackCount": 2,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jfiscman",
+          "date": "2026-05-19",
+          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
+          "url": "https://github.com/obra/superpowers/issues/1581",
+          "score": 13,
+          "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1859-pixeru",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "pixeru",
+          "date": "2026-06-29",
+          "text": "Support Hermes Agent as a Superpowers harness <html> <body> <!--StartFragment--><html><head></head><body><p>I’d like to add another user case for Hermes Agent support.</p><p>My use case is using Hermes Agent as my main coding harness, especially for larger game development / Unreal Engine workflows where I want the agent to follow a stronger engineering methodology instead of improvising each session. Superpowers already gives that structure in other harnesses, but Hermes users currently have to either manually port skills, copy/paste instructions into <code inline=\"\">SOUL.md</code>, or delega",
+          "url": "https://github.com/obra/superpowers/issues/1859",
+          "score": 0,
+          "sentiment": "negative"
+        }
+      ]
+    },
+    "superpowers/verification-before-completion": {
+      "slug": "verification-before-completion",
+      "ecosystem": "superpowers",
+      "displayName": "Verification Before Completion",
+      "feedbackCount": 3,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jfiscman",
+          "date": "2026-05-19",
+          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
+          "url": "https://github.com/obra/superpowers/issues/1581",
+          "score": 13,
+          "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1545-wingsofpanda",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "WingsOfPanda",
+          "date": "2026-05-14",
+          "text": "executing-plans: STOP triggers cause silent multi-hour stalls; need to harmonize with subagent-driven-development's Continuous execution rule ## Summary `superpowers:executing-plans` SKILL.md (lines 48-55) contains STOP triggers that fire on minor ambiguities, while `superpowers:subagent-driven-development` SKILL.md (line 14) has the correct rule (\"Continuous execution: do not pause\"). When `executing-plans` is in effect without an explicit subagent-driven mode, the STOP triggers cause the agent to halt mid-task and \"ask for clarification\" — but the question often gets buried in a recap rather",
+          "url": "https://github.com/obra/superpowers/issues/1545",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1859-pixeru",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "pixeru",
+          "date": "2026-06-29",
+          "text": "Support Hermes Agent as a Superpowers harness <html> <body> <!--StartFragment--><html><head></head><body><p>I’d like to add another user case for Hermes Agent support.</p><p>My use case is using Hermes Agent as my main coding harness, especially for larger game development / Unreal Engine workflows where I want the agent to follow a stronger engineering methodology instead of improvising each session. Superpowers already gives that structure in other harnesses, but Hermes users currently have to either manually port skills, copy/paste instructions into <code inline=\"\">SOUL.md</code>, or delega",
+          "url": "https://github.com/obra/superpowers/issues/1859",
+          "score": 0,
+          "sentiment": "negative"
+        }
+      ]
+    },
+    "superpowers/subagent-driven-development": {
+      "slug": "subagent-driven-development",
+      "ecosystem": "superpowers",
+      "displayName": "Subagent-Driven Development",
+      "feedbackCount": 2,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1888-glen-84",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "glen-84",
+          "date": "2026-07-01",
+          "text": "subagent-driven-development: .superpowers/sdd scratch artifacts are never pruned and silently collide across efforts ## What problem does this solve? The `subagent-driven-development` skill writes per-task scratch artifacts to `.superpowers/sdd/` — `task-N-brief.md`, `task-N-report.md`, and a `review-*.diff` (or `task-N-review.diff`) per task, plus the `progress.md` ledger. Nothing ever prunes them. There is no cleanup step in the skill itself nor in `finishing-a-development-branch`, so the directory grows without bound and mixes artifacts from unrelated, already-merged efforts. Two concrete f",
+          "url": "https://github.com/obra/superpowers/issues/1888",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1883-jabberwocky1989",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Jabberwocky1989",
+          "date": "2026-07-01",
+          "text": "Codex-visible skills need Codex host adapter wording # Codex-visible Superpowers skills need Codex host adapter wording ## Summary The Superpowers plugin skills are visible in Codex, but several skill bodies still contain Claude Code-specific operational guidance. In a Codex session this can mislead agents into looking for unavailable tools or following the wrong task-tracking workflow. ## Affected Skills Observed - `using-superpowers` - `brainstorming` - `subagent-driven-development` - `executing-plans` - `requesting-code-review` - `dispatching-parallel-agents` - `writing-skills` ## Environme",
+          "url": "https://github.com/obra/superpowers/issues/1883",
+          "score": 0,
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    "superpowers/requesting-code-review": {
+      "slug": "requesting-code-review",
+      "ecosystem": "superpowers",
+      "displayName": "Requesting Code Review",
+      "feedbackCount": 2,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jfiscman",
+          "date": "2026-05-19",
+          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
+          "url": "https://github.com/obra/superpowers/issues/1581",
+          "score": 13,
+          "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1883-jabberwocky1989",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Jabberwocky1989",
+          "date": "2026-07-01",
+          "text": "Codex-visible skills need Codex host adapter wording # Codex-visible Superpowers skills need Codex host adapter wording ## Summary The Superpowers plugin skills are visible in Codex, but several skill bodies still contain Claude Code-specific operational guidance. In a Codex session this can mislead agents into looking for unavailable tools or following the wrong task-tracking workflow. ## Affected Skills Observed - `using-superpowers` - `brainstorming` - `subagent-driven-development` - `executing-plans` - `requesting-code-review` - `dispatching-parallel-agents` - `writing-skills` ## Environme",
+          "url": "https://github.com/obra/superpowers/issues/1883",
+          "score": 0,
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    "superpowers/using-superpowers": {
+      "slug": "using-superpowers",
+      "ecosystem": "superpowers",
+      "displayName": "Using Superpowers",
+      "feedbackCount": 2,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1889-thoaud",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "thoaud",
+          "date": "2026-07-01",
+          "text": "SessionStart using-superpowers block is inherited into read-only subagents that can't use it — per-turn tax ## Problem Your `hooks/session-start` injects the `using-superpowers` skill (wrapped in `<EXTREMELY_IMPORTANT>`) into `additionalContext` — deliberately, to force the onboarding in the main session. Current payload measured on `6.1.0`: ``` CLAUDE_PLUGIN_ROOT=<root> bash hooks/session-start | jq -r '.hookSpecificOutput.additionalContext' | wc -c # => 3289 chars (~820 tokens) ``` The issue isn't the size in the main session — that's intended. It's that Claude Code **inherits** the main ses",
+          "url": "https://github.com/obra/superpowers/issues/1889",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1883-jabberwocky1989",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Jabberwocky1989",
+          "date": "2026-07-01",
+          "text": "Codex-visible skills need Codex host adapter wording # Codex-visible Superpowers skills need Codex host adapter wording ## Summary The Superpowers plugin skills are visible in Codex, but several skill bodies still contain Claude Code-specific operational guidance. In a Codex session this can mislead agents into looking for unavailable tools or following the wrong task-tracking workflow. ## Affected Skills Observed - `using-superpowers` - `brainstorming` - `subagent-driven-development` - `executing-plans` - `requesting-code-review` - `dispatching-parallel-agents` - `writing-skills` ## Environme",
+          "url": "https://github.com/obra/superpowers/issues/1883",
+          "score": 0,
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    "awesome-copilot/ai-ready": {
+      "slug": "ai-ready",
+      "ecosystem": "awesome-copilot",
+      "displayName": "AI Ready",
+      "feedbackCount": 3,
+      "comments": [
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-1750-johnpapa",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "johnpapa",
+          "date": "2026-05-18",
+          "text": "[External Plugin]: ai-ready <!-- external-plugin-submission --> ### Plugin name ai-ready ### Short description Analyze any repository and generate AI-ready configuration — AGENTS.md, copilot-instructions.md, CI workflows, issue templates, and more. Mines your PR review patterns and creates files customized to your stack. ### GitHub repository johnpapa/ai-ready ### Plugin path inside the repository .github/plugin ### Immutable ref to review b993d6512c918d8a21a61b7931726f5980c3c920 ### Version 1.0.0 ### License identifier MIT ### Author name John Papa ### Author URL https://github.com/johnpapa #",
+          "url": "https://github.com/github/awesome-copilot/issues/1750",
+          "score": 5,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-1774-sophio-japharidze-sonarsource",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "sophio-japharidze-sonarsource",
+          "date": "2026-05-20",
+          "text": "Installing a plugin with commit sha as ref fails Hello! When trying to install plugin that has a commit sha fixed in `external.json` fails with an error. Steps to reproduce: * Run `/plugin install sonarqube@awesome-copilot` command * Observe the error ``` ✗ Failed to install plugin: Failed to fetch GitHub plugin SonarSource/sonarqube-agent-plugins: Error: Command failed: git clone --depth 1 --progress --branch b1492121b8591fba7dc477392ae0ea6be924fb31 https://github.com/SonarSource/sonarqube-agent-plugins.git /Users/sophio.japharidze/Library/Caches/copilot/marketplaces/SonarSource--sonarqube-ag",
+          "url": "https://github.com/github/awesome-copilot/issues/1774",
+          "score": 3,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-2058-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-06-19",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 705 resources - **Aging (14–30 days):** 26 resources - **Fresh (<14 days):** 46 resources (not listed below) --- ### 🔴 Stale Resources (>30 days since last major change) > 705 resources — collapsed for readability <details> <summary>Click to expand — 705 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instructions/nextjs-tailwind.instructions.md` | Instruction | 2025-07-02 | 352 | | `instructions/localization.instructions.md` | Instruction | 2025-07",
+          "url": "https://github.com/github/awesome-copilot/issues/2058",
+          "score": 1,
+          "sentiment": "negative"
+        }
+      ]
+    },
+    "awesome-copilot/security-review": {
+      "slug": "security-review",
+      "ecosystem": "awesome-copilot",
+      "displayName": "Security Review",
+      "feedbackCount": 0,
+      "comments": []
+    },
+    "awesome-copilot/eval-driven-dev": {
+      "slug": "eval-driven-dev",
+      "ecosystem": "awesome-copilot",
+      "displayName": "Eval-Driven Development",
+      "feedbackCount": 0,
+      "comments": []
+    },
+    "awesome-copilot/harness-engineering": {
+      "slug": "harness-engineering",
+      "ecosystem": "awesome-copilot",
+      "displayName": "Harness Engineering",
+      "feedbackCount": 0,
+      "comments": []
+    },
+    "awesome-copilot/acquire-codebase-knowledge": {
+      "slug": "acquire-codebase-knowledge",
+      "ecosystem": "awesome-copilot",
+      "displayName": "Acquire Codebase Knowledge",
+      "feedbackCount": 1,
+      "comments": [
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-2058-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-06-19",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 705 resources - **Aging (14–30 days):** 26 resources - **Fresh (<14 days):** 46 resources (not listed below) --- ### 🔴 Stale Resources (>30 days since last major change) > 705 resources — collapsed for readability <details> <summary>Click to expand — 705 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instructions/nextjs-tailwind.instructions.md` | Instruction | 2025-07-02 | 352 | | `instructions/localization.instructions.md` | Instruction | 2025-07",
+          "url": "https://github.com/github/awesome-copilot/issues/2058",
+          "score": 1,
+          "sentiment": "negative"
+        }
+      ]
+    },
+    "anthropics-skills/frontend-design": {
+      "slug": "frontend-design",
+      "ecosystem": "anthropics-skills",
+      "displayName": "Frontend Design",
+      "feedbackCount": 3,
+      "comments": [
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-189-chuggies510",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "chuggies510",
+          "date": "2025-12-30",
+          "text": "document-skills and example-skills plugins install identical content, causing duplicate skills ## Description When installing both `document-skills` and `example-skills` plugins from `anthropic-agent-skills`, they contain **identical skills**, causing duplicates in Claude Code's context window. ## Expected Behavior According to the repo README: - `document-skills` should contain only the production document skills (docx, pdf, pptx, xlsx) - `example-skills` should contain the open-source educational examples (algorithmic-art, canvas-design, etc.) ## Actual Behavior Both plugins install **all 17",
+          "url": "https://github.com/anthropics/skills/issues/189",
+          "score": 6,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1087-jianghe12",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "JiangHe12",
+          "date": "2026-05-04",
+          "text": "document-skills plugin loads all skills from repo instead of only declared ones in marketplace.json ## Description When installing the `document-skills` plugin via `/plugin install document-skills@anthropic-agent-skills`, **all 17 skills** from the repository are loaded, instead of only the **4 skills** declared in `marketplace.json`. ## Expected Behavior According to `.claude-plugin/marketplace.json`, the `document-skills` plugin declares only 4 skills: ```json { \"name\": \"document-skills\", \"skills\": [ \"./skills/xlsx\", \"./skills/docx\", \"./skills/pptx\", \"./skills/pdf\" ] } ``` Only these 4 skill",
+          "url": "https://github.com/anthropics/skills/issues/1087",
+          "score": 2,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1109-harishwtf",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "harishwtf",
+          "date": "2026-05-08",
+          "text": "Add saas-motion-ideation skill: pre-production & creative ideation for SaaS marketing motion design ## Proposal A skill for **pre-production and creative ideation** of SaaS marketing motion design pieces — the thinking that happens *before* any animation or video production begins. This fills a gap in the current skills library. Existing skills cover frontend design, web artifacts, and document creation, but nothing addresses the **creative strategy and storyboarding** phase of marketing content. ## What it does Guides Claude through the full pre-production process for SaaS feature launch vide",
+          "url": "https://github.com/anthropics/skills/issues/1109",
+          "score": 0,
+          "sentiment": "negative"
+        }
+      ]
+    },
+    "anthropics-skills/skill-creator": {
+      "slug": "skill-creator",
+      "ecosystem": "anthropics-skills",
+      "displayName": "Skill Creator",
+      "feedbackCount": 5,
+      "comments": [
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1061-just2majic",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "just2majic",
+          "date": "2026-04-28",
+          "text": "Windows compatibility: skill-creator scripts fail (subprocess PATHEXT, cp1252 encoding, select on pipes) ## Summary Running `python -m scripts.run_loop` (or `run_eval` directly) on native Windows Python 3.14 hits three compatibility issues, all rooted in Unix-first assumptions in `scripts/run_eval.py` and adjacent files. The third is the blocker — without it, the optimizer cannot evaluate any query on Windows. ## Environment - OS: Windows 11 Pro (10.0.26200) - Python: 3.14.3 (native Windows, not WSL) - Claude CLI: installed via npm at `~/AppData/Roaming/npm/claude.cmd` - skill-creator: latest ",
+          "url": "https://github.com/anthropics/skills/issues/1061",
+          "score": 3,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1169-tazmad",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "tazmad",
+          "date": "2026-05-20",
+          "text": "skill-creator description-optimisation loop: recall=0% on every iteration, including literal slash-command queries ## Summary When running `scripts/run_loop.py` (or `scripts/improve_description.py`) against a skill that already has a defined slash-command name, every iteration scores **precision=100%, recall=0%, accuracy=50%** — including queries that are the literal slash-command invocation of that skill. The score is identical across iterations regardless of how much the candidate description changes, so the loop produces no usable signal for description tuning. ## Environment - skill-creato",
+          "url": "https://github.com/anthropics/skills/issues/1169",
+          "score": 3,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-267-materialofair",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "materialofair",
+          "date": "2026-01-22",
+          "text": "Proposal: Add skill-debugger to Official Skills Repository # Proposal: Add skill-debugger to Official Skills Repository ## Summary I've developed a **skill-debugger** that helps users diagnose and fix why their Claude Code skills aren't triggering as expected. It complements the existing `skill-creator` by addressing the most common pain point after skill creation: **skill discovery and triggering issues**. ## Problem It Solves After creating a skill using `skill-creator`, users frequently encounter these issues: - ✅ Skill exists but never triggers (80% - vague descriptions) - ✅ Wrong skill tr",
+          "url": "https://github.com/anthropics/skills/issues/267",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1260-alvingarcia",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "alvingarcia",
+          "date": "2026-06-04",
+          "text": "skill-creator: trigger eval writes {skill}-skill-{hash} command files into the live project's .claude/commands/, polluting the skill registry of concurrent sessions ## Summary `skill-creator`'s trigger evaluation (`skills/skill-creator/scripts/run_eval.py`) tests description variants by writing synthetic command files named `{skill_name}-skill-{8hex}.md` directly into the **user's live project** `.claude/commands/` directory. With the default `--num-workers 10`, up to ~10 of these files exist simultaneously during the eval window. Every concurrent Claude Code session rooted at that project see",
+          "url": "https://github.com/anthropics/skills/issues/1260",
+          "score": 1,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1304-nhosler",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "nhosler",
+          "date": "2026-06-10",
+          "text": "Windows: eval/optimize harness broken — cp1252 read_text() crash + nested claude -p WinError 10038 silently zeroes all results ## Environment - OS: Windows 11 - Python 3.14.4 - `skill-creator` from `anthropics/skills` (example-skills plugin), run via `python -m scripts.run_loop` Two Windows bugs make the eval / description-optimization harness unusable; the second is the dangerous one because it **fails silently and reports plausible-looking but meaningless metrics**. ## Bug 1 — `parse_skill_md` crashes on any non-cp1252 SKILL.md (blocking) `scripts/utils.py:9` reads SKILL.md with no explicit ",
+          "url": "https://github.com/anthropics/skills/issues/1304",
+          "score": 1,
+          "sentiment": "negative"
+        }
+      ]
+    },
+    "anthropics-skills/mcp-builder": {
+      "slug": "mcp-builder",
+      "ecosystem": "anthropics-skills",
+      "displayName": "MCP Builder",
+      "feedbackCount": 3,
+      "comments": [
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1328-wglynn",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "WGlynn",
+          "date": "2026-06-17",
+          "text": "Are external skill contributions welcome? Proposing critical-qa (self-adversarial review before \"done\") The skills here (skill-creator, mcp-builder, webapp-testing) read as general tools rather than one-off demos, so I wanted to ask directly: do you accept skill contributions from outside Anthropic, and if so is a PR with a SKILL.md folder following ./template the right path, or do you prefer an issue first? The skill I would contribute is critical-qa. Before declaring a code change complete, it runs a short self-adversarial pass: it asks hostile-reviewer questions across several fixed categor",
+          "url": "https://github.com/anthropics/skills/issues/1328",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-206-thepexcel",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ThepExcel",
+          "date": "2026-01-04",
+          "text": "Plugin Marketplace installs extra skills when plugin source is repo root (./) ## 🐞 Issue: Plugin Marketplace installs extra skills when `source` is repo root (`./`) ### Summary When installing a skills bundle via Plugin Marketplace (e.g. `plugin marketplace add anthropics/skills`), the installer installs **all skills found under the plugin `source` directory**, not only the skills explicitly listed in the `\"skills\"` array. This results in many unintended skills being installed. --- ### Expected behavior Given the following configuration: \"skills\": [ \"./skills/xlsx\", \"./skills/docx\", \"./skills/",
+          "url": "https://github.com/anthropics/skills/issues/206",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1091-agentupskill",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "agentupskill",
+          "date": "2026-05-04",
+          "text": "Feature request: add coordinator.domains: frontmatter to claude-api SKILL.md (for spec-coordinator tag-routing) ## Context A separate skills framework — [Agent Upskill's spec-coordinator](https://github.com/agentupskill/skills-core/tree/main/spec-coordinator) — uses an SME registry to route cross-domain spec requests to relevant skills. The registry has two routing layers: 1. **Tag-match (deterministic)** — picks skills whose `coordinator.domains: [...]` frontmatter overlaps query tokens (confidence 1.0). 2. **Sonnet classifier (fallback)** — scores skills against the query (threshold 0.6 for ",
+          "url": "https://github.com/anthropics/skills/issues/1091",
+          "score": 0,
+          "sentiment": "negative"
+        }
+      ]
+    },
+    "openai-skills/security-best-practices": {
+      "slug": "security-best-practices",
+      "ecosystem": "openai-skills",
+      "displayName": "Security Best Practices",
+      "feedbackCount": 0,
+      "comments": []
+    },
+    "openai-skills/gh-fix-ci": {
+      "slug": "gh-fix-ci",
+      "ecosystem": "openai-skills",
+      "displayName": "GitHub Fix CI",
+      "feedbackCount": 1,
+      "comments": [
+        {
+          "id": "github-https-github-com-openai-skills-issues-498-optimization2026",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "optimization2026",
+          "date": "2026-06-21",
+          "text": "# Add optional `skill-index.json` for large skill catalogs and plugin packs # Add optional `skill-index.json` for large skill catalogs and plugin packs ## Summary Codex skills work well when a user has a small number of focused skills. But as users install more skills and plugins, a new problem appears: ```text routing deduplication overlap detection skill ownership multi-skill pack navigation context budget control ``` A large catalog should not require the agent to load many full `SKILL.md` files just to decide which one is relevant. This issue proposes an optional compact `skill-index.json`",
+          "url": "https://github.com/openai/skills/issues/498",
+          "score": 0,
+          "sentiment": "negative"
+        }
+      ]
+    },
+    "openai-skills/playwright": {
+      "slug": "playwright",
+      "ecosystem": "openai-skills",
+      "displayName": "Playwright",
+      "feedbackCount": 4,
+      "comments": [
+        {
+          "id": "github-https-github-com-openai-skills-issues-228-jonmartinau",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jonmartinAU",
+          "date": "2026-03-07",
+          "text": "Adapt Playwright skill for Claude Code Convert the Playwright CLI skill from Codex ecosystem references to Claude Code equivalents. Replace CODEX_HOME with CLAUDE_HOME, update paths from ~/.codex to ~/.claude, rename agents/openai.yaml to agents/claude.yaml, and install to ~/.claude/skills/playwright/.",
+          "url": "https://github.com/openai/skills/issues/228",
+          "score": 1,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-openai-skills-issues-491-andrej1707",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Andrej1707",
+          "date": "2026-06-12",
+          "text": "Skill Orchestrator: meta-skill for deduplicating and routing large Codex skill catalogs Hi OpenAI / Codex team, I built an instruction-only Codex skill called **Skill Orchestrator** that acts as a lightweight routing layer for large skill catalogs. The problem I ran into: When a user installs many Codex skills and plugins, several skills can overlap semantically. Examples: app polish vs frontend design, webapp testing vs browser/playwright skills, game playtest vs playtest-debug-loop, broad GitHub routing vs CI-specific skills. This can cause unnecessary context usage, duplicate skill loading,",
+          "url": "https://github.com/openai/skills/issues/491",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-openai-skills-issues-498-optimization2026",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "optimization2026",
+          "date": "2026-06-21",
+          "text": "# Add optional `skill-index.json` for large skill catalogs and plugin packs # Add optional `skill-index.json` for large skill catalogs and plugin packs ## Summary Codex skills work well when a user has a small number of focused skills. But as users install more skills and plugins, a new problem appears: ```text routing deduplication overlap detection skill ownership multi-skill pack navigation context budget control ``` A large catalog should not require the agent to load many full `SKILL.md` files just to decide which one is relevant. This issue proposes an optional compact `skill-index.json`",
+          "url": "https://github.com/openai/skills/issues/498",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-openai-skills-issues-509-seulch",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "seulch",
+          "date": "2026-06-25",
+          "text": "ForgeCat profiles for OpenAI skills Hi OpenAI skills team, I’m working on ForgeCat, a tool for making agent profiles such as skills, agents, rules, commands, hooks, and MCP configs easier to install across different agent tools. We found the OpenAI skills catalog useful for reusable Codex workflows across docs, image generation, browser automation, deployment, security, and other agent tasks, so we created initial ForgeCat profiles for them here: Profile repo: https://github.com/nota-america/forgecat-agent-profiles/tree/main/profiles/openai/skills Install example: ```bash forgecat install @for",
+          "url": "https://github.com/openai/skills/issues/509",
+          "score": 0,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    "awesome-copilot/context-map": {
+      "slug": "context-map",
+      "ecosystem": "awesome-copilot",
+      "displayName": "Context Map",
+      "feedbackCount": 0,
+      "comments": []
+    }
+  }
+}

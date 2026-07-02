@@ -1,10 +1,11 @@
 (async function init() {
-  const [data, indexData, changesData, equivalentsData, primerData] = await Promise.all([
+  const [data, indexData, changesData, equivalentsData, primerData, feedbackData] = await Promise.all([
     loadSkills(),
     loadJson("./data/skills-index.json"),
     loadJson("./data/skill-changes.json"),
     loadJson("./data/skill-equivalents.json"),
-    loadJson("./data/skill-primer.json")
+    loadJson("./data/skill-primer.json"),
+    loadJson("./data/skill-feedback.json")
   ]);
 
   const curatedSkills = data.skills || [];
@@ -44,6 +45,7 @@
   };
 
   const equivalentByMember = buildEquivalentLookup(equivalents);
+  const feedbackBySkill = feedbackData.feedbackBySkill || {};
 
   hydrateFilters(data, ui);
   renderMeta(meta, data, indexData, ui);
@@ -70,11 +72,11 @@
   function rerender() {
     const pool = getActivePool(state, curatedSkills, indexSkills);
     const filtered = applyFilters(pool, state, state.view === "curated");
-    renderSkillGrid(filtered, state, ui, state.view === "curated", rerender);
+    renderSkillGrid(filtered, state, ui, state.view === "curated", rerender, feedbackBySkill);
     const active = filtered.find((s) => s.id === state.activeId) || filtered[0];
     if (active) {
       state.activeId = active.id;
-      renderSkillDetail(active, ui, equivalents, equivalentByMember, state.view === "curated");
+      renderSkillDetail(active, ui, equivalentByMember, state.view === "curated", feedbackBySkill);
     } else {
       ui.detail.innerHTML = "<p>没有匹配的 Skill。</p>";
     }
@@ -560,7 +562,7 @@ function renderPlatformBadges(skill) {
     .join("");
 }
 
-function renderSkillGrid(skills, state, ui, isCurated, onSelect) {
+function renderSkillGrid(skills, state, ui, isCurated, onSelect, feedbackBySkill) {
   ui.grid.innerHTML = skills
     .map((skill) => {
       const rankLabel = isCurated
@@ -568,10 +570,14 @@ function renderSkillGrid(skills, state, ui, isCurated, onSelect) {
         : skill.activityScore != null
           ? `活跃 ${skill.activityScore}`
           : "";
+      const fbCount = isCurated
+        ? (feedbackBySkill?.[`${skill.ecosystem}/${skill.slug}`]?.feedbackCount || 0)
+        : 0;
       const extraBadges = [
         skill.featured ? '<span class="badge featured">精选</span>' : "",
         skill.isNew ? '<span class="badge new">新</span>' : "",
-        skill.inTopCurated ? '<span class="badge phase">Top</span>' : ""
+        skill.inTopCurated ? '<span class="badge phase">Top</span>' : "",
+        fbCount > 0 ? `<span class="badge feedback">${fbCount} 反馈</span>` : ""
       ].join("");
       const phaseBadge = skill.sdePhase
         ? `<span class="badge phase">${escapeHtml(skill.sdePhase)}</span>`
@@ -614,11 +620,46 @@ function renderSkillGrid(skills, state, ui, isCurated, onSelect) {
   });
 }
 
-function renderSkillDetail(skill, ui, equivalents, equivalentByMember, isCurated) {
-  ui.detail.innerHTML = buildSkillDetailHtml(skill, equivalentByMember, isCurated, false);
+function renderSkillDetail(skill, ui, equivalentByMember, isCurated, feedbackBySkill) {
+  ui.detail.innerHTML = buildSkillDetailHtml(skill, equivalentByMember, isCurated, feedbackBySkill, false);
 }
 
-function buildSkillDetailHtml(skill, equivalentByMember, isCurated, inModal) {
+function buildFeedbackHtml(skill, feedbackBySkill) {
+  const key = `${skill.ecosystem}/${skill.slug}`;
+  const entry = feedbackBySkill[key];
+  const comments = entry?.comments || [];
+  if (!comments.length) {
+    return `<section class="feedback-section"><h4>用户反馈</h4><p class="feedback-empty">暂无匹配的公开讨论。采集来源：Hacker News、GitHub Issues、Reddit。</p></section>`;
+  }
+
+  const cards = comments
+    .map((c) => {
+      const sentimentClass = c.sentiment === "positive" ? "sentiment-pos" : c.sentiment === "negative" ? "sentiment-neg" : "sentiment-neu";
+      const sentimentLabel = c.sentiment === "positive" ? "正面" : c.sentiment === "negative" ? "负面" : "中性";
+      const scoreLabel = c.score ? ` · ${c.score} 赞` : "";
+      return `
+        <article class="feedback-card">
+          <div class="feedback-meta">
+            <span class="feedback-source">${escapeHtml(c.sourceLabel || c.source)}</span>
+            <span class="feedback-author">@${escapeHtml(c.author)}</span>
+            <span class="feedback-date">${escapeHtml(c.date || "")}${scoreLabel}</span>
+            <span class="feedback-sentiment ${sentimentClass}">${sentimentLabel}</span>
+          </div>
+          <p class="feedback-text">${escapeHtml(c.text)}</p>
+          <a class="feedback-link" href="${escapeHtml(c.url)}" target="_blank" rel="noopener">查看原文 →</a>
+        </article>`;
+    })
+    .join("");
+
+  return `
+    <section class="feedback-section">
+      <h4>用户反馈 <span class="feedback-count">${comments.length} 条</span></h4>
+      <p class="feedback-note">来自 Hacker News、GitHub Issues、Reddit 的公开讨论，按相关性与热度自动筛选。</p>
+      <div class="feedback-list">${cards}</div>
+    </section>`;
+}
+
+function buildSkillDetailHtml(skill, equivalentByMember, isCurated, feedbackBySkill, inModal) {
   const useCasesHtml = (skill.useCases || [])
     .map(
       (uc) => `
@@ -695,6 +736,8 @@ function buildSkillDetailHtml(skill, equivalentByMember, isCurated, inModal) {
     ${tagsHtml ? `<section><h4>标签</h4><div class="skill-tags">${tagsHtml}</div></section>` : ""}
 
     ${isCurated ? `<section><h4>使用案例</h4>${useCasesHtml || "<p>暂无案例。</p>"}</section>` : ""}
+
+    ${isCurated ? buildFeedbackHtml(skill, feedbackBySkill || {}) : ""}
 
     ${equivalentsHtml}
     ${eventsHtml}

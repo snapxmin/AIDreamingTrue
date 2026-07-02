@@ -42,13 +42,18 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/collect_skills.py
 
+      - name: Run skill feedback collector
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/collect_skill_feedback.py
+
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           CHANGED=0
-          for f in data/events.json data/skills.json data/skills-index.json data/skills-snapshot.json data/skill-changes.json data/skill-event-links.json; do
+          for f in data/events.json data/skills.json data/skills-index.json data/skills-snapshot.json data/skill-changes.json data/skill-event-links.json data/skill-feedback.json; do
             if ! git diff --quiet -- "$f" 2>/dev/null; then
               git add "$f"
               CHANGED=1

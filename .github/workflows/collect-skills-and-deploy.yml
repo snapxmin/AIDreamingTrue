@@ -39,15 +39,20 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/collect_skills.py
 
+      - name: Run skill feedback collector
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/collect_skill_feedback.py
+
       - name: Commit updated skills
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          if git diff --quiet -- data/skills.json data/skills-index.json data/skills-snapshot.json data/skill-changes.json data/skill-event-links.json data/events.json; then
+          if git diff --quiet -- data/skills.json data/skills-index.json data/skills-snapshot.json data/skill-changes.json data/skill-event-links.json data/skill-feedback.json data/events.json; then
             echo "No skill data changes to commit."
           else
-            git add data/skills.json data/skills-index.json data/skills-snapshot.json data/skill-changes.json data/skill-event-links.json data/events.json
+            git add data/skills.json data/skills-index.json data/skills-snapshot.json data/skill-changes.json data/skill-event-links.json data/skill-feedback.json data/events.json
             git commit -m "chore: auto-collect agent skills $(date -u +%Y-%m-%d)"
             git push origin main
           fi
