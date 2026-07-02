@@ -1,0 +1,63 @@
+name: Collect LLMs and deploy
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 每周三 09:00 北京时间 = 01:00 UTC
+    - cron: "0 1 * * 3"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  collect-llms-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run LLM collector
+        run: python3 scripts/collect_llms.py
+
+      - name: Commit updated LLM data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet -- data/llms.json data/llms-index.json data/llms-snapshot.json data/llm-changes.json; then
+            echo "No LLM data changes to commit."
+          else
+            git add data/llms.json data/llms-index.json data/llms-snapshot.json data/llm-changes.json
+            git commit -m "chore: auto-collect LLM benchmarks $(date -u +%Y-%m-%d)"
+            git push origin main
+          fi
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

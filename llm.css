@@ -1,0 +1,284 @@
+@import url("./skills.css");
+
+.llm-page {
+  min-height: 100vh;
+}
+
+.llm-page .view-tab.active {
+  background: #7c3aed;
+  border-color: #7c3aed;
+}
+
+.llm-page .provider-tab.active {
+  background: #7c3aed;
+  border-color: #7c3aed;
+}
+
+.llm-page .tab.active {
+  background: #7c3aed;
+  border-color: #7c3aed;
+  color: #fff;
+}
+
+.llms-meta {
+  margin: 16px 16px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.llm-primer-panel {
+  margin: 16px 16px 0;
+  padding: 16px 18px;
+}
+
+.llm-changes-panel {
+  margin: 16px 16px 0;
+}
+
+.llm-changes-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.provider-nav {
+  margin: 0 16px;
+}
+
+.provider-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.provider-tab {
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.provider-tab.active {
+  color: #fff;
+}
+
+.llm-main {
+  display: grid;
+  grid-template-columns: 260px 1fr 400px;
+  gap: 16px;
+  padding: 16px;
+}
+
+.llm-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.llm-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.llm-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px 16px;
+  cursor: pointer;
+  background: #fff;
+  transition: border-color 0.15s, box-shadow 0.15s, background 0.15s;
+}
+
+.llm-card:hover,
+.llm-card.active {
+  border-color: #7c3aed;
+  background: #f5f3ff;
+  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.1);
+}
+
+.llm-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.llm-card h3 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.llm-rank {
+  flex-shrink: 0;
+  background: #7c3aed;
+  color: #fff;
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.llm-desc {
+  margin: 0 0 10px;
+  color: #4b5563;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.llm-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.llm-benchmark-preview {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.bench-chip {
+  background: #f3f4f6;
+  border-radius: 6px;
+  padding: 3px 8px;
+  color: #374151;
+}
+
+.bench-chip.auto {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.bench-chip.manual {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.bench-chip.sentiment {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.sentiment-stars {
+  color: #f59e0b;
+  font-weight: 600;
+}
+
+.benchmark-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.benchmark-table th,
+.benchmark-table td {
+  border: 1px solid #e5e7eb;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.benchmark-table th {
+  background: #f9fafb;
+  font-weight: 600;
+}
+
+.benchmark-table .rank-1 {
+  color: #7c3aed;
+  font-weight: 700;
+}
+
+.eval-type-badge {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+.eval-type-badge.auto {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.eval-type-badge.manual {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.sentiment-card {
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 14px;
+  margin-top: 8px;
+}
+
+.sentiment-quote {
+  border-left: 3px solid #7c3aed;
+  padding-left: 12px;
+  margin: 8px 0;
+  font-style: italic;
+  color: #4b5563;
+  font-size: 13px;
+}
+
+.sentiment-quote.positive {
+  border-color: #10b981;
+}
+
+.sentiment-quote.mixed {
+  border-color: #f59e0b;
+}
+
+.sentiment-quote.negative {
+  border-color: #ef4444;
+}
+
+.pricing-block {
+  background: #f5f3ff;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.provider-badge {
+  background: #ede9fe;
+  color: #5b21b6;
+}
+
+.badge.open-weights {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.trend-rising {
+  color: #10b981;
+}
+
+.trend-falling {
+  color: #ef4444;
+}
+
+.trend-stable {
+  color: #6b7280;
+}
+
+@media (max-width: 1200px) {
+  .llm-main {
+    grid-template-columns: 1fr;
+  }
+
+  .llm-detail-panel {
+    order: -1;
+  }
+}

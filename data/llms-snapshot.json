@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "lastUpdated": "2026-07-02T11:56:08Z"
+  },
+  "entries": {
+    "Anthropic/claude-opus-4": "59cac126ad930825511ae141acd69edf83f7f94262e8e2e2f0437f2f442faa7e",
+    "OpenAI/gpt-5": "685bc8328e951b7f0cb39a5be9079c69153508e16d16497b87ae1562b8cdfa56",
+    "Google/gemini-2-5-pro": "bb397bc280f27013dc3a5991f442d0a5efdc1810f2f6092400d9f2efa7148d64",
+    "Anthropic/claude-sonnet-4": "779322e9b7936a38da81556769bf3c9296a5c130cfb0f9cc2373f05c47e680c6",
+    "OpenAI/o3": "a35b777962f9647a3841bc9f3f1498bdc2e5e0e3c3786bfe2a2d428f7e1d11d1",
+    "DeepSeek/deepseek-r1": "fef1ee48d7f6b7380678fa7c386cf22e690db97599708b3241ccb6fa1134da39",
+    "DeepSeek/deepseek-v3": "5d978bdc0bc4ed8e028d1541695d86d49cbfa1465b51f54f24dca1cb9830c45a",
+    "Moonshot/kimi-k2": "5e5700c2c3029343043202e2ae43a3dcd93ebb39757d6ee231f25e62ec7cea92",
+    "Alibaba/qwen3-235b": "2376a6cd8012a8ddcc1a2a558762f64276d268ef4d70455b770ef95a7c0659fe",
+    "Meta/llama-4-maverick": "bf4c7e246a9e09da9c7225e0d74c3a5a38b152c151022afca04c1080312f6bee",
+    "Mistral/mistral-large-3": "2444bb904af9d1132a07cf51176e892723ff7972c89e054e35de8f0c377b5990",
+    "xAI/grok-3": "56b4e7b70338538bda467de4d74236f76ef0c2da9edc035de3d066c8ed59575e",
+    "Mistral/codestral-2501": "e97e70967c663fdf1cfe46a105018c061b00032a813f92e2276e5966a4bf7318",
+    "Google/gemini-2-5-flash": "46d5f84766acdc75cbd74bcfb70c51609ed0c9362ae5fa468ed3bd4e8fe0a4aa",
+    "OpenAI/gpt-5-mini": "978a7511602addafe4d544fb41257828960792fc1ea43825de9f16f2c8120520",
+    "Anthropic/claude-haiku-4": "5fa3c58b8f944ee98c1113273f6facc27bb5922c1d2629646def0fe91523c360",
+    "Mistral/devstral-small": "a31af423b4942892001e08119444efb278e59d4bb9063b587f4233a22cd44599",
+    "Alibaba/qwen3-coder": "920cdd7efdac8a8faaa4f47f1ac0fd270e33fcde2f34720bbf3de4e61cdbcd3c",
+    "Microsoft/phi-4-reasoning": "268f36c9f8e67fea8c6e3f723ce9289733023988e652f7e42e8693191150f4a8",
+    "Cursor/composer-1": "36cbee2557a7a272fd5c5f51cfd1215eac3074dd350ee65af5e77d33a471b85b"
+  }
+}

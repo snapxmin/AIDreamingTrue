@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LLM 库 · AI Coding 信息平台</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./llm.css" />
+  </head>
+  <body class="llm-page">
+    <header class="top llm-header">
+      <div class="header-row">
+        <div>
+          <h1>LLM 库</h1>
+          <p>LLM 雷达：SOTA 洞察 + 自动化/人工评测 + 社区口碑 · 覆盖 Cursor / Copilot / Claude Code / API</p>
+        </div>
+        <nav class="site-nav" aria-label="站点导航">
+          <a class="nav-link" href="./index.html">门户首页</a>
+          <a class="nav-link" href="./evolution.html">竞品演进</a>
+          <a class="nav-link" href="./skills.html">Skill 库</a>
+          <a class="nav-link" href="./mcp.html">MCP 库</a>
+          <a class="nav-link active" href="./llm.html" aria-current="page">LLM 库</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="panel llm-primer-panel" id="llmPrimerPanel" aria-label="LLM 评测第一性原理介绍">
+      <div class="primer-header">
+        <div>
+          <h2 id="primerTitle">LLM 评测第一性原理</h2>
+          <p id="primerSubtitle" class="primer-subtitle"></p>
+        </div>
+        <button type="button" class="primer-toggle" id="primerToggle" aria-expanded="true" aria-controls="primerBody">
+          收起
+        </button>
+      </div>
+      <div id="primerBody" class="primer-body">
+        <nav class="primer-tabs" id="primerTabs" aria-label="原理介绍分区"></nav>
+        <div id="primerContent" class="primer-content"></div>
+      </div>
+    </section>
+
+    <section class="panel llms-meta" id="llmsMeta"></section>
+
+    <section class="panel llm-changes-panel" id="llmChangesPanel" hidden>
+      <div class="section-title">
+        <h2>LLM 雷达 · 近期变更</h2>
+        <span id="changesCount"></span>
+      </div>
+      <ul id="llmChangesList" class="llm-changes-list"></ul>
+    </section>
+
+    <nav class="panel view-nav" aria-label="视图切换">
+      <div id="viewTabs" class="view-tabs"></div>
+    </nav>
+
+    <nav class="panel provider-nav" aria-label="提供商筛选">
+      <div id="providerTabs" class="provider-tabs"></div>
+    </nav>
+
+    <main class="llm-main">
+      <aside class="panel llm-filters">
+        <h2>筛选</h2>
+        <input id="llmSearch" type="search" placeholder="搜索模型名称、提供商、标签..." />
+
+        <label for="categoryFilter">场景分类</label>
+        <select id="categoryFilter">
+          <option value="all">全部分类</option>
+        </select>
+
+        <label for="weightsFilter">权重类型</label>
+        <select id="weightsFilter">
+          <option value="all">全部</option>
+          <option value="open">开源权重</option>
+          <option value="closed">闭源</option>
+        </select>
+
+        <label class="checkbox-row">
+          <input id="featuredOnly" type="checkbox" />
+          仅显示 SOTA 精选
+        </label>
+
+        <div class="sync-info" id="syncInfo"></div>
+      </aside>
+
+      <section class="panel llm-content">
+        <div class="section-title">
+          <h2>大模型列表</h2>
+          <span id="llmCount"></span>
+        </div>
+        <div class="tabs" id="benchmarkQuickTabs"></div>
+        <div id="llmGrid" class="llm-grid" role="list"></div>
+        <p id="emptyLlms" class="empty-state" hidden>没有匹配的大模型。</p>
+      </section>
+
+      <aside class="panel llm-detail-panel">
+        <h2>模型详情</h2>
+        <article id="llmDetail" class="llm-detail">
+          <p>请从左侧列表选择一个模型查看评测分数、口碑与定价。</p>
+        </article>
+      </aside>
+    </main>
+
+    <div id="llmModal" class="modal" hidden aria-hidden="true">
+      <div class="modal-backdrop" data-close="true"></div>
+      <div class="modal-dialog llm-modal-dialog" role="dialog" aria-modal="true">
+        <button type="button" class="modal-close" aria-label="关闭详情" data-close="true">×</button>
+        <article id="llmModalDetail" class="modal-detail"></article>
+      </div>
+    </div>
+
+    <script src="./llm.js?v=1"></script>
+  </body>
+</html>
