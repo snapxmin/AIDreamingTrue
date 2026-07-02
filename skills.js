@@ -1,9 +1,10 @@
 (async function init() {
-  const [data, indexData, changesData, equivalentsData, feedbackData] = await Promise.all([
+  const [data, indexData, changesData, equivalentsData, primerData, feedbackData] = await Promise.all([
     loadSkills(),
     loadJson("./data/skills-index.json"),
     loadJson("./data/skill-changes.json"),
     loadJson("./data/skill-equivalents.json"),
+    loadJson("./data/skill-primer.json"),
     loadJson("./data/skill-feedback.json")
   ]);
 
@@ -48,6 +49,7 @@
 
   hydrateFilters(data, ui);
   renderMeta(meta, data, indexData, ui);
+  renderPrimer(primerData);
   renderChanges(changesData, ui);
   renderViewTabs(state, ui, () => rerender());
   renderPlatformTabs(data.platforms || [], state, ui, () => rerender());
@@ -144,6 +146,235 @@ function hydrateFilters(data, ui) {
     opt.textContent = cat;
     ui.categoryFilter.appendChild(opt);
   });
+}
+
+function renderPrimer(primer) {
+  const panel = document.getElementById("skillPrimerPanel");
+  const titleEl = document.getElementById("primerTitle");
+  const subtitleEl = document.getElementById("primerSubtitle");
+  const tabsEl = document.getElementById("primerTabs");
+  const contentEl = document.getElementById("primerContent");
+  const toggleBtn = document.getElementById("primerToggle");
+  const bodyEl = document.getElementById("primerBody");
+
+  if (!panel || !primer.meta) return;
+
+  titleEl.textContent = primer.meta.title || "Skill 第一性原理";
+  subtitleEl.textContent = primer.meta.subtitle || "";
+
+  const sections = [
+    { id: "essence", label: "本质与原理", render: () => renderEssenceSection(primer.essence) },
+    { id: "value", label: "产品价值", render: () => renderValueSection(primer.value) },
+    { id: "adoption", label: "业界落地", render: () => renderAdoptionSection(primer.adoption) },
+    { id: "guide", label: "选型指南", render: () => renderGuideSection(primer.guide) }
+  ];
+
+  let activeId = "essence";
+
+  function renderTabs() {
+    tabsEl.innerHTML = sections
+      .map(
+        (s) =>
+          `<button type="button" class="primer-tab${activeId === s.id ? " active" : ""}" data-section="${s.id}">${escapeHtml(s.label)}</button>`
+      )
+      .join("");
+    tabsEl.querySelectorAll(".primer-tab").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        activeId = btn.dataset.section;
+        renderTabs();
+        renderContent();
+      });
+    });
+  }
+
+  function renderContent() {
+    const section = sections.find((s) => s.id === activeId);
+    contentEl.innerHTML = section ? section.render() : "";
+  }
+
+  renderTabs();
+  renderContent();
+
+  const collapsedKey = "skill-primer-collapsed";
+  const isCollapsed = localStorage.getItem(collapsedKey) === "1";
+  setCollapsed(isCollapsed);
+
+  toggleBtn.addEventListener("click", () => {
+    const next = !bodyEl.hidden;
+    setCollapsed(next);
+    localStorage.setItem(collapsedKey, next ? "1" : "0");
+  });
+
+  function setCollapsed(collapsed) {
+    bodyEl.hidden = collapsed;
+    toggleBtn.setAttribute("aria-expanded", String(!collapsed));
+    toggleBtn.textContent = collapsed ? "展开" : "收起";
+    panel.classList.toggle("primer-collapsed", collapsed);
+  }
+}
+
+function renderEssenceSection(essence) {
+  if (!essence) return "";
+  const principlesHtml = (essence.firstPrinciples || [])
+    .map(
+      (p) => `
+      <div class="primer-card">
+        <h4>${escapeHtml(p.title)}</h4>
+        <p>${escapeHtml(p.body)}</p>
+      </div>`
+    )
+    .join("");
+
+  const comparisonRows = (essence.comparison?.rows || [])
+    .map(
+      (row) => `
+      <tr>
+        <th scope="row">${escapeHtml(row.dimension)}</th>
+        <td>${escapeHtml(row.skill)}</td>
+        <td>${escapeHtml(row.rules)}</td>
+        <td>${escapeHtml(row.prompt)}</td>
+      </tr>`
+    )
+    .join("");
+
+  return `
+    <h3>${escapeHtml(essence.headline)}</h3>
+    <p class="primer-lead">${escapeHtml(essence.definition)}</p>
+    <p class="primer-problem"><strong>核心问题：</strong>${escapeHtml(essence.problem)}</p>
+    <div class="primer-grid">${principlesHtml}</div>
+    ${
+      comparisonRows
+        ? `<h4>${escapeHtml(essence.comparison.title)}</h4>
+    <div class="primer-table-wrap">
+      <table class="primer-table">
+        <thead>
+          <tr>
+            <th scope="col">维度</th>
+            <th scope="col">Skill</th>
+            <th scope="col">Rules</th>
+            <th scope="col">长 Prompt</th>
+          </tr>
+        </thead>
+        <tbody>${comparisonRows}</tbody>
+      </table>
+    </div>`
+        : ""
+    }`;
+}
+
+function renderValueSection(value) {
+  if (!value) return "";
+  const pillarsHtml = (value.pillars || [])
+    .map(
+      (p) => `
+      <div class="primer-card primer-card-value">
+        <div class="primer-card-top">
+          <h4>${escapeHtml(p.title)}</h4>
+          <span class="primer-metric">${escapeHtml(p.metric)}</span>
+        </div>
+        <p>${escapeHtml(p.body)}</p>
+      </div>`
+    )
+    .join("");
+
+  const audiencesHtml = (value.audiences || [])
+    .map(
+      (a) => `
+      <li>
+        <strong>${escapeHtml(a.role)}</strong>
+        <span>${escapeHtml(a.benefit)}</span>
+      </li>`
+    )
+    .join("");
+
+  return `
+    <h3>${escapeHtml(value.headline)}</h3>
+    <div class="primer-grid primer-grid-2">${pillarsHtml}</div>
+    <h4>不同角色的收益</h4>
+    <ul class="primer-audience-list">${audiencesHtml}</ul>`;
+}
+
+function renderAdoptionSection(adoption) {
+  if (!adoption) return "";
+  const ecoHtml = (adoption.ecosystems || [])
+    .map(
+      (e) => `
+      <div class="primer-card">
+        <div class="primer-card-top">
+          <h4>${escapeHtml(e.name)}</h4>
+          <span class="primer-metric">${escapeHtml(e.scale)}</span>
+        </div>
+        <p class="primer-meta-line">${escapeHtml(e.platform)} · ${escapeHtml(e.repo)}</p>
+        <p>${escapeHtml(e.highlight)}</p>
+      </div>`
+    )
+    .join("");
+
+  const milestonesHtml = (adoption.milestones || [])
+    .map(
+      (m) => `
+      <li class="primer-milestone">
+        <time>${escapeHtml(m.date)}</time>
+        <div>
+          <strong>${escapeHtml(m.event)}</strong>
+          <p>${escapeHtml(m.impact)}</p>
+        </div>
+      </li>`
+    )
+    .join("");
+
+  const casesHtml = (adoption.cases || [])
+    .map(
+      (c) => `
+      <div class="primer-case-card">
+        <div class="primer-case-header">
+          <h5>${escapeHtml(c.title)}</h5>
+          <span class="badge phase">${escapeHtml(c.industry)}</span>
+        </div>
+        <p class="primer-meta-line">相关 Skill：<strong>${escapeHtml(c.skill)}</strong></p>
+        <div class="use-case-label">场景</div>
+        <p>${escapeHtml(c.scenario)}</p>
+        <div class="use-case-label">落地效果</div>
+        <p>${escapeHtml(c.outcome)}</p>
+      </div>`
+    )
+    .join("");
+
+  return `
+    <h3>${escapeHtml(adoption.headline)}</h3>
+    <p class="primer-lead">${escapeHtml(adoption.summary)}</p>
+    <h4>四大生态</h4>
+    <div class="primer-grid primer-grid-2">${ecoHtml}</div>
+    <h4>关键里程碑</h4>
+    <ul class="primer-milestone-list">${milestonesHtml}</ul>
+    <h4>典型落地案例</h4>
+    <div class="primer-cases">${casesHtml}</div>`;
+}
+
+function renderGuideSection(guide) {
+  if (!guide) return "";
+  const stepsHtml = (guide.steps || [])
+    .map(
+      (s) => `
+      <li class="primer-step">
+        <span class="primer-step-num">${s.step}</span>
+        <div>
+          <strong>${escapeHtml(s.title)}</strong>
+          <p>${escapeHtml(s.body)}</p>
+        </div>
+      </li>`
+    )
+    .join("");
+
+  const antiHtml = (guide.antiPatterns || [])
+    .map((item) => `<li>${escapeHtml(item)}</li>`)
+    .join("");
+
+  return `
+    <h3>${escapeHtml(guide.headline)}</h3>
+    <ol class="primer-steps">${stepsHtml}</ol>
+    <h4>常见反模式</h4>
+    <ul class="primer-anti-list">${antiHtml}</ul>`;
 }
 
 function renderMeta(meta, data, indexData, ui) {

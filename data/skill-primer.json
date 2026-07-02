@@ -1,0 +1,231 @@
+{
+  "meta": {
+    "title": "Skill 第一性原理",
+    "subtitle": "从本质出发理解 Agent Skill：它解决什么问题、为何成为 AI Coding 基础设施，以及头部产品如何落地。",
+    "lastUpdated": "2026-07-02"
+  },
+  "essence": {
+    "headline": "Skill 是什么：可复用的「做事方法」，而非一次性 Prompt",
+    "definition": "Skill 是以结构化文档（通常是 SKILL.md）封装的可触发工作流：用 description 声明「何时启用」，用正文规定「如何执行」。它把个人或团队的最佳实践，从聊天记忆升级为可版本化、可分发、可组合的能力单元。",
+    "problem": "大模型在无约束时容易「看起来对」：跳过需求澄清直接写代码、不跑测试就宣称完成、调试时靠猜测而非证据。根因不是模型不够聪明，而是缺少稳定的流程约束与上下文注入机制。",
+    "firstPrinciples": [
+      {
+        "title": "知识需要触发条件",
+        "body": "通用 Prompt 藏在脑子里或 README 里，Agent 不知道何时该读。Skill 的 description 字段承担「路由」职责——当任务匹配时自动加载完整规程，避免每次手动粘贴长指令。"
+      },
+      {
+        "title": "流程优于灵感",
+        "body": "软件工程的价值来自可重复流程（TDD、Code Review、发布检查单）。Skill 将流程外化为机器可读规程，使 Agent 行为从「即兴发挥」变为「按章办事」。"
+      },
+      {
+        "title": "组合大于单体",
+        "body": "复杂任务可串联多个 Skill：brainstorming → writing-plans → test-driven-development → verification-before-completion。每个 Skill 职责单一，整体形成可维护的 Agent 工作流。"
+      },
+      {
+        "title": "生态互操作",
+        "body": "同一 Skill 仓库（如 superpowers）可跨 Cursor、Claude Code、Codex、Copilot 安装。能力定义与 IDE 解耦，降低平台锁定风险。"
+      }
+    ],
+    "comparison": {
+      "title": "Skill vs Rules vs 长 Prompt",
+      "rows": [
+        {
+          "dimension": "触发方式",
+          "skill": "语义匹配 description，按需加载",
+          "rules": "会话级常驻约束",
+          "prompt": "用户每次手动输入"
+        },
+        {
+          "dimension": "内容形态",
+          "skill": "完整工作流 + 检查清单 + 示例",
+          "rules": "简短行为边界",
+          "prompt": "单次任务描述"
+        },
+        {
+          "dimension": "可维护性",
+          "skill": "独立仓库、版本化、可 PR 评审",
+          "rules": "项目内 .cursor/rules 等",
+          "prompt": "散落聊天记录"
+        },
+        {
+          "dimension": "典型用途",
+          "skill": "TDD、调试规程、发布流程",
+          "rules": "代码风格、命名约定",
+          "prompt": "一次性具体任务"
+        }
+      ]
+    }
+  },
+  "value": {
+    "headline": "对团队与产品的核心价值",
+    "pillars": [
+      {
+        "title": "一致性",
+        "metric": "跨成员 · 跨会话",
+        "body": "新人与资深工程师使用同一套 brainstorming / TDD Skill，Agent 输出质量不再高度依赖「谁会写 Prompt」。组织经验沉淀为可安装资产。"
+      },
+      {
+        "title": "可观测",
+        "metric": "流程可审计",
+        "body": "Skill 正文即规格说明。团队可 Code Review Skill 本身，明确 Agent 应做与不应做的步骤，减少黑盒式 AI 协作。"
+      },
+      {
+        "title": "可演进",
+        "metric": "版本 + 变更雷达",
+        "body": "上游仓库更新 SKILL.md 后，平台可检测 contentHash 变更并推送 feed。团队像跟踪依赖库一样跟踪 Agent 能力包。"
+      },
+      {
+        "title": "降本增效",
+        "metric": "减少返工轮次",
+        "body": "在需求、实现、验证各阶段前置纪律 Skill，可将「写完才发现理解错了」的返工率显著压低。Superpowers 等实践框架的核心 ROI 即于此。"
+      }
+    ],
+    "audiences": [
+      {
+        "role": "一线开发者",
+        "benefit": "获得开箱即用的工程纪律（TDD、系统化调试、完成前验证），不必每次 reinvent Prompt。"
+      },
+      {
+        "role": "Tech Lead / 架构师",
+        "benefit": "将团队规范打包为 Skill 分发，统一多仓库、多项目的 Agent 行为基线。"
+      },
+      {
+        "role": "平台 / DevEx 团队",
+        "benefit": "建设内部 Skill 市场，与 CI、MCP、Rules 组合，形成企业级 AI Coding 工具链。"
+      },
+      {
+        "role": "产品 / 管理者",
+        "benefit": "用可度量的流程节点（是否先写测试、是否做需求澄清）评估 AI 辅助研发成熟度。"
+      }
+    ]
+  },
+  "adoption": {
+    "headline": "业界落地现状",
+    "summary": "2025–2026 年，Skill 从社区实验迅速演变为各头部 AI Coding 产品的官方能力。四大生态已收录 400+ 可安装 Skill，覆盖从仓库初始化到安全审查的完整 SDE 生命周期。",
+    "ecosystems": [
+      {
+        "name": "Superpowers",
+        "platform": "Cursor · Claude Code · Codex · Copilot",
+        "repo": "obra/superpowers",
+        "scale": "240k+ stars · 14 个核心工程纪律 Skill",
+        "highlight": "强调流程刚性：brainstorming 先于实现、TDD 先于写码、verification 先于宣称完成。社区认可度最高的「Agent 工程化」框架。"
+      },
+      {
+        "name": "awesome-copilot",
+        "platform": "GitHub Copilot · OpenCode",
+        "repo": "github/awesome-copilot",
+        "scale": "36k+ stars · 367+ community skills",
+        "highlight": "GitHub 官方维护的 Copilot Skill 生态，`gh skill install` 一键安装。覆盖语言服务器配置、CI/CD、E2E 测试等企业场景。"
+      },
+      {
+        "name": "anthropics/skills",
+        "platform": "Claude Code · Cursor · Codex",
+        "repo": "anthropics/skills",
+        "scale": "157k+ stars · 17 个官方 Skill",
+        "highlight": "Anthropic 官方出品，含文档处理、前端设计、MCP 构建等高质量参考实现，定义 Claude Code Skill 最佳实践。"
+      },
+      {
+        "name": "openai/skills",
+        "platform": "Codex · OpenCode",
+        "repo": "openai/skills",
+        "scale": "23k+ stars · 39 个精选 Skill",
+        "highlight": "OpenAI 为 Codex 策划的能力包，含实验性与生产级 Skill，推动「可安装能力」成为 Codex 标准扩展方式。"
+      }
+    ],
+    "milestones": [
+      {
+        "date": "2025 Q3",
+        "event": "Claude Code 引入 Skills 机制",
+        "impact": "Anthropic 将 Skill 定义为 Claude Code 一等公民扩展，官方仓库开源。"
+      },
+      {
+        "date": "2025 Q4",
+        "event": "Superpowers 社区爆发",
+        "impact": "obra/superpowers 成为 GitHub 增速最快仓库之一，工程纪律类 Skill 成为开发者共识。"
+      },
+      {
+        "date": "2026 Q1",
+        "event": "GitHub Copilot Skills 正式发布",
+        "impact": "awesome-copilot 收录 300+ Skill，CLI 支持 `gh skill install`，企业可私有分发。"
+      },
+      {
+        "date": "2026 Q2",
+        "event": "Cursor Customize 统一入口",
+        "impact": "Cursor 3.9 将 Plugins、Skills、MCP、Rules、Hooks 收敛至 Customize 页面，Skill 与 IDE 深度集成。"
+      }
+    ],
+    "cases": [
+      {
+        "title": "需求澄清防返工",
+        "industry": "互联网产品团队",
+        "skill": "brainstorming",
+        "scenario": "产品提出模糊需求（如「加个导出功能」）时，强制 Agent 先追问格式、权限、数据量边界，输出分段设计供确认后再写代码。",
+        "outcome": "减少「做完才发现理解错了」的整段返工；设计决策留痕可回溯。"
+      },
+      {
+        "title": "AI 代码质量门禁",
+        "industry": "后端工程团队",
+        "skill": "test-driven-development",
+        "scenario": "所有新功能与 Bugfix 必须先写失败测试，再最小实现，最后重构。对抗 AI「看起来能跑」的幻觉。",
+        "outcome": "测试覆盖率与合并信心提升；CI 红灯成为客观完成标准，而非 Agent 自我宣称。"
+      },
+      {
+        "title": "跨平台能力对齐",
+        "industry": "多 IDE 研发团队",
+        "skill": "superpowers 全系列",
+        "scenario": "团队同时使用 Cursor 与 Claude Code，通过安装同一 superpowers 包统一 Agent 行为基线。",
+        "outcome": "平台切换成本降低；Code Review 可评审 Skill 合规性而非逐条检查 Prompt。"
+      },
+      {
+        "title": "企业 Skill 市场",
+        "industry": "大型科技公司",
+        "skill": "awesome-copilot 私有扩展",
+        "scenario": "在 GitHub Enterprise 内维护内部 Skill 仓库，封装合规检查、发布流程、安全扫描规程。",
+        "outcome": "全组织 Agent 行为可治理、可审计；新人 onboarding 即获得标准工作流。"
+      },
+      {
+        "title": "MCP 集成加速",
+        "industry": "平台工程",
+        "skill": "mcp-builder / create-mcp-server",
+        "scenario": "使用官方 MCP 构建 Skill，按检查清单完成鉴权、工具 schema、错误处理，避免半成品集成。",
+        "outcome": "MCP 服务器交付周期缩短，质量更稳定。"
+      }
+    ]
+  },
+  "guide": {
+    "headline": "如何选型与落地",
+    "steps": [
+      {
+        "step": 1,
+        "title": "盘点痛点阶段",
+        "body": "对照 SDE 生命周期（需求 → 规划 → 实现 → 测试 → 发布 → 运维），找出 Agent 最常失控的环节——通常是需求不清、跳过测试、过早宣称完成。"
+      },
+      {
+        "step": 2,
+        "title": "优先安装纪律类 Skill",
+        "body": "建议起步组合：brainstorming + test-driven-development + systematic-debugging + verification-before-completion。这四者覆盖 80% 的质量事故。"
+      },
+      {
+        "step": 3,
+        "title": "匹配平台生态",
+        "body": "Copilot 用户优先 awesome-copilot；Cursor / Claude Code 用户优先 superpowers；需官方参考实现时参阅 anthropics/skills。"
+      },
+      {
+        "step": 4,
+        "title": "团队定制与评审",
+        "body": "fork 官方 Skill 或自建 SKILL.md，将内部规范（分支策略、发布检查单）写入；像 Code Review 一样评审 Skill 变更。"
+      },
+      {
+        "step": 5,
+        "title": "持续跟踪变更",
+        "body": "订阅本页 Skill 雷达变更 feed，上游 Skill 更新时评估是否合并；避免能力包悄然过期。"
+      }
+    ],
+    "antiPatterns": [
+      "把所有 Rules 塞进一个巨型 Skill——应拆分职责，保持单一触发场景。",
+      "只安装从不触发——检查 description 是否准确描述使用场景。",
+      "跳过验证类 Skill 直接上实现类——纪律 Skill 是 ROI 最高的前置投资。",
+      "忽视跨平台等价映射——同一能力在不同生态可能有不同 slug，参考本页「同类能力」标签。"
+    ]
+  }
+}
