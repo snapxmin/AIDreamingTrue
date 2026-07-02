@@ -220,11 +220,13 @@ button {
 .process,
 .quality,
 .roadmap,
-.skill-radar-home {
+.skill-radar-home,
+.mcp-radar-home {
   margin: 0 16px 16px;
 }
 
-.skill-radar-home .section-title {
+.skill-radar-home .section-title,
+.mcp-radar-home .section-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -237,13 +239,15 @@ button {
   margin: 0 0 12px;
 }
 
-.skill-radar-list {
+.skill-radar-list,
+.mcp-radar-list {
   margin: 0;
   padding-left: 20px;
   line-height: 1.7;
 }
 
-.skill-radar-list a {
+.skill-radar-list a,
+.mcp-radar-list a {
   color: #2563eb;
   text-decoration: none;
 }

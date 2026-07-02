@@ -1,0 +1,207 @@
+{
+  "meta": {
+    "title": "MCP 第一性原理",
+    "subtitle": "从本质出发理解 Model Context Protocol：它解决什么问题、为何成为 AI Agent 连接外部世界的标准接口，以及头部产品如何落地。",
+    "lastUpdated": "2026-07-02"
+  },
+  "essence": {
+    "headline": "MCP 是什么：Agent 与外部系统的「USB 接口」",
+    "definition": "Model Context Protocol（MCP）是由 Anthropic 发起、社区共建的开放协议，定义 AI 应用如何安全、标准化地连接外部数据源与工具。MCP Server 暴露 tools、resources、prompts 三类能力，Host（如 Cursor、Claude Desktop）通过统一客户端协议调用。",
+    "problem": "每个 AI 产品各自实现插件/工具集成，导致重复开发、接口不兼容、配置碎片化。开发者需要为 Copilot、Cursor、Claude 分别写集成代码。MCP 将「连接外部世界」抽象为可复用的 Server 单元。",
+    "firstPrinciples": [
+      {
+        "title": "协议优于点对点集成",
+        "body": "MCP 定义 JSON-RPC 消息格式、能力发现（list_tools）、调用语义（call_tool）和资源读取（read_resource）。一次实现的 Server 可被多个 Host 复用。"
+      },
+      {
+        "title": "Tools / Resources / Prompts 三原语",
+        "body": "Tools 是可执行动作（创建 Issue、查询数据库）；Resources 是只读上下文（文件内容、Schema）；Prompts 是预置模板。三类能力覆盖 Agent 与外部系统交互的主要模式。"
+      },
+      {
+        "title": "Transport 可插拔",
+        "body": "STDIO 适合本地 CLI 集成；Streamable HTTP 适合远程部署与 SaaS 场景。Transport 与业务逻辑解耦，同一 Server 可切换传输方式。"
+      },
+      {
+        "title": "安全边界清晰",
+        "body": "Host 负责用户授权与权限控制；Server 声明所需 scope。OAuth、API Key、本地文件访问均在 Host 侧统一管理，避免 Agent 直接持有凭证。"
+      }
+    ],
+    "comparison": {
+      "title": "MCP vs Skill vs 传统 Plugin",
+      "rows": [
+        {
+          "dimension": "定位",
+          "skill": "Agent 做事方法（流程规程）",
+          "mcp": "Agent 连接外部系统（工具接口）",
+          "plugin": "IDE 扩展功能"
+        },
+        {
+          "dimension": "内容形态",
+          "skill": "SKILL.md 工作流文档",
+          "mcp": "JSON-RPC Server + Tool Schema",
+          "plugin": "原生代码 + UI"
+        },
+        {
+          "dimension": "跨平台",
+          "skill": "多 Host 可安装同一 Skill 包",
+          "mcp": "多 Host 可连接同一 MCP Server",
+          "plugin": "通常绑定单一 IDE"
+        },
+        {
+          "dimension": "典型用途",
+          "skill": "TDD、调试规程、Code Review",
+          "mcp": "GitHub API、数据库、Figma 设计稿",
+          "plugin": "语法高亮、主题、快捷键"
+        }
+      ]
+    }
+  },
+  "value": {
+    "headline": "对团队与产品的核心价值",
+    "pillars": [
+      {
+        "title": "一次集成，多处复用",
+        "metric": "Write once · Connect everywhere",
+        "body": "自建 MCP Server 可同时服务 Cursor、Claude Desktop、VS Code Copilot、Windsurf 等 Host，降低多平台维护成本。"
+      },
+      {
+        "title": "生态即插即用",
+        "metric": "500+ 官方与社区 Server",
+        "body": "GitHub、Figma、Linear、PostgreSQL、Slack 等主流服务已有成熟 MCP Server，团队无需从零封装 API。"
+      },
+      {
+        "title": "可观测与可治理",
+        "metric": "Tool Schema 即文档",
+        "body": "每个 Tool 的 inputSchema 即机器可读 API 文档。团队可审计 Agent 可调用的外部动作范围，满足合规要求。"
+      },
+      {
+        "title": "与 Skill 互补",
+        "metric": "Skill 定流程 · MCP 供能力",
+        "body": "Skill 规定「怎么做」（如 mcp-builder 指导构建 Server）；MCP 提供「能做什么」（如 GitHub MCP 创建 Issue）。二者组合形成完整 Agent 工作流。"
+      }
+    ],
+    "audiences": [
+      {
+        "role": "开发者",
+        "benefit": "快速接入 GitHub/Figma/数据库，无需手写 API 封装"
+      },
+      {
+        "role": "平台团队",
+        "benefit": "将内部 API 封装为 MCP Server，统一 Agent 工具入口"
+      },
+      {
+        "role": "产品经理",
+        "benefit": "了解 Agent 可触达的外部能力边界，设计合理的人机协作流程"
+      }
+    ]
+  },
+  "adoption": {
+    "headline": "业界落地与生态规模",
+    "summary": "2024 年 11 月 Anthropic 发布 MCP 规范；2025 年起 Cursor、Claude Desktop、VS Code、GitHub Copilot 相继原生支持 MCP，社区 Server 数量爆发式增长。",
+    "ecosystems": [
+      {
+        "name": "Anthropic 官方",
+        "platform": "Claude Desktop / Claude Code",
+        "repo": "modelcontextprotocol/servers",
+        "scale": "参考实现 + 规范",
+        "highlight": "发布 MCP 规范与 reference servers（filesystem、fetch、memory 等），奠定协议基础。"
+      },
+      {
+        "name": "Cursor",
+        "platform": "Cursor IDE",
+        "repo": "cursor.com/docs/mcp",
+        "scale": "内置 MCP 客户端",
+        "highlight": "Settings → MCP 配置 JSON，支持 stdio 与 remote HTTP Server，Agent 自动发现 tools。"
+      },
+      {
+        "name": "GitHub Copilot",
+        "platform": "VS Code / Copilot CLI",
+        "repo": "github/awesome-copilot",
+        "scale": "MCP + Skills 双轨",
+        "highlight": "Copilot SDK 支持嵌入 MCP Server；awesome-copilot 提供多语言 MCP Server 生成器 Skill。"
+      },
+      {
+        "name": "社区生态",
+        "platform": "跨 Host",
+        "repo": "modelcontextprotocol/servers + pulsemcp.com",
+        "scale": "500+ Servers",
+        "highlight": "第三方 Server 覆盖 SaaS、数据库、DevOps、设计工具等全栈场景。"
+      }
+    ],
+    "milestones": [
+      {
+        "date": "2024-11",
+        "event": "Anthropic 发布 MCP 规范",
+        "impact": "定义 tools/resources/prompts 三原语与 STDIO transport，开源 reference servers。"
+      },
+      {
+        "date": "2025-03",
+        "event": "Cursor 原生 MCP 支持",
+        "impact": "IDE Agent 可直接调用 MCP tools，推动开发者社区 Server 爆发。"
+      },
+      {
+        "date": "2025-06",
+        "event": "Streamable HTTP Transport 标准化",
+        "impact": "远程 SaaS MCP Server 成为主流部署模式，SSE 逐步弃用。"
+      },
+      {
+        "date": "2025-12",
+        "event": "GitHub Copilot MCP GA",
+        "impact": "Copilot CLI 与 VS Code 统一 MCP 配置，企业内网 Server 部署加速。"
+      }
+    ],
+    "cases": [
+      {
+        "title": "设计到代码：Figma MCP",
+        "industry": "前端开发",
+        "server": "Figma MCP",
+        "scenario": "Agent 读取 Figma 节点设计上下文，生成 production-ready 组件代码。",
+        "outcome": "设计稿变更可自动同步到代码，减少设计师与开发者之间的 handoff 损耗。"
+      },
+      {
+        "title": "Issue 自动化：GitHub MCP",
+        "industry": "DevOps",
+        "server": "GitHub MCP",
+        "scenario": "Agent 根据 Code Review 结果自动创建 Issue、关联 PR、添加 label。",
+        "outcome": "CI 失败与 Review 意见可自动转化为可追踪工单，减少人工上下文切换。"
+      }
+    ]
+  },
+  "guide": {
+    "headline": "MCP Server 选型与接入指南",
+    "steps": [
+      {
+        "step": 1,
+        "title": "明确 Agent 需触达的外部能力",
+        "body": "列出任务中需调用的 API/服务（GitHub、数据库、设计工具等），优先查找是否已有社区 MCP Server。"
+      },
+      {
+        "step": 2,
+        "title": "选择 Transport 与部署方式",
+        "body": "本地开发用 STDIO（npx @modelcontextprotocol/server-xxx）；团队共享或 SaaS 用 Streamable HTTP；需 OAuth 的服务选支持 elicitation 的 Server。"
+      },
+      {
+        "step": 3,
+        "title": "在 Host 配置 MCP",
+        "body": "Cursor：Settings → MCP → 编辑 mcp.json；Claude Desktop：claude_desktop_config.json。配置 command/args 或 url/headers。"
+      },
+      {
+        "step": 4,
+        "title": "验证 Tool 可用性",
+        "body": "在 Agent 会话中触发相关任务，确认 tools 被正确发现与调用。检查 inputSchema 是否匹配业务需求。"
+      },
+      {
+        "step": 5,
+        "title": "自建 Server 时用 mcp-builder Skill",
+        "body": "无现成 Server 时，使用 mcp-builder Skill 按 FastMCP（Python）或 MCP SDK（TypeScript）规范构建，并发布供团队复用。"
+      }
+    ],
+    "antiPatterns": [
+      "在 MCP Server 内硬编码 API Key，而非通过 Host 环境变量注入",
+      "将复杂业务逻辑全部放入 Tool handler，应拆分为可组合的细粒度 Tools",
+      "忽略 inputSchema 描述，导致 Agent 传参错误",
+      "混用已弃用的 SSE transport 而非 Streamable HTTP",
+      "未限制 Tool 权限范围，让 Agent 可执行危险操作（如删除生产数据）"
+    ]
+  }
+}

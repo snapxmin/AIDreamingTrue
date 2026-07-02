@@ -1,0 +1,25 @@
+{
+  "snapshotAt": "2026-07-02T11:35:10Z",
+  "entries": {
+    "official-servers/github": "9acfde13d4108b6d4213d0af4692a9e55f6697a24916e586432eeab551b2ebde",
+    "community/figma": "6d7098ecf7491735d21132e730ec203a32bdc2f65af6747969ceb0a3ae2ccb91",
+    "community/linear": "7cfc3a7302d7142f68f13f532703a9782e69d4fb5403b6231637fb625f7be0fa",
+    "official-servers/postgres": "312d367f15b004fa6981b97286cdef50a5b2d6f35d1cca90cfc15fdfaf9c6136",
+    "official-servers/filesystem": "66b0f0f495d39e0e56bb59a591375758ca912f022c74ba1866dd713d621a5a86",
+    "community/playwright": "f0f47412387fddb05f33461fb7ad8d032b358be2ed1ee37d9634f8946e1ca9da",
+    "community/slack": "6d45a759ce4000edcf0294e3b19ab4522945fa5088f4ff792a5771408a2b772a",
+    "official-servers/brave-search": "16fae6d6e09813b36ab9e09602e93d952271ac66fe602c6b3a4bfd6623ddd7c3",
+    "official-servers/memory": "c361d8d731528b61519d7b3d9f3d6027cc90404c6835922dea2e94d2dd4beee3",
+    "community/sentry": "81fe3cca366af9a7055e19ad1f428dcd1e2faab1b035dc470848a57935dc33e7",
+    "community/notion": "4e057850746b505fc84e6728aed8b493265fa8009f5c6fe987435ccabddb65e1",
+    "community/docker": "bf14bf84f3c5f13ad3260b4fb19426a15cde877e5685344b48698da82d28b3a2",
+    "community/supabase": "24219d57205a463cd79c4bf3b6df25d6d3b7e746113b9994838a4e68d3a79695",
+    "community/stripe": "6a985aa776810889afd2cfeca0550c3d246ebf6bc0ea044839ba837a814f4474",
+    "community/chrome-devtools": "e928192996e5fbf27df120f09032ea9d876dfeb1ca3c05bf177935ca4fff7bf7",
+    "community/context7": "29bc34847c0bb4da5c898512b9004cd717af5843fe936b151f6046e009753498",
+    "official-servers/fetch": "7d5e3410083b23d2dcbb6204d4c17741f2199adac256038d2249b391e2777bd8",
+    "official-servers/sqlite": "fa5c209f6b7a3e2175a24cb17549a887f404713f2c1f00b06d67ca71026e8118",
+    "community/datadog": "022d792603352c81ad0884e2bc6e949bb4e13e324e52330012a0b4be38f1a05a",
+    "community/aws-kb-retrieval": "546cd454ff2afaeb3dbe94a5abec6c14161659e39cfd4b7ef965ce2e4ea5de51"
+  }
+}
