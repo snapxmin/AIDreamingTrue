@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "lastUpdated": "2026-07-02T00:00:00Z",
+    "note": "跨平台能力等价映射；members 链接到 skills-index 的 ecosystem/slug。"
+  },
+  "equivalents": [
+    {
+      "capability": "test-driven-development",
+      "label": "测试驱动开发",
+      "members": [
+        { "slug": "test-driven-development", "ecosystem": "superpowers", "platform": "Cursor" }
+      ]
+    },
+    {
+      "capability": "brainstorming",
+      "label": "需求头脑风暴",
+      "members": [
+        { "slug": "brainstorming", "ecosystem": "superpowers", "platform": "Cursor" }
+      ]
+    },
+    {
+      "capability": "security-review",
+      "label": "安全审查",
+      "members": [
+        { "slug": "security-review", "ecosystem": "awesome-copilot", "platform": "GitHub Copilot" },
+        { "slug": "security-best-practices", "ecosystem": "openai-skills", "platform": "Codex" }
+      ]
+    },
+    {
+      "capability": "code-review",
+      "label": "代码审查",
+      "members": [
+        { "slug": "requesting-code-review", "ecosystem": "superpowers", "platform": "Cursor" },
+        { "slug": "receiving-code-review", "ecosystem": "superpowers", "platform": "Cursor" }
+      ]
+    },
+    {
+      "capability": "debugging",
+      "label": "系统化调试",
+      "members": [
+        { "slug": "systematic-debugging", "ecosystem": "superpowers", "platform": "Cursor" }
+      ]
+    },
+    {
+      "capability": "frontend-design",
+      "label": "前端设计",
+      "members": [
+        { "slug": "frontend-design", "ecosystem": "anthropics-skills", "platform": "Claude Code" }
+      ]
+    },
+    {
+      "capability": "mcp-integration",
+      "label": "MCP 工具集成",
+      "members": [
+        { "slug": "mcp-builder", "ecosystem": "anthropics-skills", "platform": "Claude Code" }
+      ]
+    },
+    {
+      "capability": "ci-fix",
+      "label": "CI/CD 修复",
+      "members": [
+        { "slug": "gh-fix-ci", "ecosystem": "openai-skills", "platform": "Codex" }
+      ]
+    },
+    {
+      "capability": "e2e-testing",
+      "label": "E2E 测试",
+      "members": [
+        { "slug": "playwright", "ecosystem": "openai-skills", "platform": "Codex" }
+      ]
+    },
+    {
+      "capability": "skill-authoring",
+      "label": "Skill 创作",
+      "members": [
+        { "slug": "skill-creator", "ecosystem": "anthropics-skills", "platform": "Claude Code" },
+        { "slug": "writing-skills", "ecosystem": "superpowers", "platform": "Cursor" }
+      ]
+    }
+  ]
+}

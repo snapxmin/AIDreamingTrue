@@ -10,7 +10,7 @@
 - 事件详情（摘要、来源、影响分析、为什么重要）
 - 搜索与多维筛选（关键词、时间窗口、类型、公司、热度）
 - 趋势榜单（按热度与增长排序）
-- **Skill 库**（业界 Top Agent Skills 策展、详细介绍、使用案例）
+- **Skill 库**（Skill 雷达：策展 Top 20 + 全量索引 + 变更检测 + 事件联动）
 - 竞品演进历史时间线
 - 内容生产链路、质量机制、分阶段路线图展示
 
@@ -65,27 +65,41 @@ python3 scripts/collect_events.py
 python3 scripts/collect_events.py --dry-run
 ```
 
-### Skill 库数据
+### Skill 库数据（Skill 雷达 v3）
 
-Skill 库策展收录 GitHub Copilot（awesome-copilot）与 Cursor（superpowers）等生态的 Top Skills，并自动同步远程 `SKILL.md` 描述。
+Skill 库采用 **策展 + 全量索引 + 变更检测** 三层架构：
+
+| 文件 | 说明 |
+|------|------|
+| `data/skills.json` | 策展 Top 20（含 activityScore、relatedEvents） |
+| `data/skills-index.json` | 全量 Skill 索引（~400+） |
+| `data/skills-snapshot.json` | 变更检测快照（contentHash） |
+| `data/skill-changes.json` | 新增/更新变更 feed |
+| `data/skill-event-links.json` | 事件 ↔ Skill 关联 |
+| `data/skill-equivalents.json` | 跨平台能力等价映射 |
 
 ```bash
 # 查看监控来源
 python3 scripts/collect_skills.py --sources
 
-# 抓取 Skill 元数据并写入 data/skills.json
+# 完整采集（含全量索引 description）
 python3 scripts/collect_skills.py
+
+# 快速采集（跳过非策展 Skill 的远程抓取）
+python3 scripts/collect_skills.py --skip-index-fetch
 
 # 预览模式
 python3 scripts/collect_skills.py --dry-run
 ```
 
-监控来源：
+监控来源（4 个生态）：
 
 | 平台 | 仓库 | 说明 |
 |------|------|------|
+| Cursor / 跨平台 | [obra/superpowers](https://github.com/obra/superpowers) | Superpowers 工程纪律 skills |
 | GitHub Copilot | [github/awesome-copilot](https://github.com/github/awesome-copilot) | 365+ community skills |
-| Cursor | [obra/superpowers](https://github.com/obra/superpowers) | Superpowers 工程纪律 skills |
+| Claude Code | [anthropics/skills](https://github.com/anthropics/skills) | Anthropic 官方 skills |
+| Codex | [openai/skills](https://github.com/openai/skills) | OpenAI 精选 + experimental |
 
 ## 部署到 GitHub Pages
 

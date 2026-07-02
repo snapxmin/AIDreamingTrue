@@ -12,7 +12,7 @@
       <div class="header-row">
         <div>
           <h1>Skill 库</h1>
-          <p>策展业界 Top 20 Agent Skills：GitHub Copilot、Cursor、Claude Code、Codex、OpenCode</p>
+          <p>Skill 雷达：策展 Top 20 + 全量索引 + 变更检测 · 覆盖 Copilot / Cursor / Claude / Codex</p>
         </div>
         <nav class="site-nav" aria-label="站点导航">
           <a class="nav-link" href="./index.html">门户首页</a>
@@ -23,6 +23,18 @@
     </header>
 
     <section class="panel skills-meta" id="skillsMeta"></section>
+
+    <section class="panel skill-changes-panel" id="skillChangesPanel" hidden>
+      <div class="section-title">
+        <h2>Skill 雷达 · 近期变更</h2>
+        <span id="changesCount"></span>
+      </div>
+      <ul id="skillChangesList" class="skill-changes-list"></ul>
+    </section>
+
+    <nav class="panel view-nav" aria-label="视图切换">
+      <div id="viewTabs" class="view-tabs"></div>
+    </nav>
 
     <nav class="panel platform-nav" aria-label="平台筛选">
       <div id="platformTabs" class="platform-tabs"></div>
@@ -77,6 +89,6 @@
       </div>
     </div>
 
-    <script src="./skills.js?v=2"></script>
+    <script src="./skills.js?v=3"></script>
   </body>
 </html>

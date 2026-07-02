@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-业界 Top Agent Skills 采集脚本 — 从 GitHub Copilot、Cursor、Claude Code、Codex、OpenCode
-等生态抓取 Skill 元数据，合并策展内容与远程 SKILL.md 描述，输出 data/skills.json。
+业界 Agent Skills 采集脚本 v3 — 策展 Top N + 全量索引 + 变更检测 + 事件联动。
 """
 
 from __future__ import print_function
 
 import argparse
+import hashlib
 import json
 import os
 import re
 import sys
+import time
 from datetime import datetime, timezone
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
@@ -19,13 +20,20 @@ from urllib.request import Request, urlopen
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(ROOT, "data")
 SKILLS_PATH = os.path.join(DATA_DIR, "skills.json")
-USER_AGENT = "AIDreamingTrue-SkillsCollector/2.0"
+INDEX_PATH = os.path.join(DATA_DIR, "skills-index.json")
+SNAPSHOT_PATH = os.path.join(DATA_DIR, "skills-snapshot.json")
+CHANGES_PATH = os.path.join(DATA_DIR, "skill-changes.json")
+LINKS_PATH = os.path.join(DATA_DIR, "skill-event-links.json")
+EVENTS_PATH = os.path.join(DATA_DIR, "events.json")
+USER_AGENT = "AIDreamingTrue-SkillsCollector/3.0"
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 
 SOURCES = [
     {
         "id": "superpowers",
         "repo": "obra/superpowers",
         "pathTemplate": "skills/{slug}",
+        "discoverPaths": ["skills"],
         "primaryPlatform": "Cursor",
         "alsoOn": ["Claude Code", "Codex", "OpenCode", "GitHub Copilot"],
         "installCommand": "npx skills add obra/superpowers  # 或 Cursor/Claude 安装 superpowers 插件",
@@ -35,6 +43,7 @@ SOURCES = [
         "id": "awesome-copilot",
         "repo": "github/awesome-copilot",
         "pathTemplate": "skills/{slug}",
+        "discoverPaths": ["skills"],
         "primaryPlatform": "GitHub Copilot",
         "alsoOn": ["OpenCode"],
         "installCommand": "gh skill install github/awesome-copilot {slug}",
@@ -44,6 +53,7 @@ SOURCES = [
         "id": "anthropics-skills",
         "repo": "anthropics/skills",
         "pathTemplate": "skills/{slug}",
+        "discoverPaths": ["skills"],
         "primaryPlatform": "Claude Code",
         "alsoOn": ["OpenCode", "Codex", "Cursor"],
         "installCommand": "npx skills add anthropics/skills --skill {slug}",
@@ -53,6 +63,7 @@ SOURCES = [
         "id": "openai-skills",
         "repo": "openai/skills",
         "pathTemplate": "skills/.curated/{slug}",
+        "discoverPaths": ["skills/.curated"],
         "primaryPlatform": "Codex",
         "alsoOn": ["OpenCode"],
         "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/{slug}/",
@@ -84,15 +95,67 @@ CURATED_SKILLS = [
   {"slug":"context-map","sourceId":"awesome-copilot","displayName":"Context Map","rank":20,"primaryPlatform":"GitHub Copilot","sdePhase":"代码理解","category":"上下文管理","featured":False,"tags":["context","refactor","opencode"],"introduction":"改动前生成任务相关文件地图，明确影响范围。Copilot context-engineering 插件核心，OpenCode 亦可复用。","useCases":[{"title":"重构前摸底","scenario":"重命名核心服务。","prompt":"map files relevant to renaming AuthService","expected":"列出相关文件与修改优先级。"}]},
 ]
 
+CURATED_SLUGS = {(c["sourceId"], c["slug"]) for c in CURATED_SKILLS}
+SKILL_EVENT_KEYWORDS = re.compile(r"\bskills?\b|\bsuperpowers\b|\bmcp\b|\bplugin\b", re.I)
 
-def fetch_url(url, timeout=20):
-    req = Request(url, headers={"User-Agent": USER_AGENT, "Accept": "*/*"})
+
+def now_iso():
+    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def content_hash(text):
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
+def load_json(path, default=None):
+    if default is None:
+        default = {}
+    if not os.path.exists(path):
+        return default
+    with open(path, "r") as f:
+        return json.load(f)
+
+
+def save_json(path, data):
+    with open(path, "w") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+
+
+def api_headers():
+    headers = {"User-Agent": USER_AGENT, "Accept": "application/vnd.github+json"}
+    if GITHUB_TOKEN:
+        headers["Authorization"] = "Bearer {}".format(GITHUB_TOKEN)
+    return headers
+
+
+def skill_key(ecosystem, slug):
+    return "{}/{}".format(ecosystem, slug)
+
+
+def slug_to_display(slug):
+    return slug.replace("-", " ").title()
+
+
+def fetch_url(url, timeout=25, accept="*/*"):
+    headers = api_headers() if "api.github.com" in url else {"User-Agent": USER_AGENT, "Accept": accept}
+    req = Request(url, headers=headers)
     try:
         with urlopen(req, timeout=timeout) as resp:
             return resp.read().decode("utf-8", errors="replace")
     except (HTTPError, URLError) as exc:
         print("  [WARN] 无法抓取 {}: {}".format(url, exc), file=sys.stderr)
         return None
+
+
+def fetch_repo_stars(repo):
+    content = fetch_url("https://api.github.com/repos/{}".format(repo))
+    if not content:
+        return 0
+    try:
+        return int(json.loads(content).get("stargazers_count", 0))
+    except (ValueError, TypeError):
+        return 0
 
 
 def parse_frontmatter(content):
@@ -111,42 +174,148 @@ def parse_frontmatter(content):
     return result
 
 
-def fetch_skill_remote(source, slug):
-    path = source["pathTemplate"].format(slug=slug)
+def fetch_skill_full(source, slug, path_prefix=None):
+    if path_prefix:
+        rel = "{}/{}".format(path_prefix, slug)
+    else:
+        rel = source["pathTemplate"].format(slug=slug)
     for branch in ("main", "master"):
         url = "https://raw.githubusercontent.com/{}/{}/{}/SKILL.md".format(
-            source["repo"], branch, path
+            source["repo"], branch, rel
         )
         content = fetch_url(url)
         if content:
             meta = parse_frontmatter(content)
             desc = meta.get("description", "")
-            base = "https://github.com/{}/tree/{}/{}".format(source["repo"], branch, path)
-            return desc, base
-    return "", ""
+            source_url = "https://github.com/{}/tree/{}/{}".format(source["repo"], branch, rel)
+            return {
+                "description": desc,
+                "sourceUrl": source_url,
+                "contentHash": content_hash(content),
+                "descriptionHash": content_hash(desc),
+            }
+    return None
 
 
 def discover_repo_skills(source):
-    base_path = source["pathTemplate"].split("/{slug}")[0]
-    api_url = "https://api.github.com/repos/{}/contents/{}".format(source["repo"], base_path)
-    content = fetch_url(api_url)
-    if not content:
-        return []
-    try:
-        entries = json.loads(content)
-    except ValueError:
-        return []
-    return sorted(e["name"] for e in entries if e.get("type") == "dir" and not e["name"].startswith("."))
+    paths = source.get("discoverPaths") or [source["pathTemplate"].split("/{slug}")[0]]
+    found = {}
+    for base_path in paths:
+        api_url = "https://api.github.com/repos/{}/contents/{}".format(source["repo"], base_path)
+        content = fetch_url(api_url)
+        if not content:
+            continue
+        try:
+            entries = json.loads(content)
+        except ValueError:
+            continue
+        for entry in entries:
+            if entry.get("type") == "dir" and not entry["name"].startswith("."):
+                slug = entry["name"]
+                if slug not in found:
+                    found[slug] = base_path
+        time.sleep(0.05)
+    return found
 
 
-def build_record(curated, source, remote_desc, source_url):
-    slug = curated["slug"]
+def build_install_command(source, slug):
     install_tpl = source.get("installCommand", "")
-    install = install_tpl.format(slug=slug) if "{slug}" in install_tpl else install_tpl
+    if "{slug}" in install_tpl:
+        return install_tpl.format(slug=slug)
+    return install_tpl
 
+
+def compute_activity_score(signals):
+    score = 0.0
+    score += min(signals.get("repoStars", 0) / 200.0, 25)
+    score += signals.get("mentionedInEvents", 0) * 12
+    score += signals.get("crossPlatformCount", 0) * 8
+    score += 15 if signals.get("inTopCurated") else 0
+    score += 10 if signals.get("featured") else 0
+    if signals.get("isNew"):
+        score += 5
+    return min(int(round(score)), 100)
+
+
+def match_event_to_skills(event, index_by_slug):
+    text = " ".join([
+        event.get("title", ""),
+        event.get("summary", ""),
+        event.get("impact", ""),
+    ]).lower()
+    if not SKILL_EVENT_KEYWORDS.search(text):
+        return []
+    related = []
+    for (ecosystem, slug), entry in index_by_slug.items():
+        slug_dash = slug.lower()
+        slug_norm = slug_dash.replace("-", " ")
+        confidence = 0.0
+        if slug_dash in text or slug_norm in text:
+            confidence = 0.9
+        if confidence >= 0.6:
+            related.append({
+                "slug": slug,
+                "ecosystem": ecosystem,
+                "displayName": entry.get("displayName", slug_to_display(slug)),
+                "confidence": confidence,
+            })
+    related.sort(key=lambda x: -x["confidence"])
+    return related[:5]
+
+
+def detect_changes(previous_snapshot, current_snapshot, is_baseline):
+    changes = []
+    prev_keys = set(previous_snapshot.keys())
+    curr_keys = set(current_snapshot.keys())
+    ts = now_iso()
+
+    for key in sorted(curr_keys - prev_keys):
+        if is_baseline:
+            continue
+        entry = current_snapshot[key]
+        changes.append({
+            "type": "added",
+            "key": key,
+            "ecosystem": entry["ecosystem"],
+            "slug": entry["slug"],
+            "displayName": entry.get("displayName", entry["slug"]),
+            "summary": "生态新增 Skill：{}".format(entry.get("displayName", entry["slug"])),
+            "detectedAt": ts,
+        })
+
+    for key in sorted(curr_keys & prev_keys):
+        prev = previous_snapshot[key]
+        curr = current_snapshot[key]
+        changed_fields = []
+        if curr.get("contentHash") != prev.get("contentHash"):
+            changed_fields.append("content")
+        if curr.get("descriptionHash") != prev.get("descriptionHash"):
+            changed_fields.append("description")
+        if not changed_fields:
+            continue
+        summary = "Skill 内容已更新"
+        if "description" in changed_fields and curr.get("description"):
+            summary = "description 更新：{}…".format(curr["description"][:100])
+        changes.append({
+            "type": "updated",
+            "key": key,
+            "ecosystem": curr["ecosystem"],
+            "slug": curr["slug"],
+            "displayName": curr.get("displayName", curr["slug"]),
+            "changedFields": changed_fields,
+            "summary": summary,
+            "sourceUrl": curr.get("sourceUrl", ""),
+            "detectedAt": ts,
+        })
+    return changes
+
+
+def build_curated_record(curated, source, remote, signals, skill_events):
+    slug = curated["slug"]
     primary = curated.get("primaryPlatform", source["primaryPlatform"])
     also_on = list(source.get("alsoOn", []))
     platforms = [primary] + [p for p in also_on if p != primary]
+    remote_desc = remote["description"] if remote else ""
 
     return {
         "id": "skill-{:03d}".format(curated["rank"]),
@@ -159,55 +328,237 @@ def build_record(curated, source, remote_desc, source_url):
         "category": curated["category"],
         "sdePhase": curated["sdePhase"],
         "rank": curated["rank"],
+        "rankType": "editorial",
         "featured": curated.get("featured", False),
         "description": remote_desc or curated.get("description", ""),
         "introduction": curated["introduction"],
         "useCases": curated.get("useCases", []),
-        "installCommand": install,
-        "sourceUrl": source_url or "",
+        "installCommand": build_install_command(source, slug),
+        "sourceUrl": remote["sourceUrl"] if remote else "",
         "docsUrl": source.get("docsUrl", ""),
         "tags": curated.get("tags", []),
         "remoteSynced": bool(remote_desc),
+        "contentHash": remote["contentHash"] if remote else "",
+        "lastChangedAt": remote.get("lastChangedAt", "") if remote else "",
+        "activityScore": signals["activityScore"],
+        "activityRank": 0,
+        "signals": signals,
+        "relatedEvents": skill_events[:5],
     }
 
 
-def collect_skills(dry_run=False):
+def collect_skills(dry_run=False, fetch_index_descriptions=True):
     source_by_id = {s["id"]: s for s in SOURCES}
-    skills = []
-    discovery = {}
+    previous_snapshot = load_json(SNAPSHOT_PATH, default={})
+    is_baseline = len(previous_snapshot) == 0
+    generated_at = now_iso()
 
-    print("采集业界 Top 20 Agent Skills（跨平台）...")
+    repo_stars = {}
+    for source in SOURCES:
+        repo_stars[source["id"]] = fetch_repo_stars(source["repo"])
+        print("  [STARS] {} — {}".format(source["repo"], repo_stars[source["id"]]))
+
+    discovered = {}
+    for source in SOURCES:
+        discovered[source["id"]] = discover_repo_skills(source)
+        print("  [DISCOVER] {} — {} 个 skill 目录".format(source["id"], len(discovered[source["id"]])))
+
+    current_snapshot = {}
+    index_entries = []
+    curated_remote = {}
+
+    print("\n采集策展 Top 20（完整 SKILL.md）...")
     for curated in CURATED_SKILLS:
         source = source_by_id.get(curated["sourceId"])
         if not source:
             continue
-        print("  → #{} {} [{}]".format(curated["rank"], curated["slug"], curated.get("primaryPlatform", source["primaryPlatform"])))
-        remote_desc, source_url = fetch_skill_remote(source, curated["slug"])
-        skills.append(build_record(curated, source, remote_desc, source_url))
+        slug = curated["slug"]
+        path_prefix = discovered[source["id"]].get(slug)
+        if not path_prefix:
+            path_prefix = source["pathTemplate"].split("/{slug}")[0]
+        print("  → #{} {} [{}]".format(
+            curated["rank"], slug, curated.get("primaryPlatform", source["primaryPlatform"])))
+        remote = fetch_skill_full(source, slug, path_prefix)
+        if remote:
+            key = skill_key(source["id"], slug)
+            prev = previous_snapshot.get(key, {})
+            last_changed = prev.get("lastChangedAt", generated_at)
+            if prev and prev.get("contentHash") != remote["contentHash"]:
+                last_changed = generated_at
+            remote["lastChangedAt"] = last_changed
+            current_snapshot[key] = {
+                "ecosystem": source["id"],
+                "slug": slug,
+                "displayName": curated["displayName"],
+                "description": remote["description"],
+                "contentHash": remote["contentHash"],
+                "descriptionHash": remote["descriptionHash"],
+                "sourceUrl": remote["sourceUrl"],
+                "lastSeenAt": generated_at,
+                "lastChangedAt": last_changed,
+            }
+        curated_remote[(source["id"], slug)] = remote
+        time.sleep(0.05)
 
+    print("\n构建全量索引...")
+    slug_platform_count = {}
     for source in SOURCES:
-        total = len(discover_repo_skills(source))
-        curated_count = sum(1 for s in skills if s["ecosystem"] == source["id"])
+        for slug in discovered[source["id"]]:
+            slug_platform_count[slug] = slug_platform_count.get(slug, 0) + 1
+
+    index_total = sum(len(d) for d in discovered.values())
+    index_done = 0
+    for source in SOURCES:
+        for slug, path_prefix in sorted(discovered[source["id"]].items()):
+            index_done += 1
+            in_top = (source["id"], slug) in CURATED_SLUGS
+            is_new = not is_baseline and skill_key(source["id"], slug) not in previous_snapshot
+
+            remote = curated_remote.get((source["id"], slug))
+            if not remote and fetch_index_descriptions:
+                if index_done % 50 == 0:
+                    print("  ... 索引进度 {}/{}".format(index_done, index_total))
+                remote = fetch_skill_full(source, slug, path_prefix)
+                time.sleep(0.03)
+
+            key = skill_key(source["id"], slug)
+            if remote:
+                prev = previous_snapshot.get(key, {})
+                last_changed = prev.get("lastChangedAt", generated_at)
+                if prev and prev.get("contentHash") != remote["contentHash"]:
+                    last_changed = generated_at
+                remote["lastChangedAt"] = last_changed
+                current_snapshot[key] = {
+                    "ecosystem": source["id"],
+                    "slug": slug,
+                    "displayName": slug_to_display(slug),
+                    "description": remote["description"],
+                    "contentHash": remote["contentHash"],
+                    "descriptionHash": remote["descriptionHash"],
+                    "sourceUrl": remote["sourceUrl"],
+                    "lastSeenAt": generated_at,
+                    "lastChangedAt": last_changed,
+                }
+
+            curated_match = next(
+                (c for c in CURATED_SKILLS if c["slug"] == slug and c["sourceId"] == source["id"]),
+                None,
+            )
+            display = curated_match["displayName"] if curated_match else slug_to_display(slug)
+
+            index_entries.append({
+                "id": "idx-{}-{}".format(source["id"], slug),
+                "slug": slug,
+                "displayName": display,
+                "ecosystem": source["id"],
+                "platform": source["primaryPlatform"],
+                "platforms": [source["primaryPlatform"]] + [
+                    p for p in source.get("alsoOn", []) if p != source["primaryPlatform"]
+                ],
+                "description": remote["description"] if remote else "",
+                "sourceUrl": remote["sourceUrl"] if remote else "",
+                "installCommand": build_install_command(source, slug),
+                "inTopCurated": in_top,
+                "isNew": is_new,
+                "discoveredAt": previous_snapshot.get(key, {}).get("lastSeenAt", generated_at),
+                "lastChangedAt": current_snapshot.get(key, {}).get("lastChangedAt", ""),
+                "pathPrefix": path_prefix,
+            })
+
+    changes = detect_changes(previous_snapshot, current_snapshot, is_baseline)
+
+    events = load_json(EVENTS_PATH, default=[])
+    event_links = []
+    if isinstance(events, list):
+        index_by_slug = {(e["ecosystem"], e["slug"]): e for e in index_entries}
+        for event in events:
+            related = match_event_to_skills(event, index_by_slug)
+            for rel in related:
+                event_links.append({
+                    "eventId": event.get("id", ""),
+                    "eventTitle": event.get("title", ""),
+                    "eventDate": event.get("date", ""),
+                    "slug": rel["slug"],
+                    "ecosystem": rel["ecosystem"],
+                    "displayName": rel["displayName"],
+                    "confidence": rel["confidence"],
+                })
+            if related:
+                event["relatedSkills"] = related
+                if event.get("topic") == "Agent" and SKILL_EVENT_KEYWORDS.search(event.get("title", "")):
+                    event["topic"] = "Skill"
+
+    mention_counts = {}
+    for link in event_links:
+        k = (link["ecosystem"], link["slug"])
+        mention_counts[k] = mention_counts.get(k, 0) + 1
+
+    skills = []
+    print("\n组装策展记录...")
+    for curated in CURATED_SKILLS:
+        source = source_by_id.get(curated["sourceId"])
+        if not source:
+            continue
+        slug = curated["slug"]
+        remote = curated_remote.get((source["id"], slug))
+        key = (source["id"], slug)
+        signals = {
+            "repoStars": repo_stars.get(source["id"], 0),
+            "mentionedInEvents": mention_counts.get(key, 0),
+            "crossPlatformCount": max(slug_platform_count.get(slug, 1) - 1, 0),
+            "inTopCurated": True,
+            "featured": curated.get("featured", False),
+            "isNew": False,
+        }
+        signals["activityScore"] = compute_activity_score(signals)
+        skill_events = [
+            {"eventId": l["eventId"], "eventTitle": l["eventTitle"], "eventDate": l["eventDate"]}
+            for l in event_links if l["slug"] == slug and l["ecosystem"] == source["id"]
+        ]
+        skills.append(build_curated_record(curated, source, remote, signals, skill_events))
+
+    by_activity = sorted(skills, key=lambda s: -s["activityScore"])
+    activity_rank = {s["id"]: i + 1 for i, s in enumerate(by_activity)}
+    for skill in skills:
+        skill["activityRank"] = activity_rank[skill["id"]]
+    skills.sort(key=lambda s: s["rank"])
+
+    for entry in index_entries:
+        key = (entry["ecosystem"], entry["slug"])
+        sig = {
+            "repoStars": repo_stars.get(entry["ecosystem"], 0),
+            "mentionedInEvents": mention_counts.get(key, 0),
+            "crossPlatformCount": max(slug_platform_count.get(entry["slug"], 1) - 1, 0),
+            "inTopCurated": entry["inTopCurated"],
+            "featured": False,
+            "isNew": entry["isNew"],
+        }
+        entry["activityScore"] = compute_activity_score(sig)
+    index_entries.sort(key=lambda e: (-e["activityScore"], e["displayName"]))
+
+    discovery = {}
+    for source in SOURCES:
         discovery[source["id"]] = {
             "platform": source["primaryPlatform"],
             "alsoOn": source.get("alsoOn", []),
             "repo": source["repo"],
-            "totalInRepo": total,
-            "curatedCount": curated_count,
+            "repoStars": repo_stars.get(source["id"], 0),
+            "totalInRepo": len(discovered[source["id"]]),
+            "curatedCount": sum(1 for s in skills if s["ecosystem"] == source["id"]),
         }
-        print("  [DISCOVER] {} — 仓库约 {} 个，策展 {} 个".format(source["primaryPlatform"], total, curated_count))
 
-    skills.sort(key=lambda s: s["rank"])
     all_platforms = sorted({p for s in skills for p in s["platforms"]})
-
-    payload = {
+    skills_payload = {
         "meta": {
-            "lastUpdated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "lastUpdated": generated_at,
             "totalCount": len(skills),
             "featuredCount": sum(1 for s in skills if s["featured"]),
+            "indexTotalCount": len(index_entries),
+            "newCount": sum(1 for e in index_entries if e["isNew"]),
+            "changesCount": len(changes),
             "sources": [s["id"] for s in SOURCES],
             "discovery": discovery,
-            "note": "Top 20 策展 Skills，覆盖 GitHub Copilot / Cursor / Claude Code / Codex / OpenCode；description 从远程 SKILL.md 同步。",
+            "note": "Top 20 策展 + 全量索引；含 activityScore、变更 feed 与事件联动。",
         },
         "sdePhases": sorted({s["sdePhase"] for s in skills}),
         "platforms": all_platforms,
@@ -215,17 +566,47 @@ def collect_skills(dry_run=False):
         "skills": skills,
     }
 
+    index_payload = {
+        "meta": {
+            "lastUpdated": generated_at,
+            "totalCount": len(index_entries),
+            "newCount": sum(1 for e in index_entries if e["isNew"]),
+            "sources": [s["id"] for s in SOURCES],
+        },
+        "skills": index_entries,
+    }
+
+    changes_payload = {
+        "generatedAt": generated_at,
+        "isBaselineRun": is_baseline,
+        "changes": changes[:100],
+    }
+
+    links_payload = {"generatedAt": generated_at, "links": event_links}
+
     if dry_run:
-        print(json.dumps(payload, ensure_ascii=False, indent=2)[:4000], "...")
-        return payload
+        print("\n[DRY-RUN] 策展 {} / 索引 {} / 变更 {}".format(
+            len(skills), len(index_entries), len(changes)))
+        return skills_payload
 
     if not os.path.exists(DATA_DIR):
         os.makedirs(DATA_DIR)
-    with open(SKILLS_PATH, "w") as f:
-        json.dump(payload, f, ensure_ascii=False, indent=2)
-        f.write("\n")
-    print("\n已写入 {}（{} 条 skill）".format(SKILLS_PATH, len(skills)))
-    return payload
+
+    save_json(SKILLS_PATH, skills_payload)
+    save_json(INDEX_PATH, index_payload)
+    save_json(SNAPSHOT_PATH, current_snapshot)
+    save_json(CHANGES_PATH, changes_payload)
+    save_json(LINKS_PATH, links_payload)
+    if isinstance(events, list) and events:
+        save_json(EVENTS_PATH, events)
+
+    print("\n已写入:")
+    print("  {} ({} 策展)".format(SKILLS_PATH, len(skills)))
+    print("  {} ({} 索引)".format(INDEX_PATH, len(index_entries)))
+    print("  {} ({} 快照键)".format(SNAPSHOT_PATH, len(current_snapshot)))
+    print("  {} ({} 变更)".format(CHANGES_PATH, len(changes)))
+    print("  {} ({} 事件关联)".format(LINKS_PATH, len(event_links)))
+    return skills_payload
 
 
 def print_sources():
@@ -239,11 +620,13 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--sources", action="store_true")
+    parser.add_argument("--skip-index-fetch", action="store_true",
+                        help="跳过非策展 Skill 的远程 description 抓取")
     args = parser.parse_args()
     if args.sources:
         print_sources()
         return 0
-    collect_skills(dry_run=args.dry_run)
+    collect_skills(dry_run=args.dry_run, fetch_index_descriptions=not args.skip_index_fetch)
     return 0
 
 

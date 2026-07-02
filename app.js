@@ -1,5 +1,10 @@
 (async function init() {
-  const [events, competitors] = await Promise.all([loadEvents(), loadCompetitors()]);
+  const [events, competitors, skillChanges, skillsMeta] = await Promise.all([
+    loadEvents(),
+    loadCompetitors(),
+    loadJson("./data/skill-changes.json"),
+    loadJson("./data/skills.json")
+  ]);
 
   const ui = {
     list: document.getElementById("eventList"),
@@ -28,6 +33,7 @@
   hydrateSelect(ui.topic, events.map((e) => e.topic));
   hydrateSelect(ui.company, events.map((e) => e.company));
   renderCompanyTags(topCompanies, ui);
+  renderSkillRadar(skillChanges, skillsMeta);
 
   const onChange = () => {
     syncCompanyTags(ui);
@@ -103,13 +109,20 @@
   }
 
   function renderDetail(event) {
+    const relatedSkills = (event.relatedSkills || [])
+      .map(
+        (s) =>
+          `<li><a href="./skills.html#${encodeURIComponent(s.slug)}">${escapeHtml(s.displayName || s.slug)}</a> (${escapeHtml(s.ecosystem)})</li>`
+      )
+      .join("");
     ui.detail.innerHTML = `
-      <h3>${event.title}</h3>
-      <p>${event.summary}</p>
-      <p><strong>影响分析：</strong>${event.impact}</p>
-      <p><strong>为什么重要：</strong>${event.whyImportant}</p>
-      <p><strong>来源：</strong><a href="${event.sourceUrl}" target="_blank" rel="noreferrer">${event.sourceUrl}</a></p>
-      <p><strong>来源分级：</strong><span class="badge ${event.sourceTier.toLowerCase()}">${event.sourceTier}</span></p>
+      <h3>${escapeHtml(event.title)}</h3>
+      <p>${escapeHtml(event.summary)}</p>
+      <p><strong>影响分析：</strong>${escapeHtml(event.impact)}</p>
+      <p><strong>为什么重要：</strong>${escapeHtml(event.whyImportant)}</p>
+      ${relatedSkills ? `<p><strong>相关 Skill：</strong></p><ul>${relatedSkills}</ul>` : ""}
+      <p><strong>来源：</strong><a href="${escapeHtml(event.sourceUrl)}" target="_blank" rel="noreferrer">${escapeHtml(event.sourceUrl)}</a></p>
+      <p><strong>来源分级：</strong><span class="badge ${event.sourceTier.toLowerCase()}">${escapeHtml(event.sourceTier)}</span></p>
       <p><strong>版本记录：</strong>v1.0（初次收录）</p>
     `;
   }
@@ -145,6 +158,55 @@ const EVENT_COMPANY_BY_COMPETITOR = {
   "google-jules": "Google",
   kiro: "AWS"
 };
+
+function renderSkillRadar(skillChanges, skillsMeta) {
+  const container = document.getElementById("skillRadarList");
+  const section = document.getElementById("skillRadarHome");
+  if (!container || !section) return;
+
+  const changes = (skillChanges.changes || []).slice(0, 6);
+  const meta = skillsMeta.meta || {};
+
+  if (!changes.length && !meta.indexTotalCount) {
+    section.hidden = true;
+    return;
+  }
+
+  const summary = document.createElement("p");
+  summary.className = "skill-radar-summary";
+  summary.textContent = `全量索引 ${meta.indexTotalCount || "—"} 个 · 本周新增 ${meta.newCount || 0} · 近期变更 ${meta.changesCount || 0}`;
+  section.insertBefore(summary, container);
+
+  if (!changes.length) {
+    container.innerHTML = "<li>暂无变更记录（首次运行已建立基线快照）。</li>";
+    return;
+  }
+
+  container.innerHTML = changes
+    .map((c) => {
+      const label = c.type === "added" ? "新增" : "更新";
+      return `<li><strong>[${label}]</strong> <a href="./skills.html#${encodeURIComponent(c.slug)}">${escapeHtml(c.displayName || c.slug)}</a> — ${escapeHtml(c.summary || "")}</li>`;
+    })
+    .join("");
+}
+
+async function loadJson(url) {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) return {};
+    return await response.json();
+  } catch {
+    return {};
+  }
+}
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
 
 function buildTopCompanies(competitors) {
   return competitors.map((competitor) => ({

@@ -1,10 +1,22 @@
 (async function init() {
-  const data = await loadSkills();
-  const skills = data.skills || [];
+  const [data, indexData, changesData, equivalentsData] = await Promise.all([
+    loadSkills(),
+    loadJson("./data/skills-index.json"),
+    loadJson("./data/skill-changes.json"),
+    loadJson("./data/skill-equivalents.json")
+  ]);
+
+  const curatedSkills = data.skills || [];
+  const indexSkills = indexData.skills || [];
+  const equivalents = equivalentsData.equivalents || [];
   const meta = data.meta || {};
 
   const ui = {
     meta: document.getElementById("skillsMeta"),
+    changesPanel: document.getElementById("skillChangesPanel"),
+    changesList: document.getElementById("skillChangesList"),
+    changesCount: document.getElementById("changesCount"),
+    viewTabs: document.getElementById("viewTabs"),
     platformTabs: document.getElementById("platformTabs"),
     phaseQuickTabs: document.getElementById("phaseQuickTabs"),
     search: document.getElementById("skillSearch"),
@@ -21,44 +33,70 @@
   };
 
   const state = {
+    view: "curated",
     platform: "all",
     phase: "all",
     category: "all",
     search: "",
     featuredOnly: false,
-    activeId: resolveInitialSkill(skills)
+    activeId: null
   };
 
+  const equivalentByMember = buildEquivalentLookup(equivalents);
+
   hydrateFilters(data, ui);
-  renderMeta(meta, data, ui);
+  renderMeta(meta, data, indexData, ui);
+  renderChanges(changesData, ui);
+  renderViewTabs(state, ui, () => rerender());
   renderPlatformTabs(data.platforms || [], state, ui, () => rerender());
   renderPhaseQuickTabs(data.sdePhases || [], state, ui, () => rerender());
   bindFilters(state, ui, () => rerender());
   bindModal(ui);
+
+  state.activeId = resolveInitialSkill(getActivePool(state, curatedSkills, indexSkills));
   rerender();
 
-  function rerender() {
-    const filtered = applyFilters(skills, state);
-    renderSkillGrid(filtered, state, ui);
-    const active = filtered.find((s) => s.id === state.activeId) || filtered[0];
-    if (active) {
-      state.activeId = active.id;
-      renderSkillDetail(active, ui);
-    } else {
-      ui.detail.innerHTML = "<p>没有匹配的 Skill。</p>";
-    }
-    ui.count.textContent = `共 ${filtered.length} 个`;
-    ui.empty.hidden = filtered.length > 0;
-  }
-
   window.addEventListener("hashchange", () => {
-    const next = resolveInitialSkill(skills);
+    const pool = getActivePool(state, curatedSkills, indexSkills);
+    const next = resolveInitialSkill(pool);
     if (next !== state.activeId) {
       state.activeId = next;
       rerender();
     }
   });
+
+  function rerender() {
+    const pool = getActivePool(state, curatedSkills, indexSkills);
+    const filtered = applyFilters(pool, state, state.view === "curated");
+    renderSkillGrid(filtered, state, ui, state.view === "curated", rerender);
+    const active = filtered.find((s) => s.id === state.activeId) || filtered[0];
+    if (active) {
+      state.activeId = active.id;
+      renderSkillDetail(active, ui, equivalents, equivalentByMember, state.view === "curated");
+    } else {
+      ui.detail.innerHTML = "<p>没有匹配的 Skill。</p>";
+    }
+    ui.count.textContent = `共 ${filtered.length} 个`;
+    ui.empty.hidden = filtered.length > 0;
+    ui.featuredOnly.closest(".checkbox-row").hidden = state.view !== "curated";
+  }
 })();
+
+function getActivePool(state, curated, index) {
+  if (state.view === "index") return index;
+  if (state.view === "new") return index.filter((s) => s.isNew);
+  return curated;
+}
+
+function buildEquivalentLookup(equivalents) {
+  const map = new Map();
+  equivalents.forEach((eq) => {
+    (eq.members || []).forEach((m) => {
+      map.set(`${m.ecosystem}/${m.slug}`, eq);
+    });
+  });
+  return map;
+}
 
 function resolveInitialSkill(skills) {
   const hash = window.location.hash.replace("#", "");
@@ -68,6 +106,16 @@ function resolveInitialSkill(skills) {
   }
   const featured = skills.find((s) => s.featured);
   return featured ? featured.id : skills[0]?.id;
+}
+
+async function loadJson(url) {
+  try {
+    const resp = await fetch(url);
+    if (!resp.ok) throw new Error("fetch failed");
+    return await resp.json();
+  } catch {
+    return {};
+  }
 }
 
 async function loadSkills() {
@@ -96,26 +144,76 @@ function hydrateFilters(data, ui) {
   });
 }
 
-function renderMeta(meta, data, ui) {
+function renderMeta(meta, data, indexData, ui) {
   const discovery = meta.discovery || {};
   const copilotTotal = discovery["awesome-copilot"]?.totalInRepo || "365+";
-  const cursorTotal = discovery["cursor-superpowers"]?.totalInRepo || "14";
+  const superpowersTotal = discovery["superpowers"]?.totalInRepo || "14";
+  const indexTotal = meta.indexTotalCount || indexData.meta?.totalCount || "—";
+  const newCount = meta.newCount || indexData.meta?.newCount || 0;
 
   ui.meta.innerHTML = `
-    <div class="meta-card"><strong>${meta.totalCount || data.skills?.length || 0}</strong><span>策展 Top Skills</span></div>
-    <div class="meta-card"><strong>${meta.featuredCount || 0}</strong><span>精选推荐</span></div>
-    <div class="meta-card"><strong>${copilotTotal}</strong><span>GitHub Copilot 生态</span></div>
-    <div class="meta-card"><strong>${cursorTotal}</strong><span>Cursor Superpowers</span></div>
+    <div class="meta-card"><strong>${meta.totalCount || data.skills?.length || 0}</strong><span>策展 Top</span></div>
+    <div class="meta-card"><strong>${indexTotal}</strong><span>全量索引</span></div>
+    <div class="meta-card"><strong>${newCount}</strong><span>本周新增</span></div>
+    <div class="meta-card"><strong>${meta.changesCount ?? 0}</strong><span>近期变更</span></div>
+    <div class="meta-card"><strong>${copilotTotal}</strong><span>Copilot 生态</span></div>
+    <div class="meta-card"><strong>${superpowersTotal}</strong><span>Superpowers</span></div>
   `;
 
   const updated = meta.lastUpdated
     ? new Date(meta.lastUpdated).toLocaleString("zh-CN", { hour12: false })
     : "未知";
   ui.syncInfo.innerHTML = `
-    <div><strong>自动同步</strong></div>
+    <div><strong>Skill 雷达</strong></div>
     <div>最近更新：${escapeHtml(updated)}</div>
-    <div>每日 08:30（北京时间）由 GitHub Actions 抓取远程 SKILL.md 并部署门户。</div>
+    <div>每日自动同步 SKILL.md、检测变更并更新全量索引。</div>
   `;
+}
+
+function renderChanges(changesData, ui) {
+  const changes = (changesData.changes || []).filter((c) => c.type !== "removed");
+  if (!changes.length || changesData.isBaselineRun) {
+    ui.changesPanel.hidden = true;
+    return;
+  }
+  ui.changesPanel.hidden = false;
+  ui.changesCount.textContent = `${changes.length} 条`;
+  ui.changesList.innerHTML = changes
+    .slice(0, 12)
+    .map((c) => {
+      const badge = c.type === "added" ? "新增" : "更新";
+      const badgeClass = c.type === "added" ? "badge featured" : "badge phase";
+      return `
+        <li class="change-item">
+          <span class="${badgeClass}">${badge}</span>
+          <a href="#${escapeHtml(c.slug)}" class="change-link">${escapeHtml(c.displayName || c.slug)}</a>
+          <span class="change-eco">${escapeHtml(c.ecosystem)}</span>
+          <p>${escapeHtml(c.summary || "")}</p>
+        </li>`;
+    })
+    .join("");
+}
+
+function renderViewTabs(state, ui, onChange) {
+  const tabs = [
+    { id: "curated", label: "精选 Top 20" },
+    { id: "index", label: "全量索引" },
+    { id: "new", label: "本周新增" }
+  ];
+  ui.viewTabs.innerHTML = tabs
+    .map(
+      (tab) =>
+        `<button type="button" class="view-tab${state.view === tab.id ? " active" : ""}" data-view="${tab.id}">${tab.label}</button>`
+    )
+    .join("");
+  ui.viewTabs.querySelectorAll(".view-tab").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      state.view = btn.dataset.view;
+      ui.viewTabs.querySelectorAll(".view-tab").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      onChange();
+    });
+  });
 }
 
 function renderPlatformTabs(platforms, state, ui, onChange) {
@@ -179,12 +277,12 @@ function bindFilters(state, ui, onChange) {
   });
 }
 
-function applyFilters(skills, state) {
+function applyFilters(skills, state, isCurated) {
   return skills.filter((skill) => {
     if (!skillMatchesPlatform(skill, state.platform)) return false;
-    if (state.phase !== "all" && skill.sdePhase !== state.phase) return false;
-    if (state.category !== "all" && skill.category !== state.category) return false;
-    if (state.featuredOnly && !skill.featured) return false;
+    if (isCurated && state.phase !== "all" && skill.sdePhase !== state.phase) return false;
+    if (isCurated && state.category !== "all" && skill.category !== state.category) return false;
+    if (isCurated && state.featuredOnly && !skill.featured) return false;
     if (state.search) {
       const haystack = [
         skill.displayName,
@@ -192,11 +290,13 @@ function applyFilters(skills, state) {
         skill.description,
         skill.introduction,
         skill.platform,
+        skill.ecosystem,
         ...(skill.platforms || []),
         skill.sdePhase,
         skill.category,
         ...(skill.tags || [])
       ]
+        .filter(Boolean)
         .join(" ")
         .toLowerCase();
       if (!haystack.includes(state.search)) return false;
@@ -224,26 +324,41 @@ function skillMatchesPlatform(skill, platformFilter) {
 function renderPlatformBadges(skill) {
   const platforms = skill.platforms || [skill.platform];
   return platforms
+    .filter(Boolean)
     .map((p) => `<span class="badge ${platformBadgeClass(p)}">${escapeHtml(p)}</span>`)
     .join("");
 }
-function renderSkillGrid(skills, state, ui) {
+
+function renderSkillGrid(skills, state, ui, isCurated, onSelect) {
   ui.grid.innerHTML = skills
     .map((skill) => {
+      const rankLabel = isCurated
+        ? `#${skill.rank}`
+        : skill.activityScore != null
+          ? `活跃 ${skill.activityScore}`
+          : "";
+      const extraBadges = [
+        skill.featured ? '<span class="badge featured">精选</span>' : "",
+        skill.isNew ? '<span class="badge new">新</span>' : "",
+        skill.inTopCurated ? '<span class="badge phase">Top</span>' : ""
+      ].join("");
+      const phaseBadge = skill.sdePhase
+        ? `<span class="badge phase">${escapeHtml(skill.sdePhase)}</span>`
+        : "";
+
       return `
         <article class="skill-card${skill.id === state.activeId ? " active" : ""}" role="listitem" data-id="${escapeHtml(skill.id)}" tabindex="0">
           <div class="skill-card-header">
             <h3>${escapeHtml(skill.displayName)}</h3>
-            <span class="skill-rank">#${skill.rank}</span>
+            ${rankLabel ? `<span class="skill-rank">${escapeHtml(rankLabel)}</span>` : ""}
           </div>
           <p class="skill-desc">${escapeHtml(skill.description || skill.introduction || "")}</p>
           <div class="skill-tags">
             ${renderPlatformBadges(skill)}
-            <span class="badge phase">${escapeHtml(skill.sdePhase)}</span>
-            ${skill.featured ? '<span class="badge featured">精选</span>' : ""}
+            ${phaseBadge}
+            ${extraBadges}
           </div>
-        </article>
-      `;
+        </article>`;
     })
     .join("");
 
@@ -253,10 +368,10 @@ function renderSkillGrid(skills, state, ui) {
       const skill = skills.find((s) => s.id === state.activeId);
       if (skill) {
         window.location.hash = skill.slug;
-        renderSkillDetail(skill, ui);
       }
       ui.grid.querySelectorAll(".skill-card").forEach((c) => c.classList.remove("active"));
       card.classList.add("active");
+      if (onSelect) onSelect();
     };
     card.addEventListener("click", open);
     card.addEventListener("keydown", (e) => {
@@ -268,11 +383,11 @@ function renderSkillGrid(skills, state, ui) {
   });
 }
 
-function renderSkillDetail(skill, ui) {
-  ui.detail.innerHTML = buildSkillDetailHtml(skill, false);
+function renderSkillDetail(skill, ui, equivalents, equivalentByMember, isCurated) {
+  ui.detail.innerHTML = buildSkillDetailHtml(skill, equivalentByMember, isCurated, false);
 }
 
-function buildSkillDetailHtml(skill, inModal) {
+function buildSkillDetailHtml(skill, equivalentByMember, isCurated, inModal) {
   const useCasesHtml = (skill.useCases || [])
     .map(
       (uc) => `
@@ -284,48 +399,74 @@ function buildSkillDetailHtml(skill, inModal) {
         <div class="prompt-block">${escapeHtml(uc.prompt)}</div>
         <div class="use-case-label">预期结果</div>
         <p>${escapeHtml(uc.expected)}</p>
-      </div>
-    `
+      </div>`
     )
     .join("");
 
   const tagsHtml = (skill.tags || []).map((t) => `<span class="badge">${escapeHtml(t)}</span>`).join(" ");
 
+  const eq = equivalentByMember.get(`${skill.ecosystem}/${skill.slug}`);
+  const equivalentsHtml = eq
+    ? `<section><h4>同类能力（${escapeHtml(eq.label)}）</h4><ul>${eq.members
+        .filter((m) => !(m.ecosystem === skill.ecosystem && m.slug === skill.slug))
+        .map(
+          (m) =>
+            `<li><a href="#${escapeHtml(m.slug)}">${escapeHtml(m.platform)} · ${escapeHtml(m.slug)}</a></li>`
+        )
+        .join("")}</ul></section>`
+    : "";
+
+  const eventsHtml = (skill.relatedEvents || []).length
+    ? `<section><h4>相关动态</h4><ul>${skill.relatedEvents
+        .map(
+          (e) =>
+            `<li><a href="./index.html">${escapeHtml(e.eventDate)} · ${escapeHtml(e.eventTitle)}</a></li>`
+        )
+        .join("")}</ul></section>`
+    : "";
+
+  const scoreHtml =
+    skill.activityScore != null
+      ? `<span class="badge">活跃度 ${skill.activityScore}</span><span class="badge">活跃排名 #${skill.activityRank || "—"}</span>`
+      : "";
+
+  const rankHtml = isCurated
+    ? `<span class="skill-rank">编辑推荐 #${skill.rank}</span>`
+    : skill.inTopCurated
+      ? '<span class="badge featured">已策展</span>'
+      : "";
+
   return `
-    <h3>${escapeHtml(skill.displayName)} <span class="skill-rank">#${skill.rank}</span></h3>
+    <h3>${escapeHtml(skill.displayName)} ${rankHtml}</h3>
     <div class="skill-tags" style="margin-bottom:12px">
       ${renderPlatformBadges(skill)}
-      <span class="badge phase">${escapeHtml(skill.sdePhase)}</span>
-      <span class="badge">${escapeHtml(skill.category)}</span>
+      ${skill.sdePhase ? `<span class="badge phase">${escapeHtml(skill.sdePhase)}</span>` : ""}
+      ${skill.category ? `<span class="badge">${escapeHtml(skill.category)}</span>` : ""}
       ${skill.featured ? '<span class="badge featured">精选</span>' : ""}
       ${skill.remoteSynced ? '<span class="badge a">已同步远程</span>' : ""}
+      ${skill.isNew ? '<span class="badge new">本周新增</span>' : ""}
+      ${scoreHtml}
     </div>
 
     <section>
       <h4>简介</h4>
-      <p>${escapeHtml(skill.description || "")}</p>
+      <p>${escapeHtml(skill.description || "暂无远程描述。")}</p>
     </section>
 
-    <section>
-      <h4>详细介绍</h4>
-      <p>${escapeHtml(skill.introduction || "")}</p>
-    </section>
+    ${skill.introduction ? `<section><h4>详细介绍</h4><p>${escapeHtml(skill.introduction)}</p></section>` : ""}
 
     <section>
       <h4>安装方式</h4>
-      <pre class="install-block">${escapeHtml(skill.installCommand || "")}</pre>
+      <pre class="install-block">${escapeHtml(skill.installCommand || "见源码仓库")}</pre>
       ${skill.sourceUrl ? `<p><a href="${escapeHtml(skill.sourceUrl)}" target="_blank" rel="noopener">查看源码 →</a></p>` : ""}
     </section>
 
-    <section>
-      <h4>标签</h4>
-      <div class="skill-tags">${tagsHtml}</div>
-    </section>
+    ${tagsHtml ? `<section><h4>标签</h4><div class="skill-tags">${tagsHtml}</div></section>` : ""}
 
-    <section>
-      <h4>使用案例</h4>
-      ${useCasesHtml || "<p>暂无案例。</p>"}
-    </section>
+    ${isCurated ? `<section><h4>使用案例</h4>${useCasesHtml || "<p>暂无案例。</p>"}</section>` : ""}
+
+    ${equivalentsHtml}
+    ${eventsHtml}
 
     ${inModal ? "" : `<p><button type="button" class="tab" id="openModalBtn">全屏查看</button></p>`}
   `;
@@ -334,8 +475,7 @@ function buildSkillDetailHtml(skill, inModal) {
 function bindModal(ui) {
   ui.detail.addEventListener("click", (e) => {
     if (e.target.id === "openModalBtn") {
-      const html = ui.detail.innerHTML.replace(/<p><button[^]*<\/button><\/p>$/, "");
-      ui.modalDetail.innerHTML = html;
+      ui.modalDetail.innerHTML = ui.detail.innerHTML.replace(/<p><button[^]*<\/button><\/p>$/, "");
       openModal(ui);
     }
   });
@@ -380,6 +520,7 @@ const FALLBACK_SKILLS = {
       slug: "ai-ready",
       displayName: "AI Ready",
       platform: "GitHub Copilot",
+      ecosystem: "awesome-copilot",
       rank: 1,
       sdePhase: "环境准备",
       category: "仓库初始化",
@@ -389,30 +530,6 @@ const FALLBACK_SKILLS = {
       installCommand: "gh skill install github/awesome-copilot ai-ready",
       sourceUrl: "https://github.com/github/awesome-copilot/tree/main/skills/ai-ready",
       tags: ["AGENTS.md"],
-      useCases: [
-        {
-          title: "新项目 AI 化",
-          scenario: "接入 Copilot Agent",
-          prompt: "make this repo ai-ready",
-          expected: "生成 AGENTS.md"
-        }
-      ],
-      remoteSynced: false
-    },
-    {
-      id: "skill-006",
-      slug: "test-driven-development",
-      displayName: "Test-Driven Development",
-      platform: "Cursor",
-      rank: 6,
-      sdePhase: "实现",
-      category: "测试驱动",
-      featured: true,
-      description: "Red-green-refactor TDD workflow",
-      introduction: "强制执行测试驱动开发循环。",
-      installCommand: "Cursor Plugin: superpowers",
-      sourceUrl: "https://github.com/obra/superpowers/tree/main/skills/test-driven-development",
-      tags: ["TDD"],
       useCases: [],
       remoteSynced: false
     }
