@@ -516,11 +516,17 @@ def classify_topic(text, fallback_topic_id="prompt-tips"):
 def mentions_competitor(text, competitor_id, competitor_name):
     lower = text.lower()
     if competitor_id == "cursor":
-        return any(term in lower for term in [
+        explicit_cursor = any(term in lower for term in [
             "cursor ide", "cursor ai", "cursor editor", "cursor rules",
             ".cursor", "cursorrules", "cursor.com", "cursor agent",
             "cursor composer", "cursor tab", "cursor chat",
         ])
+        contextual_cursor = (
+            re.search(r"\bCursor\b", text or "") is not None
+            and term_count(lower, CODING_AGENT_CONTEXT_TERMS) > 0
+            and term_count(lower, PRACTICE_SIGNAL_TERMS) > 0
+        )
+        return explicit_cursor or contextual_cursor
     if competitor_id == "github-copilot":
         return "github copilot" in lower or any(term in lower for term in [
             "copilot chat", "copilot agent", "copilot coding",
@@ -579,12 +585,14 @@ def extract_highlights(text, limit=3):
     for chunk in chunks:
         chunk = normalize_text(chunk)
         lower = chunk.lower()
-        if len(chunk) < 24 or len(chunk) > 180:
+        if len(chunk) < 24:
             continue
         if term_count(lower, EXCLUSION_TERMS) > 0:
             continue
         if term_count(lower, ACTIONABLE_VERBS) == 0 and term_count(lower, PRACTICE_SIGNAL_TERMS) == 0:
             continue
+        if len(chunk) > 180:
+            chunk = chunk[:177].rstrip() + "..."
         if chunk not in highlights:
             highlights.append(chunk)
         if len(highlights) >= limit:
@@ -737,6 +745,8 @@ def search_github(query, competitor_id, competitor_name, max_hits=5):
 
     results = []
     for item in data.get("items", []):
+        if item.get("pull_request"):
+            continue
         text = normalize_text("{} {}".format(item.get("title", ""), item.get("body", "")))
         if not mentions_competitor(text, competitor_id, competitor_name):
             continue

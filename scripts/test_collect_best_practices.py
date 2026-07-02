@@ -3,7 +3,13 @@
 
 from __future__ import print_function
 
+import os
+import sys
 import unittest
+
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+if CURRENT_DIR not in sys.path:
+    sys.path.insert(0, CURRENT_DIR)
 
 import collect_best_practices as collector
 
@@ -58,6 +64,55 @@ class BestPracticeFilteringTest(unittest.TestCase):
             self.assertFalse(collector.is_github_practice_title(text))
 
         self.assertTrue(collector.is_github_practice_title("Claude Code workflow guide for large refactors"))
+
+    def test_search_github_skips_pull_requests_and_keeps_usage_guides(self):
+        original_fetch_json = collector.fetch_json
+
+        def fake_fetch_json(url):
+            return {
+                "items": [
+                    {
+                        "title": "Code review workflow improvements",
+                        "body": (
+                            "GitHub Copilot coding agent best practices: configure "
+                            "instructions and ask Copilot to run tests before review."
+                        ),
+                        "html_url": "https://github.com/example/repo/pull/1",
+                        "pull_request": {"url": "https://api.github.com/repos/example/repo/pulls/1"},
+                        "user": {"login": "pr-author"},
+                        "created_at": "2026-06-01T00:00:00Z",
+                        "comments": 12,
+                    },
+                    {
+                        "title": "GitHub Copilot workflow guide for code review",
+                        "body": (
+                            "GitHub Copilot coding agent best practices: configure "
+                            "path-specific instructions, ask Copilot to review pull requests, "
+                            "and run tests before merging."
+                        ),
+                        "html_url": "https://github.com/example/repo/issues/2",
+                        "user": {"login": "guide-author"},
+                        "created_at": "2026-06-02T00:00:00Z",
+                        "comments": 8,
+                    },
+                ]
+            }
+
+        try:
+            collector.fetch_json = fake_fetch_json
+            results = collector.search_github("GitHub Copilot", "github-copilot", "GitHub Copilot")
+        finally:
+            collector.fetch_json = original_fetch_json
+
+        self.assertEqual(1, len(results))
+        self.assertEqual("https://github.com/example/repo/issues/2", results[0]["sourceUrl"])
+
+    def test_cursor_bare_name_requires_strong_agent_practice_context(self):
+        good = "Cursor best practices for coding agent work: write project rules and run tests."
+        bad = "Cursor handling in the graphics engine workflow changed during this refactor."
+
+        self.assertTrue(collector.mentions_competitor(good, "cursor", "Cursor"))
+        self.assertFalse(collector.mentions_competitor(bad, "cursor", "Cursor"))
 
 
 if __name__ == "__main__":
