@@ -103,11 +103,33 @@ SEED_PRACTICES = [
         ],
         "sourceType": "docs",
         "sourceLabel": "产品文档",
-        "sourceUrl": "https://docs.cursor.com/context/rules",
+        "sourceUrl": "https://cursor.com/docs/rules",
         "author": "Cursor Docs",
         "date": "2026-05-01",
         "qualityScore": 95,
         "tags": ["rules", "agent", "project-setup"],
+        "curated": True,
+    },
+    {
+        "id": "bp-seed-cursor-agent-success-check",
+        "title": "Cursor Agent：在提示词里写清目标、边界和验收命令",
+        "topic": "Agent 工作流",
+        "topicId": "agent-workflow",
+        "competitorId": "cursor",
+        "competitorName": "Cursor",
+        "summary": "把任务说明写成「目标 + 不可改变的约束 + 相关文件 + 如何验证」。复杂改动先让 Agent 产出计划，确认范围后再执行，最后要求它运行指定测试或构建命令。",
+        "highlights": [
+            "用 @file 指向关键上下文，减少 Agent 盲目搜索",
+            "明确 public API、数据库、依赖等不能随意改动的边界",
+            "把成功标准写成可运行命令，如 pytest、npm test 或 lint",
+        ],
+        "sourceType": "blog",
+        "sourceLabel": "博客",
+        "sourceUrl": "https://cursor.com/blog/agent-best-practices",
+        "author": "Cursor",
+        "date": "2026-06-01",
+        "qualityScore": 96,
+        "tags": ["agent", "prompting", "verification"],
         "curated": True,
     },
     {
@@ -155,6 +177,28 @@ SEED_PRACTICES = [
         "curated": True,
     },
     {
+        "id": "bp-seed-copilot-validation-instructions",
+        "title": "Copilot Instructions：把构建、测试、验证流水线写进仓库上下文",
+        "topic": "测试驱动",
+        "topicId": "testing",
+        "competitorId": "github-copilot",
+        "competitorName": "GitHub Copilot",
+        "summary": "在 .github/copilot-instructions.md 里记录 bootstrap、build、test、lint、run 的准确命令和运行顺序，让 Copilot coding agent 不必每次重新猜测验证方式。",
+        "highlights": [
+            "列出运行时版本、依赖安装方式和常见环境变量",
+            "把 PR 合格标准写成明确检查项，降低 agent PR 被拒概率",
+            "当验证流程变化时同步更新 instructions，避免旧命令误导 Agent",
+        ],
+        "sourceType": "docs",
+        "sourceLabel": "产品文档",
+        "sourceUrl": "https://docs.github.com/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot",
+        "author": "GitHub Docs",
+        "date": "2026-06-01",
+        "qualityScore": 95,
+        "tags": ["instructions", "testing", "validation"],
+        "curated": True,
+    },
+    {
         "id": "bp-seed-copilot-review",
         "title": "Copilot Code Review：在 PR 中自动审查 + 人工复核",
         "topic": "代码审查",
@@ -177,6 +221,28 @@ SEED_PRACTICES = [
         "curated": True,
     },
     {
+        "id": "bp-seed-copilot-path-scoped-review",
+        "title": "Copilot Code Review：用路径级 instructions 提升审查命中率",
+        "topic": "代码审查",
+        "topicId": "code-review",
+        "competitorId": "github-copilot",
+        "competitorName": "GitHub Copilot",
+        "summary": "为 frontend、backend、security 等目录分别创建 .github/instructions/*.instructions.md，并用 applyTo glob 绑定路径，让 Copilot Review 按模块规则给出更相关的建议。",
+        "highlights": [
+            "每个 instructions 文件只写该路径真正需要的审查准则",
+            "用 applyTo 精准匹配目录，避免前端规则污染后端代码审查",
+            "从真实 PR 反馈中迭代规则，删除泛泛而谈的风格要求",
+        ],
+        "sourceType": "docs",
+        "sourceLabel": "产品文档",
+        "sourceUrl": "https://docs.github.com/en/copilot/tutorials/customize-code-review",
+        "author": "GitHub Docs",
+        "date": "2026-06-01",
+        "qualityScore": 94,
+        "tags": ["code-review", "instructions", "pull-request"],
+        "curated": True,
+    },
+    {
         "id": "bp-seed-claude-claude-md",
         "title": "Claude Code：CLAUDE.md 作为项目记忆入口",
         "topic": "Agent 工作流",
@@ -196,6 +262,28 @@ SEED_PRACTICES = [
         "date": "2026-05-10",
         "qualityScore": 93,
         "tags": ["claude-md", "context"],
+        "curated": True,
+    },
+    {
+        "id": "bp-seed-claude-four-phase",
+        "title": "Claude Code：Explore → Plan → Implement → Commit 四阶段工作流",
+        "topic": "Agent 工作流",
+        "topicId": "agent-workflow",
+        "competitorId": "claude-code",
+        "competitorName": "Claude Code",
+        "summary": "不要让 Claude Code 直接改复杂任务。先让它探索代码、写实施计划并与你确认，再进入实现阶段，完成后要求它总结改动、运行验证并准备提交说明。",
+        "highlights": [
+            "Plan Mode 用于读代码和制定方案，避免过早写错方向",
+            "实现阶段保持小步提交，方便人类在关键节点介入",
+            "提交前让 Agent 对照计划和测试结果自检遗漏项",
+        ],
+        "sourceType": "docs",
+        "sourceLabel": "产品文档",
+        "sourceUrl": "https://code.claude.com/docs/en/best-practices",
+        "author": "Anthropic Docs",
+        "date": "2026-06-01",
+        "qualityScore": 96,
+        "tags": ["planning", "workflow", "verification"],
         "curated": True,
     },
     {
@@ -311,14 +399,59 @@ SEED_PRACTICES = [
 ]
 
 COMPETITOR_SEARCH_NAMES = {
-    "cursor": ["Cursor", "Cursor IDE", "cursor editor"],
-    "github-copilot": ["GitHub Copilot", "Copilot", "copilot coding"],
-    "devin-desktop": ["Devin", "Windsurf", "Devin Desktop"],
-    "claude-code": ["Claude Code", "claude code cli"],
+    "cursor": ["Cursor IDE", "Cursor AI", "cursor.com", ".cursor/rules", ".cursorrules", "Cursor Rules"],
+    "github-copilot": ["GitHub Copilot", "Copilot Chat", "Copilot coding agent", "Copilot Code Review"],
+    "devin-desktop": ["Devin Desktop", "Devin AI", "Devin agent", "Windsurf"],
+    "claude-code": ["Claude Code", "claude code cli", "CLAUDE.md"],
     "replit": ["Replit Agent", "Replit AI"],
-    "google-jules": ["Google Jules", "Jules AI", "jules.google"],
-    "kiro": ["Kiro IDE", "Kiro dev", "AWS Kiro"],
+    "google-jules": ["Google Jules", "Jules AI", "jules.google", "Jules agent"],
+    "kiro": ["Kiro IDE", "Kiro dev", "AWS Kiro", "Kiro Agentic AI IDE"],
 }
+
+CODING_AGENT_CONTEXT_TERMS = [
+    "coding agent", "ai coding", "agent mode", "agentic", "ai ide",
+    "code assistant", "ai pair programmer", "autonomous agent",
+    "copilot", "claude code", "cursor ide", "cursor ai", ".cursor",
+    "cursorrules", "devin", "windsurf", "replit agent", "jules",
+    "kiro", "mcp", "model context protocol", "claude.md",
+    "copilot-instructions", "spec-driven", "prompt", "prompting",
+]
+
+PRACTICE_SIGNAL_TERMS = [
+    "best practice", "best practices", "tip", "tips", "how to",
+    "workflow", "playbook", "guide", "pattern", "setup", "configure",
+    "configuration", "instructions", "rules", "prompt", "prompting",
+    "checklist", "template", "recipe", "use case", "example",
+    "技巧", "实践", "工作流", "建议", "指南", "配置", "提示词",
+]
+
+GITHUB_TITLE_PRACTICE_TERMS = [
+    "best practice", "best practices", "how to", "guide", "workflow",
+    "tips", "playbook", "instructions", "rules", "prompt", "plan mode",
+    "claude.md", "copilot-instructions", "code review",
+]
+
+ACTIONABLE_VERBS = [
+    "ask", "write", "keep", "split", "review", "run", "test", "verify",
+    "configure", "set up", "add", "create", "document", "commit",
+    "use", "enable", "limit", "connect", "define", "include",
+    "要求", "编写", "维护", "拆分", "审查", "运行", "测试", "验证",
+    "配置", "启用", "限制", "连接", "定义", "加入",
+]
+
+EXCLUSION_TERMS = [
+    "feature request", "bug report", "preflight checklist", "problem statement",
+    "pricing", "billing", "quota", "premium request", "wallet-wrecking",
+    "unusable", "does not work", "doesn't work", "broken", "crash",
+    "does not respect", "open source",
+    "roadmap", "rfc:", "[wip]", "wip]", "implement a wayland",
+    "security vulnerability", "billing can be bypassed",
+]
+
+EXCLUSION_TITLE_PREFIXES = [
+    "feature request:", "[feature]", "bug:", "[bug]", "fix:", "ci:",
+    "roadmap:", "rfc:", "[wip]",
+]
 
 
 def now_iso():
@@ -359,6 +492,10 @@ def normalize_text(text):
     return re.sub(r"\s+", " ", (text or "")).strip()
 
 
+def term_count(lower, terms):
+    return sum(1 for term in terms if term in lower)
+
+
 def practice_id(source, url, title):
     raw = "{}|{}|{}".format(source, url, title)
     return "bp-" + hashlib.sha256(raw.encode("utf-8")).hexdigest()[:12]
@@ -378,22 +515,94 @@ def classify_topic(text, fallback_topic_id="prompt-tips"):
 
 def mentions_competitor(text, competitor_id, competitor_name):
     lower = text.lower()
+    if competitor_id == "cursor":
+        explicit_cursor = any(term in lower for term in [
+            "cursor ide", "cursor ai", "cursor editor", "cursor rules",
+            ".cursor", "cursorrules", "cursor.com", "cursor agent",
+            "cursor composer", "cursor tab", "cursor chat",
+        ])
+        contextual_cursor = (
+            re.search(r"\bCursor\b", text or "") is not None
+            and term_count(lower, CODING_AGENT_CONTEXT_TERMS) > 0
+            and term_count(lower, PRACTICE_SIGNAL_TERMS) > 0
+        )
+        return explicit_cursor or contextual_cursor
+    if competitor_id == "github-copilot":
+        return "github copilot" in lower or any(term in lower for term in [
+            "copilot chat", "copilot agent", "copilot coding",
+            "copilot code review", "copilot instructions",
+        ])
+    if competitor_id == "devin-desktop":
+        return "windsurf" in lower or "devin desktop" in lower or (
+            "devin" in lower and term_count(lower, ["agent", "ai", "coding", "cloud"]) > 0
+        )
+    if competitor_id == "claude-code":
+        return "claude code" in lower or "claude.md" in lower
+    if competitor_id == "google-jules":
+        return "jules.google" in lower or "google jules" in lower or (
+            "jules" in lower and term_count(lower, ["agent", "ai", "github", "coding"]) > 0
+        )
+    if competitor_id == "kiro":
+        return "kiro.dev" in lower or "kiro ide" in lower or "kiro agentic" in lower or (
+            "kiro" in lower and term_count(lower, ["spec", "agent", "ai ide", "coding"]) > 0
+        )
     names = COMPETITOR_SEARCH_NAMES.get(competitor_id, [competitor_name])
     return any(n.lower() in lower for n in names)
 
 
 def is_practice_like(text):
-    if not text or len(text) < 40:
+    if not text or len(text) < 60:
         return False
     lower = text.lower()
-    signals = [
-        "best practice", "tip", "how to", "workflow", "guide", "recommend",
-        "技巧", "实践", "工作流", "建议", "pattern", "setup", "config",
-    ]
-    return any(s in lower for s in signals)
+    stripped = lower.strip()
+    if any(stripped.startswith(prefix) for prefix in EXCLUSION_TITLE_PREFIXES):
+        return False
+    if term_count(lower, EXCLUSION_TERMS) > 0:
+        return False
+    if term_count(lower, CODING_AGENT_CONTEXT_TERMS) == 0:
+        return False
+
+    practice_signals = term_count(lower, PRACTICE_SIGNAL_TERMS)
+    actionable_signals = term_count(lower, ACTIONABLE_VERBS)
+    return practice_signals >= 1 and actionable_signals >= 1
+
+
+def is_github_practice_title(title):
+    lower = normalize_text(title).lower()
+    if not lower:
+        return False
+    if any(lower.startswith(prefix) for prefix in EXCLUSION_TITLE_PREFIXES):
+        return False
+    if term_count(lower, EXCLUSION_TERMS) > 0:
+        return False
+    return term_count(lower, GITHUB_TITLE_PRACTICE_TERMS) > 0
+
+
+def extract_highlights(text, limit=3):
+    cleaned = normalize_text(re.sub(r"<[^>]+>", " ", text or ""))
+    chunks = re.split(r"(?:\n|[。！？.!?]\s+| - |\* )", cleaned)
+    highlights = []
+    for chunk in chunks:
+        chunk = normalize_text(chunk)
+        lower = chunk.lower()
+        if len(chunk) < 24:
+            continue
+        if term_count(lower, EXCLUSION_TERMS) > 0:
+            continue
+        if term_count(lower, ACTIONABLE_VERBS) == 0 and term_count(lower, PRACTICE_SIGNAL_TERMS) == 0:
+            continue
+        if len(chunk) > 180:
+            chunk = chunk[:177].rstrip() + "..."
+        if chunk not in highlights:
+            highlights.append(chunk)
+        if len(highlights) >= limit:
+            break
+    return highlights
 
 
 def quality_score(item):
+    if item.get("curated") and item.get("qualityScore"):
+        return item.get("qualityScore")
     score = 50
     score += min(item.get("engagement", 0) // 5, 25)
     if item.get("sourceType") == "docs":
@@ -409,11 +618,17 @@ def quality_score(item):
 
 
 def build_search_queries(competitor_name, topic):
-    topic_label = topic["label"]
+    topic_terms = {
+        "agent-workflow": "workflow plan mode rules",
+        "mcp-integration": "mcp setup tools",
+        "code-review": "code review instructions",
+        "debugging": "debugging workflow tests",
+    }
+    topic_query = topic_terms.get(topic["id"], "workflow tips")
     return [
-        '"{}" best practices'.format(competitor_name),
-        '"{}" {} tips workflow'.format(competitor_name, topic_label.split()[0]),
-        '{} how to guide'.format(competitor_name),
+        '"{}" {} agent'.format(competitor_name, topic_query),
+        '"{}" "best practices" "coding agent"'.format(competitor_name),
+        '"{}" "how to use" coding'.format(competitor_name),
     ]
 
 
@@ -443,6 +658,9 @@ def search_hacker_news(query, competitor_id, competitor_name, max_hits=6):
         )
         topic_id, topic_label = classify_topic(text)
         display_title = title or body[:80] or "HN 讨论"
+        highlights = extract_highlights(text)
+        if not highlights:
+            continue
         results.append({
             "id": practice_id("hacker-news", item_url, display_title),
             "title": display_title[:120],
@@ -451,7 +669,7 @@ def search_hacker_news(query, competitor_id, competitor_name, max_hits=6):
             "competitorId": competitor_id,
             "competitorName": competitor_name,
             "summary": (body or title)[:400],
-            "highlights": [],
+            "highlights": highlights,
             "sourceType": "hacker-news",
             "sourceLabel": SOURCE_LABELS["hacker-news"],
             "sourceUrl": item_url,
@@ -488,6 +706,9 @@ def search_reddit(query, competitor_id, competitor_name, max_hits=5):
         date_str = datetime.fromtimestamp(post.get("created_utc", 0), tz=timezone.utc).strftime("%Y-%m-%d") if post.get("created_utc") else ""
         topic_id, topic_label = classify_topic(text)
         title = normalize_text(post.get("title", ""))[:120]
+        highlights = extract_highlights(text)
+        if not highlights:
+            continue
         results.append({
             "id": practice_id("reddit", permalink, title),
             "title": title,
@@ -496,7 +717,7 @@ def search_reddit(query, competitor_id, competitor_name, max_hits=5):
             "competitorId": competitor_id,
             "competitorName": competitor_name,
             "summary": text[:400],
-            "highlights": [],
+            "highlights": highlights,
             "sourceType": "reddit",
             "sourceLabel": SOURCE_LABELS["reddit"],
             "sourceUrl": permalink,
@@ -510,7 +731,9 @@ def search_reddit(query, competitor_id, competitor_name, max_hits=5):
 
 
 def search_github(query, competitor_id, competitor_name, max_hits=5):
-    q = "{} best practices OR tips OR workflow in:title,body".format(query)
+    q = '"{}" "best practice" OR "{}" tips OR "{}" workflow in:title,body'.format(
+        query, query, query
+    )
     url = "https://api.github.com/search/issues?{}".format(urllib.parse.urlencode({
         "q": q,
         "sort": "reactions",
@@ -522,6 +745,8 @@ def search_github(query, competitor_id, competitor_name, max_hits=5):
 
     results = []
     for item in data.get("items", []):
+        if item.get("pull_request"):
+            continue
         text = normalize_text("{} {}".format(item.get("title", ""), item.get("body", "")))
         if not mentions_competitor(text, competitor_id, competitor_name):
             continue
@@ -531,6 +756,11 @@ def search_github(query, competitor_id, competitor_name, max_hits=5):
         date_str = (item.get("created_at") or "")[:10]
         topic_id, topic_label = classify_topic(text)
         title = normalize_text(item.get("title", ""))[:120]
+        if not is_github_practice_title(title):
+            continue
+        highlights = extract_highlights(text)
+        if not highlights:
+            continue
         results.append({
             "id": practice_id("github", item.get("html_url", ""), title),
             "title": title,
@@ -539,7 +769,7 @@ def search_github(query, competitor_id, competitor_name, max_hits=5):
             "competitorId": competitor_id,
             "competitorName": competitor_name,
             "summary": text[:400],
-            "highlights": [],
+            "highlights": highlights,
             "sourceType": "github",
             "sourceLabel": SOURCE_LABELS["github"],
             "sourceUrl": item.get("html_url", ""),
@@ -572,6 +802,24 @@ def dedupe_practices(practices):
     return unique
 
 
+def validated_web_practices(practices):
+    valid = []
+    for p in practices:
+        text = normalize_text("{} {} {}".format(
+            p.get("title", ""), p.get("summary", ""), " ".join(p.get("highlights", []))
+        ))
+        if not mentions_competitor(text, p.get("competitorId", ""), p.get("competitorName", "")):
+            continue
+        if not is_practice_like(text):
+            continue
+        if p.get("sourceType") == "github" and not is_github_practice_title(p.get("title", "")):
+            continue
+        if not p.get("highlights"):
+            continue
+        valid.append(p)
+    return valid
+
+
 def collect_web_practices(competitors, max_per_competitor=12):
     collected = []
     for comp in competitors:
@@ -589,7 +837,7 @@ def collect_web_practices(competitors, max_per_competitor=12):
                 comp_results.extend(search_hacker_news(query, cid, cname))
                 time.sleep(0.35)
 
-        query = '"{}" best practices tips'.format(primary_name)
+        query = '"{}" best practices tips coding agent'.format(primary_name)
         print("    Reddit: {}".format(query[:55]))
         comp_results.extend(search_reddit(query, cid, cname))
         time.sleep(1.0)
@@ -607,7 +855,8 @@ def collect_web_practices(competitors, max_per_competitor=12):
 
 def build_payload(competitors, web_practices, dry_run=False):
     seeds = [dict(p) for p in SEED_PRACTICES]
-    all_practices = dedupe_practices(seeds + web_practices)
+    clean_web_practices = validated_web_practices(web_practices)
+    all_practices = dedupe_practices(seeds + clean_web_practices)
 
     competitor_ids = [c["id"] for c in competitors]
     topic_labels = [t["label"] for t in TOPICS]
@@ -619,11 +868,12 @@ def build_payload(competitors, web_practices, dry_run=False):
             "totalCount": len(all_practices),
             "curatedCount": sum(1 for p in all_practices if p.get("curated")),
             "webCount": sum(1 for p in all_practices if not p.get("curated")),
+            "rejectedWebCount": max(len(web_practices) - len(clean_web_practices), 0),
             "topicsCount": len(TOPICS),
             "competitorsCount": len(competitor_ids),
             "sources": source_types,
             "collectIntervalDays": 3,
-            "note": "策展种子 + HN / Reddit / GitHub 公开讨论；按主题与竞品聚合，每 3 天自动更新。",
+            "note": "仅保留可操作的 coding-agent 使用实践；策展官方最佳实践 + 通过质量门禁的 HN / Reddit / GitHub 公开讨论，每 3 天自动更新。",
         },
         "topics": [{"id": t["id"], "label": t["label"]} for t in TOPICS],
         "competitorIds": competitor_ids,
