@@ -22,6 +22,22 @@
       </div>
     </header>
 
+    <section class="panel skill-primer-panel" id="skillPrimerPanel" aria-label="Skill 第一性原理介绍">
+      <div class="primer-header">
+        <div>
+          <h2 id="primerTitle">Skill 第一性原理</h2>
+          <p id="primerSubtitle" class="primer-subtitle"></p>
+        </div>
+        <button type="button" class="primer-toggle" id="primerToggle" aria-expanded="true" aria-controls="primerBody">
+          收起
+        </button>
+      </div>
+      <div id="primerBody" class="primer-body">
+        <nav class="primer-tabs" id="primerTabs" aria-label="原理介绍分区"></nav>
+        <div id="primerContent" class="primer-content"></div>
+      </div>
+    </section>
+
     <section class="panel skills-meta" id="skillsMeta"></section>
 
     <section class="panel skill-changes-panel" id="skillChangesPanel" hidden>
@@ -89,6 +105,6 @@
       </div>
     </div>
 
-    <script src="./skills.js?v=3"></script>
+    <script src="./skills.js?v=4"></script>
   </body>
 </html>

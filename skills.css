@@ -21,6 +21,335 @@
   gap: 12px;
 }
 
+.skill-primer-panel {
+  margin: 16px 16px 0;
+  padding: 16px 18px;
+}
+
+.primer-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.primer-header h2 {
+  margin: 0 0 4px;
+  font-size: 20px;
+}
+
+.primer-subtitle {
+  margin: 0;
+  color: #4b5563;
+  font-size: 14px;
+  line-height: 1.55;
+  max-width: 72ch;
+}
+
+.primer-toggle {
+  flex-shrink: 0;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.primer-toggle:hover {
+  border-color: #93c5fd;
+  background: #eff6ff;
+}
+
+.primer-collapsed .primer-header {
+  margin-bottom: 0;
+}
+
+.primer-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.primer-tab {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.primer-tab.active {
+  background: #111827;
+  border-color: #111827;
+  color: #fff;
+}
+
+.primer-content h3 {
+  margin: 0 0 10px;
+  font-size: 17px;
+}
+
+.primer-content h4 {
+  margin: 20px 0 10px;
+  font-size: 14px;
+  color: #111827;
+}
+
+.primer-lead {
+  margin: 0 0 12px;
+  color: #374151;
+  line-height: 1.65;
+  font-size: 14px;
+}
+
+.primer-problem {
+  margin: 0 0 16px;
+  padding: 10px 12px;
+  background: #fffbeb;
+  border-left: 3px solid #f59e0b;
+  border-radius: 0 8px 8px 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #374151;
+}
+
+.primer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.primer-grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.primer-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: #f9fafb;
+}
+
+.primer-card h4,
+.primer-card h5 {
+  margin: 0 0 6px;
+  font-size: 14px;
+}
+
+.primer-card p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+.primer-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.primer-metric {
+  flex-shrink: 0;
+  font-size: 11px;
+  font-weight: 600;
+  color: #2563eb;
+  background: #eff6ff;
+  border-radius: 6px;
+  padding: 2px 6px;
+}
+
+.primer-meta-line {
+  margin: 0 0 8px !important;
+  font-size: 12px !important;
+  color: #6b7280 !important;
+}
+
+.primer-table-wrap {
+  overflow-x: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.primer-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.primer-table th,
+.primer-table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: top;
+}
+
+.primer-table thead th {
+  background: #f3f4f6;
+  font-weight: 600;
+  color: #111827;
+}
+
+.primer-table tbody tr:last-child th,
+.primer-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.primer-audience-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.primer-audience-list li {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 12px;
+  padding: 10px 12px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.primer-audience-list strong {
+  color: #111827;
+}
+
+.primer-audience-list span {
+  color: #4b5563;
+}
+
+.primer-milestone-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.primer-milestone {
+  display: grid;
+  grid-template-columns: 88px 1fr;
+  gap: 12px;
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.primer-milestone time {
+  font-size: 12px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.primer-milestone p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.primer-cases {
+  display: grid;
+  gap: 10px;
+}
+
+.primer-case-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: #fff;
+}
+
+.primer-case-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.primer-case-card h5 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.primer-steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.primer-step {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #f9fafb;
+}
+
+.primer-step-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #111827;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.primer-step p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #4b5563;
+  line-height: 1.55;
+}
+
+.primer-anti-list {
+  margin: 0;
+  padding-left: 18px;
+  color: #4b5563;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.primer-anti-list li {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 700px) {
+  .primer-audience-list li {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .primer-milestone {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+
 .skill-changes-panel {
   margin: 16px 16px 0;
 }
