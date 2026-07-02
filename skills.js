@@ -331,7 +331,7 @@ function renderPlatformBadges(skill) {
     .join("");
 }
 
-function renderSkillGrid(skills, state, ui, isCurated, onSelect) {
+function renderSkillGrid(skills, state, ui, isCurated, onSelect, feedbackBySkill) {
   ui.grid.innerHTML = skills
     .map((skill) => {
       const rankLabel = isCurated
@@ -339,10 +339,14 @@ function renderSkillGrid(skills, state, ui, isCurated, onSelect) {
         : skill.activityScore != null
           ? `活跃 ${skill.activityScore}`
           : "";
+      const fbCount = isCurated
+        ? (feedbackBySkill?.[`${skill.ecosystem}/${skill.slug}`]?.feedbackCount || 0)
+        : 0;
       const extraBadges = [
         skill.featured ? '<span class="badge featured">精选</span>' : "",
         skill.isNew ? '<span class="badge new">新</span>' : "",
-        skill.inTopCurated ? '<span class="badge phase">Top</span>' : ""
+        skill.inTopCurated ? '<span class="badge phase">Top</span>' : "",
+        fbCount > 0 ? `<span class="badge feedback">${fbCount} 反馈</span>` : ""
       ].join("");
       const phaseBadge = skill.sdePhase
         ? `<span class="badge phase">${escapeHtml(skill.sdePhase)}</span>`
