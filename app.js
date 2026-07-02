@@ -1,9 +1,11 @@
 (async function init() {
-  const [events, competitors, skillChanges, skillsMeta] = await Promise.all([
+  const [events, competitors, skillChanges, skillsMeta, mcpChanges, mcpsMeta] = await Promise.all([
     loadEvents(),
     loadCompetitors(),
     loadJson("./data/skill-changes.json"),
-    loadJson("./data/skills.json")
+    loadJson("./data/skills.json"),
+    loadJson("./data/mcp-changes.json"),
+    loadJson("./data/mcps.json")
   ]);
 
   const ui = {
@@ -34,6 +36,7 @@
   hydrateSelect(ui.company, events.map((e) => e.company));
   renderCompanyTags(topCompanies, ui);
   renderSkillRadar(skillChanges, skillsMeta);
+  renderMcpRadar(mcpChanges, mcpsMeta);
 
   const onChange = () => {
     syncCompanyTags(ui);
@@ -186,6 +189,37 @@ function renderSkillRadar(skillChanges, skillsMeta) {
     .map((c) => {
       const label = c.type === "added" ? "新增" : "更新";
       return `<li><strong>[${label}]</strong> <a href="./skills.html#${encodeURIComponent(c.slug)}">${escapeHtml(c.displayName || c.slug)}</a> — ${escapeHtml(c.summary || "")}</li>`;
+    })
+    .join("");
+}
+
+function renderMcpRadar(mcpChanges, mcpsMeta) {
+  const container = document.getElementById("mcpRadarList");
+  const section = document.getElementById("mcpRadarHome");
+  if (!container || !section) return;
+
+  const changes = (mcpChanges.changes || []).slice(0, 6);
+  const meta = mcpsMeta.meta || {};
+
+  if (!changes.length && !meta.indexTotalCount) {
+    section.hidden = true;
+    return;
+  }
+
+  const summary = document.createElement("p");
+  summary.className = "skill-radar-summary";
+  summary.textContent = `全量索引 ${meta.indexTotalCount || "—"} 个 · 本周新增 ${meta.newCount || 0} · 近期变更 ${meta.changesCount || 0}`;
+  section.insertBefore(summary, container);
+
+  if (!changes.length) {
+    container.innerHTML = "<li>暂无变更记录（首次运行已建立基线快照）。</li>";
+    return;
+  }
+
+  container.innerHTML = changes
+    .map((c) => {
+      const label = c.type === "added" ? "新增" : "更新";
+      return `<li><strong>[${label}]</strong> <a href="./mcp.html#${encodeURIComponent(c.slug)}">${escapeHtml(c.displayName || c.slug)}</a> — ${escapeHtml(c.summary || "")}</li>`;
     })
     .join("");
 }

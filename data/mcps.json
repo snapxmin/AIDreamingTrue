@@ -1,0 +1,892 @@
+{
+  "meta": {
+    "lastUpdated": "2026-07-02T11:35:10Z",
+    "totalCount": 20,
+    "featuredCount": 18,
+    "indexTotalCount": 28,
+    "newCount": 0,
+    "changesCount": 0,
+    "sources": [
+      "official-servers",
+      "cursor-directory",
+      "community"
+    ],
+    "discovery": {
+      "official-servers": {
+        "platform": "Anthropic",
+        "repo": "modelcontextprotocol/servers",
+        "repoStars": 52000,
+        "totalInRepo": 15,
+        "curatedCount": 6
+      },
+      "cursor-directory": {
+        "platform": "Cursor",
+        "repo": "cursor.directory/mcp",
+        "totalInRepo": 200,
+        "curatedCount": 8
+      },
+      "community": {
+        "platform": "跨 Host",
+        "repo": "pulsemcp.com",
+        "totalInRepo": 500,
+        "curatedCount": 6
+      }
+    },
+    "note": "Top 20 策展 + 全量索引；含 transport、tools 清单与配置示例。"
+  },
+  "transports": [
+    "stdio",
+    "streamable-http"
+  ],
+  "platforms": [
+    "Claude Desktop",
+    "Cursor",
+    "GitHub Copilot",
+    "VS Code",
+    "Windsurf"
+  ],
+  "categories": [
+    "DevTools",
+    "数据库",
+    "设计工具",
+    "协作沟通",
+    "浏览器自动化",
+    "搜索与知识",
+    "云与基础设施",
+    "支付与商务",
+    "监控运维",
+    "文件系统"
+  ],
+  "mcps": [
+    {
+      "id": "mcp-001",
+      "slug": "github",
+      "name": "github",
+      "displayName": "GitHub MCP",
+      "platform": "Cursor",
+      "platforms": [
+        "Cursor",
+        "Claude Desktop",
+        "VS Code",
+        "GitHub Copilot"
+      ],
+      "source": "official-servers",
+      "rank": 1,
+      "category": "DevTools",
+      "transport": "stdio",
+      "authType": "OAuth / PAT",
+      "featured": true,
+      "tags": [
+        "github",
+        "issues",
+        "pr",
+        "code-search"
+      ],
+      "description": "与 GitHub 仓库深度集成：搜索代码、管理 Issue/PR、创建分支、Review 评论。Agent 开发工作流的核心 MCP。",
+      "introduction": "GitHub 官方 MCP Server，暴露 create_issue、search_code、create_pull_request 等 tools。支持 OAuth 与 Personal Access Token 两种认证方式。Cursor 与 Claude Desktop 均为一键配置。",
+      "configSnippet": "{\n  \"mcpServers\": {\n    \"github\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@modelcontextprotocol/server-github\"],\n      \"env\": { \"GITHUB_PERSONAL_ACCESS_TOKEN\": \"<token>\" }\n    }\n  }\n}",
+      "sourceUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/github",
+      "tools": [
+        "create_issue",
+        "search_code",
+        "create_pull_request",
+        "get_file_contents",
+        "list_commits",
+        "add_issue_comment"
+      ],
+      "toolCount": 26,
+      "useCases": [
+        {
+          "title": "自动创建 Bug Issue",
+          "scenario": "Code Review 发现安全问题需跟踪。",
+          "prompt": "create a GitHub issue for the SQL injection found in auth/login.py",
+          "expected": "调用 create_issue，填写 title/body/labels，返回 Issue URL。"
+        }
+      ]
+    },
+    {
+      "id": "mcp-002",
+      "slug": "figma",
+      "name": "figma",
+      "displayName": "Figma MCP",
+      "platform": "Cursor",
+      "platforms": [
+        "Cursor",
+        "VS Code",
+        "GitHub Copilot"
+      ],
+      "source": "community",
+      "rank": 2,
+      "category": "设计工具",
+      "transport": "streamable-http",
+      "authType": "OAuth",
+      "featured": true,
+      "tags": [
+        "figma",
+        "design-to-code",
+        "ui"
+      ],
+      "description": "读取 Figma 设计上下文、截图、变量与组件，支持设计稿到生产代码的翻译。",
+      "introduction": "Figma 官方 Remote MCP Server，通过 OAuth 授权访问设计文件。Agent 可 get_design_context、get_screenshot、get_variable_defs，配合 figma-generate-design Skill 实现完整 design-to-code 流程。",
+      "configSnippet": "{\n  \"mcpServers\": {\n    \"figma\": {\n      \"url\": \"https://mcp.figma.com/mcp\",\n      \"headers\": {}\n    }\n  }\n}",
+      "sourceUrl": "https://www.figma.com/developers/mcp",
+      "tools": [
+        "get_design_context",
+        "get_screenshot",
+        "get_variable_defs",
+        "get_code_connect_map"
+      ],
+      "toolCount": 8,
+      "useCases": [
+        {
+          "title": "组件实现",
+          "scenario": "根据 Figma 节点实现 React 组件。",
+          "prompt": "implement this Figma button component: https://figma.com/file/xxx?node-id=1-2",
+          "expected": "读取节点设计上下文，生成带 design token 的组件代码。"
+        }
+      ]
+    },
+    {
+      "id": "mcp-003",
+      "slug": "linear",
+      "name": "linear",
+      "displayName": "Linear MCP",
+      "platform": "Cursor",
+      "platforms": [
+        "Cursor",
+        "Claude Desktop"
+      ],
+      "source": "community",
+      "rank": 3,
+      "category": "协作沟通",
+      "transport": "stdio",
+      "authType": "API Key",
+      "featured": true,
+      "tags": [
+        "linear",
+        "project-management",
+        "issues"
+      ],
+      "description": "Linear 项目管理集成：创建/更新 Issue、查询 Sprint、关联 PR。",
+      "introduction": "Linear 官方 MCP Server，适合将 Agent 工作流与 Linear 看板打通。支持 create_issue、update_issue、list_teams 等 tools。",
+      "configSnippet": "{\n  \"mcpServers\": {\n    \"linear\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@linear/mcp-server\"],\n      \"env\": { \"LINEAR_API_KEY\": \"<key>\" }\n    }\n  }\n}",
+      "sourceUrl": "https://github.com/linear/linear/tree/master/packages/mcp-server",
+      "tools": [
+        "create_issue",
+        "update_issue",
+        "list_issues",
+        "list_teams",
+        "search_issues"
+      ],
+      "toolCount": 12,
+      "useCases": [
+        {
+          "title": "Sprint 任务创建",
+          "scenario": "规划会议后批量创建开发任务。",
+          "prompt": "create Linear issues for the auth refactor tasks we discussed",
+          "expected": "在对应 Team/Project 下创建带优先级的 Issue 列表。"
+        }
+      ]
+    },
+    {
+      "id": "mcp-004",
+      "slug": "postgres",
+      "name": "postgres",
+      "displayName": "PostgreSQL MCP",
+      "platform": "Cursor",
+      "platforms": [
+        "Cursor",
+        "Claude Desktop",
+        "VS Code"
+      ],
+      "source": "official-servers",
+      "rank": 4,
+      "category": "数据库",
+      "transport": "stdio",
+      "authType": "Connection String",
+      "featured": true,
+      "tags": [
+        "postgres",
+        "sql",
+        "database"
+      ],
+      "description": "只读查询 PostgreSQL 数据库：执行 SQL、列出表结构、分析 Schema。",
+      "introduction": "Anthropic 官方 reference server，默认只读模式保障安全。Agent 可 inspect schema、run SELECT 查询辅助调试与数据分析。",
+      "configSnippet": "{\n  \"mcpServers\": {\n    \"postgres\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@modelcontextprotocol/server-postgres\", \"postgresql://user:pass@localhost/db\"]\n    }\n  }\n}",
+      "sourceUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/postgres",
+      "tools": [
+        "query",
+        "list_tables",
+        "describe_table"
+      ],
+      "toolCount": 3,
+      "useCases": [
+        {
+          "title": "数据调试",
+          "scenario": "API 返回异常需查库验证。",
+          "prompt": "check why user 123 has no active subscription in postgres",
+          "expected": "列出相关表结构，执行 JOIN 查询定位问题。"
+        }
+      ]
+    },
+    {
+      "id": "mcp-005",
+      "slug": "filesystem",
+      "name": "filesystem",
+      "displayName": "Filesystem MCP",
+      "platform": "Claude Desktop",
+      "platforms": [
+        "Claude Desktop",
+        "Cursor",
+        "VS Code"
+      ],
+      "source": "official-servers",
+      "rank": 5,
+      "category": "文件系统",
+      "transport": "stdio",
+      "authType": "Path Allowlist",
+      "featured": true,
+      "tags": [
+        "filesystem",
+        "local",
+        "reference"
+      ],
+      "description": "Anthropic 官方 reference server：受限目录内的文件读写与目录遍历。",
+      "introduction": "MCP 规范最早的 reference 实现之一。通过 args 指定允许访问的目录列表，Agent 可 read_file、write_file、list_directory。",
+      "configSnippet": "{\n  \"mcpServers\": {\n    \"filesystem\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@modelcontextprotocol/server-filesystem\", \"/path/to/allowed/dir\"]\n    }\n  }\n}",
+      "sourceUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem",
+      "tools": [
+        "read_file",
+        "write_file",
+        "list_directory",
+        "create_directory",
+        "move_file"
+      ],
+      "toolCount": 8,
+      "useCases": [
+        {
+          "title": "文档批量处理",
+          "scenario": "整理指定目录下的 Markdown 文件。",
+          "prompt": "rename all .md files in docs/ to use kebab-case",
+          "expected": "遍历目录，逐个读取并重命名文件。"
+        }
+      ]
+    },
+    {
+      "id": "mcp-006",
+      "slug": "playwright",
+      "name": "playwright",
+      "displayName": "Playwright MCP",
+      "platform": "Cursor",
+      "platforms": [
+        "Cursor",
+        "VS Code",
+        "GitHub Copilot"
+      ],
+      "source": "community",
+      "rank": 6,
+      "category": "浏览器自动化",
+      "transport": "stdio",
+      "authType": "None",
+      "featured": true,
+      "tags": [
+        "playwright",
+        "browser",
+        "e2e",
+        "automation"
+      ],
+      "description": "浏览器自动化：导航页面、截图、点击、填表、执行 JavaScript。",
+      "introduction": "Microsoft 维护的 Playwright MCP Server，Agent 可操控 headless 浏览器完成 E2E 测试、页面抓取、UI 验证等任务。",
+      "configSnippet": "{\n  \"mcpServers\": {\n    \"playwright\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@playwright/mcp@latest\"]\n    }\n  }\n}",
+      "sourceUrl": "https://github.com/microsoft/playwright-mcp",
+      "tools": [
+        "browser_navigate",
+        "browser_snapshot",
+        "browser_click",
+        "browser_type",
+        "browser_take_screenshot"
+      ],
+      "toolCount": 15,
+      "useCases": [
+        {
+          "title": "页面回归验证",
+          "scenario": "部署后验证登录流程。",
+          "prompt": "use Playwright to verify the login flow on staging.example.com",
+          "expected": "打开页面、填表、点击登录、截图确认结果。"
+        }
+      ]
+    },
+    {
+      "id": "mcp-007",
+      "slug": "slack",
+      "name": "slack",
+      "displayName": "Slack MCP",
+      "platform": "Cursor",
+      "platforms": [
+        "Cursor",
+        "Claude Desktop"
+      ],
+      "source": "community",
+      "rank": 7,
+      "category": "协作沟通",
+      "transport": "stdio",
+      "authType": "Bot Token",
+      "featured": true,
+      "tags": [
+        "slack",
+        "messaging",
+        "notifications"
+      ],
+      "description": "Slack 消息发送与频道管理：发消息、查历史、列出频道。",
+      "introduction": "社区 Slack MCP Server，适合 Agent 完成部署通知、Review 提醒、Incident 通报等协作场景。",
+      "configSnippet": "{\n  \"mcpServers\": {\n    \"slack\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@modelcontextprotocol/server-slack\"],\n      \"env\": { \"SLACK_BOT_TOKEN\": \"<token>\" }\n    }\n  }\n}",
+      "sourceUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/slack",
+      "tools": [
+        "post_message",
+        "list_channels",
+        "get_channel_history",
+        "reply_to_thread"
+      ],
+      "toolCount": 6,
+      "useCases": [
+        {
+          "title": "部署通知",
+          "scenario": "CI 完成后通知团队频道。",
+          "prompt": "post deployment success message to #engineering",
+          "expected": "在指定频道发送格式化部署摘要。"
+        }
+      ]
+    },
+    {
+      "id": "mcp-008",
+      "slug": "brave-search",
+      "name": "brave-search",
+      "displayName": "Brave Search MCP",
+      "platform": "Claude Desktop",
+      "platforms": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "source": "official-servers",
+      "rank": 8,
+      "category": "搜索与知识",
+      "transport": "stdio",
+      "authType": "API Key",
+      "featured": true,
+      "tags": [
+        "search",
+        "web",
+        "brave"
+      ],
+      "description": "Brave Search API 集成：实时 Web 搜索，补充 Agent 训练数据截止后的信息。",
+      "introduction": "Anthropic 官方 reference server，为 Agent 提供 web_search tool。需 Brave Search API Key。",
+      "configSnippet": "{\n  \"mcpServers\": {\n    \"brave-search\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@modelcontextprotocol/server-brave-search\"],\n      \"env\": { \"BRAVE_API_KEY\": \"<key>\" }\n    }\n  }\n}",
+      "sourceUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search",
+      "tools": [
+        "brave_web_search",
+        "brave_local_search"
+      ],
+      "toolCount": 2,
+      "useCases": [
+        {
+          "title": "技术调研",
+          "scenario": "查询最新库版本与 breaking changes。",
+          "prompt": "search for React 19 migration breaking changes",
+          "expected": "返回相关搜索结果摘要与链接。"
+        }
+      ]
+    },
+    {
+      "id": "mcp-009",
+      "slug": "memory",
+      "name": "memory",
+      "displayName": "Memory MCP",
+      "platform": "Claude Desktop",
+      "platforms": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "source": "official-servers",
+      "rank": 9,
+      "category": "搜索与知识",
+      "transport": "stdio",
+      "authType": "None",
+      "featured": true,
+      "tags": [
+        "memory",
+        "knowledge-graph",
+        "persistence"
+      ],
+      "description": "知识图谱式持久记忆：跨会话存储与检索实体关系。",
+      "introduction": "Anthropic 官方 reference server，基于 local knowledge graph。Agent 可 create_entities、create_relations、search_nodes，实现跨对话上下文保持。",
+      "configSnippet": "{\n  \"mcpServers\": {\n    \"memory\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@modelcontextprotocol/server-memory\"]\n    }\n  }\n}",
+      "sourceUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/memory",
+      "tools": [
+        "create_entities",
+        "create_relations",
+        "search_nodes",
+        "read_graph",
+        "delete_entities"
+      ],
+      "toolCount": 9,
+      "useCases": [
+        {
+          "title": "项目上下文记忆",
+          "scenario": "长期项目需记住架构决策。",
+          "prompt": "remember that we chose PostgreSQL over MongoDB for ACID requirements",
+          "expected": "创建 entity 与 relation，后续会话可检索。"
+        }
+      ]
+    },
+    {
+      "id": "mcp-010",
+      "slug": "sentry",
+      "name": "sentry",
+      "displayName": "Sentry MCP",
+      "platform": "Cursor",
+      "platforms": [
+        "Cursor",
+        "VS Code"
+      ],
+      "source": "community",
+      "rank": 10,
+      "category": "监控运维",
+      "transport": "stdio",
+      "authType": "Auth Token",
+      "featured": true,
+      "tags": [
+        "sentry",
+        "errors",
+        "monitoring"
+      ],
+      "description": "Sentry 错误追踪集成：查询 Issue、分析 stack trace、获取 release 信息。",
+      "introduction": "Sentry 官方 MCP Server，Agent 调试生产错误时可直查 Sentry Issue 详情与 event 上下文。",
+      "configSnippet": "{\n  \"mcpServers\": {\n    \"sentry\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@sentry/mcp-server\"],\n      \"env\": { \"SENTRY_AUTH_TOKEN\": \"<token>\" }\n    }\n  }\n}",
+      "sourceUrl": "https://github.com/getsentry/sentry-mcp",
+      "tools": [
+        "list_issues",
+        "get_issue_details",
+        "list_projects",
+        "get_event"
+      ],
+      "toolCount": 8,
+      "useCases": [
+        {
+          "title": "生产错误分析",
+          "scenario": "用户报告结账失败。",
+          "prompt": "investigate the latest Sentry errors in checkout service",
+          "expected": "列出相关 Issue，展示 stack trace 与复现上下文。"
+        }
+      ]
+    },
+    {
+      "id": "mcp-011",
+      "slug": "notion",
+      "name": "notion",
+      "displayName": "Notion MCP",
+      "platform": "Cursor",
+      "platforms": [
+        "Cursor",
+        "Claude Desktop"
+      ],
+      "source": "community",
+      "rank": 11,
+      "category": "协作沟通",
+      "transport": "stdio",
+      "authType": "OAuth / Integration Token",
+      "featured": true,
+      "tags": [
+        "notion",
+        "docs",
+        "wiki"
+      ],
+      "description": "Notion 文档读写：搜索页面、创建文档、更新数据库条目。",
+      "introduction": "Notion 官方 MCP Server，Agent 可读取团队 Wiki、更新 Spec 文档、查询数据库视图。",
+      "configSnippet": "{\n  \"mcpServers\": {\n    \"notion\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@notionhq/notion-mcp-server\"],\n      \"env\": { \"NOTION_TOKEN\": \"<token>\" }\n    }\n  }\n}",
+      "sourceUrl": "https://github.com/makenotion/notion-mcp-server",
+      "tools": [
+        "search",
+        "get_page",
+        "create_page",
+        "update_page",
+        "query_database"
+      ],
+      "toolCount": 10,
+      "useCases": [
+        {
+          "title": "Spec 文档更新",
+          "scenario": "实现完成后更新 API Spec。",
+          "prompt": "update the Notion API spec page with the new auth endpoints",
+          "expected": "定位页面，追加新 endpoint 文档块。"
+        }
+      ]
+    },
+    {
+      "id": "mcp-012",
+      "slug": "docker",
+      "name": "docker",
+      "displayName": "Docker MCP",
+      "platform": "Cursor",
+      "platforms": [
+        "Cursor",
+        "VS Code"
+      ],
+      "source": "community",
+      "rank": 12,
+      "category": "云与基础设施",
+      "transport": "stdio",
+      "authType": "Docker Socket",
+      "featured": true,
+      "tags": [
+        "docker",
+        "containers",
+        "devops"
+      ],
+      "description": "Docker 容器管理：列出容器、查看日志、启动/停止容器。",
+      "introduction": "社区 Docker MCP Server，Agent 可 inspect 本地或远程 Docker 环境，辅助容器调试与部署验证。",
+      "configSnippet": "{\n  \"mcpServers\": {\n    \"docker\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@modelcontextprotocol/server-docker\"]\n    }\n  }\n}",
+      "sourceUrl": "https://github.com/ckreiling/mcp-server-docker",
+      "tools": [
+        "list_containers",
+        "get_logs",
+        "start_container",
+        "stop_container",
+        "inspect_container"
+      ],
+      "toolCount": 7,
+      "useCases": [
+        {
+          "title": "容器故障排查",
+          "scenario": "本地 dev 容器启动失败。",
+          "prompt": "check why the api container keeps restarting",
+          "expected": "查看容器状态与 logs，定位 exit code 原因。"
+        }
+      ]
+    },
+    {
+      "id": "mcp-013",
+      "slug": "supabase",
+      "name": "supabase",
+      "displayName": "Supabase MCP",
+      "platform": "Cursor",
+      "platforms": [
+        "Cursor",
+        "VS Code"
+      ],
+      "source": "community",
+      "rank": 13,
+      "category": "数据库",
+      "transport": "stdio",
+      "authType": "Service Role Key",
+      "featured": true,
+      "tags": [
+        "supabase",
+        "postgres",
+        "backend"
+      ],
+      "description": "Supabase 全栈后端：数据库查询、Auth 用户管理、Storage 操作。",
+      "introduction": "Supabase 官方 MCP Server，覆盖 Database、Auth、Storage、Edge Functions 四大模块，适合全栈 Agent 开发。",
+      "configSnippet": "{\n  \"mcpServers\": {\n    \"supabase\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@supabase/mcp-server\"],\n      \"env\": {\n        \"SUPABASE_URL\": \"<url>\",\n        \"SUPABASE_SERVICE_ROLE_KEY\": \"<key>\"\n      }\n    }\n  }\n}",
+      "sourceUrl": "https://github.com/supabase-community/supabase-mcp",
+      "tools": [
+        "execute_sql",
+        "list_tables",
+        "get_project_url",
+        "list_storage_buckets"
+      ],
+      "toolCount": 12,
+      "useCases": [
+        {
+          "title": "Schema 迁移验证",
+          "scenario": "新增表后验证 RLS 策略。",
+          "prompt": "verify RLS policies on the new orders table in Supabase",
+          "expected": "查询 pg_policies，确认策略覆盖 anon/authenticated 角色。"
+        }
+      ]
+    },
+    {
+      "id": "mcp-014",
+      "slug": "stripe",
+      "name": "stripe",
+      "displayName": "Stripe MCP",
+      "platform": "Cursor",
+      "platforms": [
+        "Cursor",
+        "Claude Desktop"
+      ],
+      "source": "community",
+      "rank": 14,
+      "category": "支付与商务",
+      "transport": "stdio",
+      "authType": "Secret Key",
+      "featured": true,
+      "tags": [
+        "stripe",
+        "payments",
+        "billing"
+      ],
+      "description": "Stripe 支付集成：查询客户、订阅、发票，创建 Payment Intent。",
+      "introduction": "Stripe 官方 MCP Server，Agent 可辅助支付调试、订阅状态查询、Webhook 事件分析。默认 sandbox 模式。",
+      "configSnippet": "{\n  \"mcpServers\": {\n    \"stripe\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@stripe/mcp\"],\n      \"env\": { \"STRIPE_SECRET_KEY\": \"sk_test_...\" }\n    }\n  }\n}",
+      "sourceUrl": "https://github.com/stripe/agent-toolkit",
+      "tools": [
+        "list_customers",
+        "get_subscription",
+        "create_payment_intent",
+        "list_invoices"
+      ],
+      "toolCount": 10,
+      "useCases": [
+        {
+          "title": "订阅状态排查",
+          "scenario": "用户反馈扣款失败。",
+          "prompt": "check Stripe subscription status for customer cus_xxx",
+          "expected": "返回订阅状态、最近 invoice 与 payment method 详情。"
+        }
+      ]
+    },
+    {
+      "id": "mcp-015",
+      "slug": "chrome-devtools",
+      "name": "chrome-devtools",
+      "displayName": "Chrome DevTools MCP",
+      "platform": "Cursor",
+      "platforms": [
+        "Cursor",
+        "GitHub Copilot"
+      ],
+      "source": "community",
+      "rank": 15,
+      "category": "浏览器自动化",
+      "transport": "stdio",
+      "authType": "None",
+      "featured": true,
+      "tags": [
+        "chrome",
+        "devtools",
+        "performance",
+        "debugging"
+      ],
+      "description": "Chrome DevTools 深度集成：性能分析、网络抓包、Console 调试、Lighthouse 审计。",
+      "introduction": "Google 维护的 Chrome DevTools MCP，比 Playwright 更侧重调试与性能分析。Agent 可 capture screenshot、analyze network、profile performance。",
+      "configSnippet": "{\n  \"mcpServers\": {\n    \"chrome-devtools\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"chrome-devtools-mcp@latest\"]\n    }\n  }\n}",
+      "sourceUrl": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "tools": [
+        "navigate_page",
+        "take_screenshot",
+        "list_network_requests",
+        "performance_start_trace"
+      ],
+      "toolCount": 18,
+      "useCases": [
+        {
+          "title": "性能瓶颈分析",
+          "scenario": "首页 LCP 超过 3 秒。",
+          "prompt": "profile the homepage performance and find LCP bottlenecks",
+          "expected": "启动 performance trace，分析 LCP element 与 blocking resources。"
+        }
+      ]
+    },
+    {
+      "id": "mcp-016",
+      "slug": "context7",
+      "name": "context7",
+      "displayName": "Context7 MCP",
+      "platform": "Cursor",
+      "platforms": [
+        "Cursor",
+        "VS Code",
+        "Windsurf"
+      ],
+      "source": "community",
+      "rank": 16,
+      "category": "搜索与知识",
+      "transport": "streamable-http",
+      "authType": "API Key",
+      "featured": true,
+      "tags": [
+        "docs",
+        "library",
+        "context"
+      ],
+      "description": "最新库文档注入：按库名/版本拉取 up-to-date API 文档作为 Agent 上下文。",
+      "introduction": "Context7 提供 resolve-library-id 与 get-library-docs tools，解决 Agent 训练数据滞后于最新库版本的问题。",
+      "configSnippet": "{\n  \"mcpServers\": {\n    \"context7\": {\n      \"url\": \"https://mcp.context7.com/mcp\",\n      \"headers\": { \"CONTEXT7_API_KEY\": \"<key>\" }\n    }\n  }\n}",
+      "sourceUrl": "https://context7.com",
+      "tools": [
+        "resolve-library-id",
+        "get-library-docs"
+      ],
+      "toolCount": 2,
+      "useCases": [
+        {
+          "title": "最新 API 参考",
+          "scenario": "使用 Next.js 15 新 App Router API。",
+          "prompt": "get the latest Next.js 15 routing docs and implement the layout",
+          "expected": "拉取最新文档片段，生成符合当前版本的代码。"
+        }
+      ]
+    },
+    {
+      "id": "mcp-017",
+      "slug": "fetch",
+      "name": "fetch",
+      "displayName": "Fetch MCP",
+      "platform": "Claude Desktop",
+      "platforms": [
+        "Claude Desktop",
+        "Cursor"
+      ],
+      "source": "official-servers",
+      "rank": 17,
+      "category": "搜索与知识",
+      "transport": "stdio",
+      "authType": "None",
+      "featured": false,
+      "tags": [
+        "fetch",
+        "web",
+        "reference"
+      ],
+      "description": "Anthropic 官方 reference：抓取 URL 内容并转为 Markdown，供 Agent 阅读。",
+      "introduction": "轻量级 web fetch server，无 API Key 依赖。适合抓取文档页、博客文章等静态内容。",
+      "configSnippet": "{\n  \"mcpServers\": {\n    \"fetch\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@modelcontextprotocol/server-fetch\"]\n    }\n  }\n}",
+      "sourceUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch",
+      "tools": [
+        "fetch"
+      ],
+      "toolCount": 1,
+      "useCases": [
+        {
+          "title": "文档阅读",
+          "scenario": "阅读 RFC 或博客文章。",
+          "prompt": "fetch and summarize https://example.com/blog/new-feature",
+          "expected": "抓取页面 Markdown，输出结构化摘要。"
+        }
+      ]
+    },
+    {
+      "id": "mcp-018",
+      "slug": "sqlite",
+      "name": "sqlite",
+      "displayName": "SQLite MCP",
+      "platform": "Cursor",
+      "platforms": [
+        "Cursor",
+        "Claude Desktop",
+        "VS Code"
+      ],
+      "source": "official-servers",
+      "rank": 18,
+      "category": "数据库",
+      "transport": "stdio",
+      "authType": "File Path",
+      "featured": true,
+      "tags": [
+        "sqlite",
+        "local",
+        "database"
+      ],
+      "description": "本地 SQLite 数据库查询：只读 SQL 执行与 Schema 检查。",
+      "introduction": "Anthropic 官方 reference server，适合本地开发与小规模数据分析场景。",
+      "configSnippet": "{\n  \"mcpServers\": {\n    \"sqlite\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@modelcontextprotocol/server-sqlite\", \"--db-path\", \"./data.db\"]\n    }\n  }\n}",
+      "sourceUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite",
+      "tools": [
+        "query",
+        "list_tables",
+        "describe_table"
+      ],
+      "toolCount": 3,
+      "useCases": [
+        {
+          "title": "本地数据探查",
+          "scenario": "分析应用生成的本地 SQLite 缓存。",
+          "prompt": "query the sqlite db to find duplicate entries in cache table",
+          "expected": "列出表结构，执行 GROUP BY 查询找出重复项。"
+        }
+      ]
+    },
+    {
+      "id": "mcp-019",
+      "slug": "datadog",
+      "name": "datadog",
+      "displayName": "Datadog MCP",
+      "platform": "Cursor",
+      "platforms": [
+        "Cursor",
+        "VS Code"
+      ],
+      "source": "community",
+      "rank": 19,
+      "category": "监控运维",
+      "transport": "stdio",
+      "authType": "API Key + App Key",
+      "featured": true,
+      "tags": [
+        "datadog",
+        "monitoring",
+        "logs",
+        "metrics"
+      ],
+      "description": "Datadog 可观测性平台：查询 metrics、搜索 logs、查看 dashboards 与 monitors。",
+      "introduction": "Datadog 官方 MCP Server，Agent 排查生产问题时可直接查 metrics/logs/traces，无需切换浏览器。",
+      "configSnippet": "{\n  \"mcpServers\": {\n    \"datadog\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@datadog/mcp-server\"],\n      \"env\": {\n        \"DD_API_KEY\": \"<key>\",\n        \"DD_APP_KEY\": \"<key>\"\n      }\n    }\n  }\n}",
+      "sourceUrl": "https://docs.datadoghq.com/integrations/mcp/",
+      "tools": [
+        "query_metrics",
+        "search_logs",
+        "list_monitors",
+        "get_dashboard"
+      ],
+      "toolCount": 12,
+      "useCases": [
+        {
+          "title": "Incident 排查",
+          "scenario": "API 延迟突增告警。",
+          "prompt": "check Datadog metrics for api latency spike in the last hour",
+          "expected": "查询相关 metric，关联 logs 定位慢请求原因。"
+        }
+      ]
+    },
+    {
+      "id": "mcp-020",
+      "slug": "aws-kb-retrieval",
+      "name": "aws-kb-retrieval",
+      "displayName": "AWS Knowledge Base MCP",
+      "platform": "Cursor",
+      "platforms": [
+        "Cursor",
+        "VS Code"
+      ],
+      "source": "community",
+      "rank": 20,
+      "category": "云与基础设施",
+      "transport": "stdio",
+      "authType": "AWS Credentials",
+      "featured": false,
+      "tags": [
+        "aws",
+        "bedrock",
+        "rag",
+        "knowledge-base"
+      ],
+      "description": "AWS Bedrock Knowledge Base RAG 检索：查询企业私有知识库。",
+      "introduction": "AWS 官方 MCP Server，连接 Bedrock Knowledge Base 实现企业文档 RAG。适合内部 Wiki、合规文档等私有知识检索。",
+      "configSnippet": "{\n  \"mcpServers\": {\n    \"aws-kb\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@aws/mcp-server-bedrock-kb-retrieval\"],\n      \"env\": {\n        \"AWS_REGION\": \"us-east-1\",\n        \"KNOWLEDGE_BASE_ID\": \"<kb-id>\"\n      }\n    }\n  }\n}",
+      "sourceUrl": "https://github.com/awslabs/mcp",
+      "tools": [
+        "retrieve",
+        "list_knowledge_bases"
+      ],
+      "toolCount": 2,
+      "useCases": [
+        {
+          "title": "内部文档检索",
+          "scenario": "查询公司安全合规政策。",
+          "prompt": "search our knowledge base for data retention policy requirements",
+          "expected": "从 Bedrock KB 检索相关文档片段并引用来源。"
+        }
+      ]
+    }
+  ]
+}

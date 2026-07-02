@@ -1,0 +1,204 @@
+@import url("./skills.css");
+
+.mcp-page {
+  min-height: 100vh;
+}
+
+.mcp-page .view-tab.active {
+  background: #059669;
+  border-color: #059669;
+}
+
+.mcp-page .platform-tab.active {
+  background: #059669;
+  border-color: #059669;
+}
+
+.mcps-meta {
+  margin: 16px 16px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.mcp-primer-panel {
+  margin: 16px 16px 0;
+  padding: 16px 18px;
+}
+
+.mcp-changes-panel {
+  margin: 16px 16px 0;
+}
+
+.mcp-changes-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.mcp-main {
+  display: grid;
+  grid-template-columns: 260px 1fr 380px;
+  gap: 16px;
+  padding: 16px;
+}
+
+.mcp-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mcp-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mcp-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px 16px;
+  cursor: pointer;
+  background: #fff;
+  transition: border-color 0.15s, box-shadow 0.15s, background 0.15s;
+}
+
+.mcp-card:hover,
+.mcp-card.active {
+  border-color: #059669;
+  background: #ecfdf5;
+  box-shadow: 0 2px 8px rgba(5, 150, 105, 0.1);
+}
+
+.mcp-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.mcp-card h3 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.mcp-rank {
+  flex-shrink: 0;
+  background: #059669;
+  color: #fff;
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.mcp-desc {
+  margin: 0 0 10px;
+  color: #4b5563;
+  font-size: 14px;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.mcp-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.badge.transport-stdio {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.badge.transport-http {
+  background: #ede9fe;
+  color: #5b21b6;
+}
+
+.badge.category {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.badge.tools {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.mcp-detail h3 {
+  margin-top: 0;
+}
+
+.mcp-detail section {
+  margin-bottom: 18px;
+}
+
+.mcp-detail h4 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: #111827;
+}
+
+.mcp-detail p,
+.mcp-detail li {
+  line-height: 1.6;
+  color: #374151;
+  font-size: 14px;
+}
+
+.mcp-detail ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.config-block {
+  background: #111827;
+  color: #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  overflow-x: auto;
+  margin: 8px 0 0;
+  white-space: pre;
+}
+
+.tools-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.tool-chip {
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  color: #374151;
+}
+
+.mcp-modal-dialog {
+  width: min(860px, 100%);
+}
+
+@media (max-width: 1100px) {
+  .mcp-main {
+    grid-template-columns: 1fr;
+  }
+
+  .mcp-header .header-row {
+    flex-direction: column;
+  }
+}
