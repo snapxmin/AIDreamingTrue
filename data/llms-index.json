@@ -1,2173 +1,4912 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-02T11:56:08Z",
-    "totalCount": 32,
-    "newCount": 2
+    "lastUpdated": "2026-07-02T12:26:31Z",
+    "totalCount": 60,
+    "newCount": 0
   },
   "llms": [
     {
-      "id": "idx-Anthropic-claude-opus-4",
-      "slug": "claude-opus-4",
-      "displayName": "Claude Opus 4",
-      "provider": "Anthropic",
-      "providers": [
-        "Anthropic",
-        "AWS Bedrock",
-        "Google Vertex AI"
-      ],
-      "rank": 1,
-      "category": "代码 Agent",
-      "contextWindow": 200000,
-      "maxOutput": 32000,
-      "modality": [
-        "text",
-        "image",
-        "code"
-      ],
-      "openWeights": false,
-      "featured": true,
-      "tags": [
-        "agent",
-        "coding",
-        "long-context",
-        "sota"
-      ],
-      "description": "Anthropic 旗舰模型，SWE-bench 与复杂 Agent 任务领先，长上下文代码理解与多文件重构能力突出。",
-      "introduction": "Claude Opus 4 在 SWE-bench Verified 上达到业界顶尖水平，擅长长链路软件工程任务、架构设计与安全审计。Cursor、Claude Code 默认高端选项。",
-      "sourceUrl": "https://www.anthropic.com/claude",
-      "availableIn": [
-        "Cursor",
-        "Claude Code",
-        "AWS Bedrock"
-      ],
-      "pricing": {
-        "input": 15.0,
-        "output": 75.0,
-        "unit": "USD / 1M tokens"
-      },
-      "benchmarks": {
-        "automated": [
-          {
-            "name": "SWE-bench Verified",
-            "score": 72.5,
-            "unit": "%",
-            "rank": 1,
-            "source": "swe-bench",
-            "updated": "2026-06"
-          },
-          {
-            "name": "LiveCodeBench",
-            "score": 68.2,
-            "unit": "%",
-            "rank": 2,
-            "source": "artificial-analysis",
-            "updated": "2026-06"
-          },
-          {
-            "name": "HumanEval+",
-            "score": 94.1,
-            "unit": "%",
-            "rank": 1,
-            "source": "provider-official",
-            "updated": "2026-05"
-          },
-          {
-            "name": "MMLU-Pro",
-            "score": 88.7,
-            "unit": "%",
-            "rank": 3,
-            "source": "artificial-analysis",
-            "updated": "2026-06"
-          },
-          {
-            "name": "GPQA Diamond",
-            "score": 74.3,
-            "unit": "%",
-            "rank": 2,
-            "source": "artificial-analysis",
-            "updated": "2026-06"
-          }
-        ],
-        "manual": [
-          {
-            "name": "LMSYS Arena Elo",
-            "score": 1287,
-            "unit": "Elo",
-            "rank": 1,
-            "source": "lmsys-arena",
-            "updated": "2026-06",
-            "note": "盲测人工偏好，样本量 50k+"
-          },
-          {
-            "name": "WebDev Arena",
-            "score": 1156,
-            "unit": "Elo",
-            "rank": 1,
-            "source": "lmsys-arena",
-            "updated": "2026-06",
-            "note": "前端/UI 生成人工评测"
-          }
-        ]
-      },
-      "sentiment": {
-        "score": 4.6,
-        "maxScore": 5,
-        "sampleSize": 1240,
-        "sources": [
-          "HN",
-          "Reddit r/ClaudeAI",
-          "X"
-        ],
-        "summary": "开发者普遍认可代码质量与指令遵循，主要吐槽点是价格偏高与速率限制。Agent 场景口碑显著优于上一代。",
-        "highlights": [
-          {
-            "source": "HN",
-            "quote": "Opus 4 finally feels like a senior engineer pair-programmer.",
-            "sentiment": "positive"
-          },
-          {
-            "source": "Reddit",
-            "quote": "Best for multi-file refactors, but $75/M output tokens hurts at scale.",
-            "sentiment": "mixed"
-          }
-        ],
-        "trend": "rising"
-      },
-      "useCases": [
-        {
-          "title": "大型代码库重构",
-          "scenario": "跨 50+ 文件的重构与类型迁移。",
-          "prompt": "Refactor the auth module to use dependency injection across all service files",
-          "expected": "准确识别依赖关系，生成一致性补丁，通过现有测试。"
-        }
-      ],
-      "inTopCurated": true,
-      "activityScore": 100,
-      "activityRank": 1,
-      "isNew": false
-    },
-    {
-      "id": "idx-OpenAI-gpt-5",
-      "slug": "gpt-5",
-      "displayName": "GPT-5",
-      "provider": "OpenAI",
-      "providers": [
-        "OpenAI",
-        "Azure OpenAI",
-        "GitHub Copilot"
-      ],
-      "rank": 2,
-      "category": "通用对话",
-      "contextWindow": 256000,
-      "maxOutput": 65536,
-      "modality": [
-        "text",
-        "image",
-        "audio",
-        "code"
-      ],
-      "openWeights": false,
-      "featured": true,
-      "tags": [
-        "multimodal",
-        "reasoning",
-        "copilot",
-        "sota"
-      ],
-      "description": "OpenAI 新一代旗舰，推理与多模态统一架构，Copilot 默认高端模型，通用能力与工具调用均衡。",
-      "introduction": "GPT-5 在 MMLU-Pro 与 GPQA 等推理基准上表现强劲，原生支持并行工具调用与结构化输出。GitHub Copilot 企业版默认接入。",
-      "sourceUrl": "https://openai.com/gpt-5",
-      "availableIn": [
-        "GitHub Copilot",
-        "ChatGPT",
-        "Azure OpenAI",
-        "Cursor"
-      ],
-      "pricing": {
-        "input": 10.0,
-        "output": 30.0,
-        "unit": "USD / 1M tokens"
-      },
-      "benchmarks": {
-        "automated": [
-          {
-            "name": "SWE-bench Verified",
-            "score": 69.8,
-            "unit": "%",
-            "rank": 2,
-            "source": "swe-bench",
-            "updated": "2026-06"
-          },
-          {
-            "name": "LiveCodeBench",
-            "score": 71.5,
-            "unit": "%",
-            "rank": 1,
-            "source": "artificial-analysis",
-            "updated": "2026-06"
-          },
-          {
-            "name": "MMLU-Pro",
-            "score": 91.2,
-            "unit": "%",
-            "rank": 1,
-            "source": "artificial-analysis",
-            "updated": "2026-06"
-          },
-          {
-            "name": "GPQA Diamond",
-            "score": 76.8,
-            "unit": "%",
-            "rank": 1,
-            "source": "artificial-analysis",
-            "updated": "2026-06"
-          },
-          {
-            "name": "AIME 2025",
-            "score": 82.4,
-            "unit": "%",
-            "rank": 1,
-            "source": "provider-official",
-            "updated": "2026-05"
-          }
-        ],
-        "manual": [
-          {
-            "name": "LMSYS Arena Elo",
-            "score": 1274,
-            "unit": "Elo",
-            "rank": 2,
-            "source": "lmsys-arena",
-            "updated": "2026-06"
-          },
-          {
-            "name": "MT-Bench",
-            "score": 9.4,
-            "unit": "/10",
-            "rank": 1,
-            "source": "community",
-            "updated": "2026-05"
-          }
-        ]
-      },
-      "sentiment": {
-        "score": 4.4,
-        "maxScore": 5,
-        "sampleSize": 2100,
-        "sources": [
-          "HN",
-          "Reddit r/OpenAI",
-          "X"
-        ],
-        "summary": "综合能力强、生态集成最好；部分开发者认为代码风格偏「安全保守」，复杂 Agent 场景略逊于 Claude Opus。",
-        "highlights": [
-          {
-            "source": "HN",
-            "quote": "GPT-5 reasoning is noticeably better, but Copilot still throttles on complex tasks.",
-            "sentiment": "mixed"
-          },
-          {
-            "source": "X",
-            "quote": "Best general-purpose model for product teams — docs, code, analysis in one.",
-            "sentiment": "positive"
-          }
-        ],
-        "trend": "stable"
-      },
-      "useCases": [
-        {
-          "title": "全栈功能开发",
-          "scenario": "从 API 设计到前端组件一站式生成。",
-          "prompt": "Build a REST API for user preferences with React settings page",
-          "expected": "生成前后端代码、类型定义与基础测试。"
-        }
-      ],
-      "inTopCurated": true,
-      "activityScore": 97,
-      "activityRank": 2,
-      "isNew": false
-    },
-    {
-      "id": "idx-Google-gemini-2-5-pro",
-      "slug": "gemini-2-5-pro",
-      "displayName": "Gemini 2.5 Pro",
-      "provider": "Google",
-      "providers": [
-        "Google AI",
-        "Vertex AI"
-      ],
-      "rank": 3,
-      "category": "多模态",
-      "contextWindow": 1000000,
-      "maxOutput": 65536,
-      "modality": [
-        "text",
-        "image",
-        "video",
-        "audio",
-        "code"
-      ],
-      "openWeights": false,
-      "featured": true,
-      "tags": [
-        "multimodal",
-        "long-context",
-        "video",
-        "sota"
-      ],
-      "description": "Google 旗舰多模态模型，百万 token 上下文，视频/音频理解领先，适合超大代码库与多媒体 Agent。",
-      "introduction": "Gemini 2.5 Pro 在超长上下文场景独树一帜，可一次性 ingest 整个 monorepo。Antigravity 与 Google AI Studio 核心模型。",
-      "sourceUrl": "https://deepmind.google/technologies/gemini",
-      "availableIn": [
-        "Google Antigravity",
-        "Google AI Studio",
-        "Vertex AI"
-      ],
-      "pricing": {
-        "input": 3.5,
-        "output": 10.5,
-        "unit": "USD / 1M tokens"
-      },
-      "benchmarks": {
-        "automated": [
-          {
-            "name": "SWE-bench Verified",
-            "score": 63.2,
-            "unit": "%",
-            "rank": 5,
-            "source": "swe-bench",
-            "updated": "2026-06"
-          },
-          {
-            "name": "MMLU-Pro",
-            "score": 87.1,
-            "unit": "%",
-            "rank": 4,
-            "source": "artificial-analysis",
-            "updated": "2026-06"
-          },
-          {
-            "name": "GPQA Diamond",
-            "score": 71.5,
-            "unit": "%",
-            "rank": 4,
-            "source": "artificial-analysis",
-            "updated": "2026-06"
-          }
-        ],
-        "manual": [
-          {
-            "name": "LMSYS Arena Elo",
-            "score": 1248,
-            "unit": "Elo",
-            "rank": 4,
-            "source": "lmsys-arena",
-            "updated": "2026-06"
-          }
-        ]
-      },
-      "sentiment": {
-        "score": 4.2,
-        "maxScore": 5,
-        "sampleSize": 890,
-        "sources": [
-          "HN",
-          "Reddit r/Bard",
-          "X"
-        ],
-        "summary": "超长上下文是核心卖点；纯代码场景口碑分化，部分用户反馈幻觉率高于 Claude/GPT。",
-        "highlights": [
-          {
-            "source": "HN",
-            "quote": "1M context is a game changer for legacy codebase onboarding.",
-            "sentiment": "positive"
-          },
-          {
-            "source": "Reddit",
-            "quote": "Great for docs and video, inconsistent on precise code edits.",
-            "sentiment": "mixed"
-          }
-        ],
-        "trend": "rising"
-      },
-      "useCases": [
-        {
-          "title": "超大仓库分析",
-          "scenario": "一次性分析百万行 legacy 代码库架构。",
-          "prompt": "Analyze the entire monorepo and produce an architecture diagram with dependency hotspots",
-          "expected": "基于全量上下文输出架构图与热点模块列表。"
-        }
-      ],
-      "inTopCurated": true,
-      "activityScore": 94,
-      "activityRank": 3,
-      "isNew": false
-    },
-    {
-      "id": "idx-Anthropic-claude-sonnet-4",
-      "slug": "claude-sonnet-4",
-      "displayName": "Claude Sonnet 4",
-      "provider": "Anthropic",
-      "providers": [
-        "Anthropic",
-        "AWS Bedrock",
-        "Cursor"
-      ],
-      "rank": 4,
-      "category": "代码 Agent",
-      "contextWindow": 200000,
-      "maxOutput": 16000,
-      "modality": [
-        "text",
-        "image",
-        "code"
-      ],
-      "openWeights": false,
-      "featured": true,
-      "tags": [
-        "coding",
-        "agent",
-        "cost-effective"
-      ],
-      "description": "Claude 系列性价比之选，代码能力与 Opus 接近，Cursor 默认主力模型，日常开发场景最优平衡点。",
-      "introduction": "Sonnet 4 在 SWE-bench 上达到 68%+，价格仅为 Opus 的 1/5。大多数 AI Coding 产品的默认推荐模型。",
-      "sourceUrl": "https://www.anthropic.com/claude",
-      "availableIn": [
-        "Cursor",
-        "Claude Code",
-        "GitHub Copilot",
-        "Windsurf"
-      ],
-      "pricing": {
-        "input": 3.0,
-        "output": 15.0,
-        "unit": "USD / 1M tokens"
-      },
-      "benchmarks": {
-        "automated": [
-          {
-            "name": "SWE-bench Verified",
-            "score": 68.4,
-            "unit": "%",
-            "rank": 3,
-            "source": "swe-bench",
-            "updated": "2026-06"
-          },
-          {
-            "name": "LiveCodeBench",
-            "score": 65.8,
-            "unit": "%",
-            "rank": 3,
-            "source": "artificial-analysis",
-            "updated": "2026-06"
-          },
-          {
-            "name": "HumanEval+",
-            "score": 92.3,
-            "unit": "%",
-            "rank": 2,
-            "source": "provider-official",
-            "updated": "2026-05"
-          }
-        ],
-        "manual": [
-          {
-            "name": "LMSYS Arena Elo",
-            "score": 1256,
-            "unit": "Elo",
-            "rank": 3,
-            "source": "lmsys-arena",
-            "updated": "2026-06"
-          }
-        ]
-      },
-      "sentiment": {
-        "score": 4.7,
-        "maxScore": 5,
-        "sampleSize": 3200,
-        "sources": [
-          "HN",
-          "Reddit r/cursor",
-          "X"
-        ],
-        "summary": "AI Coding 社区最高口碑模型之一，「日常写码首选」。少数反馈在极端复杂推理上不如 Opus/o3。",
-        "highlights": [
-          {
-            "source": "Reddit r/cursor",
-            "quote": "Sonnet 4 is the sweet spot — fast, accurate, doesn't burn credits.",
-            "sentiment": "positive"
-          },
-          {
-            "source": "HN",
-            "quote": "Default model for 90% of my coding tasks. Opus only for hard refactors.",
-            "sentiment": "positive"
-          }
-        ],
-        "trend": "stable"
-      },
-      "useCases": [
-        {
-          "title": "日常功能开发",
-          "scenario": "实现 CRUD API 与单元测试。",
-          "prompt": "Add a PATCH endpoint for user profile with validation and tests",
-          "expected": "生成 handler、schema 验证与 pytest 用例。"
-        }
-      ],
-      "inTopCurated": true,
-      "activityScore": 91,
-      "activityRank": 4,
-      "isNew": false
-    },
-    {
-      "id": "idx-OpenAI-o3",
-      "slug": "o3",
-      "displayName": "OpenAI o3",
-      "provider": "OpenAI",
-      "providers": [
-        "OpenAI",
-        "Azure OpenAI"
-      ],
-      "rank": 5,
-      "category": "深度推理",
-      "contextWindow": 200000,
-      "maxOutput": 100000,
-      "modality": [
-        "text",
-        "image",
-        "code"
-      ],
-      "openWeights": false,
-      "featured": true,
-      "tags": [
-        "reasoning",
-        "math",
-        "science",
-        "chain-of-thought"
-      ],
-      "description": "OpenAI 推理专用模型，数学与科学推理 SOTA，适合复杂算法设计、竞赛编程与科研辅助。",
-      "introduction": "o3 采用扩展思维链，AIME/GPQA 等硬核推理基准领先。不适合高频低延迟交互，适合「想透了再答」场景。",
-      "sourceUrl": "https://openai.com/o3",
-      "availableIn": [
-        "ChatGPT Pro",
-        "Cursor",
-        "API"
-      ],
-      "pricing": {
-        "input": 20.0,
-        "output": 80.0,
-        "unit": "USD / 1M tokens"
-      },
-      "benchmarks": {
-        "automated": [
-          {
-            "name": "AIME 2025",
-            "score": 91.2,
-            "unit": "%",
-            "rank": 1,
-            "source": "provider-official",
-            "updated": "2026-05"
-          },
-          {
-            "name": "GPQA Diamond",
-            "score": 81.5,
-            "unit": "%",
-            "rank": 1,
-            "source": "artificial-analysis",
-            "updated": "2026-06"
-          },
-          {
-            "name": "SWE-bench Verified",
-            "score": 58.7,
-            "unit": "%",
-            "rank": 8,
-            "source": "swe-bench",
-            "updated": "2026-06"
-          }
-        ],
-        "manual": [
-          {
-            "name": "LMSYS Arena Elo",
-            "score": 1265,
-            "unit": "Elo",
-            "rank": 2,
-            "source": "lmsys-arena",
-            "updated": "2026-06",
-            "note": "推理模式单独排名"
-          }
-        ]
-      },
-      "sentiment": {
-        "score": 4.3,
-        "maxScore": 5,
-        "sampleSize": 780,
-        "sources": [
-          "HN",
-          "Reddit r/OpenAI"
-        ],
-        "summary": "推理能力公认顶尖，但延迟高、价格贵；代码场景不如 Sonnet/Opus 实用。",
-        "highlights": [
-          {
-            "source": "HN",
-            "quote": "o3 solved a LeetCode Hard I'd been stuck on for days. Worth the wait.",
-            "sentiment": "positive"
-          },
-          {
-            "source": "Reddit",
-            "quote": "Overkill for normal coding. Use for algorithms and system design.",
-            "sentiment": "mixed"
-          }
-        ],
-        "trend": "stable"
-      },
-      "useCases": [
-        {
-          "title": "复杂算法设计",
-          "scenario": "设计高性能数据结构或证明算法正确性。",
-          "prompt": "Design an O(n log n) solution for the interval scheduling problem with proof",
-          "expected": "给出算法、复杂度证明与边界 case 分析。"
-        }
-      ],
-      "inTopCurated": true,
-      "activityScore": 88,
-      "activityRank": 5,
-      "isNew": false
-    },
-    {
-      "id": "idx-DeepSeek-deepseek-r1",
-      "slug": "deepseek-r1",
-      "displayName": "DeepSeek R1",
-      "provider": "DeepSeek",
-      "providers": [
-        "DeepSeek",
-        "OpenRouter",
-        "Together AI"
-      ],
-      "rank": 6,
-      "category": "深度推理",
-      "contextWindow": 128000,
-      "maxOutput": 8192,
-      "modality": [
-        "text",
-        "code"
-      ],
-      "openWeights": true,
-      "featured": true,
-      "tags": [
-        "open-source",
-        "reasoning",
-        "cost-effective",
-        "r1"
-      ],
-      "description": "开源推理模型标杆，媲美 o1/o3 的数学推理，极低 API 价格，本地部署友好。",
-      "introduction": "DeepSeek R1 以开源权重发布，推理链透明可审计。在 AIME 与 GPQA 上接近闭源 SOTA，性价比极高。",
-      "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-R1",
-      "availableIn": [
-        "OpenRouter",
-        "Cursor",
-        "Ollama",
-        "vLLM"
-      ],
-      "pricing": {
-        "input": 0.55,
-        "output": 2.19,
-        "unit": "USD / 1M tokens"
-      },
-      "benchmarks": {
-        "automated": [
-          {
-            "name": "AIME 2025",
-            "score": 79.8,
-            "unit": "%",
-            "rank": 3,
-            "source": "provider-official",
-            "updated": "2026-04"
-          },
-          {
-            "name": "GPQA Diamond",
-            "score": 71.2,
-            "unit": "%",
-            "rank": 4,
-            "source": "artificial-analysis",
-            "updated": "2026-05"
-          },
-          {
-            "name": "LiveCodeBench",
-            "score": 58.4,
-            "unit": "%",
-            "rank": 8,
-            "source": "artificial-analysis",
-            "updated": "2026-05"
-          }
-        ],
-        "manual": [
-          {
-            "name": "LMSYS Arena Elo",
-            "score": 1228,
-            "unit": "Elo",
-            "rank": 6,
-            "source": "lmsys-arena",
-            "updated": "2026-06"
-          }
-        ]
-      },
-      "sentiment": {
-        "score": 4.5,
-        "maxScore": 5,
-        "sampleSize": 1850,
-        "sources": [
-          "HN",
-          "Reddit r/LocalLLaMA",
-          "X"
-        ],
-        "summary": "开源社区现象级模型，「穷人的 o3」。主要争议是中文政治敏感过滤与偶发英文混杂。",
-        "highlights": [
-          {
-            "source": "HN",
-            "quote": "DeepSeek R1 changed the economics of reasoning — self-host for pennies.",
-            "sentiment": "positive"
-          },
-          {
-            "source": "Reddit r/LocalLLaMA",
-            "quote": "Running R1-70B locally on 2x3090, quality blows away Llama 3.",
-            "sentiment": "positive"
-          }
-        ],
-        "trend": "rising"
-      },
-      "useCases": [
-        {
-          "title": "本地推理部署",
-          "scenario": "在私有环境部署推理模型处理敏感数据。",
-          "prompt": "Analyze this financial model and identify logical inconsistencies",
-          "expected": "输出逐步推理链与结论，数据不出本地。"
-        }
-      ],
-      "inTopCurated": true,
-      "activityScore": 85,
-      "activityRank": 6,
-      "isNew": false
-    },
-    {
-      "id": "idx-DeepSeek-deepseek-v3",
-      "slug": "deepseek-v3",
-      "displayName": "DeepSeek V3",
-      "provider": "DeepSeek",
-      "providers": [
-        "DeepSeek",
-        "OpenRouter"
-      ],
-      "rank": 7,
-      "category": "高性价比",
-      "contextWindow": 128000,
-      "maxOutput": 8192,
-      "modality": [
-        "text",
-        "code"
-      ],
-      "openWeights": true,
-      "featured": true,
-      "tags": [
-        "open-source",
-        "coding",
-        "moE",
-        "cost-effective"
-      ],
-      "description": "MoE 架构开源模型，代码与通用能力均衡，API 价格极低，适合高频调用与批量任务。",
-      "introduction": "DeepSeek V3 671B MoE 在 HumanEval 与 MMLU 上接近 GPT-4 级别，输入价格仅 $0.27/M tokens。",
-      "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-V3",
-      "availableIn": [
-        "DeepSeek API",
-        "OpenRouter",
-        "Cursor"
-      ],
-      "pricing": {
-        "input": 0.27,
-        "output": 1.1,
-        "unit": "USD / 1M tokens"
-      },
-      "benchmarks": {
-        "automated": [
-          {
-            "name": "HumanEval+",
-            "score": 88.5,
-            "unit": "%",
-            "rank": 5,
-            "source": "provider-official",
-            "updated": "2026-03"
-          },
-          {
-            "name": "MMLU-Pro",
-            "score": 82.4,
-            "unit": "%",
-            "rank": 8,
-            "source": "artificial-analysis",
-            "updated": "2026-05"
-          },
-          {
-            "name": "LiveCodeBench",
-            "score": 62.1,
-            "unit": "%",
-            "rank": 5,
-            "source": "artificial-analysis",
-            "updated": "2026-05"
-          }
-        ],
-        "manual": [
-          {
-            "name": "LMSYS Arena Elo",
-            "score": 1215,
-            "unit": "Elo",
-            "rank": 8,
-            "source": "lmsys-arena",
-            "updated": "2026-06"
-          }
-        ]
-      },
-      "sentiment": {
-        "score": 4.3,
-        "maxScore": 5,
-        "sampleSize": 1420,
-        "sources": [
-          "HN",
-          "Reddit r/LocalLLaMA"
-        ],
-        "summary": "「最具性价比的生产模型」。批量代码生成、数据标注场景首选。",
-        "highlights": [
-          {
-            "source": "HN",
-            "quote": "Replaced GPT-4o with V3 for 80% of tasks, bill dropped 95%.",
-            "sentiment": "positive"
-          }
-        ],
-        "trend": "stable"
-      },
-      "useCases": [
-        {
-          "title": "批量代码生成",
-          "scenario": "为 100+ API 端点生成 OpenAPI 文档与客户端 SDK。",
-          "prompt": "Generate TypeScript client for all endpoints in swagger.json",
-          "expected": "低成本完成大批量生成任务。"
-        }
-      ],
-      "inTopCurated": true,
-      "activityScore": 82,
-      "activityRank": 7,
-      "isNew": false
-    },
-    {
-      "id": "idx-Moonshot-kimi-k2",
-      "slug": "kimi-k2",
-      "displayName": "Kimi K2",
-      "provider": "Moonshot",
-      "providers": [
-        "Moonshot AI"
-      ],
-      "rank": 8,
-      "category": "代码 Agent",
-      "contextWindow": 256000,
-      "maxOutput": 16384,
-      "modality": [
-        "text",
-        "code"
-      ],
-      "openWeights": false,
-      "featured": true,
-      "tags": [
-        "coding",
-        "chinese",
-        "agent",
-        "copilot"
-      ],
-      "description": "月之暗面旗舰，GitHub Copilot 新增支持，中英文代码场景表现优异，Agent 工具调用能力强。",
-      "introduction": "Kimi K2 在 Copilot 中作为可选模型上线，SWE-bench 成绩进入第一梯队，中文技术文档理解突出。",
-      "sourceUrl": "https://www.moonshot.cn",
-      "availableIn": [
-        "GitHub Copilot",
-        "Kimi Chat",
-        "API"
-      ],
-      "pricing": {
-        "input": 2.0,
-        "output": 8.0,
-        "unit": "USD / 1M tokens"
-      },
-      "benchmarks": {
-        "automated": [
-          {
-            "name": "SWE-bench Verified",
-            "score": 65.1,
-            "unit": "%",
-            "rank": 4,
-            "source": "swe-bench",
-            "updated": "2026-06"
-          },
-          {
-            "name": "LiveCodeBench",
-            "score": 64.3,
-            "unit": "%",
-            "rank": 4,
-            "source": "artificial-analysis",
-            "updated": "2026-06"
-          }
-        ],
-        "manual": [
-          {
-            "name": "LMSYS Arena Elo",
-            "score": 1235,
-            "unit": "Elo",
-            "rank": 5,
-            "source": "lmsys-arena",
-            "updated": "2026-06"
-          }
-        ]
-      },
-      "sentiment": {
-        "score": 4.1,
-        "maxScore": 5,
-        "sampleSize": 520,
-        "sources": [
-          "HN",
-          "中文技术社区",
-          "X"
-        ],
-        "summary": "中文开发者好评度高；国际社区样本较少，英文代码场景口碑仍在积累。",
-        "highlights": [
-          {
-            "source": "HN",
-            "quote": "Kimi K2 in Copilot is surprisingly good for bilingual codebases.",
-            "sentiment": "positive"
-          }
-        ],
-        "trend": "rising"
-      },
-      "useCases": [
-        {
-          "title": "中英混合代码库",
-          "scenario": "维护含中文注释与文档的国际化项目。",
-          "prompt": "根据中文需求文档实现用户权限模块",
-          "expected": "准确理解中文需求，生成符合项目规范的代码。"
-        }
-      ],
-      "inTopCurated": true,
-      "activityScore": 79,
-      "activityRank": 8,
-      "isNew": false
-    },
-    {
-      "id": "idx-Alibaba-qwen3-235b",
-      "slug": "qwen3-235b",
-      "displayName": "Qwen3 235B",
-      "provider": "Alibaba",
-      "providers": [
-        "Alibaba Cloud",
-        "OpenRouter"
-      ],
-      "rank": 9,
-      "category": "开源权重",
-      "contextWindow": 128000,
-      "maxOutput": 8192,
-      "modality": [
-        "text",
-        "code"
-      ],
-      "openWeights": true,
-      "featured": true,
-      "tags": [
-        "open-source",
-        "multilingual",
-        "moE"
-      ],
-      "description": "阿里通义千问 3 代旗舰开源，多语言与代码能力均衡，Apache 2.0 许可。",
-      "introduction": "Qwen3 235B MoE 在 MMLU 与 HumanEval 上进入开源第一梯队，支持 119 种语言。",
-      "sourceUrl": "https://github.com/QwenLM/Qwen3",
-      "availableIn": [
-        "Alibaba Cloud",
-        "Ollama",
-        "vLLM",
-        "OpenRouter"
-      ],
-      "pricing": {
-        "input": 0.4,
-        "output": 1.6,
-        "unit": "USD / 1M tokens"
-      },
-      "benchmarks": {
-        "automated": [
-          {
-            "name": "MMLU-Pro",
-            "score": 84.6,
-            "unit": "%",
-            "rank": 6,
-            "source": "artificial-analysis",
-            "updated": "2026-05"
-          },
-          {
-            "name": "HumanEval+",
-            "score": 86.2,
-            "unit": "%",
-            "rank": 6,
-            "source": "provider-official",
-            "updated": "2026-04"
-          },
-          {
-            "name": "LiveCodeBench",
-            "score": 59.8,
-            "unit": "%",
-            "rank": 7,
-            "source": "artificial-analysis",
-            "updated": "2026-05"
-          }
-        ],
-        "manual": [
-          {
-            "name": "LMSYS Arena Elo",
-            "score": 1208,
-            "unit": "Elo",
-            "rank": 9,
-            "source": "lmsys-arena",
-            "updated": "2026-06"
-          }
-        ]
-      },
-      "sentiment": {
-        "score": 4.0,
-        "maxScore": 5,
-        "sampleSize": 680,
-        "sources": [
-          "HN",
-          "Reddit r/LocalLLaMA",
-          "中文社区"
-        ],
-        "summary": "开源 MoE 新标杆，亚太开发者采用率高。国际认知度仍在提升。",
-        "highlights": [
-          {
-            "source": "Reddit r/LocalLLaMA",
-            "quote": "Qwen3 235B is the new default for multilingual projects.",
-            "sentiment": "positive"
-          }
-        ],
-        "trend": "rising"
-      },
-      "useCases": [],
-      "inTopCurated": true,
-      "activityScore": 76,
-      "activityRank": 9,
-      "isNew": false
-    },
-    {
-      "id": "idx-Meta-llama-4-maverick",
-      "slug": "llama-4-maverick",
-      "displayName": "Llama 4 Maverick",
-      "provider": "Meta",
-      "providers": [
-        "Meta",
-        "Together AI",
-        "Groq"
-      ],
-      "rank": 10,
-      "category": "开源权重",
-      "contextWindow": 1000000,
-      "maxOutput": 16384,
-      "modality": [
-        "text",
-        "image",
-        "code"
-      ],
-      "openWeights": true,
-      "featured": true,
-      "tags": [
-        "open-source",
-        "multimodal",
-        "long-context"
-      ],
-      "description": "Meta 最新开源旗舰，多模态 + 百万上下文，可商用，适合私有化部署与微调。",
-      "introduction": "Llama 4 Maverick 延续 Meta 开源战略，在同等规模开源模型中综合最强，支持图像输入。",
-      "sourceUrl": "https://llama.meta.com",
-      "availableIn": [
-        "Ollama",
-        "Together AI",
-        "Groq",
-        "AWS Bedrock"
-      ],
-      "pricing": {
-        "input": 0.2,
-        "output": 0.6,
-        "unit": "USD / 1M tokens"
-      },
-      "benchmarks": {
-        "automated": [
-          {
-            "name": "MMLU-Pro",
-            "score": 81.2,
-            "unit": "%",
-            "rank": 9,
-            "source": "artificial-analysis",
-            "updated": "2026-05"
-          },
-          {
-            "name": "HumanEval+",
-            "score": 84.7,
-            "unit": "%",
-            "rank": 7,
-            "source": "provider-official",
-            "updated": "2026-04"
-          }
-        ],
-        "manual": [
-          {
-            "name": "LMSYS Arena Elo",
-            "score": 1195,
-            "unit": "Elo",
-            "rank": 10,
-            "source": "lmsys-arena",
-            "updated": "2026-06"
-          }
-        ]
-      },
-      "sentiment": {
-        "score": 3.9,
-        "maxScore": 5,
-        "sampleSize": 950,
-        "sources": [
-          "HN",
-          "Reddit r/LocalLLaMA"
-        ],
-        "summary": "开源生态首选基座；纯代码场景仍落后 Claude/GPT 闭源旗舰。",
-        "highlights": [
-          {
-            "source": "HN",
-            "quote": "Llama 4 is the best foundation for fine-tuning domain-specific copilots.",
-            "sentiment": "positive"
-          }
-        ],
-        "trend": "stable"
-      },
-      "useCases": [],
-      "inTopCurated": true,
-      "activityScore": 73,
-      "activityRank": 10,
-      "isNew": false
-    },
-    {
-      "id": "idx-Mistral-mistral-large-3",
-      "slug": "mistral-large-3",
-      "displayName": "Mistral Large 3",
-      "provider": "Mistral",
-      "providers": [
-        "Mistral AI",
-        "Azure AI"
-      ],
-      "rank": 11,
-      "category": "通用对话",
-      "contextWindow": 128000,
-      "maxOutput": 8192,
-      "modality": [
-        "text",
-        "code"
-      ],
-      "openWeights": false,
-      "featured": true,
-      "tags": [
-        "european",
-        "multilingual",
-        "enterprise"
-      ],
-      "description": "Mistral 欧洲旗舰，多语言与欧洲合规优势，企业私有化部署选项丰富。",
-      "introduction": "Mistral Large 3 在法语/德语场景领先，GDPR 友好，适合欧洲企业 AI Coding 落地。",
-      "sourceUrl": "https://mistral.ai",
-      "availableIn": [
-        "Mistral API",
-        "Azure AI",
-        "Le Chat"
-      ],
-      "pricing": {
-        "input": 2.0,
-        "output": 6.0,
-        "unit": "USD / 1M tokens"
-      },
-      "benchmarks": {
-        "automated": [
-          {
-            "name": "MMLU-Pro",
-            "score": 83.1,
-            "unit": "%",
-            "rank": 7,
-            "source": "artificial-analysis",
-            "updated": "2026-05"
-          },
-          {
-            "name": "HumanEval+",
-            "score": 85.3,
-            "unit": "%",
-            "rank": 6,
-            "source": "provider-official",
-            "updated": "2026-04"
-          }
-        ],
-        "manual": [
-          {
-            "name": "LMSYS Arena Elo",
-            "score": 1202,
-            "unit": "Elo",
-            "rank": 9,
-            "source": "lmsys-arena",
-            "updated": "2026-06"
-          }
-        ]
-      },
-      "sentiment": {
-        "score": 3.8,
-        "maxScore": 5,
-        "sampleSize": 340,
-        "sources": [
-          "HN",
-          "欧洲技术媒体"
-        ],
-        "summary": "欧洲企业合规首选；全球开发者社区声量小于美中大厂模型。",
-        "highlights": [],
-        "trend": "stable"
-      },
-      "useCases": [],
-      "inTopCurated": true,
-      "activityScore": 70,
-      "activityRank": 11,
-      "isNew": false
-    },
-    {
-      "id": "idx-xAI-grok-3",
-      "slug": "grok-3",
-      "displayName": "Grok 3",
-      "provider": "xAI",
-      "providers": [
-        "xAI"
-      ],
-      "rank": 12,
-      "category": "通用对话",
-      "contextWindow": 131072,
-      "maxOutput": 16384,
-      "modality": [
-        "text",
-        "image",
-        "code"
-      ],
-      "openWeights": false,
-      "featured": true,
-      "tags": [
-        "real-time",
-        "x-integration",
-        "humor"
-      ],
-      "description": "xAI 旗舰，实时 X/Twitter 数据接入，通用对话与实时信息检索独特优势。",
-      "introduction": "Grok 3 可访问 X 平台实时数据，适合需要最新技术动态与社区情绪的研发情报场景。",
-      "sourceUrl": "https://x.ai",
-      "availableIn": [
-        "X Premium",
-        "API"
-      ],
-      "pricing": {
-        "input": 3.0,
-        "output": 15.0,
-        "unit": "USD / 1M tokens"
-      },
-      "benchmarks": {
-        "automated": [
-          {
-            "name": "MMLU-Pro",
-            "score": 85.8,
-            "unit": "%",
-            "rank": 5,
-            "source": "artificial-analysis",
-            "updated": "2026-05"
-          },
-          {
-            "name": "HumanEval+",
-            "score": 87.1,
-            "unit": "%",
-            "rank": 5,
-            "source": "provider-official",
-            "updated": "2026-04"
-          }
-        ],
-        "manual": [
-          {
-            "name": "LMSYS Arena Elo",
-            "score": 1218,
-            "unit": "Elo",
-            "rank": 7,
-            "source": "lmsys-arena",
-            "updated": "2026-06"
-          }
-        ]
-      },
-      "sentiment": {
-        "score": 3.7,
-        "maxScore": 5,
-        "sampleSize": 620,
-        "sources": [
-          "X",
-          "HN"
-        ],
-        "summary": "实时信息是差异化卖点；代码能力口碑中等，风格偏随意。",
-        "highlights": [
-          {
-            "source": "X",
-            "quote": "Grok knows what devs are complaining about on X right now.",
-            "sentiment": "positive"
-          }
-        ],
-        "trend": "stable"
-      },
-      "useCases": [],
-      "inTopCurated": true,
-      "activityScore": 67,
-      "activityRank": 12,
-      "isNew": false
-    },
-    {
-      "id": "idx-Mistral-codestral-2501",
-      "slug": "codestral-2501",
-      "displayName": "Codestral 25.01",
-      "provider": "Mistral",
-      "providers": [
-        "Mistral AI"
-      ],
-      "rank": 13,
-      "category": "代码 Agent",
-      "contextWindow": 256000,
-      "maxOutput": 8192,
-      "modality": [
-        "text",
-        "code"
-      ],
-      "openWeights": false,
-      "featured": true,
-      "tags": [
-        "coding-specialized",
-        "fill-in-middle"
-      ],
-      "description": "Mistral 代码专用模型，FIM（Fill-in-Middle）补全优化，适合 IDE 内联补全场景。",
-      "introduction": "Codestral 专为代码补全与生成优化，256K 上下文，支持 80+ 编程语言。",
-      "sourceUrl": "https://mistral.ai/news/codestral",
-      "availableIn": [
-        "Mistral API",
-        "Continue.dev"
-      ],
-      "pricing": {
-        "input": 0.3,
-        "output": 0.9,
-        "unit": "USD / 1M tokens"
-      },
-      "benchmarks": {
-        "automated": [
-          {
-            "name": "HumanEval+",
-            "score": 90.2,
-            "unit": "%",
-            "rank": 3,
-            "source": "provider-official",
-            "updated": "2026-01"
-          },
-          {
-            "name": "LiveCodeBench",
-            "score": 61.5,
-            "unit": "%",
-            "rank": 6,
-            "source": "artificial-analysis",
-            "updated": "2026-05"
-          }
-        ],
-        "manual": []
-      },
-      "sentiment": {
-        "score": 4.0,
-        "maxScore": 5,
-        "sampleSize": 280,
-        "sources": [
-          "HN",
-          "Continue.dev 社区"
-        ],
-        "summary": "代码补全场景口碑好，Agent 复杂任务非其强项。",
-        "highlights": [],
-        "trend": "stable"
-      },
-      "useCases": [],
-      "inTopCurated": true,
-      "activityScore": 64,
-      "activityRank": 13,
-      "isNew": false
-    },
-    {
-      "id": "idx-Google-gemini-2-5-flash",
-      "slug": "gemini-2-5-flash",
-      "displayName": "Gemini 2.5 Flash",
-      "provider": "Google",
-      "providers": [
-        "Google AI",
-        "Vertex AI"
-      ],
-      "rank": 14,
-      "category": "高性价比",
-      "contextWindow": 1000000,
-      "maxOutput": 8192,
-      "modality": [
-        "text",
-        "image",
-        "code"
-      ],
-      "openWeights": false,
-      "featured": true,
-      "tags": [
-        "fast",
-        "cheap",
-        "long-context"
-      ],
-      "description": "Google 高速低成本模型，百万上下文，适合高频简单任务与大规模 RAG。",
-      "introduction": "Flash 系列定位速度与成本，在简单代码补全与文档问答场景性价比极高。",
-      "sourceUrl": "https://deepmind.google/technologies/gemini/flash",
-      "availableIn": [
-        "Google AI Studio",
-        "Vertex AI",
-        "Antigravity"
-      ],
-      "pricing": {
-        "input": 0.15,
-        "output": 0.6,
-        "unit": "USD / 1M tokens"
-      },
-      "benchmarks": {
-        "automated": [
-          {
-            "name": "HumanEval+",
-            "score": 82.1,
-            "unit": "%",
-            "rank": 10,
-            "source": "provider-official",
-            "updated": "2026-05"
-          },
-          {
-            "name": "MMLU-Pro",
-            "score": 78.4,
-            "unit": "%",
-            "rank": 12,
-            "source": "artificial-analysis",
-            "updated": "2026-06"
-          }
-        ],
-        "manual": [
-          {
-            "name": "LMSYS Arena Elo",
-            "score": 1178,
-            "unit": "Elo",
-            "rank": 14,
-            "source": "lmsys-arena",
-            "updated": "2026-06"
-          }
-        ]
-      },
-      "sentiment": {
-        "score": 4.1,
-        "maxScore": 5,
-        "sampleSize": 540,
-        "sources": [
-          "HN",
-          "Reddit"
-        ],
-        "summary": "「便宜又快」代表；复杂推理与代码质量不如 Pro 系列。",
-        "highlights": [],
-        "trend": "stable"
-      },
-      "useCases": [],
-      "inTopCurated": true,
-      "activityScore": 61,
-      "activityRank": 14,
-      "isNew": false
-    },
-    {
-      "id": "idx-OpenAI-gpt-5-mini",
-      "slug": "gpt-5-mini",
-      "displayName": "GPT-5 Mini",
-      "provider": "OpenAI",
-      "providers": [
-        "OpenAI",
-        "GitHub Copilot"
-      ],
-      "rank": 15,
-      "category": "高性价比",
-      "contextWindow": 128000,
-      "maxOutput": 16384,
-      "modality": [
-        "text",
-        "code"
-      ],
-      "openWeights": false,
-      "featured": true,
-      "tags": [
-        "fast",
-        "copilot",
-        "cost-effective"
-      ],
-      "description": "GPT-5 蒸馏小模型，Copilot 默认快速选项，日常补全与简单任务足够。",
-      "introduction": "GPT-5 Mini 保留 GPT-5 大部分能力，延迟与成本大幅降低，适合高频交互。",
-      "sourceUrl": "https://openai.com",
-      "availableIn": [
-        "GitHub Copilot",
-        "ChatGPT",
-        "API"
-      ],
-      "pricing": {
-        "input": 0.4,
-        "output": 1.6,
-        "unit": "USD / 1M tokens"
-      },
-      "benchmarks": {
-        "automated": [
-          {
-            "name": "HumanEval+",
-            "score": 85.6,
-            "unit": "%",
-            "rank": 6,
-            "source": "provider-official",
-            "updated": "2026-05"
-          },
-          {
-            "name": "LiveCodeBench",
-            "score": 55.2,
-            "unit": "%",
-            "rank": 10,
-            "source": "artificial-analysis",
-            "updated": "2026-06"
-          }
-        ],
-        "manual": [
-          {
-            "name": "LMSYS Arena Elo",
-            "score": 1185,
-            "unit": "Elo",
-            "rank": 12,
-            "source": "lmsys-arena",
-            "updated": "2026-06"
-          }
-        ]
-      },
-      "sentiment": {
-        "score": 4.0,
-        "maxScore": 5,
-        "sampleSize": 890,
-        "sources": [
-          "Reddit r/GithubCopilot"
-        ],
-        "summary": "Copilot 用户默认体验尚可；进阶开发者倾向切换 Sonnet/Opus。",
-        "highlights": [],
-        "trend": "stable"
-      },
-      "useCases": [],
-      "inTopCurated": true,
-      "activityScore": 58,
-      "activityRank": 15,
-      "isNew": false
-    },
-    {
-      "id": "idx-Anthropic-claude-haiku-4",
-      "slug": "claude-haiku-4",
-      "displayName": "Claude Haiku 4",
-      "provider": "Anthropic",
-      "providers": [
-        "Anthropic",
-        "Cursor"
-      ],
-      "rank": 16,
-      "category": "高性价比",
-      "contextWindow": 200000,
-      "maxOutput": 8192,
-      "modality": [
-        "text",
-        "code"
-      ],
-      "openWeights": false,
-      "featured": false,
-      "tags": [
-        "fast",
-        "cheap"
-      ],
-      "description": "Claude 系列最快最便宜选项，简单任务与分类场景。",
-      "introduction": "Haiku 4 适合 lint 修复、简单补全、文档生成等低复杂度任务。",
-      "sourceUrl": "https://www.anthropic.com/claude",
-      "availableIn": [
-        "Cursor",
-        "Claude Code",
-        "API"
-      ],
-      "pricing": {
-        "input": 0.8,
-        "output": 4.0,
-        "unit": "USD / 1M tokens"
-      },
-      "benchmarks": {
-        "automated": [
-          {
-            "name": "HumanEval+",
-            "score": 80.3,
-            "unit": "%",
-            "rank": 11,
-            "source": "provider-official",
-            "updated": "2026-05"
-          }
-        ],
-        "manual": []
-      },
-      "sentiment": {
-        "score": 3.8,
-        "maxScore": 5,
-        "sampleSize": 420,
-        "sources": [
-          "Reddit r/cursor"
-        ],
-        "summary": "速度快但能力有限，复杂任务容易翻车。",
-        "highlights": [],
-        "trend": "stable"
-      },
-      "useCases": [],
-      "inTopCurated": true,
-      "activityScore": 55,
-      "activityRank": 16,
-      "isNew": false
-    },
-    {
-      "id": "idx-Mistral-devstral-small",
-      "slug": "devstral-small",
-      "displayName": "Devstral Small",
-      "provider": "Mistral",
-      "providers": [
-        "Mistral AI"
-      ],
-      "rank": 17,
-      "category": "代码 Agent",
-      "contextWindow": 128000,
-      "maxOutput": 8192,
-      "modality": [
-        "text",
-        "code"
-      ],
-      "openWeights": true,
-      "featured": false,
-      "tags": [
-        "open-source",
-        "coding",
-        "agent"
-      ],
-      "description": "Mistral 开源 Agent 代码模型，专为软件工程 Agent 任务微调。",
-      "introduction": "Devstral 基于 Mistral 开源权重，针对 issue 修复、PR 生成等 Agent 任务优化。",
-      "sourceUrl": "https://github.com/mistralai/devstral",
-      "availableIn": [
-        "Ollama",
-        "Mistral API"
-      ],
-      "pricing": {
-        "input": 0.1,
-        "output": 0.3,
-        "unit": "USD / 1M tokens"
-      },
-      "benchmarks": {
-        "automated": [
-          {
-            "name": "SWE-bench Verified",
-            "score": 46.8,
-            "unit": "%",
-            "rank": 15,
-            "source": "swe-bench",
-            "updated": "2026-05"
-          },
-          {
-            "name": "HumanEval+",
-            "score": 83.5,
-            "unit": "%",
-            "rank": 8,
-            "source": "provider-official",
-            "updated": "2026-04"
-          }
-        ],
-        "manual": []
-      },
-      "sentiment": {
-        "score": 3.9,
-        "maxScore": 5,
-        "sampleSize": 180,
-        "sources": [
-          "HN",
-          "Reddit r/LocalLLaMA"
-        ],
-        "summary": "开源 Agent 代码模型新选择，规模较小但方向正确。",
-        "highlights": [],
-        "trend": "rising"
-      },
-      "useCases": [],
-      "inTopCurated": true,
-      "activityScore": 52,
-      "activityRank": 17,
-      "isNew": false
-    },
-    {
-      "id": "idx-Alibaba-qwen3-coder",
-      "slug": "qwen3-coder",
-      "displayName": "Qwen3 Coder",
-      "provider": "Alibaba",
-      "providers": [
-        "Alibaba Cloud"
-      ],
-      "rank": 18,
-      "category": "代码 Agent",
-      "contextWindow": 128000,
-      "maxOutput": 8192,
-      "modality": [
-        "text",
-        "code"
-      ],
-      "openWeights": true,
-      "featured": false,
-      "tags": [
-        "open-source",
-        "coding-specialized"
-      ],
-      "description": "通义代码专用模型，HumanEval 开源领先，适合 IDE 插件集成。",
-      "introduction": "Qwen3 Coder 在代码生成基准上针对 Qwen3 基座深度优化。",
-      "sourceUrl": "https://github.com/QwenLM/Qwen3-Coder",
-      "availableIn": [
-        "Alibaba Cloud",
-        "Ollama"
-      ],
-      "pricing": {
-        "input": 0.2,
-        "output": 0.8,
-        "unit": "USD / 1M tokens"
-      },
-      "benchmarks": {
-        "automated": [
-          {
-            "name": "HumanEval+",
-            "score": 89.4,
-            "unit": "%",
-            "rank": 4,
-            "source": "provider-official",
-            "updated": "2026-04"
-          },
-          {
-            "name": "LiveCodeBench",
-            "score": 57.6,
-            "unit": "%",
-            "rank": 9,
-            "source": "artificial-analysis",
-            "updated": "2026-05"
-          }
-        ],
-        "manual": []
-      },
-      "sentiment": {
-        "score": 4.0,
-        "maxScore": 5,
-        "sampleSize": 310,
-        "sources": [
-          "中文社区",
-          "Reddit r/LocalLLaMA"
-        ],
-        "summary": "亚太开源代码模型首选之一。",
-        "highlights": [],
-        "trend": "rising"
-      },
-      "useCases": [],
-      "inTopCurated": true,
-      "activityScore": 49,
-      "activityRank": 18,
-      "isNew": false
-    },
-    {
-      "id": "idx-Microsoft-phi-4-reasoning",
-      "slug": "phi-4-reasoning",
-      "displayName": "Phi-4 Reasoning",
-      "provider": "Microsoft",
-      "providers": [
-        "Azure AI",
-        "Hugging Face"
-      ],
-      "rank": 19,
-      "category": "深度推理",
-      "contextWindow": 32000,
-      "maxOutput": 4096,
-      "modality": [
-        "text",
-        "code"
-      ],
-      "openWeights": true,
-      "featured": false,
-      "tags": [
-        "open-source",
-        "small-model",
-        "reasoning",
-        "edge"
-      ],
-      "description": "微软小参数推理模型，14B 规模达到大模型推理水平，适合边缘部署。",
-      "introduction": "Phi-4 Reasoning 证明小模型 + 高质量数据 + 推理训练可达大模型效果。",
-      "sourceUrl": "https://huggingface.co/microsoft/phi-4-reasoning",
-      "availableIn": [
-        "Azure AI",
-        "Ollama",
-        "ONNX Runtime"
-      ],
-      "pricing": {
-        "input": 0.05,
-        "output": 0.2,
-        "unit": "USD / 1M tokens"
-      },
-      "benchmarks": {
-        "automated": [
-          {
-            "name": "AIME 2025",
-            "score": 62.4,
-            "unit": "%",
-            "rank": 8,
-            "source": "provider-official",
-            "updated": "2026-03"
-          },
-          {
-            "name": "GPQA Diamond",
-            "score": 58.1,
-            "unit": "%",
-            "rank": 12,
-            "source": "artificial-analysis",
-            "updated": "2026-05"
-          }
-        ],
-        "manual": []
-      },
-      "sentiment": {
-        "score": 4.2,
-        "maxScore": 5,
-        "sampleSize": 450,
-        "sources": [
-          "HN",
-          "Reddit r/LocalLLaMA"
-        ],
-        "summary": "小模型爱好者热捧，「笔记本可跑的推理模型」。",
-        "highlights": [
-          {
-            "source": "HN",
-            "quote": "Phi-4 Reasoning on M2 MacBook — unbelievable for 14B.",
-            "sentiment": "positive"
-          }
-        ],
-        "trend": "rising"
-      },
-      "useCases": [],
-      "inTopCurated": true,
-      "activityScore": 46,
-      "activityRank": 19,
-      "isNew": false
-    },
-    {
-      "id": "idx-Cursor-composer-1",
-      "slug": "composer-1",
-      "displayName": "Composer 1",
-      "provider": "Cursor",
-      "providers": [
-        "Cursor"
-      ],
-      "rank": 20,
-      "category": "代码 Agent",
-      "contextWindow": 200000,
-      "maxOutput": 16384,
-      "modality": [
-        "text",
-        "code"
-      ],
-      "openWeights": false,
-      "featured": true,
-      "tags": [
-        "cursor-native",
-        "agent",
-        "fast"
-      ],
-      "description": "Cursor 自研 Agent 模型，专为多文件编辑与工具调用优化，Composer 模式默认模型。",
-      "introduction": "Composer 1 针对 IDE Agent 场景从头训练/微调，低延迟高吞吐，与 Cursor 工具链深度集成。",
-      "sourceUrl": "https://cursor.com",
-      "availableIn": [
-        "Cursor"
-      ],
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "含 Cursor 订阅"
-      },
-      "benchmarks": {
-        "automated": [
-          {
-            "name": "SWE-bench Verified",
-            "score": 61.2,
-            "unit": "%",
-            "rank": 6,
-            "source": "community",
-            "updated": "2026-05",
-            "note": "非官方提交"
-          }
-        ],
-        "manual": [
-          {
-            "name": "Cursor 用户调研",
-            "score": 4.3,
-            "unit": "/5",
-            "rank": 3,
-            "source": "community-sentiment",
-            "updated": "2026-06",
-            "note": "N=2000 Cursor Pro 用户"
-          }
-        ]
-      },
-      "sentiment": {
-        "score": 4.2,
-        "maxScore": 5,
-        "sampleSize": 2000,
-        "sources": [
-          "Reddit r/cursor",
-          "Cursor Forum"
-        ],
-        "summary": "Composer 模式默认模型，速度快、工具调用准；极端复杂任务不如 Opus。",
-        "highlights": [
-          {
-            "source": "Reddit r/cursor",
-            "quote": "Composer 1 + Agent mode is how I ship 80% of features now.",
-            "sentiment": "positive"
-          }
-        ],
-        "trend": "rising"
-      },
-      "useCases": [
-        {
-          "title": "多文件 Agent 编辑",
-          "scenario": "Agent 模式跨文件实现新功能。",
-          "prompt": "Add dark mode toggle across all React components",
-          "expected": "自动识别相关文件，批量编辑并运行测试。"
-        }
-      ],
-      "inTopCurated": true,
-      "activityScore": 43,
-      "activityRank": 20,
-      "isNew": false
-    },
-    {
-      "id": "idx-extra-gpt-4o",
-      "slug": "gpt-4o",
-      "displayName": "GPT-4o",
-      "provider": "OpenAI",
-      "providers": [
-        "OpenAI",
-        "Azure OpenAI"
-      ],
-      "category": "多模态",
-      "description": "上一代 OpenAI 多模态旗舰，仍广泛用于生产。",
-      "openWeights": false,
-      "contextWindow": 128000,
-      "inTopCurated": false,
-      "activityScore": 40,
-      "activityRank": 21,
-      "isNew": true,
-      "sourceUrl": "https://artificialanalysis.ai/models/gpt-4o"
-    },
-    {
-      "id": "idx-extra-claude-3-5-sonnet",
-      "slug": "claude-3-5-sonnet",
-      "displayName": "Claude 3.5 Sonnet",
+      "slug": "claude-fable-5",
+      "displayName": "Claude Fable 5",
       "provider": "Anthropic",
       "providers": [
         "Anthropic"
       ],
       "category": "代码 Agent",
-      "description": "上一代 Claude 代码标杆，部分场景仍被引用对比。",
       "openWeights": false,
+      "description": "Anthropic 出品，Arena Elo 1510，编程 Elo 1566，MMLU-Pro 91.5。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 91.5,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 86.0,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 81.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1510,
+            "unit": "Elo",
+            "rank": 1,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1566,
+            "unit": "Elo",
+            "rank": 1,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1310,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "Cursor",
+        "Claude Code",
+        "GitHub Copilot",
+        "AWS Bedrock"
+      ],
+      "sourceUrl": "https://www.anthropic.com/claude",
+      "isNew": false,
       "contextWindow": 200000,
-      "inTopCurated": false,
-      "activityScore": 38,
-      "activityRank": 22,
-      "isNew": true,
-      "sourceUrl": "https://artificialanalysis.ai/models/claude-3-5-sonnet"
+      "tags": [
+        "代码 Agent"
+      ],
+      "id": "idx-anthropic-claude-fable-5",
+      "inTopCurated": true,
+      "activityScore": 1510,
+      "activityRank": 1
     },
     {
-      "id": "idx-extra-gemini-2-0-flash",
-      "slug": "gemini-2-0-flash",
-      "displayName": "Gemini 2.0 Flash",
-      "provider": "Google",
+      "slug": "claude-opus-4-8-thinking",
+      "displayName": "Claude Opus 4.8 Thinking",
+      "provider": "Anthropic",
       "providers": [
-        "Google AI"
+        "Anthropic"
       ],
-      "category": "高性价比",
-      "description": "Google 上一代高速模型，成本极低。",
+      "category": "深度推理",
       "openWeights": false,
-      "contextWindow": 1000000,
-      "inTopCurated": false,
-      "activityScore": 36,
-      "activityRank": 23,
-      "isNew": false,
-      "sourceUrl": "https://artificialanalysis.ai/models/gemini-2-0-flash"
-    },
-    {
-      "id": "idx-extra-llama-3-3-70b",
-      "slug": "llama-3-3-70b",
-      "displayName": "Llama 3.3 70B",
-      "provider": "Meta",
-      "providers": [
-        "Meta",
-        "Together AI"
+      "description": "Anthropic 出品，Arena Elo 1506，编程 Elo 1562，MMLU-Pro 90.1。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 90.1,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 76.0,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 77.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1506,
+            "unit": "Elo",
+            "rank": 2,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1562,
+            "unit": "Elo",
+            "rank": 2,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1311,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "Cursor",
+        "Claude Code",
+        "GitHub Copilot",
+        "AWS Bedrock"
       ],
-      "category": "开源权重",
-      "description": "Meta 上一代开源主力，社区生态成熟。",
-      "openWeights": true,
-      "contextWindow": 128000,
-      "inTopCurated": false,
-      "activityScore": 34,
-      "activityRank": 24,
+      "sourceUrl": "https://www.anthropic.com/claude",
       "isNew": false,
-      "sourceUrl": "https://artificialanalysis.ai/models/llama-3-3-70b"
-    },
-    {
-      "id": "idx-extra-command-r-plus",
-      "slug": "command-r-plus",
-      "displayName": "Command R+",
-      "provider": "Cohere",
-      "providers": [
-        "Cohere"
+      "contextWindow": 200000,
+      "pricing": {
+        "input": 15.0,
+        "output": 75.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "深度推理"
       ],
-      "category": "通用对话",
-      "description": "Cohere 企业 RAG 优化模型。",
-      "openWeights": false,
-      "contextWindow": 128000,
-      "inTopCurated": false,
-      "activityScore": 32,
-      "activityRank": 25,
-      "isNew": false,
-      "sourceUrl": "https://artificialanalysis.ai/models/command-r-plus"
+      "id": "idx-anthropic-claude-opus-4-8-thinking",
+      "inTopCurated": true,
+      "activityScore": 1506,
+      "activityRank": 2
     },
     {
-      "id": "idx-extra-yi-lightning",
-      "slug": "yi-lightning",
-      "displayName": "Yi Lightning",
-      "provider": "01.AI",
-      "providers": [
-        "01.AI"
-      ],
-      "category": "高性价比",
-      "description": "零一万物高速低成本模型。",
-      "openWeights": false,
-      "contextWindow": 32000,
-      "inTopCurated": false,
-      "activityScore": 30,
-      "activityRank": 26,
-      "isNew": false,
-      "sourceUrl": "https://artificialanalysis.ai/models/yi-lightning"
-    },
-    {
-      "id": "idx-extra-glm-4-plus",
-      "slug": "glm-4-plus",
-      "displayName": "GLM-4 Plus",
-      "provider": "Zhipu",
-      "providers": [
-        "Zhipu AI"
-      ],
-      "category": "通用对话",
-      "description": "智谱 AI 旗舰，中文场景优化。",
-      "openWeights": false,
-      "contextWindow": 128000,
-      "inTopCurated": false,
-      "activityScore": 28,
-      "activityRank": 27,
-      "isNew": false,
-      "sourceUrl": "https://artificialanalysis.ai/models/glm-4-plus"
-    },
-    {
-      "id": "idx-extra-dbrx-instruct",
-      "slug": "dbrx-instruct",
-      "displayName": "DBRX Instruct",
-      "provider": "Databricks",
-      "providers": [
-        "Databricks"
-      ],
-      "category": "开源权重",
-      "description": "Databricks MoE 开源模型。",
-      "openWeights": true,
-      "contextWindow": 32768,
-      "inTopCurated": false,
-      "activityScore": 26,
-      "activityRank": 28,
-      "isNew": false,
-      "sourceUrl": "https://artificialanalysis.ai/models/dbrx-instruct"
-    },
-    {
-      "id": "idx-extra-mixtral-8x22b",
-      "slug": "mixtral-8x22b",
-      "displayName": "Mixtral 8x22B",
-      "provider": "Mistral",
-      "providers": [
-        "Mistral AI"
-      ],
-      "category": "开源权重",
-      "description": "Mistral 大型 MoE 开源模型。",
-      "openWeights": true,
-      "contextWindow": 65536,
-      "inTopCurated": false,
-      "activityScore": 24,
-      "activityRank": 29,
-      "isNew": false,
-      "sourceUrl": "https://artificialanalysis.ai/models/mixtral-8x22b"
-    },
-    {
-      "id": "idx-extra-o1-preview",
-      "slug": "o1-preview",
-      "displayName": "OpenAI o1",
+      "slug": "gpt-5-5-high",
+      "displayName": "GPT-5.5-high",
       "provider": "OpenAI",
       "providers": [
         "OpenAI"
       ],
-      "category": "深度推理",
-      "description": "OpenAI 第一代推理模型，已被 o3 取代。",
+      "category": "代码 Agent",
       "openWeights": false,
-      "contextWindow": 128000,
-      "inTopCurated": false,
-      "activityScore": 22,
-      "activityRank": 30,
+      "description": "OpenAI 出品，Arena Elo 1506，编程 Elo 1561，MMLU-Pro 89.6。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 89.6,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 85.0,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 76.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1506,
+            "unit": "Elo",
+            "rank": 3,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1561,
+            "unit": "Elo",
+            "rank": 3,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1312,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "GitHub Copilot",
+        "ChatGPT",
+        "Azure OpenAI",
+        "Cursor"
+      ],
+      "sourceUrl": "https://openai.com",
       "isNew": false,
-      "sourceUrl": "https://artificialanalysis.ai/models/o1-preview"
+      "contextWindow": 256000,
+      "pricing": {
+        "input": 10.0,
+        "output": 30.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "代码 Agent"
+      ],
+      "id": "idx-openai-gpt-5-5-high",
+      "inTopCurated": true,
+      "activityScore": 1506,
+      "activityRank": 3
     },
     {
-      "id": "idx-extra-nova-pro",
-      "slug": "nova-pro",
-      "displayName": "Amazon Nova Pro",
-      "provider": "Amazon",
+      "slug": "claude-opus-4-7-thinking",
+      "displayName": "Claude Opus 4.7 Thinking",
+      "provider": "Anthropic",
       "providers": [
+        "Anthropic"
+      ],
+      "category": "深度推理",
+      "openWeights": false,
+      "description": "Anthropic 出品，Arena Elo 1505，编程 Elo 1560，MMLU-Pro 90.0。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 90.0,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 75.8,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 76.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1505,
+            "unit": "Elo",
+            "rank": 4,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1560,
+            "unit": "Elo",
+            "rank": 4,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1310,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "Cursor",
+        "Claude Code",
+        "GitHub Copilot",
         "AWS Bedrock"
       ],
-      "category": "多模态",
-      "description": "Amazon 自研多模态模型，Bedrock 原生。",
-      "openWeights": false,
-      "contextWindow": 300000,
-      "inTopCurated": false,
-      "activityScore": 20,
-      "activityRank": 31,
+      "sourceUrl": "https://www.anthropic.com/claude",
       "isNew": false,
-      "sourceUrl": "https://artificialanalysis.ai/models/nova-pro"
+      "contextWindow": 200000,
+      "pricing": {
+        "input": 15.0,
+        "output": 75.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "深度推理"
+      ],
+      "id": "idx-anthropic-claude-opus-4-7-thinking",
+      "inTopCurated": true,
+      "activityScore": 1505,
+      "activityRank": 4
     },
     {
-      "id": "idx-extra-grok-2",
-      "slug": "grok-2",
-      "displayName": "Grok 2",
+      "slug": "gemini-3-1-pro",
+      "displayName": "Gemini-3.1-Pro",
+      "provider": "Google",
+      "providers": [
+        "Google"
+      ],
+      "category": "代码 Agent",
+      "openWeights": false,
+      "description": "Google 出品，Arena Elo 1505，编程 Elo 1531，MMLU-Pro 91.0。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 91.0,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 77.1,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 76.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1505,
+            "unit": "Elo",
+            "rank": 5,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1531,
+            "unit": "Elo",
+            "rank": 11,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1309,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "Google Antigravity",
+        "Gemini",
+        "Vertex AI"
+      ],
+      "sourceUrl": "https://deepmind.google/technologies/gemini",
+      "isNew": false,
+      "contextWindow": 1000000,
+      "pricing": {
+        "input": 3.5,
+        "output": 10.5,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "代码 Agent"
+      ],
+      "id": "idx-google-gemini-3-1-pro",
+      "inTopCurated": true,
+      "activityScore": 1505,
+      "activityRank": 5
+    },
+    {
+      "slug": "claude-opus-4-8",
+      "displayName": "Claude Opus 4.8",
+      "provider": "Anthropic",
+      "providers": [
+        "Anthropic"
+      ],
+      "category": "代码 Agent",
+      "openWeights": false,
+      "description": "Anthropic 出品，Arena Elo 1504，编程 Elo 1558，MMLU-Pro 90.0。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 90.0,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 62.2,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 74.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1504,
+            "unit": "Elo",
+            "rank": 6,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1558,
+            "unit": "Elo",
+            "rank": 5,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1306,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "Cursor",
+        "Claude Code",
+        "GitHub Copilot",
+        "AWS Bedrock"
+      ],
+      "sourceUrl": "https://www.anthropic.com/claude",
+      "isNew": false,
+      "contextWindow": 200000,
+      "pricing": {
+        "input": 15.0,
+        "output": 75.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "代码 Agent"
+      ],
+      "id": "idx-anthropic-claude-opus-4-8",
+      "inTopCurated": true,
+      "activityScore": 1504,
+      "activityRank": 6
+    },
+    {
+      "slug": "gemini-3-5-flash",
+      "displayName": "Gemini-3.5-Flash",
+      "provider": "Google",
+      "providers": [
+        "Google"
+      ],
+      "category": "高性价比",
+      "openWeights": false,
+      "description": "Google 出品，Arena Elo 1504，编程 Elo 1535，MMLU-Pro 91.0。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 91.0,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 72.1,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 74.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1504,
+            "unit": "Elo",
+            "rank": 7,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1535,
+            "unit": "Elo",
+            "rank": 9,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1301,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "Google Antigravity",
+        "Gemini",
+        "Vertex AI"
+      ],
+      "sourceUrl": "https://deepmind.google/technologies/gemini",
+      "isNew": false,
+      "contextWindow": 1000000,
+      "pricing": {
+        "input": 3.5,
+        "output": 10.5,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "高性价比"
+      ],
+      "id": "idx-google-gemini-3-5-flash",
+      "inTopCurated": true,
+      "activityScore": 1504,
+      "activityRank": 7
+    },
+    {
+      "slug": "claude-opus-4-7",
+      "displayName": "Claude Opus 4.7",
+      "provider": "Anthropic",
+      "providers": [
+        "Anthropic"
+      ],
+      "category": "代码 Agent",
+      "openWeights": false,
+      "description": "Anthropic 出品，Arena Elo 1503，编程 Elo 1554，MMLU-Pro 89.9。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 89.9,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 62.1,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 73.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1503,
+            "unit": "Elo",
+            "rank": 8,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1554,
+            "unit": "Elo",
+            "rank": 6,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1300,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "Cursor",
+        "Claude Code",
+        "GitHub Copilot",
+        "AWS Bedrock"
+      ],
+      "sourceUrl": "https://www.anthropic.com/claude",
+      "isNew": false,
+      "contextWindow": 200000,
+      "pricing": {
+        "input": 15.0,
+        "output": 75.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "代码 Agent"
+      ],
+      "id": "idx-anthropic-claude-opus-4-7",
+      "inTopCurated": true,
+      "activityScore": 1503,
+      "activityRank": 8
+    },
+    {
+      "slug": "claude-opus-4-6-thinking",
+      "displayName": "Claude Opus 4.6 Thinking",
+      "provider": "Anthropic",
+      "providers": [
+        "Anthropic"
+      ],
+      "category": "深度推理",
+      "openWeights": false,
+      "description": "Anthropic 出品，Arena Elo 1503，编程 Elo 1545，SWE-bench 75.6%，MMLU-Pro 89.7。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "SWE-bench Verified",
+            "score": 75.6,
+            "unit": "%",
+            "rank": null,
+            "source": "swe-bench",
+            "updated": "2026-02-17"
+          },
+          {
+            "name": "MMLU-Pro",
+            "score": 89.7,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 69.2,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 73.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1503,
+            "unit": "Elo",
+            "rank": 9,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1545,
+            "unit": "Elo",
+            "rank": 7,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1304,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "Cursor",
+        "Claude Code",
+        "GitHub Copilot",
+        "AWS Bedrock"
+      ],
+      "sourceUrl": "https://www.anthropic.com/claude",
+      "isNew": false,
+      "contextWindow": 200000,
+      "pricing": {
+        "input": 15.0,
+        "output": 75.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "深度推理",
+        "swe-bench"
+      ],
+      "id": "idx-anthropic-claude-opus-4-6-thinking",
+      "inTopCurated": true,
+      "activityScore": 1503,
+      "activityRank": 9
+    },
+    {
+      "slug": "grok-4-20",
+      "displayName": "Grok-4.20",
       "provider": "xAI",
       "providers": [
         "xAI"
       ],
-      "category": "通用对话",
-      "description": "xAI 上一代模型，已被 Grok 3 取代。",
+      "category": "代码 Agent",
       "openWeights": false,
-      "contextWindow": 131072,
-      "inTopCurated": false,
-      "activityScore": 18,
-      "activityRank": 32,
+      "description": "xAI 出品，Arena Elo 1496，编程 Elo 1518，MMLU-Pro 89.6。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 89.6,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 65.1,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 72.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1496,
+            "unit": "Elo",
+            "rank": 10,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1518,
+            "unit": "Elo",
+            "rank": 13,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1279,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "Grok",
+        "API"
+      ],
+      "sourceUrl": "https://x.ai",
       "isNew": false,
-      "sourceUrl": "https://artificialanalysis.ai/models/grok-2"
+      "contextWindow": 131072,
+      "pricing": {
+        "input": 3.0,
+        "output": 15.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "代码 Agent"
+      ],
+      "id": "idx-xai-grok-4-20",
+      "inTopCurated": true,
+      "activityScore": 1496,
+      "activityRank": 10
+    },
+    {
+      "slug": "gpt-5-4-high",
+      "displayName": "GPT-5.4-high",
+      "provider": "OpenAI",
+      "providers": [
+        "OpenAI"
+      ],
+      "category": "代码 Agent",
+      "openWeights": false,
+      "description": "OpenAI 出品，Arena Elo 1495，编程 Elo 1538，MMLU-Pro 88.5。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 88.5,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 74.0,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 73.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1495,
+            "unit": "Elo",
+            "rank": 11,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1538,
+            "unit": "Elo",
+            "rank": 8,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1290,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "GitHub Copilot",
+        "ChatGPT",
+        "Azure OpenAI",
+        "Cursor"
+      ],
+      "sourceUrl": "https://openai.com",
+      "isNew": false,
+      "contextWindow": 256000,
+      "pricing": {
+        "input": 10.0,
+        "output": 30.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "代码 Agent"
+      ],
+      "id": "idx-openai-gpt-5-4-high",
+      "inTopCurated": true,
+      "activityScore": 1495,
+      "activityRank": 11
+    },
+    {
+      "slug": "gemini-3-pro",
+      "displayName": "Gemini-3-Pro",
+      "provider": "Google",
+      "providers": [
+        "Google"
+      ],
+      "category": "代码 Agent",
+      "openWeights": false,
+      "description": "Google 出品，Arena Elo 1492，编程 Elo 1501，SWE-bench 77.4%，MMLU-Pro 90.0。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "SWE-bench Verified",
+            "score": 77.4,
+            "unit": "%",
+            "rank": null,
+            "source": "swe-bench",
+            "updated": "2025-11-20"
+          },
+          {
+            "name": "MMLU-Pro",
+            "score": 90.0,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 33.6,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 73.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1492,
+            "unit": "Elo",
+            "rank": 12,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1501,
+            "unit": "Elo",
+            "rank": 18,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1308,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "Google Antigravity",
+        "Gemini",
+        "Vertex AI"
+      ],
+      "sourceUrl": "https://deepmind.google/technologies/gemini",
+      "isNew": false,
+      "contextWindow": 1000000,
+      "pricing": {
+        "input": 3.5,
+        "output": 10.5,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "代码 Agent",
+        "swe-bench"
+      ],
+      "id": "idx-google-gemini-3-pro",
+      "inTopCurated": true,
+      "activityScore": 1492,
+      "activityRank": 12
+    },
+    {
+      "slug": "claude-opus-4-6",
+      "displayName": "Claude Opus 4.6",
+      "provider": "Anthropic",
+      "providers": [
+        "Anthropic"
+      ],
+      "category": "代码 Agent",
+      "openWeights": false,
+      "description": "Anthropic 出品，Arena Elo 1490，编程 Elo 1535，SWE-bench 75.6%，MMLU-Pro 89.5。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "SWE-bench Verified",
+            "score": 75.6,
+            "unit": "%",
+            "rank": null,
+            "source": "swe-bench",
+            "updated": "2026-02-17"
+          },
+          {
+            "name": "MMLU-Pro",
+            "score": 89.5,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 64.6,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 71.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1490,
+            "unit": "Elo",
+            "rank": 13,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1535,
+            "unit": "Elo",
+            "rank": 10,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1298,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "Cursor",
+        "Claude Code",
+        "GitHub Copilot",
+        "AWS Bedrock"
+      ],
+      "sourceUrl": "https://www.anthropic.com/claude",
+      "isNew": false,
+      "contextWindow": 200000,
+      "pricing": {
+        "input": 15.0,
+        "output": 75.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "代码 Agent",
+        "swe-bench"
+      ],
+      "id": "idx-anthropic-claude-opus-4-6",
+      "inTopCurated": true,
+      "activityScore": 1490,
+      "activityRank": 13
+    },
+    {
+      "slug": "glm-5-2",
+      "displayName": "GLM-5.2",
+      "provider": "Zhipu",
+      "providers": [
+        "Zhipu"
+      ],
+      "category": "开源权重",
+      "openWeights": true,
+      "description": "Zhipu 出品，Arena Elo 1488，编程 Elo 1525，MMLU-Pro 87.5。开源权重。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 87.5,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 22.8,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 73.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1488,
+            "unit": "Elo",
+            "rank": 14,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1525,
+            "unit": "Elo",
+            "rank": 12,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "Zhipu API",
+        "OpenRouter"
+      ],
+      "sourceUrl": "https://www.zhipuai.cn",
+      "isNew": false,
+      "contextWindow": 128000,
+      "pricing": {
+        "input": 0.6,
+        "output": 2.2,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "open-weights",
+        "开源权重"
+      ],
+      "id": "idx-zhipu-glm-5-2",
+      "inTopCurated": true,
+      "activityScore": 1488,
+      "activityRank": 14
+    },
+    {
+      "slug": "qwen3-7-max",
+      "displayName": "Qwen3.7-Max",
+      "provider": "Alibaba",
+      "providers": [
+        "Alibaba"
+      ],
+      "category": "代码 Agent",
+      "openWeights": false,
+      "description": "Alibaba 出品，Arena Elo 1486，编程 Elo 1505，MMLU-Pro 89.6。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 89.6,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 72.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1486,
+            "unit": "Elo",
+            "rank": 15,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1505,
+            "unit": "Elo",
+            "rank": 17,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1289,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "Alibaba Cloud",
+        "Ollama",
+        "OpenRouter"
+      ],
+      "sourceUrl": "https://github.com/QwenLM",
+      "isNew": false,
+      "contextWindow": 128000,
+      "pricing": {
+        "input": 0.4,
+        "output": 1.6,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "代码 Agent"
+      ],
+      "id": "idx-alibaba-qwen3-7-max",
+      "inTopCurated": true,
+      "activityScore": 1486,
+      "activityRank": 15
+    },
+    {
+      "slug": "muse-spark",
+      "displayName": "Muse Spark",
+      "provider": "Meta",
+      "providers": [
+        "Meta"
+      ],
+      "category": "代码 Agent",
+      "openWeights": false,
+      "description": "Meta 出品，Arena Elo 1485，编程 Elo 1493，MMLU-Pro 87.3。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 87.3,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 71.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1485,
+            "unit": "Elo",
+            "rank": 16,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1493,
+            "unit": "Elo",
+            "rank": 23,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1294,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "Ollama",
+        "Together AI",
+        "AWS Bedrock"
+      ],
+      "sourceUrl": "https://llama.meta.com",
+      "isNew": false,
+      "tags": [
+        "代码 Agent"
+      ],
+      "id": "idx-meta-muse-spark",
+      "inTopCurated": true,
+      "activityScore": 1485,
+      "activityRank": 16
+    },
+    {
+      "slug": "grok-4-1-thinking",
+      "displayName": "Grok-4.1-Thinking",
+      "provider": "xAI",
+      "providers": [
+        "xAI"
+      ],
+      "category": "深度推理",
+      "openWeights": false,
+      "description": "xAI 出品，Arena Elo 1482，编程 Elo 1483，MMLU-Pro 89.0。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 89.0,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 26.0,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 70.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1482,
+            "unit": "Elo",
+            "rank": 17,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1483,
+            "unit": "Elo",
+            "rank": 30,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "Grok",
+        "API"
+      ],
+      "sourceUrl": "https://x.ai",
+      "isNew": false,
+      "contextWindow": 131072,
+      "pricing": {
+        "input": 3.0,
+        "output": 15.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "深度推理"
+      ],
+      "id": "idx-xai-grok-4-1-thinking",
+      "inTopCurated": true,
+      "activityScore": 1482,
+      "activityRank": 17
+    },
+    {
+      "slug": "ernie-5-1",
+      "displayName": "ERNIE-5.1",
+      "provider": "Baidu",
+      "providers": [
+        "Baidu"
+      ],
+      "category": "代码 Agent",
+      "openWeights": false,
+      "description": "Baidu 出品，Arena Elo 1475，编程 Elo 1495，MMLU-Pro 87.1。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 87.1,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 71.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1475,
+            "unit": "Elo",
+            "rank": 18,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1495,
+            "unit": "Elo",
+            "rank": 21,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "百度智能云",
+        "文心"
+      ],
+      "sourceUrl": "https://yiyan.baidu.com",
+      "isNew": false,
+      "tags": [
+        "代码 Agent"
+      ],
+      "id": "idx-baidu-ernie-5-1",
+      "inTopCurated": true,
+      "activityScore": 1475,
+      "activityRank": 18
+    },
+    {
+      "slug": "claude-opus-4-5",
+      "displayName": "Claude Opus 4.5 (thinking-32k)",
+      "provider": "Anthropic",
+      "providers": [
+        "Anthropic"
+      ],
+      "category": "深度推理",
+      "openWeights": false,
+      "description": "Anthropic 出品，Arena Elo 1469，编程 Elo 1510，MMLU-Pro 89.5。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 89.5,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 30.6,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 70.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1469,
+            "unit": "Elo",
+            "rank": 19,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1510,
+            "unit": "Elo",
+            "rank": 15,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "Cursor",
+        "Claude Code",
+        "GitHub Copilot",
+        "AWS Bedrock"
+      ],
+      "sourceUrl": "https://www.anthropic.com/claude",
+      "isNew": false,
+      "contextWindow": 200000,
+      "pricing": {
+        "input": 15.0,
+        "output": 75.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "深度推理"
+      ],
+      "id": "idx-anthropic-claude-opus-4-5",
+      "inTopCurated": true,
+      "activityScore": 1469,
+      "activityRank": 19
+    },
+    {
+      "slug": "claude-sonnet-4-6-thinking",
+      "displayName": "Claude Sonnet 4.6 Thinking",
+      "provider": "Anthropic",
+      "providers": [
+        "Anthropic"
+      ],
+      "category": "深度推理",
+      "openWeights": false,
+      "description": "Anthropic 出品，Arena Elo 1468，编程 Elo 1511，MMLU-Pro 88.0。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 88.0,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 60.4,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 71.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1468,
+            "unit": "Elo",
+            "rank": 20,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1511,
+            "unit": "Elo",
+            "rank": 14,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1278,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "Cursor",
+        "Claude Code",
+        "GitHub Copilot",
+        "AWS Bedrock"
+      ],
+      "sourceUrl": "https://www.anthropic.com/claude",
+      "isNew": false,
+      "contextWindow": 200000,
+      "pricing": {
+        "input": 3.0,
+        "output": 15.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "深度推理"
+      ],
+      "id": "idx-anthropic-claude-sonnet-4-6-thinking",
+      "inTopCurated": true,
+      "activityScore": 1468,
+      "activityRank": 20
+    },
+    {
+      "slug": "glm-5-1",
+      "displayName": "GLM-5.1",
+      "provider": "Zhipu",
+      "providers": [
+        "Zhipu"
+      ],
+      "category": "开源权重",
+      "openWeights": true,
+      "description": "Zhipu 出品，Arena Elo 1467，编程 Elo 1506，MMLU-Pro 87.1。开源权重。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 87.1,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 5.1,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 71.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1467,
+            "unit": "Elo",
+            "rank": 21,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1506,
+            "unit": "Elo",
+            "rank": 16,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "Zhipu API",
+        "OpenRouter"
+      ],
+      "sourceUrl": "https://www.zhipuai.cn",
+      "isNew": false,
+      "contextWindow": 128000,
+      "pricing": {
+        "input": 0.6,
+        "output": 2.2,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "open-weights",
+        "开源权重"
+      ],
+      "id": "idx-zhipu-glm-5-1",
+      "inTopCurated": true,
+      "activityScore": 1467,
+      "activityRank": 21
+    },
+    {
+      "slug": "deepseek-v4-pro",
+      "displayName": "DeepSeek-V4-Pro",
+      "provider": "DeepSeek",
+      "providers": [
+        "DeepSeek"
+      ],
+      "category": "开源权重",
+      "openWeights": true,
+      "description": "DeepSeek 出品，Arena Elo 1467，编程 Elo 1491，MMLU-Pro 87.5。开源权重。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 87.5,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 71.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1467,
+            "unit": "Elo",
+            "rank": 22,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1491,
+            "unit": "Elo",
+            "rank": 26,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "OpenRouter",
+        "Cursor",
+        "Ollama"
+      ],
+      "sourceUrl": "https://www.deepseek.com",
+      "isNew": false,
+      "contextWindow": 128000,
+      "pricing": {
+        "input": 0.55,
+        "output": 2.19,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "open-weights",
+        "开源权重"
+      ],
+      "id": "idx-deepseek-deepseek-v4-pro",
+      "inTopCurated": true,
+      "activityScore": 1467,
+      "activityRank": 22
+    },
+    {
+      "slug": "seed2-0-pro",
+      "displayName": "Seed2.0 Pro",
+      "provider": "ByteDance",
+      "providers": [
+        "ByteDance"
+      ],
+      "category": "代码 Agent",
+      "openWeights": false,
+      "description": "ByteDance 出品，Arena Elo 1466，编程 Elo 1495，MMLU-Pro 87.8。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 87.8,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 70.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1466,
+            "unit": "Elo",
+            "rank": 23,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1495,
+            "unit": "Elo",
+            "rank": 22,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1288,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "Volcengine",
+        "Trae"
+      ],
+      "sourceUrl": "https://www.volcengine.com",
+      "isNew": false,
+      "tags": [
+        "代码 Agent"
+      ],
+      "id": "idx-bytedance-seed2-0-pro",
+      "inTopCurated": true,
+      "activityScore": 1466,
+      "activityRank": 23
+    },
+    {
+      "slug": "kimi-k2-6-thinking",
+      "displayName": "Kimi-K2.6-Thinking",
+      "provider": "Moonshot",
+      "providers": [
+        "Moonshot"
+      ],
+      "category": "深度推理",
+      "openWeights": true,
+      "description": "Moonshot 出品，Arena Elo 1466，编程 Elo 1493，MMLU-Pro 87.3。开源权重。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 87.3,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 71.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1466,
+            "unit": "Elo",
+            "rank": 24,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1493,
+            "unit": "Elo",
+            "rank": 24,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1286,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "GitHub Copilot",
+        "Kimi Chat"
+      ],
+      "sourceUrl": "https://www.moonshot.cn",
+      "isNew": false,
+      "contextWindow": 256000,
+      "pricing": {
+        "input": 2.0,
+        "output": 8.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "open-weights",
+        "深度推理"
+      ],
+      "id": "idx-moonshot-kimi-k2-6-thinking",
+      "inTopCurated": true,
+      "activityScore": 1466,
+      "activityRank": 24
+    },
+    {
+      "slug": "qwen3-5-max",
+      "displayName": "Qwen3.5-Max",
+      "provider": "Alibaba",
+      "providers": [
+        "Alibaba"
+      ],
+      "category": "代码 Agent",
+      "openWeights": false,
+      "description": "Alibaba 出品，Arena Elo 1466，编程 Elo 1493，MMLU-Pro 87.8。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 87.8,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 70.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1466,
+            "unit": "Elo",
+            "rank": 25,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1493,
+            "unit": "Elo",
+            "rank": 25,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "Alibaba Cloud",
+        "Ollama",
+        "OpenRouter"
+      ],
+      "sourceUrl": "https://github.com/QwenLM",
+      "isNew": false,
+      "contextWindow": 128000,
+      "pricing": {
+        "input": 0.4,
+        "output": 1.6,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "代码 Agent"
+      ],
+      "id": "idx-alibaba-qwen3-5-max",
+      "inTopCurated": false,
+      "activityScore": 1466,
+      "activityRank": 25
+    },
+    {
+      "slug": "mimo-v2-5-pro",
+      "displayName": "MiMo-V2.5-Pro",
+      "provider": "Xiaomi",
+      "providers": [
+        "Xiaomi"
+      ],
+      "category": "开源权重",
+      "openWeights": true,
+      "description": "Xiaomi 出品，Arena Elo 1466，编程 Elo 1485，MMLU-Pro 87.0。开源权重。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 87.0,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 70.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1466,
+            "unit": "Elo",
+            "rank": 26,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1485,
+            "unit": "Elo",
+            "rank": 27,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "API"
+      ],
+      "sourceUrl": "https://openlm.ai/chatbot-arena/",
+      "isNew": false,
+      "tags": [
+        "open-weights",
+        "开源权重"
+      ],
+      "id": "idx-xiaomi-mimo-v2-5-pro",
+      "inTopCurated": false,
+      "activityScore": 1466,
+      "activityRank": 26
+    },
+    {
+      "slug": "gpt-5-2-high",
+      "displayName": "GPT-5.2-high",
+      "provider": "OpenAI",
+      "providers": [
+        "OpenAI"
+      ],
+      "category": "代码 Agent",
+      "openWeights": false,
+      "description": "OpenAI 出品，Arena Elo 1465，编程 Elo 1470，SWE-bench 71.8%，MMLU-Pro 87.5。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "SWE-bench Verified",
+            "score": 71.8,
+            "unit": "%",
+            "rank": null,
+            "source": "swe-bench",
+            "updated": "2025-12-11"
+          },
+          {
+            "name": "MMLU-Pro",
+            "score": 87.5,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 52.9,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 72.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1465,
+            "unit": "Elo",
+            "rank": 27,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1470,
+            "unit": "Elo",
+            "rank": 34,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1280,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "GitHub Copilot",
+        "ChatGPT",
+        "Azure OpenAI",
+        "Cursor"
+      ],
+      "sourceUrl": "https://openai.com",
+      "isNew": false,
+      "contextWindow": 256000,
+      "pricing": {
+        "input": 10.0,
+        "output": 30.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "代码 Agent",
+        "swe-bench"
+      ],
+      "id": "idx-openai-gpt-5-2-high",
+      "inTopCurated": false,
+      "activityScore": 1465,
+      "activityRank": 27
+    },
+    {
+      "slug": "gemini-3-flash",
+      "displayName": "Gemini-3-Flash",
+      "provider": "Google",
+      "providers": [
+        "Google"
+      ],
+      "category": "高性价比",
+      "openWeights": false,
+      "description": "Google 出品，Arena Elo 1465，编程 Elo 1469，SWE-bench 77.4%，MMLU-Pro 89.0。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "SWE-bench Verified",
+            "score": 77.4,
+            "unit": "%",
+            "rank": null,
+            "source": "swe-bench",
+            "updated": "2025-11-20"
+          },
+          {
+            "name": "MMLU-Pro",
+            "score": 89.0,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 31.1,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 71.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1465,
+            "unit": "Elo",
+            "rank": 28,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1469,
+            "unit": "Elo",
+            "rank": 35,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1292,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "Google Antigravity",
+        "Gemini",
+        "Vertex AI"
+      ],
+      "sourceUrl": "https://deepmind.google/technologies/gemini",
+      "isNew": false,
+      "contextWindow": 1000000,
+      "pricing": {
+        "input": 3.5,
+        "output": 10.5,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "高性价比",
+        "swe-bench"
+      ],
+      "id": "idx-google-gemini-3-flash",
+      "inTopCurated": false,
+      "activityScore": 1465,
+      "activityRank": 28
+    },
+    {
+      "slug": "gpt-5-4",
+      "displayName": "GPT-5.4",
+      "provider": "OpenAI",
+      "providers": [
+        "OpenAI"
+      ],
+      "category": "代码 Agent",
+      "openWeights": false,
+      "description": "OpenAI 出品，Arena Elo 1465，编程 Elo 1468，MMLU-Pro 88.4。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 88.4,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 29.2,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 70.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1465,
+            "unit": "Elo",
+            "rank": 29,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1468,
+            "unit": "Elo",
+            "rank": 36,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1275,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "GitHub Copilot",
+        "ChatGPT",
+        "Azure OpenAI",
+        "Cursor"
+      ],
+      "sourceUrl": "https://openai.com",
+      "isNew": false,
+      "contextWindow": 256000,
+      "pricing": {
+        "input": 10.0,
+        "output": 30.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "代码 Agent"
+      ],
+      "id": "idx-openai-gpt-5-4",
+      "inTopCurated": false,
+      "activityScore": 1465,
+      "activityRank": 29
+    },
+    {
+      "slug": "gpt-5-1-high",
+      "displayName": "GPT-5.1-high",
+      "provider": "OpenAI",
+      "providers": [
+        "OpenAI"
+      ],
+      "category": "代码 Agent",
+      "openWeights": false,
+      "description": "OpenAI 出品，Arena Elo 1464，编程 Elo 1466，SWE-bench 66.0%，MMLU-Pro 87.1。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "SWE-bench Verified",
+            "score": 66.0,
+            "unit": "%",
+            "rank": null,
+            "source": "swe-bench",
+            "updated": "2025-11-24"
+          },
+          {
+            "name": "MMLU-Pro",
+            "score": 87.1,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 17.6,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 70.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1464,
+            "unit": "Elo",
+            "rank": 30,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1466,
+            "unit": "Elo",
+            "rank": 38,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1250,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "GitHub Copilot",
+        "ChatGPT",
+        "Azure OpenAI",
+        "Cursor"
+      ],
+      "sourceUrl": "https://openai.com",
+      "isNew": false,
+      "contextWindow": 256000,
+      "pricing": {
+        "input": 10.0,
+        "output": 30.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "代码 Agent",
+        "swe-bench"
+      ],
+      "id": "idx-openai-gpt-5-1-high",
+      "inTopCurated": false,
+      "activityScore": 1464,
+      "activityRank": 30
+    },
+    {
+      "slug": "gpt-5-2",
+      "displayName": "GPT-5.2",
+      "provider": "OpenAI",
+      "providers": [
+        "OpenAI"
+      ],
+      "category": "代码 Agent",
+      "openWeights": false,
+      "description": "OpenAI 出品，Arena Elo 1464，编程 Elo 1465，SWE-bench 71.8%，MMLU-Pro 87.4。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "SWE-bench Verified",
+            "score": 71.8,
+            "unit": "%",
+            "rank": null,
+            "source": "swe-bench",
+            "updated": "2025-12-11"
+          },
+          {
+            "name": "MMLU-Pro",
+            "score": 87.4,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 26.7,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 68.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1464,
+            "unit": "Elo",
+            "rank": 31,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1465,
+            "unit": "Elo",
+            "rank": 39,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1248,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "GitHub Copilot",
+        "ChatGPT",
+        "Azure OpenAI",
+        "Cursor"
+      ],
+      "sourceUrl": "https://openai.com",
+      "isNew": false,
+      "contextWindow": 256000,
+      "pricing": {
+        "input": 10.0,
+        "output": 30.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "代码 Agent",
+        "swe-bench"
+      ],
+      "id": "idx-openai-gpt-5-2",
+      "inTopCurated": false,
+      "activityScore": 1464,
+      "activityRank": 31
+    },
+    {
+      "slug": "grok-4-1",
+      "displayName": "Grok-4.1",
+      "provider": "xAI",
+      "providers": [
+        "xAI"
+      ],
+      "category": "代码 Agent",
+      "openWeights": false,
+      "description": "xAI 出品，Arena Elo 1463，编程 Elo 1463，MMLU-Pro 88.0。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 88.0,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 68.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1463,
+            "unit": "Elo",
+            "rank": 32,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1463,
+            "unit": "Elo",
+            "rank": 43,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "Grok",
+        "API"
+      ],
+      "sourceUrl": "https://x.ai",
+      "isNew": false,
+      "contextWindow": 131072,
+      "pricing": {
+        "input": 3.0,
+        "output": 15.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "代码 Agent"
+      ],
+      "id": "idx-xai-grok-4-1",
+      "inTopCurated": false,
+      "activityScore": 1463,
+      "activityRank": 32
+    },
+    {
+      "slug": "claude-opus-4-5",
+      "displayName": "Claude Opus 4.5",
+      "provider": "Anthropic",
+      "providers": [
+        "Anthropic"
+      ],
+      "category": "代码 Agent",
+      "openWeights": false,
+      "description": "Anthropic 出品，Arena Elo 1462，编程 Elo 1496，MMLU-Pro 88.8。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 88.8,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 7.8,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 60.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1462,
+            "unit": "Elo",
+            "rank": 33,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1496,
+            "unit": "Elo",
+            "rank": 20,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "Cursor",
+        "Claude Code",
+        "GitHub Copilot",
+        "AWS Bedrock"
+      ],
+      "sourceUrl": "https://www.anthropic.com/claude",
+      "isNew": false,
+      "contextWindow": 200000,
+      "pricing": {
+        "input": 15.0,
+        "output": 75.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "代码 Agent"
+      ],
+      "id": "idx-anthropic-claude-opus-4-5",
+      "inTopCurated": false,
+      "activityScore": 1462,
+      "activityRank": 33
+    },
+    {
+      "slug": "gpt-5-4-mini-high",
+      "displayName": "GPT-5.4-mini-high",
+      "provider": "OpenAI",
+      "providers": [
+        "OpenAI"
+      ],
+      "category": "高性价比",
+      "openWeights": false,
+      "description": "OpenAI 出品，Arena Elo 1461，编程 Elo 1461，MMLU-Pro 87.0。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 87.0,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 18.9,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 68.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1461,
+            "unit": "Elo",
+            "rank": 34,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1461,
+            "unit": "Elo",
+            "rank": 46,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "GitHub Copilot",
+        "ChatGPT",
+        "Azure OpenAI",
+        "Cursor"
+      ],
+      "sourceUrl": "https://openai.com",
+      "isNew": false,
+      "contextWindow": 256000,
+      "pricing": {
+        "input": 10.0,
+        "output": 30.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "高性价比"
+      ],
+      "id": "idx-openai-gpt-5-4-mini-high",
+      "inTopCurated": false,
+      "activityScore": 1461,
+      "activityRank": 34
+    },
+    {
+      "slug": "claude-sonnet-4-6",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "Anthropic",
+      "providers": [
+        "Anthropic"
+      ],
+      "category": "代码 Agent",
+      "openWeights": false,
+      "description": "Anthropic 出品，Arena Elo 1460，编程 Elo 1500，MMLU-Pro 87.3。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 87.3,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 37.6,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 65.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1460,
+            "unit": "Elo",
+            "rank": 35,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1500,
+            "unit": "Elo",
+            "rank": 19,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1277,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "Cursor",
+        "Claude Code",
+        "GitHub Copilot",
+        "AWS Bedrock"
+      ],
+      "sourceUrl": "https://www.anthropic.com/claude",
+      "isNew": false,
+      "contextWindow": 200000,
+      "pricing": {
+        "input": 3.0,
+        "output": 15.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "代码 Agent"
+      ],
+      "id": "idx-anthropic-claude-sonnet-4-6",
+      "inTopCurated": false,
+      "activityScore": 1460,
+      "activityRank": 35
+    },
+    {
+      "slug": "gemini-2-5-pro",
+      "displayName": "Gemini-2.5-Pro",
+      "provider": "Google",
+      "providers": [
+        "Google"
+      ],
+      "category": "代码 Agent",
+      "openWeights": false,
+      "description": "Google 出品，Arena Elo 1460，编程 Elo 1465，SWE-bench 75.2%，MMLU-Pro 86.2。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "SWE-bench Verified",
+            "score": 75.2,
+            "unit": "%",
+            "rank": null,
+            "source": "swe-bench",
+            "updated": "2025-06-12"
+          },
+          {
+            "name": "MMLU-Pro",
+            "score": 86.2,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 4.9,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 63.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1460,
+            "unit": "Elo",
+            "rank": 36,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1465,
+            "unit": "Elo",
+            "rank": 40,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1266,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "Google Antigravity",
+        "Gemini",
+        "Vertex AI"
+      ],
+      "sourceUrl": "https://deepmind.google/technologies/gemini",
+      "isNew": false,
+      "contextWindow": 1000000,
+      "pricing": {
+        "input": 3.5,
+        "output": 10.5,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "代码 Agent",
+        "swe-bench"
+      ],
+      "id": "idx-google-gemini-2-5-pro",
+      "inTopCurated": false,
+      "activityScore": 1460,
+      "activityRank": 36
+    },
+    {
+      "slug": "ernie-5-0",
+      "displayName": "ERNIE-5.0",
+      "provider": "Baidu",
+      "providers": [
+        "Baidu"
+      ],
+      "category": "代码 Agent",
+      "openWeights": false,
+      "description": "Baidu 出品，Arena Elo 1458，编程 Elo 1461，MMLU-Pro 86.0。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 86.0,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 65.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1458,
+            "unit": "Elo",
+            "rank": 37,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1461,
+            "unit": "Elo",
+            "rank": 47,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1251,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "百度智能云",
+        "文心"
+      ],
+      "sourceUrl": "https://yiyan.baidu.com",
+      "isNew": false,
+      "tags": [
+        "代码 Agent"
+      ],
+      "id": "idx-baidu-ernie-5-0",
+      "inTopCurated": false,
+      "activityScore": 1458,
+      "activityRank": 37
+    },
+    {
+      "slug": "qwen3-6-plus",
+      "displayName": "Qwen3.6-Plus",
+      "provider": "Alibaba",
+      "providers": [
+        "Alibaba"
+      ],
+      "category": "代码 Agent",
+      "openWeights": false,
+      "description": "Alibaba 出品，Arena Elo 1456，编程 Elo 1482，MMLU-Pro 88.5。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 88.5,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 70.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1456,
+            "unit": "Elo",
+            "rank": 38,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1482,
+            "unit": "Elo",
+            "rank": 31,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "Alibaba Cloud",
+        "Ollama",
+        "OpenRouter"
+      ],
+      "sourceUrl": "https://github.com/QwenLM",
+      "isNew": false,
+      "contextWindow": 128000,
+      "pricing": {
+        "input": 0.4,
+        "output": 1.6,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "代码 Agent"
+      ],
+      "id": "idx-alibaba-qwen3-6-plus",
+      "inTopCurated": false,
+      "activityScore": 1456,
+      "activityRank": 38
+    },
+    {
+      "slug": "minimax-m3",
+      "displayName": "Minimax-M3",
+      "provider": "MiniMax",
+      "providers": [
+        "MiniMax"
+      ],
+      "category": "开源权重",
+      "openWeights": true,
+      "description": "MiniMax 出品，Arena Elo 1452，编程 Elo 1485，MMLU-Pro 87.2。开源权重。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 87.2,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 70.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1452,
+            "unit": "Elo",
+            "rank": 39,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1485,
+            "unit": "Elo",
+            "rank": 28,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "MiniMax API",
+        "OpenRouter"
+      ],
+      "sourceUrl": "https://www.minimaxi.com",
+      "isNew": false,
+      "contextWindow": 1000000,
+      "pricing": {
+        "input": 0.3,
+        "output": 1.2,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "open-weights",
+        "开源权重"
+      ],
+      "id": "idx-minimax-minimax-m3",
+      "inTopCurated": false,
+      "activityScore": 1452,
+      "activityRank": 39
+    },
+    {
+      "slug": "glm-5",
+      "displayName": "GLM-5",
+      "provider": "Zhipu",
+      "providers": [
+        "Zhipu"
+      ],
+      "category": "开源权重",
+      "openWeights": true,
+      "description": "Zhipu 出品，Arena Elo 1452，编程 Elo 1461，SWE-bench 72.8%，MMLU-Pro 87.0。开源权重。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "SWE-bench Verified",
+            "score": 72.8,
+            "unit": "%",
+            "rank": null,
+            "source": "swe-bench",
+            "updated": "2026-02-17"
+          },
+          {
+            "name": "MMLU-Pro",
+            "score": 87.0,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 5.0,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 70.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1452,
+            "unit": "Elo",
+            "rank": 40,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1461,
+            "unit": "Elo",
+            "rank": 48,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "Zhipu API",
+        "OpenRouter"
+      ],
+      "sourceUrl": "https://www.zhipuai.cn",
+      "isNew": false,
+      "contextWindow": 128000,
+      "pricing": {
+        "input": 0.6,
+        "output": 2.2,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "open-weights",
+        "开源权重",
+        "swe-bench"
+      ],
+      "id": "idx-zhipu-glm-5",
+      "inTopCurated": false,
+      "activityScore": 1452,
+      "activityRank": 40
+    },
+    {
+      "slug": "kimi-k2-5-thinking",
+      "displayName": "Kimi-K2.5-Thinking",
+      "provider": "Moonshot",
+      "providers": [
+        "Moonshot"
+      ],
+      "category": "深度推理",
+      "openWeights": true,
+      "description": "Moonshot 出品，Arena Elo 1451，编程 Elo 1480，SWE-bench 70.8%，MMLU-Pro 87.1。开源权重。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "SWE-bench Verified",
+            "score": 70.8,
+            "unit": "%",
+            "rank": null,
+            "source": "swe-bench",
+            "updated": "2026-02-17"
+          },
+          {
+            "name": "MMLU-Pro",
+            "score": 87.1,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 11.8,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 69.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1451,
+            "unit": "Elo",
+            "rank": 41,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1480,
+            "unit": "Elo",
+            "rank": 32,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1271,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "GitHub Copilot",
+        "Kimi Chat"
+      ],
+      "sourceUrl": "https://www.moonshot.cn",
+      "isNew": false,
+      "contextWindow": 256000,
+      "pricing": {
+        "input": 2.0,
+        "output": 8.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "open-weights",
+        "深度推理",
+        "swe-bench"
+      ],
+      "id": "idx-moonshot-kimi-k2-5-thinking",
+      "inTopCurated": false,
+      "activityScore": 1451,
+      "activityRank": 41
+    },
+    {
+      "slug": "qwen3-5-397b-a17b",
+      "displayName": "Qwen3.5-397B-A17B",
+      "provider": "Alibaba",
+      "providers": [
+        "Alibaba"
+      ],
+      "category": "开源权重",
+      "openWeights": true,
+      "description": "Alibaba 出品，Arena Elo 1450，编程 Elo 1463，MMLU-Pro 87.8。开源权重。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 87.8,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 5.0,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 69.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1450,
+            "unit": "Elo",
+            "rank": 42,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1463,
+            "unit": "Elo",
+            "rank": 44,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "Alibaba Cloud",
+        "Ollama",
+        "OpenRouter"
+      ],
+      "sourceUrl": "https://github.com/QwenLM",
+      "isNew": false,
+      "contextWindow": 128000,
+      "pricing": {
+        "input": 0.4,
+        "output": 1.6,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "open-weights",
+        "开源权重"
+      ],
+      "id": "idx-alibaba-qwen3-5-397b-a17b",
+      "inTopCurated": false,
+      "activityScore": 1450,
+      "activityRank": 42
+    },
+    {
+      "slug": "gemma-4-31b-it",
+      "displayName": "Gemma-4-31B-it",
+      "provider": "Google",
+      "providers": [
+        "Google"
+      ],
+      "category": "开源权重",
+      "openWeights": true,
+      "description": "Google 出品，Arena Elo 1449，编程 Elo 1462，MMLU-Pro 85.2。开源权重。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 85.2,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 63.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1449,
+            "unit": "Elo",
+            "rank": 43,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1462,
+            "unit": "Elo",
+            "rank": 45,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "Google Antigravity",
+        "Gemini",
+        "Vertex AI"
+      ],
+      "sourceUrl": "https://deepmind.google/technologies/gemini",
+      "isNew": false,
+      "tags": [
+        "open-weights",
+        "开源权重"
+      ],
+      "id": "idx-google-gemma-4-31b-it",
+      "inTopCurated": false,
+      "activityScore": 1449,
+      "activityRank": 43
+    },
+    {
+      "slug": "glm-4-7",
+      "displayName": "GLM-4.7",
+      "provider": "Zhipu",
+      "providers": [
+        "Zhipu"
+      ],
+      "category": "开源权重",
+      "openWeights": true,
+      "description": "Zhipu 出品，Arena Elo 1445，编程 Elo 1460，MMLU-Pro 85.6。开源权重。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 85.6,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 68.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1445,
+            "unit": "Elo",
+            "rank": 44,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1460,
+            "unit": "Elo",
+            "rank": 50,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "Zhipu API",
+        "OpenRouter"
+      ],
+      "sourceUrl": "https://www.zhipuai.cn",
+      "isNew": false,
+      "contextWindow": 128000,
+      "pricing": {
+        "input": 0.6,
+        "output": 2.2,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "open-weights",
+        "开源权重"
+      ],
+      "id": "idx-zhipu-glm-4-7",
+      "inTopCurated": false,
+      "activityScore": 1445,
+      "activityRank": 44
+    },
+    {
+      "slug": "deepseek-v4-flash",
+      "displayName": "DeepSeek-V4-Flash",
+      "provider": "DeepSeek",
+      "providers": [
+        "DeepSeek"
+      ],
+      "category": "高性价比",
+      "openWeights": true,
+      "description": "DeepSeek 出品，Arena Elo 1445，编程 Elo 1460，MMLU-Pro 86.2。开源权重。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 86.2,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 64.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1445,
+            "unit": "Elo",
+            "rank": 45,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1460,
+            "unit": "Elo",
+            "rank": 51,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "OpenRouter",
+        "Cursor",
+        "Ollama"
+      ],
+      "sourceUrl": "https://www.deepseek.com",
+      "isNew": false,
+      "contextWindow": 128000,
+      "pricing": {
+        "input": 0.55,
+        "output": 2.19,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "open-weights",
+        "高性价比"
+      ],
+      "id": "idx-deepseek-deepseek-v4-flash",
+      "inTopCurated": false,
+      "activityScore": 1445,
+      "activityRank": 45
+    },
+    {
+      "slug": "gpt-5-high",
+      "displayName": "GPT-5-high",
+      "provider": "OpenAI",
+      "providers": [
+        "OpenAI"
+      ],
+      "category": "代码 Agent",
+      "openWeights": false,
+      "description": "OpenAI 出品，Arena Elo 1444，编程 Elo 1460，SWE-bench 74.4%，MMLU-Pro 87.1。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "SWE-bench Verified",
+            "score": 74.4,
+            "unit": "%",
+            "rank": null,
+            "source": "swe-bench",
+            "updated": "2025-10-15"
+          },
+          {
+            "name": "MMLU-Pro",
+            "score": 87.1,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 9.9,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 66.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1444,
+            "unit": "Elo",
+            "rank": 46,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1460,
+            "unit": "Elo",
+            "rank": 52,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1232,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "GitHub Copilot",
+        "ChatGPT",
+        "Azure OpenAI",
+        "Cursor"
+      ],
+      "sourceUrl": "https://openai.com",
+      "isNew": false,
+      "contextWindow": 256000,
+      "pricing": {
+        "input": 10.0,
+        "output": 30.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "代码 Agent",
+        "swe-bench"
+      ],
+      "id": "idx-openai-gpt-5-high",
+      "inTopCurated": false,
+      "activityScore": 1444,
+      "activityRank": 46
+    },
+    {
+      "slug": "qwen3-max",
+      "displayName": "Qwen3-Max",
+      "provider": "Alibaba",
+      "providers": [
+        "Alibaba"
+      ],
+      "category": "代码 Agent",
+      "openWeights": false,
+      "description": "Alibaba 出品，Arena Elo 1443，编程 Elo 1468，MMLU-Pro 85.3。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 85.3,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 64.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1443,
+            "unit": "Elo",
+            "rank": 47,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1468,
+            "unit": "Elo",
+            "rank": 37,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "Alibaba Cloud",
+        "Ollama",
+        "OpenRouter"
+      ],
+      "sourceUrl": "https://github.com/QwenLM",
+      "isNew": false,
+      "contextWindow": 128000,
+      "pricing": {
+        "input": 0.4,
+        "output": 1.6,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "代码 Agent"
+      ],
+      "id": "idx-alibaba-qwen3-max",
+      "inTopCurated": false,
+      "activityScore": 1443,
+      "activityRank": 47
+    },
+    {
+      "slug": "gemma-4-26b-a4b-it",
+      "displayName": "Gemma-4-26B-A4B-it",
+      "provider": "Google",
+      "providers": [
+        "Google"
+      ],
+      "category": "开源权重",
+      "openWeights": true,
+      "description": "Google 出品，Arena Elo 1443，编程 Elo 1460，MMLU-Pro 82.6。开源权重。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 82.6,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 56.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1443,
+            "unit": "Elo",
+            "rank": 48,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1460,
+            "unit": "Elo",
+            "rank": 53,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "Google Antigravity",
+        "Gemini",
+        "Vertex AI"
+      ],
+      "sourceUrl": "https://deepmind.google/technologies/gemini",
+      "isNew": false,
+      "tags": [
+        "open-weights",
+        "开源权重"
+      ],
+      "id": "idx-google-gemma-4-26b-a4b-it",
+      "inTopCurated": false,
+      "activityScore": 1443,
+      "activityRank": 48
+    },
+    {
+      "slug": "grok-4",
+      "displayName": "Grok-4",
+      "provider": "xAI",
+      "providers": [
+        "xAI"
+      ],
+      "category": "代码 Agent",
+      "openWeights": false,
+      "description": "xAI 出品，Arena Elo 1442，编程 Elo 1453，MMLU-Pro 86.6。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 86.6,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 16.0,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 66.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1442,
+            "unit": "Elo",
+            "rank": 49,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1453,
+            "unit": "Elo",
+            "rank": 58,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1221,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "Grok",
+        "API"
+      ],
+      "sourceUrl": "https://x.ai",
+      "isNew": false,
+      "contextWindow": 131072,
+      "pricing": {
+        "input": 3.0,
+        "output": 15.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "代码 Agent"
+      ],
+      "id": "idx-xai-grok-4",
+      "inTopCurated": false,
+      "activityScore": 1442,
+      "activityRank": 49
+    },
+    {
+      "slug": "glm-4-6",
+      "displayName": "GLM-4.6",
+      "provider": "Zhipu",
+      "providers": [
+        "Zhipu"
+      ],
+      "category": "开源权重",
+      "openWeights": true,
+      "description": "Zhipu 出品，Arena Elo 1441，编程 Elo 1458，SWE-bench 68.2%，MMLU-Pro 83.5。开源权重。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "SWE-bench Verified",
+            "score": 68.2,
+            "unit": "%",
+            "rank": null,
+            "source": "swe-bench",
+            "updated": "2025-09-30"
+          },
+          {
+            "name": "MMLU-Pro",
+            "score": 83.5,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 56.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1441,
+            "unit": "Elo",
+            "rank": 50,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1458,
+            "unit": "Elo",
+            "rank": 54,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "Zhipu API",
+        "OpenRouter"
+      ],
+      "sourceUrl": "https://www.zhipuai.cn",
+      "isNew": false,
+      "contextWindow": 128000,
+      "pricing": {
+        "input": 0.6,
+        "output": 2.2,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "open-weights",
+        "开源权重",
+        "swe-bench"
+      ],
+      "id": "idx-zhipu-glm-4-6",
+      "inTopCurated": false,
+      "activityScore": 1441,
+      "activityRank": 50
+    },
+    {
+      "slug": "gpt-5-1",
+      "displayName": "GPT-5.1",
+      "provider": "OpenAI",
+      "providers": [
+        "OpenAI"
+      ],
+      "category": "代码 Agent",
+      "openWeights": false,
+      "description": "OpenAI 出品，Arena Elo 1440，编程 Elo 1450，SWE-bench 66.0%，MMLU-Pro 87.0。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "SWE-bench Verified",
+            "score": 66.0,
+            "unit": "%",
+            "rank": null,
+            "source": "swe-bench",
+            "updated": "2025-11-24"
+          },
+          {
+            "name": "MMLU-Pro",
+            "score": 87.0,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 7.5,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 66.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1440,
+            "unit": "Elo",
+            "rank": 51,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1450,
+            "unit": "Elo",
+            "rank": 60,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1243,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "GitHub Copilot",
+        "ChatGPT",
+        "Azure OpenAI",
+        "Cursor"
+      ],
+      "sourceUrl": "https://openai.com",
+      "isNew": false,
+      "contextWindow": 256000,
+      "pricing": {
+        "input": 10.0,
+        "output": 30.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "代码 Agent",
+        "swe-bench"
+      ],
+      "id": "idx-openai-gpt-5-1",
+      "inTopCurated": false,
+      "activityScore": 1440,
+      "activityRank": 51
+    },
+    {
+      "slug": "kimi-k2-thinking",
+      "displayName": "Kimi-K2-Thinking",
+      "provider": "Moonshot",
+      "providers": [
+        "Moonshot"
+      ],
+      "category": "深度推理",
+      "openWeights": true,
+      "description": "Moonshot 出品，Arena Elo 1438，编程 Elo 1450，SWE-bench 71.2%，MMLU-Pro 84.8。开源权重。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "SWE-bench Verified",
+            "score": 71.2,
+            "unit": "%",
+            "rank": null,
+            "source": "swe-bench",
+            "updated": "2025-10-14"
+          },
+          {
+            "name": "MMLU-Pro",
+            "score": 84.8,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 67.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1438,
+            "unit": "Elo",
+            "rank": 52,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1450,
+            "unit": "Elo",
+            "rank": 61,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "GitHub Copilot",
+        "Kimi Chat"
+      ],
+      "sourceUrl": "https://www.moonshot.cn",
+      "isNew": false,
+      "contextWindow": 256000,
+      "pricing": {
+        "input": 2.0,
+        "output": 8.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "open-weights",
+        "深度推理",
+        "swe-bench"
+      ],
+      "id": "idx-moonshot-kimi-k2-thinking",
+      "inTopCurated": false,
+      "activityScore": 1438,
+      "activityRank": 52
+    },
+    {
+      "slug": "claude-sonnet-4-5",
+      "displayName": "Claude Sonnet 4.5 (thinking-32k)",
+      "provider": "Anthropic",
+      "providers": [
+        "Anthropic"
+      ],
+      "category": "深度推理",
+      "openWeights": false,
+      "description": "Anthropic 出品，Arena Elo 1432，编程 Elo 1485，MMLU-Pro 87.5。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 87.5,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 13.6,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 61.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1432,
+            "unit": "Elo",
+            "rank": 53,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1485,
+            "unit": "Elo",
+            "rank": 29,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "Cursor",
+        "Claude Code",
+        "GitHub Copilot",
+        "AWS Bedrock"
+      ],
+      "sourceUrl": "https://www.anthropic.com/claude",
+      "isNew": false,
+      "contextWindow": 200000,
+      "pricing": {
+        "input": 3.0,
+        "output": 15.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "深度推理"
+      ],
+      "id": "idx-anthropic-claude-sonnet-4-5",
+      "inTopCurated": false,
+      "activityScore": 1432,
+      "activityRank": 53
+    },
+    {
+      "slug": "mimo-v2-pro",
+      "displayName": "MiMo-V2-Pro",
+      "provider": "Xiaomi",
+      "providers": [
+        "Xiaomi"
+      ],
+      "category": "代码 Agent",
+      "openWeights": false,
+      "description": "Xiaomi 出品，Arena Elo 1431，编程 Elo 1441，MMLU-Pro 86.8。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 86.8,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 69.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1431,
+            "unit": "Elo",
+            "rank": 54,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1441,
+            "unit": "Elo",
+            "rank": 67,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "API"
+      ],
+      "sourceUrl": "https://openlm.ai/chatbot-arena/",
+      "isNew": false,
+      "tags": [
+        "代码 Agent"
+      ],
+      "id": "idx-xiaomi-mimo-v2-pro",
+      "inTopCurated": false,
+      "activityScore": 1431,
+      "activityRank": 54
+    },
+    {
+      "slug": "glm-4-5",
+      "displayName": "GLM-4.5",
+      "provider": "Zhipu",
+      "providers": [
+        "Zhipu"
+      ],
+      "category": "开源权重",
+      "openWeights": true,
+      "description": "Zhipu 出品，Arena Elo 1430，编程 Elo 1448，SWE-bench 64.2%，MMLU-Pro 83.5。开源权重。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "SWE-bench Verified",
+            "score": 64.2,
+            "unit": "%",
+            "rank": null,
+            "source": "swe-bench",
+            "updated": "2025-07-28"
+          },
+          {
+            "name": "MMLU-Pro",
+            "score": 83.5,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 54.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1430,
+            "unit": "Elo",
+            "rank": 55,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1448,
+            "unit": "Elo",
+            "rank": 63,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "Zhipu API",
+        "OpenRouter"
+      ],
+      "sourceUrl": "https://www.zhipuai.cn",
+      "isNew": false,
+      "contextWindow": 128000,
+      "pricing": {
+        "input": 0.6,
+        "output": 2.2,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "open-weights",
+        "开源权重",
+        "swe-bench"
+      ],
+      "id": "idx-zhipu-glm-4-5",
+      "inTopCurated": false,
+      "activityScore": 1430,
+      "activityRank": 55
+    },
+    {
+      "slug": "qwen3-vl-235b-a22b-instruct",
+      "displayName": "Qwen3-VL-235B-A22B-Instruct",
+      "provider": "Alibaba",
+      "providers": [
+        "Alibaba"
+      ],
+      "category": "多模态",
+      "openWeights": true,
+      "description": "Alibaba 出品，Arena Elo 1429，编程 Elo 1457，MMLU-Pro 82.8。开源权重。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 82.8,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 49.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1429,
+            "unit": "Elo",
+            "rank": 56,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1457,
+            "unit": "Elo",
+            "rank": 55,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1246,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "Alibaba Cloud",
+        "Ollama",
+        "OpenRouter"
+      ],
+      "sourceUrl": "https://github.com/QwenLM",
+      "isNew": false,
+      "contextWindow": 128000,
+      "pricing": {
+        "input": 0.4,
+        "output": 1.6,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "open-weights",
+        "多模态"
+      ],
+      "id": "idx-alibaba-qwen3-vl-235b-a22b-instruct",
+      "inTopCurated": false,
+      "activityScore": 1429,
+      "activityRank": 56
+    },
+    {
+      "slug": "mistral-large-3",
+      "displayName": "Mistral Large 3",
+      "provider": "Mistral",
+      "providers": [
+        "Mistral"
+      ],
+      "category": "开源权重",
+      "openWeights": true,
+      "description": "Mistral 出品，Arena Elo 1428，编程 Elo 1450，MMLU-Pro 81.0。开源权重。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 81.0,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 40.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1428,
+            "unit": "Elo",
+            "rank": 57,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1450,
+            "unit": "Elo",
+            "rank": 62,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "Mistral API",
+        "Le Chat",
+        "Continue.dev"
+      ],
+      "sourceUrl": "https://mistral.ai",
+      "isNew": false,
+      "contextWindow": 128000,
+      "pricing": {
+        "input": 2.0,
+        "output": 6.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "open-weights",
+        "开源权重"
+      ],
+      "id": "idx-mistral-mistral-large-3",
+      "inTopCurated": false,
+      "activityScore": 1428,
+      "activityRank": 57
+    },
+    {
+      "slug": "chatgpt-4o-latest",
+      "displayName": "ChatGPT-4o-latest (2025-03-26)",
+      "provider": "OpenAI",
+      "providers": [
+        "OpenAI"
+      ],
+      "category": "代码 Agent",
+      "openWeights": false,
+      "description": "OpenAI 出品，Arena Elo 1427，编程 Elo 1434，SWE-bench 21.6%，MMLU-Pro 80.3。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "SWE-bench Verified",
+            "score": 21.6,
+            "unit": "%",
+            "rank": null,
+            "source": "swe-bench",
+            "updated": "2025-07-20"
+          },
+          {
+            "name": "MMLU-Pro",
+            "score": 80.3,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 38.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1427,
+            "unit": "Elo",
+            "rank": 58,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1434,
+            "unit": "Elo",
+            "rank": 77,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          },
+          {
+            "name": "LMArena Vision Elo",
+            "score": 1242,
+            "unit": "Elo",
+            "rank": null,
+            "source": "lmsys-arena",
+            "updated": ""
+          }
+        ]
+      },
+      "availableIn": [
+        "GitHub Copilot",
+        "ChatGPT",
+        "Azure OpenAI",
+        "Cursor"
+      ],
+      "sourceUrl": "https://openai.com",
+      "isNew": false,
+      "contextWindow": 128000,
+      "tags": [
+        "代码 Agent",
+        "swe-bench"
+      ],
+      "id": "idx-openai-chatgpt-4o-latest",
+      "inTopCurated": false,
+      "activityScore": 1427,
+      "activityRank": 58
+    },
+    {
+      "slug": "deepseek-r1-0528",
+      "displayName": "DeepSeek-R1-0528",
+      "provider": "DeepSeek",
+      "providers": [
+        "DeepSeek"
+      ],
+      "category": "深度推理",
+      "openWeights": true,
+      "description": "DeepSeek 出品，Arena Elo 1426，编程 Elo 1436，MMLU-Pro 84.9。开源权重。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 84.9,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "ARC-AGI",
+            "score": 1.3,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 57.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1426,
+            "unit": "Elo",
+            "rank": 59,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1436,
+            "unit": "Elo",
+            "rank": 74,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "OpenRouter",
+        "Cursor",
+        "Ollama"
+      ],
+      "sourceUrl": "https://www.deepseek.com",
+      "isNew": false,
+      "contextWindow": 128000,
+      "pricing": {
+        "input": 0.55,
+        "output": 2.19,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "open-weights",
+        "深度推理"
+      ],
+      "id": "idx-deepseek-deepseek-r1-0528",
+      "inTopCurated": false,
+      "activityScore": 1426,
+      "activityRank": 59
+    },
+    {
+      "slug": "claude-opus-4-1",
+      "displayName": "Claude Opus 4.1 (thinking-16k)",
+      "provider": "Anthropic",
+      "providers": [
+        "Anthropic"
+      ],
+      "category": "深度推理",
+      "openWeights": false,
+      "description": "Anthropic 出品，Arena Elo 1425，编程 Elo 1475，MMLU-Pro 87.8。闭源。",
+      "benchmarks": {
+        "automated": [
+          {
+            "name": "MMLU-Pro",
+            "score": 87.8,
+            "unit": "%",
+            "rank": null,
+            "source": "chatbot-arena",
+            "updated": ""
+          },
+          {
+            "name": "Artificial Analysis Index",
+            "score": 59.0,
+            "unit": "",
+            "rank": null,
+            "source": "artificial-analysis",
+            "updated": ""
+          }
+        ],
+        "manual": [
+          {
+            "name": "LMArena Arena Elo",
+            "score": 1425,
+            "unit": "Elo",
+            "rank": 60,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "人工盲测偏好排名"
+          },
+          {
+            "name": "LMArena 编程 Elo",
+            "score": 1475,
+            "unit": "Elo",
+            "rank": 33,
+            "source": "lmsys-arena",
+            "updated": "",
+            "note": "编程场景人工盲测"
+          }
+        ]
+      },
+      "availableIn": [
+        "Cursor",
+        "Claude Code",
+        "GitHub Copilot",
+        "AWS Bedrock"
+      ],
+      "sourceUrl": "https://www.anthropic.com/claude",
+      "isNew": false,
+      "contextWindow": 200000,
+      "pricing": {
+        "input": 15.0,
+        "output": 75.0,
+        "unit": "USD / 1M tokens"
+      },
+      "tags": [
+        "深度推理"
+      ],
+      "id": "idx-anthropic-claude-opus-4-1",
+      "inTopCurated": false,
+      "activityScore": 1425,
+      "activityRank": 60
     }
   ]
 }
