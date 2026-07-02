@@ -148,6 +148,32 @@ function hydrateFilters(data, ui) {
   });
 }
 
+function bindPrimerToggle(panel, toggleBtn, bodyEl) {
+  if (panel.dataset.toggleBound === "true") return;
+  panel.dataset.toggleBound = "true";
+
+  const collapsedKey = "skill-primer-collapsed";
+  let collapsed = localStorage.getItem(collapsedKey) === "1";
+
+  function setCollapsed(nextCollapsed) {
+    collapsed = nextCollapsed;
+    bodyEl.classList.toggle("is-collapsed", collapsed);
+    bodyEl.hidden = collapsed;
+    toggleBtn.setAttribute("aria-expanded", String(!collapsed));
+    toggleBtn.textContent = collapsed ? "展开" : "收起";
+    panel.classList.toggle("primer-collapsed", collapsed);
+  }
+
+  toggleBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    setCollapsed(!collapsed);
+    localStorage.setItem(collapsedKey, collapsed ? "1" : "0");
+  });
+
+  setCollapsed(collapsed);
+}
+
 function renderPrimer(primer) {
   const panel = document.getElementById("skillPrimerPanel");
   const titleEl = document.getElementById("primerTitle");
@@ -157,7 +183,17 @@ function renderPrimer(primer) {
   const toggleBtn = document.getElementById("primerToggle");
   const bodyEl = document.getElementById("primerBody");
 
-  if (!panel || !primer.meta) return;
+  if (!panel || !toggleBtn || !bodyEl) return;
+
+  bindPrimerToggle(panel, toggleBtn, bodyEl);
+
+  if (!primer?.meta) {
+    if (titleEl) titleEl.textContent = "Skill 第一性原理";
+    if (subtitleEl) subtitleEl.textContent = "介绍内容加载失败，请刷新页面重试。";
+    if (tabsEl) tabsEl.innerHTML = "";
+    if (contentEl) contentEl.innerHTML = "";
+    return;
+  }
 
   titleEl.textContent = primer.meta.title || "Skill 第一性原理";
   subtitleEl.textContent = primer.meta.subtitle || "";
@@ -194,23 +230,6 @@ function renderPrimer(primer) {
 
   renderTabs();
   renderContent();
-
-  const collapsedKey = "skill-primer-collapsed";
-  const isCollapsed = localStorage.getItem(collapsedKey) === "1";
-  setCollapsed(isCollapsed);
-
-  toggleBtn.addEventListener("click", () => {
-    const next = !bodyEl.hidden;
-    setCollapsed(next);
-    localStorage.setItem(collapsedKey, next ? "1" : "0");
-  });
-
-  function setCollapsed(collapsed) {
-    bodyEl.hidden = collapsed;
-    toggleBtn.setAttribute("aria-expanded", String(!collapsed));
-    toggleBtn.textContent = collapsed ? "展开" : "收起";
-    panel.classList.toggle("primer-collapsed", collapsed);
-  }
 }
 
 function renderEssenceSection(essence) {

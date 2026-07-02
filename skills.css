@@ -66,6 +66,11 @@
   margin-bottom: 0;
 }
 
+.primer-body.is-collapsed,
+.primer-body[hidden] {
+  display: none !important;
+}
+
 .primer-tabs {
   display: flex;
   flex-wrap: wrap;
