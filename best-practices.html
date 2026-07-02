@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>最佳实践 · AI Coding 信息平台</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./best-practices.css" />
+  </head>
+  <body class="best-practices-page">
+    <header class="top best-practices-header">
+      <div class="header-row">
+        <div>
+          <h1>最佳实践</h1>
+          <p>按主题追踪头部 AI Coding 竞品的高频用法、提示套路与工程工作流</p>
+        </div>
+        <nav class="site-nav" aria-label="站点导航">
+          <a class="nav-link" href="./index.html">门户首页</a>
+          <a class="nav-link" href="./evolution.html">竞品演进</a>
+          <a class="nav-link" href="./skills.html">Skill 库</a>
+          <a class="nav-link active" href="./best-practices.html" aria-current="page">最佳实践</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="panel practices-meta" id="practicesMeta"></section>
+
+    <main class="practices-main">
+      <aside class="panel practices-filters">
+        <h2>筛选</h2>
+        <input id="practiceSearch" type="search" placeholder="搜索主题、竞品、实践关键词..." />
+
+        <label for="themeFilter">主题</label>
+        <select id="themeFilter">
+          <option value="all">全部主题</option>
+        </select>
+
+        <label for="competitorFilter">竞品</label>
+        <select id="competitorFilter">
+          <option value="all">全部竞品</option>
+        </select>
+
+        <label for="sourceTypeFilter">来源类型</label>
+        <select id="sourceTypeFilter">
+          <option value="all">全部来源</option>
+        </select>
+
+        <label class="checkbox-row">
+          <input id="featuredOnly" type="checkbox" />
+          仅显示精选实践
+        </label>
+
+        <div class="sync-info" id="syncInfo"></div>
+      </aside>
+
+      <section class="panel practices-content">
+        <div class="section-title">
+          <h2>实践列表</h2>
+          <span id="practiceCount"></span>
+        </div>
+        <div class="tabs" id="themeTabs"></div>
+        <div id="practiceGrid" class="practice-grid" role="list"></div>
+        <p id="emptyPractices" class="empty-state" hidden>没有匹配的最佳实践。</p>
+      </section>
+
+      <aside class="panel practice-detail-panel">
+        <h2>实践详情</h2>
+        <article id="practiceDetail" class="practice-detail">
+          <p>请从左侧列表选择一条最佳实践。</p>
+        </article>
+      </aside>
+    </main>
+
+    <script src="./best-practices.js?v=1"></script>
+  </body>
+</html>

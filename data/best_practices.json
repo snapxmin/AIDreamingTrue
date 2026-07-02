@@ -1,0 +1,292 @@
+{
+  "meta": {
+    "lastUpdated": "2026-07-02T11:39:23Z",
+    "totalCount": 9,
+    "featuredCount": 8,
+    "note": "按主题策展 GitHub Copilot / Claude Code / Cursor / Replit Agent / Kiro 最佳实践，并同步公开来源摘要。"
+  },
+  "themes": [
+    "Prompt 设计",
+    "Spec 驱动",
+    "上下文治理",
+    "代码评审",
+    "团队复用",
+    "多 Agent 协作",
+    "规划拆解",
+    "验证闭环"
+  ],
+  "competitors": [
+    "Claude Code",
+    "Cursor",
+    "GitHub Copilot",
+    "Kiro",
+    "Replit Agent"
+  ],
+  "sourceTypes": [
+    "产品文档",
+    "官网页面"
+  ],
+  "practices": [
+    {
+      "id": "bp-004",
+      "slug": "claude-verification-loop",
+      "title": "给 Claude 一个可执行验证闭环",
+      "competitor": "Claude Code",
+      "theme": "验证闭环",
+      "sourceType": "产品文档",
+      "sourceTier": "A",
+      "sourceTitle": "Best practices for Claude Code - Claude Code Docs",
+      "sourceUrl": "https://docs.anthropic.com/en/docs/claude-code/best-practices",
+      "summary": "不要只让 Claude“完成任务”，而要给它测试、构建、脚本或截图比对等可执行校验信号。",
+      "whyItWorks": "Claude 会在“看起来完成”时停止；加入可读的 pass/fail 信号后，它才能自行迭代直到通过。",
+      "howToApply": [
+        "为每类任务准备可运行的校验命令",
+        "在需求里明确“完成”的验证标准",
+        "要求 Agent 运行校验并根据结果继续修正"
+      ],
+      "takeaway": "没有验证信号，Agent 就只能凭感觉停下。",
+      "tags": [
+        "verification",
+        "tests",
+        "agent-loop"
+      ],
+      "heat": 96,
+      "featured": true,
+      "remoteSnippet": "Tips and patterns for getting the most out of Claude Code, from configuring your environment to scaling across parallel sessions.",
+      "sourceReachable": true,
+      "lastModified": ""
+    },
+    {
+      "id": "bp-001",
+      "slug": "copilot-prompt-engineering",
+      "title": "Prompt 先宽后窄，补充约束与示例",
+      "competitor": "GitHub Copilot",
+      "theme": "Prompt 设计",
+      "sourceType": "产品文档",
+      "sourceTier": "A",
+      "sourceTitle": "Prompt engineering for GitHub Copilot Chat - GitHub Docs",
+      "sourceUrl": "https://docs.github.com/en/copilot/using-github-copilot/prompt-engineering-for-github-copilot",
+      "summary": "先描述目标，再追加边界条件、输入输出格式与示例，让 Copilot 更稳定地产出可用结果。",
+      "whyItWorks": "先给任务框架能减少模型误解，再用具体约束收敛输出空间，比一次性丢很多零散要求更稳定。",
+      "howToApply": [
+        "第一句写清最终目标或用户场景",
+        "第二段补充输入、输出、限制条件",
+        "复杂任务追加示例或伪输入数据"
+      ],
+      "takeaway": "目标 → 约束 → 示例，是最稳定的 Copilot 提示结构。",
+      "tags": [
+        "prompt",
+        "examples",
+        "copilot"
+      ],
+      "heat": 95,
+      "featured": true,
+      "remoteSnippet": "Follow these strategies to improve your Copilot results.",
+      "sourceReachable": true,
+      "lastModified": ""
+    },
+    {
+      "id": "bp-005",
+      "slug": "claude-subagents",
+      "title": "把搜索型副任务交给 Subagents",
+      "competitor": "Claude Code",
+      "theme": "多 Agent 协作",
+      "sourceType": "产品文档",
+      "sourceTier": "A",
+      "sourceTitle": "Create custom subagents - Claude Code Docs",
+      "sourceUrl": "https://docs.anthropic.com/en/docs/claude-code/sub-agents",
+      "summary": "遇到日志排查、代码搜索、资料收集等噪音很大的任务时，优先拆给 subagent，主线程只接收摘要。",
+      "whyItWorks": "副任务隔离后能显著节省主会话上下文，降低长任务中的信息污染和注意力切换成本。",
+      "howToApply": [
+        "把探索、检索、日志分析独立成子任务",
+        "限制子 Agent 的工具权限和职责",
+        "主线程只消费结论与证据摘要"
+      ],
+      "takeaway": "把上下文预算留给决策，而不是留给搜索噪音。",
+      "tags": [
+        "subagent",
+        "context-window",
+        "delegation"
+      ],
+      "heat": 93,
+      "featured": true,
+      "remoteSnippet": "Create and use specialized AI subagents in Claude Code for task-specific workflows and improved context management.",
+      "sourceReachable": true,
+      "lastModified": ""
+    },
+    {
+      "id": "bp-007",
+      "slug": "cursor-rules",
+      "title": "用 Cursor Rules 固化仓库级约束",
+      "competitor": "Cursor",
+      "theme": "上下文治理",
+      "sourceType": "产品文档",
+      "sourceTier": "A",
+      "sourceTitle": "Rules",
+      "sourceUrl": "https://cursor.com/docs/context/rules",
+      "summary": "把代码规范、目录约束、测试要求等沉淀到 Cursor Rules，而不是每次在对话里重复强调。",
+      "whyItWorks": "稳定规则前置到上下文层后，Agent 的默认行为更一致，减少对话里临时补丁式约束。",
+      "howToApply": [
+        "提炼最常被重复提醒的工程规则",
+        "优先写成短而明确的仓库级规则",
+        "持续把 review 中重复问题反哺到 rules"
+      ],
+      "takeaway": "把口头提醒升级成系统级默认值。",
+      "tags": [
+        "rules",
+        "context",
+        "governance"
+      ],
+      "heat": 90,
+      "featured": true,
+      "remoteSnippet": "Rules provide system-level instructions to Agent. They bundle prompts, scripts, and more together, making it easy to manage and share workflows across your team.",
+      "sourceReachable": true,
+      "lastModified": ""
+    },
+    {
+      "id": "bp-006",
+      "slug": "claude-common-workflows",
+      "title": "复杂任务先计划，再并行 worktree 会话",
+      "competitor": "Claude Code",
+      "theme": "规划拆解",
+      "sourceType": "产品文档",
+      "sourceTier": "A",
+      "sourceTitle": "Common workflows - Claude Code Docs",
+      "sourceUrl": "https://docs.anthropic.com/en/docs/claude-code/common-workflows",
+      "summary": "先让 Claude 产出计划，再用并行 session / worktree 推进不同子任务，减少互相覆盖。",
+      "whyItWorks": "计划先行能减少返工，并行工作树则适合把相互独立的实现或验证任务分开推进。",
+      "howToApply": [
+        "先让 Agent 输出完整计划或文件影响面",
+        "对独立子问题拆分会话或 worktree",
+        "最后统一回到主线程验收与合并"
+      ],
+      "takeaway": "先规划边界，再并行执行，能降低大任务失控风险。",
+      "tags": [
+        "planning",
+        "worktree",
+        "parallelism"
+      ],
+      "heat": 89,
+      "featured": true,
+      "remoteSnippet": "Step-by-step guides for exploring codebases, fixing bugs, refactoring, testing, and other everyday tasks with Claude Code.",
+      "sourceReachable": true,
+      "lastModified": ""
+    },
+    {
+      "id": "bp-002",
+      "slug": "copilot-prompt-files",
+      "title": "把高频任务沉淀成 Prompt Files",
+      "competitor": "GitHub Copilot",
+      "theme": "团队复用",
+      "sourceType": "产品文档",
+      "sourceTier": "A",
+      "sourceTitle": "Prompt files - GitHub Docs",
+      "sourceUrl": "https://docs.github.com/en/copilot/tutorials/customization-library/prompt-files",
+      "summary": "把 README 生成、代码审查、Onboarding 等高频任务固化为 Prompt Files，统一团队使用方式。",
+      "whyItWorks": "将个人高质量提示词产品化，能让团队共享同一套上下文模板，降低使用门槛和输出波动。",
+      "howToApply": [
+        "挑出团队重复出现的任务场景",
+        "沉淀成可复用的 Prompt File 模板",
+        "把模板与仓库说明一起维护"
+      ],
+      "takeaway": "把好的提示从个人技巧升级为团队资产。",
+      "tags": [
+        "prompt-files",
+        "template",
+        "team"
+      ],
+      "heat": 88,
+      "featured": true,
+      "remoteSnippet": "Reusable prompt examples for common development tasks.",
+      "sourceReachable": true,
+      "lastModified": ""
+    },
+    {
+      "id": "bp-008",
+      "slug": "replit-plan-mode",
+      "title": "先开 Plan Mode，再批准 Agent 真正动手",
+      "competitor": "Replit Agent",
+      "theme": "规划拆解",
+      "sourceType": "产品文档",
+      "sourceTier": "A",
+      "sourceTitle": "Replit Docs",
+      "sourceUrl": "https://docs.replit.com/replitai/agent#plan-mode",
+      "summary": "Replit Agent 适合先在 Plan Mode 里拆任务、确认方案，再进入执行模式，避免直接生成偏题产品。",
+      "whyItWorks": "对话式产品生成最怕需求没对齐；先评审任务清单能把问题暴露在动手之前。",
+      "howToApply": [
+        "先用 Plan Mode 明确范围与优先级",
+        "确认任务列表和交付物后再批准执行",
+        "中途改方向时回到 plan 重新收敛"
+      ],
+      "takeaway": "先对齐产品意图，再让 Agent 执行。",
+      "tags": [
+        "plan-mode",
+        "product",
+        "alignment"
+      ],
+      "heat": 85,
+      "featured": true,
+      "remoteSnippet": "Replit Agent turns your ideas into apps, designs, slides, and more, all from plain language. No coding required.",
+      "sourceReachable": true,
+      "lastModified": "Wed, 01 Jul 2026 23:21:58 GMT"
+    },
+    {
+      "id": "bp-003",
+      "slug": "copilot-code-review",
+      "title": "PR 合并前先请求 Copilot 做一轮代码审查",
+      "competitor": "GitHub Copilot",
+      "theme": "代码评审",
+      "sourceType": "产品文档",
+      "sourceTier": "A",
+      "sourceTitle": "Using GitHub Copilot code review - GitHub Docs",
+      "sourceUrl": "https://docs.github.com/en/copilot/using-github-copilot/code-review/using-copilot-code-review",
+      "summary": "在 GitHub PR 中主动请求 Copilot review，用它先扫一轮风险点，再让人工 reviewer 聚焦关键决策。",
+      "whyItWorks": "让 Agent 先承担覆盖型检查工作，可以更快暴露明显问题，把人审资源留给架构、边界和 trade-off。",
+      "howToApply": [
+        "提交 PR 后先请求 Copilot review",
+        "先处理明确的自动化建议",
+        "再把剩余风险交给人工 reviewer 聚焦判断"
+      ],
+      "takeaway": "机器先做覆盖，人类再做判断。",
+      "tags": [
+        "review",
+        "pull-request",
+        "quality-gate"
+      ],
+      "heat": 84,
+      "featured": false,
+      "remoteSnippet": "Learn how to request a code review from GitHub Copilot.",
+      "sourceReachable": true,
+      "lastModified": ""
+    },
+    {
+      "id": "bp-009",
+      "slug": "kiro-spec-driven",
+      "title": "先把需求变成 Spec，再让 Kiro 生成实现",
+      "competitor": "Kiro",
+      "theme": "Spec 驱动",
+      "sourceType": "官网页面",
+      "sourceTier": "B",
+      "sourceTitle": "Kiro: Move beyond AI coding to agentic engineering",
+      "sourceUrl": "https://kiro.dev",
+      "summary": "Kiro 的高价值用法不是直接让模型产代码，而是先把 prompt 转成可执行 spec 和正确性约束。",
+      "whyItWorks": "需求显式化之后，验证和实现都有锚点，适合处理多人协作或高风险业务逻辑。",
+      "howToApply": [
+        "先列出功能需求与必须成立的性质",
+        "让 Kiro 生成或补完 spec，而不是直接写最终代码",
+        "用 spec 驱动后续实现与正确性校验"
+      ],
+      "takeaway": "Spec 不是文档附属品，而是生成质量的前置条件。",
+      "tags": [
+        "spec",
+        "requirements",
+        "correctness"
+      ],
+      "heat": 82,
+      "featured": true,
+      "remoteSnippet": "Kiro helps developers and teams do their best work: turn prompts into executable specs, validate code correctness to find bugs unit tests miss, and build across large codebases with parallel agents that learn from every session.",
+      "sourceReachable": true,
+      "lastModified": "Thu, 02 Jul 2026 04:07:12 GMT"
+    }
+  ]
+}

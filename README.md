@@ -11,6 +11,7 @@
 - 搜索与多维筛选（关键词、时间窗口、类型、公司、热度）
 - 趋势榜单（按热度与增长排序）
 - **Skill 库**（业界 Top Agent Skills 策展、详细介绍、使用案例）
+- **最佳实践**（按主题整理竞品高频用法、提示套路与工程工作流）
 - 竞品演进历史时间线
 - 内容生产链路、质量机制、分阶段路线图展示
 
@@ -22,6 +23,7 @@
 - `./index.html` — 门户首页
 - `./skills.html` — Skill 库
 - `./evolution.html` — 竞品演进历史
+- `./best-practices.html` — 最佳实践
 
 ## 目录
 
@@ -29,6 +31,8 @@
 - `./skills.html`：Skill 库页面
 - `./skills.js` / `./skills.css`：Skill 库交互与样式
 - `./evolution.html`：竞品演进页面
+- `./best-practices.html`：最佳实践页面
+- `./best-practices.js` / `./best-practices.css`：最佳实践交互与样式
 - `./styles.css`：全局样式
 - `./app.js`：首页交互逻辑
 - `./data/events.json`：竞品事件数据（25 条真实动态）
@@ -36,6 +40,8 @@
 - `./data/competitors.json`：竞品监控列表（7 家）
 - `./scripts/collect_events.py`：事件数据采集脚本
 - `./scripts/collect_skills.py`：Skill 数据采集脚本
+- `./scripts/collect_best_practices.py`：最佳实践采集脚本
+- `./data/best_practices.json`：最佳实践数据（自动采集）
 
 ## 数据来源
 
@@ -87,6 +93,29 @@ python3 scripts/collect_skills.py --dry-run
 | GitHub Copilot | [github/awesome-copilot](https://github.com/github/awesome-copilot) | 365+ community skills |
 | Cursor | [obra/superpowers](https://github.com/obra/superpowers) | Superpowers 工程纪律 skills |
 
+### 最佳实践数据
+
+最佳实践页按主题聚合 GitHub Copilot、Claude Code、Cursor、Replit Agent、Kiro 等竞品的高频使用方法，并从公开网络来源同步标题/摘要。
+
+```bash
+# 查看监控来源
+python3 scripts/collect_best_practices.py --sources
+
+# 抓取最佳实践元数据并写入 data/best_practices.json
+python3 scripts/collect_best_practices.py
+
+# 预览模式
+python3 scripts/collect_best_practices.py --dry-run
+```
+
+监控来源包含产品文档、官方公开页面与最佳实践说明页，例如：
+
+- GitHub Copilot Docs（prompt engineering / code review / prompt files）
+- Claude Code Docs（best practices / common workflows / subagents）
+- Cursor Docs（rules）
+- Replit Docs（Agent Plan mode）
+- Kiro 官网（spec-driven workflow）
+
 ## 部署到 GitHub Pages
 
 仓库已添加 GitHub Pages 自动部署工作流：
@@ -94,6 +123,7 @@ python3 scripts/collect_skills.py --dry-run
 - 推送部署：`./.github/workflows/deploy-pages.yml`（推送到 `main` 时触发）
 - 定时采集发布：`./.github/workflows/daily-collect-and-publish.yml`（每天 08:30 北京时间：事件 + Skills 采集并发布）
 - Skill 专项采集：`./.github/workflows/collect-skills-and-deploy.yml`（每周一 09:00 北京时间，可手动触发）
+- 最佳实践采集：`./.github/workflows/collect-best-practices-and-deploy.yml`（每 3 天执行一次，可手动触发）
 
 ### 定时任务
 
@@ -105,6 +135,8 @@ python3 scripts/collect_skills.py --dry-run
 4. 部署更新后的门户到 GitHub Pages
 
 每周一 **09:00（北京时间）** 额外执行 Skill 专项采集工作流（可手动触发）。
+
+每 **3 天** 额外执行一次最佳实践采集工作流，同步 `data/best_practices.json` 并重新部署站点。
 
 也可在 GitHub Actions 页面手动触发 **Daily collect and publish** 工作流。
 
