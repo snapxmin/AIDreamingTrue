@@ -84,9 +84,106 @@
   color: #fff;
 }
 
-.badge.new {
+.feedback-section {
+  margin-top: 8px;
+}
+
+.feedback-section h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.feedback-count {
+  font-size: 12px;
+  font-weight: normal;
+  color: #6b7280;
+}
+
+.feedback-note,
+.feedback-empty {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 0 0 12px;
+}
+
+.feedback-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feedback-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px;
+  background: #fafafa;
+}
+
+.feedback-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+.feedback-source {
+  background: #dbeafe;
+  color: #1d4ed8;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.feedback-author {
+  color: #374151;
+  font-weight: 600;
+}
+
+.feedback-date {
+  color: #9ca3af;
+}
+
+.feedback-sentiment {
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.sentiment-pos {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.sentiment-neg {
   background: #fee2e2;
   color: #b91c1c;
+}
+
+.sentiment-neu {
+  background: #f3f4f6;
+  color: #4b5563;
+}
+
+.feedback-text {
+  margin: 0 0 8px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: #1f2937;
+}
+
+.feedback-link {
+  font-size: 13px;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.badge.feedback {
+  background: #e0e7ff;
+  color: #3730a3;
 }
 
 .meta-card {

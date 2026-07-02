@@ -76,6 +76,7 @@ Skill 库采用 **策展 + 全量索引 + 变更检测** 三层架构：
 | `data/skills-snapshot.json` | 变更检测快照（contentHash） |
 | `data/skill-changes.json` | 新增/更新变更 feed |
 | `data/skill-event-links.json` | 事件 ↔ Skill 关联 |
+| `data/skill-feedback.json` | Top 20 用户反馈（HN / GitHub / Reddit） |
 | `data/skill-equivalents.json` | 跨平台能力等价映射 |
 
 ```bash
@@ -87,6 +88,9 @@ python3 scripts/collect_skills.py
 
 # 快速采集（跳过非策展 Skill 的远程抓取）
 python3 scripts/collect_skills.py --skip-index-fetch
+
+# 采集 Top 20 用户反馈（HN / GitHub Issues / Reddit）
+python3 scripts/collect_skill_feedback.py
 
 # 预览模式
 python3 scripts/collect_skills.py --dry-run
