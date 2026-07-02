@@ -221,12 +221,14 @@ button {
 .quality,
 .roadmap,
 .skill-radar-home,
-.mcp-radar-home {
+.mcp-radar-home,
+.llm-radar-home {
   margin: 0 16px 16px;
 }
 
 .skill-radar-home .section-title,
-.mcp-radar-home .section-title {
+.mcp-radar-home .section-title,
+.llm-radar-home .section-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -240,16 +242,22 @@ button {
 }
 
 .skill-radar-list,
-.mcp-radar-list {
+.mcp-radar-list,
+.llm-radar-list {
   margin: 0;
   padding-left: 20px;
   line-height: 1.7;
 }
 
 .skill-radar-list a,
-.mcp-radar-list a {
+.mcp-radar-list a,
+.llm-radar-list a {
   color: #2563eb;
   text-decoration: none;
+}
+
+.llm-radar-list a {
+  color: #7c3aed;
 }
 
 @media (max-width: 1100px) {

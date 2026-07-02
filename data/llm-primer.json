@@ -1,0 +1,198 @@
+{
+  "meta": {
+    "title": "LLM 评测第一性原理",
+    "subtitle": "如何读懂 SOTA 大模型：自动化基准、人工盲测与社区口碑三条证据链，以及 AI Coding 场景下的选型逻辑。",
+    "lastUpdated": "2026-07-02"
+  },
+  "essence": {
+    "headline": "LLM 评测是什么：能力边界的可观测投影",
+    "definition": "大语言模型评测是通过标准化任务集、人工偏好实验与真实用户反馈，将模型能力映射为可比较分数的过程。没有单一「最强模型」——不同评测维度揭示不同能力切面。",
+    "problem": "厂商自报分数、评测集污染、任务与真实场景脱节，导致「榜单第一」不等于「你的场景最好」。需要多源交叉验证：自动化基准 + 人工盲测 + 外网口碑。",
+    "firstPrinciples": [
+      {
+        "title": "自动化评测：可复现但可能过拟合",
+        "body": "SWE-bench、HumanEval、MMLU 等基准提供客观分数，便于横向对比。风险在于模型可能在训练数据中见过类似题目（数据污染），且基准任务往往简化了真实软件工程的复杂度。"
+      },
+      {
+        "title": "人工评测：贵但最接近真实偏好",
+        "body": "LMSYS Chatbot Arena 通过盲测让用户选择更好的回答，Elo 排名反映人类主观偏好。MT-Bench、WebDev Arena 等针对特定能力维度做人工打分。样本量与评委构成会影响结论。"
+      },
+      {
+        "title": "社区口碑：滞后但捕捉长期体验",
+        "body": "HN、Reddit、X 上的开发者反馈反映真实使用痛点：延迟、价格、幻觉率、工具集成。口碑有幸存者偏差，但大量一致的正面/负面信号值得重视。"
+      },
+      {
+        "title": "场景决定选型，而非榜单排名",
+        "body": "AI Coding 场景关注 SWE-bench、LiveCodeBench；推理场景看 GPQA/AIME；成本敏感看性价比；合规场景看数据驻留与开源权重。同一模型在不同 Host（Cursor/Copilot）表现也可能不同。"
+      }
+    ],
+    "comparison": {
+      "title": "三类评测证据链对比",
+      "rows": [
+        {
+          "dimension": "数据来源",
+          "automated": "标准化题库（SWE-bench 等）",
+          "manual": "人类评委盲测（Arena Elo）",
+          "sentiment": "社区讨论（HN/Reddit/X）"
+        },
+        {
+          "dimension": "可复现性",
+          "automated": "高（固定 prompt + 评分脚本）",
+          "manual": "中（样本量与评委影响大）",
+          "sentiment": "低（主观、有偏差）"
+        },
+        {
+          "dimension": "成本",
+          "automated": "低（API 调用即可跑）",
+          "manual": "高（需组织人工评审）",
+          "sentiment": "低（爬虫 + NLP 聚合）"
+        },
+        {
+          "dimension": "AI Coding 价值",
+          "automated": "SWE-bench 最接近真实工程",
+          "manual": "WebDev Arena 测 UI 生成",
+          "sentiment": "捕捉价格/延迟/幻觉等体验"
+        }
+      ]
+    }
+  },
+  "value": {
+    "headline": "对 AI Coding 团队的核心价值",
+    "pillars": [
+      {
+        "title": "多源交叉验证",
+        "metric": "3 条证据链",
+        "body": "单一榜单容易误导。本库同时展示自动化分数、Arena Elo 与社区口碑，帮助团队建立立体认知。"
+      },
+      {
+        "title": "场景化筛选",
+        "metric": "按任务类型 · 提供商 · 成本",
+        "body": "代码 Agent、深度推理、高性价比、开源权重等分类，快速定位适合你团队的模型候选。"
+      },
+      {
+        "title": "产品落地映射",
+        "metric": "Cursor · Copilot · Claude Code",
+        "body": "标注每个模型在哪些 AI Coding 产品中可用，避免「榜单很强但产品里选不到」。"
+      },
+      {
+        "title": "变更雷达",
+        "metric": "每周同步",
+        "body": "新模型发布、基准分数更新、口碑趋势变化自动检测，保持洞察时效性。"
+      }
+    ],
+    "audiences": [
+      { "role": "工程负责人", "benefit": "基于 SWE-bench + 成本选择团队默认模型" },
+      { "role": "个人开发者", "benefit": "对比 Cursor/Copilot 可选模型的真实口碑" },
+      { "role": "平台架构师", "benefit": "评估开源 vs 闭源、自部署 vs API 的性价比" }
+    ]
+  },
+  "adoption": {
+    "headline": "主流评测体系概览",
+    "summary": "AI Coding 领域已形成「工程基准 + 人工偏好 + 社区反馈」的三层评测生态。",
+    "ecosystems": [
+      {
+        "name": "SWE-bench",
+        "scale": "2,294 真实 GitHub Issue",
+        "platform": "软件工程",
+        "repo": "princeton-nlp/SWE-bench",
+        "highlight": "最接近真实 AI Coding 能力的自动化基准，Verified 子集防数据污染。"
+      },
+      {
+        "name": "LMSYS Chatbot Arena",
+        "scale": "200万+ 投票",
+        "platform": "通用对话",
+        "repo": "lm-sys/FastChat",
+        "highlight": "全球最大人工盲测平台，Elo 排名是业界参考标准。"
+      },
+      {
+        "name": "Artificial Analysis",
+        "scale": "50+ 模型",
+        "platform": "综合基准",
+        "repo": "artificialanalysis.ai",
+        "highlight": "独立第三方，覆盖质量、速度、价格三维对比。"
+      },
+      {
+        "name": "LiveCodeBench",
+        "scale": "持续更新题库",
+        "platform": "竞赛编程",
+        "repo": "LiveCodeBench/LiveCodeBench",
+        "highlight": "防污染设计，持续从 LeetCode 等平台抽取新题。"
+      }
+    ],
+    "milestones": [
+      {
+        "date": "2024-08",
+        "event": "SWE-bench Verified 发布",
+        "impact": "解决数据污染问题，成为 AI Coding 能力评测金标准。"
+      },
+      {
+        "date": "2025-01",
+        "event": "DeepSeek R1 开源",
+        "impact": "推理模型开源化，改变性价比格局。"
+      },
+      {
+        "date": "2025-05",
+        "event": "Claude Opus 4 / GPT-5 发布",
+        "impact": "SWE-bench 突破 70%，AI Agent 代码能力质变。"
+      },
+      {
+        "date": "2026-06",
+        "event": "Kimi K2 登陆 GitHub Copilot",
+        "impact": "中国模型首次进入全球主流 AI Coding 产品。"
+      }
+    ],
+    "cases": [
+      {
+        "title": "Cursor 默认模型选择",
+        "industry": "个人开发者",
+        "model": "Claude Sonnet 4",
+        "scenario": "日常功能开发与 Bug 修复。",
+        "outcome": "社区口碑 4.7/5，SWE-bench 68%+，价格仅为 Opus 1/5。"
+      },
+      {
+        "title": "企业私有化部署",
+        "industry": "金融科技",
+        "model": "DeepSeek R1 + V3",
+        "scenario": "敏感代码分析不可出网。",
+        "outcome": "自部署 R1 推理 + V3 批量生成，成本降低 90%+。"
+      }
+    ]
+  },
+  "guide": {
+    "headline": "AI Coding 场景选型指南",
+    "steps": [
+      {
+        "step": 1,
+        "title": "明确任务类型",
+        "body": "日常补全 → 高性价比模型；复杂重构 → SWE-bench 排名靠前；算法设计 → 推理模型（o3/R1）。"
+      },
+      {
+        "step": 2,
+        "title": "看三维证据",
+        "body": "自动化分数确认能力上限；Arena Elo 确认人类偏好；社区口碑确认真实体验（延迟、幻觉、价格）。"
+      },
+      {
+        "step": 3,
+        "title": "确认产品可用性",
+        "body": "榜单第一的模型未必在你的 IDE 里可选。检查 availableIn 字段。"
+      },
+      {
+        "step": 4,
+        "title": "算清成本",
+        "body": "高频场景用 DeepSeek V3 / Gemini Flash；关键任务用 Opus / o3。输入输出价格比可达 50:1。"
+      },
+      {
+        "step": 5,
+        "title": "小范围 A/B",
+        "body": "在真实代码库上用相同 prompt 对比 2-3 个候选模型，比榜单更接近你的场景。"
+      }
+    ],
+    "antiPatterns": [
+      "只看 MMLU 通用分数选代码模型",
+      "忽视社区对幻觉率和延迟的反馈",
+      "用推理模型（o3）做高频简单补全",
+      "不考虑数据合规就选用闭源 API",
+      "追逐新模型发布忽视稳定性"
+    ]
+  }
+}

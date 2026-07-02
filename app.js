@@ -1,11 +1,13 @@
 (async function init() {
-  const [events, competitors, skillChanges, skillsMeta, mcpChanges, mcpsMeta] = await Promise.all([
+  const [events, competitors, skillChanges, skillsMeta, mcpChanges, mcpsMeta, llmChanges, llmsMeta] = await Promise.all([
     loadEvents(),
     loadCompetitors(),
     loadJson("./data/skill-changes.json"),
     loadJson("./data/skills.json"),
     loadJson("./data/mcp-changes.json"),
-    loadJson("./data/mcps.json")
+    loadJson("./data/mcps.json"),
+    loadJson("./data/llm-changes.json"),
+    loadJson("./data/llms.json")
   ]);
 
   const ui = {
@@ -37,6 +39,7 @@
   renderCompanyTags(topCompanies, ui);
   renderSkillRadar(skillChanges, skillsMeta);
   renderMcpRadar(mcpChanges, mcpsMeta);
+  renderLlmRadar(llmChanges, llmsMeta);
 
   const onChange = () => {
     syncCompanyTags(ui);
@@ -220,6 +223,46 @@ function renderMcpRadar(mcpChanges, mcpsMeta) {
     .map((c) => {
       const label = c.type === "added" ? "新增" : "更新";
       return `<li><strong>[${label}]</strong> <a href="./mcp.html#${encodeURIComponent(c.slug)}">${escapeHtml(c.displayName || c.slug)}</a> — ${escapeHtml(c.summary || "")}</li>`;
+    })
+    .join("");
+}
+
+function renderLlmRadar(llmChanges, llmsMeta) {
+  const container = document.getElementById("llmRadarList");
+  const section = document.getElementById("llmRadarHome");
+  if (!container || !section) return;
+
+  const changes = (llmChanges.changes || []).slice(0, 6);
+  const meta = llmsMeta.meta || {};
+  const topLlms = (llmsMeta.llms || []).slice(0, 3);
+
+  if (!meta.totalCount && !topLlms.length) {
+    section.hidden = true;
+    return;
+  }
+
+  const summary = document.createElement("p");
+  summary.className = "skill-radar-summary";
+  summary.textContent = `SOTA 精选 ${meta.totalCount || "—"} 个 · 全量索引 ${meta.indexTotalCount || "—"} · 本周新增 ${meta.newCount || 0}`;
+  section.insertBefore(summary, container);
+
+  if (changes.length) {
+    container.innerHTML = changes
+      .map((c) => {
+        const label = c.type === "added" ? "新增" : "更新";
+        return `<li><strong>[${label}]</strong> <a href="./llm.html#${encodeURIComponent(c.slug)}">${escapeHtml(c.displayName || c.slug)}</a> — ${escapeHtml(c.summary || "")}</li>`;
+      })
+      .join("");
+    return;
+  }
+
+  container.innerHTML = topLlms
+    .map((l) => {
+      const swe = (l.benchmarks?.automated || []).find((b) => b.name.includes("SWE-bench"));
+      const sweLabel = swe ? `SWE-bench ${swe.score}%` : "";
+      const sentiment = l.sentiment ? `口碑 ${l.sentiment.score}/${l.sentiment.maxScore}` : "";
+      const metrics = [sweLabel, sentiment].filter(Boolean).join(" · ");
+      return `<li><strong>#${l.rank}</strong> <a href="./llm.html#${encodeURIComponent(l.slug)}">${escapeHtml(l.displayName)}</a>${metrics ? ` — ${escapeHtml(metrics)}` : ""}</li>`;
     })
     .join("");
 }
