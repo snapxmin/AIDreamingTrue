@@ -222,8 +222,8 @@ def fetch_url(url, timeout=20):
 
 
 def strip_tags(value):
-    text = re.sub(r"<script[^>]*>.*?</script>", " ", value, flags=re.DOTALL | re.IGNORECASE)
-    text = re.sub(r"<style[^>]*>.*?</style>", " ", text, flags=re.DOTALL | re.IGNORECASE)
+    text = re.sub(r"<script\b[^>]*>.*?</script\s*>", " ", value, flags=re.DOTALL | re.IGNORECASE)
+    text = re.sub(r"<style\b[^>]*>.*?</style\s*>", " ", text, flags=re.DOTALL | re.IGNORECASE)
     text = re.sub(r"<[^>]+>", " ", text)
     text = re.sub(r"\s+", " ", text)
     return text.strip()
