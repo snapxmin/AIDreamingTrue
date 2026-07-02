@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>最佳实践 · AI Coding 信息平台</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./best-practices.css" />
+  </head>
+  <body class="bp-page">
+    <header class="top bp-header">
+      <div class="header-row">
+        <div>
+          <h1>最佳实践</h1>
+          <p>按主题聚合用户使用竞品的最佳实践 · 来源：产品文档、论坛、博客、HN / Reddit / GitHub · 每 3 天自动更新</p>
+        </div>
+        <nav class="site-nav" aria-label="站点导航">
+          <a class="nav-link" href="./index.html">门户首页</a>
+          <a class="nav-link" href="./evolution.html">竞品演进</a>
+          <a class="nav-link" href="./skills.html">Skill 库</a>
+          <a class="nav-link" href="./mcp.html">MCP 库</a>
+          <a class="nav-link" href="./llm.html">LLM 库</a>
+          <a class="nav-link active" href="./best-practices.html" aria-current="page">最佳实践</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="panel bp-meta" id="bpMeta"></section>
+
+    <nav class="panel topic-nav" aria-label="主题筛选">
+      <div id="topicTabs" class="topic-tabs"></div>
+    </nav>
+
+    <nav class="panel competitor-nav bp-competitor-nav" aria-label="竞品筛选">
+      <div id="competitorTabs" class="competitor-tabs"></div>
+    </nav>
+
+    <main class="bp-main">
+      <aside class="panel bp-filters">
+        <h2>筛选</h2>
+        <input id="bpSearch" type="search" placeholder="搜索标题、摘要、标签..." />
+
+        <label for="sourceFilter">来源类型</label>
+        <select id="sourceFilter">
+          <option value="all">全部来源</option>
+        </select>
+
+        <label class="checkbox-row">
+          <input id="curatedOnly" type="checkbox" />
+          仅显示策展精选
+        </label>
+
+        <div class="sync-info" id="syncInfo"></div>
+      </aside>
+
+      <section class="panel bp-content">
+        <div class="section-title">
+          <h2>实践列表</h2>
+          <span id="bpCount"></span>
+        </div>
+        <div id="bpList" class="bp-list" role="list"></div>
+        <p id="emptyBp" class="empty-state" hidden>没有匹配的最佳实践。</p>
+      </section>
+
+      <aside class="panel bp-detail-panel">
+        <h2>详情</h2>
+        <article id="bpDetail" class="bp-detail">
+          <p>请从左侧列表选择一条最佳实践查看详情与来源链接。</p>
+        </article>
+      </aside>
+    </main>
+
+    <script src="./best-practices.js?v=1"></script>
+  </body>
+</html>
