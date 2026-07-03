@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-02T11:23:03Z",
+    "lastUpdated": "2026-07-03T01:08:00Z",
     "skillCount": 20,
-    "totalComments": 32,
+    "totalComments": 27,
     "sources": [
       "hacker-news",
       "github",
@@ -22,20 +22,8 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 1,
-      "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jfiscman",
-          "date": "2026-05-19",
-          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
-          "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 13,
-          "sentiment": "positive"
-        }
-      ]
+      "feedbackCount": 0,
+      "comments": []
     },
     "superpowers/writing-plans": {
       "slug": "writing-plans",
@@ -48,31 +36,8 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 2,
-      "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jfiscman",
-          "date": "2026-05-19",
-          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
-          "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 13,
-          "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1859-pixeru",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "pixeru",
-          "date": "2026-06-29",
-          "text": "Support Hermes Agent as a Superpowers harness <html> <body> <!--StartFragment--><html><head></head><body><p>I’d like to add another user case for Hermes Agent support.</p><p>My use case is using Hermes Agent as my main coding harness, especially for larger game development / Unreal Engine workflows where I want the agent to follow a stronger engineering methodology instead of improvising each session. Superpowers already gives that structure in other harnesses, but Hermes users currently have to either manually port skills, copy/paste instructions into <code inline=\"\">SOUL.md</code>, or delega",
-          "url": "https://github.com/obra/superpowers/issues/1859",
-          "score": 0,
-          "sentiment": "negative"
-        }
-      ]
+      "feedbackCount": 0,
+      "comments": []
     },
     "superpowers/verification-before-completion": {
       "slug": "verification-before-completion",
@@ -119,31 +84,8 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 2,
-      "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1888-glen-84",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "glen-84",
-          "date": "2026-07-01",
-          "text": "subagent-driven-development: .superpowers/sdd scratch artifacts are never pruned and silently collide across efforts ## What problem does this solve? The `subagent-driven-development` skill writes per-task scratch artifacts to `.superpowers/sdd/` — `task-N-brief.md`, `task-N-report.md`, and a `review-*.diff` (or `task-N-review.diff`) per task, plus the `progress.md` ledger. Nothing ever prunes them. There is no cleanup step in the skill itself nor in `finishing-a-development-branch`, so the directory grows without bound and mixes artifacts from unrelated, already-merged efforts. Two concrete f",
-          "url": "https://github.com/obra/superpowers/issues/1888",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1883-jabberwocky1989",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Jabberwocky1989",
-          "date": "2026-07-01",
-          "text": "Codex-visible skills need Codex host adapter wording # Codex-visible Superpowers skills need Codex host adapter wording ## Summary The Superpowers plugin skills are visible in Codex, but several skill bodies still contain Claude Code-specific operational guidance. In a Codex session this can mislead agents into looking for unavailable tools or following the wrong task-tracking workflow. ## Affected Skills Observed - `using-superpowers` - `brainstorming` - `subagent-driven-development` - `executing-plans` - `requesting-code-review` - `dispatching-parallel-agents` - `writing-skills` ## Environme",
-          "url": "https://github.com/obra/superpowers/issues/1883",
-          "score": 0,
-          "sentiment": "neutral"
-        }
-      ]
+      "feedbackCount": 0,
+      "comments": []
     },
     "superpowers/requesting-code-review": {
       "slug": "requesting-code-review",
@@ -179,31 +121,8 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 2,
-      "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1889-thoaud",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "thoaud",
-          "date": "2026-07-01",
-          "text": "SessionStart using-superpowers block is inherited into read-only subagents that can't use it — per-turn tax ## Problem Your `hooks/session-start` injects the `using-superpowers` skill (wrapped in `<EXTREMELY_IMPORTANT>`) into `additionalContext` — deliberately, to force the onboarding in the main session. Current payload measured on `6.1.0`: ``` CLAUDE_PLUGIN_ROOT=<root> bash hooks/session-start | jq -r '.hookSpecificOutput.additionalContext' | wc -c # => 3289 chars (~820 tokens) ``` The issue isn't the size in the main session — that's intended. It's that Claude Code **inherits** the main ses",
-          "url": "https://github.com/obra/superpowers/issues/1889",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1883-jabberwocky1989",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Jabberwocky1989",
-          "date": "2026-07-01",
-          "text": "Codex-visible skills need Codex host adapter wording # Codex-visible Superpowers skills need Codex host adapter wording ## Summary The Superpowers plugin skills are visible in Codex, but several skill bodies still contain Claude Code-specific operational guidance. In a Codex session this can mislead agents into looking for unavailable tools or following the wrong task-tracking workflow. ## Affected Skills Observed - `using-superpowers` - `brainstorming` - `subagent-driven-development` - `executing-plans` - `requesting-code-review` - `dispatching-parallel-agents` - `writing-skills` ## Environme",
-          "url": "https://github.com/obra/superpowers/issues/1883",
-          "score": 0,
-          "sentiment": "neutral"
-        }
-      ]
+      "feedbackCount": 0,
+      "comments": []
     },
     "awesome-copilot/ai-ready": {
       "slug": "ai-ready",
@@ -290,7 +209,7 @@
       "slug": "frontend-design",
       "ecosystem": "anthropics-skills",
       "displayName": "Frontend Design",
-      "feedbackCount": 3,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-189-chuggies510",
@@ -304,6 +223,17 @@
           "sentiment": "negative"
         },
         {
+          "id": "github-https-github-com-anthropics-skills-issues-141-michellepace",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "michellepace",
+          "date": "2025-12-12",
+          "text": "Blog post: broken link (web-artifacts-builder skill ) Hello, On https://claude.com/blog/improving-frontend-design-through-skills there is a broken link: > This led us to create a [web-artifacts-builder skill](https://github.com/anthropics/skills/blob/main/web-artifacts-builder/SKILL.md) which leverages Claude’s ability to use a computer and guides Claude to build artifacts using multiple files and modern web technologies like React, Tailwind CSS and shadcn/ui. The link is: https://github.com/anthropics/skills/blob/main/web-artifacts-builder/SKILL.md Best wishes, Michelle",
+          "url": "https://github.com/anthropics/skills/issues/141",
+          "score": 2,
+          "sentiment": "neutral"
+        },
+        {
           "id": "github-https-github-com-anthropics-skills-issues-1087-jianghe12",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -313,6 +243,17 @@
           "url": "https://github.com/anthropics/skills/issues/1087",
           "score": 2,
           "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-206-thepexcel",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ThepExcel",
+          "date": "2026-01-04",
+          "text": "Plugin Marketplace installs extra skills when plugin source is repo root (./) ## 🐞 Issue: Plugin Marketplace installs extra skills when `source` is repo root (`./`) ### Summary When installing a skills bundle via Plugin Marketplace (e.g. `plugin marketplace add anthropics/skills`), the installer installs **all skills found under the plugin `source` directory**, not only the skills explicitly listed in the `\"skills\"` array. This results in many unintended skills being installed. --- ### Expected behavior Given the following configuration: \"skills\": [ \"./skills/xlsx\", \"./skills/docx\", \"./skills/",
+          "url": "https://github.com/anthropics/skills/issues/206",
+          "score": 1,
+          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-anthropics-skills-issues-1109-harishwtf",

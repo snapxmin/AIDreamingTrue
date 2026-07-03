@@ -1,5 +1,15 @@
 {
-  "generatedAt": "2026-07-02T09:43:41Z",
-  "isBaselineRun": true,
-  "changes": []
+  "generatedAt": "2026-07-03T01:05:41Z",
+  "isBaselineRun": false,
+  "changes": [
+    {
+      "type": "added",
+      "key": "awesome-copilot/pester-should-migration",
+      "ecosystem": "awesome-copilot",
+      "slug": "pester-should-migration",
+      "displayName": "Pester Should Migration",
+      "summary": "生态新增 Skill：Pester Should Migration",
+      "detectedAt": "2026-07-03T01:06:24Z"
+    }
+  ]
 }

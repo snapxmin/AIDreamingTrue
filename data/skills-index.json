@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-02T09:43:41Z",
-    "totalCount": 437,
-    "newCount": 0,
+    "lastUpdated": "2026-07-03T01:05:41Z",
+    "totalCount": 438,
+    "newCount": 1,
     "sources": [
       "superpowers",
       "awesome-copilot",
@@ -524,6 +524,26 @@
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 33
+    },
+    {
+      "id": "idx-awesome-copilot-pester-should-migration",
+      "slug": "pester-should-migration",
+      "displayName": "Pester Should Migration",
+      "ecosystem": "awesome-copilot",
+      "platform": "GitHub Copilot",
+      "platforms": [
+        "GitHub Copilot",
+        "OpenCode"
+      ],
+      "description": "Experimental (preview) Pester skill for migrating classic Should -Be (v5) assertion syntax to the new Should-* (v6) assertions (note the hyphen, no space), e.g. `Should -Be` -> `Should-Be`, `Should -Not -Be` -> `Should-NotBe`. Tracks Pester 6, which is still a release candidate, so this guidance may change; verified against Pester 6.0.0-rc2. Use when converting Pester v5 assertions to Pester v6 Should-* operators, modernizing a Pester test suite, or when a user asks to migrate, convert, or rewrite `Should -...` calls in .Tests.ps1 / PowerShell files.",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/pester-should-migration",
+      "installCommand": "gh skill install github/awesome-copilot pester-should-migration",
+      "inTopCurated": false,
+      "isNew": true,
+      "discoveredAt": "2026-07-03T01:05:41Z",
+      "lastChangedAt": "2026-07-03T01:05:41Z",
+      "pathPrefix": "skills",
+      "activityScore": 30
     },
     {
       "id": "idx-awesome-copilot-acreadiness-assess",
