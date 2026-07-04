@@ -1,5 +1,35 @@
 [
   {
+    "id": "auto-claude-v2-1-201",
+    "title": "Claude Code v2.1.201 发布",
+    "date": "2026-07-03",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "Anthropic",
+    "heat": 75,
+    "growth": 8,
+    "sourceTier": "A",
+    "summary": "## What's changed  - Claude Sonnet 5 sessions no longer use the mid-conversation system role for harness reminders",
+    "whyImportant": "Claude Code 持续高频迭代，终端 Agent 能力不断增强。",
+    "impact": "关注 release notes 中的权限、MCP 和 subagent 相关变更。",
+    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.201"
+  },
+  {
+    "id": "auto-claude-v2-1-200",
+    "title": "Claude Code v2.1.200 发布",
+    "date": "2026-07-03",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "Anthropic",
+    "heat": 75,
+    "growth": 8,
+    "sourceTier": "A",
+    "summary": "## What's changed  - Changed `AskUserQuestion` dialogs to no longer auto-continue by default; opt into an idle timeout via `/config` - Changed the \"default\" permission mode to \"Manual\" across the CLI,",
+    "whyImportant": "Claude Code 持续高频迭代，终端 Agent 能力不断增强。",
+    "impact": "关注 release notes 中的权限、MCP 和 subagent 相关变更。",
+    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.200"
+  },
+  {
     "id": "auto-claude-v2-1-199",
     "title": "Claude Code v2.1.199 发布",
     "date": "2026-07-02",
