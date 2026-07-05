@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-04T01:05:58Z",
+    "lastUpdated": "2026-07-05T01:11:48Z",
     "skillCount": 20,
-    "totalComments": 29,
+    "totalComments": 33,
     "sources": [
       "hacker-news",
       "github",
@@ -15,8 +15,20 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 0,
-      "comments": []
+      "feedbackCount": 1,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1920-nicogef",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "nicogef",
+          "date": "2026-07-04",
+          "text": "feat: export gate definitions from skill frontmatter ## Context The DAS `gate` command (nicogef/documentation-as-code#225) currently hardcodes step-to-phase mapping and check definitions in `core/src/commands/gate.ts`. Superpowers skills already define gate criteria per workflow step (e.g., brainstorming requires SRs before planning, writing-plans requires HLRs/DRs before implementation). ## Proposal Move gate policy definitions from DAS into superpowers skills: 1. Each skill declares its exit criteria in a structured format (e.g., a `gates:` block in skill frontmatter) 2. DAS reads gate defin",
+          "url": "https://github.com/obra/superpowers/issues/1920",
+          "score": 0,
+          "sentiment": "neutral"
+        }
+      ]
     },
     "superpowers/test-driven-development": {
       "slug": "test-driven-development",
@@ -41,8 +53,20 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 0,
-      "comments": []
+      "feedbackCount": 1,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1920-nicogef",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "nicogef",
+          "date": "2026-07-04",
+          "text": "feat: export gate definitions from skill frontmatter ## Context The DAS `gate` command (nicogef/documentation-as-code#225) currently hardcodes step-to-phase mapping and check definitions in `core/src/commands/gate.ts`. Superpowers skills already define gate criteria per workflow step (e.g., brainstorming requires SRs before planning, writing-plans requires HLRs/DRs before implementation). ## Proposal Move gate policy definitions from DAS into superpowers skills: 1. Each skill declares its exit criteria in a structured format (e.g., a `gates:` block in skill frontmatter) 2. DAS reads gate defin",
+          "url": "https://github.com/obra/superpowers/issues/1920",
+          "score": 0,
+          "sentiment": "neutral"
+        }
+      ]
     },
     "superpowers/systematic-debugging": {
       "slug": "systematic-debugging",
@@ -96,8 +120,20 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 0,
-      "comments": []
+      "feedbackCount": 1,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1917-jorgen-k",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jorgen-k",
+          "date": "2026-07-04",
+          "text": "subagent-driven-development: no inline-vs-dispatch threshold — small, tightly-coupled changes pay fan-out overhead for isolation they don't need - [x] I searched existing issues and this has not been proposed before *Closest prior art, checked open and closed: the cost-tiering stack (#1744 / #1717 / #1716) fixes which **model** each SDD role runs on, and #1747 adds the **reasoning-effort** dimension of the same problem. #1835 is about dispatch **mechanism** (inline Agent vs Workflow fan-out). All three optimize how cheaply a dispatched subagent runs. This proposal is a different, prior axis: *",
+          "url": "https://github.com/obra/superpowers/issues/1917",
+          "score": 0,
+          "sentiment": "negative"
+        }
+      ]
     },
     "superpowers/requesting-code-review": {
       "slug": "requesting-code-review",
@@ -136,15 +172,15 @@
       "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1900-ganningbest",
+          "id": "github-https-github-com-obra-superpowers-issues-1917-jorgen-k",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "ganningBest",
-          "date": "2026-07-03",
-          "text": "Superpowers is hard to use for prompt-engineering-heavy work when TDD validates shape instead of content quality - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? Superpowers works well for deterministic code work: Java/Python codebases, scripts, CLI behavior, and other engineering tasks where the expected behavior can be tested through executable code. But for prompt-engineering-heavy work, I am running into a serious test-boundary problem. In these workflows, the deliverable is often structured generated content, not executable behavior d",
-          "url": "https://github.com/obra/superpowers/issues/1900",
+          "author": "jorgen-k",
+          "date": "2026-07-04",
+          "text": "subagent-driven-development: no inline-vs-dispatch threshold — small, tightly-coupled changes pay fan-out overhead for isolation they don't need - [x] I searched existing issues and this has not been proposed before *Closest prior art, checked open and closed: the cost-tiering stack (#1744 / #1717 / #1716) fixes which **model** each SDD role runs on, and #1747 adds the **reasoning-effort** dimension of the same problem. #1835 is about dispatch **mechanism** (inline Agent vs Workflow fan-out). All three optimize how cheaply a dispatched subagent runs. This proposal is a different, prior axis: *",
+          "url": "https://github.com/obra/superpowers/issues/1917",
           "score": 0,
-          "sentiment": "neutral"
+          "sentiment": "negative"
         }
       ]
     },
@@ -359,7 +395,7 @@
       "slug": "mcp-builder",
       "ecosystem": "anthropics-skills",
       "displayName": "MCP Builder",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1328-wglynn",
@@ -391,6 +427,17 @@
           "date": "2026-05-04",
           "text": "Feature request: add coordinator.domains: frontmatter to claude-api SKILL.md (for spec-coordinator tag-routing) ## Context A separate skills framework — [Agent Upskill's spec-coordinator](https://github.com/agentupskill/skills-core/tree/main/spec-coordinator) — uses an SME registry to route cross-domain spec requests to relevant skills. The registry has two routing layers: 1. **Tag-match (deterministic)** — picks skills whose `coordinator.domains: [...]` frontmatter overlaps query tokens (confidence 1.0). 2. **Sonnet classifier (fallback)** — scores skills against the query (threshold 0.6 for ",
           "url": "https://github.com/anthropics/skills/issues/1091",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1390-ejprice",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ejprice",
+          "date": "2026-07-04",
+          "text": "mcp-builder: evaluation.py scores 0/N against any real MCP server (TextContent not JSON serializable, swallowed into fabricated tool errors) ## Summary `skills/mcp-builder/scripts/evaluation.py` (the Phase-4 evaluation harness) silently fabricates a tool-execution error for **every tool call against every real MCP server**, so the driven agent sees nothing but errors and the evaluation scores 0/N. The failure is invisible unless you dig into what the model was actually shown. ## Root cause `connections.py:70` returns `result.content` from `call_tool()` — which for a real MCP server is `list[mc",
+          "url": "https://github.com/anthropics/skills/issues/1390",
           "score": 0,
           "sentiment": "negative"
         }
