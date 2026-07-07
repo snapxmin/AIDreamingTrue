@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-06T01:36:41Z",
+    "lastUpdated": "2026-07-07T01:11:21Z",
     "skillCount": 20,
-    "totalComments": 35,
+    "totalComments": 38,
     "sources": [
       "hacker-news",
       "github",
@@ -29,13 +29,13 @@
           "sentiment": "neutral"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1929-qicesun",
+          "id": "github-https-github-com-obra-superpowers-issues-1936-y40881110-lang",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "qicesun",
-          "date": "2026-07-05",
-          "text": "Copilot CLI section in visual-companion.md names Bash tool APIs that Windows Copilot CLI (PowerShell mode) doesn't provide - [x] I searched existing issues and this is not a duplicate <!-- Searched open + closed. Related but distinct: #1680 (closed PowerShell-support PR), and the Windows lifecycle/orphan reports #893/#770/#767/#737/#1652 which look intentional/handled and which I am NOT reopening. I didn't find one about the Copilot CLI launch section naming a Bash tool surface that's absent on Windows. --> ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | v",
-          "url": "https://github.com/obra/superpowers/issues/1929",
+          "author": "y40881110-lang",
+          "date": "2026-07-06",
+          "text": "SDD progress ledger carries no plan identity — a second superpowers run in the same repo reads the previous run's `progress.md` and silently skips the new plan's tasks <!-- BEFORE FILING: Search open AND closed issues. The Windows SessionStart hook alone has been reported 29 times. If your issue already exists, add a comment or reaction to the existing one instead. --> - [x] I searched existing issues and this is not a duplicate ## Related issues (searched before filing) #1888 and #1816 report the *artifact* side of this (scratch files never pruned, `task-N-report.md` clobbered across efforts)",
+          "url": "https://github.com/obra/superpowers/issues/1936",
           "score": 0,
           "sentiment": "negative"
         }
@@ -64,7 +64,7 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1920-nicogef",
@@ -76,6 +76,17 @@
           "url": "https://github.com/obra/superpowers/issues/1920",
           "score": 0,
           "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1936-y40881110-lang",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "y40881110-lang",
+          "date": "2026-07-06",
+          "text": "SDD progress ledger carries no plan identity — a second superpowers run in the same repo reads the previous run's `progress.md` and silently skips the new plan's tasks <!-- BEFORE FILING: Search open AND closed issues. The Windows SessionStart hook alone has been reported 29 times. If your issue already exists, add a comment or reaction to the existing one instead. --> - [x] I searched existing issues and this is not a duplicate ## Related issues (searched before filing) #1888 and #1816 report the *artifact* side of this (scratch files never pruned, `task-N-report.md` clobbered across efforts)",
+          "url": "https://github.com/obra/superpowers/issues/1936",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -112,26 +123,26 @@
       "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1917-jorgen-k",
+          "id": "github-https-github-com-obra-superpowers-issues-1936-y40881110-lang",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "jorgen-k",
-          "date": "2026-07-04",
-          "text": "subagent-driven-development: no inline-vs-dispatch threshold — small, tightly-coupled changes pay fan-out overhead for isolation they don't need - [x] I searched existing issues and this has not been proposed before *Closest prior art, checked open and closed: the cost-tiering stack (#1744 / #1717 / #1716) fixes which **model** each SDD role runs on, and #1747 adds the **reasoning-effort** dimension of the same problem. #1835 is about dispatch **mechanism** (inline Agent vs Workflow fan-out). All three optimize how cheaply a dispatched subagent runs. This proposal is a different, prior axis: *",
-          "url": "https://github.com/obra/superpowers/issues/1917",
+          "author": "y40881110-lang",
+          "date": "2026-07-06",
+          "text": "SDD progress ledger carries no plan identity — a second superpowers run in the same repo reads the previous run's `progress.md` and silently skips the new plan's tasks <!-- BEFORE FILING: Search open AND closed issues. The Windows SessionStart hook alone has been reported 29 times. If your issue already exists, add a comment or reaction to the existing one instead. --> - [x] I searched existing issues and this is not a duplicate ## Related issues (searched before filing) #1888 and #1816 report the *artifact* side of this (scratch files never pruned, `task-N-report.md` clobbered across efforts)",
+          "url": "https://github.com/obra/superpowers/issues/1936",
           "score": 0,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1927-gwokhou",
+          "id": "github-https-github-com-obra-superpowers-issues-1942-nedharvey1197",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "gwokhou",
-          "date": "2026-07-05",
-          "text": "Codex: close completed subagents after results are consumed I searched existing issues and PRs and did not find a direct duplicate. ## Environment | Field | Value | | --- | --- | | Superpowers version | 5.1.3 (`~/.codex/plugins/cache/openai-curated/superpowers/d6169bef`) | | Harness | Codex CLI / Codex plugin environment | | Harness version | `codex-cli 0.142.5` (`@openai/codex@0.142.5`, linux-x64 package `0.142.5-linux-x64`) | | Model | GPT-5.5 in the observed session | | OS / shell | Linux x86_64 + bash | | Multi-agent surface observed | `multi_agent_v1.spawn_agent`, `multi_agent_v1.wait_age",
-          "url": "https://github.com/obra/superpowers/issues/1927",
+          "author": "nedharvey1197",
+          "date": "2026-07-06",
+          "text": "SDD workspace (.superpowers/sdd) collides across concurrent sessions sharing a checkout — regression from #1780 (6.1.0) ## Summary The v6.1.0 change that moved SDD scratch out of `.git/` (#1780) introduced a **cross-session collision**: `task-brief`, `review-package`, and the `progress.md` ledger now write to `<working-tree-root>/.superpowers/sdd/` keyed only by task number, and **that directory is shared by every Claude session running against the same checkout**. Concurrent sessions silently overwrite each other's files. **Observed symptom:** running `subagent-driven-development` in one sess",
+          "url": "https://github.com/obra/superpowers/issues/1942",
           "score": 0,
-          "sentiment": "negative"
+          "sentiment": "neutral"
         }
       ]
     },
@@ -169,7 +180,7 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 2,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1812-gpitrella",
@@ -179,7 +190,18 @@
           "date": "2026-06-19",
           "text": "[RFC] Persistent memory across Superpowers agents - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? When switching between agents or sessions, context doesn't travel with you. Project decisions, preferences, and important details need to be re-explained every time — across sessions and across tools (Claude, Cursor, Codex, Gemini). ## Proposed solution An optional MCP-based integration that makes context portable across all supported agents. Completely opt-in, zero impact on existing workflows. I've been experimenting with this approach and ",
           "url": "https://github.com/obra/superpowers/issues/1812",
-          "score": 0,
+          "score": 1,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1940-daaworld",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "DAAworld",
+          "date": "2026-07-06",
+          "text": "Is Superpowers still suitable for the token plan era? In the prompt plan era, this was normal. However, in the token-based billing era, using Superpowers for a large amount of work will make cost control very difficult. None",
+          "url": "https://github.com/obra/superpowers/issues/1940",
+          "score": 1,
           "sentiment": "neutral"
         },
         {
@@ -190,6 +212,17 @@
           "date": "2026-07-05",
           "text": "Codex: close completed subagents after results are consumed I searched existing issues and PRs and did not find a direct duplicate. ## Environment | Field | Value | | --- | --- | | Superpowers version | 5.1.3 (`~/.codex/plugins/cache/openai-curated/superpowers/d6169bef`) | | Harness | Codex CLI / Codex plugin environment | | Harness version | `codex-cli 0.142.5` (`@openai/codex@0.142.5`, linux-x64 package `0.142.5-linux-x64`) | | Model | GPT-5.5 in the observed session | | OS / shell | Linux x86_64 + bash | | Multi-agent surface observed | `multi_agent_v1.spawn_agent`, `multi_agent_v1.wait_age",
           "url": "https://github.com/obra/superpowers/issues/1927",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1941-dlivxpr",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "dlivxpr",
+          "date": "2026-07-06",
+          "text": "Feature request: First-class oh-my-pi (OMP) support via native extension ### Summary `Superpowers` now has first-class support for the Pi coding agent (closed #435, implemented in #1499), and it can already be loaded in `oh-my-pi` through the Claude-plugin compatibility path ([see this comment](https://github.com/obra/superpowers/issues/435#issuecomment-4057770017)). However, there is no dedicated, native `.omp/*` integration that allows `oh-my-pi` to discover and bootstrap `Superpowers` from a direct checkout of this repository. I would like to request a native `oh-my-pi` extension so that us",
+          "url": "https://github.com/obra/superpowers/issues/1941",
           "score": 0,
           "sentiment": "negative"
         }
@@ -343,7 +376,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 6,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1061-just2majic",
@@ -368,15 +401,15 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-anthropics-skills-issues-1260-alvingarcia",
+          "id": "github-https-github-com-anthropics-skills-issues-311-svobom57",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "alvingarcia",
-          "date": "2026-06-04",
-          "text": "skill-creator: trigger eval writes {skill}-skill-{hash} command files into the live project's .claude/commands/, polluting the skill registry of concurrent sessions ## Summary `skill-creator`'s trigger evaluation (`skills/skill-creator/scripts/run_eval.py`) tests description variants by writing synthetic command files named `{skill_name}-skill-{8hex}.md` directly into the **user's live project** `.claude/commands/` directory. With the default `--num-workers 10`, up to ~10 of these files exist simultaneously during the eval window. Every concurrent Claude Code session rooted at that project see",
-          "url": "https://github.com/anthropics/skills/issues/1260",
+          "author": "svobom57",
+          "date": "2026-01-30",
+          "text": "`skill-creator` skill does not recognise other fields in front-matter I ran: `/skill-creator let's revisit the commit message global skill. Does it satisfy the guidelines?` Claude then proceeded to parse my skill with this front-matter: ``` --- name: commit-message description: Use when creating git commits or when the user asks to commit, save, or push changes. Triggers on phrases like \"commit this\", \"make a commit\", \"save my changes to git\", \"commit what we have\", or any request to create a git commit. Provides commit message formatting guidelines including emoji vocabulary and message struc",
+          "url": "https://github.com/anthropics/skills/issues/311",
           "score": 1,
-          "sentiment": "neutral"
+          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-anthropics-skills-issues-1304-nhosler",
@@ -390,17 +423,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-anthropics-skills-issues-1383-zaesche",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "zaesche",
-          "date": "2026-07-03",
-          "text": "skill-creator: silent benchmark failures (layout mismatch, inverted delta), broken trigger evals on Windows, and skill shadowing in trigger evals Six reproducible issues in `skills/skill-creator`, found while auditing and testing the skill end-to-end. Roughly in order of impact: ## 1. SKILL.md directory layout is silently incompatible with aggregate_benchmark.py SKILL.md instructs subagents to save to `<workspace>/iteration-<N>/eval-<ID>/<config>/outputs/` and to put `grading.json` \"in each run directory\" — a flat layout with no `run-N` level. `aggregate_benchmark.py` however skips every confi",
-          "url": "https://github.com/anthropics/skills/issues/1383",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-anthropics-skills-issues-1394-griffithsbs",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -408,7 +430,7 @@
           "date": "2026-07-05",
           "text": "skill-creator: eval-viewer escapeHtml is not attribute-safe and is applied inconsistently (display-path XSS) ### Summary The skill-creator eval-viewer (`skills/skill-creator/eval-viewer/viewer.html`) assembles HTML by string concatenation and assigns it with `innerHTML` in `renderGrades` and `renderBenchmark`, relying on a helper `escapeHtml()` at each interpolation point. Two gaps let attacker-influenced data reach the DOM as markup: 1. **`escapeHtml()` is not attribute-safe.** It is implemented with the `textContent` → `innerHTML` round-trip, which escapes `<`, `>`, and `&` but **not** `\"` o",
           "url": "https://github.com/anthropics/skills/issues/1394",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -495,7 +517,7 @@
       "slug": "playwright",
       "ecosystem": "openai-skills",
       "displayName": "Playwright",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-openai-skills-issues-228-jonmartinau",
@@ -517,6 +539,17 @@
           "text": "Skill Orchestrator: meta-skill for deduplicating and routing large Codex skill catalogs Hi OpenAI / Codex team, I built an instruction-only Codex skill called **Skill Orchestrator** that acts as a lightweight routing layer for large skill catalogs. The problem I ran into: When a user installs many Codex skills and plugins, several skills can overlap semantically. Examples: app polish vs frontend design, webapp testing vs browser/playwright skills, game playtest vs playtest-debug-loop, broad GitHub routing vs CI-specific skills. This can cause unnecessary context usage, duplicate skill loading,",
           "url": "https://github.com/openai/skills/issues/491",
           "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-openai-skills-issues-242-huydao226",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "huydao226",
+          "date": "2026-03-09",
+          "text": "Add richer testing skills as default for Codex Hi team, I’ve been using Codex to build many small websites for stores and landing pages. At the moment, the default testing skill seems to focus mainly on Playwright interaction. That is helpful, but in practice it still requires quite a lot of effort to prepare a strong master prompt and define the testing guidance before Codex can test effectively. I’d like to request an investigation into improving the default testing skills in Codex, or adding a more complete testing skill set by default. Some areas that would be valuable: - Better default gu",
+          "url": "https://github.com/openai/skills/issues/242",
+          "score": 0,
           "sentiment": "negative"
         },
         {
