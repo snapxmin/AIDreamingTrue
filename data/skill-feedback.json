@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-07T01:11:21Z",
+    "lastUpdated": "2026-07-08T01:04:21Z",
     "skillCount": 20,
-    "totalComments": 38,
+    "totalComments": 40,
     "sources": [
       "hacker-news",
       "github",
@@ -64,7 +64,7 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1920-nicogef",
@@ -85,6 +85,17 @@
           "date": "2026-07-06",
           "text": "SDD progress ledger carries no plan identity — a second superpowers run in the same repo reads the previous run's `progress.md` and silently skips the new plan's tasks <!-- BEFORE FILING: Search open AND closed issues. The Windows SessionStart hook alone has been reported 29 times. If your issue already exists, add a comment or reaction to the existing one instead. --> - [x] I searched existing issues and this is not a duplicate ## Related issues (searched before filing) #1888 and #1816 report the *artifact* side of this (scratch files never pruned, `task-N-report.md` clobbered across efforts)",
           "url": "https://github.com/obra/superpowers/issues/1936",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1947-birdjyy",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Birdjyy",
+          "date": "2026-07-07",
+          "text": "for superpowers:writing-plans, wheen create a long plan, try to write more times instead of write a large file once <meta charset=\"UTF-8\"><div class=\"mp-paragraph-wrapper hxj\" data-morpho-type=\"paragraph\" style=\"padding-left:0px;--indent-pixels:0px\" data-slate-node=\"element\" data-morpho-padding=\"0\"><b style=\"font-weight:bold\"><span data-morpho-text=\"Before%20filing%3A%20Please%20search%20open%20and%20closed%20issues.%20Many%20features%20have%20been%20requested%20before%20%E2%80%94%20some%20were%20implemented%20differently%2C%20some%20are%20in%20progress%2C%20and%20some%20were%20intentionally%2",
+          "url": "https://github.com/obra/superpowers/issues/1947",
           "score": 0,
           "sentiment": "negative"
         }
@@ -120,8 +131,19 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1799-jiyimeta",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jiyimeta",
+          "date": "2026-06-18",
+          "text": "subagent-driven-development: review-package operates on $PWD, forcing an un-allowlistable \"cd <repo> ; review-package\" compound ## What problem does this solve? `skills/subagent-driven-development/scripts/review-package` runs **every** git command against the current working directory — `git rev-parse`, `git log`, `git diff`, `git rev-list` are all invoked as bare `git` with no `-C`. So the script only works when the orchestrator's cwd already *is* the target repository. In worktree-based SDD flows that isn't the case. The driver session commonly stays in the main checkout while implementation",
+          "url": "https://github.com/obra/superpowers/issues/1799",
+          "score": 2,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1936-y40881110-lang",
           "source": "github",
