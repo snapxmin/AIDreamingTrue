@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-08T01:04:21Z",
+    "lastUpdated": "2026-07-09T01:09:34Z",
     "skillCount": 20,
-    "totalComments": 40,
+    "totalComments": 41,
     "sources": [
       "hacker-news",
       "github",
@@ -461,7 +461,7 @@
       "slug": "mcp-builder",
       "ecosystem": "anthropics-skills",
       "displayName": "MCP Builder",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1328-wglynn",
@@ -483,6 +483,17 @@
           "text": "mcp-builder: evaluation.py scores 0/N against any real MCP server (TextContent not JSON serializable, swallowed into fabricated tool errors) ## Summary `skills/mcp-builder/scripts/evaluation.py` (the Phase-4 evaluation harness) silently fabricates a tool-execution error for **every tool call against every real MCP server**, so the driven agent sees nothing but errors and the evaluation scores 0/N. The failure is invisible unless you dig into what the model was actually shown. ## Root cause `connections.py:70` returns `result.content` from `call_tool()` — which for a real MCP server is `list[mc",
           "url": "https://github.com/anthropics/skills/issues/1390",
           "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-67-miq42",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "MiQ42",
+          "date": "2025-10-27",
+          "text": "Plugin skills not loaded in Claude Code when installed via marketplace: Missing skills/ directory structure ## Problem Skills from this repository installed **via the official Claude Code marketplace feature** are **not loaded** by Claude Code, resulting in progressive disclosure not working. ## Installation Method **Installed using:** Official Claude Code marketplace functionality () **NOT:** Manual git clone The marketplace correctly installs the plugin to: `~/.claude/plugins/marketplaces/anthropic-agent-skills/` And shows in settings: ```json \"enabledPlugins\": { \"document-skills@anthropic-a",
+          "url": "https://github.com/anthropics/skills/issues/67",
+          "score": 1,
           "sentiment": "negative"
         },
         {

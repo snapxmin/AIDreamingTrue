@@ -1,5 +1,24 @@
 {
-  "generatedAt": "2026-07-08T01:00:42Z",
+  "generatedAt": "2026-07-09T01:05:27Z",
   "isBaselineRun": false,
-  "changes": []
+  "changes": [
+    {
+      "type": "added",
+      "key": "awesome-copilot/foundry-hosted-agent-copilotkit",
+      "ecosystem": "awesome-copilot",
+      "slug": "foundry-hosted-agent-copilotkit",
+      "displayName": "Foundry Hosted Agent Copilotkit",
+      "summary": "生态新增 Skill：Foundry Hosted Agent Copilotkit",
+      "detectedAt": "2026-07-09T01:08:00Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/mcp-security-baseline",
+      "ecosystem": "awesome-copilot",
+      "slug": "mcp-security-baseline",
+      "displayName": "Mcp Security Baseline",
+      "summary": "生态新增 Skill：Mcp Security Baseline",
+      "detectedAt": "2026-07-09T01:08:00Z"
+    }
+  ]
 }
