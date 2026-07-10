@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-09T01:09:34Z",
+    "lastUpdated": "2026-07-10T01:06:52Z",
     "skillCount": 20,
     "totalComments": 41,
     "sources": [
@@ -15,8 +15,19 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1143-theredsix",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "theredsix",
+          "date": "2026-04-12",
+          "text": "Duplicate text output on codex <!-- BEFORE FILING: Search open AND closed issues. The Windows SessionStart hook alone has been reported 29 times. If your issue already exists, add a comment or reaction to the existing one instead. --> - [x] I searched existing issues and this is not a duplicate ## Environment | Field | Value | |-------|-------| | Superpowers version | v5.0.7-7-g917e5f5 | | Harness (Claude Code, Cursor, etc.) | codex | | Harness version | v0.120.0 | | Model | gpt-5.4 xhigh | | OS + shell | linux, bash | ## Is this a Superpowers issue or a platform issue? <!-- Superpowers is a p",
+          "url": "https://github.com/obra/superpowers/issues/1143",
+          "score": 10,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1920-nicogef",
           "source": "github",
@@ -64,18 +75,29 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1920-nicogef",
+          "id": "github-https-github-com-obra-superpowers-issues-937-harrisrobin",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "nicogef",
-          "date": "2026-07-04",
-          "text": "feat: export gate definitions from skill frontmatter ## Context The DAS `gate` command (nicogef/documentation-as-code#225) currently hardcodes step-to-phase mapping and check definitions in `core/src/commands/gate.ts`. Superpowers skills already define gate criteria per workflow step (e.g., brainstorming requires SRs before planning, writing-plans requires HLRs/DRs before implementation). ## Proposal Move gate policy definitions from DAS into superpowers skills: 1. Each skill declares its exit criteria in a structured format (e.g., a `gates:` block in skill frontmatter) 2. DAS reads gate defin",
-          "url": "https://github.com/obra/superpowers/issues/1920",
-          "score": 0,
-          "sentiment": "neutral"
+          "author": "harrisrobin",
+          "date": "2026-03-25",
+          "text": "Skill: validate that package versions in plans are current and not outdated - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? When AI generates implementation plans that include specific package names and versions, those versions are often stale — the AI's training data has a knowledge cutoff, and popular packages (especially in the JS/TS/Python ecosystems) release frequently. The result is that plans include outdated package versions that produce deprecation warnings, security advisories, or broken installs, requiring manual correction bef",
+          "url": "https://github.com/obra/superpowers/issues/937",
+          "score": 3,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1574-shizeqin",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "shizeqin",
+          "date": "2026-05-18",
+          "text": "feat: honor plan-tune question preferences in writing-plans / finishing-a-development-branch / executing-plans ## Problem The `plan-tune` mechanism (part of the gstack skill family) lets users mark specific AskUserQuestion prompts as `never-ask` / `always-ask` / `ask-only-for-one-way`. The check is done by sourcing a Question Tuning preamble that calls `gstack-question-preference --check \"<id>\"` before each AUQ. This works for gstack-flavored skills (`/investigate`, `/codex`, `/review`, `/qa`, `/ship`, etc.) because their `SKILL.md` files include the Question Tuning preamble block. **It does N",
+          "url": "https://github.com/obra/superpowers/issues/1574",
+          "score": 3,
+          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1936-y40881110-lang",
@@ -115,14 +137,14 @@
       "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1859-pixeru",
+          "id": "github-https-github-com-obra-superpowers-issues-1007-dfoster-oracle",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "pixeru",
-          "date": "2026-06-29",
-          "text": "Support Hermes Agent as a Superpowers harness <html> <body> <!--StartFragment--><html><head></head><body><p>I’d like to add another user case for Hermes Agent support.</p><p>My use case is using Hermes Agent as my main coding harness, especially for larger game development / Unreal Engine workflows where I want the agent to follow a stronger engineering methodology instead of improvising each session. Superpowers already gives that structure in other harnesses, but Hermes users currently have to either manually port skills, copy/paste instructions into <code inline=\"\">SOUL.md</code>, or delega",
-          "url": "https://github.com/obra/superpowers/issues/1859",
-          "score": 0,
+          "author": "dfoster-oracle",
+          "date": "2026-03-31",
+          "text": "Composing superpowers with team-specific skills - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I use superpowers alongside team-specific skills (on-call triage, infrastructure runbooks, MCP server configs for internal tools). Both use the same format — SKILL.md with YAML frontmatter — but they install through separate mechanisms and there's no way to compose them. Onboarding a teammate means walking them through two install flows, and there's no declarative way to say \"use these superpowers skills plus these team skills.\" I've ended up e",
+          "url": "https://github.com/obra/superpowers/issues/1007",
+          "score": 3,
           "sentiment": "negative"
         }
       ]
@@ -131,8 +153,41 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 3,
+      "feedbackCount": 5,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1574-shizeqin",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "shizeqin",
+          "date": "2026-05-18",
+          "text": "feat: honor plan-tune question preferences in writing-plans / finishing-a-development-branch / executing-plans ## Problem The `plan-tune` mechanism (part of the gstack skill family) lets users mark specific AskUserQuestion prompts as `never-ask` / `always-ask` / `ask-only-for-one-way`. The check is done by sourcing a Question Tuning preamble that calls `gstack-question-preference --check \"<id>\"` before each AUQ. This works for gstack-flavored skills (`/investigate`, `/codex`, `/review`, `/qa`, `/ship`, etc.) because their `SKILL.md` files include the Question Tuning preamble block. **It does N",
+          "url": "https://github.com/obra/superpowers/issues/1574",
+          "score": 3,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-730-vlassisemm",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "vlassisemm",
+          "date": "2026-03-14",
+          "text": "Feature request: Cross-model collaboration via external CLI tools (Codex, Gemini) for review and second opinions **_Is your feature request related to a problem? Please describe._** The current review pipeline (spec-compliance → code-quality) uses the same model family for both implementation and review. This means the reviewer shares the same biases and blind spots as the implementer — it's essentially self-review with extra steps. I've found that getting a second opinion from a structurally different model (Gemini, Codex CLI) catches issues that same-model review consistently misses. **_Desc",
+          "url": "https://github.com/obra/superpowers/issues/730",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1099-wpf375516041",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "wpf375516041",
+          "date": "2026-04-09",
+          "text": "Fallback to Session Mode: Claude code Hardcoded Agent Models Trigger Excessive Token Consumption ### Description The current implementation of the **Claude Code built-in Agent** contains **hardcoded model identifiers** (e.g., `haiku`, `sonnet`, or specific snapshot IDs like `claude-haiku-4-5-20251001`). This design prevents the `subagent-driven-development` skill from functioning correctly in environments using **Custom Models** or **API proxies**. When the skill attempts to invoke the subagent using `Task()`, it inherits these hardcoded parameters. In non-official environments, this leads to ",
+          "url": "https://github.com/obra/superpowers/issues/1099",
+          "score": 2,
+          "sentiment": "neutral"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1799-jiyimeta",
           "source": "github",
@@ -145,17 +200,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1936-y40881110-lang",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "y40881110-lang",
-          "date": "2026-07-06",
-          "text": "SDD progress ledger carries no plan identity — a second superpowers run in the same repo reads the previous run's `progress.md` and silently skips the new plan's tasks <!-- BEFORE FILING: Search open AND closed issues. The Windows SessionStart hook alone has been reported 29 times. If your issue already exists, add a comment or reaction to the existing one instead. --> - [x] I searched existing issues and this is not a duplicate ## Related issues (searched before filing) #1888 and #1816 report the *artifact* side of this (scratch files never pruned, `task-N-report.md` clobbered across efforts)",
-          "url": "https://github.com/obra/superpowers/issues/1936",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-1942-nedharvey1197",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -163,7 +207,7 @@
           "date": "2026-07-06",
           "text": "SDD workspace (.superpowers/sdd) collides across concurrent sessions sharing a checkout — regression from #1780 (6.1.0) ## Summary The v6.1.0 change that moved SDD scratch out of `.git/` (#1780) introduced a **cross-session collision**: `task-brief`, `review-package`, and the `progress.md` ledger now write to `<working-tree-root>/.superpowers/sdd/` keyed only by task number, and **that directory is shared by every Claude session running against the same checkout**. Concurrent sessions silently overwrite each other's files. **Observed symptom:** running `subagent-driven-development` in one sess",
           "url": "https://github.com/obra/superpowers/issues/1942",
-          "score": 0,
+          "score": 1,
           "sentiment": "neutral"
         }
       ]
@@ -202,53 +246,8 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 4,
-      "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1812-gpitrella",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "gpitrella",
-          "date": "2026-06-19",
-          "text": "[RFC] Persistent memory across Superpowers agents - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? When switching between agents or sessions, context doesn't travel with you. Project decisions, preferences, and important details need to be re-explained every time — across sessions and across tools (Claude, Cursor, Codex, Gemini). ## Proposed solution An optional MCP-based integration that makes context portable across all supported agents. Completely opt-in, zero impact on existing workflows. I've been experimenting with this approach and ",
-          "url": "https://github.com/obra/superpowers/issues/1812",
-          "score": 1,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1940-daaworld",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "DAAworld",
-          "date": "2026-07-06",
-          "text": "Is Superpowers still suitable for the token plan era? In the prompt plan era, this was normal. However, in the token-based billing era, using Superpowers for a large amount of work will make cost control very difficult. None",
-          "url": "https://github.com/obra/superpowers/issues/1940",
-          "score": 1,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1927-gwokhou",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "gwokhou",
-          "date": "2026-07-05",
-          "text": "Codex: close completed subagents after results are consumed I searched existing issues and PRs and did not find a direct duplicate. ## Environment | Field | Value | | --- | --- | | Superpowers version | 5.1.3 (`~/.codex/plugins/cache/openai-curated/superpowers/d6169bef`) | | Harness | Codex CLI / Codex plugin environment | | Harness version | `codex-cli 0.142.5` (`@openai/codex@0.142.5`, linux-x64 package `0.142.5-linux-x64`) | | Model | GPT-5.5 in the observed session | | OS / shell | Linux x86_64 + bash | | Multi-agent surface observed | `multi_agent_v1.spawn_agent`, `multi_agent_v1.wait_age",
-          "url": "https://github.com/obra/superpowers/issues/1927",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1941-dlivxpr",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "dlivxpr",
-          "date": "2026-07-06",
-          "text": "Feature request: First-class oh-my-pi (OMP) support via native extension ### Summary `Superpowers` now has first-class support for the Pi coding agent (closed #435, implemented in #1499), and it can already be loaded in `oh-my-pi` through the Claude-plugin compatibility path ([see this comment](https://github.com/obra/superpowers/issues/435#issuecomment-4057770017)). However, there is no dedicated, native `.omp/*` integration that allows `oh-my-pi` to discover and bootstrap `Superpowers` from a direct checkout of this repository. I would like to request a native `oh-my-pi` extension so that us",
-          "url": "https://github.com/obra/superpowers/issues/1941",
-          "score": 0,
-          "sentiment": "negative"
-        }
-      ]
+      "feedbackCount": 0,
+      "comments": []
     },
     "awesome-copilot/ai-ready": {
       "slug": "ai-ready",
@@ -398,19 +397,8 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 5,
+      "feedbackCount": 6,
       "comments": [
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1061-just2majic",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "just2majic",
-          "date": "2026-04-28",
-          "text": "Windows compatibility: skill-creator scripts fail (subprocess PATHEXT, cp1252 encoding, select on pipes) ## Summary Running `python -m scripts.run_loop` (or `run_eval` directly) on native Windows Python 3.14 hits three compatibility issues, all rooted in Unix-first assumptions in `scripts/run_eval.py` and adjacent files. The third is the blocker — without it, the optimizer cannot evaluate any query on Windows. ## Environment - OS: Windows 11 Pro (10.0.26200) - Python: 3.14.3 (native Windows, not WSL) - Claude CLI: installed via npm at `~/AppData/Roaming/npm/claude.cmd` - skill-creator: latest ",
-          "url": "https://github.com/anthropics/skills/issues/1061",
-          "score": 3,
-          "sentiment": "neutral"
-        },
         {
           "id": "github-https-github-com-anthropics-skills-issues-1169-tazmad",
           "source": "github",
@@ -454,6 +442,28 @@
           "url": "https://github.com/anthropics/skills/issues/1394",
           "score": 1,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1412-guala19",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "guala19",
+          "date": "2026-07-09",
+          "text": "skill-creator: description-optimization loop burned 100% of a Max subscription in ~3 minutes — false-negative eval bug + no cost guardrails The description-optimization loop in skill-creator (scripts/run_loop.py → scripts/run_eval.py) consumed 100% of a Claude Max subscription's quota in roughly 3 minutes (121 claude -p invocations before crashing in iteration 2). Two independent problems compounded: 1. A correctness bug in run_eval.py produces false negatives (0% recall), which makes the loop believe the description never triggers, so it keeps iterating and burning quota on a problem that doe",
+          "url": "https://github.com/anthropics/skills/issues/1412",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1414-ajmccaus",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ajmccaus",
+          "date": "2026-07-09",
+          "text": "skill-creator: run_eval.py's nested claude -p subprocess inherits parent stdin, causing an intermittent stall ## Problem `run_single_query()` in `skills/skill-creator/scripts/run_eval.py` spawns the nested eval `claude -p` via `subprocess.Popen(cmd, stdout=..., stderr=..., cwd=..., env=...)` without redirecting `stdin`. The child inherits the parent's stdin file descriptor. When `run_eval.py`/`run_loop.py` itself runs nested inside a `claude` session (a supported, intended use — the file explicitly strips `CLAUDECODE` from `env` to allow this), the child process can block briefly waiting on/po",
+          "url": "https://github.com/anthropics/skills/issues/1414",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -461,19 +471,8 @@
       "slug": "mcp-builder",
       "ecosystem": "anthropics-skills",
       "displayName": "MCP Builder",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1328-wglynn",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "WGlynn",
-          "date": "2026-06-17",
-          "text": "Are external skill contributions welcome? Proposing critical-qa (self-adversarial review before \"done\") The skills here (skill-creator, mcp-builder, webapp-testing) read as general tools rather than one-off demos, so I wanted to ask directly: do you accept skill contributions from outside Anthropic, and if so is a PR with a SKILL.md folder following ./template the right path, or do you prefer an issue first? The skill I would contribute is critical-qa. Before declaring a code change complete, it runs a short self-adversarial pass: it asks hostile-reviewer questions across several fixed categor",
-          "url": "https://github.com/anthropics/skills/issues/1328",
-          "score": 2,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-anthropics-skills-issues-1390-ejprice",
           "source": "github",
