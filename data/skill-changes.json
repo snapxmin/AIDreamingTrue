@@ -1,24 +1,5 @@
 {
-  "generatedAt": "2026-07-10T01:03:57Z",
+  "generatedAt": "2026-07-11T00:59:26Z",
   "isBaselineRun": false,
-  "changes": [
-    {
-      "type": "added",
-      "key": "awesome-copilot/doc-and-modernize",
-      "ecosystem": "awesome-copilot",
-      "slug": "doc-and-modernize",
-      "displayName": "Doc And Modernize",
-      "summary": "生态新增 Skill：Doc And Modernize",
-      "detectedAt": "2026-07-10T01:05:18Z"
-    },
-    {
-      "type": "added",
-      "key": "awesome-copilot/mcp-implementation-security-review",
-      "ecosystem": "awesome-copilot",
-      "slug": "mcp-implementation-security-review",
-      "displayName": "Mcp Implementation Security Review",
-      "summary": "生态新增 Skill：Mcp Implementation Security Review",
-      "detectedAt": "2026-07-10T01:05:18Z"
-    }
-  ]
+  "changes": []
 }
