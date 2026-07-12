@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-11T01:02:52Z",
+    "lastUpdated": "2026-07-12T01:04:17Z",
     "skillCount": 20,
-    "totalComments": 40,
+    "totalComments": 46,
     "sources": [
       "hacker-news",
       "github",
@@ -15,17 +15,28 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1143-theredsix",
+          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "theredsix",
-          "date": "2026-04-12",
-          "text": "Duplicate text output on codex <!-- BEFORE FILING: Search open AND closed issues. The Windows SessionStart hook alone has been reported 29 times. If your issue already exists, add a comment or reaction to the existing one instead. --> - [x] I searched existing issues and this is not a duplicate ## Environment | Field | Value | |-------|-------| | Superpowers version | v5.0.7-7-g917e5f5 | | Harness (Claude Code, Cursor, etc.) | codex | | Harness version | v0.120.0 | | Model | gpt-5.4 xhigh | | OS + shell | linux, bash | ## Is this a Superpowers issue or a platform issue? <!-- Superpowers is a p",
-          "url": "https://github.com/obra/superpowers/issues/1143",
-          "score": 10,
+          "author": "jfiscman",
+          "date": "2026-05-19",
+          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
+          "url": "https://github.com/obra/superpowers/issues/1581",
+          "score": 14,
+          "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1511-epicwhale",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "epicwhale",
+          "date": "2026-05-09",
+          "text": "Clarification on usage of spec-document-reviewer-prompt.md in Brainstorming skill? - [x] I searched existing issues and this is not a duplicate - [x] I confirmed this issue does not occur without Superpowers installed I was looking into the behavior of the `brainstorming` skill and noticed a discrepancy regarding the file `spec-document-reviewer-prompt.md`. **Context:** * The file [spec-document-reviewer-prompt.md](https://github.com/obra/superpowers/blob/main/skills/brainstorming/spec-document-reviewer-prompt.md) exists in the codebase. * The design document [2026-01-22-document-review-system",
+          "url": "https://github.com/obra/superpowers/issues/1511",
+          "score": 6,
           "sentiment": "negative"
         },
         {
@@ -36,7 +47,7 @@
           "date": "2026-07-10",
           "text": "Spec/plan reviewer prompt templates are not referenced from their skills `skills/brainstorming/spec-document-reviewer-prompt.md` and `skills/writing-plans/plan-document-reviewer-prompt.md` provide dispatch templates for reviewing spec and plan documents, but neither `skills/brainstorming/SKILL.md` nor `skills/writing-plans/SKILL.md` references its template. An agent following the skill therefore never learns to dispatch the reviewer, so the templates read as orphaned. **Request:** either wire the reference into each `SKILL.md` (e.g. \"after writing the spec to `docs/superpowers/specs/`, dispatc",
           "url": "https://github.com/obra/superpowers/issues/1962",
-          "score": 0,
+          "score": 1,
           "sentiment": "neutral"
         }
       ]
@@ -48,15 +59,15 @@
       "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1900-ganningbest",
+          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "ganningBest",
-          "date": "2026-07-03",
-          "text": "Superpowers is hard to use for prompt-engineering-heavy work when TDD validates shape instead of content quality - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? Superpowers works well for deterministic code work: Java/Python codebases, scripts, CLI behavior, and other engineering tasks where the expected behavior can be tested through executable code. But for prompt-engineering-heavy work, I am running into a serious test-boundary problem. In these workflows, the deliverable is often structured generated content, not executable behavior d",
-          "url": "https://github.com/obra/superpowers/issues/1900",
-          "score": 0,
-          "sentiment": "neutral"
+          "author": "jfiscman",
+          "date": "2026-05-19",
+          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
+          "url": "https://github.com/obra/superpowers/issues/1581",
+          "score": 14,
+          "sentiment": "positive"
         }
       ]
     },
@@ -66,6 +77,17 @@
       "displayName": "Writing Plans",
       "feedbackCount": 4,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jfiscman",
+          "date": "2026-05-19",
+          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
+          "url": "https://github.com/obra/superpowers/issues/1581",
+          "score": 14,
+          "sentiment": "positive"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-937-harrisrobin",
           "source": "github",
@@ -89,17 +111,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1947-birdjyy",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Birdjyy",
-          "date": "2026-07-07",
-          "text": "for superpowers:writing-plans, wheen create a long plan, try to write more times instead of write a large file once <meta charset=\"UTF-8\"><div class=\"mp-paragraph-wrapper hxj\" data-morpho-type=\"paragraph\" style=\"padding-left:0px;--indent-pixels:0px\" data-slate-node=\"element\" data-morpho-padding=\"0\"><b style=\"font-weight:bold\"><span data-morpho-text=\"Before%20filing%3A%20Please%20search%20open%20and%20closed%20issues.%20Many%20features%20have%20been%20requested%20before%20%E2%80%94%20some%20were%20implemented%20differently%2C%20some%20are%20in%20progress%2C%20and%20some%20were%20intentionally%2",
-          "url": "https://github.com/obra/superpowers/issues/1947",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-1962-eranroseman",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -107,7 +118,7 @@
           "date": "2026-07-10",
           "text": "Spec/plan reviewer prompt templates are not referenced from their skills `skills/brainstorming/spec-document-reviewer-prompt.md` and `skills/writing-plans/plan-document-reviewer-prompt.md` provide dispatch templates for reviewing spec and plan documents, but neither `skills/brainstorming/SKILL.md` nor `skills/writing-plans/SKILL.md` references its template. An agent following the skill therefore never learns to dispatch the reviewer, so the templates read as orphaned. **Request:** either wire the reference into each `SKILL.md` (e.g. \"after writing the spec to `docs/superpowers/specs/`, dispatc",
           "url": "https://github.com/obra/superpowers/issues/1962",
-          "score": 0,
+          "score": 1,
           "sentiment": "neutral"
         }
       ]
@@ -116,15 +127,38 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 0,
-      "comments": []
+      "feedbackCount": 1,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jfiscman",
+          "date": "2026-05-19",
+          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
+          "url": "https://github.com/obra/superpowers/issues/1581",
+          "score": 14,
+          "sentiment": "positive"
+        }
+      ]
     },
     "superpowers/verification-before-completion": {
       "slug": "verification-before-completion",
       "ecosystem": "superpowers",
       "displayName": "Verification Before Completion",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jfiscman",
+          "date": "2026-05-19",
+          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
+          "url": "https://github.com/obra/superpowers/issues/1581",
+          "score": 14,
+          "sentiment": "positive"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1007-dfoster-oracle",
           "source": "github",
@@ -145,6 +179,17 @@
       "feedbackCount": 4,
       "comments": [
         {
+          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jfiscman",
+          "date": "2026-05-19",
+          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
+          "url": "https://github.com/obra/superpowers/issues/1581",
+          "score": 14,
+          "sentiment": "positive"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-730-vlassisemm",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -154,17 +199,6 @@
           "url": "https://github.com/obra/superpowers/issues/730",
           "score": 2,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1099-wpf375516041",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "wpf375516041",
-          "date": "2026-04-09",
-          "text": "Fallback to Session Mode: Claude code Hardcoded Agent Models Trigger Excessive Token Consumption ### Description The current implementation of the **Claude Code built-in Agent** contains **hardcoded model identifiers** (e.g., `haiku`, `sonnet`, or specific snapshot IDs like `claude-haiku-4-5-20251001`). This design prevents the `subagent-driven-development` skill from functioning correctly in environments using **Custom Models** or **API proxies**. When the skill attempts to invoke the subagent using `Task()`, it inherits these hardcoded parameters. In non-official environments, this leads to ",
-          "url": "https://github.com/obra/superpowers/issues/1099",
-          "score": 2,
-          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1942-nedharvey1197",
@@ -197,15 +231,15 @@
       "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1883-jabberwocky1989",
+          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "Jabberwocky1989",
-          "date": "2026-07-01",
-          "text": "Codex-visible skills need Codex host adapter wording # Codex-visible Superpowers skills need Codex host adapter wording ## Summary The Superpowers plugin skills are visible in Codex, but several skill bodies still contain Claude Code-specific operational guidance. In a Codex session this can mislead agents into looking for unavailable tools or following the wrong task-tracking workflow. ## Affected Skills Observed - `using-superpowers` - `brainstorming` - `subagent-driven-development` - `executing-plans` - `requesting-code-review` - `dispatching-parallel-agents` - `writing-skills` ## Environme",
-          "url": "https://github.com/obra/superpowers/issues/1883",
-          "score": 0,
-          "sentiment": "neutral"
+          "author": "jfiscman",
+          "date": "2026-05-19",
+          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
+          "url": "https://github.com/obra/superpowers/issues/1581",
+          "score": 14,
+          "sentiment": "positive"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1927-gwokhou",
@@ -224,8 +258,31 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 0,
-      "comments": []
+      "feedbackCount": 2,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1812-gpitrella",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "gpitrella",
+          "date": "2026-06-19",
+          "text": "[RFC] Persistent memory across Superpowers agents - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? When switching between agents or sessions, context doesn't travel with you. Project decisions, preferences, and important details need to be re-explained every time — across sessions and across tools (Claude, Cursor, Codex, Gemini). ## Proposed solution An optional MCP-based integration that makes context portable across all supported agents. Completely opt-in, zero impact on existing workflows. I've been experimenting with this approach and ",
+          "url": "https://github.com/obra/superpowers/issues/1812",
+          "score": 2,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1969-rasibintang",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "rasibintang",
+          "date": "2026-07-11",
+          "text": "writing-skills and porting guide still link claude-code-tools.md / copilot-tools.md, deleted in e7ddc25 - [x] I searched existing issues and this has not been proposed before ## What happened Commit `e7ddc25` (\"Prune per-harness tool-mapping boilerplate\") deliberately deleted `references/claude-code-tools.md` and `references/copilot-tools.md` — the commit message says they \"had nothing left that wasn't generic\". Two places still point at the deleted files as if they were live: 1. **`skills/writing-skills/SKILL.md` (Overview, line 12)** links both dead files as the place to find your runtime's ",
+          "url": "https://github.com/obra/superpowers/issues/1969",
+          "score": 0,
+          "sentiment": "negative"
+        }
+      ]
     },
     "awesome-copilot/ai-ready": {
       "slug": "ai-ready",
@@ -375,7 +432,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 7,
+      "feedbackCount": 8,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1169-tazmad",
@@ -420,6 +477,17 @@
           "url": "https://github.com/anthropics/skills/issues/1419",
           "score": 1,
           "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1427-buer2333",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Buer2333",
+          "date": "2026-07-11",
+          "text": "skill-creator run_eval.py: parallel identical command clones contaminate trigger detection, collapsing recall to 0 ## Summary `skill-creator`'s trigger evaluation (`scripts/run_eval.py`) systematically under-counts triggers — in my environment recall collapsed to exactly **0% across 27+ positive samples and three very different candidate descriptions** (precision stayed 100%, accuracy pinned at 50%). After packet-level debugging with `--output-format stream-json` captures, the root cause is a design issue in how triggering is detected, not stream-format drift: **Parallel workers create N ident",
+          "url": "https://github.com/anthropics/skills/issues/1427",
+          "score": 1,
+          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-anthropics-skills-issues-1412-guala19",
