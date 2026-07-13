@@ -1,33 +1,5 @@
 {
-  "generatedAt": "2026-07-13T01:01:46Z",
+  "generatedAt": "2026-07-13T01:32:57Z",
   "isBaselineRun": false,
-  "changes": [
-    {
-      "type": "updated",
-      "key": "awesome-copilot/image-annotations",
-      "ecosystem": "awesome-copilot",
-      "slug": "image-annotations",
-      "displayName": "Image Annotations",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/image-annotations",
-      "detectedAt": "2026-07-13T01:02:30Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/pester-migration",
-      "ecosystem": "awesome-copilot",
-      "slug": "pester-migration",
-      "displayName": "Pester Migration",
-      "changedFields": [
-        "content",
-        "description"
-      ],
-      "summary": "description 更新：Pester migration skill for upgrading PowerShell Pester test suites across major versions — v3→v4, v4…",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/pester-migration",
-      "detectedAt": "2026-07-13T01:02:30Z"
-    }
-  ]
+  "changes": []
 }
