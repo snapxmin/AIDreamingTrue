@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-12T01:04:17Z",
+    "lastUpdated": "2026-07-13T01:03:58Z",
     "skillCount": 20,
-    "totalComments": 46,
+    "totalComments": 42,
     "sources": [
       "hacker-news",
       "github",
@@ -15,19 +15,8 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jfiscman",
-          "date": "2026-05-19",
-          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
-          "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 14,
-          "sentiment": "positive"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1511-epicwhale",
           "source": "github",
@@ -75,7 +64,7 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
@@ -96,17 +85,6 @@
           "date": "2026-03-25",
           "text": "Skill: validate that package versions in plans are current and not outdated - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? When AI generates implementation plans that include specific package names and versions, those versions are often stale — the AI's training data has a knowledge cutoff, and popular packages (especially in the JS/TS/Python ecosystems) release frequently. The result is that plans include outdated package versions that produce deprecation warnings, security advisories, or broken installs, requiring manual correction bef",
           "url": "https://github.com/obra/superpowers/issues/937",
-          "score": 3,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1574-shizeqin",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "shizeqin",
-          "date": "2026-05-18",
-          "text": "feat: honor plan-tune question preferences in writing-plans / finishing-a-development-branch / executing-plans ## Problem The `plan-tune` mechanism (part of the gstack skill family) lets users mark specific AskUserQuestion prompts as `never-ask` / `always-ask` / `ask-only-for-one-way`. The check is done by sourcing a Question Tuning preamble that calls `gstack-question-preference --check \"<id>\"` before each AUQ. This works for gstack-flavored skills (`/investigate`, `/codex`, `/review`, `/qa`, `/ship`, etc.) because their `SKILL.md` files include the Question Tuning preamble block. **It does N",
-          "url": "https://github.com/obra/superpowers/issues/1574",
           "score": 3,
           "sentiment": "negative"
         },
@@ -176,7 +154,7 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
@@ -190,26 +168,15 @@
           "sentiment": "positive"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-730-vlassisemm",
+          "id": "github-https-github-com-obra-superpowers-issues-1888-glen-84",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "vlassisemm",
-          "date": "2026-03-14",
-          "text": "Feature request: Cross-model collaboration via external CLI tools (Codex, Gemini) for review and second opinions **_Is your feature request related to a problem? Please describe._** The current review pipeline (spec-compliance → code-quality) uses the same model family for both implementation and review. This means the reviewer shares the same biases and blind spots as the implementer — it's essentially self-review with extra steps. I've found that getting a second opinion from a structurally different model (Gemini, Codex CLI) catches issues that same-model review consistently misses. **_Desc",
-          "url": "https://github.com/obra/superpowers/issues/730",
+          "author": "glen-84",
+          "date": "2026-07-01",
+          "text": "subagent-driven-development: .superpowers/sdd scratch artifacts are never pruned and silently collide across efforts ## What problem does this solve? The `subagent-driven-development` skill writes per-task scratch artifacts to `.superpowers/sdd/` — `task-N-brief.md`, `task-N-report.md`, and a `review-*.diff` (or `task-N-review.diff`) per task, plus the `progress.md` ledger. Nothing ever prunes them. There is no cleanup step in the skill itself nor in `finishing-a-development-branch`, so the directory grows without bound and mixes artifacts from unrelated, already-merged efforts. Two concrete f",
+          "url": "https://github.com/obra/superpowers/issues/1888",
           "score": 2,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1942-nedharvey1197",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "nedharvey1197",
-          "date": "2026-07-06",
-          "text": "SDD workspace (.superpowers/sdd) collides across concurrent sessions sharing a checkout — regression from #1780 (6.1.0) ## Summary The v6.1.0 change that moved SDD scratch out of `.git/` (#1780) introduced a **cross-session collision**: `task-brief`, `review-package`, and the `progress.md` ledger now write to `<working-tree-root>/.superpowers/sdd/` keyed only by task number, and **that directory is shared by every Claude session running against the same checkout**. Concurrent sessions silently overwrite each other's files. **Observed symptom:** running `subagent-driven-development` in one sess",
-          "url": "https://github.com/obra/superpowers/issues/1942",
-          "score": 1,
-          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1960-mohsinlakhani",
@@ -219,7 +186,7 @@
           "date": "2026-07-10",
           "text": "ChatGPT 5.6 update for Codex isnt allowing subagent behaviour to work properly The model keeps repeatedly reporting that it cant use model selection in \"spawn_agent\" in the new ChatGPT 5.6. It always uses the main model that session uses. Used on: Superpowers 6.1.1 Subagent Driven Development Mac Desktop App for ChatGPT (after codex was merged) Model: 5.6 Terra High",
           "url": "https://github.com/obra/superpowers/issues/1960",
-          "score": 1,
+          "score": 2,
           "sentiment": "neutral"
         }
       ]
@@ -228,7 +195,7 @@
       "slug": "requesting-code-review",
       "ecosystem": "superpowers",
       "displayName": "Requesting Code Review",
-      "feedbackCount": 2,
+      "feedbackCount": 1,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
@@ -240,17 +207,6 @@
           "url": "https://github.com/obra/superpowers/issues/1581",
           "score": 14,
           "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1927-gwokhou",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "gwokhou",
-          "date": "2026-07-05",
-          "text": "Codex: close completed subagents after results are consumed I searched existing issues and PRs and did not find a direct duplicate. ## Environment | Field | Value | | --- | --- | | Superpowers version | 5.1.3 (`~/.codex/plugins/cache/openai-curated/superpowers/d6169bef`) | | Harness | Codex CLI / Codex plugin environment | | Harness version | `codex-cli 0.142.5` (`@openai/codex@0.142.5`, linux-x64 package `0.142.5-linux-x64`) | | Model | GPT-5.5 in the observed session | | OS / shell | Linux x86_64 + bash | | Multi-agent surface observed | `multi_agent_v1.spawn_agent`, `multi_agent_v1.wait_age",
-          "url": "https://github.com/obra/superpowers/issues/1927",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -309,7 +265,7 @@
           "date": "2026-05-20",
           "text": "Installing a plugin with commit sha as ref fails Hello! When trying to install plugin that has a commit sha fixed in `external.json` fails with an error. Steps to reproduce: * Run `/plugin install sonarqube@awesome-copilot` command * Observe the error ``` ✗ Failed to install plugin: Failed to fetch GitHub plugin SonarSource/sonarqube-agent-plugins: Error: Command failed: git clone --depth 1 --progress --branch b1492121b8591fba7dc477392ae0ea6be924fb31 https://github.com/SonarSource/sonarqube-agent-plugins.git /Users/sophio.japharidze/Library/Caches/copilot/marketplaces/SonarSource--sonarqube-ag",
           "url": "https://github.com/github/awesome-copilot/issues/1774",
-          "score": 3,
+          "score": 4,
           "sentiment": "negative"
         },
         {
