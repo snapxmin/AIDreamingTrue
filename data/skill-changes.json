@@ -1,5 +1,78 @@
 {
-  "generatedAt": "2026-07-14T00:58:00Z",
+  "generatedAt": "2026-07-15T00:56:36Z",
   "isBaselineRun": false,
-  "changes": []
+  "changes": [
+    {
+      "type": "added",
+      "key": "awesome-copilot/steno-mode",
+      "ecosystem": "awesome-copilot",
+      "slug": "steno-mode",
+      "displayName": "Steno Mode",
+      "summary": "生态新增 Skill：Steno Mode",
+      "detectedAt": "2026-07-15T00:57:24Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/tm7-threat-model",
+      "ecosystem": "awesome-copilot",
+      "slug": "tm7-threat-model",
+      "displayName": "Tm7 Threat Model",
+      "summary": "生态新增 Skill：Tm7 Threat Model",
+      "detectedAt": "2026-07-15T00:57:24Z"
+    },
+    {
+      "type": "updated",
+      "key": "awesome-copilot/creating-oracle-to-postgres-migration-integration-tests",
+      "ecosystem": "awesome-copilot",
+      "slug": "creating-oracle-to-postgres-migration-integration-tests",
+      "displayName": "Creating Oracle To Postgres Migration Integration Tests",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/creating-oracle-to-postgres-migration-integration-tests",
+      "detectedAt": "2026-07-15T00:57:24Z"
+    },
+    {
+      "type": "updated",
+      "key": "awesome-copilot/migrating-oracle-to-postgres-stored-procedures",
+      "ecosystem": "awesome-copilot",
+      "slug": "migrating-oracle-to-postgres-stored-procedures",
+      "displayName": "Migrating Oracle To Postgres Stored Procedures",
+      "changedFields": [
+        "content",
+        "description"
+      ],
+      "summary": "description 更新：Migrates Oracle PL/SQL stored procedures to PostgreSQL PL/pgSQL. Translates Oracle-specific syntax, …",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/migrating-oracle-to-postgres-stored-procedures",
+      "detectedAt": "2026-07-15T00:57:24Z"
+    },
+    {
+      "type": "updated",
+      "key": "awesome-copilot/planning-oracle-to-postgres-migration-integration-testing",
+      "ecosystem": "awesome-copilot",
+      "slug": "planning-oracle-to-postgres-migration-integration-testing",
+      "displayName": "Planning Oracle To Postgres Migration Integration Testing",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/planning-oracle-to-postgres-migration-integration-testing",
+      "detectedAt": "2026-07-15T00:57:24Z"
+    },
+    {
+      "type": "updated",
+      "key": "awesome-copilot/reviewing-oracle-to-postgres-migration",
+      "ecosystem": "awesome-copilot",
+      "slug": "reviewing-oracle-to-postgres-migration",
+      "displayName": "Reviewing Oracle To Postgres Migration",
+      "changedFields": [
+        "content",
+        "description"
+      ],
+      "summary": "description 更新：Identifies Oracle-to-PostgreSQL migration risks by cross-referencing code against known behavioral d…",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/reviewing-oracle-to-postgres-migration",
+      "detectedAt": "2026-07-15T00:57:24Z"
+    }
+  ]
 }
