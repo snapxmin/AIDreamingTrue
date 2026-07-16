@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-15T00:58:55Z",
+    "lastUpdated": "2026-07-16T01:01:36Z",
     "skillCount": 20,
-    "totalComments": 45,
+    "totalComments": 37,
     "sources": [
       "hacker-news",
       "github",
@@ -15,38 +15,16 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 3,
+      "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1883-jabberwocky1989",
+          "id": "github-https-github-com-obra-superpowers-issues-1991-glen-84",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "Jabberwocky1989",
-          "date": "2026-07-01",
-          "text": "Codex-visible skills need Codex host adapter wording # Codex-visible Superpowers skills need Codex host adapter wording ## Summary The Superpowers plugin skills are visible in Codex, but several skill bodies still contain Claude Code-specific operational guidance. In a Codex session this can mislead agents into looking for unavailable tools or following the wrong task-tracking workflow. ## Affected Skills Observed - `using-superpowers` - `brainstorming` - `subagent-driven-development` - `executing-plans` - `requesting-code-review` - `dispatching-parallel-agents` - `writing-skills` ## Environme",
-          "url": "https://github.com/obra/superpowers/issues/1883",
-          "score": 1,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1979-lady-lin",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Lady-Lin",
-          "date": "2026-07-13",
-          "text": "Codex SDD guidance should distinguish mailbox waits from agent liveness - [x] I searched open and closed issues and did not find this proposal. The closest reports are #1927 (closing completed Codex agents) and #1633 (stale Codex availability guidance), which address different lifecycle stages. ## What problem does this solve? The current `subagent-driven-development` workflow defines four implementer statuses and explains how to handle an implementer that **reports** `BLOCKED` or `NEEDS_CONTEXT`. Its implementer template asks for a concise report after implementation, verification, commit, an",
-          "url": "https://github.com/obra/superpowers/issues/1979",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1989-iskandersierra",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "iskandersierra",
-          "date": "2026-07-14",
-          "text": "brainstorming: keep the current question open when the user asks for context instead of answering - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? The `brainstorming` skill says to ask one question at a time, but it does not explicitly say what to do when the user cannot answer yet and instead asks for more context about the current question. In practice, this can produce a confusing flow: 1. The agent asks question A. 2. The user asks for more context, implications, or trade-offs about question A. 3. The agent provides that context. 4. Th",
-          "url": "https://github.com/obra/superpowers/issues/1989",
+          "author": "glen-84",
+          "date": "2026-07-15",
+          "text": "SDD/brainstorming workspace root is hardcoded to .superpowers — make it configurable - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? My projects keep all agent scratch under a single gitignored `.work/` directory. Specs and plans already land there — the agent writes them and can honor a path preference from CLAUDE.md. SDD scratch cannot: it's written by the plugin's `sdd-workspace` script inside dispatched subagents, so no CLAUDE.md or memory preference changes where that bash script writes. The workspace root is hardcoded to `<working-t",
+          "url": "https://github.com/obra/superpowers/issues/1991",
           "score": 0,
           "sentiment": "negative"
         }
@@ -78,17 +56,6 @@
       "feedbackCount": 3,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jfiscman",
-          "date": "2026-05-19",
-          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
-          "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 17,
-          "sentiment": "positive"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-1044-peiledoir",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -109,6 +76,17 @@
           "url": "https://github.com/obra/superpowers/issues/1478",
           "score": 1,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1860-fubieliangpu",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "fubieliangpu",
+          "date": "2026-06-29",
+          "text": "writing-plans: xhigh-effort sessions stall mid-stream on large plans (extended thinking exceeds 5-min watchdog) - [x] I searched existing issues and this is not a duplicate *(Closest prior art: #227 — output token truncation, closed as platform limitation; #1545 — STOP-trigger stalls; #1747 — effort dimension missing. This is a distinct failure mode with different root cause and reproduction pattern.)* ## Environment | Field | Value | |---|---| | Superpowers version | 6.0.3 | | Harness | Claude Code | | Model | claude-opus-4-8 (1M context) | | Session effort | xhigh | ## What happened? When `w",
+          "url": "https://github.com/obra/superpowers/issues/1860",
+          "score": 1,
+          "sentiment": "negative"
         }
       ]
     },
@@ -116,7 +94,7 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 2,
+      "feedbackCount": 1,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
@@ -128,17 +106,6 @@
           "url": "https://github.com/obra/superpowers/issues/1581",
           "score": 17,
           "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1859-pixeru",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "pixeru",
-          "date": "2026-06-29",
-          "text": "Support Hermes Agent as a Superpowers harness <html> <body> <!--StartFragment--><html><head></head><body><p>I’d like to add another user case for Hermes Agent support.</p><p>My use case is using Hermes Agent as my main coding harness, especially for larger game development / Unreal Engine workflows where I want the agent to follow a stronger engineering methodology instead of improvising each session. Superpowers already gives that structure in other harnesses, but Hermes users currently have to either manually port skills, copy/paste instructions into <code inline=\"\">SOUL.md</code>, or delega",
-          "url": "https://github.com/obra/superpowers/issues/1859",
-          "score": 1,
-          "sentiment": "negative"
         }
       ]
     },
@@ -176,7 +143,7 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1044-peiledoir",
@@ -199,17 +166,6 @@
           "url": "https://github.com/obra/superpowers/issues/1478",
           "score": 1,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1883-jabberwocky1989",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Jabberwocky1989",
-          "date": "2026-07-01",
-          "text": "Codex-visible skills need Codex host adapter wording # Codex-visible Superpowers skills need Codex host adapter wording ## Summary The Superpowers plugin skills are visible in Codex, but several skill bodies still contain Claude Code-specific operational guidance. In a Codex session this can mislead agents into looking for unavailable tools or following the wrong task-tracking workflow. ## Affected Skills Observed - `using-superpowers` - `brainstorming` - `subagent-driven-development` - `executing-plans` - `requesting-code-review` - `dispatching-parallel-agents` - `writing-skills` ## Environme",
-          "url": "https://github.com/obra/superpowers/issues/1883",
-          "score": 1,
-          "sentiment": "neutral"
         }
       ]
     },
@@ -247,41 +203,8 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 4,
+      "feedbackCount": 1,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1927-gwokhou",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "gwokhou",
-          "date": "2026-07-05",
-          "text": "Codex: close completed subagents after results are consumed I searched existing issues and PRs and did not find a direct duplicate. ## Environment | Field | Value | | --- | --- | | Superpowers version | 5.1.3 (`~/.codex/plugins/cache/openai-curated/superpowers/d6169bef`) | | Harness | Codex CLI / Codex plugin environment | | Harness version | `codex-cli 0.142.5` (`@openai/codex@0.142.5`, linux-x64 package `0.142.5-linux-x64`) | | Model | GPT-5.5 in the observed session | | OS / shell | Linux x86_64 + bash | | Multi-agent surface observed | `multi_agent_v1.spawn_agent`, `multi_agent_v1.wait_age",
-          "url": "https://github.com/obra/superpowers/issues/1927",
-          "score": 3,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1878-jonathanstiansen",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jonathanstiansen",
-          "date": "2026-06-30",
-          "text": "Sonnet 5 really doesn't like the instructions <!-- BEFORE FILING: Search open AND closed issues. The Windows SessionStart hook alone has been reported 29 times. If your issue already exists, add a comment or reaction to the existing one instead. --> - [x] I searched existing issues and this is not a duplicate ## Environment (required) <!-- Required. We assume an agent filed this report — tell us which one and where it ran. We weigh reports by what produced them. --> Human - sorry. | Field | Value | |---|---| | Superpowers version | 6.0.3 | | Harness | Claude Code (CC) | | Harness version | 2.1",
-          "url": "https://github.com/obra/superpowers/issues/1878",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1883-jabberwocky1989",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Jabberwocky1989",
-          "date": "2026-07-01",
-          "text": "Codex-visible skills need Codex host adapter wording # Codex-visible Superpowers skills need Codex host adapter wording ## Summary The Superpowers plugin skills are visible in Codex, but several skill bodies still contain Claude Code-specific operational guidance. In a Codex session this can mislead agents into looking for unavailable tools or following the wrong task-tracking workflow. ## Affected Skills Observed - `using-superpowers` - `brainstorming` - `subagent-driven-development` - `executing-plans` - `requesting-code-review` - `dispatching-parallel-agents` - `writing-skills` ## Environme",
-          "url": "https://github.com/obra/superpowers/issues/1883",
-          "score": 1,
-          "sentiment": "neutral"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1988-lady-lin",
           "source": "github",
@@ -290,7 +213,7 @@
           "date": "2026-07-14",
           "text": "Codex SDD has no circuit breaker: one task ran ~4 hours and accumulated 120.7M telemetry tokens - [x] I searched open and closed issues. This report is related to #1152, #1194, #1631, #1747, #1917, #1960, and #1979, but adds a complete current-version trace of an unbounded single-task loop. ## Summary In a sanitized Codex Desktop session using Superpowers 6.1.1, one bounded frontend state-consistency task ran for about four hours. It went through five serial implementation/review/repair cycles before the controller recognized that it had been testing individual race symptoms instead of treatin",
           "url": "https://github.com/obra/superpowers/issues/1988",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -443,7 +366,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 6,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1169-tazmad",
@@ -486,17 +409,6 @@
           "date": "2026-06-25",
           "text": "skill-creator: run_eval.py parallel workers cross-match skill UUIDs, producing false-negative trigger rates ## Summary `skills/skill-creator/scripts/run_eval.py` produces **systematically wrong (near-zero) trigger rates whenever `--num-workers > 1`** (the default is 10). The failure is silent: every query — including ones that obviously *should* trigger — comes back with `trigger_rate ≈ 0`, which then makes all `should_trigger: false` cases \"pass\" trivially and all `should_trigger: true` cases \"fail\". The aggregate looks like a bad skill description when in fact the *measurement* is broken. ##",
           "url": "https://github.com/anthropics/skills/issues/1352",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1427-buer2333",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Buer2333",
-          "date": "2026-07-11",
-          "text": "skill-creator run_eval.py: parallel identical command clones contaminate trigger detection, collapsing recall to 0 ## Summary `skill-creator`'s trigger evaluation (`scripts/run_eval.py`) systematically under-counts triggers — in my environment recall collapsed to exactly **0% across 27+ positive samples and three very different candidate descriptions** (precision stayed 100%, accuracy pinned at 50%). After packet-level debugging with `--output-format stream-json` captures, the root cause is a design issue in how triggering is detected, not stream-format drift: **Parallel workers create N ident",
-          "url": "https://github.com/anthropics/skills/issues/1427",
           "score": 1,
           "sentiment": "negative"
         },

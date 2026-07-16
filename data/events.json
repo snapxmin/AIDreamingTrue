@@ -15,6 +15,21 @@
     "sourceUrl": "https://github.blog/changelog/2026-07-14-github-copilot-in-visual-studio-june-update"
   },
   {
+    "id": "auto-claude-v2-1-211",
+    "title": "Claude Code v2.1.211 发布",
+    "date": "2026-07-15",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "Anthropic",
+    "heat": 75,
+    "growth": 8,
+    "sourceTier": "A",
+    "summary": "## What's changed  - Added `--forward-subagent-text` flag and `CLAUDE_CODE_FORWARD_SUBAGENT_TEXT` environment variable to include subagent text and thinking in stream-json output - Fixed permission pr",
+    "whyImportant": "Claude Code 持续高频迭代，终端 Agent 能力不断增强。",
+    "impact": "关注 release notes 中的权限、MCP 和 subagent 相关变更。",
+    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.211"
+  },
+  {
     "id": "auto-claude-v2-1-210",
     "title": "Claude Code v2.1.210 发布",
     "date": "2026-07-14",
@@ -73,6 +88,21 @@
     "whyImportant": "GitHub Copilot 生态动态，影响企业开发者工作流。",
     "impact": "关注 Agent 模式、CLI 和企业策略相关变更。",
     "sourceUrl": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app"
+  },
+  {
+    "id": "auto-gh-github-copilot-for-jetbrains-expands-byo",
+    "title": "GitHub Copilot for JetBrains expands BYOK capabilities",
+    "date": "2026-07-14",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "GitHub",
+    "heat": 70,
+    "growth": 6,
+    "sourceTier": "A",
+    "summary": "GitHub 官方 Changelog 更新：GitHub Copilot for JetBrains expands BYOK capabilities",
+    "whyImportant": "GitHub Copilot 生态动态，影响企业开发者工作流。",
+    "impact": "关注 Agent 模式、CLI 和企业策略相关变更。",
+    "sourceUrl": "https://github.blog/changelog/2026-07-14-github-copilot-for-jetbrains-expands-byok-capabilities"
   },
   {
     "id": "auto-claude-v2-1-207",
