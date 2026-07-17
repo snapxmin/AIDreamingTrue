@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-16T01:01:36Z",
+    "lastUpdated": "2026-07-17T01:03:42Z",
     "skillCount": 20,
-    "totalComments": 37,
+    "totalComments": 40,
     "sources": [
       "hacker-news",
       "github",
@@ -15,8 +15,30 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 1,
+      "feedbackCount": 4,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-892-cheapsteak",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "cheapsteak",
+          "date": "2026-03-23",
+          "text": "Ability to opt-out of visual companion across sessions 🙏 <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? <!-- Describe the problem from your own experience. What were you doing, what went wrong or was missing, and why did it matter? \"It would be cool if...\" is not a problem statement. --> I would like to be able to permanently opt-out of the visual ",
+          "url": "https://github.com/obra/superpowers/issues/892",
+          "score": 6,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1251-notchrisbutler",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "notchrisbutler",
+          "date": "2026-04-22",
+          "text": "Group-based execution + review (reduce overhead across many small tasks) <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? <!-- Describe the problem from your own experience. What were you doing, what went wrong or was missing, and why did it matter? \"It would be cool if...\" is not a problem statement. --> A lot of those tasks are small/mechanical (re",
+          "url": "https://github.com/obra/superpowers/issues/1251",
+          "score": 4,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1991-glen-84",
           "source": "github",
@@ -25,6 +47,17 @@
           "date": "2026-07-15",
           "text": "SDD/brainstorming workspace root is hardcoded to .superpowers — make it configurable - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? My projects keep all agent scratch under a single gitignored `.work/` directory. Specs and plans already land there — the agent writes them and can honor a path preference from CLAUDE.md. SDD scratch cannot: it's written by the plugin's `sdd-workspace` script inside dispatched subagents, so no CLAUDE.md or memory preference changes where that bash script writes. The workspace root is hardcoded to `<working-t",
           "url": "https://github.com/obra/superpowers/issues/1991",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1997-minouris",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "minouris",
+          "date": "2026-07-16",
+          "text": "Automatically split large specs and plans into sub-documents for individual features - [x ] I searched existing issues and this has not been proposed before (search terms: split spec plan) ## What problem does this solve? When performing large brainstorming sessions, specs and plans can potentially expand to many thousands of lines, making the files difficult for the AI to digest within a single context window, and increasing the risk of context bleeding and amnesia through saturation. ## Proposed solution When a specification expands to the point of having multiple features, or exceeds a set ",
+          "url": "https://github.com/obra/superpowers/issues/1997",
           "score": 0,
           "sentiment": "negative"
         }
@@ -37,15 +70,15 @@
       "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
+          "id": "github-https-github-com-obra-superpowers-issues-895-qdon314",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "jfiscman",
-          "date": "2026-05-19",
-          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
-          "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 17,
-          "sentiment": "positive"
+          "author": "qdon314",
+          "date": "2026-03-23",
+          "text": "writing-plans: plans over-specify implementation, leaving no room for executor judgment - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? When using `writing-plans` to plan a multi-task implementation, the generated plan contained complete implementation code — full function bodies, 70-line test files, exact shell commands, and step-by-step TDD sequences per task. The executor (`executing-plans` / `subagent-driven-development`) had no decisions to make — it was copy-pasting code from the plan rather than engineering a solution. This caused ",
+          "url": "https://github.com/obra/superpowers/issues/895",
+          "score": 18,
+          "sentiment": "negative"
         }
       ]
     },
@@ -56,6 +89,17 @@
       "feedbackCount": 3,
       "comments": [
         {
+          "id": "github-https-github-com-obra-superpowers-issues-895-qdon314",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "qdon314",
+          "date": "2026-03-23",
+          "text": "writing-plans: plans over-specify implementation, leaving no room for executor judgment - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? When using `writing-plans` to plan a multi-task implementation, the generated plan contained complete implementation code — full function bodies, 70-line test files, exact shell commands, and step-by-step TDD sequences per task. The executor (`executing-plans` / `subagent-driven-development`) had no decisions to make — it was copy-pasting code from the plan rather than engineering a solution. This caused ",
+          "url": "https://github.com/obra/superpowers/issues/895",
+          "score": 18,
+          "sentiment": "negative"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-1044-peiledoir",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -65,17 +109,6 @@
           "url": "https://github.com/obra/superpowers/issues/1044",
           "score": 1,
           "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1478-qinhaihong-red",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "qinhaihong-red",
-          "date": "2026-05-06",
-          "text": "Clarify session terminology between subagent-driven-development and executing-plans - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? The documentation around `subagent-driven-development` vs `executing-plans` uses \"session\" terminology in a way that is easy to misread. In `skills/subagent-driven-development/SKILL.md`, the decision graph says: ```dot \"Stay in this session?\" -> \"subagent-driven-development\" [label=\"yes\"]; \"Stay in this session?\" -> \"executing-plans\" [label=\"no - parallel session\"]; ``` The same skill also says: ```md **vs. E",
-          "url": "https://github.com/obra/superpowers/issues/1478",
-          "score": 1,
-          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1860-fubieliangpu",
@@ -143,28 +176,17 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 2,
+      "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1044-peiledoir",
+          "id": "github-https-github-com-obra-superpowers-issues-895-qdon314",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "peiledoir",
-          "date": "2026-04-03",
-          "text": "writing-plans: execution handoff should respect user-defined execution modes ## Problem The `writing-plans` skill hardcodes two execution options in its \"Execution Handoff\" section: 1. Subagent-Driven (recommended) 2. Inline Execution The plan header template also bakes this in: > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans Users who define custom execution modes in CLAUDE.md (e.g., agent teams with Builder/Inspector/Director roles) get overridden by the skill's prescriptive flow — even though superpowers",
-          "url": "https://github.com/obra/superpowers/issues/1044",
-          "score": 1,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1478-qinhaihong-red",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "qinhaihong-red",
-          "date": "2026-05-06",
-          "text": "Clarify session terminology between subagent-driven-development and executing-plans - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? The documentation around `subagent-driven-development` vs `executing-plans` uses \"session\" terminology in a way that is easy to misread. In `skills/subagent-driven-development/SKILL.md`, the decision graph says: ```dot \"Stay in this session?\" -> \"subagent-driven-development\" [label=\"yes\"]; \"Stay in this session?\" -> \"executing-plans\" [label=\"no - parallel session\"]; ``` The same skill also says: ```md **vs. E",
-          "url": "https://github.com/obra/superpowers/issues/1478",
-          "score": 1,
+          "author": "qdon314",
+          "date": "2026-03-23",
+          "text": "writing-plans: plans over-specify implementation, leaving no room for executor judgment - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? When using `writing-plans` to plan a multi-task implementation, the generated plan contained complete implementation code — full function bodies, 70-line test files, exact shell commands, and step-by-step TDD sequences per task. The executor (`executing-plans` / `subagent-driven-development`) had no decisions to make — it was copy-pasting code from the plan rather than engineering a solution. This caused ",
+          "url": "https://github.com/obra/superpowers/issues/895",
+          "score": 18,
           "sentiment": "negative"
         }
       ]
@@ -203,8 +225,19 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-446-djanowski",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "djanowski",
+          "date": "2026-02-09",
+          "text": "How to know if Superpowers are being invoked? Silly question from experienced Claude Code user here: How do I know if Claude Code is using Superpowers? I followed all the steps and I can't really know if it's doing anything different than standard plan mode. Thank you!",
+          "url": "https://github.com/obra/superpowers/issues/446",
+          "score": 23,
+          "sentiment": "neutral"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1988-lady-lin",
           "source": "github",
@@ -213,7 +246,7 @@
           "date": "2026-07-14",
           "text": "Codex SDD has no circuit breaker: one task ran ~4 hours and accumulated 120.7M telemetry tokens - [x] I searched open and closed issues. This report is related to #1152, #1194, #1631, #1747, #1917, #1960, and #1979, but adds a complete current-version trace of an unbounded single-task loop. ## Summary In a sanitized Codex Desktop session using Superpowers 6.1.1, one bounded frontend state-consistency task ran for about four hours. It went through five serial implementation/review/repair cycles before the controller recognized that it had been testing individual race symptoms instead of treatin",
           "url": "https://github.com/obra/superpowers/issues/1988",
-          "score": 1,
+          "score": 2,
           "sentiment": "negative"
         }
       ]

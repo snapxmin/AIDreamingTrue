@@ -1,33 +1,5 @@
 {
-  "generatedAt": "2026-07-16T00:59:17Z",
+  "generatedAt": "2026-07-17T01:00:48Z",
   "isBaselineRun": false,
-  "changes": [
-    {
-      "type": "added",
-      "key": "awesome-copilot/convert-excel-to-md",
-      "ecosystem": "awesome-copilot",
-      "slug": "convert-excel-to-md",
-      "displayName": "Convert Excel To Md",
-      "summary": "生态新增 Skill：Convert Excel To Md",
-      "detectedAt": "2026-07-16T00:59:58Z"
-    },
-    {
-      "type": "added",
-      "key": "awesome-copilot/convert-pdf-to-md",
-      "ecosystem": "awesome-copilot",
-      "slug": "convert-pdf-to-md",
-      "displayName": "Convert Pdf To Md",
-      "summary": "生态新增 Skill：Convert Pdf To Md",
-      "detectedAt": "2026-07-16T00:59:58Z"
-    },
-    {
-      "type": "added",
-      "key": "awesome-copilot/convert-word-to-md",
-      "ecosystem": "awesome-copilot",
-      "slug": "convert-word-to-md",
-      "displayName": "Convert Word To Md",
-      "summary": "生态新增 Skill：Convert Word To Md",
-      "detectedAt": "2026-07-16T00:59:58Z"
-    }
-  ]
+  "changes": []
 }

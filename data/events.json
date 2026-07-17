@@ -1,5 +1,20 @@
 [
   {
+    "id": "auto-claude-v2-1-212",
+    "title": "Claude Code v2.1.212 发布",
+    "date": "2026-07-17",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "Anthropic",
+    "heat": 75,
+    "growth": 8,
+    "sourceTier": "A",
+    "summary": "## What's changed  - `/fork` now copies your conversation into a new background session (its own row in `claude agents`) while you keep working; the in-session subagent it used to launch is now `/subt",
+    "whyImportant": "Claude Code 持续高频迭代，终端 Agent 能力不断增强。",
+    "impact": "关注 release notes 中的权限、MCP 和 subagent 相关变更。",
+    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.212"
+  },
+  {
     "id": "auto-gh-github-copilot-in-visual-studio-june-upd",
     "title": "GitHub Copilot in Visual Studio — June update",
     "date": "2026-07-15",
