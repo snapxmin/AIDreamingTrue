@@ -1,5 +1,48 @@
 {
-  "generatedAt": "2026-07-17T01:00:48Z",
+  "generatedAt": "2026-07-18T00:58:58Z",
   "isBaselineRun": false,
-  "changes": []
+  "changes": [
+    {
+      "type": "updated",
+      "key": "anthropics-skills/docx",
+      "ecosystem": "anthropics-skills",
+      "slug": "docx",
+      "displayName": "Docx",
+      "changedFields": [
+        "content",
+        "description"
+      ],
+      "summary": "description 更新：Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx fi…",
+      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/docx",
+      "detectedAt": "2026-07-18T01:00:07Z"
+    },
+    {
+      "type": "updated",
+      "key": "anthropics-skills/pptx",
+      "ecosystem": "anthropics-skills",
+      "slug": "pptx",
+      "displayName": "Pptx",
+      "changedFields": [
+        "content",
+        "description"
+      ],
+      "summary": "description 更新：Use this skill any time a .pptx or .potx file is involved in any way — as input, output, or both. Th…",
+      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/pptx",
+      "detectedAt": "2026-07-18T01:00:07Z"
+    },
+    {
+      "type": "updated",
+      "key": "anthropics-skills/xlsx",
+      "ecosystem": "anthropics-skills",
+      "slug": "xlsx",
+      "displayName": "Xlsx",
+      "changedFields": [
+        "content",
+        "description"
+      ],
+      "summary": "description 更新：Use this skill any time a spreadsheet file is the primary input or output. This means any task where…",
+      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/xlsx",
+      "detectedAt": "2026-07-18T01:00:07Z"
+    }
+  ]
 }

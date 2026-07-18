@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-17T01:03:42Z",
+    "lastUpdated": "2026-07-18T01:01:40Z",
     "skillCount": 20,
-    "totalComments": 40,
+    "totalComments": 42,
     "sources": [
       "hacker-news",
       "github",
@@ -15,40 +15,18 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-892-cheapsteak",
+          "id": "github-https-github-com-obra-superpowers-issues-512-iiian-crayon",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "cheapsteak",
-          "date": "2026-03-23",
-          "text": "Ability to opt-out of visual companion across sessions 🙏 <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? <!-- Describe the problem from your own experience. What were you doing, what went wrong or was missing, and why did it matter? \"It would be cool if...\" is not a problem statement. --> I would like to be able to permanently opt-out of the visual ",
-          "url": "https://github.com/obra/superpowers/issues/892",
-          "score": 6,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1251-notchrisbutler",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "notchrisbutler",
-          "date": "2026-04-22",
-          "text": "Group-based execution + review (reduce overhead across many small tasks) <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? <!-- Describe the problem from your own experience. What were you doing, what went wrong or was missing, and why did it matter? \"It would be cool if...\" is not a problem statement. --> A lot of those tasks are small/mechanical (re",
-          "url": "https://github.com/obra/superpowers/issues/1251",
-          "score": 4,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1991-glen-84",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "glen-84",
-          "date": "2026-07-15",
-          "text": "SDD/brainstorming workspace root is hardcoded to .superpowers — make it configurable - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? My projects keep all agent scratch under a single gitignored `.work/` directory. Specs and plans already land there — the agent writes them and can honor a path preference from CLAUDE.md. SDD scratch cannot: it's written by the plugin's `sdd-workspace` script inside dispatched subagents, so no CLAUDE.md or memory preference changes where that bash script writes. The workspace root is hardcoded to `<working-t",
-          "url": "https://github.com/obra/superpowers/issues/1991",
-          "score": 1,
-          "sentiment": "negative"
+          "author": "iiian-crayon",
+          "date": "2026-02-20",
+          "text": "brainstorming/writing-plans SKILL efficiency **Is your feature request related to a problem? Please describe.** Had a convo with `claude` about the plan.md that it generated for a feature I'm building [see additional context]. Sticking all of the tasks in a single file is maybe not the most efficient approach from a token burn perspective. It's minor, as it seems the subagent workflow efficiently breaks up the parent doc, although the doc could be written as multiple separate step files, the plan itself could be a directory. **Describe the solution you'd like** Consider splitting up the steps ",
+          "url": "https://github.com/obra/superpowers/issues/512",
+          "score": 17,
+          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1997-minouris",
@@ -58,6 +36,17 @@
           "date": "2026-07-16",
           "text": "Automatically split large specs and plans into sub-documents for individual features - [x ] I searched existing issues and this has not been proposed before (search terms: split spec plan) ## What problem does this solve? When performing large brainstorming sessions, specs and plans can potentially expand to many thousands of lines, making the files difficult for the AI to digest within a single context window, and increasing the risk of context bleeding and amnesia through saturation. ## Proposed solution When a specification expands to the point of having multiple features, or exceeds a set ",
           "url": "https://github.com/obra/superpowers/issues/1997",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2000-chentingtodo",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ChenTingToDo",
+          "date": "2026-07-17",
+          "text": "Feature request: add an opt-in/manual-only brainstorming profile ## Is your feature request related to a problem? Please describe. The current `brainstorming` skill is intentionally described as mandatory before any feature, bug fix, UI change, or behavior modification. That is useful for rough, high-uncertainty product ideas, but it creates avoidable friction when the user has already provided a complete PRD or precise acceptance criteria. I use Superpowers through the Codex app with GPT-5.6 and installed the `brainstorming` skill without the rest of the Superpowers pipeline. In real local us",
+          "url": "https://github.com/obra/superpowers/issues/2000",
           "score": 0,
           "sentiment": "negative"
         }
@@ -86,7 +75,7 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-895-qdon314",
@@ -100,14 +89,14 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1044-peiledoir",
+          "id": "github-https-github-com-obra-superpowers-issues-512-iiian-crayon",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "peiledoir",
-          "date": "2026-04-03",
-          "text": "writing-plans: execution handoff should respect user-defined execution modes ## Problem The `writing-plans` skill hardcodes two execution options in its \"Execution Handoff\" section: 1. Subagent-Driven (recommended) 2. Inline Execution The plan header template also bakes this in: > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans Users who define custom execution modes in CLAUDE.md (e.g., agent teams with Builder/Inspector/Director roles) get overridden by the skill's prescriptive flow — even though superpowers",
-          "url": "https://github.com/obra/superpowers/issues/1044",
-          "score": 1,
+          "author": "iiian-crayon",
+          "date": "2026-02-20",
+          "text": "brainstorming/writing-plans SKILL efficiency **Is your feature request related to a problem? Please describe.** Had a convo with `claude` about the plan.md that it generated for a feature I'm building [see additional context]. Sticking all of the tasks in a single file is maybe not the most efficient approach from a token burn perspective. It's minor, as it seems the subagent workflow efficiently breaks up the parent doc, although the doc could be written as multiple separate step files, the plan itself could be a directory. **Describe the solution you'd like** Consider splitting up the steps ",
+          "url": "https://github.com/obra/superpowers/issues/512",
+          "score": 17,
           "sentiment": "neutral"
         },
         {
@@ -119,6 +108,17 @@
           "text": "writing-plans: xhigh-effort sessions stall mid-stream on large plans (extended thinking exceeds 5-min watchdog) - [x] I searched existing issues and this is not a duplicate *(Closest prior art: #227 — output token truncation, closed as platform limitation; #1545 — STOP-trigger stalls; #1747 — effort dimension missing. This is a distinct failure mode with different root cause and reproduction pattern.)* ## Environment | Field | Value | |---|---| | Superpowers version | 6.0.3 | | Harness | Claude Code | | Model | claude-opus-4-8 (1M context) | | Session effort | xhigh | ## What happened? When `w",
           "url": "https://github.com/obra/superpowers/issues/1860",
           "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2000-chentingtodo",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ChenTingToDo",
+          "date": "2026-07-17",
+          "text": "Feature request: add an opt-in/manual-only brainstorming profile ## Is your feature request related to a problem? Please describe. The current `brainstorming` skill is intentionally described as mandatory before any feature, bug fix, UI change, or behavior modification. That is useful for rough, high-uncertainty product ideas, but it creates avoidable friction when the user has already provided a complete PRD or precise acceptance criteria. I use Superpowers through the Codex app with GPT-5.6 and installed the `brainstorming` skill without the rest of the Superpowers pipeline. In real local us",
+          "url": "https://github.com/obra/superpowers/issues/2000",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -176,7 +176,7 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-895-qdon314",
@@ -188,6 +188,17 @@
           "url": "https://github.com/obra/superpowers/issues/895",
           "score": 18,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-512-iiian-crayon",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "iiian-crayon",
+          "date": "2026-02-20",
+          "text": "brainstorming/writing-plans SKILL efficiency **Is your feature request related to a problem? Please describe.** Had a convo with `claude` about the plan.md that it generated for a feature I'm building [see additional context]. Sticking all of the tasks in a single file is maybe not the most efficient approach from a token burn perspective. It's minor, as it seems the subagent workflow efficiently breaks up the parent doc, although the doc could be written as multiple separate step files, the plan itself could be a directory. **Describe the solution you'd like** Consider splitting up the steps ",
+          "url": "https://github.com/obra/superpowers/issues/512",
+          "score": 17,
+          "sentiment": "neutral"
         }
       ]
     },
@@ -225,7 +236,7 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-446-djanowski",
@@ -236,6 +247,17 @@
           "text": "How to know if Superpowers are being invoked? Silly question from experienced Claude Code user here: How do I know if Claude Code is using Superpowers? I followed all the steps and I can't really know if it's doing anything different than standard plan mode. Thank you!",
           "url": "https://github.com/obra/superpowers/issues/446",
           "score": 23,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1812-gpitrella",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "gpitrella",
+          "date": "2026-06-19",
+          "text": "[RFC] Persistent memory across Superpowers agents - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? When switching between agents or sessions, context doesn't travel with you. Project decisions, preferences, and important details need to be re-explained every time — across sessions and across tools (Claude, Cursor, Codex, Gemini). ## Proposed solution An optional MCP-based integration that makes context portable across all supported agents. Completely opt-in, zero impact on existing workflows. I've been experimenting with this approach and ",
+          "url": "https://github.com/obra/superpowers/issues/1812",
+          "score": 3,
           "sentiment": "neutral"
         },
         {
