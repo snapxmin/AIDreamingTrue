@@ -1,5 +1,20 @@
 [
   {
+    "id": "auto-claude-v2-1-214",
+    "title": "Claude Code v2.1.214 发布",
+    "date": "2026-07-18",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "Anthropic",
+    "heat": 75,
+    "growth": 8,
+    "sourceTier": "A",
+    "summary": "## What's changed  - Fixed single-segment `dir/**` allow rules like `Edit(src/**)` auto-approving writes to nested `dir/` directories anywhere in the tree instead of only `<cwd>/dir` - Fixed a permiss",
+    "whyImportant": "Claude Code 持续高频迭代，终端 Agent 能力不断增强。",
+    "impact": "关注 release notes 中的权限、MCP 和 subagent 相关变更。",
+    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.214"
+  },
+  {
     "id": "auto-claude-v2-1-212",
     "title": "Claude Code v2.1.212 发布",
     "date": "2026-07-17",

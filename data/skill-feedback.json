@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-18T01:01:40Z",
+    "lastUpdated": "2026-07-19T01:04:00Z",
     "skillCount": 20,
-    "totalComments": 42,
+    "totalComments": 39,
     "sources": [
       "hacker-news",
       "github",
@@ -15,39 +15,17 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 3,
+      "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-512-iiian-crayon",
+          "id": "github-https-github-com-obra-superpowers-issues-42-jrastic",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "iiian-crayon",
-          "date": "2026-02-20",
-          "text": "brainstorming/writing-plans SKILL efficiency **Is your feature request related to a problem? Please describe.** Had a convo with `claude` about the plan.md that it generated for a feature I'm building [see additional context]. Sticking all of the tasks in a single file is maybe not the most efficient approach from a token burn perspective. It's minor, as it seems the subagent workflow efficiently breaks up the parent doc, although the doc could be written as multiple separate step files, the plan itself could be a directory. **Describe the solution you'd like** Consider splitting up the steps ",
-          "url": "https://github.com/obra/superpowers/issues/512",
-          "score": 17,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1997-minouris",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "minouris",
-          "date": "2026-07-16",
-          "text": "Automatically split large specs and plans into sub-documents for individual features - [x ] I searched existing issues and this has not been proposed before (search terms: split spec plan) ## What problem does this solve? When performing large brainstorming sessions, specs and plans can potentially expand to many thousands of lines, making the files difficult for the AI to digest within a single context window, and increasing the risk of context bleeding and amnesia through saturation. ## Proposed solution When a specification expands to the point of having multiple features, or exceeds a set ",
-          "url": "https://github.com/obra/superpowers/issues/1997",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2000-chentingtodo",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "ChenTingToDo",
-          "date": "2026-07-17",
-          "text": "Feature request: add an opt-in/manual-only brainstorming profile ## Is your feature request related to a problem? Please describe. The current `brainstorming` skill is intentionally described as mandatory before any feature, bug fix, UI change, or behavior modification. That is useful for rough, high-uncertainty product ideas, but it creates avoidable friction when the user has already provided a complete PRD or precise acceptance criteria. I use Superpowers through the Codex app with GPT-5.6 and installed the `brainstorming` skill without the rest of the Superpowers pipeline. In real local us",
-          "url": "https://github.com/obra/superpowers/issues/2000",
-          "score": 0,
+          "author": "jrastic",
+          "date": "2025-10-17",
+          "text": "superpower degradation since Anthropic Skills release ... Just small introduction - I was AMAZED how good superpowers worked on HUGE Java codebase this week. Since today it seems that things broke. I'm guessing that it's because of Anthropic skill system release since I can't see any big change in superpower repos... Any suggestion how to improve local situation? Any suggestion how to 'rollback' this? Or when will situation _stabilize_? **Describe the bug** 17 Oct 2025 - Claude code is not really doing superpowers correctly. It's not doing brainstorming as days before, it's doing weird executi",
+          "url": "https://github.com/obra/superpowers/issues/42",
+          "score": 10,
           "sentiment": "negative"
         }
       ]
@@ -127,20 +105,8 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 1,
-      "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jfiscman",
-          "date": "2026-05-19",
-          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
-          "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 17,
-          "sentiment": "positive"
-        }
-      ]
+      "feedbackCount": 0,
+      "comments": []
     },
     "superpowers/verification-before-completion": {
       "slug": "verification-before-completion",
@@ -250,6 +216,17 @@
           "sentiment": "neutral"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-42-jrastic",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jrastic",
+          "date": "2025-10-17",
+          "text": "superpower degradation since Anthropic Skills release ... Just small introduction - I was AMAZED how good superpowers worked on HUGE Java codebase this week. Since today it seems that things broke. I'm guessing that it's because of Anthropic skill system release since I can't see any big change in superpower repos... Any suggestion how to improve local situation? Any suggestion how to 'rollback' this? Or when will situation _stabilize_? **Describe the bug** 17 Oct 2025 - Claude code is not really doing superpowers correctly. It's not doing brainstorming as days before, it's doing weird executi",
+          "url": "https://github.com/obra/superpowers/issues/42",
+          "score": 10,
+          "sentiment": "negative"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-1812-gpitrella",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -259,17 +236,6 @@
           "url": "https://github.com/obra/superpowers/issues/1812",
           "score": 3,
           "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1988-lady-lin",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Lady-Lin",
-          "date": "2026-07-14",
-          "text": "Codex SDD has no circuit breaker: one task ran ~4 hours and accumulated 120.7M telemetry tokens - [x] I searched open and closed issues. This report is related to #1152, #1194, #1631, #1747, #1917, #1960, and #1979, but adds a complete current-version trace of an unbounded single-task loop. ## Summary In a sanitized Codex Desktop session using Superpowers 6.1.1, one bounded frontend state-consistency task ran for about four hours. It went through five serial implementation/review/repair cycles before the controller recognized that it had been testing individual race symptoms instead of treatin",
-          "url": "https://github.com/obra/superpowers/issues/1988",
-          "score": 2,
-          "sentiment": "negative"
         }
       ]
     },
