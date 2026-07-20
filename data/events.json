@@ -1,5 +1,20 @@
 [
   {
+    "id": "auto-claude-v2-1-215",
+    "title": "Claude Code v2.1.215 发布",
+    "date": "2026-07-19",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "Anthropic",
+    "heat": 75,
+    "growth": 8,
+    "sourceTier": "A",
+    "summary": "## What's changed  - Claude no longer runs the `/verify` and `/code-review` skills on its own; invoke them with `/verify` or `/code-review` when you want them",
+    "whyImportant": "Claude Code 持续高频迭代，终端 Agent 能力不断增强。",
+    "impact": "关注 release notes 中的权限、MCP 和 subagent 相关变更。",
+    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.215"
+  },
+  {
     "id": "auto-claude-v2-1-214",
     "title": "Claude Code v2.1.214 发布",
     "date": "2026-07-18",

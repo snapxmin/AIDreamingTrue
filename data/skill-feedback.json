@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-19T01:04:00Z",
+    "lastUpdated": "2026-07-20T01:04:13Z",
     "skillCount": 20,
-    "totalComments": 39,
+    "totalComments": 35,
     "sources": [
       "hacker-news",
       "github",
@@ -15,20 +15,8 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 1,
-      "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-42-jrastic",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jrastic",
-          "date": "2025-10-17",
-          "text": "superpower degradation since Anthropic Skills release ... Just small introduction - I was AMAZED how good superpowers worked on HUGE Java codebase this week. Since today it seems that things broke. I'm guessing that it's because of Anthropic skill system release since I can't see any big change in superpower repos... Any suggestion how to improve local situation? Any suggestion how to 'rollback' this? Or when will situation _stabilize_? **Describe the bug** 17 Oct 2025 - Claude code is not really doing superpowers correctly. It's not doing brainstorming as days before, it's doing weird executi",
-          "url": "https://github.com/obra/superpowers/issues/42",
-          "score": 10,
-          "sentiment": "negative"
-        }
-      ]
+      "feedbackCount": 0,
+      "comments": []
     },
     "superpowers/test-driven-development": {
       "slug": "test-driven-development",
@@ -53,7 +41,7 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-895-qdon314",
@@ -76,17 +64,6 @@
           "url": "https://github.com/obra/superpowers/issues/512",
           "score": 17,
           "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1860-fubieliangpu",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "fubieliangpu",
-          "date": "2026-06-29",
-          "text": "writing-plans: xhigh-effort sessions stall mid-stream on large plans (extended thinking exceeds 5-min watchdog) - [x] I searched existing issues and this is not a duplicate *(Closest prior art: #227 — output token truncation, closed as platform limitation; #1545 — STOP-trigger stalls; #1747 — effort dimension missing. This is a distinct failure mode with different root cause and reproduction pattern.)* ## Environment | Field | Value | |---|---| | Superpowers version | 6.0.3 | | Harness | Claude Code | | Model | claude-opus-4-8 (1M context) | | Session effort | xhigh | ## What happened? When `w",
-          "url": "https://github.com/obra/superpowers/issues/1860",
-          "score": 1,
-          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2000-chentingtodo",
@@ -202,19 +179,8 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 3,
+      "feedbackCount": 1,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-446-djanowski",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "djanowski",
-          "date": "2026-02-09",
-          "text": "How to know if Superpowers are being invoked? Silly question from experienced Claude Code user here: How do I know if Claude Code is using Superpowers? I followed all the steps and I can't really know if it's doing anything different than standard plan mode. Thank you!",
-          "url": "https://github.com/obra/superpowers/issues/446",
-          "score": 23,
-          "sentiment": "neutral"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-42-jrastic",
           "source": "github",
@@ -225,17 +191,6 @@
           "url": "https://github.com/obra/superpowers/issues/42",
           "score": 10,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1812-gpitrella",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "gpitrella",
-          "date": "2026-06-19",
-          "text": "[RFC] Persistent memory across Superpowers agents - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? When switching between agents or sessions, context doesn't travel with you. Project decisions, preferences, and important details need to be re-explained every time — across sessions and across tools (Claude, Cursor, Codex, Gemini). ## Proposed solution An optional MCP-based integration that makes context portable across all supported agents. Completely opt-in, zero impact on existing workflows. I've been experimenting with this approach and ",
-          "url": "https://github.com/obra/superpowers/issues/1812",
-          "score": 3,
-          "sentiment": "neutral"
         }
       ]
     },
