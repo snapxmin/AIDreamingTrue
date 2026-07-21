@@ -1,5 +1,96 @@
 {
-  "generatedAt": "2026-07-20T01:34:43Z",
+  "generatedAt": "2026-07-21T01:00:12Z",
   "isBaselineRun": false,
-  "changes": []
+  "changes": [
+    {
+      "type": "added",
+      "key": "awesome-copilot/anti-ui-slop",
+      "ecosystem": "awesome-copilot",
+      "slug": "anti-ui-slop",
+      "displayName": "Anti Ui Slop",
+      "summary": "生态新增 Skill：Anti Ui Slop",
+      "detectedAt": "2026-07-21T01:00:50Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/bench-read",
+      "ecosystem": "awesome-copilot",
+      "slug": "bench-read",
+      "displayName": "Bench Read",
+      "summary": "生态新增 Skill：Bench Read",
+      "detectedAt": "2026-07-21T01:00:50Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/codebase-memory-mcp",
+      "ecosystem": "awesome-copilot",
+      "slug": "codebase-memory-mcp",
+      "displayName": "Codebase Memory Mcp",
+      "summary": "生态新增 Skill：Codebase Memory Mcp",
+      "detectedAt": "2026-07-21T01:00:50Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/desk-journal",
+      "ecosystem": "awesome-copilot",
+      "slug": "desk-journal",
+      "displayName": "Desk Journal",
+      "summary": "生态新增 Skill：Desk Journal",
+      "detectedAt": "2026-07-21T01:00:50Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/desk-open",
+      "ecosystem": "awesome-copilot",
+      "slug": "desk-open",
+      "displayName": "Desk Open",
+      "summary": "生态新增 Skill：Desk Open",
+      "detectedAt": "2026-07-21T01:00:50Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/java-helidon",
+      "ecosystem": "awesome-copilot",
+      "slug": "java-helidon",
+      "displayName": "Java Helidon",
+      "summary": "生态新增 Skill：Java Helidon",
+      "detectedAt": "2026-07-21T01:00:50Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/markstream-install",
+      "ecosystem": "awesome-copilot",
+      "slug": "markstream-install",
+      "displayName": "Markstream Install",
+      "summary": "生态新增 Skill：Markstream Install",
+      "detectedAt": "2026-07-21T01:00:50Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/signal-write",
+      "ecosystem": "awesome-copilot",
+      "slug": "signal-write",
+      "displayName": "Signal Write",
+      "summary": "生态新增 Skill：Signal Write",
+      "detectedAt": "2026-07-21T01:00:50Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/vcpkg",
+      "ecosystem": "awesome-copilot",
+      "slug": "vcpkg",
+      "displayName": "Vcpkg",
+      "summary": "生态新增 Skill：Vcpkg",
+      "detectedAt": "2026-07-21T01:00:50Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/workshop-create",
+      "ecosystem": "awesome-copilot",
+      "slug": "workshop-create",
+      "displayName": "Workshop Create",
+      "summary": "生态新增 Skill：Workshop Create",
+      "detectedAt": "2026-07-21T01:00:50Z"
+    }
+  ]
 }
