@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-21T01:02:14Z",
+    "lastUpdated": "2026-07-22T01:01:22Z",
     "skillCount": 20,
-    "totalComments": 39,
+    "totalComments": 41,
     "sources": [
       "hacker-news",
       "github",
@@ -15,7 +15,7 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
@@ -27,6 +27,17 @@
           "url": "https://github.com/obra/superpowers/issues/1581",
           "score": 18,
           "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2000-chentingtodo",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ChenTingToDo",
+          "date": "2026-07-17",
+          "text": "Feature request: add an opt-in/manual-only brainstorming profile ## Is your feature request related to a problem? Please describe. The current `brainstorming` skill is intentionally described as mandatory before any feature, bug fix, UI change, or behavior modification. That is useful for rough, high-uncertainty product ideas, but it creates avoidable friction when the user has already provided a complete PRD or precise acceptance criteria. I use Superpowers through the Codex app with GPT-5.6 and installed the `brainstorming` skill without the rest of the Superpowers pipeline. In real local us",
+          "url": "https://github.com/obra/superpowers/issues/2000",
+          "score": 1,
+          "sentiment": "negative"
         }
       ]
     },
@@ -107,7 +118,7 @@
           "date": "2026-07-17",
           "text": "Feature request: add an opt-in/manual-only brainstorming profile ## Is your feature request related to a problem? Please describe. The current `brainstorming` skill is intentionally described as mandatory before any feature, bug fix, UI change, or behavior modification. That is useful for rough, high-uncertainty product ideas, but it creates avoidable friction when the user has already provided a complete PRD or precise acceptance criteria. I use Superpowers through the Codex app with GPT-5.6 and installed the `brainstorming` skill without the rest of the Superpowers pipeline. In real local us",
           "url": "https://github.com/obra/superpowers/issues/2000",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -179,15 +190,15 @@
           "sentiment": "positive"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-512-iiian-crayon",
+          "id": "github-https-github-com-obra-superpowers-issues-2012-jchris-svg",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "iiian-crayon",
-          "date": "2026-02-20",
-          "text": "brainstorming/writing-plans SKILL efficiency **Is your feature request related to a problem? Please describe.** Had a convo with `claude` about the plan.md that it generated for a feature I'm building [see additional context]. Sticking all of the tasks in a single file is maybe not the most efficient approach from a token burn perspective. It's minor, as it seems the subagent workflow efficiently breaks up the parent doc, although the doc could be written as multiple separate step files, the plan itself could be a directory. **Describe the solution you'd like** Consider splitting up the steps ",
-          "url": "https://github.com/obra/superpowers/issues/512",
-          "score": 17,
-          "sentiment": "neutral"
+          "author": "jchris-svg",
+          "date": "2026-07-21",
+          "text": "subagent-driven-development: task-N scratch filenames collide across plans, silently destroying a prior run's artifacts Running a second plan through `subagent-driven-development` in a repo that has already run one will silently overwrite the first plan's scratch files. I lost two files this way today before noticing the pattern. ### Cause Scratch lives in a single repo-level `.superpowers/sdd/` directory, and the filenames are keyed on **task number**, which restarts at 1 for every plan. `scripts/task-brief` line 24: ```sh out=\"$dir/task-${n}-brief.md\" ``` The skill's report-file convention h",
+          "url": "https://github.com/obra/superpowers/issues/2012",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -388,7 +399,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 5,
+      "feedbackCount": 6,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1169-tazmad",
@@ -399,6 +410,17 @@
           "text": "skill-creator description-optimisation loop: recall=0% on every iteration, including literal slash-command queries ## Summary When running `scripts/run_loop.py` (or `scripts/improve_description.py`) against a skill that already has a defined slash-command name, every iteration scores **precision=100%, recall=0%, accuracy=50%** — including queries that are the literal slash-command invocation of that skill. The score is identical across iterations regardless of how much the candidate description changes, so the loop produces no usable signal for description tuning. ## Environment - skill-creato",
           "url": "https://github.com/anthropics/skills/issues/1169",
           "score": 3,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-975-ivankuleshin",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ivanKuleshin",
+          "date": "2026-04-18",
+          "text": "skill-creator eliminated the whole limits (5 hours x 2 times) without any result The skills-creator is unusable after your new limits! With a Pro subscription, it's impossible not only to code something, but even to set up a context via skills, agents, and memory. Very disappointed...",
+          "url": "https://github.com/anthropics/skills/issues/975",
+          "score": 2,
           "sentiment": "negative"
         },
         {
