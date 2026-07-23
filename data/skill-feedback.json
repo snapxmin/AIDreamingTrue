@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-22T01:01:22Z",
+    "lastUpdated": "2026-07-23T01:03:40Z",
     "skillCount": 20,
-    "totalComments": 41,
+    "totalComments": 40,
     "sources": [
       "hacker-news",
       "github",
@@ -15,19 +15,8 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 2,
+      "feedbackCount": 1,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jfiscman",
-          "date": "2026-05-19",
-          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
-          "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 18,
-          "sentiment": "positive"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2000-chentingtodo",
           "source": "github",
@@ -75,19 +64,8 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 4,
+      "feedbackCount": 2,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-895-qdon314",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "qdon314",
-          "date": "2026-03-23",
-          "text": "writing-plans: plans over-specify implementation, leaving no room for executor judgment - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? When using `writing-plans` to plan a multi-task implementation, the generated plan contained complete implementation code — full function bodies, 70-line test files, exact shell commands, and step-by-step TDD sequences per task. The executor (`executing-plans` / `subagent-driven-development`) had no decisions to make — it was copy-pasting code from the plan rather than engineering a solution. This caused ",
-          "url": "https://github.com/obra/superpowers/issues/895",
-          "score": 18,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
           "source": "github",
@@ -98,17 +76,6 @@
           "url": "https://github.com/obra/superpowers/issues/1581",
           "score": 18,
           "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-512-iiian-crayon",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "iiian-crayon",
-          "date": "2026-02-20",
-          "text": "brainstorming/writing-plans SKILL efficiency **Is your feature request related to a problem? Please describe.** Had a convo with `claude` about the plan.md that it generated for a feature I'm building [see additional context]. Sticking all of the tasks in a single file is maybe not the most efficient approach from a token burn perspective. It's minor, as it seems the subagent workflow efficiently breaks up the parent doc, although the doc could be written as multiple separate step files, the plan itself could be a directory. **Describe the solution you'd like** Consider splitting up the steps ",
-          "url": "https://github.com/obra/superpowers/issues/512",
-          "score": 17,
-          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2000-chentingtodo",
@@ -176,7 +143,7 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
@@ -188,6 +155,17 @@
           "url": "https://github.com/obra/superpowers/issues/1581",
           "score": 18,
           "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1917-jorgen-k",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jorgen-k",
+          "date": "2026-07-04",
+          "text": "subagent-driven-development: no inline-vs-dispatch threshold — small, tightly-coupled changes pay fan-out overhead for isolation they don't need - [x] I searched existing issues and this has not been proposed before *Closest prior art, checked open and closed: the cost-tiering stack (#1744 / #1717 / #1716) fixes which **model** each SDD role runs on, and #1747 adds the **reasoning-effort** dimension of the same problem. #1835 is about dispatch **mechanism** (inline Agent vs Workflow fan-out). All three optimize how cheaply a dispatched subagent runs. This proposal is a different, prior axis: *",
+          "url": "https://github.com/obra/superpowers/issues/1917",
+          "score": 1,
+          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2012-jchris-svg",
@@ -236,7 +214,7 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1988-lady-lin",
@@ -247,6 +225,17 @@
           "text": "Codex SDD has no circuit breaker: one task ran ~4 hours and accumulated 120.7M telemetry tokens - [x] I searched open and closed issues. This report is related to #1152, #1194, #1631, #1747, #1917, #1960, and #1979, but adds a complete current-version trace of an unbounded single-task loop. ## Summary In a sanitized Codex Desktop session using Superpowers 6.1.1, one bounded frontend state-consistency task ran for about four hours. It went through five serial implementation/review/repair cycles before the controller recognized that it had been testing individual race symptoms instead of treatin",
           "url": "https://github.com/obra/superpowers/issues/1988",
           "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1917-jorgen-k",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jorgen-k",
+          "date": "2026-07-04",
+          "text": "subagent-driven-development: no inline-vs-dispatch threshold — small, tightly-coupled changes pay fan-out overhead for isolation they don't need - [x] I searched existing issues and this has not been proposed before *Closest prior art, checked open and closed: the cost-tiering stack (#1744 / #1717 / #1716) fixes which **model** each SDD role runs on, and #1747 adds the **reasoning-effort** dimension of the same problem. #1835 is about dispatch **mechanism** (inline Agent vs Workflow fan-out). All three optimize how cheaply a dispatched subagent runs. This proposal is a different, prior axis: *",
+          "url": "https://github.com/obra/superpowers/issues/1917",
+          "score": 1,
           "sentiment": "negative"
         }
       ]

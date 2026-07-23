@@ -1,5 +1,19 @@
 {
-  "generatedAt": "2026-07-22T00:59:02Z",
+  "generatedAt": "2026-07-23T01:00:47Z",
   "isBaselineRun": false,
-  "changes": []
+  "changes": [
+    {
+      "type": "updated",
+      "key": "anthropics-skills/claude-api",
+      "ecosystem": "anthropics-skills",
+      "slug": "claude-api",
+      "displayName": "Claude Api",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/claude-api",
+      "detectedAt": "2026-07-23T01:02:02Z"
+    }
+  ]
 }
