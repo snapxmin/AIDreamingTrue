@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-23T01:00:47Z",
+    "lastUpdated": "2026-07-24T00:59:27Z",
     "totalCount": 20,
     "featuredCount": 18,
-    "indexTotalCount": 456,
-    "newCount": 0,
-    "changesCount": 1,
+    "indexTotalCount": 461,
+    "newCount": 5,
+    "changesCount": 19,
     "sources": [
       "superpowers",
       "awesome-copilot",
@@ -22,7 +22,7 @@
           "GitHub Copilot"
         ],
         "repo": "obra/superpowers",
-        "repoStars": 259444,
+        "repoStars": 260054,
         "totalInRepo": 14,
         "curatedCount": 8
       },
@@ -32,8 +32,8 @@
           "OpenCode"
         ],
         "repo": "github/awesome-copilot",
-        "repoStars": 36940,
-        "totalInRepo": 386,
+        "repoStars": 36974,
+        "totalInRepo": 391,
         "curatedCount": 6
       },
       "anthropics-skills": {
@@ -44,7 +44,7 @@
           "Cursor"
         ],
         "repo": "anthropics/skills",
-        "repoStars": 163438,
+        "repoStars": 163729,
         "totalInRepo": 17,
         "curatedCount": 3
       },
@@ -54,7 +54,7 @@
           "OpenCode"
         ],
         "repo": "openai/skills",
-        "repoStars": 24074,
+        "repoStars": 24115,
         "totalInRepo": 39,
         "curatedCount": 3
       }
@@ -145,12 +145,12 @@
         "requirements"
       ],
       "remoteSynced": true,
-      "contentHash": "e14914605f640e0841758e45d0ab2a53243b59b921f929e47921c99668f2e61d",
-      "lastChangedAt": "2026-07-02T09:43:41Z",
+      "contentHash": "4a54a4858b99807f3155ed1614b2f116e35ea5c1b788e793f565dd837fd3891f",
+      "lastChangedAt": "2026-07-24T00:59:27Z",
       "activityScore": 50,
       "activityRank": 1,
       "signals": {
-        "repoStars": 259444,
+        "repoStars": 260054,
         "mentionedInEvents": 0,
         "crossPlatformCount": 0,
         "inTopCurated": true,
@@ -198,12 +198,12 @@
         "superpowers"
       ],
       "remoteSynced": true,
-      "contentHash": "b5b4717b8b761cce15a6cfe9022e33fd959e0894c0c39d72c9cb49c23486c10e",
-      "lastChangedAt": "2026-07-02T09:43:41Z",
+      "contentHash": "bf1b8216e523851a411e91d429a7c1c2a173e79d88957bc78e348218d50edd54",
+      "lastChangedAt": "2026-07-24T00:59:27Z",
       "activityScore": 50,
       "activityRank": 2,
       "signals": {
-        "repoStars": 259444,
+        "repoStars": 260054,
         "mentionedInEvents": 0,
         "crossPlatformCount": 0,
         "inTopCurated": true,
@@ -249,12 +249,12 @@
         "superpowers"
       ],
       "remoteSynced": true,
-      "contentHash": "272e1af349f5062c28dc282b3e21b220d58d683a7314a10c455b7432ec91d845",
-      "lastChangedAt": "2026-07-02T09:43:41Z",
+      "contentHash": "72190c88b2b5a67a96b91d66aa72b9161913e10e8769da3f28a226f4cc7b99d0",
+      "lastChangedAt": "2026-07-24T00:59:27Z",
       "activityScore": 50,
       "activityRank": 3,
       "signals": {
-        "repoStars": 259444,
+        "repoStars": 260054,
         "mentionedInEvents": 0,
         "crossPlatformCount": 0,
         "inTopCurated": true,
@@ -302,12 +302,12 @@
         "superpowers"
       ],
       "remoteSynced": true,
-      "contentHash": "3b20719eca4f0461cb51a195221320d775dcf03b6859271066a03a5132a6ce7a",
-      "lastChangedAt": "2026-07-02T09:43:41Z",
+      "contentHash": "808fc5717aa88ad65efff312b11c186294d3e6ee301afb584e2f86599b137787",
+      "lastChangedAt": "2026-07-24T00:59:27Z",
       "activityScore": 50,
       "activityRank": 4,
       "signals": {
-        "repoStars": 259444,
+        "repoStars": 260054,
         "mentionedInEvents": 0,
         "crossPlatformCount": 0,
         "inTopCurated": true,
@@ -355,12 +355,12 @@
         "superpowers"
       ],
       "remoteSynced": true,
-      "contentHash": "ea52d15aabaf72bc6b558efe2c126f161b53961090ddcd712000273bfe8c7b6c",
-      "lastChangedAt": "2026-07-02T09:43:41Z",
+      "contentHash": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3",
+      "lastChangedAt": "2026-07-24T00:59:27Z",
       "activityScore": 50,
       "activityRank": 5,
       "signals": {
-        "repoStars": 259444,
+        "repoStars": 260054,
         "mentionedInEvents": 0,
         "crossPlatformCount": 0,
         "inTopCurated": true,
@@ -408,12 +408,12 @@
         "superpowers"
       ],
       "remoteSynced": true,
-      "contentHash": "41ab239a6ad1c487cd839fdac972a8c9cf0f5e90efa59a63f963767864f0df4c",
-      "lastChangedAt": "2026-07-02T09:43:41Z",
+      "contentHash": "349a08ad8b59b19b86c13a7d2f34a1a38719bf88257004a863eefefa8d9f9e40",
+      "lastChangedAt": "2026-07-24T00:59:27Z",
       "activityScore": 50,
       "activityRank": 6,
       "signals": {
-        "repoStars": 259444,
+        "repoStars": 260054,
         "mentionedInEvents": 0,
         "crossPlatformCount": 0,
         "inTopCurated": true,
@@ -460,12 +460,12 @@
         "superpowers"
       ],
       "remoteSynced": true,
-      "contentHash": "1017ccdd5bc61fab67c654cf118cbdb520464b313073a0a6b9a6b9aa647a3ad6",
-      "lastChangedAt": "2026-07-02T09:43:41Z",
+      "contentHash": "d71cc01ba56d2325cf8af5f7c11837819b63ecd57de0bfdb812f7f3ff7751df8",
+      "lastChangedAt": "2026-07-24T00:59:27Z",
       "activityScore": 50,
       "activityRank": 7,
       "signals": {
-        "repoStars": 259444,
+        "repoStars": 260054,
         "mentionedInEvents": 0,
         "crossPlatformCount": 0,
         "inTopCurated": true,
@@ -518,7 +518,7 @@
       "activityScore": 40,
       "activityRank": 19,
       "signals": {
-        "repoStars": 259444,
+        "repoStars": 260054,
         "mentionedInEvents": 0,
         "crossPlatformCount": 0,
         "inTopCurated": true,
@@ -567,7 +567,7 @@
       "activityScore": 50,
       "activityRank": 8,
       "signals": {
-        "repoStars": 36940,
+        "repoStars": 36974,
         "mentionedInEvents": 0,
         "crossPlatformCount": 0,
         "inTopCurated": true,
@@ -617,7 +617,7 @@
       "activityScore": 50,
       "activityRank": 9,
       "signals": {
-        "repoStars": 36940,
+        "repoStars": 36974,
         "mentionedInEvents": 0,
         "crossPlatformCount": 0,
         "inTopCurated": true,
@@ -667,7 +667,7 @@
       "activityScore": 50,
       "activityRank": 10,
       "signals": {
-        "repoStars": 36940,
+        "repoStars": 36974,
         "mentionedInEvents": 0,
         "crossPlatformCount": 0,
         "inTopCurated": true,
@@ -716,7 +716,7 @@
       "activityScore": 50,
       "activityRank": 11,
       "signals": {
-        "repoStars": 36940,
+        "repoStars": 36974,
         "mentionedInEvents": 0,
         "crossPlatformCount": 0,
         "inTopCurated": true,
@@ -765,7 +765,7 @@
       "activityScore": 50,
       "activityRank": 12,
       "signals": {
-        "repoStars": 36940,
+        "repoStars": 36974,
         "mentionedInEvents": 0,
         "crossPlatformCount": 0,
         "inTopCurated": true,
@@ -817,7 +817,7 @@
       "activityScore": 50,
       "activityRank": 13,
       "signals": {
-        "repoStars": 163438,
+        "repoStars": 163729,
         "mentionedInEvents": 0,
         "crossPlatformCount": 0,
         "inTopCurated": true,
@@ -869,7 +869,7 @@
       "activityScore": 50,
       "activityRank": 14,
       "signals": {
-        "repoStars": 163438,
+        "repoStars": 163729,
         "mentionedInEvents": 0,
         "crossPlatformCount": 0,
         "inTopCurated": true,
@@ -921,7 +921,7 @@
       "activityScore": 50,
       "activityRank": 15,
       "signals": {
-        "repoStars": 163438,
+        "repoStars": 163729,
         "mentionedInEvents": 0,
         "crossPlatformCount": 0,
         "inTopCurated": true,
@@ -971,7 +971,7 @@
       "activityScore": 50,
       "activityRank": 16,
       "signals": {
-        "repoStars": 24074,
+        "repoStars": 24115,
         "mentionedInEvents": 0,
         "crossPlatformCount": 0,
         "inTopCurated": true,
@@ -1021,7 +1021,7 @@
       "activityScore": 50,
       "activityRank": 17,
       "signals": {
-        "repoStars": 24074,
+        "repoStars": 24115,
         "mentionedInEvents": 0,
         "crossPlatformCount": 0,
         "inTopCurated": true,
@@ -1071,7 +1071,7 @@
       "activityScore": 50,
       "activityRank": 18,
       "signals": {
-        "repoStars": 24074,
+        "repoStars": 24115,
         "mentionedInEvents": 0,
         "crossPlatformCount": 0,
         "inTopCurated": true,
@@ -1121,7 +1121,7 @@
       "activityScore": 40,
       "activityRank": 20,
       "signals": {
-        "repoStars": 36940,
+        "repoStars": 36974,
         "mentionedInEvents": 0,
         "crossPlatformCount": 0,
         "inTopCurated": true,

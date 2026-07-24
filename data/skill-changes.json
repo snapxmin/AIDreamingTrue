@@ -1,19 +1,234 @@
 {
-  "generatedAt": "2026-07-23T01:00:47Z",
+  "generatedAt": "2026-07-24T00:59:27Z",
   "isBaselineRun": false,
   "changes": [
     {
+      "type": "added",
+      "key": "awesome-copilot/ad-campaign-analyzer",
+      "ecosystem": "awesome-copilot",
+      "slug": "ad-campaign-analyzer",
+      "displayName": "Ad Campaign Analyzer",
+      "summary": "生态新增 Skill：Ad Campaign Analyzer",
+      "detectedAt": "2026-07-24T01:00:27Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/agent-skill-stack",
+      "ecosystem": "awesome-copilot",
+      "slug": "agent-skill-stack",
+      "displayName": "Agent Skill Stack",
+      "summary": "生态新增 Skill：Agent Skill Stack",
+      "detectedAt": "2026-07-24T01:00:27Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/competitor-ad-intelligence",
+      "ecosystem": "awesome-copilot",
+      "slug": "competitor-ad-intelligence",
+      "displayName": "Competitor Ad Intelligence",
+      "summary": "生态新增 Skill：Competitor Ad Intelligence",
+      "detectedAt": "2026-07-24T01:00:27Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/latchshot-page-capture",
+      "ecosystem": "awesome-copilot",
+      "slug": "latchshot-page-capture",
+      "displayName": "Latchshot Page Capture",
+      "summary": "生态新增 Skill：Latchshot Page Capture",
+      "detectedAt": "2026-07-24T01:00:27Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/webmcpify",
+      "ecosystem": "awesome-copilot",
+      "slug": "webmcpify",
+      "displayName": "Webmcpify",
+      "summary": "生态新增 Skill：Webmcpify",
+      "detectedAt": "2026-07-24T01:00:27Z"
+    },
+    {
       "type": "updated",
-      "key": "anthropics-skills/claude-api",
-      "ecosystem": "anthropics-skills",
-      "slug": "claude-api",
-      "displayName": "Claude Api",
+      "key": "awesome-copilot/anti-ui-slop",
+      "ecosystem": "awesome-copilot",
+      "slug": "anti-ui-slop",
+      "displayName": "Anti Ui Slop",
       "changedFields": [
         "content"
       ],
       "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/claude-api",
-      "detectedAt": "2026-07-23T01:02:02Z"
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/anti-ui-slop",
+      "detectedAt": "2026-07-24T01:00:27Z"
+    },
+    {
+      "type": "updated",
+      "key": "superpowers/brainstorming",
+      "ecosystem": "superpowers",
+      "slug": "brainstorming",
+      "displayName": "Brainstorming",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/brainstorming",
+      "detectedAt": "2026-07-24T01:00:27Z"
+    },
+    {
+      "type": "updated",
+      "key": "superpowers/dispatching-parallel-agents",
+      "ecosystem": "superpowers",
+      "slug": "dispatching-parallel-agents",
+      "displayName": "Dispatching Parallel Agents",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/dispatching-parallel-agents",
+      "detectedAt": "2026-07-24T01:00:27Z"
+    },
+    {
+      "type": "updated",
+      "key": "superpowers/executing-plans",
+      "ecosystem": "superpowers",
+      "slug": "executing-plans",
+      "displayName": "Executing Plans",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/executing-plans",
+      "detectedAt": "2026-07-24T01:00:27Z"
+    },
+    {
+      "type": "updated",
+      "key": "superpowers/finishing-a-development-branch",
+      "ecosystem": "superpowers",
+      "slug": "finishing-a-development-branch",
+      "displayName": "Finishing A Development Branch",
+      "changedFields": [
+        "content",
+        "description"
+      ],
+      "summary": "description 更新：Use when implementation is complete, all tests pass, and you need to decide how to integrate the wor…",
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/finishing-a-development-branch",
+      "detectedAt": "2026-07-24T01:00:27Z"
+    },
+    {
+      "type": "updated",
+      "key": "superpowers/receiving-code-review",
+      "ecosystem": "superpowers",
+      "slug": "receiving-code-review",
+      "displayName": "Receiving Code Review",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/receiving-code-review",
+      "detectedAt": "2026-07-24T01:00:27Z"
+    },
+    {
+      "type": "updated",
+      "key": "superpowers/requesting-code-review",
+      "ecosystem": "superpowers",
+      "slug": "requesting-code-review",
+      "displayName": "Requesting Code Review",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/requesting-code-review",
+      "detectedAt": "2026-07-24T01:00:27Z"
+    },
+    {
+      "type": "updated",
+      "key": "superpowers/subagent-driven-development",
+      "ecosystem": "superpowers",
+      "slug": "subagent-driven-development",
+      "displayName": "Subagent Driven Development",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/subagent-driven-development",
+      "detectedAt": "2026-07-24T01:00:27Z"
+    },
+    {
+      "type": "updated",
+      "key": "superpowers/systematic-debugging",
+      "ecosystem": "superpowers",
+      "slug": "systematic-debugging",
+      "displayName": "Systematic Debugging",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/systematic-debugging",
+      "detectedAt": "2026-07-24T01:00:27Z"
+    },
+    {
+      "type": "updated",
+      "key": "superpowers/test-driven-development",
+      "ecosystem": "superpowers",
+      "slug": "test-driven-development",
+      "displayName": "Test Driven Development",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/test-driven-development",
+      "detectedAt": "2026-07-24T01:00:27Z"
+    },
+    {
+      "type": "updated",
+      "key": "superpowers/using-git-worktrees",
+      "ecosystem": "superpowers",
+      "slug": "using-git-worktrees",
+      "displayName": "Using Git Worktrees",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/using-git-worktrees",
+      "detectedAt": "2026-07-24T01:00:27Z"
+    },
+    {
+      "type": "updated",
+      "key": "superpowers/verification-before-completion",
+      "ecosystem": "superpowers",
+      "slug": "verification-before-completion",
+      "displayName": "Verification Before Completion",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/verification-before-completion",
+      "detectedAt": "2026-07-24T01:00:27Z"
+    },
+    {
+      "type": "updated",
+      "key": "superpowers/writing-plans",
+      "ecosystem": "superpowers",
+      "slug": "writing-plans",
+      "displayName": "Writing Plans",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/writing-plans",
+      "detectedAt": "2026-07-24T01:00:27Z"
+    },
+    {
+      "type": "updated",
+      "key": "superpowers/writing-skills",
+      "ecosystem": "superpowers",
+      "slug": "writing-skills",
+      "displayName": "Writing Skills",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/writing-skills",
+      "detectedAt": "2026-07-24T01:00:27Z"
     }
   ]
 }

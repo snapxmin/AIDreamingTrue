@@ -1,5 +1,35 @@
 [
   {
+    "id": "auto-gh-copilot-cloud-agent-for-linear-is-now-ge",
+    "title": "Copilot cloud agent for Linear is now generally available",
+    "date": "2026-07-23",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "GitHub",
+    "heat": 70,
+    "growth": 6,
+    "sourceTier": "A",
+    "summary": "GitHub 官方 Changelog 更新：Copilot cloud agent for Linear is now generally available",
+    "whyImportant": "GitHub Copilot 生态动态，影响企业开发者工作流。",
+    "impact": "关注 Agent 模式、CLI 和企业策略相关变更。",
+    "sourceUrl": "https://github.blog/changelog/2026-07-23-copilot-cloud-agent-for-linear-is-now-generally-available"
+  },
+  {
+    "id": "auto-gh-github-mobile-fix-failing-actions-checks",
+    "title": "GitHub Mobile: Fix failing Actions checks with Copilot cloud agent",
+    "date": "2026-07-23",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "GitHub",
+    "heat": 70,
+    "growth": 6,
+    "sourceTier": "A",
+    "summary": "GitHub 官方 Changelog 更新：GitHub Mobile: Fix failing Actions checks with Copilot cloud agent",
+    "whyImportant": "GitHub Copilot 生态动态，影响企业开发者工作流。",
+    "impact": "关注 Agent 模式、CLI 和企业策略相关变更。",
+    "sourceUrl": "https://github.blog/changelog/2026-07-23-github-mobile-fix-failing-actions-checks-with-copilot-cloud-agent"
+  },
+  {
     "id": "auto-claude-v2-1-218",
     "title": "Claude Code v2.1.218 发布",
     "date": "2026-07-22",
