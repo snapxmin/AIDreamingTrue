@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-26T01:06:07Z",
+    "lastUpdated": "2026-07-27T01:05:22Z",
     "skillCount": 20,
     "totalComments": 41,
     "sources": [
@@ -15,7 +15,7 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1991-glen-84",
@@ -38,6 +38,17 @@
           "url": "https://github.com/obra/superpowers/issues/2034",
           "score": 0,
           "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2043-ralph-cmyk",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ralph-cmyk",
+          "date": "2026-07-27",
+          "text": "Visual companion card mockups silently collapse into a clipped horizontal flex row ## Summary The brainstorming visual companion can render a multi-element card mockup as one long horizontal row and silently clip most of it. This produces visibly broken decision screens even when the HTML follows the guide's documented pattern of placing mockup content inside `.card-image`. I searched existing open and closed issues for `visual companion`, `card-image`, overflow, clipping, and flex layout and did not find this report. ## Environment - Superpowers: 6.2.0 - Harness: Codex desktop - Browser: Chro",
+          "url": "https://github.com/obra/superpowers/issues/2043",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -474,19 +485,8 @@
       "slug": "mcp-builder",
       "ecosystem": "anthropics-skills",
       "displayName": "MCP Builder",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1390-ejprice",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "ejprice",
-          "date": "2026-07-04",
-          "text": "mcp-builder: evaluation.py scores 0/N against any real MCP server (TextContent not JSON serializable, swallowed into fabricated tool errors) ## Summary `skills/mcp-builder/scripts/evaluation.py` (the Phase-4 evaluation harness) silently fabricates a tool-execution error for **every tool call against every real MCP server**, so the driven agent sees nothing but errors and the evaluation scores 0/N. The failure is invisible unless you dig into what the model was actually shown. ## Root cause `connections.py:70` returns `result.content` from `call_tool()` — which for a real MCP server is `list[mc",
-          "url": "https://github.com/anthropics/skills/issues/1390",
-          "score": 2,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-anthropics-skills-issues-67-miq42",
           "source": "github",
