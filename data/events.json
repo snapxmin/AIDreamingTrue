@@ -1,5 +1,35 @@
 [
   {
+    "id": "auto-gh-manage-github-copilot-app-access-with-a-",
+    "title": "Manage GitHub Copilot app access with a dedicated policy",
+    "date": "2026-07-27",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "GitHub",
+    "heat": 70,
+    "growth": 6,
+    "sourceTier": "A",
+    "summary": "GitHub 官方 Changelog 更新：Manage GitHub Copilot app access with a dedicated policy",
+    "whyImportant": "GitHub Copilot 生态动态，影响企业开发者工作流。",
+    "impact": "关注 Agent 模式、CLI 和企业策略相关变更。",
+    "sourceUrl": "https://github.blog/changelog/2026-07-27-manage-github-copilot-app-access-with-a-dedicated-policy"
+  },
+  {
+    "id": "auto-gh-enterprise-managed-settings-in-the-githu",
+    "title": "Enterprise managed settings in the GitHub Copilot app and Copilot cloud agent",
+    "date": "2026-07-27",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "GitHub",
+    "heat": 70,
+    "growth": 6,
+    "sourceTier": "A",
+    "summary": "GitHub 官方 Changelog 更新：Enterprise managed settings in the GitHub Copilot app and Copilot cloud agent",
+    "whyImportant": "GitHub Copilot 生态动态，影响企业开发者工作流。",
+    "impact": "关注 Agent 模式、CLI 和企业策略相关变更。",
+    "sourceUrl": "https://github.blog/changelog/2026-07-27-enterprise-managed-settings-now-apply-to-the-github-copilot-app"
+  },
+  {
     "id": "auto-claude-v2-1-220",
     "title": "Claude Code v2.1.220 发布",
     "date": "2026-07-25",

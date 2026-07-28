@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-27T01:37:20Z",
+    "lastUpdated": "2026-07-28T01:01:10Z",
     "skillCount": 20,
-    "totalComments": 41,
+    "totalComments": 44,
     "sources": [
       "hacker-news",
       "github",
@@ -18,6 +18,17 @@
       "feedbackCount": 3,
       "comments": [
         {
+          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jfiscman",
+          "date": "2026-05-19",
+          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
+          "url": "https://github.com/obra/superpowers/issues/1581",
+          "score": 19,
+          "sentiment": "positive"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-1991-glen-84",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -27,17 +38,6 @@
           "url": "https://github.com/obra/superpowers/issues/1991",
           "score": 2,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2034-vida994",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "vida994",
-          "date": "2026-07-24",
-          "text": "Subagent dispatches outside SDD have no model guidance, so they inherit the session model ### Summary `subagent-driven-development` treats the subagent model as a required, explicit choice. Every other skill that dispatches a subagent omits it entirely, so those dispatches silently inherit the session model — the exact failure SDD's own guidance calls out. ### The inconsistency SDD's prompt templates make it a required field: ``` Subagent (general-purpose): model: [MODEL — REQUIRED: choose per SKILL.md Model Selection; an omitted model silently inherits the session's most expensive one] ``` an",
-          "url": "https://github.com/obra/superpowers/issues/2034",
-          "score": 0,
-          "sentiment": "positive"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2043-ralph-cmyk",
@@ -56,7 +56,7 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
@@ -66,8 +66,19 @@
           "date": "2026-05-19",
           "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
           "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 18,
+          "score": 19,
           "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2046-thatht137",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Thatht137",
+          "date": "2026-07-27",
+          "text": "writing-plans can mistake structural RED for behavior-test evidence # Bug report: writing-plans can treat an import error as proof of a behavior test - [x] I searched existing open and closed issues and pull requests. Related: #711, #853, and #1576. None addresses the distinction between structural RED evidence and a behavior assertion actually rejecting a wrong result. ## Environment | Field | Value | |-------|-------| | Superpowers version | 6.2.0, commit `3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9` | | Harness | OpenAI Codex CLI | | Harness version | `codex-cli 0.145.0` | | Model | OpenAI Cod",
+          "url": "https://github.com/obra/superpowers/issues/2046",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -75,18 +86,18 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2000-chentingtodo",
+          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "ChenTingToDo",
-          "date": "2026-07-17",
-          "text": "Feature request: add an opt-in/manual-only brainstorming profile ## Is your feature request related to a problem? Please describe. The current `brainstorming` skill is intentionally described as mandatory before any feature, bug fix, UI change, or behavior modification. That is useful for rough, high-uncertainty product ideas, but it creates avoidable friction when the user has already provided a complete PRD or precise acceptance criteria. I use Superpowers through the Codex app with GPT-5.6 and installed the `brainstorming` skill without the rest of the Superpowers pipeline. In real local us",
-          "url": "https://github.com/obra/superpowers/issues/2000",
-          "score": 1,
-          "sentiment": "negative"
+          "author": "jfiscman",
+          "date": "2026-05-19",
+          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
+          "url": "https://github.com/obra/superpowers/issues/1581",
+          "score": 19,
+          "sentiment": "positive"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2034-vida994",
@@ -98,6 +109,17 @@
           "url": "https://github.com/obra/superpowers/issues/2034",
           "score": 0,
           "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2046-thatht137",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Thatht137",
+          "date": "2026-07-27",
+          "text": "writing-plans can mistake structural RED for behavior-test evidence # Bug report: writing-plans can treat an import error as proof of a behavior test - [x] I searched existing open and closed issues and pull requests. Related: #711, #853, and #1576. None addresses the distinction between structural RED evidence and a behavior assertion actually rejecting a wrong result. ## Environment | Field | Value | |-------|-------| | Superpowers version | 6.2.0, commit `3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9` | | Harness | OpenAI Codex CLI | | Harness version | `codex-cli 0.145.0` | | Model | OpenAI Cod",
+          "url": "https://github.com/obra/superpowers/issues/2046",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -115,7 +137,7 @@
           "date": "2026-05-19",
           "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
           "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 18,
+          "score": 19,
           "sentiment": "positive"
         }
       ]
@@ -134,7 +156,7 @@
           "date": "2026-05-19",
           "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
           "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 18,
+          "score": 19,
           "sentiment": "positive"
         },
         {
@@ -154,18 +176,18 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2012-jchris-svg",
+          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "jchris-svg",
-          "date": "2026-07-21",
-          "text": "subagent-driven-development: task-N scratch filenames collide across plans, silently destroying a prior run's artifacts Running a second plan through `subagent-driven-development` in a repo that has already run one will silently overwrite the first plan's scratch files. I lost two files this way today before noticing the pattern. ### Cause Scratch lives in a single repo-level `.superpowers/sdd/` directory, and the filenames are keyed on **task number**, which restarts at 1 for every plan. `scripts/task-brief` line 24: ```sh out=\"$dir/task-${n}-brief.md\" ``` The skill's report-file convention h",
-          "url": "https://github.com/obra/superpowers/issues/2012",
-          "score": 1,
-          "sentiment": "negative"
+          "author": "jfiscman",
+          "date": "2026-05-19",
+          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
+          "url": "https://github.com/obra/superpowers/issues/1581",
+          "score": 19,
+          "sentiment": "positive"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2034-vida994",
@@ -188,6 +210,17 @@
           "url": "https://github.com/obra/superpowers/issues/2040",
           "score": 0,
           "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2045-crgdan",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "CRGDan",
+          "date": "2026-07-27",
+          "text": "subagent-driven-development: plan-scoped workspace still collides when two plans share a basename (follow-up to #2012) Following up on #2012 as asked: *\"if you can still reproduce the collision on a release that includes #1943, please reopen with the session details.\"* I can, on released **v6.2.0** (`3dcbd5c`). #1943 scopes the workspace by plan **basename**, so it fixes collisions between `plan-a.md` and `plan-b.md` but not between `docs/alpha/plan.md` and `docs/beta/plan.md`. Any repo where plans are foldered — one directory per feature, per sprint, per subproject — still gets the original s",
+          "url": "https://github.com/obra/superpowers/issues/2045",
+          "score": 0,
+          "sentiment": "neutral"
         }
       ]
     },
@@ -205,7 +238,7 @@
           "date": "2026-05-19",
           "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
           "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 18,
+          "score": 19,
           "sentiment": "positive"
         },
         {
