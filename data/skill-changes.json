@@ -1,15 +1,28 @@
 {
-  "generatedAt": "2026-07-28T00:58:46Z",
+  "generatedAt": "2026-07-29T00:59:51Z",
   "isBaselineRun": false,
   "changes": [
     {
       "type": "added",
-      "key": "awesome-copilot/gitmoji",
+      "key": "awesome-copilot/azure-well-architected-review",
       "ecosystem": "awesome-copilot",
-      "slug": "gitmoji",
-      "displayName": "Gitmoji",
-      "summary": "生态新增 Skill：Gitmoji",
-      "detectedAt": "2026-07-28T00:59:24Z"
+      "slug": "azure-well-architected-review",
+      "displayName": "Azure Well Architected Review",
+      "summary": "生态新增 Skill：Azure Well Architected Review",
+      "detectedAt": "2026-07-29T01:00:26Z"
+    },
+    {
+      "type": "updated",
+      "key": "awesome-copilot/aws-well-architected-review",
+      "ecosystem": "awesome-copilot",
+      "slug": "aws-well-architected-review",
+      "displayName": "Aws Well Architected Review",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/aws-well-architected-review",
+      "detectedAt": "2026-07-29T01:00:26Z"
     }
   ]
 }
