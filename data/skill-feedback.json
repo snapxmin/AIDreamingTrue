@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-29T01:01:59Z",
+    "lastUpdated": "2026-07-30T01:00:07Z",
     "skillCount": 20,
-    "totalComments": 45,
+    "totalComments": 57,
     "sources": [
       "hacker-news",
       "github",
@@ -15,7 +15,7 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 2,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
@@ -29,13 +29,35 @@
           "sentiment": "positive"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2043-ralph-cmyk",
+          "id": "github-https-github-com-obra-superpowers-issues-1997-minouris",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "ralph-cmyk",
-          "date": "2026-07-27",
-          "text": "Visual companion card mockups silently collapse into a clipped horizontal flex row ## Summary The brainstorming visual companion can render a multi-element card mockup as one long horizontal row and silently clip most of it. This produces visibly broken decision screens even when the HTML follows the guide's documented pattern of placing mockup content inside `.card-image`. I searched existing open and closed issues for `visual companion`, `card-image`, overflow, clipping, and flex layout and did not find this report. ## Environment - Superpowers: 6.2.0 - Harness: Codex desktop - Browser: Chro",
-          "url": "https://github.com/obra/superpowers/issues/2043",
+          "author": "minouris",
+          "date": "2026-07-16",
+          "text": "Automatically split large specs and plans into sub-documents for individual features - [x ] I searched existing issues and this has not been proposed before (search terms: split spec plan) ## What problem does this solve? When performing large brainstorming sessions, specs and plans can potentially expand to many thousands of lines, making the files difficult for the AI to digest within a single context window, and increasing the risk of context bleeding and amnesia through saturation. ## Proposed solution When a specification expands to the point of having multiple features, or exceeds a set ",
+          "url": "https://github.com/obra/superpowers/issues/1997",
+          "score": 3,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1936-y40881110-lang",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "y40881110-lang",
+          "date": "2026-07-06",
+          "text": "SDD progress ledger carries no plan identity — a second superpowers run in the same repo reads the previous run's `progress.md` and silently skips the new plan's tasks <!-- BEFORE FILING: Search open AND closed issues. The Windows SessionStart hook alone has been reported 29 times. If your issue already exists, add a comment or reaction to the existing one instead. --> - [x] I searched existing issues and this is not a duplicate ## Related issues (searched before filing) #1888 and #1816 report the *artifact* side of this (scratch files never pruned, `task-N-report.md` clobbered across efforts)",
+          "url": "https://github.com/obra/superpowers/issues/1936",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2051-oliver-zehentleitner-aigent",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "oliver-zehentleitner-aigent",
+          "date": "2026-07-29",
+          "text": "using-superpowers' \"check any skill before every action\" doesn't hold once a workflow step is underway - [x] I searched existing issues and this is not a duplicate (checked #1007, #1812, and a few keyword searches — related in spirit, not the same report) ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.2.0 | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | 2.1.220 | | Your model + version | Claude Sonnet 5 (`claude-sonnet-5`) | | All plugins installed | `superpowers@superpowers-marketplace` (local scope); one additional skill loa",
+          "url": "https://github.com/obra/superpowers/issues/2051",
           "score": 0,
           "sentiment": "negative"
         }
@@ -86,7 +108,7 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 5,
+      "feedbackCount": 7,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
@@ -111,25 +133,47 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2034-vida994",
+          "id": "github-https-github-com-obra-superpowers-issues-1859-pixeru",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "vida994",
-          "date": "2026-07-24",
-          "text": "Subagent dispatches outside SDD have no model guidance, so they inherit the session model ### Summary `subagent-driven-development` treats the subagent model as a required, explicit choice. Every other skill that dispatches a subagent omits it entirely, so those dispatches silently inherit the session model — the exact failure SDD's own guidance calls out. ### The inconsistency SDD's prompt templates make it a required field: ``` Subagent (general-purpose): model: [MODEL — REQUIRED: choose per SKILL.md Model Selection; an omitted model silently inherits the session's most expensive one] ``` an",
-          "url": "https://github.com/obra/superpowers/issues/2034",
-          "score": 0,
-          "sentiment": "positive"
+          "author": "pixeru",
+          "date": "2026-06-29",
+          "text": "Support Hermes Agent as a Superpowers harness <html> <body> <!--StartFragment--><html><head></head><body><p>I’d like to add another user case for Hermes Agent support.</p><p>My use case is using Hermes Agent as my main coding harness, especially for larger game development / Unreal Engine workflows where I want the agent to follow a stronger engineering methodology instead of improvising each session. Superpowers already gives that structure in other harnesses, but Hermes users currently have to either manually port skills, copy/paste instructions into <code inline=\"\">SOUL.md</code>, or delega",
+          "url": "https://github.com/obra/superpowers/issues/1859",
+          "score": 2,
+          "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2046-thatht137",
+          "id": "github-https-github-com-obra-superpowers-issues-1010-rwxsnow",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "Thatht137",
-          "date": "2026-07-27",
-          "text": "writing-plans can mistake structural RED for behavior-test evidence # Bug report: writing-plans can treat an import error as proof of a behavior test - [x] I searched existing open and closed issues and pull requests. Related: #711, #853, and #1576. None addresses the distinction between structural RED evidence and a behavior assertion actually rejecting a wrong result. ## Environment | Field | Value | |-------|-------| | Superpowers version | 6.2.0, commit `3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9` | | Harness | OpenAI Codex CLI | | Harness version | `codex-cli 0.145.0` | | Model | OpenAI Cod",
-          "url": "https://github.com/obra/superpowers/issues/2046",
-          "score": 0,
+          "author": "rwxSnow",
+          "date": "2026-03-31",
+          "text": "writing-plans: Enhanced review capabilities ## What problem does this solve? Currently, the lack of a mandatory solution review mechanism after the implementation plan is produced easily leads to problems such as incomplete requirement coverage, inadequate functional design, and uncontrolled solution complexity. This directly reduces the plan's executability and increases the risk of rework and delivery issues. Proposed solution: Replace `Self-Review` entirely with `Plan Audit` (see below). The `Plan Audit` process is `Audit -> Revise -> Consistency Check`. Audit (new): Used to check direction",
+          "url": "https://github.com/obra/superpowers/issues/1010",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1936-y40881110-lang",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "y40881110-lang",
+          "date": "2026-07-06",
+          "text": "SDD progress ledger carries no plan identity — a second superpowers run in the same repo reads the previous run's `progress.md` and silently skips the new plan's tasks <!-- BEFORE FILING: Search open AND closed issues. The Windows SessionStart hook alone has been reported 29 times. If your issue already exists, add a comment or reaction to the existing one instead. --> - [x] I searched existing issues and this is not a duplicate ## Related issues (searched before filing) #1888 and #1816 report the *artifact* side of this (scratch files never pruned, `task-N-report.md` clobbered across efforts)",
+          "url": "https://github.com/obra/superpowers/issues/1936",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2052-mavericksea-ai",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "mavericksea-ai",
+          "date": "2026-07-29",
+          "text": "Measured requesting-code-review and writing-plans across the sonnet-5 release — receipts inside - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? Skills are tested once (if ever), and model releases silently change behavior underneath them. When sonnet-5 shipped, there was no way to know which superpowers skills still did what their SKILL.md claims on the new model. I built a small OSS tool (Driftproof) that re-tests skills across model releases: same suite run with and without the skill, judge sampled 5x so every score carries a confidence",
+          "url": "https://github.com/obra/superpowers/issues/2052",
+          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -149,7 +193,7 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
@@ -161,6 +205,17 @@
           "url": "https://github.com/obra/superpowers/issues/1581",
           "score": 20,
           "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1859-pixeru",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "pixeru",
+          "date": "2026-06-29",
+          "text": "Support Hermes Agent as a Superpowers harness <html> <body> <!--StartFragment--><html><head></head><body><p>I’d like to add another user case for Hermes Agent support.</p><p>My use case is using Hermes Agent as my main coding harness, especially for larger game development / Unreal Engine workflows where I want the agent to follow a stronger engineering methodology instead of improvising each session. Superpowers already gives that structure in other harnesses, but Hermes users currently have to either manually port skills, copy/paste instructions into <code inline=\"\">SOUL.md</code>, or delega",
+          "url": "https://github.com/obra/superpowers/issues/1859",
+          "score": 2,
+          "sentiment": "negative"
         }
       ]
     },
@@ -189,7 +244,7 @@
           "date": "2026-06-29",
           "text": "Support Hermes Agent as a Superpowers harness <html> <body> <!--StartFragment--><html><head></head><body><p>I’d like to add another user case for Hermes Agent support.</p><p>My use case is using Hermes Agent as my main coding harness, especially for larger game development / Unreal Engine workflows where I want the agent to follow a stronger engineering methodology instead of improvising each session. Superpowers already gives that structure in other harnesses, but Hermes users currently have to either manually port skills, copy/paste instructions into <code inline=\"\">SOUL.md</code>, or delega",
           "url": "https://github.com/obra/superpowers/issues/1859",
-          "score": 1,
+          "score": 2,
           "sentiment": "negative"
         }
       ]
@@ -198,51 +253,73 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 5,
+      "feedbackCount": 8,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
+          "id": "github-https-github-com-obra-superpowers-issues-463-lechatlisse",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "jfiscman",
-          "date": "2026-05-19",
-          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
-          "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 20,
-          "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2034-vida994",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "vida994",
-          "date": "2026-07-24",
-          "text": "Subagent dispatches outside SDD have no model guidance, so they inherit the session model ### Summary `subagent-driven-development` treats the subagent model as a required, explicit choice. Every other skill that dispatches a subagent omits it entirely, so those dispatches silently inherit the session model — the exact failure SDD's own guidance calls out. ### The inconsistency SDD's prompt templates make it a required field: ``` Subagent (general-purpose): model: [MODEL — REQUIRED: choose per SKILL.md Model Selection; an omitted model silently inherits the session's most expensive one] ``` an",
-          "url": "https://github.com/obra/superpowers/issues/2034",
-          "score": 0,
-          "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2040-michaelholcomb-creator",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "michaelholcomb-creator",
-          "date": "2026-07-25",
-          "text": "Codex marketplace package drops executable bits on SDD helper scripts ## Summary Superpowers 6.2.0 installed through the Codex marketplace cache arrived with these helper files non-executable (observed mode `0644`): - `skills/subagent-driven-development/scripts/sdd-workspace` - `skills/subagent-driven-development/scripts/task-brief` - `skills/subagent-driven-development/scripts/review-package` Direct invocation fails with `Permission denied`. Invoking only `task-brief` or `review-package` through Bash does not fully recover the default-output path because both scripts directly execute their si",
-          "url": "https://github.com/obra/superpowers/issues/2040",
-          "score": 0,
+          "author": "lechatlisse",
+          "date": "2026-02-12",
+          "text": "Controller skips spec/quality reviewer dispatch during subagent-driven-development ## Observed Behavior During the implementation phase of `subagent-driven-development`, the controller skipped dispatching fresh spec reviewer and code quality reviewer subagents. Instead, it self-confirmed with output like: > Quick spec check — all 8 requirements are straightforward and implementer confirmed each. Let me verify the commit and move on. The controller accepted the implementer's self-confirmation as sufficient and moved to the next task without dispatching either reviewer subagent. ## Expected Beha",
+          "url": "https://github.com/obra/superpowers/issues/463",
+          "score": 8,
           "sentiment": "neutral"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2045-crgdan",
+          "id": "github-https-github-com-obra-superpowers-issues-2017-smortezah",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "CRGDan",
-          "date": "2026-07-27",
-          "text": "subagent-driven-development: plan-scoped workspace still collides when two plans share a basename (follow-up to #2012) Following up on #2012 as asked: *\"if you can still reproduce the collision on a release that includes #1943, please reopen with the session details.\"* I can, on released **v6.2.0** (`3dcbd5c`). #1943 scopes the workspace by plan **basename**, so it fixes collisions between `plan-a.md` and `plan-b.md` but not between `docs/alpha/plan.md` and `docs/beta/plan.md`. Any repo where plans are foldered — one directory per feature, per sprint, per subproject — still gets the original s",
-          "url": "https://github.com/obra/superpowers/issues/2045",
-          "score": 0,
-          "sentiment": "neutral"
+          "author": "smortezah",
+          "date": "2026-07-22",
+          "text": "Retuning subagent driven development for Opus 6 and Sol 5.6 Superpowers is fantastic but it uses a lot of tokens and takes a long time to complete a task. A `Slim` version would be great as it would alleviate some of the constraints of superpowers to make completing tasks faster.",
+          "url": "https://github.com/obra/superpowers/issues/2017",
+          "score": 8,
+          "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1888-glen-84",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "glen-84",
+          "date": "2026-07-01",
+          "text": "subagent-driven-development: .superpowers/sdd scratch artifacts are never pruned and silently collide across efforts ## What problem does this solve? The `subagent-driven-development` skill writes per-task scratch artifacts to `.superpowers/sdd/` — `task-N-brief.md`, `task-N-report.md`, and a `review-*.diff` (or `task-N-review.diff`) per task, plus the `progress.md` ledger. Nothing ever prunes them. There is no cleanup step in the skill itself nor in `finishing-a-development-branch`, so the directory grows without bound and mixes artifacts from unrelated, already-merged efforts. Two concrete f",
+          "url": "https://github.com/obra/superpowers/issues/1888",
+          "score": 3,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1215-luokun1995",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "luokun1995",
+          "date": "2026-04-18",
+          "text": "最新版本在制定 plans存在规则边界过宽 bug 今天在测试功能开发时出现多次规则边界过宽导致执行过程中大模型出现死循环情况，一个很简单的文档都能写一个小时起步，同时也存在小任务使用的执行方法过重导致任务卡死。 这次是典型的： 任务很小，但执行方法太重 所以这里不是 spec/plan 边界设计失败， 而是 task execution strategy 失败。 --- 5. 这次应该怎么修正 fix now 1. Task 3 不再走 subagent-driven-development 2. 直接在主会话里按 TDD 落地 - 先保持当前红灯 - 写最小实现 - 跑绿灯 3. Task 3 完成后再决定 Task 4+ 是否继续用 subagent note later 1. subagent-driven-development 只适合： - 多文件集成 - 有 review loop 价值 - 任务之间耦合较强 2. 对 Task 3/4/5 这种小而明确的任务，应优先： - 主线程直接 TDD - 少一层代理调度 reject as out of scope - 现在不需要重写整个 superpowers 工作流 - 现在不需要改 plan - 现在不需要扩展更多自动化保护 --- 6. 最准确的一句话总结 Task 3 卡住的根因不是代码难，也不是测试设计有问题，而",
+          "url": "https://github.com/obra/superpowers/issues/1215",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1286-bradfeld",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "bradfeld",
+          "date": "2026-04-27",
+          "text": "subagent-driven-development: add a mechanical-migration mode for verbatim-diff plans ## Summary Subagent-driven-development's per-task two-stage review (spec compliance, then code quality, as separate subagent dispatches) is excessive ceremony for **verbatim-diff migration plans** — refactor sweeps where each task is a mechanical Find/Replace patch and \"the spec IS the diff.\" A `mechanical-migration` mode (or equivalent prompt-conditional collapse) that combines the two stages into a single combined-review dispatch — or skips spec-review entirely for verbatim-diff tasks — would meaningfully re",
+          "url": "https://github.com/obra/superpowers/issues/1286",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1936-y40881110-lang",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "y40881110-lang",
+          "date": "2026-07-06",
+          "text": "SDD progress ledger carries no plan identity — a second superpowers run in the same repo reads the previous run's `progress.md` and silently skips the new plan's tasks <!-- BEFORE FILING: Search open AND closed issues. The Windows SessionStart hook alone has been reported 29 times. If your issue already exists, add a comment or reaction to the existing one instead. --> - [x] I searched existing issues and this is not a duplicate ## Related issues (searched before filing) #1888 and #1816 report the *artifact* side of this (scratch files never pruned, `task-N-report.md` clobbered across efforts)",
+          "url": "https://github.com/obra/superpowers/issues/1936",
+          "score": 1,
+          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2050-conradstorz",
@@ -254,6 +331,17 @@
           "url": "https://github.com/obra/superpowers/issues/2050",
           "score": 0,
           "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2054-glen-84",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "glen-84",
+          "date": "2026-07-29",
+          "text": "subagent-driven-development: reviewer prompts pay subagent turns for mechanical facts the controller can settle in one command - [x] I searched existing issues and this has not been proposed before *(Closest prior art, open and closed: #1930 targets reviewer **output** verbosity — what the reviewer reports back — which is the mirror image of this and complementary. #1120 is review cadence, whether a task needs a review at all. #1614 (closed) proposed admission receipts for extra review passes. This issue is about the reviewer's **input**: what the controller puts in the review prompt, and the ",
+          "url": "https://github.com/obra/superpowers/issues/2054",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -261,7 +349,7 @@
       "slug": "requesting-code-review",
       "ecosystem": "superpowers",
       "displayName": "Requesting Code Review",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
@@ -273,6 +361,17 @@
           "url": "https://github.com/obra/superpowers/issues/1581",
           "score": 20,
           "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2052-mavericksea-ai",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "mavericksea-ai",
+          "date": "2026-07-29",
+          "text": "Measured requesting-code-review and writing-plans across the sonnet-5 release — receipts inside - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? Skills are tested once (if ever), and model releases silently change behavior underneath them. When sonnet-5 shipped, there was no way to know which superpowers skills still did what their SKILL.md claims on the new model. I built a small OSS tool (Driftproof) that re-tests skills across model releases: same suite run with and without the skill, judge sampled 5x so every score carries a confidence",
+          "url": "https://github.com/obra/superpowers/issues/2052",
+          "score": 1,
+          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2034-vida994",
@@ -291,8 +390,42 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 0,
-      "comments": []
+      "feedbackCount": 3,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1878-jonathanstiansen",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jonathanstiansen",
+          "date": "2026-06-30",
+          "text": "Sonnet 5 really doesn't like the instructions <!-- BEFORE FILING: Search open AND closed issues. The Windows SessionStart hook alone has been reported 29 times. If your issue already exists, add a comment or reaction to the existing one instead. --> - [x] I searched existing issues and this is not a duplicate ## Environment (required) <!-- Required. We assume an agent filed this report — tell us which one and where it ran. We weigh reports by what produced them. --> Human - sorry. | Field | Value | |---|---| | Superpowers version | 6.0.3 | | Harness | Claude Code (CC) | | Harness version | 2.1",
+          "url": "https://github.com/obra/superpowers/issues/1878",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1867-baozhao0218",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "baozhao0218",
+          "date": "2026-06-30",
+          "text": "Codex SessionStart hook fails on Windows sandbox when run-hook.cmd invokes Git Bash ### What happened? On Windows, the Codex `SessionStart` hook for Superpowers can fail to inject the full `using-superpowers` skill content when the hook runs inside the Codex sandbox. The hook path is: ```text Codex SessionStart -> hooks-codex.json -> hooks/run-hook.cmd session-start-codex -> Git for Windows bash.exe -> hooks/session-start-codex ``` Inside the Codex Windows sandbox, Git Bash fails before the actual hook script runs: ```text fatal error - couldn't create signal pipe, Win32 error 5 ``` As a resul",
+          "url": "https://github.com/obra/superpowers/issues/1867",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2051-oliver-zehentleitner-aigent",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "oliver-zehentleitner-aigent",
+          "date": "2026-07-29",
+          "text": "using-superpowers' \"check any skill before every action\" doesn't hold once a workflow step is underway - [x] I searched existing issues and this is not a duplicate (checked #1007, #1812, and a few keyword searches — related in spirit, not the same report) ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.2.0 | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | 2.1.220 | | Your model + version | Claude Sonnet 5 (`claude-sonnet-5`) | | All plugins installed | `superpowers@superpowers-marketplace` (local scope); one additional skill loa",
+          "url": "https://github.com/obra/superpowers/issues/2051",
+          "score": 0,
+          "sentiment": "negative"
+        }
+      ]
     },
     "awesome-copilot/ai-ready": {
       "slug": "ai-ready",
