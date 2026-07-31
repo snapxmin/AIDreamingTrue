@@ -1,5 +1,35 @@
 [
   {
+    "id": "auto-gh-github-copilot-in-visual-studio-july-upd",
+    "title": "GitHub Copilot in Visual Studio — July update",
+    "date": "2026-07-30",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "GitHub",
+    "heat": 70,
+    "growth": 6,
+    "sourceTier": "A",
+    "summary": "GitHub 官方 Changelog 更新：GitHub Copilot in Visual Studio — July update",
+    "whyImportant": "GitHub Copilot 生态动态，影响企业开发者工作流。",
+    "impact": "关注 Agent 模式、CLI 和企业策略相关变更。",
+    "sourceUrl": "https://github.blog/changelog/2026-07-30-github-copilot-in-visual-studio-july-update"
+  },
+  {
+    "id": "auto-gh-github-copilot-in-visual-studio-code-jul",
+    "title": "GitHub Copilot in Visual Studio Code, July 2026 releases",
+    "date": "2026-07-30",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "GitHub",
+    "heat": 70,
+    "growth": 6,
+    "sourceTier": "A",
+    "summary": "GitHub 官方 Changelog 更新：GitHub Copilot in Visual Studio Code, July 2026 releases",
+    "whyImportant": "GitHub Copilot 生态动态，影响企业开发者工作流。",
+    "impact": "关注 Agent 模式、CLI 和企业策略相关变更。",
+    "sourceUrl": "https://github.blog/changelog/2026-07-30-github-copilot-in-visual-studio-code-july-2026-releases"
+  },
+  {
     "id": "auto-gh-copilot-code-review-agent-skills-and-mcp",
     "title": "Copilot code review: Agent skills and MCP now generally available",
     "date": "2026-07-29",

@@ -1,15 +1,71 @@
 {
-  "generatedAt": "2026-07-30T00:57:48Z",
+  "generatedAt": "2026-07-31T01:02:15Z",
   "isBaselineRun": false,
   "changes": [
     {
       "type": "added",
-      "key": "awesome-copilot/bug-reproduction-brief",
+      "key": "awesome-copilot/azure-container-registry-cli",
       "ecosystem": "awesome-copilot",
-      "slug": "bug-reproduction-brief",
-      "displayName": "Bug Reproduction Brief",
-      "summary": "生态新增 Skill：Bug Reproduction Brief",
-      "detectedAt": "2026-07-30T00:58:35Z"
+      "slug": "azure-container-registry-cli",
+      "displayName": "Azure Container Registry Cli",
+      "summary": "生态新增 Skill：Azure Container Registry Cli",
+      "detectedAt": "2026-07-31T01:03:01Z"
+    },
+    {
+      "type": "updated",
+      "key": "awesome-copilot/ai-team-orchestration",
+      "ecosystem": "awesome-copilot",
+      "slug": "ai-team-orchestration",
+      "displayName": "Ai Team Orchestration",
+      "changedFields": [
+        "content",
+        "description"
+      ],
+      "summary": "description 更新：Bootstrap and run a lightweight multi-agent development team. Use when starting or adopting a projec…",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/ai-team-orchestration",
+      "detectedAt": "2026-07-31T01:03:01Z"
+    },
+    {
+      "type": "updated",
+      "key": "awesome-copilot/dotnet-mcp-builder",
+      "ecosystem": "awesome-copilot",
+      "slug": "dotnet-mcp-builder",
+      "displayName": "Dotnet Mcp Builder",
+      "changedFields": [
+        "content",
+        "description"
+      ],
+      "summary": "description 更新：Build Model Context Protocol (MCP) servers in C#/.NET against the current ModelContextProtocol 2.x N…",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/dotnet-mcp-builder",
+      "detectedAt": "2026-07-31T01:03:01Z"
+    },
+    {
+      "type": "updated",
+      "key": "awesome-copilot/typescript-mcp-server-generator",
+      "ecosystem": "awesome-copilot",
+      "slug": "typescript-mcp-server-generator",
+      "displayName": "Typescript Mcp Server Generator",
+      "changedFields": [
+        "content",
+        "description"
+      ],
+      "summary": "description 更新：Generate a complete MCP server project in TypeScript using the MCP TypeScript SDK v2 (@modelcontextp…",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/typescript-mcp-server-generator",
+      "detectedAt": "2026-07-31T01:03:01Z"
+    },
+    {
+      "type": "updated",
+      "key": "awesome-copilot/x-twitter-scraper",
+      "ecosystem": "awesome-copilot",
+      "slug": "x-twitter-scraper",
+      "displayName": "X Twitter Scraper",
+      "changedFields": [
+        "content",
+        "description"
+      ],
+      "summary": "description 更新：Build GitHub Copilot workflows with Xquik X API SDKs, REST endpoints, hosted Apify Actor runs, MCP t…",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/x-twitter-scraper",
+      "detectedAt": "2026-07-31T01:03:01Z"
     }
   ]
 }

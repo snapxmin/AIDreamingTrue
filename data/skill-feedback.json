@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-30T01:00:07Z",
+    "lastUpdated": "2026-07-31T01:04:27Z",
     "skillCount": 20,
-    "totalComments": 57,
+    "totalComments": 53,
     "sources": [
       "hacker-news",
       "github",
@@ -18,47 +18,47 @@
       "feedbackCount": 4,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
+          "id": "github-https-github-com-obra-superpowers-issues-1222-younes-io",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "jfiscman",
-          "date": "2026-05-19",
-          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
-          "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 20,
+          "author": "younes-io",
+          "date": "2026-04-19",
+          "text": "Pi agent with gpt-5.4 high - brainstorming skill is triggered all the time I like this skill but I think it is too aggressive in the sense that it gets triggered (almost) all the time, even when the use case doesn't require brainstorming. I asked Pi to apply some changes to a file, and it triggered the `brainstorming` skill. I would like to suggest to make it triggered manually, what do you think, @obra ? https://github.com/obra/superpowers/blob/b55764852ac78870e65c6565fb585b6cd8b3c5c9/skills/brainstorming/SKILL.md?plain=1#L2-L3 Thank you by the way for all the great work",
+          "url": "https://github.com/obra/superpowers/issues/1222",
+          "score": 6,
           "sentiment": "positive"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1997-minouris",
+          "id": "github-https-github-com-obra-superpowers-issues-574-likesundaylikerain",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "minouris",
-          "date": "2026-07-16",
-          "text": "Automatically split large specs and plans into sub-documents for individual features - [x ] I searched existing issues and this has not been proposed before (search terms: split spec plan) ## What problem does this solve? When performing large brainstorming sessions, specs and plans can potentially expand to many thousands of lines, making the files difficult for the AI to digest within a single context window, and increasing the risk of context bleeding and amnesia through saturation. ## Proposed solution When a specification expands to the point of having multiple features, or exceeds a set ",
-          "url": "https://github.com/obra/superpowers/issues/1997",
-          "score": 3,
+          "author": "LikeSundayLikeRain",
+          "date": "2026-02-28",
+          "text": "Git worktree is not created sometime after brainstorming **Describe the bug** Git worktree is not created sometime after brainstorming, and plan writing is trigger directly in current branch.; **To Reproduce** Steps to reproduce the behavior: Don't really have a reproduce steps, but it happens occasionally **Expected behavior** Git worktree should happen after design is written and before plan writing. **Logs** ``` ● Let me write the design doc and commit it. ● Read 1 file (ctrl+o to expand) ● Write(docs/plans/2026-02-28-native-skill-passthrough-design.md) ⎿ Wrote 94 lines to docs/plans/2026-0",
+          "url": "https://github.com/obra/superpowers/issues/574",
+          "score": 5,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1936-y40881110-lang",
+          "id": "github-https-github-com-obra-superpowers-issues-1962-eranroseman",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "y40881110-lang",
-          "date": "2026-07-06",
-          "text": "SDD progress ledger carries no plan identity — a second superpowers run in the same repo reads the previous run's `progress.md` and silently skips the new plan's tasks <!-- BEFORE FILING: Search open AND closed issues. The Windows SessionStart hook alone has been reported 29 times. If your issue already exists, add a comment or reaction to the existing one instead. --> - [x] I searched existing issues and this is not a duplicate ## Related issues (searched before filing) #1888 and #1816 report the *artifact* side of this (scratch files never pruned, `task-N-report.md` clobbered across efforts)",
-          "url": "https://github.com/obra/superpowers/issues/1936",
-          "score": 1,
-          "sentiment": "negative"
+          "author": "eranroseman",
+          "date": "2026-07-10",
+          "text": "Spec/plan reviewer prompt templates are not referenced from their skills `skills/brainstorming/spec-document-reviewer-prompt.md` and `skills/writing-plans/plan-document-reviewer-prompt.md` provide dispatch templates for reviewing spec and plan documents, but neither `skills/brainstorming/SKILL.md` nor `skills/writing-plans/SKILL.md` references its template. An agent following the skill therefore never learns to dispatch the reviewer, so the templates read as orphaned. **Request:** either wire the reference into each `SKILL.md` (e.g. \"after writing the spec to `docs/superpowers/specs/`, dispatc",
+          "url": "https://github.com/obra/superpowers/issues/1962",
+          "score": 2,
+          "sentiment": "neutral"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2051-oliver-zehentleitner-aigent",
+          "id": "github-https-github-com-obra-superpowers-issues-2000-chentingtodo",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "oliver-zehentleitner-aigent",
-          "date": "2026-07-29",
-          "text": "using-superpowers' \"check any skill before every action\" doesn't hold once a workflow step is underway - [x] I searched existing issues and this is not a duplicate (checked #1007, #1812, and a few keyword searches — related in spirit, not the same report) ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.2.0 | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | 2.1.220 | | Your model + version | Claude Sonnet 5 (`claude-sonnet-5`) | | All plugins installed | `superpowers@superpowers-marketplace` (local scope); one additional skill loa",
-          "url": "https://github.com/obra/superpowers/issues/2051",
-          "score": 0,
+          "author": "ChenTingToDo",
+          "date": "2026-07-17",
+          "text": "Feature request: add an opt-in/manual-only brainstorming profile ## Is your feature request related to a problem? Please describe. The current `brainstorming` skill is intentionally described as mandatory before any feature, bug fix, UI change, or behavior modification. That is useful for rough, high-uncertainty product ideas, but it creates avoidable friction when the user has already provided a complete PRD or precise acceptance criteria. I use Superpowers through the Codex app with GPT-5.6 and installed the `brainstorming` skill without the rest of the Superpowers pipeline. In real local us",
+          "url": "https://github.com/obra/superpowers/issues/2000",
+          "score": 2,
           "sentiment": "negative"
         }
       ]
@@ -81,6 +81,17 @@
           "sentiment": "positive"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2047-ammachado",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ammachado",
+          "date": "2026-07-28",
+          "text": "`writing-plans`: name vertical slicing and the horizontal-slicing anti-pattern in `Task Right-Sizing` - [X] I searched existing issues and this has not been proposed before (Related but not duplicate — searched issues and PRs, open and closed; see \"What alternatives did you consider?\" below.) ## What problem does this solve? `writing-plans`' \"Task Right-Sizing\" section already implies vertical slicing — \"Each task ends with an independently testable deliverable\" — but never names the concept or its opposite. Nothing in the section stops a plan from splitting one feature into a \"build the API\" ",
+          "url": "https://github.com/obra/superpowers/issues/2047",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2046-thatht137",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -90,17 +101,6 @@
           "url": "https://github.com/obra/superpowers/issues/2046",
           "score": 0,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2047-ammachado",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "ammachado",
-          "date": "2026-07-28",
-          "text": "`writing-plans`: name vertical slicing and the horizontal-slicing anti-pattern in `Task Right-Sizing` - [X] I searched existing issues and this has not been proposed before (Related but not duplicate — searched issues and PRs, open and closed; see \"What alternatives did you consider?\" below.) ## What problem does this solve? `writing-plans`' \"Task Right-Sizing\" section already implies vertical slicing — \"Each task ends with an independently testable deliverable\" — but never names the concept or its opposite. Nothing in the section stops a plan from splitting one feature into a \"build the API\" ",
-          "url": "https://github.com/obra/superpowers/issues/2047",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -108,61 +108,39 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 7,
+      "feedbackCount": 5,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
+          "id": "github-https-github-com-obra-superpowers-issues-574-likesundaylikerain",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "jfiscman",
-          "date": "2026-05-19",
-          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
-          "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 20,
-          "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1026-hlsc1989",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "hlsc1989",
-          "date": "2026-04-01",
-          "text": "Anthropic API failures causing writing-plans to fail <!-- BEFORE FILING: Search open AND closed issues. The Windows SessionStart hook alone has been reported 29 times. If your issue already exists, add a comment or reaction to the existing one instead. --> - [ ] I searched existing issues and this is not a duplicate ## Environment superpower version：5.0.6/5.0.7 claude code ## Is this a Superpowers issue or a platform issue? <!-- Superpowers is a plugin. Some reported \"bugs\" are actually issues in the underlying platform or model. If you're not sure, try reproducing without Superpowers installe",
-          "url": "https://github.com/obra/superpowers/issues/1026",
-          "score": 12,
+          "author": "LikeSundayLikeRain",
+          "date": "2026-02-28",
+          "text": "Git worktree is not created sometime after brainstorming **Describe the bug** Git worktree is not created sometime after brainstorming, and plan writing is trigger directly in current branch.; **To Reproduce** Steps to reproduce the behavior: Don't really have a reproduce steps, but it happens occasionally **Expected behavior** Git worktree should happen after design is written and before plan writing. **Logs** ``` ● Let me write the design doc and commit it. ● Read 1 file (ctrl+o to expand) ● Write(docs/plans/2026-02-28-native-skill-passthrough-design.md) ⎿ Wrote 94 lines to docs/plans/2026-0",
+          "url": "https://github.com/obra/superpowers/issues/574",
+          "score": 5,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1859-pixeru",
+          "id": "github-https-github-com-obra-superpowers-issues-1962-eranroseman",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "pixeru",
-          "date": "2026-06-29",
-          "text": "Support Hermes Agent as a Superpowers harness <html> <body> <!--StartFragment--><html><head></head><body><p>I’d like to add another user case for Hermes Agent support.</p><p>My use case is using Hermes Agent as my main coding harness, especially for larger game development / Unreal Engine workflows where I want the agent to follow a stronger engineering methodology instead of improvising each session. Superpowers already gives that structure in other harnesses, but Hermes users currently have to either manually port skills, copy/paste instructions into <code inline=\"\">SOUL.md</code>, or delega",
-          "url": "https://github.com/obra/superpowers/issues/1859",
+          "author": "eranroseman",
+          "date": "2026-07-10",
+          "text": "Spec/plan reviewer prompt templates are not referenced from their skills `skills/brainstorming/spec-document-reviewer-prompt.md` and `skills/writing-plans/plan-document-reviewer-prompt.md` provide dispatch templates for reviewing spec and plan documents, but neither `skills/brainstorming/SKILL.md` nor `skills/writing-plans/SKILL.md` references its template. An agent following the skill therefore never learns to dispatch the reviewer, so the templates read as orphaned. **Request:** either wire the reference into each `SKILL.md` (e.g. \"after writing the spec to `docs/superpowers/specs/`, dispatc",
+          "url": "https://github.com/obra/superpowers/issues/1962",
           "score": 2,
-          "sentiment": "negative"
+          "sentiment": "neutral"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1010-rwxsnow",
+          "id": "github-https-github-com-obra-superpowers-issues-2000-chentingtodo",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "rwxSnow",
-          "date": "2026-03-31",
-          "text": "writing-plans: Enhanced review capabilities ## What problem does this solve? Currently, the lack of a mandatory solution review mechanism after the implementation plan is produced easily leads to problems such as incomplete requirement coverage, inadequate functional design, and uncontrolled solution complexity. This directly reduces the plan's executability and increases the risk of rework and delivery issues. Proposed solution: Replace `Self-Review` entirely with `Plan Audit` (see below). The `Plan Audit` process is `Audit -> Revise -> Consistency Check`. Audit (new): Used to check direction",
-          "url": "https://github.com/obra/superpowers/issues/1010",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1936-y40881110-lang",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "y40881110-lang",
-          "date": "2026-07-06",
-          "text": "SDD progress ledger carries no plan identity — a second superpowers run in the same repo reads the previous run's `progress.md` and silently skips the new plan's tasks <!-- BEFORE FILING: Search open AND closed issues. The Windows SessionStart hook alone has been reported 29 times. If your issue already exists, add a comment or reaction to the existing one instead. --> - [x] I searched existing issues and this is not a duplicate ## Related issues (searched before filing) #1888 and #1816 report the *artifact* side of this (scratch files never pruned, `task-N-report.md` clobbered across efforts)",
-          "url": "https://github.com/obra/superpowers/issues/1936",
-          "score": 1,
+          "author": "ChenTingToDo",
+          "date": "2026-07-17",
+          "text": "Feature request: add an opt-in/manual-only brainstorming profile ## Is your feature request related to a problem? Please describe. The current `brainstorming` skill is intentionally described as mandatory before any feature, bug fix, UI change, or behavior modification. That is useful for rough, high-uncertainty product ideas, but it creates avoidable friction when the user has already provided a complete PRD or precise acceptance criteria. I use Superpowers through the Codex app with GPT-5.6 and installed the `brainstorming` skill without the rest of the Superpowers pipeline. In real local us",
+          "url": "https://github.com/obra/superpowers/issues/2000",
+          "score": 2,
           "sentiment": "negative"
         },
         {
@@ -173,7 +151,7 @@
           "date": "2026-07-29",
           "text": "Measured requesting-code-review and writing-plans across the sonnet-5 release — receipts inside - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? Skills are tested once (if ever), and model releases silently change behavior underneath them. When sonnet-5 shipped, there was no way to know which superpowers skills still did what their SKILL.md claims on the new model. I built a small OSS tool (Driftproof) that re-tests skills across model releases: same suite run with and without the skill, judge sampled 5x so every score carries a confidence",
           "url": "https://github.com/obra/superpowers/issues/2052",
-          "score": 1,
+          "score": 2,
           "sentiment": "negative"
         },
         {
@@ -184,7 +162,7 @@
           "date": "2026-07-28",
           "text": "`writing-plans`: name vertical slicing and the horizontal-slicing anti-pattern in `Task Right-Sizing` - [X] I searched existing issues and this has not been proposed before (Related but not duplicate — searched issues and PRs, open and closed; see \"What alternatives did you consider?\" below.) ## What problem does this solve? `writing-plans`' \"Task Right-Sizing\" section already implies vertical slicing — \"Each task ends with an independently testable deliverable\" — but never names the concept or its opposite. Nothing in the section stops a plan from splitting one feature into a \"build the API\" ",
           "url": "https://github.com/obra/superpowers/issues/2047",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -256,6 +234,17 @@
       "feedbackCount": 8,
       "comments": [
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2017-smortezah",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "smortezah",
+          "date": "2026-07-22",
+          "text": "Retuning subagent driven development for Opus 6 and Sol 5.6 Superpowers is fantastic but it uses a lot of tokens and takes a long time to complete a task. A `Slim` version would be great as it would alleviate some of the constraints of superpowers to make completing tasks faster.",
+          "url": "https://github.com/obra/superpowers/issues/2017",
+          "score": 9,
+          "sentiment": "positive"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-463-lechatlisse",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -267,17 +256,6 @@
           "sentiment": "neutral"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2017-smortezah",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "smortezah",
-          "date": "2026-07-22",
-          "text": "Retuning subagent driven development for Opus 6 and Sol 5.6 Superpowers is fantastic but it uses a lot of tokens and takes a long time to complete a task. A `Slim` version would be great as it would alleviate some of the constraints of superpowers to make completing tasks faster.",
-          "url": "https://github.com/obra/superpowers/issues/2017",
-          "score": 8,
-          "sentiment": "positive"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-1888-glen-84",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -285,8 +263,19 @@
           "date": "2026-07-01",
           "text": "subagent-driven-development: .superpowers/sdd scratch artifacts are never pruned and silently collide across efforts ## What problem does this solve? The `subagent-driven-development` skill writes per-task scratch artifacts to `.superpowers/sdd/` — `task-N-brief.md`, `task-N-report.md`, and a `review-*.diff` (or `task-N-review.diff`) per task, plus the `progress.md` ledger. Nothing ever prunes them. There is no cleanup step in the skill itself nor in `finishing-a-development-branch`, so the directory grows without bound and mixes artifacts from unrelated, already-merged efforts. Two concrete f",
           "url": "https://github.com/obra/superpowers/issues/1888",
-          "score": 3,
+          "score": 4,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1960-mohsinlakhani",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "mohsinlakhani",
+          "date": "2026-07-10",
+          "text": "ChatGPT 5.6 update for Codex isnt allowing subagent behaviour to work properly The model keeps repeatedly reporting that it cant use model selection in \"spawn_agent\" in the new ChatGPT 5.6. It always uses the main model that session uses. Used on: Superpowers 6.1.1 Subagent Driven Development Mac Desktop App for ChatGPT (after codex was merged) Model: 5.6 Terra High",
+          "url": "https://github.com/obra/superpowers/issues/1960",
+          "score": 3,
+          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1215-luokun1995",
@@ -331,17 +320,6 @@
           "url": "https://github.com/obra/superpowers/issues/2050",
           "score": 0,
           "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2054-glen-84",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "glen-84",
-          "date": "2026-07-29",
-          "text": "subagent-driven-development: reviewer prompts pay subagent turns for mechanical facts the controller can settle in one command - [x] I searched existing issues and this has not been proposed before *(Closest prior art, open and closed: #1930 targets reviewer **output** verbosity — what the reviewer reports back — which is the mirror image of this and complementary. #1120 is review cadence, whether a task needs a review at all. #1614 (closed) proposed admission receipts for extra review passes. This issue is about the reviewer's **input**: what the controller puts in the review prompt, and the ",
-          "url": "https://github.com/obra/superpowers/issues/2054",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -370,7 +348,7 @@
           "date": "2026-07-29",
           "text": "Measured requesting-code-review and writing-plans across the sonnet-5 release — receipts inside - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? Skills are tested once (if ever), and model releases silently change behavior underneath them. When sonnet-5 shipped, there was no way to know which superpowers skills still did what their SKILL.md claims on the new model. I built a small OSS tool (Driftproof) that re-tests skills across model releases: same suite run with and without the skill, judge sampled 5x so every score carries a confidence",
           "url": "https://github.com/obra/superpowers/issues/2052",
-          "score": 1,
+          "score": 2,
           "sentiment": "negative"
         },
         {
@@ -390,7 +368,7 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1878-jonathanstiansen",
@@ -404,25 +382,14 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1867-baozhao0218",
+          "id": "github-https-github-com-obra-superpowers-issues-1941-dlivxpr",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "baozhao0218",
-          "date": "2026-06-30",
-          "text": "Codex SessionStart hook fails on Windows sandbox when run-hook.cmd invokes Git Bash ### What happened? On Windows, the Codex `SessionStart` hook for Superpowers can fail to inject the full `using-superpowers` skill content when the hook runs inside the Codex sandbox. The hook path is: ```text Codex SessionStart -> hooks-codex.json -> hooks/run-hook.cmd session-start-codex -> Git for Windows bash.exe -> hooks/session-start-codex ``` Inside the Codex Windows sandbox, Git Bash fails before the actual hook script runs: ```text fatal error - couldn't create signal pipe, Win32 error 5 ``` As a resul",
-          "url": "https://github.com/obra/superpowers/issues/1867",
+          "author": "dlivxpr",
+          "date": "2026-07-06",
+          "text": "Feature request: First-class oh-my-pi (OMP) support via native extension ### Summary `Superpowers` now has first-class support for the Pi coding agent (closed #435, implemented in #1499), and it can already be loaded in `oh-my-pi` through the Claude-plugin compatibility path ([see this comment](https://github.com/obra/superpowers/issues/435#issuecomment-4057770017)). However, there is no dedicated, native `.omp/*` integration that allows `oh-my-pi` to discover and bootstrap `Superpowers` from a direct checkout of this repository. I would like to request a native `oh-my-pi` extension so that us",
+          "url": "https://github.com/obra/superpowers/issues/1941",
           "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2051-oliver-zehentleitner-aigent",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "oliver-zehentleitner-aigent",
-          "date": "2026-07-29",
-          "text": "using-superpowers' \"check any skill before every action\" doesn't hold once a workflow step is underway - [x] I searched existing issues and this is not a duplicate (checked #1007, #1812, and a few keyword searches — related in spirit, not the same report) ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.2.0 | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | 2.1.220 | | Your model + version | Claude Sonnet 5 (`claude-sonnet-5`) | | All plugins installed | `superpowers@superpowers-marketplace` (local scope); one additional skill loa",
-          "url": "https://github.com/obra/superpowers/issues/2051",
-          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -587,7 +554,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 6,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1169-tazmad",
@@ -599,17 +566,6 @@
           "url": "https://github.com/anthropics/skills/issues/1169",
           "score": 3,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1419-lagiosv",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "lagiosv",
-          "date": "2026-07-10",
-          "text": "skill-creator trigger eval scores 0% recall when the skill is already installed (and under parallel workers) ## Summary `skill-creator`'s trigger eval (`scripts/run_eval.py`) reports **0% recall for every candidate description** (while precision stays 100%) whenever either of two conditions holds. Both are structural in the detection logic, not description quality. Verified on Claude Code CLI v2.1.204 by capturing the full `stream-json` output of eval sessions. ## Root cause 1: the skill under test is already installed `run_single_query` registers a temp copy of the skill as `.claude/commands/",
-          "url": "https://github.com/anthropics/skills/issues/1419",
-          "score": 2,
-          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-anthropics-skills-issues-1427-buer2333",
