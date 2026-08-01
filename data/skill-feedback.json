@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-07-31T01:04:27Z",
+    "lastUpdated": "2026-08-01T01:04:20Z",
     "skillCount": 20,
-    "totalComments": 53,
+    "totalComments": 41,
     "sources": [
       "hacker-news",
       "github",
@@ -15,53 +15,8 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 4,
-      "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1222-younes-io",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "younes-io",
-          "date": "2026-04-19",
-          "text": "Pi agent with gpt-5.4 high - brainstorming skill is triggered all the time I like this skill but I think it is too aggressive in the sense that it gets triggered (almost) all the time, even when the use case doesn't require brainstorming. I asked Pi to apply some changes to a file, and it triggered the `brainstorming` skill. I would like to suggest to make it triggered manually, what do you think, @obra ? https://github.com/obra/superpowers/blob/b55764852ac78870e65c6565fb585b6cd8b3c5c9/skills/brainstorming/SKILL.md?plain=1#L2-L3 Thank you by the way for all the great work",
-          "url": "https://github.com/obra/superpowers/issues/1222",
-          "score": 6,
-          "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-574-likesundaylikerain",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "LikeSundayLikeRain",
-          "date": "2026-02-28",
-          "text": "Git worktree is not created sometime after brainstorming **Describe the bug** Git worktree is not created sometime after brainstorming, and plan writing is trigger directly in current branch.; **To Reproduce** Steps to reproduce the behavior: Don't really have a reproduce steps, but it happens occasionally **Expected behavior** Git worktree should happen after design is written and before plan writing. **Logs** ``` ● Let me write the design doc and commit it. ● Read 1 file (ctrl+o to expand) ● Write(docs/plans/2026-02-28-native-skill-passthrough-design.md) ⎿ Wrote 94 lines to docs/plans/2026-0",
-          "url": "https://github.com/obra/superpowers/issues/574",
-          "score": 5,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1962-eranroseman",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "eranroseman",
-          "date": "2026-07-10",
-          "text": "Spec/plan reviewer prompt templates are not referenced from their skills `skills/brainstorming/spec-document-reviewer-prompt.md` and `skills/writing-plans/plan-document-reviewer-prompt.md` provide dispatch templates for reviewing spec and plan documents, but neither `skills/brainstorming/SKILL.md` nor `skills/writing-plans/SKILL.md` references its template. An agent following the skill therefore never learns to dispatch the reviewer, so the templates read as orphaned. **Request:** either wire the reference into each `SKILL.md` (e.g. \"after writing the spec to `docs/superpowers/specs/`, dispatc",
-          "url": "https://github.com/obra/superpowers/issues/1962",
-          "score": 2,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2000-chentingtodo",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "ChenTingToDo",
-          "date": "2026-07-17",
-          "text": "Feature request: add an opt-in/manual-only brainstorming profile ## Is your feature request related to a problem? Please describe. The current `brainstorming` skill is intentionally described as mandatory before any feature, bug fix, UI change, or behavior modification. That is useful for rough, high-uncertainty product ideas, but it creates avoidable friction when the user has already provided a complete PRD or precise acceptance criteria. I use Superpowers through the Codex app with GPT-5.6 and installed the `brainstorming` skill without the rest of the Superpowers pipeline. In real local us",
-          "url": "https://github.com/obra/superpowers/issues/2000",
-          "score": 2,
-          "sentiment": "negative"
-        }
-      ]
+      "feedbackCount": 0,
+      "comments": []
     },
     "superpowers/test-driven-development": {
       "slug": "test-driven-development",
@@ -108,7 +63,7 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-574-likesundaylikerain",
@@ -120,17 +75,6 @@
           "url": "https://github.com/obra/superpowers/issues/574",
           "score": 5,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1962-eranroseman",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "eranroseman",
-          "date": "2026-07-10",
-          "text": "Spec/plan reviewer prompt templates are not referenced from their skills `skills/brainstorming/spec-document-reviewer-prompt.md` and `skills/writing-plans/plan-document-reviewer-prompt.md` provide dispatch templates for reviewing spec and plan documents, but neither `skills/brainstorming/SKILL.md` nor `skills/writing-plans/SKILL.md` references its template. An agent following the skill therefore never learns to dispatch the reviewer, so the templates read as orphaned. **Request:** either wire the reference into each `SKILL.md` (e.g. \"after writing the spec to `docs/superpowers/specs/`, dispatc",
-          "url": "https://github.com/obra/superpowers/issues/1962",
-          "score": 2,
-          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2000-chentingtodo",
@@ -231,97 +175,8 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 8,
-      "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2017-smortezah",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "smortezah",
-          "date": "2026-07-22",
-          "text": "Retuning subagent driven development for Opus 6 and Sol 5.6 Superpowers is fantastic but it uses a lot of tokens and takes a long time to complete a task. A `Slim` version would be great as it would alleviate some of the constraints of superpowers to make completing tasks faster.",
-          "url": "https://github.com/obra/superpowers/issues/2017",
-          "score": 9,
-          "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-463-lechatlisse",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "lechatlisse",
-          "date": "2026-02-12",
-          "text": "Controller skips spec/quality reviewer dispatch during subagent-driven-development ## Observed Behavior During the implementation phase of `subagent-driven-development`, the controller skipped dispatching fresh spec reviewer and code quality reviewer subagents. Instead, it self-confirmed with output like: > Quick spec check — all 8 requirements are straightforward and implementer confirmed each. Let me verify the commit and move on. The controller accepted the implementer's self-confirmation as sufficient and moved to the next task without dispatching either reviewer subagent. ## Expected Beha",
-          "url": "https://github.com/obra/superpowers/issues/463",
-          "score": 8,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1888-glen-84",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "glen-84",
-          "date": "2026-07-01",
-          "text": "subagent-driven-development: .superpowers/sdd scratch artifacts are never pruned and silently collide across efforts ## What problem does this solve? The `subagent-driven-development` skill writes per-task scratch artifacts to `.superpowers/sdd/` — `task-N-brief.md`, `task-N-report.md`, and a `review-*.diff` (or `task-N-review.diff`) per task, plus the `progress.md` ledger. Nothing ever prunes them. There is no cleanup step in the skill itself nor in `finishing-a-development-branch`, so the directory grows without bound and mixes artifacts from unrelated, already-merged efforts. Two concrete f",
-          "url": "https://github.com/obra/superpowers/issues/1888",
-          "score": 4,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1960-mohsinlakhani",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "mohsinlakhani",
-          "date": "2026-07-10",
-          "text": "ChatGPT 5.6 update for Codex isnt allowing subagent behaviour to work properly The model keeps repeatedly reporting that it cant use model selection in \"spawn_agent\" in the new ChatGPT 5.6. It always uses the main model that session uses. Used on: Superpowers 6.1.1 Subagent Driven Development Mac Desktop App for ChatGPT (after codex was merged) Model: 5.6 Terra High",
-          "url": "https://github.com/obra/superpowers/issues/1960",
-          "score": 3,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1215-luokun1995",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "luokun1995",
-          "date": "2026-04-18",
-          "text": "最新版本在制定 plans存在规则边界过宽 bug 今天在测试功能开发时出现多次规则边界过宽导致执行过程中大模型出现死循环情况，一个很简单的文档都能写一个小时起步，同时也存在小任务使用的执行方法过重导致任务卡死。 这次是典型的： 任务很小，但执行方法太重 所以这里不是 spec/plan 边界设计失败， 而是 task execution strategy 失败。 --- 5. 这次应该怎么修正 fix now 1. Task 3 不再走 subagent-driven-development 2. 直接在主会话里按 TDD 落地 - 先保持当前红灯 - 写最小实现 - 跑绿灯 3. Task 3 完成后再决定 Task 4+ 是否继续用 subagent note later 1. subagent-driven-development 只适合： - 多文件集成 - 有 review loop 价值 - 任务之间耦合较强 2. 对 Task 3/4/5 这种小而明确的任务，应优先： - 主线程直接 TDD - 少一层代理调度 reject as out of scope - 现在不需要重写整个 superpowers 工作流 - 现在不需要改 plan - 现在不需要扩展更多自动化保护 --- 6. 最准确的一句话总结 Task 3 卡住的根因不是代码难，也不是测试设计有问题，而",
-          "url": "https://github.com/obra/superpowers/issues/1215",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1286-bradfeld",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "bradfeld",
-          "date": "2026-04-27",
-          "text": "subagent-driven-development: add a mechanical-migration mode for verbatim-diff plans ## Summary Subagent-driven-development's per-task two-stage review (spec compliance, then code quality, as separate subagent dispatches) is excessive ceremony for **verbatim-diff migration plans** — refactor sweeps where each task is a mechanical Find/Replace patch and \"the spec IS the diff.\" A `mechanical-migration` mode (or equivalent prompt-conditional collapse) that combines the two stages into a single combined-review dispatch — or skips spec-review entirely for verbatim-diff tasks — would meaningfully re",
-          "url": "https://github.com/obra/superpowers/issues/1286",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1936-y40881110-lang",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "y40881110-lang",
-          "date": "2026-07-06",
-          "text": "SDD progress ledger carries no plan identity — a second superpowers run in the same repo reads the previous run's `progress.md` and silently skips the new plan's tasks <!-- BEFORE FILING: Search open AND closed issues. The Windows SessionStart hook alone has been reported 29 times. If your issue already exists, add a comment or reaction to the existing one instead. --> - [x] I searched existing issues and this is not a duplicate ## Related issues (searched before filing) #1888 and #1816 report the *artifact* side of this (scratch files never pruned, `task-N-report.md` clobbered across efforts)",
-          "url": "https://github.com/obra/superpowers/issues/1936",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2050-conradstorz",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "conradstorz",
-          "date": "2026-07-28",
-          "text": "subagent-driven-development: dispatched subagent committed to main instead of the worktree (isolation not enforced) ## Summary While executing an implementation plan with **subagent-driven-development** inside a git worktree created via the native `EnterWorktree` tool, one dispatched implementer subagent ran its `git add` / `git commit` against the **main checkout / `main` branch** instead of the isolated worktree branch. The worktree did not \"contain\" the subagent, and `main` was mutated with an out-of-context commit. The worktree existed precisely to isolate the work. That guarantee silently",
-          "url": "https://github.com/obra/superpowers/issues/2050",
-          "score": 0,
-          "sentiment": "neutral"
-        }
-      ]
+      "feedbackCount": 0,
+      "comments": []
     },
     "superpowers/requesting-code-review": {
       "slug": "requesting-code-review",
@@ -368,37 +223,14 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 2,
-      "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1878-jonathanstiansen",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jonathanstiansen",
-          "date": "2026-06-30",
-          "text": "Sonnet 5 really doesn't like the instructions <!-- BEFORE FILING: Search open AND closed issues. The Windows SessionStart hook alone has been reported 29 times. If your issue already exists, add a comment or reaction to the existing one instead. --> - [x] I searched existing issues and this is not a duplicate ## Environment (required) <!-- Required. We assume an agent filed this report — tell us which one and where it ran. We weigh reports by what produced them. --> Human - sorry. | Field | Value | |---|---| | Superpowers version | 6.0.3 | | Harness | Claude Code (CC) | | Harness version | 2.1",
-          "url": "https://github.com/obra/superpowers/issues/1878",
-          "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1941-dlivxpr",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "dlivxpr",
-          "date": "2026-07-06",
-          "text": "Feature request: First-class oh-my-pi (OMP) support via native extension ### Summary `Superpowers` now has first-class support for the Pi coding agent (closed #435, implemented in #1499), and it can already be loaded in `oh-my-pi` through the Claude-plugin compatibility path ([see this comment](https://github.com/obra/superpowers/issues/435#issuecomment-4057770017)). However, there is no dedicated, native `.omp/*` integration that allows `oh-my-pi` to discover and bootstrap `Superpowers` from a direct checkout of this repository. I would like to request a native `oh-my-pi` extension so that us",
-          "url": "https://github.com/obra/superpowers/issues/1941",
-          "score": 1,
-          "sentiment": "negative"
-        }
-      ]
+      "feedbackCount": 0,
+      "comments": []
     },
     "awesome-copilot/ai-ready": {
       "slug": "ai-ready",
       "ecosystem": "awesome-copilot",
       "displayName": "AI Ready",
-      "feedbackCount": 3,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-1750-johnpapa",
@@ -432,6 +264,28 @@
           "url": "https://github.com/github/awesome-copilot/issues/2058",
           "score": 1,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-2504-phodal",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "phodal",
+          "date": "2026-07-31",
+          "text": "[External Plugin]: better-harness ### Plugin name better-harness ### Short description Build an AI-ready engineering system for safe coding-agent delivery and continuous software improvement. ### GitHub repository QoderAI/better-harness ### Plugin path inside the repository _No response_ ### Ref to review _No response_ ### Commit SHA to review cfa7c123acbe9bbbf23c8065123f41643bdecf18 ### Version 0.4.0 ### License identifier MIT ### Author name Qoder ### Author URL https://qoder.com/ ### Homepage URL https://qoderai.github.io/better-harness/ ### Keywords copilot-plugin better-harness coding-age",
+          "url": "https://github.com/github/awesome-copilot/issues/2504",
+          "score": 1,
+          "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-2503-phodal",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "phodal",
+          "date": "2026-07-31",
+          "text": "[External Plugin]: better-harness ### Plugin name better-harness ### Short description Build an AI-ready engineering system for safe coding-agent delivery and continuous software improvement. ### GitHub repository QoderAI/better-harness ### Plugin path inside the repository _No response_ ### Ref to review _No response_ ### Commit SHA to review cfa7c123acbe9bbbf23c8065123f41643bdecf18 ### Version 0.4.0 ### License identifier MIT ### Author name Qoder ### Author URL https://qoder.com/ ### Homepage URL https://qoderai.github.io/better-harness/ ### Keywords copilot-plugin better-harness coding-age",
+          "url": "https://github.com/github/awesome-copilot/issues/2503",
+          "score": 1,
+          "sentiment": "positive"
         }
       ]
     },
@@ -449,7 +303,7 @@
           "date": "2026-07-24",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 746 resources - **Aging (14–30 days):** 18 resources - **Fresh (<14 days):** 46 resources (not listed) > Dates = last substantive modification commit (bulk line-ending fixes excluded). --- ### 🔴 Stale Resources (>30 days) **Agents — 201/221 stale.** Oldest: `agents/WinFormsExpert.agent.md`, `agents/amplitude-experiment-implementation.agent.md`, `agents/dynatrace-expert.agent.md`, `agents/jfrog-sec.agent.md`, `agents/launchdarkly-flag-cleanup.agent.md`, `agents/neon-migration-specialist.agent.md`, `agents/pagerduty-incident-respond",
           "url": "https://github.com/github/awesome-copilot/issues/2415",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -465,8 +319,31 @@
       "slug": "harness-engineering",
       "ecosystem": "awesome-copilot",
       "displayName": "Harness Engineering",
-      "feedbackCount": 0,
-      "comments": []
+      "feedbackCount": 2,
+      "comments": [
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-2504-phodal",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "phodal",
+          "date": "2026-07-31",
+          "text": "[External Plugin]: better-harness ### Plugin name better-harness ### Short description Build an AI-ready engineering system for safe coding-agent delivery and continuous software improvement. ### GitHub repository QoderAI/better-harness ### Plugin path inside the repository _No response_ ### Ref to review _No response_ ### Commit SHA to review cfa7c123acbe9bbbf23c8065123f41643bdecf18 ### Version 0.4.0 ### License identifier MIT ### Author name Qoder ### Author URL https://qoder.com/ ### Homepage URL https://qoderai.github.io/better-harness/ ### Keywords copilot-plugin better-harness coding-age",
+          "url": "https://github.com/github/awesome-copilot/issues/2504",
+          "score": 1,
+          "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-2503-phodal",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "phodal",
+          "date": "2026-07-31",
+          "text": "[External Plugin]: better-harness ### Plugin name better-harness ### Short description Build an AI-ready engineering system for safe coding-agent delivery and continuous software improvement. ### GitHub repository QoderAI/better-harness ### Plugin path inside the repository _No response_ ### Ref to review _No response_ ### Commit SHA to review cfa7c123acbe9bbbf23c8065123f41643bdecf18 ### Version 0.4.0 ### License identifier MIT ### Author name Qoder ### Author URL https://qoder.com/ ### Homepage URL https://qoderai.github.io/better-harness/ ### Keywords copilot-plugin better-harness coding-age",
+          "url": "https://github.com/github/awesome-copilot/issues/2503",
+          "score": 1,
+          "sentiment": "positive"
+        }
+      ]
     },
     "awesome-copilot/acquire-codebase-knowledge": {
       "slug": "acquire-codebase-knowledge",
@@ -554,7 +431,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1169-tazmad",
@@ -565,17 +442,6 @@
           "text": "skill-creator description-optimisation loop: recall=0% on every iteration, including literal slash-command queries ## Summary When running `scripts/run_loop.py` (or `scripts/improve_description.py`) against a skill that already has a defined slash-command name, every iteration scores **precision=100%, recall=0%, accuracy=50%** — including queries that are the literal slash-command invocation of that skill. The score is identical across iterations regardless of how much the candidate description changes, so the loop produces no usable signal for description tuning. ## Environment - skill-creato",
           "url": "https://github.com/anthropics/skills/issues/1169",
           "score": 3,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1427-buer2333",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Buer2333",
-          "date": "2026-07-11",
-          "text": "skill-creator run_eval.py: parallel identical command clones contaminate trigger detection, collapsing recall to 0 ## Summary `skill-creator`'s trigger evaluation (`scripts/run_eval.py`) systematically under-counts triggers — in my environment recall collapsed to exactly **0% across 27+ positive samples and three very different candidate descriptions** (precision stayed 100%, accuracy pinned at 50%). After packet-level debugging with `--output-format stream-json` captures, the root cause is a design issue in how triggering is detected, not stream-format drift: **Parallel workers create N ident",
-          "url": "https://github.com/anthropics/skills/issues/1427",
-          "score": 2,
           "sentiment": "negative"
         },
         {
