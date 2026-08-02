@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-01T01:04:20Z",
+    "lastUpdated": "2026-08-02T01:06:23Z",
     "skillCount": 20,
-    "totalComments": 41,
+    "totalComments": 49,
     "sources": [
       "hacker-news",
       "github",
@@ -15,13 +15,6 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 0,
-      "comments": []
-    },
-    "superpowers/test-driven-development": {
-      "slug": "test-driven-development",
-      "ecosystem": "superpowers",
-      "displayName": "Test-Driven Development",
       "feedbackCount": 3,
       "comments": [
         {
@@ -32,7 +25,48 @@
           "date": "2026-05-19",
           "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
           "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 20,
+          "score": 21,
+          "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2065-rehanazher",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "rehanazher",
+          "date": "2026-08-01",
+          "text": "Brainstorming: bounded throwaway spike to settle design unknowns code can answer **Disclaimer** : The below proposal is drafted using AI , but the idea is real. - [x] I searched existing issues and this has not been proposed before <!-- Prior art I found and why this is not a duplicate: - PR #1038 (\"feat: add prototyping skill for technical uncertainty\") was closed by its own author as opened-against-the-wrong-repo, so the idea was never actually evaluated on merit. - Issue #1098 / PR #1169 make assumptions and unknowns *explicit*. They stop at naming the unknown. This proposal is about the su",
+          "url": "https://github.com/obra/superpowers/issues/2065",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2066-rehanazher",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "rehanazher",
+          "date": "2026-08-01",
+          "text": "Make Spec Self-Review check the design against the repo, not only against itself **Disclaimer:** The below is drafted by an AI , but i have practiced this regularly in recent times and always found this useful it always find some thing that can improve the design - [x] I searched existing issues and this has not been proposed before <!-- IMPORTANT — read before filing. This one has heavy prior art and is only worth filing if the delta below survives your own reading of these: - Spec Self-Review ALREADY EXISTS (brainstorming checklist item 7 + the spec-document-reviewer-prompt.md subagent templ",
+          "url": "https://github.com/obra/superpowers/issues/2066",
+          "score": 0,
+          "sentiment": "negative"
+        }
+      ]
+    },
+    "superpowers/test-driven-development": {
+      "slug": "test-driven-development",
+      "ecosystem": "superpowers",
+      "displayName": "Test-Driven Development",
+      "feedbackCount": 4,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jfiscman",
+          "date": "2026-05-19",
+          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
+          "url": "https://github.com/obra/superpowers/issues/1581",
+          "score": 21,
           "sentiment": "positive"
         },
         {
@@ -56,6 +90,17 @@
           "url": "https://github.com/obra/superpowers/issues/2046",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2065-rehanazher",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "rehanazher",
+          "date": "2026-08-01",
+          "text": "Brainstorming: bounded throwaway spike to settle design unknowns code can answer **Disclaimer** : The below proposal is drafted using AI , but the idea is real. - [x] I searched existing issues and this has not been proposed before <!-- Prior art I found and why this is not a duplicate: - PR #1038 (\"feat: add prototyping skill for technical uncertainty\") was closed by its own author as opened-against-the-wrong-repo, so the idea was never actually evaluated on merit. - Issue #1098 / PR #1169 make assumptions and unknowns *explicit*. They stop at naming the unknown. This proposal is about the su",
+          "url": "https://github.com/obra/superpowers/issues/2065",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -66,26 +111,15 @@
       "feedbackCount": 4,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-574-likesundaylikerain",
+          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "LikeSundayLikeRain",
-          "date": "2026-02-28",
-          "text": "Git worktree is not created sometime after brainstorming **Describe the bug** Git worktree is not created sometime after brainstorming, and plan writing is trigger directly in current branch.; **To Reproduce** Steps to reproduce the behavior: Don't really have a reproduce steps, but it happens occasionally **Expected behavior** Git worktree should happen after design is written and before plan writing. **Logs** ``` ● Let me write the design doc and commit it. ● Read 1 file (ctrl+o to expand) ● Write(docs/plans/2026-02-28-native-skill-passthrough-design.md) ⎿ Wrote 94 lines to docs/plans/2026-0",
-          "url": "https://github.com/obra/superpowers/issues/574",
-          "score": 5,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2000-chentingtodo",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "ChenTingToDo",
-          "date": "2026-07-17",
-          "text": "Feature request: add an opt-in/manual-only brainstorming profile ## Is your feature request related to a problem? Please describe. The current `brainstorming` skill is intentionally described as mandatory before any feature, bug fix, UI change, or behavior modification. That is useful for rough, high-uncertainty product ideas, but it creates avoidable friction when the user has already provided a complete PRD or precise acceptance criteria. I use Superpowers through the Codex app with GPT-5.6 and installed the `brainstorming` skill without the rest of the Superpowers pipeline. In real local us",
-          "url": "https://github.com/obra/superpowers/issues/2000",
-          "score": 2,
-          "sentiment": "negative"
+          "author": "jfiscman",
+          "date": "2026-05-19",
+          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
+          "url": "https://github.com/obra/superpowers/issues/1581",
+          "score": 21,
+          "sentiment": "positive"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2052-mavericksea-ai",
@@ -99,14 +133,25 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2047-ammachado",
+          "id": "github-https-github-com-obra-superpowers-issues-2065-rehanazher",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "ammachado",
-          "date": "2026-07-28",
-          "text": "`writing-plans`: name vertical slicing and the horizontal-slicing anti-pattern in `Task Right-Sizing` - [X] I searched existing issues and this has not been proposed before (Related but not duplicate — searched issues and PRs, open and closed; see \"What alternatives did you consider?\" below.) ## What problem does this solve? `writing-plans`' \"Task Right-Sizing\" section already implies vertical slicing — \"Each task ends with an independently testable deliverable\" — but never names the concept or its opposite. Nothing in the section stops a plan from splitting one feature into a \"build the API\" ",
-          "url": "https://github.com/obra/superpowers/issues/2047",
-          "score": 1,
+          "author": "rehanazher",
+          "date": "2026-08-01",
+          "text": "Brainstorming: bounded throwaway spike to settle design unknowns code can answer **Disclaimer** : The below proposal is drafted using AI , but the idea is real. - [x] I searched existing issues and this has not been proposed before <!-- Prior art I found and why this is not a duplicate: - PR #1038 (\"feat: add prototyping skill for technical uncertainty\") was closed by its own author as opened-against-the-wrong-repo, so the idea was never actually evaluated on merit. - Issue #1098 / PR #1169 make assumptions and unknowns *explicit*. They stop at naming the unknown. This proposal is about the su",
+          "url": "https://github.com/obra/superpowers/issues/2065",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2066-rehanazher",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "rehanazher",
+          "date": "2026-08-01",
+          "text": "Make Spec Self-Review check the design against the repo, not only against itself **Disclaimer:** The below is drafted by an AI , but i have practiced this regularly in recent times and always found this useful it always find some thing that can improve the design - [x] I searched existing issues and this has not been proposed before <!-- IMPORTANT — read before filing. This one has heavy prior art and is only worth filing if the delta below survives your own reading of these: - Spec Self-Review ALREADY EXISTS (brainstorming checklist item 7 + the spec-document-reviewer-prompt.md subagent templ",
+          "url": "https://github.com/obra/superpowers/issues/2066",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -125,7 +170,7 @@
           "date": "2026-05-19",
           "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
           "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 20,
+          "score": 21,
           "sentiment": "positive"
         },
         {
@@ -155,7 +200,7 @@
           "date": "2026-05-19",
           "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
           "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 20,
+          "score": 21,
           "sentiment": "positive"
         },
         {
@@ -175,14 +220,7 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 0,
-      "comments": []
-    },
-    "superpowers/requesting-code-review": {
-      "slug": "requesting-code-review",
-      "ecosystem": "superpowers",
-      "displayName": "Requesting Code Review",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
@@ -192,7 +230,37 @@
           "date": "2026-05-19",
           "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
           "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 20,
+          "score": 21,
+          "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2065-rehanazher",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "rehanazher",
+          "date": "2026-08-01",
+          "text": "Brainstorming: bounded throwaway spike to settle design unknowns code can answer **Disclaimer** : The below proposal is drafted using AI , but the idea is real. - [x] I searched existing issues and this has not been proposed before <!-- Prior art I found and why this is not a duplicate: - PR #1038 (\"feat: add prototyping skill for technical uncertainty\") was closed by its own author as opened-against-the-wrong-repo, so the idea was never actually evaluated on merit. - Issue #1098 / PR #1169 make assumptions and unknowns *explicit*. They stop at naming the unknown. This proposal is about the su",
+          "url": "https://github.com/obra/superpowers/issues/2065",
+          "score": 0,
+          "sentiment": "negative"
+        }
+      ]
+    },
+    "superpowers/requesting-code-review": {
+      "slug": "requesting-code-review",
+      "ecosystem": "superpowers",
+      "displayName": "Requesting Code Review",
+      "feedbackCount": 4,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jfiscman",
+          "date": "2026-05-19",
+          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
+          "url": "https://github.com/obra/superpowers/issues/1581",
+          "score": 21,
           "sentiment": "positive"
         },
         {
@@ -216,6 +284,17 @@
           "url": "https://github.com/obra/superpowers/issues/2034",
           "score": 0,
           "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2066-rehanazher",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "rehanazher",
+          "date": "2026-08-01",
+          "text": "Make Spec Self-Review check the design against the repo, not only against itself **Disclaimer:** The below is drafted by an AI , but i have practiced this regularly in recent times and always found this useful it always find some thing that can improve the design - [x] I searched existing issues and this has not been proposed before <!-- IMPORTANT — read before filing. This one has heavy prior art and is only worth filing if the delta below survives your own reading of these: - Spec Self-Review ALREADY EXISTS (brainstorming checklist item 7 + the spec-document-reviewer-prompt.md subagent templ",
+          "url": "https://github.com/obra/superpowers/issues/2066",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -431,7 +510,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1169-tazmad",
@@ -452,6 +531,17 @@
           "date": "2026-01-30",
           "text": "`skill-creator` skill does not recognise other fields in front-matter I ran: `/skill-creator let's revisit the commit message global skill. Does it satisfy the guidelines?` Claude then proceeded to parse my skill with this front-matter: ``` --- name: commit-message description: Use when creating git commits or when the user asks to commit, save, or push changes. Triggers on phrases like \"commit this\", \"make a commit\", \"save my changes to git\", \"commit what we have\", or any request to create a git commit. Provides commit message formatting guidelines including emoji vocabulary and message struc",
           "url": "https://github.com/anthropics/skills/issues/311",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-394-tomfuertes",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "tomfuertes",
+          "date": "2026-02-14",
+          "text": "Packaging validator should warn (not error) on platform-specific extension fields ## Context The [Agent Skills open standard](https://agentskills.io/specification) defines 6 frontmatter fields: ``` name, description, license, compatibility, metadata, allowed-tools ``` The validator in `skills/skill-creator/scripts/quick_validate.py` (line 42) correctly enforces this set. However, platform-specific implementations like [Claude Code](https://code.claude.com/docs/en/skills#frontmatter-reference) extend the standard with additional fields: ``` model, context, agent, argument-hint, hooks, disable-m",
+          "url": "https://github.com/anthropics/skills/issues/394",
           "score": 1,
           "sentiment": "negative"
         },
