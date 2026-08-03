@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-02T01:06:23Z",
+    "lastUpdated": "2026-08-03T01:04:46Z",
     "skillCount": 20,
-    "totalComments": 49,
+    "totalComments": 51,
     "sources": [
       "hacker-news",
       "github",
@@ -15,7 +15,7 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
@@ -25,7 +25,7 @@
           "date": "2026-05-19",
           "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
           "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 21,
+          "score": 22,
           "sentiment": "positive"
         },
         {
@@ -49,6 +49,17 @@
           "url": "https://github.com/obra/superpowers/issues/2066",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2076-kaiser-data",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "kaiser-data",
+          "date": "2026-08-02",
+          "text": "Brainstorming trigger lacks a mechanical-task exclusion - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? `superpowers:brainstorming` can be invoked for execution-only work that has no software-design decision to make. Once invoked, the current workflow turns a small reversible operation into a brainstorm → design spec → spec review → writing-plans sequence. This happened in a real Codex session. The request was: > please take picture to a folder which are good for linkedin post take into linkedin-pictures folder and commmit and push The jo",
+          "url": "https://github.com/obra/superpowers/issues/2076",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -66,7 +77,7 @@
           "date": "2026-05-19",
           "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
           "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 21,
+          "score": 22,
           "sentiment": "positive"
         },
         {
@@ -118,19 +129,8 @@
           "date": "2026-05-19",
           "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
           "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 21,
+          "score": 22,
           "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2052-mavericksea-ai",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "mavericksea-ai",
-          "date": "2026-07-29",
-          "text": "Measured requesting-code-review and writing-plans across the sonnet-5 release — receipts inside - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? Skills are tested once (if ever), and model releases silently change behavior underneath them. When sonnet-5 shipped, there was no way to know which superpowers skills still did what their SKILL.md claims on the new model. I built a small OSS tool (Driftproof) that re-tests skills across model releases: same suite run with and without the skill, judge sampled 5x so every score carries a confidence",
-          "url": "https://github.com/obra/superpowers/issues/2052",
-          "score": 2,
-          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2065-rehanazher",
@@ -153,6 +153,17 @@
           "url": "https://github.com/obra/superpowers/issues/2066",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2076-kaiser-data",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "kaiser-data",
+          "date": "2026-08-02",
+          "text": "Brainstorming trigger lacks a mechanical-task exclusion - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? `superpowers:brainstorming` can be invoked for execution-only work that has no software-design decision to make. Once invoked, the current workflow turns a small reversible operation into a brainstorm → design spec → spec review → writing-plans sequence. This happened in a real Codex session. The request was: > please take picture to a folder which are good for linkedin post take into linkedin-pictures folder and commmit and push The jo",
+          "url": "https://github.com/obra/superpowers/issues/2076",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -170,7 +181,7 @@
           "date": "2026-05-19",
           "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
           "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 21,
+          "score": 22,
           "sentiment": "positive"
         },
         {
@@ -200,7 +211,7 @@
           "date": "2026-05-19",
           "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
           "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 21,
+          "score": 22,
           "sentiment": "positive"
         },
         {
@@ -230,7 +241,7 @@
           "date": "2026-05-19",
           "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
           "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 21,
+          "score": 22,
           "sentiment": "positive"
         },
         {
@@ -260,7 +271,7 @@
           "date": "2026-05-19",
           "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
           "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 21,
+          "score": 22,
           "sentiment": "positive"
         },
         {
@@ -302,8 +313,20 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 0,
-      "comments": []
+      "feedbackCount": 1,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2076-kaiser-data",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "kaiser-data",
+          "date": "2026-08-02",
+          "text": "Brainstorming trigger lacks a mechanical-task exclusion - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? `superpowers:brainstorming` can be invoked for execution-only work that has no software-design decision to make. Once invoked, the current workflow turns a small reversible operation into a brainstorm → design spec → spec review → writing-plans sequence. This happened in a real Codex session. The request was: > please take picture to a folder which are good for linkedin post take into linkedin-pictures folder and commmit and push The jo",
+          "url": "https://github.com/obra/superpowers/issues/2076",
+          "score": 0,
+          "sentiment": "negative"
+        }
+      ]
     },
     "awesome-copilot/ai-ready": {
       "slug": "ai-ready",
