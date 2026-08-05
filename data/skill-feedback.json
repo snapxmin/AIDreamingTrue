@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-04T01:02:59Z",
+    "lastUpdated": "2026-08-05T01:01:16Z",
     "skillCount": 20,
     "totalComments": 52,
     "sources": [
@@ -15,7 +15,7 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
@@ -25,30 +25,19 @@
           "date": "2026-05-19",
           "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
           "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 23,
+          "score": 28,
           "sentiment": "positive"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2065-rehanazher",
+          "id": "github-https-github-com-obra-superpowers-issues-1192-vlattko",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "rehanazher",
-          "date": "2026-08-01",
-          "text": "Brainstorming: bounded throwaway spike to settle design unknowns code can answer **Disclaimer** : The below proposal is drafted using AI , but the idea is real. - [x] I searched existing issues and this has not been proposed before <!-- Prior art I found and why this is not a duplicate: - PR #1038 (\"feat: add prototyping skill for technical uncertainty\") was closed by its own author as opened-against-the-wrong-repo, so the idea was never actually evaluated on merit. - Issue #1098 / PR #1169 make assumptions and unknowns *explicit*. They stop at naming the unknown. This proposal is about the su",
-          "url": "https://github.com/obra/superpowers/issues/2065",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2066-rehanazher",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "rehanazher",
-          "date": "2026-08-01",
-          "text": "Make Spec Self-Review check the design against the repo, not only against itself **Disclaimer:** The below is drafted by an AI , but i have practiced this regularly in recent times and always found this useful it always find some thing that can improve the design - [x] I searched existing issues and this has not been proposed before <!-- IMPORTANT — read before filing. This one has heavy prior art and is only worth filing if the delta below survives your own reading of these: - Spec Self-Review ALREADY EXISTS (brainstorming checklist item 7 + the spec-document-reviewer-prompt.md subagent templ",
-          "url": "https://github.com/obra/superpowers/issues/2066",
-          "score": 0,
-          "sentiment": "negative"
+          "author": "vlattko",
+          "date": "2026-04-16",
+          "text": "Proposal: `maintaining-roadmap` skill for cross-session priority orchestration - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I run Superpowers across multiple terminals and multiple tools (Claude Code, Codex, Antigravity) working on a stealth geospatial platform. On any given week I have 3–5 plans in flight at different stages: one mid- execution, one specced but unplanned, one plan waiting on a collaborator, one long-term idea I don't want to lose. The plans themselves are durable, `docs/superpowers/plans/` is exactly the right artifac",
+          "url": "https://github.com/obra/superpowers/issues/1192",
+          "score": 10,
+          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2076-kaiser-data",
@@ -58,7 +47,7 @@
           "date": "2026-08-02",
           "text": "Brainstorming trigger lacks a mechanical-task exclusion - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? `superpowers:brainstorming` can be invoked for execution-only work that has no software-design decision to make. Once invoked, the current workflow turns a small reversible operation into a brainstorm → design spec → spec review → writing-plans sequence. This happened in a real Codex session. The request was: > please take picture to a folder which are good for linkedin post take into linkedin-pictures folder and commmit and push The jo",
           "url": "https://github.com/obra/superpowers/issues/2076",
-          "score": 0,
+          "score": 4,
           "sentiment": "negative"
         }
       ]
@@ -77,7 +66,7 @@
           "date": "2026-05-19",
           "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
           "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 23,
+          "score": 28,
           "sentiment": "positive"
         },
         {
@@ -119,7 +108,7 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
@@ -129,30 +118,19 @@
           "date": "2026-05-19",
           "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
           "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 23,
+          "score": 28,
           "sentiment": "positive"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2065-rehanazher",
+          "id": "github-https-github-com-obra-superpowers-issues-1192-vlattko",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "rehanazher",
-          "date": "2026-08-01",
-          "text": "Brainstorming: bounded throwaway spike to settle design unknowns code can answer **Disclaimer** : The below proposal is drafted using AI , but the idea is real. - [x] I searched existing issues and this has not been proposed before <!-- Prior art I found and why this is not a duplicate: - PR #1038 (\"feat: add prototyping skill for technical uncertainty\") was closed by its own author as opened-against-the-wrong-repo, so the idea was never actually evaluated on merit. - Issue #1098 / PR #1169 make assumptions and unknowns *explicit*. They stop at naming the unknown. This proposal is about the su",
-          "url": "https://github.com/obra/superpowers/issues/2065",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2066-rehanazher",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "rehanazher",
-          "date": "2026-08-01",
-          "text": "Make Spec Self-Review check the design against the repo, not only against itself **Disclaimer:** The below is drafted by an AI , but i have practiced this regularly in recent times and always found this useful it always find some thing that can improve the design - [x] I searched existing issues and this has not been proposed before <!-- IMPORTANT — read before filing. This one has heavy prior art and is only worth filing if the delta below survives your own reading of these: - Spec Self-Review ALREADY EXISTS (brainstorming checklist item 7 + the spec-document-reviewer-prompt.md subagent templ",
-          "url": "https://github.com/obra/superpowers/issues/2066",
-          "score": 0,
-          "sentiment": "negative"
+          "author": "vlattko",
+          "date": "2026-04-16",
+          "text": "Proposal: `maintaining-roadmap` skill for cross-session priority orchestration - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I run Superpowers across multiple terminals and multiple tools (Claude Code, Codex, Antigravity) working on a stealth geospatial platform. On any given week I have 3–5 plans in flight at different stages: one mid- execution, one specced but unplanned, one plan waiting on a collaborator, one long-term idea I don't want to lose. The plans themselves are durable, `docs/superpowers/plans/` is exactly the right artifac",
+          "url": "https://github.com/obra/superpowers/issues/1192",
+          "score": 10,
+          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2076-kaiser-data",
@@ -162,7 +140,7 @@
           "date": "2026-08-02",
           "text": "Brainstorming trigger lacks a mechanical-task exclusion - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? `superpowers:brainstorming` can be invoked for execution-only work that has no software-design decision to make. Once invoked, the current workflow turns a small reversible operation into a brainstorm → design spec → spec review → writing-plans sequence. This happened in a real Codex session. The request was: > please take picture to a folder which are good for linkedin post take into linkedin-pictures folder and commmit and push The jo",
           "url": "https://github.com/obra/superpowers/issues/2076",
-          "score": 0,
+          "score": 4,
           "sentiment": "negative"
         }
       ]
@@ -181,7 +159,7 @@
           "date": "2026-05-19",
           "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
           "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 23,
+          "score": 28,
           "sentiment": "positive"
         },
         {
@@ -211,7 +189,7 @@
           "date": "2026-05-19",
           "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
           "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 23,
+          "score": 28,
           "sentiment": "positive"
         },
         {
@@ -241,19 +219,19 @@
           "date": "2026-05-19",
           "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
           "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 23,
+          "score": 28,
           "sentiment": "positive"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2065-rehanazher",
+          "id": "github-https-github-com-obra-superpowers-issues-1192-vlattko",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "rehanazher",
-          "date": "2026-08-01",
-          "text": "Brainstorming: bounded throwaway spike to settle design unknowns code can answer **Disclaimer** : The below proposal is drafted using AI , but the idea is real. - [x] I searched existing issues and this has not been proposed before <!-- Prior art I found and why this is not a duplicate: - PR #1038 (\"feat: add prototyping skill for technical uncertainty\") was closed by its own author as opened-against-the-wrong-repo, so the idea was never actually evaluated on merit. - Issue #1098 / PR #1169 make assumptions and unknowns *explicit*. They stop at naming the unknown. This proposal is about the su",
-          "url": "https://github.com/obra/superpowers/issues/2065",
-          "score": 0,
-          "sentiment": "negative"
+          "author": "vlattko",
+          "date": "2026-04-16",
+          "text": "Proposal: `maintaining-roadmap` skill for cross-session priority orchestration - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I run Superpowers across multiple terminals and multiple tools (Claude Code, Codex, Antigravity) working on a stealth geospatial platform. On any given week I have 3–5 plans in flight at different stages: one mid- execution, one specced but unplanned, one plan waiting on a collaborator, one long-term idea I don't want to lose. The plans themselves are durable, `docs/superpowers/plans/` is exactly the right artifac",
+          "url": "https://github.com/obra/superpowers/issues/1192",
+          "score": 10,
+          "sentiment": "neutral"
         }
       ]
     },
@@ -271,7 +249,7 @@
           "date": "2026-05-19",
           "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
           "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 23,
+          "score": 28,
           "sentiment": "positive"
         },
         {
@@ -313,19 +291,8 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 2,
+      "feedbackCount": 4,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2076-kaiser-data",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "kaiser-data",
-          "date": "2026-08-02",
-          "text": "Brainstorming trigger lacks a mechanical-task exclusion - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? `superpowers:brainstorming` can be invoked for execution-only work that has no software-design decision to make. Once invoked, the current workflow turns a small reversible operation into a brainstorm → design spec → spec review → writing-plans sequence. This happened in a real Codex session. The request was: > please take picture to a folder which are good for linkedin post take into linkedin-pictures folder and commmit and push The jo",
-          "url": "https://github.com/obra/superpowers/issues/2076",
-          "score": 0,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2081-midirectiekade14-debug",
           "source": "github",
@@ -334,8 +301,41 @@
           "date": "2026-08-04",
           "text": "hooks/session-start: six subprocess spawns cost ~2s on Windows (7.7x slower; byte-identical output without them) `hooks/session-start` spawns six subprocesses to do work that needs none. On Linux/macOS that is cheap enough to be invisible. On Windows, where `fork()` is emulated, it dominates: the hook takes **~2.25s** instead of **~0.29s**, and the whole difference is process-spawn overhead. Removing the spawns produces **byte-identical output** (same SHA-256, same length, same exit code). ## Environment | | | |---|---| | OS | Windows 11 Pro 26200 | | Shell | Git for Windows bash 5.2 (`C:\\Prog",
           "url": "https://github.com/obra/superpowers/issues/2081",
-          "score": 0,
+          "score": 7,
           "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2083-dknight927",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "DKnight927",
+          "date": "2026-08-04",
+          "text": "Pi extension bootstrap only injected on the first turn: agent_end fires per run, not per session ## Summary The Pi extension (`.pi/extensions/superpowers.ts`) gates bootstrap injection on `session_start`/`session_compact` and clears it on `agent_end`: ```ts pi.on(\"session_start\", async () => { injectBootstrap = true; }); pi.on(\"session_compact\", async () => { injectBootstrap = true; }); pi.on(\"agent_end\", async () => { injectBootstrap = false; }); ``` The intent (per `tests/pi/test-pi-extension.mjs`: *\"startup bootstrap should clear after agent_end\"*) is that `agent_end` marks the end of a **s",
+          "url": "https://github.com/obra/superpowers/issues/2083",
+          "score": 6,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2087-ydewit",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ydewit",
+          "date": "2026-08-04",
+          "text": "using-superpowers preamble: consider judgment-based framing for Claude 5-generation models The SessionStart-injected `using-superpowers` skill enforces its policy with coercive framing (the `EXTREMELY-IMPORTANT` block, the 12-row Red Flags table). That was a rational design for the model generations it was written against, which genuinely needed rule-shaped pressure to comply. Anthropic's context-engineering guidance for the Claude 5 generation ([blog post](https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models)) reports they removed over 80% of Claude Code",
+          "url": "https://github.com/obra/superpowers/issues/2087",
+          "score": 5,
+          "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2076-kaiser-data",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "kaiser-data",
+          "date": "2026-08-02",
+          "text": "Brainstorming trigger lacks a mechanical-task exclusion - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? `superpowers:brainstorming` can be invoked for execution-only work that has no software-design decision to make. Once invoked, the current workflow turns a small reversible operation into a brainstorm → design spec → spec review → writing-plans sequence. This happened in a real Codex session. The request was: > please take picture to a folder which are good for linkedin post take into linkedin-pictures folder and commmit and push The jo",
+          "url": "https://github.com/obra/superpowers/issues/2076",
+          "score": 4,
+          "sentiment": "negative"
         }
       ]
     },
@@ -368,6 +368,17 @@
           "sentiment": "negative"
         },
         {
+          "id": "github-https-github-com-github-awesome-copilot-issues-2504-phodal",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "phodal",
+          "date": "2026-07-31",
+          "text": "[External Plugin]: better-harness ### Plugin name better-harness ### Short description Build an AI-ready engineering system for safe coding-agent delivery and continuous software improvement. ### GitHub repository QoderAI/better-harness ### Plugin path inside the repository _No response_ ### Ref to review _No response_ ### Commit SHA to review cfa7c123acbe9bbbf23c8065123f41643bdecf18 ### Version 0.4.0 ### License identifier MIT ### Author name Qoder ### Author URL https://qoder.com/ ### Homepage URL https://qoderai.github.io/better-harness/ ### Keywords copilot-plugin better-harness coding-age",
+          "url": "https://github.com/github/awesome-copilot/issues/2504",
+          "score": 3,
+          "sentiment": "positive"
+        },
+        {
           "id": "github-https-github-com-github-awesome-copilot-issues-2058-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -377,17 +388,6 @@
           "url": "https://github.com/github/awesome-copilot/issues/2058",
           "score": 1,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-github-awesome-copilot-issues-2504-phodal",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "phodal",
-          "date": "2026-07-31",
-          "text": "[External Plugin]: better-harness ### Plugin name better-harness ### Short description Build an AI-ready engineering system for safe coding-agent delivery and continuous software improvement. ### GitHub repository QoderAI/better-harness ### Plugin path inside the repository _No response_ ### Ref to review _No response_ ### Commit SHA to review cfa7c123acbe9bbbf23c8065123f41643bdecf18 ### Version 0.4.0 ### License identifier MIT ### Author name Qoder ### Author URL https://qoder.com/ ### Homepage URL https://qoderai.github.io/better-harness/ ### Keywords copilot-plugin better-harness coding-age",
-          "url": "https://github.com/github/awesome-copilot/issues/2504",
-          "score": 1,
-          "sentiment": "positive"
         },
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-2503-phodal",
@@ -442,7 +442,7 @@
           "date": "2026-07-31",
           "text": "[External Plugin]: better-harness ### Plugin name better-harness ### Short description Build an AI-ready engineering system for safe coding-agent delivery and continuous software improvement. ### GitHub repository QoderAI/better-harness ### Plugin path inside the repository _No response_ ### Ref to review _No response_ ### Commit SHA to review cfa7c123acbe9bbbf23c8065123f41643bdecf18 ### Version 0.4.0 ### License identifier MIT ### Author name Qoder ### Author URL https://qoder.com/ ### Homepage URL https://qoderai.github.io/better-harness/ ### Keywords copilot-plugin better-harness coding-age",
           "url": "https://github.com/github/awesome-copilot/issues/2504",
-          "score": 1,
+          "score": 3,
           "sentiment": "positive"
         },
         {
