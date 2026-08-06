@@ -1,5 +1,64 @@
 {
-  "generatedAt": "2026-08-05T00:57:58Z",
+  "generatedAt": "2026-08-06T03:48:02Z",
   "isBaselineRun": false,
-  "changes": []
+  "changes": [
+    {
+      "type": "added",
+      "key": "awesome-copilot/azure-developer-cli",
+      "ecosystem": "awesome-copilot",
+      "slug": "azure-developer-cli",
+      "displayName": "Azure Developer Cli",
+      "summary": "生态新增 Skill：Azure Developer Cli",
+      "detectedAt": "2026-08-06T03:49:29Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/build-evidence-map",
+      "ecosystem": "awesome-copilot",
+      "slug": "build-evidence-map",
+      "displayName": "Build Evidence Map",
+      "summary": "生态新增 Skill：Build Evidence Map",
+      "detectedAt": "2026-08-06T03:49:29Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/gh-attach",
+      "ecosystem": "awesome-copilot",
+      "slug": "gh-attach",
+      "displayName": "Gh Attach",
+      "summary": "生态新增 Skill：Gh Attach",
+      "detectedAt": "2026-08-06T03:49:29Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/shopify-review-triage",
+      "ecosystem": "awesome-copilot",
+      "slug": "shopify-review-triage",
+      "displayName": "Shopify Review Triage",
+      "summary": "生态新增 Skill：Shopify Review Triage",
+      "detectedAt": "2026-08-06T03:49:29Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/verify-agent-action",
+      "ecosystem": "awesome-copilot",
+      "slug": "verify-agent-action",
+      "displayName": "Verify Agent Action",
+      "summary": "生态新增 Skill：Verify Agent Action",
+      "detectedAt": "2026-08-06T03:49:29Z"
+    },
+    {
+      "type": "updated",
+      "key": "awesome-copilot/codebase-memory-mcp",
+      "ecosystem": "awesome-copilot",
+      "slug": "codebase-memory-mcp",
+      "displayName": "Codebase Memory Mcp",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/codebase-memory-mcp",
+      "detectedAt": "2026-08-06T03:49:29Z"
+    }
+  ]
 }
