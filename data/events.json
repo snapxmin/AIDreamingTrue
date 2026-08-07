@@ -15,6 +15,21 @@
     "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.223"
   },
   {
+    "id": "auto-gh-kimi-k3-is-now-available-in-github-copil",
+    "title": "Kimi K3 is now available in GitHub Copilot",
+    "date": "2026-08-06",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "GitHub",
+    "heat": 70,
+    "growth": 6,
+    "sourceTier": "A",
+    "summary": "GitHub 官方 Changelog 更新：Kimi K3 is now available in GitHub Copilot",
+    "whyImportant": "GitHub Copilot 生态动态，影响企业开发者工作流。",
+    "impact": "关注 Agent 模式、CLI 和企业策略相关变更。",
+    "sourceUrl": "https://github.blog/changelog/2026-08-06-kimi-k3-is-now-available-in-github-copilot"
+  },
+  {
     "id": "auto-claude-v2-1-221",
     "title": "Claude Code v2.1.221 发布",
     "date": "2026-08-04",
