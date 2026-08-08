@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-07T03:28:22Z",
+    "lastUpdated": "2026-08-08T02:30:10Z",
     "skillCount": 20,
-    "totalComments": 45,
+    "totalComments": 55,
     "sources": [
       "hacker-news",
       "github",
@@ -15,31 +15,8 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 2,
-      "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-931-longevityboris",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "longevityboris",
-          "date": "2026-03-25",
-          "text": "Feature: Plan-aware session handoff commands (/create_handoff + /resume_plan) ## Problem Superpowers v5.0.5's `writing-plans` skill creates detailed plans saved to `docs/superpowers/plans/`, and the execution handoff offers subagent-driven or inline execution. But when context fills up mid-execution (or the user needs to start a new session for any reason), there's no structured way to hand off plan state to the next session. The current workaround — manually asking Claude to summarize state before ending — is unreliable and loses the structured plan reference. The `writing-plans` skill sugges",
-          "url": "https://github.com/obra/superpowers/issues/931",
-          "score": 6,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1192-vlattko",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "vlattko",
-          "date": "2026-04-16",
-          "text": "Proposal: `maintaining-roadmap` skill for cross-session priority orchestration - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I run Superpowers across multiple terminals and multiple tools (Claude Code, Codex, Antigravity) working on a stealth geospatial platform. On any given week I have 3–5 plans in flight at different stages: one mid- execution, one specced but unplanned, one plan waiting on a collaborator, one long-term idea I don't want to lose. The plans themselves are durable, `docs/superpowers/plans/` is exactly the right artifac",
-          "url": "https://github.com/obra/superpowers/issues/1192",
-          "score": 5,
-          "sentiment": "neutral"
-        }
-      ]
+      "feedbackCount": 0,
+      "comments": []
     },
     "superpowers/test-driven-development": {
       "slug": "test-driven-development",
@@ -48,17 +25,6 @@
       "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jfiscman",
-          "date": "2026-05-19",
-          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
-          "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 23,
-          "sentiment": "positive"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2092-glen-84",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -66,7 +32,18 @@
           "date": "2026-08-05",
           "text": "test-driven-development: a test whose arrange step silently fails passes every gate (mental mutation check, optional SDD red evidence) - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A test can be vacuous because its **arrange step silently never creates the condition it claims to exercise**. Real code, no mocks, a hand-written literal expectation, a correct `Unit_Scenario_Expectation` name — and it asserts nothing, because the input was never what the test says it is. Nothing in the current skills catches this, and in `subagent-driven-de",
           "url": "https://github.com/obra/superpowers/issues/2092",
-          "score": 0,
+          "score": 5,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "bbbbbbbbbbb114",
+          "date": "2026-05-31",
+          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
+          "url": "https://github.com/obra/superpowers/issues/1664",
+          "score": 2,
           "sentiment": "negative"
         }
       ]
@@ -75,29 +52,51 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 2,
+      "feedbackCount": 4,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-931-longevityboris",
+          "id": "github-https-github-com-obra-superpowers-issues-1442-cdub615",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "longevityboris",
-          "date": "2026-03-25",
-          "text": "Feature: Plan-aware session handoff commands (/create_handoff + /resume_plan) ## Problem Superpowers v5.0.5's `writing-plans` skill creates detailed plans saved to `docs/superpowers/plans/`, and the execution handoff offers subagent-driven or inline execution. But when context fills up mid-execution (or the user needs to start a new session for any reason), there's no structured way to hand off plan state to the next session. The current workaround — manually asking Claude to summarize state before ending — is unreliable and loses the structured plan reference. The `writing-plans` skill sugges",
-          "url": "https://github.com/obra/superpowers/issues/931",
+          "author": "cdub615",
+          "date": "2026-04-30",
+          "text": "Expose lifecycle events beyond SessionStart for external integration - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I’m trying to integrate Superpowers with [Beads](https://github.com/gastownhall/beads), a dependency-aware issue tracker designed for AI agents, so that the planning artifact lives in `bd` in addition to a markdown file and subagents pull work from `bd ready`. The motivation is currently beads are my canonical source of truth for tracking my work. I want that to remain true regardless of whether I use Superpowers for larger",
+          "url": "https://github.com/obra/superpowers/issues/1442",
           "score": 6,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1192-vlattko",
+          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "vlattko",
-          "date": "2026-04-16",
-          "text": "Proposal: `maintaining-roadmap` skill for cross-session priority orchestration - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I run Superpowers across multiple terminals and multiple tools (Claude Code, Codex, Antigravity) working on a stealth geospatial platform. On any given week I have 3–5 plans in flight at different stages: one mid- execution, one specced but unplanned, one plan waiting on a collaborator, one long-term idea I don't want to lose. The plans themselves are durable, `docs/superpowers/plans/` is exactly the right artifac",
-          "url": "https://github.com/obra/superpowers/issues/1192",
-          "score": 5,
-          "sentiment": "neutral"
+          "author": "bbbbbbbbbbb114",
+          "date": "2026-05-31",
+          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
+          "url": "https://github.com/obra/superpowers/issues/1664",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1098-xiaomayi-ant",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "xiaomayi-ant",
+          "date": "2026-04-09",
+          "text": "brainstorming: make assumptions and unknowns explicit before spec handoff - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While reading and analyzing `superpowers:brainstorming`, I noticed the flow is strong on clarification, alternatives, and design approval, but it does not explicitly surface current assumptions or unresolved unknowns before the design is written into the spec. In practice, this makes it easier for speculative decisions made during brainstorming to harden into the written design and later implementation plan. ## Propose",
+          "url": "https://github.com/obra/superpowers/issues/1098",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1238-syliang2020",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "syliang2020",
+          "date": "2026-04-21",
+          "text": "Feature request: feature-doc-pack planning mode for team workflows and legacy repos ## Summary I’d like to propose a new planning workflow for Superpowers: a **feature-doc-pack mode** that can generate a small set of coordinated markdown files instead of only a single monolithic implementation plan. This would be especially useful for: - multi-developer work - frontend/backend coordination - cross-module or cross-repo changes - legacy production codebases - parallel Codex / subagent workflows that need a shared source of truth before implementation --- ## Problem `writing-plans` is great for p",
+          "url": "https://github.com/obra/superpowers/issues/1238",
+          "score": 1,
+          "sentiment": "positive"
         }
       ]
     },
@@ -105,7 +104,7 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
@@ -117,6 +116,17 @@
           "url": "https://github.com/obra/superpowers/issues/1581",
           "score": 23,
           "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "bbbbbbbbbbb114",
+          "date": "2026-05-31",
+          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
+          "url": "https://github.com/obra/superpowers/issues/1664",
+          "score": 2,
+          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1859-pixeru",
@@ -135,7 +145,7 @@
       "slug": "verification-before-completion",
       "ecosystem": "superpowers",
       "displayName": "Verification Before Completion",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
@@ -147,6 +157,17 @@
           "url": "https://github.com/obra/superpowers/issues/1581",
           "score": 23,
           "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "bbbbbbbbbbb114",
+          "date": "2026-05-31",
+          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
+          "url": "https://github.com/obra/superpowers/issues/1664",
+          "score": 2,
+          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1859-pixeru",
@@ -165,7 +186,7 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 2,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-931-longevityboris",
@@ -175,7 +196,7 @@
           "date": "2026-03-25",
           "text": "Feature: Plan-aware session handoff commands (/create_handoff + /resume_plan) ## Problem Superpowers v5.0.5's `writing-plans` skill creates detailed plans saved to `docs/superpowers/plans/`, and the execution handoff offers subagent-driven or inline execution. But when context fills up mid-execution (or the user needs to start a new session for any reason), there's no structured way to hand off plan state to the next session. The current workaround — manually asking Claude to summarize state before ending — is unreliable and loses the structured plan reference. The `writing-plans` skill sugges",
           "url": "https://github.com/obra/superpowers/issues/931",
-          "score": 6,
+          "score": 12,
           "sentiment": "negative"
         },
         {
@@ -186,8 +207,41 @@
           "date": "2026-04-16",
           "text": "Proposal: `maintaining-roadmap` skill for cross-session priority orchestration - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I run Superpowers across multiple terminals and multiple tools (Claude Code, Codex, Antigravity) working on a stealth geospatial platform. On any given week I have 3–5 plans in flight at different stages: one mid- execution, one specced but unplanned, one plan waiting on a collaborator, one long-term idea I don't want to lose. The plans themselves are durable, `docs/superpowers/plans/` is exactly the right artifac",
           "url": "https://github.com/obra/superpowers/issues/1192",
-          "score": 5,
+          "score": 10,
           "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1442-cdub615",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "cdub615",
+          "date": "2026-04-30",
+          "text": "Expose lifecycle events beyond SessionStart for external integration - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I’m trying to integrate Superpowers with [Beads](https://github.com/gastownhall/beads), a dependency-aware issue tracker designed for AI agents, so that the planning artifact lives in `bd` in addition to a markdown file and subagents pull work from `bd ready`. The motivation is currently beads are my canonical source of truth for tracking my work. I want that to remain true regardless of whether I use Superpowers for larger",
+          "url": "https://github.com/obra/superpowers/issues/1442",
+          "score": 6,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2092-glen-84",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "glen-84",
+          "date": "2026-08-05",
+          "text": "test-driven-development: a test whose arrange step silently fails passes every gate (mental mutation check, optional SDD red evidence) - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A test can be vacuous because its **arrange step silently never creates the condition it claims to exercise**. Real code, no mocks, a hand-written literal expectation, a correct `Unit_Scenario_Expectation` name — and it asserts nothing, because the input was never what the test says it is. Nothing in the current skills catches this, and in `subagent-driven-de",
+          "url": "https://github.com/obra/superpowers/issues/2092",
+          "score": 5,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1835-aiadan",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Aiadan",
+          "date": "2026-06-23",
+          "text": "Claude subagent-driven-development biases agents toward inline Agent dispatch over Workflow fan-outs --- - [x] I searched existing issues and this is not a duplicate ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.0.3 | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | 2.1.186 | | Your model + version | Claude Opus 4.8 (`claude-opus-4-8[1m]`) | | All plugins installed | superpowers, mempalace, webwright, claude-code-setup, claude-md-management, code-simplifier, feature-dev, frontend-design, playwright, session-report, skill-creato",
+          "url": "https://github.com/obra/superpowers/issues/1835",
+          "score": 4,
+          "sentiment": "negative"
         }
       ]
     },
@@ -195,7 +249,7 @@
       "slug": "requesting-code-review",
       "ecosystem": "superpowers",
       "displayName": "Requesting Code Review",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
@@ -209,25 +263,14 @@
           "sentiment": "positive"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2052-mavericksea-ai",
+          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "mavericksea-ai",
-          "date": "2026-07-29",
-          "text": "Measured requesting-code-review and writing-plans across the sonnet-5 release — receipts inside - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? Skills are tested once (if ever), and model releases silently change behavior underneath them. When sonnet-5 shipped, there was no way to know which superpowers skills still did what their SKILL.md claims on the new model. I built a small OSS tool (Driftproof) that re-tests skills across model releases: same suite run with and without the skill, judge sampled 5x so every score carries a confidence",
-          "url": "https://github.com/obra/superpowers/issues/2052",
+          "author": "bbbbbbbbbbb114",
+          "date": "2026-05-31",
+          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
+          "url": "https://github.com/obra/superpowers/issues/1664",
           "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2066-rehanazher",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "rehanazher",
-          "date": "2026-08-01",
-          "text": "Make Spec Self-Review check the design against the repo, not only against itself **Disclaimer:** The below is drafted by an AI , but i have practiced this regularly in recent times and always found this useful it always find some thing that can improve the design - [x] I searched existing issues and this has not been proposed before <!-- IMPORTANT — read before filing. This one has heavy prior art and is only worth filing if the delta below survives your own reading of these: - Spec Self-Review ALREADY EXISTS (brainstorming checklist item 7 + the spec-document-reviewer-prompt.md subagent templ",
-          "url": "https://github.com/obra/superpowers/issues/2066",
-          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -236,29 +279,40 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-645-jottr",
+          "id": "github-https-github-com-obra-superpowers-issues-602-ovid",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "jottr",
-          "date": "2026-03-06",
-          "text": "Feature request: opt-in mode that disables auto-triggering # Feature request: opt-in mode that disables auto-triggering ## Problem Installing Superpowers changes Claude Code's default behavior globally. The SessionStart hook injects the `using-superpowers` meta-skill into every session, mandating skill checks before any response. There's no way to keep skills available via slash commands while leaving Claude's default behavior intact. Users who want to evaluate Superpowers incrementally — or only use it for specific workflows — must manually edit `session-start` after each install/update. ## P",
-          "url": "https://github.com/obra/superpowers/issues/645",
+          "author": "Ovid",
+          "date": "2026-03-03",
+          "text": "The plan never aligns 100% with the design (suggested fix) **Is your feature request related to a problem? Please describe.** For *every* AI coding system I use, when I use Spec-Driven Development (SDD), I have some custom tools I use to correct some problems. One of them is \"alignment.\" When using Superpowers, there's a design and then a plan: 1. `docs/plans/2026-03-02-uat-outstanding-fixes-design.md` (the spec) 2. `docs/plans/2026-03-02-uat-outstanding-fixes-plan.md` (the plan to implement the spec) Claude then asks me if I'm ready to move to implementation. This is when I run alignment prom",
+          "url": "https://github.com/obra/superpowers/issues/602",
+          "score": 5,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "bbbbbbbbbbb114",
+          "date": "2026-05-31",
+          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
+          "url": "https://github.com/obra/superpowers/issues/1664",
           "score": 2,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2081-midirectiekade14-debug",
+          "id": "github-https-github-com-obra-superpowers-issues-2105-jgodboutpcs",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "midirectiekade14-debug",
-          "date": "2026-08-04",
-          "text": "hooks/session-start: six subprocess spawns cost ~2s on Windows (7.7x slower; byte-identical output without them) `hooks/session-start` spawns six subprocesses to do work that needs none. On Linux/macOS that is cheap enough to be invisible. On Windows, where `fork()` is emulated, it dominates: the hook takes **~2.25s** instead of **~0.29s**, and the whole difference is process-spawn overhead. Removing the spawns produces **byte-identical output** (same SHA-256, same length, same exit code). ## Environment | | | |---|---| | OS | Windows 11 Pro 26200 | | Shell | Git for Windows bash 5.2 (`C:\\Prog",
-          "url": "https://github.com/obra/superpowers/issues/2081",
-          "score": 0,
-          "sentiment": "neutral"
+          "author": "jgodboutPCS",
+          "date": "2026-08-07",
+          "text": "SessionStart hook fails on Windows: ${CLAUDE_PLUGIN_ROOT} not substituted, interactive sessions silently lose the using-superpowers injection ## Summary On Windows, the `SessionStart` hook fails because `${CLAUDE_PLUGIN_ROOT}` is not substituted in the hook command. Every session start prints an error, and — the part that matters — **interactive sessions silently lose the `using-superpowers` context injection entirely.** Print mode (`claude -p`) is unaffected, which is probably why this has gone unnoticed. I suspect this is a **Claude Code** variable-substitution bug rather than a plugin defec",
+          "url": "https://github.com/obra/superpowers/issues/2105",
+          "score": 1,
+          "sentiment": "negative"
         }
       ]
     },
@@ -268,17 +322,6 @@
       "displayName": "AI Ready",
       "feedbackCount": 5,
       "comments": [
-        {
-          "id": "github-https-github-com-github-awesome-copilot-issues-1750-johnpapa",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "johnpapa",
-          "date": "2026-05-18",
-          "text": "[External Plugin]: ai-ready <!-- external-plugin-submission --> ### Plugin name ai-ready ### Short description Analyze any repository and generate AI-ready configuration — AGENTS.md, copilot-instructions.md, CI workflows, issue templates, and more. Mines your PR review patterns and creates files customized to your stack. ### GitHub repository johnpapa/ai-ready ### Plugin path inside the repository .github/plugin ### Immutable ref to review b993d6512c918d8a21a61b7931726f5980c3c920 ### Version 1.0.0 ### License identifier MIT ### Author name John Papa ### Author URL https://github.com/johnpapa #",
-          "url": "https://github.com/github/awesome-copilot/issues/1750",
-          "score": 5,
-          "sentiment": "neutral"
-        },
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-1774-sophio-japharidze-sonarsource",
           "source": "github",
@@ -322,6 +365,17 @@
           "url": "https://github.com/github/awesome-copilot/issues/2503",
           "score": 1,
           "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-2578-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-08-07",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 723 resources - **Aging (14–30 days):** 34 resources - **Fresh (<14 days):** 67 resources (not listed below) Note: This inventory covers `agents/` (224), `instructions/` (191), `hooks/` (8 folders), and `skills/` (401 folders). No `prompts/*.prompt.md` files currently exist in the repository. Hook and skill folders are treated as single resources using the most recent substantive change across any file in the folder. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Click to expand (723 resources)</summar",
+          "url": "https://github.com/github/awesome-copilot/issues/2578",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -329,7 +383,7 @@
       "slug": "security-review",
       "ecosystem": "awesome-copilot",
       "displayName": "Security Review",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-2415-github-actions-bot-",
@@ -341,6 +395,17 @@
           "url": "https://github.com/github/awesome-copilot/issues/2415",
           "score": 1,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-2578-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-08-07",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 723 resources - **Aging (14–30 days):** 34 resources - **Fresh (<14 days):** 67 resources (not listed below) Note: This inventory covers `agents/` (224), `instructions/` (191), `hooks/` (8 folders), and `skills/` (401 folders). No `prompts/*.prompt.md` files currently exist in the repository. Hook and skill folders are treated as single resources using the most recent substantive change across any file in the folder. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Click to expand (723 resources)</summar",
+          "url": "https://github.com/github/awesome-copilot/issues/2578",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -348,14 +413,26 @@
       "slug": "eval-driven-dev",
       "ecosystem": "awesome-copilot",
       "displayName": "Eval-Driven Development",
-      "feedbackCount": 0,
-      "comments": []
+      "feedbackCount": 1,
+      "comments": [
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-2578-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-08-07",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 723 resources - **Aging (14–30 days):** 34 resources - **Fresh (<14 days):** 67 resources (not listed below) Note: This inventory covers `agents/` (224), `instructions/` (191), `hooks/` (8 folders), and `skills/` (401 folders). No `prompts/*.prompt.md` files currently exist in the repository. Hook and skill folders are treated as single resources using the most recent substantive change across any file in the folder. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Click to expand (723 resources)</summar",
+          "url": "https://github.com/github/awesome-copilot/issues/2578",
+          "score": 0,
+          "sentiment": "negative"
+        }
+      ]
     },
     "awesome-copilot/harness-engineering": {
       "slug": "harness-engineering",
       "ecosystem": "awesome-copilot",
       "displayName": "Harness Engineering",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-2504-phodal",
@@ -378,6 +455,17 @@
           "url": "https://github.com/github/awesome-copilot/issues/2503",
           "score": 1,
           "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-2578-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-08-07",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 723 resources - **Aging (14–30 days):** 34 resources - **Fresh (<14 days):** 67 resources (not listed below) Note: This inventory covers `agents/` (224), `instructions/` (191), `hooks/` (8 folders), and `skills/` (401 folders). No `prompts/*.prompt.md` files currently exist in the repository. Hook and skill folders are treated as single resources using the most recent substantive change across any file in the folder. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Click to expand (723 resources)</summar",
+          "url": "https://github.com/github/awesome-copilot/issues/2578",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -385,7 +473,7 @@
       "slug": "acquire-codebase-knowledge",
       "ecosystem": "awesome-copilot",
       "displayName": "Acquire Codebase Knowledge",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-2058-github-actions-bot-",
@@ -396,6 +484,17 @@
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 705 resources - **Aging (14–30 days):** 26 resources - **Fresh (<14 days):** 46 resources (not listed below) --- ### 🔴 Stale Resources (>30 days since last major change) > 705 resources — collapsed for readability <details> <summary>Click to expand — 705 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instructions/nextjs-tailwind.instructions.md` | Instruction | 2025-07-02 | 352 | | `instructions/localization.instructions.md` | Instruction | 2025-07",
           "url": "https://github.com/github/awesome-copilot/issues/2058",
           "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-2578-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-08-07",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 723 resources - **Aging (14–30 days):** 34 resources - **Fresh (<14 days):** 67 resources (not listed below) Note: This inventory covers `agents/` (224), `instructions/` (191), `hooks/` (8 folders), and `skills/` (401 folders). No `prompts/*.prompt.md` files currently exist in the repository. Hook and skill folders are treated as single resources using the most recent substantive change across any file in the folder. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Click to expand (723 resources)</summar",
+          "url": "https://github.com/github/awesome-copilot/issues/2578",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -660,8 +759,20 @@
       "slug": "context-map",
       "ecosystem": "awesome-copilot",
       "displayName": "Context Map",
-      "feedbackCount": 0,
-      "comments": []
+      "feedbackCount": 1,
+      "comments": [
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-2578-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-08-07",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 723 resources - **Aging (14–30 days):** 34 resources - **Fresh (<14 days):** 67 resources (not listed below) Note: This inventory covers `agents/` (224), `instructions/` (191), `hooks/` (8 folders), and `skills/` (401 folders). No `prompts/*.prompt.md` files currently exist in the repository. Hook and skill folders are treated as single resources using the most recent substantive change across any file in the folder. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Click to expand (723 resources)</summar",
+          "url": "https://github.com/github/awesome-copilot/issues/2578",
+          "score": 0,
+          "sentiment": "negative"
+        }
+      ]
     }
   }
 }

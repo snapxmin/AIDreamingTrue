@@ -1,275 +1,28 @@
 {
-  "generatedAt": "2026-08-07T03:25:39Z",
+  "generatedAt": "2026-08-08T02:27:10Z",
   "isBaselineRun": false,
   "changes": [
     {
       "type": "added",
-      "key": "awesome-copilot/mcp-release-qa",
+      "key": "awesome-copilot/daily-focus-board",
       "ecosystem": "awesome-copilot",
-      "slug": "mcp-release-qa",
-      "displayName": "Mcp Release Qa",
-      "summary": "生态新增 Skill：Mcp Release Qa",
-      "detectedAt": "2026-08-07T03:26:51Z"
+      "slug": "daily-focus-board",
+      "displayName": "Daily Focus Board",
+      "summary": "生态新增 Skill：Daily Focus Board",
+      "detectedAt": "2026-08-08T02:28:37Z"
     },
     {
       "type": "updated",
-      "key": "awesome-copilot/arduino-azure-iot-edge-integration",
-      "ecosystem": "awesome-copilot",
-      "slug": "arduino-azure-iot-edge-integration",
-      "displayName": "Arduino Azure Iot Edge Integration",
+      "key": "anthropics-skills/claude-api",
+      "ecosystem": "anthropics-skills",
+      "slug": "claude-api",
+      "displayName": "Claude Api",
       "changedFields": [
         "content"
       ],
       "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/arduino-azure-iot-edge-integration",
-      "detectedAt": "2026-08-07T03:26:51Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/aws-cost-optimize",
-      "ecosystem": "awesome-copilot",
-      "slug": "aws-cost-optimize",
-      "displayName": "Aws Cost Optimize",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/aws-cost-optimize",
-      "detectedAt": "2026-08-07T03:26:51Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/azure-architecture-autopilot",
-      "ecosystem": "awesome-copilot",
-      "slug": "azure-architecture-autopilot",
-      "displayName": "Azure Architecture Autopilot",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/azure-architecture-autopilot",
-      "detectedAt": "2026-08-07T03:26:51Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/azure-smart-city-iot-solution-builder",
-      "ecosystem": "awesome-copilot",
-      "slug": "azure-smart-city-iot-solution-builder",
-      "displayName": "Azure Smart City Iot Solution Builder",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/azure-smart-city-iot-solution-builder",
-      "detectedAt": "2026-08-07T03:26:51Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/breakdown-feature-implementation",
-      "ecosystem": "awesome-copilot",
-      "slug": "breakdown-feature-implementation",
-      "displayName": "Breakdown Feature Implementation",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/breakdown-feature-implementation",
-      "detectedAt": "2026-08-07T03:26:51Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/create-specification",
-      "ecosystem": "awesome-copilot",
-      "slug": "create-specification",
-      "displayName": "Create Specification",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/create-specification",
-      "detectedAt": "2026-08-07T03:26:51Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/geofeed-tuner",
-      "ecosystem": "awesome-copilot",
-      "slug": "geofeed-tuner",
-      "displayName": "Geofeed Tuner",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/geofeed-tuner",
-      "detectedAt": "2026-08-07T03:26:51Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/github-release",
-      "ecosystem": "awesome-copilot",
-      "slug": "github-release",
-      "displayName": "Github Release",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/github-release",
-      "detectedAt": "2026-08-07T03:26:51Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/java-mcp-server-generator",
-      "ecosystem": "awesome-copilot",
-      "slug": "java-mcp-server-generator",
-      "displayName": "Java Mcp Server Generator",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/java-mcp-server-generator",
-      "detectedAt": "2026-08-07T03:26:51Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/mini-context-graph",
-      "ecosystem": "awesome-copilot",
-      "slug": "mini-context-graph",
-      "displayName": "Mini Context Graph",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/mini-context-graph",
-      "detectedAt": "2026-08-07T03:26:51Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/napkin",
-      "ecosystem": "awesome-copilot",
-      "slug": "napkin",
-      "displayName": "Napkin",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/napkin",
-      "detectedAt": "2026-08-07T03:26:51Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/phoenix-evals",
-      "ecosystem": "awesome-copilot",
-      "slug": "phoenix-evals",
-      "displayName": "Phoenix Evals",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/phoenix-evals",
-      "detectedAt": "2026-08-07T03:26:51Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/phoenix-tracing",
-      "ecosystem": "awesome-copilot",
-      "slug": "phoenix-tracing",
-      "displayName": "Phoenix Tracing",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/phoenix-tracing",
-      "detectedAt": "2026-08-07T03:26:51Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/python-azure-iot-edge-modules",
-      "ecosystem": "awesome-copilot",
-      "slug": "python-azure-iot-edge-modules",
-      "displayName": "Python Azure Iot Edge Modules",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/python-azure-iot-edge-modules",
-      "detectedAt": "2026-08-07T03:26:51Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/react19-test-patterns",
-      "ecosystem": "awesome-copilot",
-      "slug": "react19-test-patterns",
-      "displayName": "React19 Test Patterns",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/react19-test-patterns",
-      "detectedAt": "2026-08-07T03:26:51Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/ruby-mcp-server-generator",
-      "ecosystem": "awesome-copilot",
-      "slug": "ruby-mcp-server-generator",
-      "displayName": "Ruby Mcp Server Generator",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/ruby-mcp-server-generator",
-      "detectedAt": "2026-08-07T03:26:51Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/sql-code-review",
-      "ecosystem": "awesome-copilot",
-      "slug": "sql-code-review",
-      "displayName": "Sql Code Review",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/sql-code-review",
-      "detectedAt": "2026-08-07T03:26:51Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/update-markdown-file-index",
-      "ecosystem": "awesome-copilot",
-      "slug": "update-markdown-file-index",
-      "displayName": "Update Markdown File Index",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/update-markdown-file-index",
-      "detectedAt": "2026-08-07T03:26:51Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/update-specification",
-      "ecosystem": "awesome-copilot",
-      "slug": "update-specification",
-      "displayName": "Update Specification",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/update-specification",
-      "detectedAt": "2026-08-07T03:26:51Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/web-design-reviewer",
-      "ecosystem": "awesome-copilot",
-      "slug": "web-design-reviewer",
-      "displayName": "Web Design Reviewer",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/web-design-reviewer",
-      "detectedAt": "2026-08-07T03:26:51Z"
+      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/claude-api",
+      "detectedAt": "2026-08-08T02:28:37Z"
     }
   ]
 }
