@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-08T02:30:10Z",
+    "lastUpdated": "2026-08-09T02:36:29Z",
     "skillCount": 20,
-    "totalComments": 55,
+    "totalComments": 54,
     "sources": [
       "hacker-news",
       "github",
@@ -15,8 +15,31 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 0,
-      "comments": []
+      "feedbackCount": 2,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1442-cdub615",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "cdub615",
+          "date": "2026-04-30",
+          "text": "Expose lifecycle events beyond SessionStart for external integration - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I’m trying to integrate Superpowers with [Beads](https://github.com/gastownhall/beads), a dependency-aware issue tracker designed for AI agents, so that the planning artifact lives in `bd` in addition to a markdown file and subagents pull work from `bd ready`. The motivation is currently beads are my canonical source of truth for tracking my work. I want that to remain true regardless of whether I use Superpowers for larger",
+          "url": "https://github.com/obra/superpowers/issues/1442",
+          "score": 7,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1098-xiaomayi-ant",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "xiaomayi-ant",
+          "date": "2026-04-09",
+          "text": "brainstorming: make assumptions and unknowns explicit before spec handoff - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While reading and analyzing `superpowers:brainstorming`, I noticed the flow is strong on clarification, alternatives, and design approval, but it does not explicitly surface current assumptions or unresolved unknowns before the design is written into the spec. In practice, this makes it easier for speculative decisions made during brainstorming to harden into the written design and later implementation plan. ## Propose",
+          "url": "https://github.com/obra/superpowers/issues/1098",
+          "score": 2,
+          "sentiment": "negative"
+        }
+      ]
     },
     "superpowers/test-driven-development": {
       "slug": "test-driven-development",
@@ -52,7 +75,7 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1442-cdub615",
@@ -62,29 +85,7 @@
           "date": "2026-04-30",
           "text": "Expose lifecycle events beyond SessionStart for external integration - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I’m trying to integrate Superpowers with [Beads](https://github.com/gastownhall/beads), a dependency-aware issue tracker designed for AI agents, so that the planning artifact lives in `bd` in addition to a markdown file and subagents pull work from `bd ready`. The motivation is currently beads are my canonical source of truth for tracking my work. I want that to remain true regardless of whether I use Superpowers for larger",
           "url": "https://github.com/obra/superpowers/issues/1442",
-          "score": 6,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "bbbbbbbbbbb114",
-          "date": "2026-05-31",
-          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
-          "url": "https://github.com/obra/superpowers/issues/1664",
-          "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1098-xiaomayi-ant",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "xiaomayi-ant",
-          "date": "2026-04-09",
-          "text": "brainstorming: make assumptions and unknowns explicit before spec handoff - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While reading and analyzing `superpowers:brainstorming`, I noticed the flow is strong on clarification, alternatives, and design approval, but it does not explicitly surface current assumptions or unresolved unknowns before the design is written into the spec. In practice, this makes it easier for speculative decisions made during brainstorming to harden into the written design and later implementation plan. ## Propose",
-          "url": "https://github.com/obra/superpowers/issues/1098",
-          "score": 1,
+          "score": 7,
           "sentiment": "negative"
         },
         {
@@ -95,8 +96,19 @@
           "date": "2026-04-21",
           "text": "Feature request: feature-doc-pack planning mode for team workflows and legacy repos ## Summary I’d like to propose a new planning workflow for Superpowers: a **feature-doc-pack mode** that can generate a small set of coordinated markdown files instead of only a single monolithic implementation plan. This would be especially useful for: - multi-developer work - frontend/backend coordination - cross-module or cross-repo changes - legacy production codebases - parallel Codex / subagent workflows that need a shared source of truth before implementation --- ## Problem `writing-plans` is great for p",
           "url": "https://github.com/obra/superpowers/issues/1238",
-          "score": 1,
+          "score": 3,
           "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1098-xiaomayi-ant",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "xiaomayi-ant",
+          "date": "2026-04-09",
+          "text": "brainstorming: make assumptions and unknowns explicit before spec handoff - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While reading and analyzing `superpowers:brainstorming`, I noticed the flow is strong on clarification, alternatives, and design approval, but it does not explicitly surface current assumptions or unresolved unknowns before the design is written into the spec. In practice, this makes it easier for speculative decisions made during brainstorming to harden into the written design and later implementation plan. ## Propose",
+          "url": "https://github.com/obra/superpowers/issues/1098",
+          "score": 2,
+          "sentiment": "negative"
         }
       ]
     },
@@ -186,30 +198,8 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 5,
+      "feedbackCount": 3,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-931-longevityboris",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "longevityboris",
-          "date": "2026-03-25",
-          "text": "Feature: Plan-aware session handoff commands (/create_handoff + /resume_plan) ## Problem Superpowers v5.0.5's `writing-plans` skill creates detailed plans saved to `docs/superpowers/plans/`, and the execution handoff offers subagent-driven or inline execution. But when context fills up mid-execution (or the user needs to start a new session for any reason), there's no structured way to hand off plan state to the next session. The current workaround — manually asking Claude to summarize state before ending — is unreliable and loses the structured plan reference. The `writing-plans` skill sugges",
-          "url": "https://github.com/obra/superpowers/issues/931",
-          "score": 12,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1192-vlattko",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "vlattko",
-          "date": "2026-04-16",
-          "text": "Proposal: `maintaining-roadmap` skill for cross-session priority orchestration - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I run Superpowers across multiple terminals and multiple tools (Claude Code, Codex, Antigravity) working on a stealth geospatial platform. On any given week I have 3–5 plans in flight at different stages: one mid- execution, one specced but unplanned, one plan waiting on a collaborator, one long-term idea I don't want to lose. The plans themselves are durable, `docs/superpowers/plans/` is exactly the right artifac",
-          "url": "https://github.com/obra/superpowers/issues/1192",
-          "score": 10,
-          "sentiment": "neutral"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1442-cdub615",
           "source": "github",
@@ -218,29 +208,29 @@
           "date": "2026-04-30",
           "text": "Expose lifecycle events beyond SessionStart for external integration - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I’m trying to integrate Superpowers with [Beads](https://github.com/gastownhall/beads), a dependency-aware issue tracker designed for AI agents, so that the planning artifact lives in `bd` in addition to a markdown file and subagents pull work from `bd ready`. The motivation is currently beads are my canonical source of truth for tracking my work. I want that to remain true regardless of whether I use Superpowers for larger",
           "url": "https://github.com/obra/superpowers/issues/1442",
-          "score": 6,
+          "score": 7,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2092-glen-84",
+          "id": "github-https-github-com-obra-superpowers-issues-2111-jfwaskin",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "glen-84",
-          "date": "2026-08-05",
-          "text": "test-driven-development: a test whose arrange step silently fails passes every gate (mental mutation check, optional SDD red evidence) - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A test can be vacuous because its **arrange step silently never creates the condition it claims to exercise**. Real code, no mocks, a hand-written literal expectation, a correct `Unit_Scenario_Expectation` name — and it asserts nothing, because the input was never what the test says it is. Nothing in the current skills catches this, and in `subagent-driven-de",
-          "url": "https://github.com/obra/superpowers/issues/2092",
-          "score": 5,
+          "author": "JFWaskin",
+          "date": "2026-08-08",
+          "text": "Proposal: opt-in safety-check preflight — interest check before any PR ## Context I maintain a public fork of superpowers at [`JFWaskin/superpowers-safe`](https://github.com/JFWaskin/superpowers-safe) that adds an opt-in `safety-check` preflight before any other superpowers skill. The preflight runs five hard gates (resource budget, command risk scan, loop/spend limits, secret/PII scan, scope confirmation) and refuses to proceed if any gate fails. It is specifically motivated by the failure mode where `subagent-driven-development` / `dispatching-parallel-agents` can run for hours, dispatch man",
+          "url": "https://github.com/obra/superpowers/issues/2111",
+          "score": 7,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1835-aiadan",
+          "id": "github-https-github-com-obra-superpowers-issues-2112-qiuyan81",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "Aiadan",
-          "date": "2026-06-23",
-          "text": "Claude subagent-driven-development biases agents toward inline Agent dispatch over Workflow fan-outs --- - [x] I searched existing issues and this is not a duplicate ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.0.3 | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | 2.1.186 | | Your model + version | Claude Opus 4.8 (`claude-opus-4-8[1m]`) | | All plugins installed | superpowers, mempalace, webwright, claude-code-setup, claude-md-management, code-simplifier, feature-dev, frontend-design, playwright, session-report, skill-creato",
-          "url": "https://github.com/obra/superpowers/issues/1835",
-          "score": 4,
+          "author": "qiuyan81",
+          "date": "2026-08-08",
+          "text": "subagent-driven development can enter an unbounded review/test ratchet and never complete - [x] I searched existing issues and found related reports (#1120 and #1152), but this report covers a different failure mode: **loss of convergence**, not only review overhead or token usage. ## Environment | Field | Value | | --- | --- | | Superpowers version | 6.2.0 | | Harness | Codex Desktop | | Model | GPT-5.6 sol | | OS / shell | Windows / PowerShell | | Workflow | subagent-driven development, TDD, independent implementation review and re-review | ## What happened? I used Superpowers to execute a f",
+          "url": "https://github.com/obra/superpowers/issues/2112",
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -289,18 +279,18 @@
           "date": "2026-03-03",
           "text": "The plan never aligns 100% with the design (suggested fix) **Is your feature request related to a problem? Please describe.** For *every* AI coding system I use, when I use Spec-Driven Development (SDD), I have some custom tools I use to correct some problems. One of them is \"alignment.\" When using Superpowers, there's a design and then a plan: 1. `docs/plans/2026-03-02-uat-outstanding-fixes-design.md` (the spec) 2. `docs/plans/2026-03-02-uat-outstanding-fixes-plan.md` (the plan to implement the spec) Claude then asks me if I'm ready to move to implementation. This is when I run alignment prom",
           "url": "https://github.com/obra/superpowers/issues/602",
-          "score": 5,
+          "score": 7,
           "sentiment": "neutral"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
+          "id": "github-https-github-com-obra-superpowers-issues-2111-jfwaskin",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "bbbbbbbbbbb114",
-          "date": "2026-05-31",
-          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
-          "url": "https://github.com/obra/superpowers/issues/1664",
-          "score": 2,
+          "author": "JFWaskin",
+          "date": "2026-08-08",
+          "text": "Proposal: opt-in safety-check preflight — interest check before any PR ## Context I maintain a public fork of superpowers at [`JFWaskin/superpowers-safe`](https://github.com/JFWaskin/superpowers-safe) that adds an opt-in `safety-check` preflight before any other superpowers skill. The preflight runs five hard gates (resource budget, command risk scan, loop/spend limits, secret/PII scan, scope confirmation) and refuses to proceed if any gate fails. It is specifically motivated by the failure mode where `subagent-driven-development` / `dispatching-parallel-agents` can run for hours, dispatch man",
+          "url": "https://github.com/obra/superpowers/issues/2111",
+          "score": 7,
           "sentiment": "negative"
         },
         {
@@ -311,7 +301,7 @@
           "date": "2026-08-07",
           "text": "SessionStart hook fails on Windows: ${CLAUDE_PLUGIN_ROOT} not substituted, interactive sessions silently lose the using-superpowers injection ## Summary On Windows, the `SessionStart` hook fails because `${CLAUDE_PLUGIN_ROOT}` is not substituted in the hook command. Every session start prints an error, and — the part that matters — **interactive sessions silently lose the `using-superpowers` context injection entirely.** Print mode (`claude -p`) is unaffected, which is probably why this has gone unnoticed. I suspect this is a **Claude Code** variable-substitution bug rather than a plugin defec",
           "url": "https://github.com/obra/superpowers/issues/2105",
-          "score": 1,
+          "score": 2,
           "sentiment": "negative"
         }
       ]
