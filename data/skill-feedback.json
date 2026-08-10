@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-09T02:36:29Z",
+    "lastUpdated": "2026-08-10T01:33:57Z",
     "skillCount": 20,
-    "totalComments": 54,
+    "totalComments": 55,
     "sources": [
       "hacker-news",
       "github",
@@ -198,7 +198,7 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1442-cdub615",
@@ -221,6 +221,17 @@
           "url": "https://github.com/obra/superpowers/issues/2111",
           "score": 7,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2096-ryosukenishi",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "RyosukeNishi",
+          "date": "2026-08-06",
+          "text": "subagent-driven-development: \"most capable available model\" for the final review gets under-resolved when the session model is above Opus ## Summary In `subagent-driven-development`'s Model Selection section, the rule for the final whole-branch review — \"dispatch it on the most capable available model, not the session default\" — got under-resolved in practice: running on a session model *above* Opus (Claude Fable 5, a tier above Opus in the dispatchable model list), the agent picked **Opus** for the final review instead of the strictly most capable available model, and only surfaced this when ",
+          "url": "https://github.com/obra/superpowers/issues/2096",
+          "score": 1,
+          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2112-qiuyan81",
