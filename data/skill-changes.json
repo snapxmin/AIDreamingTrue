@@ -1,33 +1,19 @@
 {
-  "generatedAt": "2026-08-10T01:30:57Z",
+  "generatedAt": "2026-08-10T02:40:02Z",
   "isBaselineRun": false,
   "changes": [
     {
-      "type": "added",
-      "key": "awesome-copilot/landing-page-conversion-audit",
+      "type": "updated",
+      "key": "awesome-copilot/github-issues",
       "ecosystem": "awesome-copilot",
-      "slug": "landing-page-conversion-audit",
-      "displayName": "Landing Page Conversion Audit",
-      "summary": "生态新增 Skill：Landing Page Conversion Audit",
-      "detectedAt": "2026-08-10T01:32:24Z"
-    },
-    {
-      "type": "added",
-      "key": "awesome-copilot/server-side-conversion-tracking",
-      "ecosystem": "awesome-copilot",
-      "slug": "server-side-conversion-tracking",
-      "displayName": "Server Side Conversion Tracking",
-      "summary": "生态新增 Skill：Server Side Conversion Tracking",
-      "detectedAt": "2026-08-10T01:32:24Z"
-    },
-    {
-      "type": "added",
-      "key": "awesome-copilot/system-commandline-cli",
-      "ecosystem": "awesome-copilot",
-      "slug": "system-commandline-cli",
-      "displayName": "System Commandline Cli",
-      "summary": "生态新增 Skill：System Commandline Cli",
-      "detectedAt": "2026-08-10T01:32:24Z"
+      "slug": "github-issues",
+      "displayName": "Github Issues",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/github-issues",
+      "detectedAt": "2026-08-10T02:41:13Z"
     }
   ]
 }
