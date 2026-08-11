@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-10T02:42:45Z",
+    "lastUpdated": "2026-08-11T02:36:45Z",
     "skillCount": 20,
-    "totalComments": 55,
+    "totalComments": 54,
     "sources": [
       "hacker-news",
       "github",
@@ -15,19 +15,8 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 2,
+      "feedbackCount": 1,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1442-cdub615",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "cdub615",
-          "date": "2026-04-30",
-          "text": "Expose lifecycle events beyond SessionStart for external integration - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I’m trying to integrate Superpowers with [Beads](https://github.com/gastownhall/beads), a dependency-aware issue tracker designed for AI agents, so that the planning artifact lives in `bd` in addition to a markdown file and subagents pull work from `bd ready`. The motivation is currently beads are my canonical source of truth for tracking my work. I want that to remain true regardless of whether I use Superpowers for larger",
-          "url": "https://github.com/obra/superpowers/issues/1442",
-          "score": 7,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1098-xiaomayi-ant",
           "source": "github",
@@ -45,19 +34,8 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 2,
+      "feedbackCount": 1,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2092-glen-84",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "glen-84",
-          "date": "2026-08-05",
-          "text": "test-driven-development: a test whose arrange step silently fails passes every gate (mental mutation check, optional SDD red evidence) - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A test can be vacuous because its **arrange step silently never creates the condition it claims to exercise**. Real code, no mocks, a hand-written literal expectation, a correct `Unit_Scenario_Expectation` name — and it asserts nothing, because the input was never what the test says it is. Nothing in the current skills catches this, and in `subagent-driven-de",
-          "url": "https://github.com/obra/superpowers/issues/2092",
-          "score": 5,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
           "source": "github",
@@ -198,19 +176,8 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1442-cdub615",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "cdub615",
-          "date": "2026-04-30",
-          "text": "Expose lifecycle events beyond SessionStart for external integration - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I’m trying to integrate Superpowers with [Beads](https://github.com/gastownhall/beads), a dependency-aware issue tracker designed for AI agents, so that the planning artifact lives in `bd` in addition to a markdown file and subagents pull work from `bd ready`. The motivation is currently beads are my canonical source of truth for tracking my work. I want that to remain true regardless of whether I use Superpowers for larger",
-          "url": "https://github.com/obra/superpowers/issues/1442",
-          "score": 7,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2111-jfwaskin",
           "source": "github",
@@ -220,6 +187,17 @@
           "text": "Proposal: opt-in safety-check preflight — interest check before any PR ## Context I maintain a public fork of superpowers at [`JFWaskin/superpowers-safe`](https://github.com/JFWaskin/superpowers-safe) that adds an opt-in `safety-check` preflight before any other superpowers skill. The preflight runs five hard gates (resource budget, command risk scan, loop/spend limits, secret/PII scan, scope confirmation) and refuses to proceed if any gate fails. It is specifically motivated by the failure mode where `subagent-driven-development` / `dispatching-parallel-agents` can run for hours, dispatch man",
           "url": "https://github.com/obra/superpowers/issues/2111",
           "score": 7,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2054-glen-84",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "glen-84",
+          "date": "2026-07-29",
+          "text": "subagent-driven-development: reviewer prompts pay subagent turns for mechanical facts the controller can settle in one command - [x] I searched existing issues and this has not been proposed before *(Closest prior art, open and closed: #1930 targets reviewer **output** verbosity — what the reviewer reports back — which is the mirror image of this and complementary. #1120 is review cadence, whether a task needs a review at all. #1614 (closed) proposed admission receipts for extra review passes. This issue is about the reviewer's **input**: what the controller puts in the review prompt, and the ",
+          "url": "https://github.com/obra/superpowers/issues/2054",
+          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -243,6 +221,17 @@
           "url": "https://github.com/obra/superpowers/issues/2112",
           "score": 1,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2118-wan-huiyan",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "wan-huiyan",
+          "date": "2026-08-10",
+          "text": "requesting-code-review: the \"# or origin/main\" BASE_SHA feeds a moving ref into a two-dot diff, so reviewers are shown deletions the branch never made - [x] I searched existing issues and this is not a duplicate <sub>Searched open and closed for `merge-base`, `BASE_SHA`, `BASE_SHA diff`, `two-dot`, `code-reviewer diff origin/main`, `reviewer deletions`. Nearest hits (#1481, #1538, #436) are about review *scope* and uncommitted changes, not diff range semantics.</sub> ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.2.0 (latest release; also present on `ma",
+          "url": "https://github.com/obra/superpowers/issues/2118",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -253,17 +242,6 @@
       "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jfiscman",
-          "date": "2026-05-19",
-          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
-          "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 23,
-          "sentiment": "positive"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -272,6 +250,17 @@
           "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
           "url": "https://github.com/obra/superpowers/issues/1664",
           "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2118-wan-huiyan",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "wan-huiyan",
+          "date": "2026-08-10",
+          "text": "requesting-code-review: the \"# or origin/main\" BASE_SHA feeds a moving ref into a two-dot diff, so reviewers are shown deletions the branch never made - [x] I searched existing issues and this is not a duplicate <sub>Searched open and closed for `merge-base`, `BASE_SHA`, `BASE_SHA diff`, `two-dot`, `code-reviewer diff origin/main`, `reviewer deletions`. Nearest hits (#1481, #1538, #436) are about review *scope* and uncommitted changes, not diff range semantics.</sub> ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.2.0 (latest release; also present on `ma",
+          "url": "https://github.com/obra/superpowers/issues/2118",
+          "score": 0,
           "sentiment": "negative"
         }
       ]

@@ -1,5 +1,35 @@
 [
   {
+    "id": "auto-claude-v2-1-227",
+    "title": "Claude Code v2.1.227 发布",
+    "date": "2026-08-10",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "Anthropic",
+    "heat": 75,
+    "growth": 8,
+    "sourceTier": "A",
+    "summary": "## What's changed  - Fixed feature flags being evaluated without the user's subscription tier when a session started with an expired login token, which could wrongly prompt Max plan users to enable us",
+    "whyImportant": "Claude Code 持续高频迭代，终端 Agent 能力不断增强。",
+    "impact": "关注 release notes 中的权限、MCP 和 subagent 相关变更。",
+    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.227"
+  },
+  {
+    "id": "auto-gh-copilot-on-web-expands-conversation-cont",
+    "title": "Copilot on web expands conversation controls",
+    "date": "2026-08-10",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "GitHub",
+    "heat": 70,
+    "growth": 6,
+    "sourceTier": "A",
+    "summary": "GitHub 官方 Changelog 更新：Copilot on web expands conversation controls",
+    "whyImportant": "GitHub Copilot 生态动态，影响企业开发者工作流。",
+    "impact": "关注 Agent 模式、CLI 和企业策略相关变更。",
+    "sourceUrl": "https://github.blog/changelog/2026-08-10-copilot-on-web-expands-conversation-controls"
+  },
+  {
     "id": "auto-claude-v2-1-225",
     "title": "Claude Code v2.1.225 发布",
     "date": "2026-08-08",
