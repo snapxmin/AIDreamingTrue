@@ -1,5 +1,91 @@
 {
-  "generatedAt": "2026-08-11T02:33:41Z",
+  "generatedAt": "2026-08-12T03:03:19Z",
   "isBaselineRun": false,
-  "changes": []
+  "changes": [
+    {
+      "type": "added",
+      "key": "awesome-copilot/bug-receipt",
+      "ecosystem": "awesome-copilot",
+      "slug": "bug-receipt",
+      "displayName": "Bug Receipt",
+      "summary": "生态新增 Skill：Bug Receipt",
+      "detectedAt": "2026-08-12T03:04:06Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/migrating-oracle-to-postgres-data-access-code",
+      "ecosystem": "awesome-copilot",
+      "slug": "migrating-oracle-to-postgres-data-access-code",
+      "displayName": "Migrating Oracle To Postgres Data Access Code",
+      "summary": "生态新增 Skill：Migrating Oracle To Postgres Data Access Code",
+      "detectedAt": "2026-08-12T03:04:06Z"
+    },
+    {
+      "type": "updated",
+      "key": "awesome-copilot/creating-oracle-to-postgres-master-migration-plan",
+      "ecosystem": "awesome-copilot",
+      "slug": "creating-oracle-to-postgres-master-migration-plan",
+      "displayName": "Creating Oracle To Postgres Master Migration Plan",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/creating-oracle-to-postgres-master-migration-plan",
+      "detectedAt": "2026-08-12T03:04:06Z"
+    },
+    {
+      "type": "updated",
+      "key": "awesome-copilot/creating-oracle-to-postgres-migration-bug-report",
+      "ecosystem": "awesome-copilot",
+      "slug": "creating-oracle-to-postgres-migration-bug-report",
+      "displayName": "Creating Oracle To Postgres Migration Bug Report",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/creating-oracle-to-postgres-migration-bug-report",
+      "detectedAt": "2026-08-12T03:04:06Z"
+    },
+    {
+      "type": "updated",
+      "key": "awesome-copilot/creating-oracle-to-postgres-migration-integration-tests",
+      "ecosystem": "awesome-copilot",
+      "slug": "creating-oracle-to-postgres-migration-integration-tests",
+      "displayName": "Creating Oracle To Postgres Migration Integration Tests",
+      "changedFields": [
+        "content",
+        "description"
+      ],
+      "summary": "description 更新：Creates integration test cases targeting Oracle for .NET data access artifacts. Tests capture Oracle…",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/creating-oracle-to-postgres-migration-integration-tests",
+      "detectedAt": "2026-08-12T03:04:06Z"
+    },
+    {
+      "type": "updated",
+      "key": "awesome-copilot/migrating-oracle-to-postgres-stored-procedures",
+      "ecosystem": "awesome-copilot",
+      "slug": "migrating-oracle-to-postgres-stored-procedures",
+      "displayName": "Migrating Oracle To Postgres Stored Procedures",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/migrating-oracle-to-postgres-stored-procedures",
+      "detectedAt": "2026-08-12T03:04:06Z"
+    },
+    {
+      "type": "updated",
+      "key": "awesome-copilot/scaffolding-oracle-to-postgres-migration-test-project",
+      "ecosystem": "awesome-copilot",
+      "slug": "scaffolding-oracle-to-postgres-migration-test-project",
+      "displayName": "Scaffolding Oracle To Postgres Migration Test Project",
+      "changedFields": [
+        "content",
+        "description"
+      ],
+      "summary": "description 更新：Scaffolds an xUnit integration test project targeting Oracle in .NET solutions. Creates the test pro…",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/scaffolding-oracle-to-postgres-migration-test-project",
+      "detectedAt": "2026-08-12T03:04:06Z"
+    }
+  ]
 }
