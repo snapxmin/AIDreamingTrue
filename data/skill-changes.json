@@ -1,91 +1,71 @@
 {
-  "generatedAt": "2026-08-12T03:03:19Z",
+  "generatedAt": "2026-08-13T03:06:44Z",
   "isBaselineRun": false,
   "changes": [
     {
-      "type": "added",
-      "key": "awesome-copilot/bug-receipt",
-      "ecosystem": "awesome-copilot",
-      "slug": "bug-receipt",
-      "displayName": "Bug Receipt",
-      "summary": "生态新增 Skill：Bug Receipt",
-      "detectedAt": "2026-08-12T03:04:06Z"
-    },
-    {
-      "type": "added",
-      "key": "awesome-copilot/migrating-oracle-to-postgres-data-access-code",
-      "ecosystem": "awesome-copilot",
-      "slug": "migrating-oracle-to-postgres-data-access-code",
-      "displayName": "Migrating Oracle To Postgres Data Access Code",
-      "summary": "生态新增 Skill：Migrating Oracle To Postgres Data Access Code",
-      "detectedAt": "2026-08-12T03:04:06Z"
-    },
-    {
       "type": "updated",
-      "key": "awesome-copilot/creating-oracle-to-postgres-master-migration-plan",
-      "ecosystem": "awesome-copilot",
-      "slug": "creating-oracle-to-postgres-master-migration-plan",
-      "displayName": "Creating Oracle To Postgres Master Migration Plan",
+      "key": "superpowers/brainstorming",
+      "ecosystem": "superpowers",
+      "slug": "brainstorming",
+      "displayName": "Brainstorming",
       "changedFields": [
         "content"
       ],
       "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/creating-oracle-to-postgres-master-migration-plan",
-      "detectedAt": "2026-08-12T03:04:06Z"
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/brainstorming",
+      "detectedAt": "2026-08-13T03:07:22Z"
     },
     {
       "type": "updated",
-      "key": "awesome-copilot/creating-oracle-to-postgres-migration-bug-report",
-      "ecosystem": "awesome-copilot",
-      "slug": "creating-oracle-to-postgres-migration-bug-report",
-      "displayName": "Creating Oracle To Postgres Migration Bug Report",
+      "key": "superpowers/finishing-a-development-branch",
+      "ecosystem": "superpowers",
+      "slug": "finishing-a-development-branch",
+      "displayName": "Finishing A Development Branch",
       "changedFields": [
         "content"
       ],
       "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/creating-oracle-to-postgres-migration-bug-report",
-      "detectedAt": "2026-08-12T03:04:06Z"
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/finishing-a-development-branch",
+      "detectedAt": "2026-08-13T03:07:22Z"
     },
     {
       "type": "updated",
-      "key": "awesome-copilot/creating-oracle-to-postgres-migration-integration-tests",
-      "ecosystem": "awesome-copilot",
-      "slug": "creating-oracle-to-postgres-migration-integration-tests",
-      "displayName": "Creating Oracle To Postgres Migration Integration Tests",
-      "changedFields": [
-        "content",
-        "description"
-      ],
-      "summary": "description 更新：Creates integration test cases targeting Oracle for .NET data access artifacts. Tests capture Oracle…",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/creating-oracle-to-postgres-migration-integration-tests",
-      "detectedAt": "2026-08-12T03:04:06Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/migrating-oracle-to-postgres-stored-procedures",
-      "ecosystem": "awesome-copilot",
-      "slug": "migrating-oracle-to-postgres-stored-procedures",
-      "displayName": "Migrating Oracle To Postgres Stored Procedures",
+      "key": "superpowers/subagent-driven-development",
+      "ecosystem": "superpowers",
+      "slug": "subagent-driven-development",
+      "displayName": "Subagent Driven Development",
       "changedFields": [
         "content"
       ],
       "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/migrating-oracle-to-postgres-stored-procedures",
-      "detectedAt": "2026-08-12T03:04:06Z"
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/subagent-driven-development",
+      "detectedAt": "2026-08-13T03:07:22Z"
     },
     {
       "type": "updated",
-      "key": "awesome-copilot/scaffolding-oracle-to-postgres-migration-test-project",
-      "ecosystem": "awesome-copilot",
-      "slug": "scaffolding-oracle-to-postgres-migration-test-project",
-      "displayName": "Scaffolding Oracle To Postgres Migration Test Project",
+      "key": "superpowers/using-superpowers",
+      "ecosystem": "superpowers",
+      "slug": "using-superpowers",
+      "displayName": "Using Superpowers",
       "changedFields": [
-        "content",
-        "description"
+        "content"
       ],
-      "summary": "description 更新：Scaffolds an xUnit integration test project targeting Oracle in .NET solutions. Creates the test pro…",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/scaffolding-oracle-to-postgres-migration-test-project",
-      "detectedAt": "2026-08-12T03:04:06Z"
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/using-superpowers",
+      "detectedAt": "2026-08-13T03:07:22Z"
+    },
+    {
+      "type": "updated",
+      "key": "superpowers/writing-plans",
+      "ecosystem": "superpowers",
+      "slug": "writing-plans",
+      "displayName": "Writing Plans",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/writing-plans",
+      "detectedAt": "2026-08-13T03:07:22Z"
     }
   ]
 }
