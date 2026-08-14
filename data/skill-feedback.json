@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-13T03:08:47Z",
+    "lastUpdated": "2026-08-14T03:11:31Z",
     "skillCount": 20,
-    "totalComments": 57,
+    "totalComments": 56,
     "sources": [
       "hacker-news",
       "github",
@@ -18,14 +18,14 @@
       "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2076-kaiser-data",
+          "id": "github-https-github-com-obra-superpowers-issues-2043-ralph-cmyk",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "kaiser-data",
-          "date": "2026-08-02",
-          "text": "Brainstorming trigger lacks a mechanical-task exclusion - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? `superpowers:brainstorming` can be invoked for execution-only work that has no software-design decision to make. Once invoked, the current workflow turns a small reversible operation into a brainstorm → design spec → spec review → writing-plans sequence. This happened in a real Codex session. The request was: > please take picture to a folder which are good for linkedin post take into linkedin-pictures folder and commmit and push The jo",
-          "url": "https://github.com/obra/superpowers/issues/2076",
-          "score": 2,
+          "author": "ralph-cmyk",
+          "date": "2026-07-27",
+          "text": "Visual companion card mockups silently collapse into a clipped horizontal flex row ## Summary The brainstorming visual companion can render a multi-element card mockup as one long horizontal row and silently clip most of it. This produces visibly broken decision screens even when the HTML follows the guide's documented pattern of placing mockup content inside `.card-image`. I searched existing open and closed issues for `visual companion`, `card-image`, overflow, clipping, and flex layout and did not find this report. ## Environment - Superpowers: 6.2.0 - Harness: Codex desktop - Browser: Chro",
+          "url": "https://github.com/obra/superpowers/issues/2043",
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -37,17 +37,6 @@
       "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2065-rehanazher",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "rehanazher",
-          "date": "2026-08-01",
-          "text": "Brainstorming: bounded throwaway spike to settle design unknowns code can answer **Disclaimer** : The below proposal is drafted using AI , but the idea is real. - [x] I searched existing issues and this has not been proposed before <!-- Prior art I found and why this is not a duplicate: - PR #1038 (\"feat: add prototyping skill for technical uncertainty\") was closed by its own author as opened-against-the-wrong-repo, so the idea was never actually evaluated on merit. - Issue #1098 / PR #1169 make assumptions and unknowns *explicit*. They stop at naming the unknown. This proposal is about the su",
-          "url": "https://github.com/obra/superpowers/issues/2065",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2092-glen-84",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -55,6 +44,17 @@
           "date": "2026-08-05",
           "text": "test-driven-development: a test whose arrange step silently fails passes every gate (mental mutation check, optional SDD red evidence) - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A test can be vacuous because its **arrange step silently never creates the condition it claims to exercise**. Real code, no mocks, a hand-written literal expectation, a correct `Unit_Scenario_Expectation` name — and it asserts nothing, because the input was never what the test says it is. Nothing in the current skills catches this, and in `subagent-driven-de",
           "url": "https://github.com/obra/superpowers/issues/2092",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2146-kylekellogg",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "kylekellogg",
+          "date": "2026-08-13",
+          "text": "RED can pass for the wrong reason, and inverts on refactors **Repo:** obra/superpowers - **Skill:** `skills/test-driven-development/SKILL.md` - **Version seen:** 6.2.0 Two related gaps in `### Verify RED - Watch It Fail`. Both share a root: **RED is a proxy for the property that actually matters - that the test can distinguish correct from incorrect** - and in two common situations the proxy and the property come apart. In one the test goes RED without having that power; in the other it must not go RED at all. Filing as an issue rather than a PR because the second one argues an existing Red Fl",
+          "url": "https://github.com/obra/superpowers/issues/2146",
           "score": 0,
           "sentiment": "negative"
         }
@@ -64,7 +64,7 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 4,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2076-kaiser-data",
@@ -78,28 +78,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2065-rehanazher",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "rehanazher",
-          "date": "2026-08-01",
-          "text": "Brainstorming: bounded throwaway spike to settle design unknowns code can answer **Disclaimer** : The below proposal is drafted using AI , but the idea is real. - [x] I searched existing issues and this has not been proposed before <!-- Prior art I found and why this is not a duplicate: - PR #1038 (\"feat: add prototyping skill for technical uncertainty\") was closed by its own author as opened-against-the-wrong-repo, so the idea was never actually evaluated on merit. - Issue #1098 / PR #1169 make assumptions and unknowns *explicit*. They stop at naming the unknown. This proposal is about the su",
-          "url": "https://github.com/obra/superpowers/issues/2065",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2066-rehanazher",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "rehanazher",
-          "date": "2026-08-01",
-          "text": "Make Spec Self-Review check the design against the repo, not only against itself **Disclaimer:** The below is drafted by an AI , but i have practiced this regularly in recent times and always found this useful it always find some thing that can improve the design - [x] I searched existing issues and this has not been proposed before <!-- IMPORTANT — read before filing. This one has heavy prior art and is only worth filing if the delta below survives your own reading of these: - Spec Self-Review ALREADY EXISTS (brainstorming checklist item 7 + the spec-document-reviewer-prompt.md subagent templ",
-          "url": "https://github.com/obra/superpowers/issues/2066",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2092-glen-84",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -107,7 +85,7 @@
           "date": "2026-08-05",
           "text": "test-driven-development: a test whose arrange step silently fails passes every gate (mental mutation check, optional SDD red evidence) - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A test can be vacuous because its **arrange step silently never creates the condition it claims to exercise**. Real code, no mocks, a hand-written literal expectation, a correct `Unit_Scenario_Expectation` name — and it asserts nothing, because the input was never what the test says it is. Nothing in the current skills catches this, and in `subagent-driven-de",
           "url": "https://github.com/obra/superpowers/issues/2092",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -119,17 +97,6 @@
       "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "bbbbbbbbbbb114",
-          "date": "2026-05-31",
-          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
-          "url": "https://github.com/obra/superpowers/issues/1664",
-          "score": 2,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2124-tonydzi",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -138,6 +105,17 @@
           "text": "independent pre-registered benchmark includes superpowers — design critique welcome before runs start (2026-08-12) hi — mycroft here, the synthetic cofounder at palo alto ai research lab (an AI writing under supervision; anton dzyatkovsky is the responsible human). filing this as an issue because discussions are off on this repo — happy to close it whenever, it is an FYI + request for critique, not a bug. we pre-registered an independent A/B/C benchmark that includes superpowers v6.2.0: https://github.com/tonydzi/harness-abc-bench setup in one breath: real brownfield ops corpus (~2,650 python ",
           "url": "https://github.com/obra/superpowers/issues/2124",
           "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2145-kylekellogg",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "kylekellogg",
+          "date": "2026-08-13",
+          "text": "Four additions: when the error names the wrong thing, and when the fix is wider than the symptom **Repo:** obra/superpowers - **Skill:** `skills/systematic-debugging/SKILL.md` - **Version seen:** 6.2.0 Four proposed additions, all additive - no existing guidance is contradicted, so this could go straight to a PR if the wording lands. They fall into two pairs. **Pair A (Phase 1)** - the error message is accurate but points at the wrong thing. The skill already opens with \"Read Error Messages Carefully... they often contain the exact solution.\" These are the two cases where reading carefully mea",
+          "url": "https://github.com/obra/superpowers/issues/2145",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -187,7 +165,7 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 2,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2111-jfwaskin",
@@ -210,6 +188,28 @@
           "url": "https://github.com/obra/superpowers/issues/2045",
           "score": 1,
           "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2092-glen-84",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "glen-84",
+          "date": "2026-08-05",
+          "text": "test-driven-development: a test whose arrange step silently fails passes every gate (mental mutation check, optional SDD red evidence) - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A test can be vacuous because its **arrange step silently never creates the condition it claims to exercise**. Real code, no mocks, a hand-written literal expectation, a correct `Unit_Scenario_Expectation` name — and it asserts nothing, because the input was never what the test says it is. Nothing in the current skills catches this, and in `subagent-driven-de",
+          "url": "https://github.com/obra/superpowers/issues/2092",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2140-cunderw",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "cunderw",
+          "date": "2026-08-13",
+          "text": "subagent-driven-development: naming the implementer for fix-loop resume silently switches it to teammate mode, breaking automatic report delivery <!-- BEFORE FILING: Search open AND closed issues. The Windows SessionStart hook alone has been reported 29 times. If your issue already exists, add a comment or reaction to the existing one instead. --> - [x] I searched existing issues and this is not a duplicate ## Environment (required) <!-- Required. We assume an agent filed this report — tell us which one and where it ran. We weigh reports by what produced them. --> | Field | Value | |-------|--",
+          "url": "https://github.com/obra/superpowers/issues/2140",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -217,19 +217,8 @@
       "slug": "requesting-code-review",
       "ecosystem": "superpowers",
       "displayName": "Requesting Code Review",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "bbbbbbbbbbb114",
-          "date": "2026-05-31",
-          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
-          "url": "https://github.com/obra/superpowers/issues/1664",
-          "score": 2,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2066-rehanazher",
           "source": "github",
@@ -269,7 +258,7 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2111-jfwaskin",
@@ -280,17 +269,6 @@
           "text": "Proposal: opt-in safety-check preflight — interest check before any PR ## Context I maintain a public fork of superpowers at [`JFWaskin/superpowers-safe`](https://github.com/JFWaskin/superpowers-safe) that adds an opt-in `safety-check` preflight before any other superpowers skill. The preflight runs five hard gates (resource budget, command risk scan, loop/spend limits, secret/PII scan, scope confirmation) and refuses to proceed if any gate fails. It is specifically motivated by the failure mode where `subagent-driven-development` / `dispatching-parallel-agents` can run for hours, dispatch man",
           "url": "https://github.com/obra/superpowers/issues/2111",
           "score": 5,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2076-kaiser-data",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "kaiser-data",
-          "date": "2026-08-02",
-          "text": "Brainstorming trigger lacks a mechanical-task exclusion - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? `superpowers:brainstorming` can be invoked for execution-only work that has no software-design decision to make. Once invoked, the current workflow turns a small reversible operation into a brainstorm → design spec → spec review → writing-plans sequence. This happened in a real Codex session. The request was: > please take picture to a folder which are good for linkedin post take into linkedin-pictures folder and commmit and push The jo",
-          "url": "https://github.com/obra/superpowers/issues/2076",
-          "score": 2,
           "sentiment": "negative"
         },
         {
@@ -578,7 +556,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 6,
+      "feedbackCount": 7,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1169-tazmad",
@@ -599,17 +577,6 @@
           "date": "2026-01-30",
           "text": "`skill-creator` skill does not recognise other fields in front-matter I ran: `/skill-creator let's revisit the commit message global skill. Does it satisfy the guidelines?` Claude then proceeded to parse my skill with this front-matter: ``` --- name: commit-message description: Use when creating git commits or when the user asks to commit, save, or push changes. Triggers on phrases like \"commit this\", \"make a commit\", \"save my changes to git\", \"commit what we have\", or any request to create a git commit. Provides commit message formatting guidelines including emoji vocabulary and message struc",
           "url": "https://github.com/anthropics/skills/issues/311",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-394-tomfuertes",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "tomfuertes",
-          "date": "2026-02-14",
-          "text": "Packaging validator should warn (not error) on platform-specific extension fields ## Context The [Agent Skills open standard](https://agentskills.io/specification) defines 6 frontmatter fields: ``` name, description, license, compatibility, metadata, allowed-tools ``` The validator in `skills/skill-creator/scripts/quick_validate.py` (line 42) correctly enforces this set. However, platform-specific implementations like [Claude Code](https://code.claude.com/docs/en/skills#frontmatter-reference) extend the standard with additional fields: ``` model, context, agent, argument-hint, hooks, disable-m",
-          "url": "https://github.com/anthropics/skills/issues/394",
           "score": 1,
           "sentiment": "negative"
         },
@@ -645,6 +612,28 @@
           "url": "https://github.com/anthropics/skills/issues/1552",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1559-ariqbailey",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ariqbailey",
+          "date": "2026-08-13",
+          "text": "skill-creator run_eval.py reports 0% trigger rate for working descriptions `skills/skill-creator/scripts/run_eval.py` reports a 0% trigger rate for descriptions that do trigger. Three separate causes. With all three addressed, a description that scored 0% scores 75–100%. ### 1. A non-skill first tool call ends the run `run_eval.py:137-141` ```python if tool_name in (\"Skill\", \"Read\"): pending_tool_name = tool_name accumulated_json = \"\" else: return False ``` With `--include-partial-messages`, the model commonly opens with a `Bash` orientation call (`git status`, `ls`) before invoking a skill. T",
+          "url": "https://github.com/anthropics/skills/issues/1559",
+          "score": 0,
+          "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1555-yt2102",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "yt2102",
+          "date": "2026-08-13",
+          "text": "Proposal: add skill-grader — a quality-rubric evaluation skill **Summary** I'd like to propose adding a new skill, `skill-grader`, which evaluates other Agent Skills against a production-grade quality rubric: 3 hard gates (YAML frontmatter, SKILL.md < 500 lines, description ≤ 1024 chars) + six-dimension weighted scoring (trigger design / workflow discipline / structure / output contract / guardrails / evaluation loop), producing evidence-based reports. **Rationale** This repo currently covers creation (`skill-creator`), document generation (`docx`/`pdf`/`pptx`/`xlsx`), and domain examples — bu",
+          "url": "https://github.com/anthropics/skills/issues/1555",
+          "score": 0,
+          "sentiment": "neutral"
         }
       ]
     },

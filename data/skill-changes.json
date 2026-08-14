@@ -1,71 +1,33 @@
 {
-  "generatedAt": "2026-08-13T03:06:44Z",
+  "generatedAt": "2026-08-14T03:05:38Z",
   "isBaselineRun": false,
   "changes": [
     {
       "type": "updated",
-      "key": "superpowers/brainstorming",
-      "ecosystem": "superpowers",
-      "slug": "brainstorming",
-      "displayName": "Brainstorming",
+      "key": "anthropics-skills/claude-api",
+      "ecosystem": "anthropics-skills",
+      "slug": "claude-api",
+      "displayName": "Claude Api",
       "changedFields": [
         "content"
       ],
       "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/brainstorming",
-      "detectedAt": "2026-08-13T03:07:22Z"
+      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/claude-api",
+      "detectedAt": "2026-08-14T03:09:48Z"
     },
     {
       "type": "updated",
-      "key": "superpowers/finishing-a-development-branch",
-      "ecosystem": "superpowers",
-      "slug": "finishing-a-development-branch",
-      "displayName": "Finishing A Development Branch",
+      "key": "awesome-copilot/bug-receipt",
+      "ecosystem": "awesome-copilot",
+      "slug": "bug-receipt",
+      "displayName": "Bug Receipt",
       "changedFields": [
-        "content"
+        "content",
+        "description"
       ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/finishing-a-development-branch",
-      "detectedAt": "2026-08-13T03:07:22Z"
-    },
-    {
-      "type": "updated",
-      "key": "superpowers/subagent-driven-development",
-      "ecosystem": "superpowers",
-      "slug": "subagent-driven-development",
-      "displayName": "Subagent Driven Development",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/subagent-driven-development",
-      "detectedAt": "2026-08-13T03:07:22Z"
-    },
-    {
-      "type": "updated",
-      "key": "superpowers/using-superpowers",
-      "ecosystem": "superpowers",
-      "slug": "using-superpowers",
-      "displayName": "Using Superpowers",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/using-superpowers",
-      "detectedAt": "2026-08-13T03:07:22Z"
-    },
-    {
-      "type": "updated",
-      "key": "superpowers/writing-plans",
-      "ecosystem": "superpowers",
-      "slug": "writing-plans",
-      "displayName": "Writing Plans",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/writing-plans",
-      "detectedAt": "2026-08-13T03:07:22Z"
+      "summary": "description 更新：Close defects and incidents with a BUG RECEIPT and VERIFIED, PARTIAL, or BLOCKED status after diagno…",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/bug-receipt",
+      "detectedAt": "2026-08-14T03:09:48Z"
     }
   ]
 }
