@@ -1,33 +1,15 @@
 {
-  "generatedAt": "2026-08-14T03:05:38Z",
+  "generatedAt": "2026-08-15T01:55:46Z",
   "isBaselineRun": false,
   "changes": [
     {
-      "type": "updated",
-      "key": "anthropics-skills/claude-api",
-      "ecosystem": "anthropics-skills",
-      "slug": "claude-api",
-      "displayName": "Claude Api",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/claude-api",
-      "detectedAt": "2026-08-14T03:09:48Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/bug-receipt",
+      "type": "added",
+      "key": "awesome-copilot/d365-solution-blueprint",
       "ecosystem": "awesome-copilot",
-      "slug": "bug-receipt",
-      "displayName": "Bug Receipt",
-      "changedFields": [
-        "content",
-        "description"
-      ],
-      "summary": "description 更新：Close defects and incidents with a BUG RECEIPT and VERIFIED, PARTIAL, or BLOCKED status after diagno…",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/bug-receipt",
-      "detectedAt": "2026-08-14T03:09:48Z"
+      "slug": "d365-solution-blueprint",
+      "displayName": "D365 Solution Blueprint",
+      "summary": "生态新增 Skill：D365 Solution Blueprint",
+      "detectedAt": "2026-08-15T01:57:31Z"
     }
   ]
 }

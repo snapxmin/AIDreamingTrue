@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-14T03:11:31Z",
+    "lastUpdated": "2026-08-15T01:59:05Z",
     "skillCount": 20,
-    "totalComments": 56,
+    "totalComments": 53,
     "sources": [
       "hacker-news",
       "github",
@@ -64,19 +64,8 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 2,
+      "feedbackCount": 1,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2076-kaiser-data",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "kaiser-data",
-          "date": "2026-08-02",
-          "text": "Brainstorming trigger lacks a mechanical-task exclusion - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? `superpowers:brainstorming` can be invoked for execution-only work that has no software-design decision to make. Once invoked, the current workflow turns a small reversible operation into a brainstorm → design spec → spec review → writing-plans sequence. This happened in a real Codex session. The request was: > please take picture to a folder which are good for linkedin post take into linkedin-pictures folder and commmit and push The jo",
-          "url": "https://github.com/obra/superpowers/issues/2076",
-          "score": 2,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2092-glen-84",
           "source": "github",
@@ -124,7 +113,7 @@
       "slug": "verification-before-completion",
       "ecosystem": "superpowers",
       "displayName": "Verification Before Completion",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
@@ -145,17 +134,6 @@
           "date": "2026-05-31",
           "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
           "url": "https://github.com/obra/superpowers/issues/1664",
-          "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1859-pixeru",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "pixeru",
-          "date": "2026-06-29",
-          "text": "Support Hermes Agent as a Superpowers harness <html> <body> <!--StartFragment--><html><head></head><body><p>I’d like to add another user case for Hermes Agent support.</p><p>My use case is using Hermes Agent as my main coding harness, especially for larger game development / Unreal Engine workflows where I want the agent to follow a stronger engineering methodology instead of improvising each session. Superpowers already gives that structure in other harnesses, but Hermes users currently have to either manually port skills, copy/paste instructions into <code inline=\"\">SOUL.md</code>, or delega",
-          "url": "https://github.com/obra/superpowers/issues/1859",
           "score": 2,
           "sentiment": "negative"
         }
@@ -258,7 +236,7 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2111-jfwaskin",
@@ -292,17 +270,6 @@
           "url": "https://github.com/obra/superpowers/issues/2083",
           "score": 1,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2081-midirectiekade14-debug",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "midirectiekade14-debug",
-          "date": "2026-08-04",
-          "text": "hooks/session-start: six subprocess spawns cost ~2s on Windows (7.7x slower; byte-identical output without them) `hooks/session-start` spawns six subprocesses to do work that needs none. On Linux/macOS that is cheap enough to be invisible. On Windows, where `fork()` is emulated, it dominates: the hook takes **~2.25s** instead of **~0.29s**, and the whole difference is process-spawn overhead. Removing the spawns produces **byte-identical output** (same SHA-256, same length, same exit code). ## Environment | | | |---|---| | OS | Windows 11 Pro 26200 | | Shell | Git for Windows bash 5.2 (`C:\\Prog",
-          "url": "https://github.com/obra/superpowers/issues/2081",
-          "score": 0,
-          "sentiment": "neutral"
         }
       ]
     },
