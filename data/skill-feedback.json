@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-15T01:59:05Z",
+    "lastUpdated": "2026-08-16T02:07:19Z",
     "skillCount": 20,
-    "totalComments": 53,
+    "totalComments": 51,
     "sources": [
       "hacker-news",
       "github",
@@ -18,14 +18,14 @@
       "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2043-ralph-cmyk",
+          "id": "github-https-github-com-obra-superpowers-issues-2157-ovijincom",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "ralph-cmyk",
-          "date": "2026-07-27",
-          "text": "Visual companion card mockups silently collapse into a clipped horizontal flex row ## Summary The brainstorming visual companion can render a multi-element card mockup as one long horizontal row and silently clip most of it. This produces visibly broken decision screens even when the HTML follows the guide's documented pattern of placing mockup content inside `.card-image`. I searched existing open and closed issues for `visual companion`, `card-image`, overflow, clipping, and flex layout and did not find this report. ## Environment - Superpowers: 6.2.0 - Harness: Codex desktop - Browser: Chro",
-          "url": "https://github.com/obra/superpowers/issues/2043",
-          "score": 1,
+          "author": "ovijincom",
+          "date": "2026-08-15",
+          "text": "[Bug]: Hermes tool mapping in v6.3.0 uses stale names and an unqualified plugin skill name - [x] I searched existing issues and this is not a duplicate. ## Environment | Field | Value | |-------|-------| | Superpowers version | v6.3.0 | | Superpowers commit | `b36e0829c6d0140e93cfef2ca599b1b07d4a7797` | | Harness | Hermes Agent desktop / native plugin | | Harness version | Hermes Agent v0.20.1 (2026.8.13), upstream `165c889e` | | Your model + version | OpenAI Codex / gpt-5.6-terra | | Relevant plugin | `superpowers v6.3.0`, enabled, source: user | | OS + shell | Windows 11, Git Bash / MSYS ter",
+          "url": "https://github.com/obra/superpowers/issues/2157",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -64,7 +64,7 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2092-glen-84",
@@ -76,6 +76,17 @@
           "url": "https://github.com/obra/superpowers/issues/2092",
           "score": 1,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2153-kaiser-data",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "kaiser-data",
+          "date": "2026-08-15",
+          "text": "Add a third execution mode: a chain of handoffs # Add a third execution mode: a chain of handoffs **Repo:** https://github.com/obra/superpowers **Affects:** `skills/writing-plans/SKILL.md` (Execution Handoff), `skills/executing-plans/SKILL.md` ## Summary `writing-plans` offers Subagent-Driven and Inline execution. Both carry a cost that scales badly with plan length, in different ways, and neither is a good fit for a long sequential plan on a usage-limited plan. I'd like a third mode: **execute as a chain of handoffs.** One agent, units of work executed in sequence, context reset at every unit",
+          "url": "https://github.com/obra/superpowers/issues/2153",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -83,8 +94,19 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "bbbbbbbbbbb114",
+          "date": "2026-05-31",
+          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
+          "url": "https://github.com/obra/superpowers/issues/1664",
+          "score": 2,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2124-tonydzi",
           "source": "github",
@@ -143,30 +165,8 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 4,
+      "feedbackCount": 2,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2111-jfwaskin",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "JFWaskin",
-          "date": "2026-08-08",
-          "text": "Proposal: opt-in safety-check preflight — interest check before any PR ## Context I maintain a public fork of superpowers at [`JFWaskin/superpowers-safe`](https://github.com/JFWaskin/superpowers-safe) that adds an opt-in `safety-check` preflight before any other superpowers skill. The preflight runs five hard gates (resource budget, command risk scan, loop/spend limits, secret/PII scan, scope confirmation) and refuses to proceed if any gate fails. It is specifically motivated by the failure mode where `subagent-driven-development` / `dispatching-parallel-agents` can run for hours, dispatch man",
-          "url": "https://github.com/obra/superpowers/issues/2111",
-          "score": 5,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2045-crgdan",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "CRGDan",
-          "date": "2026-07-27",
-          "text": "subagent-driven-development: plan-scoped workspace still collides when two plans share a basename (follow-up to #2012) Following up on #2012 as asked: *\"if you can still reproduce the collision on a release that includes #1943, please reopen with the session details.\"* I can, on released **v6.2.0** (`3dcbd5c`). #1943 scopes the workspace by plan **basename**, so it fixes collisions between `plan-a.md` and `plan-b.md` but not between `docs/alpha/plan.md` and `docs/beta/plan.md`. Any repo where plans are foldered — one directory per feature, per sprint, per subproject — still gets the original s",
-          "url": "https://github.com/obra/superpowers/issues/2045",
-          "score": 1,
-          "sentiment": "neutral"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2092-glen-84",
           "source": "github",
@@ -195,8 +195,19 @@
       "slug": "requesting-code-review",
       "ecosystem": "superpowers",
       "displayName": "Requesting Code Review",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "bbbbbbbbbbb114",
+          "date": "2026-05-31",
+          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
+          "url": "https://github.com/obra/superpowers/issues/1664",
+          "score": 2,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2066-rehanazher",
           "source": "github",
@@ -236,39 +247,17 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 3,
+      "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2111-jfwaskin",
+          "id": "github-https-github-com-obra-superpowers-issues-2157-ovijincom",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "JFWaskin",
-          "date": "2026-08-08",
-          "text": "Proposal: opt-in safety-check preflight — interest check before any PR ## Context I maintain a public fork of superpowers at [`JFWaskin/superpowers-safe`](https://github.com/JFWaskin/superpowers-safe) that adds an opt-in `safety-check` preflight before any other superpowers skill. The preflight runs five hard gates (resource budget, command risk scan, loop/spend limits, secret/PII scan, scope confirmation) and refuses to proceed if any gate fails. It is specifically motivated by the failure mode where `subagent-driven-development` / `dispatching-parallel-agents` can run for hours, dispatch man",
-          "url": "https://github.com/obra/superpowers/issues/2111",
-          "score": 5,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2105-jgodboutpcs",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jgodboutPCS",
-          "date": "2026-08-07",
-          "text": "SessionStart hook fails on Windows: ${CLAUDE_PLUGIN_ROOT} not substituted, interactive sessions silently lose the using-superpowers injection ## Summary On Windows, the `SessionStart` hook fails because `${CLAUDE_PLUGIN_ROOT}` is not substituted in the hook command. Every session start prints an error, and — the part that matters — **interactive sessions silently lose the `using-superpowers` context injection entirely.** Print mode (`claude -p`) is unaffected, which is probably why this has gone unnoticed. I suspect this is a **Claude Code** variable-substitution bug rather than a plugin defec",
-          "url": "https://github.com/obra/superpowers/issues/2105",
-          "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2083-dknight927",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "DKnight927",
-          "date": "2026-08-04",
-          "text": "Pi extension bootstrap only injected on the first turn: agent_end fires per run, not per session ## Summary The Pi extension (`.pi/extensions/superpowers.ts`) gates bootstrap injection on `session_start`/`session_compact` and clears it on `agent_end`: ```ts pi.on(\"session_start\", async () => { injectBootstrap = true; }); pi.on(\"session_compact\", async () => { injectBootstrap = true; }); pi.on(\"agent_end\", async () => { injectBootstrap = false; }); ``` The intent (per `tests/pi/test-pi-extension.mjs`: *\"startup bootstrap should clear after agent_end\"*) is that `agent_end` marks the end of a **s",
-          "url": "https://github.com/obra/superpowers/issues/2083",
-          "score": 1,
+          "author": "ovijincom",
+          "date": "2026-08-15",
+          "text": "[Bug]: Hermes tool mapping in v6.3.0 uses stale names and an unqualified plugin skill name - [x] I searched existing issues and this is not a duplicate. ## Environment | Field | Value | |-------|-------| | Superpowers version | v6.3.0 | | Superpowers commit | `b36e0829c6d0140e93cfef2ca599b1b07d4a7797` | | Harness | Hermes Agent desktop / native plugin | | Harness version | Hermes Agent v0.20.1 (2026.8.13), upstream `165c889e` | | Your model + version | OpenAI Codex / gpt-5.6-terra | | Relevant plugin | `superpowers v6.3.0`, enabled, source: user | | OS + shell | Windows 11, Git Bash / MSYS ter",
+          "url": "https://github.com/obra/superpowers/issues/2157",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -523,7 +512,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 7,
+      "feedbackCount": 6,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1169-tazmad",
@@ -590,17 +579,6 @@
           "url": "https://github.com/anthropics/skills/issues/1559",
           "score": 0,
           "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1555-yt2102",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "yt2102",
-          "date": "2026-08-13",
-          "text": "Proposal: add skill-grader — a quality-rubric evaluation skill **Summary** I'd like to propose adding a new skill, `skill-grader`, which evaluates other Agent Skills against a production-grade quality rubric: 3 hard gates (YAML frontmatter, SKILL.md < 500 lines, description ≤ 1024 chars) + six-dimension weighted scoring (trigger design / workflow discipline / structure / output contract / guardrails / evaluation loop), producing evidence-based reports. **Rationale** This repo currently covers creation (`skill-creator`), document generation (`docx`/`pdf`/`pptx`/`xlsx`), and domain examples — bu",
-          "url": "https://github.com/anthropics/skills/issues/1555",
-          "score": 0,
-          "sentiment": "neutral"
         }
       ]
     },

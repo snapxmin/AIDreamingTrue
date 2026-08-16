@@ -1,15 +1,5 @@
 {
-  "generatedAt": "2026-08-15T01:55:46Z",
+  "generatedAt": "2026-08-16T02:04:40Z",
   "isBaselineRun": false,
-  "changes": [
-    {
-      "type": "added",
-      "key": "awesome-copilot/d365-solution-blueprint",
-      "ecosystem": "awesome-copilot",
-      "slug": "d365-solution-blueprint",
-      "displayName": "D365 Solution Blueprint",
-      "summary": "生态新增 Skill：D365 Solution Blueprint",
-      "detectedAt": "2026-08-15T01:57:31Z"
-    }
-  ]
+  "changes": []
 }
