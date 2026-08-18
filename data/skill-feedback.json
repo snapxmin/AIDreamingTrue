@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-17T02:16:49Z",
+    "lastUpdated": "2026-08-18T01:59:03Z",
     "skillCount": 20,
-    "totalComments": 56,
+    "totalComments": 65,
     "sources": [
       "hacker-news",
       "github",
@@ -15,8 +15,52 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 2,
+      "feedbackCount": 5,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2051-oliver-zehentleitner-aigent",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "oliver-zehentleitner-aigent",
+          "date": "2026-07-29",
+          "text": "using-superpowers' \"check any skill before every action\" doesn't hold once a workflow step is underway - [x] I searched existing issues and this is not a duplicate (checked #1007, #1812, and a few keyword searches — related in spirit, not the same report) ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.2.0 | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | 2.1.220 | | Your model + version | Claude Sonnet 5 (`claude-sonnet-5`) | | All plugins installed | `superpowers@superpowers-marketplace` (local scope); one additional skill loa",
+          "url": "https://github.com/obra/superpowers/issues/2051",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2160-ray73864",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ray73864",
+          "date": "2026-08-16",
+          "text": "OpenCode: Superpowers bootstrap is injected into task subagents, causing them to restart controller workflows ## Summary The OpenCode Superpowers plugin injects the complete `using-superpowers` bootstrap into task subagent sessions as well as the primary session. `using-superpowers` contains a `<SUBAGENT-STOP>` instruction telling a dispatched subagent to ignore the skill, but this relies on the model correctly recognising and prioritising that instruction. In practice this is not reliable. I have reproduced a worker subagent receiving an already-approved, atomic implementation task and then i",
+          "url": "https://github.com/obra/superpowers/issues/2160",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2168-dajavan",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "dajavan",
+          "date": "2026-08-17",
+          "text": "IDE/Platform support request: Freebuff (free tier of Codebuff) - [x] I searched existing issues for this IDE/platform ## Which IDE or platform? [Freebuff](https://github.com/CodebuffAI/freebuff) — the free, ad-supported coding agent built on [Codebuff](https://github.com/CodebuffAI/codebuff) (YC F24). CLI + Web app. No subscription, no API keys. ## Does this tool have a plugin or extension system? No plugin system. But it supports **custom agents** via `/init` (creates a structure in `.agents/`) and reads **CLAUDE.md / AGENTS.md** instruction files at the project root (it's built on the AGENTS",
+          "url": "https://github.com/obra/superpowers/issues/2168",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2128-obra",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "obra",
+          "date": "2026-08-12",
+          "text": "brainstorming: explicit goal-setting step before design Split out from #2093 (reported by @hypyc95), which bundled two separate asks. **This ask:** an explicit goal-setting step in brainstorming — agree on what the feature is for and what success looks like before designing. **Current state (v6.3.0):** the architectural path's clarifying-questions step says 'understand purpose/constraints/success criteria' (`skills/brainstorming/SKILL.md`), which partially covers this, but there is no distinct step that pins down goals as an artifact the rest of the design is checked against. **Status:** specu",
+          "url": "https://github.com/obra/superpowers/issues/2128",
+          "score": 0,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2157-ovijincom",
           "source": "github",
@@ -27,17 +71,6 @@
           "url": "https://github.com/obra/superpowers/issues/2157",
           "score": 0,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2160-ray73864",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "ray73864",
-          "date": "2026-08-16",
-          "text": "OpenCode: Superpowers bootstrap is injected into task subagents, causing them to restart controller workflows ## Summary The OpenCode Superpowers plugin injects the complete `using-superpowers` bootstrap into task subagent sessions as well as the primary session. `using-superpowers` contains a `<SUBAGENT-STOP>` instruction telling a dispatched subagent to ignore the skill, but this relies on the model correctly recognising and prioritising that instruction. In practice this is not reliable. I have reproduced a worker subagent receiving an already-approved, atomic implementation task and then i",
-          "url": "https://github.com/obra/superpowers/issues/2160",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -45,8 +78,19 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2092-glen-84",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "glen-84",
+          "date": "2026-08-05",
+          "text": "test-driven-development: a test whose arrange step silently fails passes every gate (mental mutation check, optional SDD red evidence) - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A test can be vacuous because its **arrange step silently never creates the condition it claims to exercise**. Real code, no mocks, a hand-written literal expectation, a correct `Unit_Scenario_Expectation` name — and it asserts nothing, because the input was never what the test says it is. Nothing in the current skills catches this, and in `subagent-driven-de",
+          "url": "https://github.com/obra/superpowers/issues/2092",
+          "score": 2,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2146-kylekellogg",
           "source": "github",
@@ -55,7 +99,7 @@
           "date": "2026-08-13",
           "text": "RED can pass for the wrong reason, and inverts on refactors **Repo:** obra/superpowers - **Skill:** `skills/test-driven-development/SKILL.md` - **Version seen:** 6.2.0 Two related gaps in `### Verify RED - Watch It Fail`. Both share a root: **RED is a proxy for the property that actually matters - that the test can distinguish correct from incorrect** - and in two common situations the proxy and the property come apart. In one the test goes RED without having that power; in the other it must not go RED at all. Filing as an issue rather than a PR because the second one argues an existing Red Fl",
           "url": "https://github.com/obra/superpowers/issues/2146",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -66,7 +110,7 @@
           "date": "2026-08-16",
           "text": "OpenCode: Superpowers bootstrap is injected into task subagents, causing them to restart controller workflows ## Summary The OpenCode Superpowers plugin injects the complete `using-superpowers` bootstrap into task subagent sessions as well as the primary session. `using-superpowers` contains a `<SUBAGENT-STOP>` instruction telling a dispatched subagent to ignore the skill, but this relies on the model correctly recognising and prioritising that instruction. In practice this is not reliable. I have reproduced a worker subagent receiving an already-approved, atomic implementation task and then i",
           "url": "https://github.com/obra/superpowers/issues/2160",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -85,7 +129,7 @@
           "date": "2026-08-05",
           "text": "test-driven-development: a test whose arrange step silently fails passes every gate (mental mutation check, optional SDD red evidence) - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A test can be vacuous because its **arrange step silently never creates the condition it claims to exercise**. Real code, no mocks, a hand-written literal expectation, a correct `Unit_Scenario_Expectation` name — and it asserts nothing, because the input was never what the test says it is. Nothing in the current skills catches this, and in `subagent-driven-de",
           "url": "https://github.com/obra/superpowers/issues/2092",
-          "score": 1,
+          "score": 2,
           "sentiment": "negative"
         },
         {
@@ -96,7 +140,7 @@
           "date": "2026-08-15",
           "text": "Add a third execution mode: a chain of handoffs # Add a third execution mode: a chain of handoffs **Repo:** https://github.com/obra/superpowers **Affects:** `skills/writing-plans/SKILL.md` (Execution Handoff), `skills/executing-plans/SKILL.md` ## Summary `writing-plans` offers Subagent-Driven and Inline execution. Both carry a cost that scales badly with plan length, in different ways, and neither is a good fit for a long sequential plan on a usage-limited plan. I'd like a third mode: **execute as a chain of handoffs.** One agent, units of work executed in sequence, context reset at every unit",
           "url": "https://github.com/obra/superpowers/issues/2153",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -137,7 +181,7 @@
           "date": "2026-08-13",
           "text": "Four additions: when the error names the wrong thing, and when the fix is wider than the symptom **Repo:** obra/superpowers - **Skill:** `skills/systematic-debugging/SKILL.md` - **Version seen:** 6.2.0 Four proposed additions, all additive - no existing guidance is contradicted, so this could go straight to a PR if the wording lands. They fall into two pairs. **Pair A (Phase 1)** - the error message is accurate but points at the wrong thing. The skill already opens with \"Read Error Messages Carefully... they often contain the exact solution.\" These are the two cases where reading carefully mea",
           "url": "https://github.com/obra/superpowers/issues/2145",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -176,19 +220,8 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 3,
+      "feedbackCount": 6,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2111-jfwaskin",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "JFWaskin",
-          "date": "2026-08-08",
-          "text": "Proposal: opt-in safety-check preflight — interest check before any PR ## Context I maintain a public fork of superpowers at [`JFWaskin/superpowers-safe`](https://github.com/JFWaskin/superpowers-safe) that adds an opt-in `safety-check` preflight before any other superpowers skill. The preflight runs five hard gates (resource budget, command risk scan, loop/spend limits, secret/PII scan, scope confirmation) and refuses to proceed if any gate fails. It is specifically motivated by the failure mode where `subagent-driven-development` / `dispatching-parallel-agents` can run for hours, dispatch man",
-          "url": "https://github.com/obra/superpowers/issues/2111",
-          "score": 5,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1545-wingsofpanda",
           "source": "github",
@@ -201,6 +234,17 @@
           "sentiment": "negative"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2054-glen-84",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "glen-84",
+          "date": "2026-07-29",
+          "text": "subagent-driven-development: reviewer prompts pay subagent turns for mechanical facts the controller can settle in one command - [x] I searched existing issues and this has not been proposed before *(Closest prior art, open and closed: #1930 targets reviewer **output** verbosity — what the reviewer reports back — which is the mirror image of this and complementary. #1120 is review cadence, whether a task needs a review at all. #1614 (closed) proposed admission receipts for extra review passes. This issue is about the reviewer's **input**: what the controller puts in the review prompt, and the ",
+          "url": "https://github.com/obra/superpowers/issues/2054",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2092-glen-84",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -208,6 +252,39 @@
           "date": "2026-08-05",
           "text": "test-driven-development: a test whose arrange step silently fails passes every gate (mental mutation check, optional SDD red evidence) - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A test can be vacuous because its **arrange step silently never creates the condition it claims to exercise**. Real code, no mocks, a hand-written literal expectation, a correct `Unit_Scenario_Expectation` name — and it asserts nothing, because the input was never what the test says it is. Nothing in the current skills catches this, and in `subagent-driven-de",
           "url": "https://github.com/obra/superpowers/issues/2092",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2096-ryosukenishi",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "RyosukeNishi",
+          "date": "2026-08-06",
+          "text": "subagent-driven-development: \"most capable available model\" for the final review gets under-resolved when the session model is above Opus ## Summary In `subagent-driven-development`'s Model Selection section, the rule for the final whole-branch review — \"dispatch it on the most capable available model, not the session default\" — got under-resolved in practice: running on a session model *above* Opus (Claude Fable 5, a tier above Opus in the dispatchable model list), the agent picked **Opus** for the final review instead of the strictly most capable available model, and only surfaced this when ",
+          "url": "https://github.com/obra/superpowers/issues/2096",
+          "score": 1,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2118-wan-huiyan",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "wan-huiyan",
+          "date": "2026-08-10",
+          "text": "requesting-code-review: the \"# or origin/main\" BASE_SHA feeds a moving ref into a two-dot diff, so reviewers are shown deletions the branch never made - [x] I searched existing issues and this is not a duplicate <sub>Searched open and closed for `merge-base`, `BASE_SHA`, `BASE_SHA diff`, `two-dot`, `code-reviewer diff origin/main`, `reviewer deletions`. Nearest hits (#1481, #1538, #436) are about review *scope* and uncommitted changes, not diff range semantics.</sub> ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.2.0 (latest release; also present on `ma",
+          "url": "https://github.com/obra/superpowers/issues/2118",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2140-cunderw",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "cunderw",
+          "date": "2026-08-13",
+          "text": "subagent-driven-development: naming the implementer for fix-loop resume silently switches it to teammate mode, breaking automatic report delivery <!-- BEFORE FILING: Search open AND closed issues. The Windows SessionStart hook alone has been reported 29 times. If your issue already exists, add a comment or reaction to the existing one instead. --> - [x] I searched existing issues and this is not a duplicate ## Environment (required) <!-- Required. We assume an agent filed this report — tell us which one and where it ran. We weigh reports by what produced them. --> | Field | Value | |-------|--",
+          "url": "https://github.com/obra/superpowers/issues/2140",
           "score": 1,
           "sentiment": "negative"
         }
@@ -269,39 +346,39 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 4,
+      "feedbackCount": 7,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2111-jfwaskin",
+          "id": "github-https-github-com-obra-superpowers-issues-2083-dknight927",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "JFWaskin",
-          "date": "2026-08-08",
-          "text": "Proposal: opt-in safety-check preflight — interest check before any PR ## Context I maintain a public fork of superpowers at [`JFWaskin/superpowers-safe`](https://github.com/JFWaskin/superpowers-safe) that adds an opt-in `safety-check` preflight before any other superpowers skill. The preflight runs five hard gates (resource budget, command risk scan, loop/spend limits, secret/PII scan, scope confirmation) and refuses to proceed if any gate fails. It is specifically motivated by the failure mode where `subagent-driven-development` / `dispatching-parallel-agents` can run for hours, dispatch man",
-          "url": "https://github.com/obra/superpowers/issues/2111",
-          "score": 5,
+          "author": "DKnight927",
+          "date": "2026-08-04",
+          "text": "Pi extension bootstrap only injected on the first turn: agent_end fires per run, not per session ## Summary The Pi extension (`.pi/extensions/superpowers.ts`) gates bootstrap injection on `session_start`/`session_compact` and clears it on `agent_end`: ```ts pi.on(\"session_start\", async () => { injectBootstrap = true; }); pi.on(\"session_compact\", async () => { injectBootstrap = true; }); pi.on(\"agent_end\", async () => { injectBootstrap = false; }); ``` The intent (per `tests/pi/test-pi-extension.mjs`: *\"startup bootstrap should clear after agent_end\"*) is that `agent_end` marks the end of a **s",
+          "url": "https://github.com/obra/superpowers/issues/2083",
+          "score": 2,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1545-wingsofpanda",
+          "id": "github-https-github-com-obra-superpowers-issues-2051-oliver-zehentleitner-aigent",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "WingsOfPanda",
-          "date": "2026-05-14",
-          "text": "executing-plans: STOP triggers cause silent multi-hour stalls; need to harmonize with subagent-driven-development's Continuous execution rule ## Summary `superpowers:executing-plans` SKILL.md (lines 48-55) contains STOP triggers that fire on minor ambiguities, while `superpowers:subagent-driven-development` SKILL.md (line 14) has the correct rule (\"Continuous execution: do not pause\"). When `executing-plans` is in effect without an explicit subagent-driven mode, the STOP triggers cause the agent to halt mid-task and \"ask for clarification\" — but the question often gets buried in a recap rather",
-          "url": "https://github.com/obra/superpowers/issues/1545",
-          "score": 3,
+          "author": "oliver-zehentleitner-aigent",
+          "date": "2026-07-29",
+          "text": "using-superpowers' \"check any skill before every action\" doesn't hold once a workflow step is underway - [x] I searched existing issues and this is not a duplicate (checked #1007, #1812, and a few keyword searches — related in spirit, not the same report) ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.2.0 | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | 2.1.220 | | Your model + version | Claude Sonnet 5 (`claude-sonnet-5`) | | All plugins installed | `superpowers@superpowers-marketplace` (local scope); one additional skill loa",
+          "url": "https://github.com/obra/superpowers/issues/2051",
+          "score": 1,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2157-ovijincom",
+          "id": "github-https-github-com-obra-superpowers-issues-2105-jgodboutpcs",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "ovijincom",
-          "date": "2026-08-15",
-          "text": "[Bug]: Hermes tool mapping in v6.3.0 uses stale names and an unqualified plugin skill name - [x] I searched existing issues and this is not a duplicate. ## Environment | Field | Value | |-------|-------| | Superpowers version | v6.3.0 | | Superpowers commit | `b36e0829c6d0140e93cfef2ca599b1b07d4a7797` | | Harness | Hermes Agent desktop / native plugin | | Harness version | Hermes Agent v0.20.1 (2026.8.13), upstream `165c889e` | | Your model + version | OpenAI Codex / gpt-5.6-terra | | Relevant plugin | `superpowers v6.3.0`, enabled, source: user | | OS + shell | Windows 11, Git Bash / MSYS ter",
-          "url": "https://github.com/obra/superpowers/issues/2157",
-          "score": 0,
+          "author": "jgodboutPCS",
+          "date": "2026-08-07",
+          "text": "SessionStart hook fails on Windows: ${CLAUDE_PLUGIN_ROOT} not substituted, interactive sessions silently lose the using-superpowers injection ## Summary On Windows, the `SessionStart` hook fails because `${CLAUDE_PLUGIN_ROOT}` is not substituted in the hook command. Every session start prints an error, and — the part that matters — **interactive sessions silently lose the `using-superpowers` context injection entirely.** Print mode (`claude -p`) is unaffected, which is probably why this has gone unnoticed. I suspect this is a **Claude Code** variable-substitution bug rather than a plugin defec",
+          "url": "https://github.com/obra/superpowers/issues/2105",
+          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -312,6 +389,39 @@
           "date": "2026-08-16",
           "text": "OpenCode: Superpowers bootstrap is injected into task subagents, causing them to restart controller workflows ## Summary The OpenCode Superpowers plugin injects the complete `using-superpowers` bootstrap into task subagent sessions as well as the primary session. `using-superpowers` contains a `<SUBAGENT-STOP>` instruction telling a dispatched subagent to ignore the skill, but this relies on the model correctly recognising and prioritising that instruction. In practice this is not reliable. I have reproduced a worker subagent receiving an already-approved, atomic implementation task and then i",
           "url": "https://github.com/obra/superpowers/issues/2160",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2168-dajavan",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "dajavan",
+          "date": "2026-08-17",
+          "text": "IDE/Platform support request: Freebuff (free tier of Codebuff) - [x] I searched existing issues for this IDE/platform ## Which IDE or platform? [Freebuff](https://github.com/CodebuffAI/freebuff) — the free, ad-supported coding agent built on [Codebuff](https://github.com/CodebuffAI/codebuff) (YC F24). CLI + Web app. No subscription, no API keys. ## Does this tool have a plugin or extension system? No plugin system. But it supports **custom agents** via `/init` (creates a structure in `.agents/`) and reads **CLAUDE.md / AGENTS.md** instruction files at the project root (it's built on the AGENTS",
+          "url": "https://github.com/obra/superpowers/issues/2168",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2081-midirectiekade14-debug",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "midirectiekade14-debug",
+          "date": "2026-08-04",
+          "text": "hooks/session-start: six subprocess spawns cost ~2s on Windows (7.7x slower; byte-identical output without them) `hooks/session-start` spawns six subprocesses to do work that needs none. On Linux/macOS that is cheap enough to be invisible. On Windows, where `fork()` is emulated, it dominates: the hook takes **~2.25s** instead of **~0.29s**, and the whole difference is process-spawn overhead. Removing the spawns produces **byte-identical output** (same SHA-256, same length, same exit code). ## Environment | | | |---|---| | OS | Windows 11 Pro 26200 | | Shell | Git for Windows bash 5.2 (`C:\\Prog",
+          "url": "https://github.com/obra/superpowers/issues/2081",
+          "score": 0,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2157-ovijincom",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ovijincom",
+          "date": "2026-08-15",
+          "text": "[Bug]: Hermes tool mapping in v6.3.0 uses stale names and an unqualified plugin skill name - [x] I searched existing issues and this is not a duplicate. ## Environment | Field | Value | |-------|-------| | Superpowers version | v6.3.0 | | Superpowers commit | `b36e0829c6d0140e93cfef2ca599b1b07d4a7797` | | Harness | Hermes Agent desktop / native plugin | | Harness version | Hermes Agent v0.20.1 (2026.8.13), upstream `165c889e` | | Your model + version | OpenAI Codex / gpt-5.6-terra | | Relevant plugin | `superpowers v6.3.0`, enabled, source: user | | OS + shell | Windows 11, Git Bash / MSYS ter",
+          "url": "https://github.com/obra/superpowers/issues/2157",
           "score": 0,
           "sentiment": "negative"
         }
@@ -567,7 +677,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1169-tazmad",
@@ -610,17 +720,6 @@
           "date": "2026-06-10",
           "text": "Windows: eval/optimize harness broken — cp1252 read_text() crash + nested claude -p WinError 10038 silently zeroes all results ## Environment - OS: Windows 11 - Python 3.14.4 - `skill-creator` from `anthropics/skills` (example-skills plugin), run via `python -m scripts.run_loop` Two Windows bugs make the eval / description-optimization harness unusable; the second is the dangerous one because it **fails silently and reports plausible-looking but meaningless metrics**. ## Bug 1 — `parse_skill_md` crashes on any non-cp1252 SKILL.md (blocking) `scripts/utils.py:9` reads SKILL.md with no explicit ",
           "url": "https://github.com/anthropics/skills/issues/1304",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1383-zaesche",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "zaesche",
-          "date": "2026-07-03",
-          "text": "skill-creator: silent benchmark failures (layout mismatch, inverted delta), broken trigger evals on Windows, and skill shadowing in trigger evals Six reproducible issues in `skills/skill-creator`, found while auditing and testing the skill end-to-end. Roughly in order of impact: ## 1. SKILL.md directory layout is silently incompatible with aggregate_benchmark.py SKILL.md instructs subagents to save to `<workspace>/iteration-<N>/eval-<ID>/<config>/outputs/` and to put `grading.json` \"in each run directory\" — a flat layout with no `run-N` level. `aggregate_benchmark.py` however skips every confi",
-          "url": "https://github.com/anthropics/skills/issues/1383",
           "score": 1,
           "sentiment": "negative"
         }

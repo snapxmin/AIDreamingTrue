@@ -1,5 +1,56 @@
 {
-  "generatedAt": "2026-08-17T02:14:37Z",
+  "generatedAt": "2026-08-18T01:56:16Z",
   "isBaselineRun": false,
-  "changes": []
+  "changes": [
+    {
+      "type": "added",
+      "key": "anthropics-skills/claude-academy-guide",
+      "ecosystem": "anthropics-skills",
+      "slug": "claude-academy-guide",
+      "displayName": "Claude Academy Guide",
+      "summary": "生态新增 Skill：Claude Academy Guide",
+      "detectedAt": "2026-08-18T01:57:31Z"
+    },
+    {
+      "type": "added",
+      "key": "anthropics-skills/discernment-nudge",
+      "ecosystem": "anthropics-skills",
+      "slug": "discernment-nudge",
+      "displayName": "Discernment Nudge",
+      "summary": "生态新增 Skill：Discernment Nudge",
+      "detectedAt": "2026-08-18T01:57:31Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/gem-design-md-guidelines",
+      "ecosystem": "awesome-copilot",
+      "slug": "gem-design-md-guidelines",
+      "displayName": "Gem Design Md Guidelines",
+      "summary": "生态新增 Skill：Gem Design Md Guidelines",
+      "detectedAt": "2026-08-18T01:57:31Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/gem-devops-guidelines",
+      "ecosystem": "awesome-copilot",
+      "slug": "gem-devops-guidelines",
+      "displayName": "Gem Devops Guidelines",
+      "summary": "生态新增 Skill：Gem Devops Guidelines",
+      "detectedAt": "2026-08-18T01:57:31Z"
+    },
+    {
+      "type": "updated",
+      "key": "awesome-copilot/codebase-memory-mcp",
+      "ecosystem": "awesome-copilot",
+      "slug": "codebase-memory-mcp",
+      "displayName": "Codebase Memory Mcp",
+      "changedFields": [
+        "content",
+        "description"
+      ],
+      "summary": "description 更新：Use when exploring unfamiliar code, mapping architecture, finding symbols or relationships, tracing …",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/codebase-memory-mcp",
+      "detectedAt": "2026-08-18T01:57:31Z"
+    }
+  ]
 }
