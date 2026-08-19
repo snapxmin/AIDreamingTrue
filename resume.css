@@ -8,8 +8,8 @@
   --line: rgba(27, 36, 44, 0.12);
   --line-strong: rgba(27, 36, 44, 0.2);
   --mark: rgba(36, 86, 78, 0.09);
-  --sheet: #f8f7f3;
-  --desk: #cdd9df;
+  --sheet: #fbfaf6;
+  --desk: #b7c6ce;
   --year-col: 7.25rem;
   --pad: 4.25rem;
 }
@@ -32,9 +32,9 @@ body {
   line-height: 1.7;
   background-color: var(--desk);
   background-image:
-    radial-gradient(900px 520px at 8% -10%, rgba(36, 86, 78, 0.16), transparent 58%),
-    radial-gradient(720px 420px at 100% 0%, rgba(255, 255, 255, 0.35), transparent 50%),
-    linear-gradient(180deg, #c5d3da 0%, #d7e1e6 42%, #cfdbe1 100%);
+    radial-gradient(900px 520px at 8% -10%, rgba(36, 86, 78, 0.18), transparent 58%),
+    radial-gradient(720px 420px at 100% 0%, rgba(255, 255, 255, 0.28), transparent 50%),
+    linear-gradient(180deg, #adc0c9 0%, #c5d3da 46%, #b7c6ce 100%);
 }
 
 body::before {
@@ -95,7 +95,7 @@ body::before {
   font-size: clamp(2.05rem, 4vw, 2.55rem);
   font-weight: 700;
   line-height: 1.12;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.1em;
 }
 
 .role {
@@ -161,6 +161,7 @@ body::before {
   color: inherit;
   text-decoration: none;
   border-bottom: 1px solid transparent;
+  overflow-wrap: anywhere;
   transition: color 0.2s ease, border-color 0.2s ease;
 }
 
@@ -204,7 +205,7 @@ body::before {
   display: grid;
   grid-template-columns: var(--year-col) minmax(0, 1fr);
   column-gap: 2.35rem;
-  padding-bottom: 2.55rem;
+  padding-bottom: 2.2rem;
 }
 
 .stint:last-child {
@@ -230,6 +231,7 @@ body::before {
   right: 0;
   width: 8px;
   height: 8px;
+  border-radius: 50%;
   background: var(--sheet);
   border: 1.5px solid var(--accent-soft);
   transform: translateX(50%);
@@ -289,8 +291,8 @@ body::before {
 
 .work {
   display: grid;
-  grid-template-columns: 1.7rem minmax(0, 1fr);
-  column-gap: 0.45rem;
+  grid-template-columns: 1.85rem minmax(0, 1fr);
+  column-gap: 0.4rem;
   padding-left: 0.95rem;
   border-left: 2px solid rgba(36, 86, 78, 0.18);
 }
@@ -330,6 +332,7 @@ body::before {
   font-weight: 600;
   letter-spacing: 0.04em;
   line-height: 1.45;
+  overflow-wrap: break-word;
 }
 
 .when-sub {
@@ -363,6 +366,7 @@ body::before {
 .copy {
   margin-top: 0.55rem;
   color: var(--ink);
+  overflow-wrap: break-word;
 }
 
 .copy p + p {
@@ -490,6 +494,11 @@ body::before {
     background: #fff;
   }
 
+  body {
+    font-size: 10.5pt;
+    line-height: 1.55;
+  }
+
   .sheet {
     width: auto;
     margin: 0;
@@ -502,9 +511,66 @@ body::before {
     display: none;
   }
 
+  .masthead {
+    gap: 1rem 1.15rem;
+  }
+
+  .seal {
+    width: 64px;
+    height: 64px;
+  }
+
+  .masthead h1 {
+    font-size: 22pt;
+  }
+
+  .lede {
+    margin-top: 0.7rem;
+  }
+
+  .rule {
+    margin: 1.15rem 0 0.95rem;
+  }
+
+  .section-label {
+    margin-bottom: 0.85rem;
+  }
+
   .stint {
+    padding-bottom: 1.05rem;
+    break-inside: auto;
+  }
+
+  .stint:nth-child(n + 2) {
     break-inside: avoid;
-    padding-bottom: 1.6rem;
+  }
+
+  .work,
+  .outcome,
+  .aside,
+  .stint-head {
+    break-inside: avoid;
+  }
+
+  .works {
+    gap: 0.85rem;
+    margin-top: 0.85rem;
+  }
+
+  .honors {
+    margin-top: 0.45rem;
+  }
+
+  .kpis li {
+    font-size: 0.82rem;
+    padding: 0.1rem 0.5rem;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .now {
+    margin-top: 1.1rem;
+    padding-top: 0.8rem;
   }
 
   a {
@@ -512,13 +578,8 @@ body::before {
     text-decoration: none;
   }
 
-  .kpis li {
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
-
   @page {
     size: A4;
-    margin: 14mm 16mm;
+    margin: 12mm 14mm;
   }
 }
