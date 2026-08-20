@@ -1,15 +1,5 @@
 {
-  "generatedAt": "2026-08-19T01:58:40Z",
+  "generatedAt": "2026-08-20T01:57:16Z",
   "isBaselineRun": false,
-  "changes": [
-    {
-      "type": "added",
-      "key": "anthropics-skills/academy-guide",
-      "ecosystem": "anthropics-skills",
-      "slug": "academy-guide",
-      "displayName": "Academy Guide",
-      "summary": "生态新增 Skill：Academy Guide",
-      "detectedAt": "2026-08-19T01:59:47Z"
-    }
-  ]
+  "changes": []
 }

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-19T02:01:34Z",
+    "lastUpdated": "2026-08-20T02:00:27Z",
     "skillCount": 20,
-    "totalComments": 78,
+    "totalComments": 70,
     "sources": [
       "hacker-news",
       "github",
@@ -15,71 +15,27 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 6,
+      "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1100-qhongchen",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "qhongchen",
-          "date": "2026-04-09",
-          "text": "Brainstorming skill output is inconsistently collapsed into \"Worked for ...\" blocks in Codex app - [x] I searched existing issues and this is not a duplicate ## Environment | Field | Value | |-------|-------| | Superpowers version | v5.0.7 | | Harness (Claude Code, Cursor, etc.) | Codex app | | Harness version | 26.406.31014 (1395) | | Model | GPT-5.4 | | OS + shell | macos 26.3.1 | ## Is this a Superpowers issue or a platform issue? - [x] I confirmed this issue does not occur without Superpowers installed ## What happened? When using the Brainstorming skill in Codex app, the output is rendere",
-          "url": "https://github.com/obra/superpowers/issues/1100",
-          "score": 8,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-642-isaactoledano-blip",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Isaactoledano-blip",
-          "date": "2026-03-06",
-          "text": "Are some skills deliberalty not used ? — Skill Arborescence Review & Feedback First off, love the plugin — it's been a game changer for my workflow. I'm a young engineer working on a Rails migration and the structured brainstorming → planning → execution pipeline has genuinely improved how I build features. Thank you for that. That said, I spent some time mapping the full skill arborescence and I spotted a few things I wanted to flag. Not sure if they're intentional design choices or gaps so i want to point that i might be mistaken over this subject. 1) executing-plans is thinner than subagent",
-          "url": "https://github.com/obra/superpowers/issues/642",
-          "score": 3,
-          "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1295-carlosismael",
+          "id": "github-https-github-com-obra-superpowers-issues-1294-carlosismael",
           "source": "github",
           "sourceLabel": "GitHub",
           "author": "carlosismael",
           "date": "2026-04-28",
-          "text": "writing-plans: clarify that discovery sub-steps are not placeholders when concrete ## Summary The `superpowers:writing-plans` skill has a strict \"No Placeholders\" section that prohibits steps like *\"TBD\"*, *\"implement later\"*, *\"fill in details\"*, or *\"steps that describe what to do without showing how\"*. This is correct in spirit, but the wording can be read as also prohibiting **legitimate discovery sub-steps** — cases where the architectural decision is closed in the spec, but the exact location in the codebase wasn't explored during brainstorming because the ROI didn't justify it. ## Concr",
-          "url": "https://github.com/obra/superpowers/issues/1295",
-          "score": 3,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-923-squadgazzz",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "squadgazzz",
-          "date": "2026-03-24",
-          "text": "Brainstorming skill questions not forwarded to Telegram/Discord when using Claude Code Channels - [x] I searched existing issues and this is not a duplicate ## Environment | Field | Value | |-------|-------| | Superpowers version | latest (`/plugin update superpowers`) | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | v2.1.80+ (requires `--channels` support) | | Model | claude-opus-4-6 | | OS + shell | any | ## Is this a Superpowers issue or a platform issue? - [x] I confirmed this issue does not occur without Superpowers installed <!-- Without Superpowers, Claude rep",
-          "url": "https://github.com/obra/superpowers/issues/923",
+          "text": "brainstorming: enforce identifying a concrete successor when deferring scope ## Summary The `superpowers:brainstorming` skill currently allows the model to defer scope with phrases like *\"this will be done later when X flow comes through\"* or *\"someone will pick this up\"* without verifying that a concrete successor exists. This silently creates dropped work. ## Concrete case (real-world) During a brainstorm for a security-events table feature, the model proposed deferring three code-cabling tasks to *\"when their respective flows come through\"*. On verification (`gh issue list`), **no open issu",
+          "url": "https://github.com/obra/superpowers/issues/1294",
           "score": 2,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1795-marcoabreu",
+          "id": "github-https-github-com-obra-superpowers-issues-2157-ovijincom",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "marcoabreu",
-          "date": "2026-06-18",
-          "text": "Feature request: Support for nested subagents (Claude Code) - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? Certain tasks, like early brainstorming, systematic debugging as well as implementation and review would benefit from the [new nested subagents that have been added to Claude Code](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21172). This would allow the main context to stay pristine and only have actual outcomes without all the noise that an intermediary coordinator would have. For example, if an implementer enc",
-          "url": "https://github.com/obra/superpowers/issues/1795",
-          "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-969-mcorbe",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "mcorbe",
-          "date": "2026-03-28",
-          "text": "New skill: post-mortem / incident analysis for production failures ## Is your feature request related to a problem? Please describe. After a deployment failure, I used Superpowers skills (brainstorming, systematic-debugging) to analyze what went wrong. The analysis was shallow — it produced a flat list of surface-level observations rather than a structured root cause analysis. I had to manually guide the agent toward using a proper framework (Lean 4M: Machine, Material, Man, Manual) to get actionable, separated root causes. The current skill set covers the full development lifecycle (brainstor",
-          "url": "https://github.com/obra/superpowers/issues/969",
+          "author": "ovijincom",
+          "date": "2026-08-15",
+          "text": "[Bug]: Hermes tool mapping in v6.3.0 uses stale names and an unqualified plugin skill name - [x] I searched existing issues and this is not a duplicate. ## Environment | Field | Value | |-------|-------| | Superpowers version | v6.3.0 | | Superpowers commit | `b36e0829c6d0140e93cfef2ca599b1b07d4a7797` | | Harness | Hermes Agent desktop / native plugin | | Harness version | Hermes Agent v0.20.1 (2026.8.13), upstream `165c889e` | | Your model + version | OpenAI Codex / gpt-5.6-terra | | Relevant plugin | `superpowers v6.3.0`, enabled, source: user | | OS + shell | Windows 11, Git Bash / MSYS ter",
+          "url": "https://github.com/obra/superpowers/issues/2157",
           "score": 1,
           "sentiment": "negative"
         }
@@ -136,6 +92,17 @@
           "sentiment": "negative"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-1479-jiao-xxx",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Jiao-XXX",
+          "date": "2026-05-06",
+          "text": ".claude-plugin/plugin.json missing \"skills\" field — skills not discovered by Claude Code ## Summary The `.claude-plugin/plugin.json` is missing the `\"skills\"` field, so Claude Code cannot discover or register any of the 14 skills shipped with the plugin. The skills exist on disk at `skills/*/SKILL.md` but Claude Code doesn't know to look there. ## Steps to Reproduce 1. Install `superpowers@claude-plugins-official` on Claude Code 2.1.119 2. Start a new session or `/clear` 3. Try `/test-driven-development` → **\"Unknown command\"** 4. Try invoking via Skill tool → **\"Unknown skill: superpowers:tes",
+          "url": "https://github.com/obra/superpowers/issues/1479",
+          "score": 2,
+          "sentiment": "neutral"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2046-thatht137",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -145,17 +112,6 @@
           "url": "https://github.com/obra/superpowers/issues/2046",
           "score": 2,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2160-ray73864",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "ray73864",
-          "date": "2026-08-16",
-          "text": "OpenCode: Superpowers bootstrap is injected into task subagents, causing them to restart controller workflows ## Summary The OpenCode Superpowers plugin injects the complete `using-superpowers` bootstrap into task subagent sessions as well as the primary session. `using-superpowers` contains a `<SUBAGENT-STOP>` instruction telling a dispatched subagent to ignore the skill, but this relies on the model correctly recognising and prioritising that instruction. In practice this is not reliable. I have reproduced a worker subagent receiving an already-approved, atomic implementation task and then i",
-          "url": "https://github.com/obra/superpowers/issues/2160",
-          "score": 1,
-          "sentiment": "negative"
         }
       ]
     },
@@ -163,7 +119,7 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 6,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-642-isaactoledano-blip",
@@ -188,17 +144,6 @@
           "sentiment": "neutral"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "bbbbbbbbbbb114",
-          "date": "2026-05-31",
-          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
-          "url": "https://github.com/obra/superpowers/issues/1664",
-          "score": 3,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-923-squadgazzz",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -210,25 +155,25 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-971-mcorbe",
+          "id": "github-https-github-com-obra-superpowers-issues-1096-sznine",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "mcorbe",
-          "date": "2026-03-28",
-          "text": "Spec review UX in worktrees: relative paths + committed before review ## Summary When the brainstorming skill writes a spec in a worktree, two things make it hard for the user to actually review the file: 1. **The path is relative to the worktree**, but the user's IDE is open on the main repo 2. **The file is already committed**, so it doesn't appear in the IDE's changed files panel These compound: the user can't find the file by looking at changed files (it's committed), and can't navigate to it by path (the path doesn't resolve from the main repo root). ## Related - #574 — spec written outsi",
-          "url": "https://github.com/obra/superpowers/issues/971",
-          "score": 2,
+          "author": "SZnine",
+          "date": "2026-04-09",
+          "text": "Prevent developer agents from silently swallowing target-system responsibilities <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? <!-- Describe the problem from your own experience. What were you doing, what went wrong or was missing, and why did it matter? \"It would be cool if...\" is not a problem statement. -->In long-running implementation tasks, ",
+          "url": "https://github.com/obra/superpowers/issues/1096",
+          "score": 1,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1098-xiaomayi-ant",
+          "id": "github-https-github-com-obra-superpowers-issues-2178-lonewolf36",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "xiaomayi-ant",
-          "date": "2026-04-09",
-          "text": "brainstorming: make assumptions and unknowns explicit before spec handoff - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While reading and analyzing `superpowers:brainstorming`, I noticed the flow is strong on clarification, alternatives, and design approval, but it does not explicitly surface current assumptions or unresolved unknowns before the design is written into the spec. In practice, this makes it easier for speculative decisions made during brainstorming to harden into the written design and later implementation plan. ## Propose",
-          "url": "https://github.com/obra/superpowers/issues/1098",
-          "score": 2,
+          "author": "LoneWolf36",
+          "date": "2026-08-19",
+          "text": "`writing-plans` template teaches line-number citations, which go stale by construction ## Summary Three text defects in `skills/writing-plans/SKILL.md` cause plans to carry citations that are wrong by the time anyone executes them. The first is the serious one: the Task Structure template demonstrates line-range citations, and models copy the demonstrated form. In one multi-session feature I found **eleven** stale citations in a single plan, and the two worst pointed roughly 30 lines past the symbol they named into an unrelated request class. An agent editing by those line numbers would have m",
+          "url": "https://github.com/obra/superpowers/issues/2178",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -300,19 +245,8 @@
       "slug": "verification-before-completion",
       "ecosystem": "superpowers",
       "displayName": "Verification Before Completion",
-      "feedbackCount": 6,
+      "feedbackCount": 5,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jfiscman",
-          "date": "2026-05-19",
-          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
-          "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 24,
-          "sentiment": "positive"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-642-isaactoledano-blip",
           "source": "github",
@@ -374,7 +308,7 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1835-aiadan",
@@ -386,17 +320,6 @@
           "url": "https://github.com/obra/superpowers/issues/1835",
           "score": 4,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-642-isaactoledano-blip",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Isaactoledano-blip",
-          "date": "2026-03-06",
-          "text": "Are some skills deliberalty not used ? — Skill Arborescence Review & Feedback First off, love the plugin — it's been a game changer for my workflow. I'm a young engineer working on a Rails migration and the structured brainstorming → planning → execution pipeline has genuinely improved how I build features. Thank you for that. That said, I spent some time mapping the full skill arborescence and I spotted a few things I wanted to flag. Not sure if they're intentional design choices or gaps so i want to point that i might be mistaken over this subject. 1) executing-plans is thinner than subagent",
-          "url": "https://github.com/obra/superpowers/issues/642",
-          "score": 3,
-          "sentiment": "positive"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-846-victorrentea",
@@ -421,15 +344,15 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2050-conradstorz",
+          "id": "github-https-github-com-obra-superpowers-issues-2177-jfichtner",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "conradstorz",
-          "date": "2026-07-28",
-          "text": "subagent-driven-development: dispatched subagent committed to main instead of the worktree (isolation not enforced) ## Summary While executing an implementation plan with **subagent-driven-development** inside a git worktree created via the native `EnterWorktree` tool, one dispatched implementer subagent ran its `git add` / `git commit` against the **main checkout / `main` branch** instead of the isolated worktree branch. The worktree did not \"contain\" the subagent, and `main` was mutated with an out-of-context commit. The worktree existed precisely to isolate the work. That guarantee silently",
-          "url": "https://github.com/obra/superpowers/issues/2050",
-          "score": 1,
-          "sentiment": "neutral"
+          "author": "jfichtner",
+          "date": "2026-08-19",
+          "text": "Claude Code 2.1.233 removed TodoWrite/Task* on current models — four skills still instruct todo use - [x] I searched existing issues and this is not a duplicate Closest prior art is #1518 (\"TodoWrite tool broken in Claude Code — replaced by TaskCreate/TaskUpdate/TaskList\", closed 2026-07-13). This is a different, later change: the tools are now gated off by **model version**, not renamed. ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.3.0 (claude-plugins-official) | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | 2.1.235 | | Yo",
+          "url": "https://github.com/obra/superpowers/issues/2177",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -511,40 +434,18 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1812-gpitrella",
+          "id": "github-https-github-com-obra-superpowers-issues-1248-zhoujianhui",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "gpitrella",
-          "date": "2026-06-19",
-          "text": "[RFC] Persistent memory across Superpowers agents - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? When switching between agents or sessions, context doesn't travel with you. Project decisions, preferences, and important details need to be re-explained every time — across sessions and across tools (Claude, Cursor, Codex, Gemini). ## Proposed solution An optional MCP-based integration that makes context portable across all supported agents. Completely opt-in, zero impact on existing workflows. I've been experimenting with this approach and ",
-          "url": "https://github.com/obra/superpowers/issues/1812",
-          "score": 4,
+          "author": "zhoujianhui",
+          "date": "2026-04-22",
+          "text": "TDD-driven refactoring may degrade domain design (parameter pollution & helper leakage) ## Problem While using Superpowers with the TDD skill, I?ve observed a recurring pattern where improving testability leads to unintended degradation of domain design. Specifically, in order to make tests easier to write, the implementation sometimes evolves in ways that: 1. Modify method signatures to include additional parameters (e.g. injected dependencies) 2. Extract small pieces of internal logic into public methods These changes are not explicitly \"test-only code\", but they are often driven primarily b",
+          "url": "https://github.com/obra/superpowers/issues/1248",
+          "score": 3,
           "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-642-isaactoledano-blip",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Isaactoledano-blip",
-          "date": "2026-03-06",
-          "text": "Are some skills deliberalty not used ? — Skill Arborescence Review & Feedback First off, love the plugin — it's been a game changer for my workflow. I'm a young engineer working on a Rails migration and the structured brainstorming → planning → execution pipeline has genuinely improved how I build features. Thank you for that. That said, I spent some time mapping the full skill arborescence and I spotted a few things I wanted to flag. Not sure if they're intentional design choices or gaps so i want to point that i might be mistaken over this subject. 1) executing-plans is thinner than subagent",
-          "url": "https://github.com/obra/superpowers/issues/642",
-          "score": 3,
-          "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "bbbbbbbbbbb114",
-          "date": "2026-05-31",
-          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
-          "url": "https://github.com/obra/superpowers/issues/1664",
-          "score": 3,
-          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-897-sramji",
@@ -554,18 +455,29 @@
           "date": "2026-03-23",
           "text": "Skill idea: autonomous-chunk-execution - pattern for large cross-cutting tasks I've been using superpowers on a personal project and developed a pattern for breaking large multi-file work (code review remediation, migrations, refactors) into autonomous sequential chunks with shared tracking. The existing skills (`executing-plans`, `dispatching-parallel-agents`) don't quite cover this case — they're for single-session work, while this handles multi-session/multi-PR projects. The core insight is separating coordination from execution through three shared artifacts: 1. **YAML tracker on main** (w",
           "url": "https://github.com/obra/superpowers/issues/897",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2157-ovijincom",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ovijincom",
+          "date": "2026-08-15",
+          "text": "[Bug]: Hermes tool mapping in v6.3.0 uses stale names and an unqualified plugin skill name - [x] I searched existing issues and this is not a duplicate. ## Environment | Field | Value | |-------|-------| | Superpowers version | v6.3.0 | | Superpowers commit | `b36e0829c6d0140e93cfef2ca599b1b07d4a7797` | | Harness | Hermes Agent desktop / native plugin | | Harness version | Hermes Agent v0.20.1 (2026.8.13), upstream `165c889e` | | Your model + version | OpenAI Codex / gpt-5.6-terra | | Relevant plugin | `superpowers v6.3.0`, enabled, source: user | | OS + shell | Windows 11, Git Bash / MSYS ter",
+          "url": "https://github.com/obra/superpowers/issues/2157",
           "score": 1,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1754-noaft",
+          "id": "github-https-github-com-obra-superpowers-issues-2177-jfichtner",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "noaft",
-          "date": "2026-06-14",
-          "text": "verification-before-completion allows false success claims when provider change is not actually verified - [x] I searched existing issues and this is not a duplicate ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 5.1.0 / commit `6fd4507` | | Harness (Claude Code, Cursor, etc.) | Codex | | Harness version | codex-cli 0.42.0 | | Your model + version | GPT-5 / Codex | | All plugins installed | Superpowers | | OS + shell | Windows 10.0.22621, PowerShell 5.1.22621.4249 | ## Is this a Superpowers issue or a platform issue? - [x] I confirmed this issue does not ",
-          "url": "https://github.com/obra/superpowers/issues/1754",
-          "score": 1,
+          "author": "jfichtner",
+          "date": "2026-08-19",
+          "text": "Claude Code 2.1.233 removed TodoWrite/Task* on current models — four skills still instruct todo use - [x] I searched existing issues and this is not a duplicate Closest prior art is #1518 (\"TodoWrite tool broken in Claude Code — replaced by TaskCreate/TaskUpdate/TaskList\", closed 2026-07-13). This is a different, later change: the tools are now gated off by **model version**, not renamed. ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.3.0 (claude-plugins-official) | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | 2.1.235 | | Yo",
+          "url": "https://github.com/obra/superpowers/issues/2177",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
