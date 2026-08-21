@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-20T02:00:27Z",
+    "lastUpdated": "2026-08-21T02:09:29Z",
     "skillCount": 20,
-    "totalComments": 70,
+    "totalComments": 58,
     "sources": [
       "hacker-news",
       "github",
@@ -15,19 +15,8 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 2,
+      "feedbackCount": 1,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1294-carlosismael",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "carlosismael",
-          "date": "2026-04-28",
-          "text": "brainstorming: enforce identifying a concrete successor when deferring scope ## Summary The `superpowers:brainstorming` skill currently allows the model to defer scope with phrases like *\"this will be done later when X flow comes through\"* or *\"someone will pick this up\"* without verifying that a concrete successor exists. This silently creates dropped work. ## Concrete case (real-world) During a brainstorm for a security-events table feature, the model proposed deferring three code-cabling tasks to *\"when their respective flows come through\"*. On verification (`gh issue list`), **no open issu",
-          "url": "https://github.com/obra/superpowers/issues/1294",
-          "score": 2,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2157-ovijincom",
           "source": "github",
@@ -45,7 +34,7 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 6,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
@@ -57,17 +46,6 @@
           "url": "https://github.com/obra/superpowers/issues/1581",
           "score": 24,
           "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2146-kylekellogg",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "kylekellogg",
-          "date": "2026-08-13",
-          "text": "RED can pass for the wrong reason, and inverts on refactors **Repo:** obra/superpowers - **Skill:** `skills/test-driven-development/SKILL.md` - **Version seen:** 6.2.0 Two related gaps in `### Verify RED - Watch It Fail`. Both share a root: **RED is a proxy for the property that actually matters - that the test can distinguish correct from incorrect** - and in two common situations the proxy and the property come apart. In one the test goes RED without having that power; in the other it must not go RED at all. Filing as an issue rather than a PR because the second one argues an existing Red Fl",
-          "url": "https://github.com/obra/superpowers/issues/2146",
-          "score": 4,
-          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-642-isaactoledano-blip",
@@ -101,17 +79,6 @@
           "url": "https://github.com/obra/superpowers/issues/1479",
           "score": 2,
           "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2046-thatht137",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Thatht137",
-          "date": "2026-07-27",
-          "text": "writing-plans can mistake structural RED for behavior-test evidence # Bug report: writing-plans can treat an import error as proof of a behavior test - [x] I searched existing open and closed issues and pull requests. Related: #711, #853, and #1576. None addresses the distinction between structural RED evidence and a behavior assertion actually rejecting a wrong result. ## Environment | Field | Value | |-------|-------| | Superpowers version | 6.2.0, commit `3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9` | | Harness | OpenAI Codex CLI | | Harness version | `codex-cli 0.145.0` | | Model | OpenAI Cod",
-          "url": "https://github.com/obra/superpowers/issues/2046",
-          "score": 2,
-          "sentiment": "negative"
         }
       ]
     },
@@ -119,41 +86,8 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 5,
+      "feedbackCount": 2,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-642-isaactoledano-blip",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Isaactoledano-blip",
-          "date": "2026-03-06",
-          "text": "Are some skills deliberalty not used ? — Skill Arborescence Review & Feedback First off, love the plugin — it's been a game changer for my workflow. I'm a young engineer working on a Rails migration and the structured brainstorming → planning → execution pipeline has genuinely improved how I build features. Thank you for that. That said, I spent some time mapping the full skill arborescence and I spotted a few things I wanted to flag. Not sure if they're intentional design choices or gaps so i want to point that i might be mistaken over this subject. 1) executing-plans is thinner than subagent",
-          "url": "https://github.com/obra/superpowers/issues/642",
-          "score": 3,
-          "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1295-carlosismael",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "carlosismael",
-          "date": "2026-04-28",
-          "text": "writing-plans: clarify that discovery sub-steps are not placeholders when concrete ## Summary The `superpowers:writing-plans` skill has a strict \"No Placeholders\" section that prohibits steps like *\"TBD\"*, *\"implement later\"*, *\"fill in details\"*, or *\"steps that describe what to do without showing how\"*. This is correct in spirit, but the wording can be read as also prohibiting **legitimate discovery sub-steps** — cases where the architectural decision is closed in the spec, but the exact location in the codebase wasn't explored during brainstorming because the ROI didn't justify it. ## Concr",
-          "url": "https://github.com/obra/superpowers/issues/1295",
-          "score": 3,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-923-squadgazzz",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "squadgazzz",
-          "date": "2026-03-24",
-          "text": "Brainstorming skill questions not forwarded to Telegram/Discord when using Claude Code Channels - [x] I searched existing issues and this is not a duplicate ## Environment | Field | Value | |-------|-------| | Superpowers version | latest (`/plugin update superpowers`) | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | v2.1.80+ (requires `--channels` support) | | Model | claude-opus-4-6 | | OS + shell | any | ## Is this a Superpowers issue or a platform issue? - [x] I confirmed this issue does not occur without Superpowers installed <!-- Without Superpowers, Claude rep",
-          "url": "https://github.com/obra/superpowers/issues/923",
-          "score": 2,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1096-sznine",
           "source": "github",
@@ -245,7 +179,7 @@
       "slug": "verification-before-completion",
       "ecosystem": "superpowers",
       "displayName": "Verification Before Completion",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-642-isaactoledano-blip",
@@ -267,17 +201,6 @@
           "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
           "url": "https://github.com/obra/superpowers/issues/1664",
           "score": 3,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1783-omegalens",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "omegalens",
-          "date": "2026-06-17",
-          "text": "Proposal: a Decision Ledger + Design-Fidelity Gate so UI decisions survive the brainstorm → plan → impl → verify pipeline ## The failure that motivated this I ran a real multi-phase UI build through the full superpowers workflow (brainstorming → writing-plans → subagent-driven-development). It passed **every** mechanical gate — `tsc` clean, unit tests green, build succeeded, dependency graph fine, every reviewer ✅ — and still shipped UI that flatly contradicted what we'd decided during brainstorming. Four concrete misses, all green the whole way: 1. **Decided control shipped as the rejected on",
-          "url": "https://github.com/obra/superpowers/issues/1783",
-          "score": 2,
           "sentiment": "negative"
         },
         {
@@ -308,41 +231,8 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 4,
+      "feedbackCount": 1,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1835-aiadan",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Aiadan",
-          "date": "2026-06-23",
-          "text": "Claude subagent-driven-development biases agents toward inline Agent dispatch over Workflow fan-outs --- - [x] I searched existing issues and this is not a duplicate ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.0.3 | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | 2.1.186 | | Your model + version | Claude Opus 4.8 (`claude-opus-4-8[1m]`) | | All plugins installed | superpowers, mempalace, webwright, claude-code-setup, claude-md-management, code-simplifier, feature-dev, frontend-design, playwright, session-report, skill-creato",
-          "url": "https://github.com/obra/superpowers/issues/1835",
-          "score": 4,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-846-victorrentea",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "victorrentea",
-          "date": "2026-03-20",
-          "text": "Allow project memory override for default implementation strategy (sub-agent vs inline) - [x] I searched existing open and closed issues and this has not been proposed before ## What problem does this solve? When starting an implementation task, Superpowers prompts the user to choose between implementation strategies (e.g., option 1: inline implementation vs option 2: sub-agent-based implementation). For users who consistently prefer sub-agent-driven development, this becomes repetitive — every time, I have to manually select the sub-agent option. There's currently no way to store this prefere",
-          "url": "https://github.com/obra/superpowers/issues/846",
-          "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1128-bryancostanich",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "bryancostanich",
-          "date": "2026-04-11",
-          "text": "RFC: Context provider convention for domain-specific sub-agent protocols ## Problem When superpowers dispatches sub-agents (via subagent-driven-development or dispatching-parallel-agents), there's no mechanism for domain-specific plugins to inject protocols into sub-agent prompts. Sub-agents start with zero domain context and will abandon discipline that the main agent follows. Real example: a hardware design plugin enforces \"compute analytically before running SPICE simulation\" on the main agent, but sub-agents launched by superpowers never see these rules and immediately start brute-forcing ",
-          "url": "https://github.com/obra/superpowers/issues/1128",
-          "score": 1,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2177-jfichtner",
           "source": "github",
@@ -360,7 +250,7 @@
       "slug": "requesting-code-review",
       "ecosystem": "superpowers",
       "displayName": "Requesting Code Review",
-      "feedbackCount": 6,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
@@ -416,17 +306,6 @@
           "url": "https://github.com/obra/superpowers/issues/1151",
           "score": 1,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2118-wan-huiyan",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "wan-huiyan",
-          "date": "2026-08-10",
-          "text": "requesting-code-review: the \"# or origin/main\" BASE_SHA feeds a moving ref into a two-dot diff, so reviewers are shown deletions the branch never made - [x] I searched existing issues and this is not a duplicate <sub>Searched open and closed for `merge-base`, `BASE_SHA`, `BASE_SHA diff`, `two-dot`, `code-reviewer diff origin/main`, `reviewer deletions`. Nearest hits (#1481, #1538, #436) are about review *scope* and uncommitted changes, not diff range semantics.</sub> ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.2.0 (latest release; also present on `ma",
-          "url": "https://github.com/obra/superpowers/issues/2118",
-          "score": 1,
-          "sentiment": "negative"
         }
       ]
     },
@@ -434,28 +313,17 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1248-zhoujianhui",
+          "id": "github-https-github-com-obra-superpowers-issues-645-jottr",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "zhoujianhui",
-          "date": "2026-04-22",
-          "text": "TDD-driven refactoring may degrade domain design (parameter pollution & helper leakage) ## Problem While using Superpowers with the TDD skill, I?ve observed a recurring pattern where improving testability leads to unintended degradation of domain design. Specifically, in order to make tests easier to write, the implementation sometimes evolves in ways that: 1. Modify method signatures to include additional parameters (e.g. injected dependencies) 2. Extract small pieces of internal logic into public methods These changes are not explicitly \"test-only code\", but they are often driven primarily b",
-          "url": "https://github.com/obra/superpowers/issues/1248",
+          "author": "jottr",
+          "date": "2026-03-06",
+          "text": "Feature request: opt-in mode that disables auto-triggering # Feature request: opt-in mode that disables auto-triggering ## Problem Installing Superpowers changes Claude Code's default behavior globally. The SessionStart hook injects the `using-superpowers` meta-skill into every session, mandating skill checks before any response. There's no way to keep skills available via slash commands while leaving Claude's default behavior intact. Users who want to evaluate Superpowers incrementally — or only use it for specific workflows — must manually edit `session-start` after each install/update. ## P",
+          "url": "https://github.com/obra/superpowers/issues/645",
           "score": 3,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-897-sramji",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "sramji",
-          "date": "2026-03-23",
-          "text": "Skill idea: autonomous-chunk-execution - pattern for large cross-cutting tasks I've been using superpowers on a personal project and developed a pattern for breaking large multi-file work (code review remediation, migrations, refactors) into autonomous sequential chunks with shared tracking. The existing skills (`executing-plans`, `dispatching-parallel-agents`) don't quite cover this case — they're for single-session work, while this handles multi-session/multi-PR projects. The core insight is separating coordination from execution through three shared artifacts: 1. **YAML tracker on main** (w",
-          "url": "https://github.com/obra/superpowers/issues/897",
-          "score": 2,
           "sentiment": "negative"
         },
         {
