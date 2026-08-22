@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-21T02:09:29Z",
+    "lastUpdated": "2026-08-22T01:58:20Z",
     "skillCount": 20,
-    "totalComments": 58,
+    "totalComments": 52,
     "sources": [
       "hacker-news",
       "github",
@@ -15,37 +15,25 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 1,
-      "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2157-ovijincom",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "ovijincom",
-          "date": "2026-08-15",
-          "text": "[Bug]: Hermes tool mapping in v6.3.0 uses stale names and an unqualified plugin skill name - [x] I searched existing issues and this is not a duplicate. ## Environment | Field | Value | |-------|-------| | Superpowers version | v6.3.0 | | Superpowers commit | `b36e0829c6d0140e93cfef2ca599b1b07d4a7797` | | Harness | Hermes Agent desktop / native plugin | | Harness version | Hermes Agent v0.20.1 (2026.8.13), upstream `165c889e` | | Your model + version | OpenAI Codex / gpt-5.6-terra | | Relevant plugin | `superpowers v6.3.0`, enabled, source: user | | OS + shell | Windows 11, Git Bash / MSYS ter",
-          "url": "https://github.com/obra/superpowers/issues/2157",
-          "score": 1,
-          "sentiment": "negative"
-        }
-      ]
+      "feedbackCount": 0,
+      "comments": []
     },
     "superpowers/test-driven-development": {
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
+          "id": "github-https-github-com-obra-superpowers-issues-895-qdon314",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "jfiscman",
-          "date": "2026-05-19",
-          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
-          "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 24,
-          "sentiment": "positive"
+          "author": "qdon314",
+          "date": "2026-03-23",
+          "text": "writing-plans: plans over-specify implementation, leaving no room for executor judgment - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? When using `writing-plans` to plan a multi-task implementation, the generated plan contained complete implementation code — full function bodies, 70-line test files, exact shell commands, and step-by-step TDD sequences per task. The executor (`executing-plans` / `subagent-driven-development`) had no decisions to make — it was copy-pasting code from the plan rather than engineering a solution. This caused ",
+          "url": "https://github.com/obra/superpowers/issues/895",
+          "score": 19,
+          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-642-isaactoledano-blip",
@@ -57,17 +45,6 @@
           "url": "https://github.com/obra/superpowers/issues/642",
           "score": 3,
           "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "bbbbbbbbbbb114",
-          "date": "2026-05-31",
-          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
-          "url": "https://github.com/obra/superpowers/issues/1664",
-          "score": 3,
-          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1479-jiao-xxx",
@@ -86,28 +63,17 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 2,
+      "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1096-sznine",
+          "id": "github-https-github-com-obra-superpowers-issues-895-qdon314",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "SZnine",
-          "date": "2026-04-09",
-          "text": "Prevent developer agents from silently swallowing target-system responsibilities <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? <!-- Describe the problem from your own experience. What were you doing, what went wrong or was missing, and why did it matter? \"It would be cool if...\" is not a problem statement. -->In long-running implementation tasks, ",
-          "url": "https://github.com/obra/superpowers/issues/1096",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2178-lonewolf36",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "LoneWolf36",
-          "date": "2026-08-19",
-          "text": "`writing-plans` template teaches line-number citations, which go stale by construction ## Summary Three text defects in `skills/writing-plans/SKILL.md` cause plans to carry citations that are wrong by the time anyone executes them. The first is the serious one: the Task Structure template demonstrates line-range citations, and models copy the demonstrated form. In one multi-session feature I found **eleven** stale citations in a single plan, and the two worst pointed roughly 30 lines past the symbol they named into an unrelated request class. An agent editing by those line numbers would have m",
-          "url": "https://github.com/obra/superpowers/issues/2178",
-          "score": 0,
+          "author": "qdon314",
+          "date": "2026-03-23",
+          "text": "writing-plans: plans over-specify implementation, leaving no room for executor judgment - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? When using `writing-plans` to plan a multi-task implementation, the generated plan contained complete implementation code — full function bodies, 70-line test files, exact shell commands, and step-by-step TDD sequences per task. The executor (`executing-plans` / `subagent-driven-development`) had no decisions to make — it was copy-pasting code from the plan rather than engineering a solution. This caused ",
+          "url": "https://github.com/obra/superpowers/issues/895",
+          "score": 19,
           "sentiment": "negative"
         }
       ]
@@ -116,7 +82,7 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
@@ -128,17 +94,6 @@
           "url": "https://github.com/obra/superpowers/issues/1581",
           "score": 24,
           "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2145-kylekellogg",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "kylekellogg",
-          "date": "2026-08-13",
-          "text": "Four additions: when the error names the wrong thing, and when the fix is wider than the symptom **Repo:** obra/superpowers - **Skill:** `skills/systematic-debugging/SKILL.md` - **Version seen:** 6.2.0 Four proposed additions, all additive - no existing guidance is contradicted, so this could go straight to a PR if the wording lands. They fall into two pairs. **Pair A (Phase 1)** - the error message is accurate but points at the wrong thing. The skill already opens with \"Read Error Messages Carefully... they often contain the exact solution.\" These are the two cases where reading carefully mea",
-          "url": "https://github.com/obra/superpowers/issues/2145",
-          "score": 4,
-          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
@@ -179,7 +134,7 @@
       "slug": "verification-before-completion",
       "ecosystem": "superpowers",
       "displayName": "Verification Before Completion",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-642-isaactoledano-blip",
@@ -191,17 +146,6 @@
           "url": "https://github.com/obra/superpowers/issues/642",
           "score": 3,
           "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "bbbbbbbbbbb114",
-          "date": "2026-05-31",
-          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
-          "url": "https://github.com/obra/superpowers/issues/1664",
-          "score": 3,
-          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-969-mcorbe",
@@ -231,18 +175,29 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2177-jfichtner",
+          "id": "github-https-github-com-obra-superpowers-issues-895-qdon314",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "jfichtner",
-          "date": "2026-08-19",
-          "text": "Claude Code 2.1.233 removed TodoWrite/Task* on current models — four skills still instruct todo use - [x] I searched existing issues and this is not a duplicate Closest prior art is #1518 (\"TodoWrite tool broken in Claude Code — replaced by TaskCreate/TaskUpdate/TaskList\", closed 2026-07-13). This is a different, later change: the tools are now gated off by **model version**, not renamed. ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.3.0 (claude-plugins-official) | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | 2.1.235 | | Yo",
-          "url": "https://github.com/obra/superpowers/issues/2177",
-          "score": 0,
+          "author": "qdon314",
+          "date": "2026-03-23",
+          "text": "writing-plans: plans over-specify implementation, leaving no room for executor judgment - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? When using `writing-plans` to plan a multi-task implementation, the generated plan contained complete implementation code — full function bodies, 70-line test files, exact shell commands, and step-by-step TDD sequences per task. The executor (`executing-plans` / `subagent-driven-development`) had no decisions to make — it was copy-pasting code from the plan rather than engineering a solution. This caused ",
+          "url": "https://github.com/obra/superpowers/issues/895",
+          "score": 19,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2040-michaelholcomb-creator",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "michaelholcomb-creator",
+          "date": "2026-07-25",
+          "text": "Codex marketplace package drops executable bits on SDD helper scripts ## Summary Superpowers 6.2.0 installed through the Codex marketplace cache arrived with these helper files non-executable (observed mode `0644`): - `skills/subagent-driven-development/scripts/sdd-workspace` - `skills/subagent-driven-development/scripts/task-brief` - `skills/subagent-driven-development/scripts/review-package` Direct invocation fails with `Permission denied`. Invoking only `task-brief` or `review-package` through Bash does not fully recover the default-output path because both scripts directly execute their si",
+          "url": "https://github.com/obra/superpowers/issues/2040",
+          "score": 1,
+          "sentiment": "neutral"
         }
       ]
     },
@@ -250,19 +205,8 @@
       "slug": "requesting-code-review",
       "ecosystem": "superpowers",
       "displayName": "Requesting Code Review",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jfiscman",
-          "date": "2026-05-19",
-          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
-          "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 24,
-          "sentiment": "positive"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1927-gwokhou",
           "source": "github",
@@ -313,7 +257,7 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-645-jottr",
@@ -324,17 +268,6 @@
           "text": "Feature request: opt-in mode that disables auto-triggering # Feature request: opt-in mode that disables auto-triggering ## Problem Installing Superpowers changes Claude Code's default behavior globally. The SessionStart hook injects the `using-superpowers` meta-skill into every session, mandating skill checks before any response. There's no way to keep skills available via slash commands while leaving Claude's default behavior intact. Users who want to evaluate Superpowers incrementally — or only use it for specific workflows — must manually edit `session-start` after each install/update. ## P",
           "url": "https://github.com/obra/superpowers/issues/645",
           "score": 3,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2157-ovijincom",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "ovijincom",
-          "date": "2026-08-15",
-          "text": "[Bug]: Hermes tool mapping in v6.3.0 uses stale names and an unqualified plugin skill name - [x] I searched existing issues and this is not a duplicate. ## Environment | Field | Value | |-------|-------| | Superpowers version | v6.3.0 | | Superpowers commit | `b36e0829c6d0140e93cfef2ca599b1b07d4a7797` | | Harness | Hermes Agent desktop / native plugin | | Harness version | Hermes Agent v0.20.1 (2026.8.13), upstream `165c889e` | | Your model + version | OpenAI Codex / gpt-5.6-terra | | Relevant plugin | `superpowers v6.3.0`, enabled, source: user | | OS + shell | Windows 11, Git Bash / MSYS ter",
-          "url": "https://github.com/obra/superpowers/issues/2157",
-          "score": 1,
           "sentiment": "negative"
         },
         {
