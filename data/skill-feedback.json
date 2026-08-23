@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-22T01:58:20Z",
+    "lastUpdated": "2026-08-23T02:11:34Z",
     "skillCount": 20,
-    "totalComments": 52,
+    "totalComments": 53,
     "sources": [
       "hacker-news",
       "github",
@@ -15,14 +15,26 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 0,
-      "comments": []
+      "feedbackCount": 1,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2157-ovijincom",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ovijincom",
+          "date": "2026-08-15",
+          "text": "[Bug]: Hermes tool mapping in v6.3.0 uses stale names and an unqualified plugin skill name - [x] I searched existing issues and this is not a duplicate. ## Environment | Field | Value | |-------|-------| | Superpowers version | v6.3.0 | | Superpowers commit | `b36e0829c6d0140e93cfef2ca599b1b07d4a7797` | | Harness | Hermes Agent desktop / native plugin | | Harness version | Hermes Agent v0.20.1 (2026.8.13), upstream `165c889e` | | Your model + version | OpenAI Codex / gpt-5.6-terra | | Relevant plugin | `superpowers v6.3.0`, enabled, source: user | | OS + shell | Windows 11, Git Bash / MSYS ter",
+          "url": "https://github.com/obra/superpowers/issues/2157",
+          "score": 1,
+          "sentiment": "negative"
+        }
+      ]
     },
     "superpowers/test-driven-development": {
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-895-qdon314",
@@ -36,26 +48,15 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-642-isaactoledano-blip",
+          "id": "github-https-github-com-obra-superpowers-issues-2146-kylekellogg",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "Isaactoledano-blip",
-          "date": "2026-03-06",
-          "text": "Are some skills deliberalty not used ? — Skill Arborescence Review & Feedback First off, love the plugin — it's been a game changer for my workflow. I'm a young engineer working on a Rails migration and the structured brainstorming → planning → execution pipeline has genuinely improved how I build features. Thank you for that. That said, I spent some time mapping the full skill arborescence and I spotted a few things I wanted to flag. Not sure if they're intentional design choices or gaps so i want to point that i might be mistaken over this subject. 1) executing-plans is thinner than subagent",
-          "url": "https://github.com/obra/superpowers/issues/642",
-          "score": 3,
-          "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1479-jiao-xxx",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Jiao-XXX",
-          "date": "2026-05-06",
-          "text": ".claude-plugin/plugin.json missing \"skills\" field — skills not discovered by Claude Code ## Summary The `.claude-plugin/plugin.json` is missing the `\"skills\"` field, so Claude Code cannot discover or register any of the 14 skills shipped with the plugin. The skills exist on disk at `skills/*/SKILL.md` but Claude Code doesn't know to look there. ## Steps to Reproduce 1. Install `superpowers@claude-plugins-official` on Claude Code 2.1.119 2. Start a new session or `/clear` 3. Try `/test-driven-development` → **\"Unknown command\"** 4. Try invoking via Skill tool → **\"Unknown skill: superpowers:tes",
-          "url": "https://github.com/obra/superpowers/issues/1479",
-          "score": 2,
-          "sentiment": "neutral"
+          "author": "kylekellogg",
+          "date": "2026-08-13",
+          "text": "RED can pass for the wrong reason, and inverts on refactors **Repo:** obra/superpowers - **Skill:** `skills/test-driven-development/SKILL.md` - **Version seen:** 6.2.0 Two related gaps in `### Verify RED - Watch It Fail`. Both share a root: **RED is a proxy for the property that actually matters - that the test can distinguish correct from incorrect** - and in two common situations the proxy and the property come apart. In one the test goes RED without having that power; in the other it must not go RED at all. Filing as an issue rather than a PR because the second one argues an existing Red Fl",
+          "url": "https://github.com/obra/superpowers/issues/2146",
+          "score": 5,
+          "sentiment": "negative"
         }
       ]
     },
@@ -205,19 +206,8 @@
       "slug": "requesting-code-review",
       "ecosystem": "superpowers",
       "displayName": "Requesting Code Review",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1927-gwokhou",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "gwokhou",
-          "date": "2026-07-05",
-          "text": "Codex: close completed subagents after results are consumed I searched existing issues and PRs and did not find a direct duplicate. ## Environment | Field | Value | | --- | --- | | Superpowers version | 5.1.3 (`~/.codex/plugins/cache/openai-curated/superpowers/d6169bef`) | | Harness | Codex CLI / Codex plugin environment | | Harness version | `codex-cli 0.142.5` (`@openai/codex@0.142.5`, linux-x64 package `0.142.5-linux-x64`) | | Model | GPT-5.5 in the observed session | | OS / shell | Linux x86_64 + bash | | Multi-agent surface observed | `multi_agent_v1.spawn_agent`, `multi_agent_v1.wait_age",
-          "url": "https://github.com/obra/superpowers/issues/1927",
-          "score": 4,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-642-isaactoledano-blip",
           "source": "github",
@@ -260,24 +250,24 @@
       "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-645-jottr",
+          "id": "github-https-github-com-obra-superpowers-issues-2157-ovijincom",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "jottr",
-          "date": "2026-03-06",
-          "text": "Feature request: opt-in mode that disables auto-triggering # Feature request: opt-in mode that disables auto-triggering ## Problem Installing Superpowers changes Claude Code's default behavior globally. The SessionStart hook injects the `using-superpowers` meta-skill into every session, mandating skill checks before any response. There's no way to keep skills available via slash commands while leaving Claude's default behavior intact. Users who want to evaluate Superpowers incrementally — or only use it for specific workflows — must manually edit `session-start` after each install/update. ## P",
-          "url": "https://github.com/obra/superpowers/issues/645",
-          "score": 3,
+          "author": "ovijincom",
+          "date": "2026-08-15",
+          "text": "[Bug]: Hermes tool mapping in v6.3.0 uses stale names and an unqualified plugin skill name - [x] I searched existing issues and this is not a duplicate. ## Environment | Field | Value | |-------|-------| | Superpowers version | v6.3.0 | | Superpowers commit | `b36e0829c6d0140e93cfef2ca599b1b07d4a7797` | | Harness | Hermes Agent desktop / native plugin | | Harness version | Hermes Agent v0.20.1 (2026.8.13), upstream `165c889e` | | Your model + version | OpenAI Codex / gpt-5.6-terra | | Relevant plugin | `superpowers v6.3.0`, enabled, source: user | | OS + shell | Windows 11, Git Bash / MSYS ter",
+          "url": "https://github.com/obra/superpowers/issues/2157",
+          "score": 1,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2177-jfichtner",
+          "id": "github-https-github-com-obra-superpowers-issues-2194-tugrulguner",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "jfichtner",
-          "date": "2026-08-19",
-          "text": "Claude Code 2.1.233 removed TodoWrite/Task* on current models — four skills still instruct todo use - [x] I searched existing issues and this is not a duplicate Closest prior art is #1518 (\"TodoWrite tool broken in Claude Code — replaced by TaskCreate/TaskUpdate/TaskList\", closed 2026-07-13). This is a different, later change: the tools are now gated off by **model version**, not renamed. ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.3.0 (claude-plugins-official) | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | 2.1.235 | | Yo",
-          "url": "https://github.com/obra/superpowers/issues/2177",
+          "author": "tugrulguner",
+          "date": "2026-08-22",
+          "text": "[Feature]: Add Amazon Q Developer CLI harness support ## Summary Add support for **Amazon Q Developer CLI** (`q`) as a harness. It is one of the largest actively-developed agent CLIs with no Superpowers presence: zero issues, PRs, or mentions in this repository (I searched open and closed). It's AWS-backed, free-tier, cross-platform, and — importantly for this repo's integration bar — it has a native mechanism that satisfies the \"bootstrap at session start, no per-session opt-in\" requirement: - **Custom agents** (`.amazonq/cli-agents/<name>.json`, schema `agent-v1.json`) can bundle `resources`",
+          "url": "https://github.com/obra/superpowers/issues/2194",
           "score": 0,
           "sentiment": "negative"
         }
@@ -533,7 +523,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 4,
+      "feedbackCount": 6,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1169-tazmad",
@@ -578,6 +568,28 @@
           "url": "https://github.com/anthropics/skills/issues/1304",
           "score": 1,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1559-ariqbailey",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ariqbailey",
+          "date": "2026-08-13",
+          "text": "skill-creator run_eval.py reports 0% trigger rate for working descriptions `skills/skill-creator/scripts/run_eval.py` reports a 0% trigger rate for descriptions that do trigger. Three separate causes. With all three addressed, a description that scored 0% scores 75–100%. ### 1. A non-skill first tool call ends the run `run_eval.py:137-141` ```python if tool_name in (\"Skill\", \"Read\"): pending_tool_name = tool_name accumulated_json = \"\" else: return False ``` With `--include-partial-messages`, the model commonly opens with a `Bash` orientation call (`git status`, `ls`) before invoking a skill. T",
+          "url": "https://github.com/anthropics/skills/issues/1559",
+          "score": 1,
+          "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1631-truongsontung",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "truongsontung",
+          "date": "2026-08-22",
+          "text": "Path traversal via unsanitized skill_name in run_eval.py ## Summary The `run_eval.py` script uses `skill_name` from SKILL.md frontmatter directly in file path construction without sanitization, allowing path traversal. ## Vulnerability **Location:** `skills/skill-creator/scripts/run_eval.py:54` ```python project_commands_dir = Path('~/.claude/commands') clean_name = re.sub(r'[^a-z0-9-]', '', skill_name.lower()) command_file = project_commands_dir / f{clean_name}.md ``` The `clean_name` only strips non- characters but doesn't prevent sequences. An attacker providing a SKILL.md with would write ",
+          "url": "https://github.com/anthropics/skills/issues/1631",
+          "score": 0,
+          "sentiment": "positive"
         }
       ]
     },

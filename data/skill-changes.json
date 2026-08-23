@@ -1,37 +1,5 @@
 {
-  "generatedAt": "2026-08-22T01:56:17Z",
+  "generatedAt": "2026-08-23T02:08:09Z",
   "isBaselineRun": false,
-  "changes": [
-    {
-      "type": "added",
-      "key": "awesome-copilot/repo-standardizer",
-      "ecosystem": "awesome-copilot",
-      "slug": "repo-standardizer",
-      "displayName": "Repo Standardizer",
-      "summary": "生态新增 Skill：Repo Standardizer",
-      "detectedAt": "2026-08-22T01:56:55Z"
-    },
-    {
-      "type": "added",
-      "key": "awesome-copilot/resx-source-generator-migration",
-      "ecosystem": "awesome-copilot",
-      "slug": "resx-source-generator-migration",
-      "displayName": "Resx Source Generator Migration",
-      "summary": "生态新增 Skill：Resx Source Generator Migration",
-      "detectedAt": "2026-08-22T01:56:55Z"
-    },
-    {
-      "type": "updated",
-      "key": "anthropics-skills/claude-api",
-      "ecosystem": "anthropics-skills",
-      "slug": "claude-api",
-      "displayName": "Claude Api",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/claude-api",
-      "detectedAt": "2026-08-22T01:56:55Z"
-    }
-  ]
+  "changes": []
 }
