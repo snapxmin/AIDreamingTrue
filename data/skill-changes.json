@@ -1,33 +1,5 @@
 {
-  "generatedAt": "2026-08-24T02:05:54Z",
+  "generatedAt": "2026-08-24T02:17:52Z",
   "isBaselineRun": false,
-  "changes": [
-    {
-      "type": "updated",
-      "key": "awesome-copilot/anti-ui-slop",
-      "ecosystem": "awesome-copilot",
-      "slug": "anti-ui-slop",
-      "displayName": "Anti Ui Slop",
-      "changedFields": [
-        "content",
-        "description"
-      ],
-      "summary": "description 更新：Stop coding agents from shipping generic UI. Use UIZZE''s 800,000+ real web and iOS screens to build…",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/anti-ui-slop",
-      "detectedAt": "2026-08-24T02:07:22Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/excalidraw-diagram-generator",
-      "ecosystem": "awesome-copilot",
-      "slug": "excalidraw-diagram-generator",
-      "displayName": "Excalidraw Diagram Generator",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/excalidraw-diagram-generator",
-      "detectedAt": "2026-08-24T02:07:22Z"
-    }
-  ]
+  "changes": []
 }
