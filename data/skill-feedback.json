@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-23T02:11:34Z",
+    "lastUpdated": "2026-08-24T02:08:55Z",
     "skillCount": 20,
-    "totalComments": 53,
+    "totalComments": 60,
     "sources": [
       "hacker-news",
       "github",
@@ -15,8 +15,41 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 1,
+      "feedbackCount": 5,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-892-cheapsteak",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "cheapsteak",
+          "date": "2026-03-23",
+          "text": "Ability to opt-out of visual companion across sessions 🙏 <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? <!-- Describe the problem from your own experience. What were you doing, what went wrong or was missing, and why did it matter? \"It would be cool if...\" is not a problem statement. --> I would like to be able to permanently opt-out of the visual ",
+          "url": "https://github.com/obra/superpowers/issues/892",
+          "score": 7,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1222-younes-io",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "younes-io",
+          "date": "2026-04-19",
+          "text": "Pi agent with gpt-5.4 high - brainstorming skill is triggered all the time I like this skill but I think it is too aggressive in the sense that it gets triggered (almost) all the time, even when the use case doesn't require brainstorming. I asked Pi to apply some changes to a file, and it triggered the `brainstorming` skill. I would like to suggest to make it triggered manually, what do you think, @obra ? https://github.com/obra/superpowers/blob/b55764852ac78870e65c6565fb585b6cd8b3c5c9/skills/brainstorming/SKILL.md?plain=1#L2-L3 Thank you by the way for all the great work",
+          "url": "https://github.com/obra/superpowers/issues/1222",
+          "score": 7,
+          "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2000-chentingtodo",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ChenTingToDo",
+          "date": "2026-07-17",
+          "text": "Feature request: add an opt-in/manual-only brainstorming profile ## Is your feature request related to a problem? Please describe. The current `brainstorming` skill is intentionally described as mandatory before any feature, bug fix, UI change, or behavior modification. That is useful for rough, high-uncertainty product ideas, but it creates avoidable friction when the user has already provided a complete PRD or precise acceptance criteria. I use Superpowers through the Codex app with GPT-5.6 and installed the `brainstorming` skill without the rest of the Superpowers pipeline. In real local us",
+          "url": "https://github.com/obra/superpowers/issues/2000",
+          "score": 3,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2157-ovijincom",
           "source": "github",
@@ -26,6 +59,17 @@
           "text": "[Bug]: Hermes tool mapping in v6.3.0 uses stale names and an unqualified plugin skill name - [x] I searched existing issues and this is not a duplicate. ## Environment | Field | Value | |-------|-------| | Superpowers version | v6.3.0 | | Superpowers commit | `b36e0829c6d0140e93cfef2ca599b1b07d4a7797` | | Harness | Hermes Agent desktop / native plugin | | Harness version | Hermes Agent v0.20.1 (2026.8.13), upstream `165c889e` | | Your model + version | OpenAI Codex / gpt-5.6-terra | | Relevant plugin | `superpowers v6.3.0`, enabled, source: user | | OS + shell | Windows 11, Git Bash / MSYS ter",
           "url": "https://github.com/obra/superpowers/issues/2157",
           "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2197-swift22",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Swift22",
+          "date": "2026-08-23",
+          "text": "OpenCode: bootstrap not injected in non-interactive `opencode run` sessions (skills still register) ## Environment - superpowers v6.3.0 (also reproduced on v6.0.3), installed as an OpenCode plugin via `superpowers@git+https://github.com/obra/superpowers.git` - opencode CLI 1.18.21, macOS (darwin 24.x) ## Summary With the plugin loaded from global config, the `config` hook fires and all 14 skills register — but the `using-superpowers` bootstrap never reaches sessions started with non-interactive `opencode run`. Interactive (TUI) sessions on the same machine, same plugin, same config, do get the",
+          "url": "https://github.com/obra/superpowers/issues/2197",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -64,7 +108,7 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-895-qdon314",
@@ -75,6 +119,17 @@
           "text": "writing-plans: plans over-specify implementation, leaving no room for executor judgment - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? When using `writing-plans` to plan a multi-task implementation, the generated plan contained complete implementation code — full function bodies, 70-line test files, exact shell commands, and step-by-step TDD sequences per task. The executor (`executing-plans` / `subagent-driven-development`) had no decisions to make — it was copy-pasting code from the plan rather than engineering a solution. This caused ",
           "url": "https://github.com/obra/superpowers/issues/895",
           "score": 19,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2000-chentingtodo",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ChenTingToDo",
+          "date": "2026-07-17",
+          "text": "Feature request: add an opt-in/manual-only brainstorming profile ## Is your feature request related to a problem? Please describe. The current `brainstorming` skill is intentionally described as mandatory before any feature, bug fix, UI change, or behavior modification. That is useful for rough, high-uncertainty product ideas, but it creates avoidable friction when the user has already provided a complete PRD or precise acceptance criteria. I use Superpowers through the Codex app with GPT-5.6 and installed the `brainstorming` skill without the rest of the Superpowers pipeline. In real local us",
+          "url": "https://github.com/obra/superpowers/issues/2000",
+          "score": 3,
           "sentiment": "negative"
         }
       ]
@@ -176,7 +231,7 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-895-qdon314",
@@ -188,6 +243,17 @@
           "url": "https://github.com/obra/superpowers/issues/895",
           "score": 19,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2017-smortezah",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "smortezah",
+          "date": "2026-07-22",
+          "text": "Retuning subagent driven development for Opus 6 and Sol 5.6 Superpowers is fantastic but it uses a lot of tokens and takes a long time to complete a task. A `Slim` version would be great as it would alleviate some of the constraints of superpowers to make completing tasks faster.",
+          "url": "https://github.com/obra/superpowers/issues/2017",
+          "score": 13,
+          "sentiment": "positive"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2040-michaelholcomb-creator",
@@ -247,8 +313,30 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 2,
+      "feedbackCount": 5,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-645-jottr",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jottr",
+          "date": "2026-03-06",
+          "text": "Feature request: opt-in mode that disables auto-triggering # Feature request: opt-in mode that disables auto-triggering ## Problem Installing Superpowers changes Claude Code's default behavior globally. The SessionStart hook injects the `using-superpowers` meta-skill into every session, mandating skill checks before any response. There's no way to keep skills available via slash commands while leaving Claude's default behavior intact. Users who want to evaluate Superpowers incrementally — or only use it for specific workflows — must manually edit `session-start` after each install/update. ## P",
+          "url": "https://github.com/obra/superpowers/issues/645",
+          "score": 4,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-938-kekedou810",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "KeKeDou810",
+          "date": "2026-03-26",
+          "text": "Feature Request: Conversation-level toggle to disable superpowers (e.g. `/superpower off`) ## Problem `using-superpowers` triggers on \"any conversation,\" which means it also fires during casual chat or non-coding conversations. This wastes tokens and adds unnecessary scaffolding when the user just wants a simple exchange. Currently, the only workaround is to go into `/plugin` and disable the plugin globally — there's no lightweight, per-conversation way to opt out. ## Proposed Solution A built-in toggle skill that lets users disable/re-enable superpowers for the current conversation: - `/super",
+          "url": "https://github.com/obra/superpowers/issues/938",
+          "score": 3,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2157-ovijincom",
           "source": "github",
@@ -268,6 +356,17 @@
           "date": "2026-08-22",
           "text": "[Feature]: Add Amazon Q Developer CLI harness support ## Summary Add support for **Amazon Q Developer CLI** (`q`) as a harness. It is one of the largest actively-developed agent CLIs with no Superpowers presence: zero issues, PRs, or mentions in this repository (I searched open and closed). It's AWS-backed, free-tier, cross-platform, and — importantly for this repo's integration bar — it has a native mechanism that satisfies the \"bootstrap at session start, no per-session opt-in\" requirement: - **Custom agents** (`.amazonq/cli-agents/<name>.json`, schema `agent-v1.json`) can bundle `resources`",
           "url": "https://github.com/obra/superpowers/issues/2194",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2197-swift22",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Swift22",
+          "date": "2026-08-23",
+          "text": "OpenCode: bootstrap not injected in non-interactive `opencode run` sessions (skills still register) ## Environment - superpowers v6.3.0 (also reproduced on v6.0.3), installed as an OpenCode plugin via `superpowers@git+https://github.com/obra/superpowers.git` - opencode CLI 1.18.21, macOS (darwin 24.x) ## Summary With the plugin loaded from global config, the `config` hook fires and all 14 skills register — but the `using-superpowers` bootstrap never reaches sessions started with non-interactive `opencode run`. Interactive (TUI) sessions on the same machine, same plugin, same config, do get the",
+          "url": "https://github.com/obra/superpowers/issues/2197",
           "score": 0,
           "sentiment": "negative"
         }
@@ -523,7 +622,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 6,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1169-tazmad",
@@ -568,28 +667,6 @@
           "url": "https://github.com/anthropics/skills/issues/1304",
           "score": 1,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1559-ariqbailey",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "ariqbailey",
-          "date": "2026-08-13",
-          "text": "skill-creator run_eval.py reports 0% trigger rate for working descriptions `skills/skill-creator/scripts/run_eval.py` reports a 0% trigger rate for descriptions that do trigger. Three separate causes. With all three addressed, a description that scored 0% scores 75–100%. ### 1. A non-skill first tool call ends the run `run_eval.py:137-141` ```python if tool_name in (\"Skill\", \"Read\"): pending_tool_name = tool_name accumulated_json = \"\" else: return False ``` With `--include-partial-messages`, the model commonly opens with a `Bash` orientation call (`git status`, `ls`) before invoking a skill. T",
-          "url": "https://github.com/anthropics/skills/issues/1559",
-          "score": 1,
-          "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1631-truongsontung",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "truongsontung",
-          "date": "2026-08-22",
-          "text": "Path traversal via unsanitized skill_name in run_eval.py ## Summary The `run_eval.py` script uses `skill_name` from SKILL.md frontmatter directly in file path construction without sanitization, allowing path traversal. ## Vulnerability **Location:** `skills/skill-creator/scripts/run_eval.py:54` ```python project_commands_dir = Path('~/.claude/commands') clean_name = re.sub(r'[^a-z0-9-]', '', skill_name.lower()) command_file = project_commands_dir / f{clean_name}.md ``` The `clean_name` only strips non- characters but doesn't prevent sequences. An attacker providing a SKILL.md with would write ",
-          "url": "https://github.com/anthropics/skills/issues/1631",
-          "score": 0,
-          "sentiment": "positive"
         }
       ]
     },
