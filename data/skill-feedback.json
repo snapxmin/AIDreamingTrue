@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-24T02:20:06Z",
+    "lastUpdated": "2026-08-25T02:01:31Z",
     "skillCount": 20,
-    "totalComments": 60,
+    "totalComments": 59,
     "sources": [
       "hacker-news",
       "github",
@@ -15,19 +15,8 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-892-cheapsteak",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "cheapsteak",
-          "date": "2026-03-23",
-          "text": "Ability to opt-out of visual companion across sessions 🙏 <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? <!-- Describe the problem from your own experience. What were you doing, what went wrong or was missing, and why did it matter? \"It would be cool if...\" is not a problem statement. --> I would like to be able to permanently opt-out of the visual ",
-          "url": "https://github.com/obra/superpowers/issues/892",
-          "score": 7,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1222-younes-io",
           "source": "github",
@@ -51,15 +40,15 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2157-ovijincom",
+          "id": "github-https-github-com-obra-superpowers-issues-2034-vida994",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "ovijincom",
-          "date": "2026-08-15",
-          "text": "[Bug]: Hermes tool mapping in v6.3.0 uses stale names and an unqualified plugin skill name - [x] I searched existing issues and this is not a duplicate. ## Environment | Field | Value | |-------|-------| | Superpowers version | v6.3.0 | | Superpowers commit | `b36e0829c6d0140e93cfef2ca599b1b07d4a7797` | | Harness | Hermes Agent desktop / native plugin | | Harness version | Hermes Agent v0.20.1 (2026.8.13), upstream `165c889e` | | Your model + version | OpenAI Codex / gpt-5.6-terra | | Relevant plugin | `superpowers v6.3.0`, enabled, source: user | | OS + shell | Windows 11, Git Bash / MSYS ter",
-          "url": "https://github.com/obra/superpowers/issues/2157",
+          "author": "vida994",
+          "date": "2026-07-24",
+          "text": "Subagent dispatches outside SDD have no model guidance, so they inherit the session model ### Summary `subagent-driven-development` treats the subagent model as a required, explicit choice. Every other skill that dispatches a subagent omits it entirely, so those dispatches silently inherit the session model — the exact failure SDD's own guidance calls out. ### The inconsistency SDD's prompt templates make it a required field: ``` Subagent (general-purpose): model: [MODEL — REQUIRED: choose per SKILL.md Model Selection; an omitted model silently inherits the session's most expensive one] ``` an",
+          "url": "https://github.com/obra/superpowers/issues/2034",
           "score": 1,
-          "sentiment": "negative"
+          "sentiment": "positive"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2197-swift22",
@@ -108,7 +97,7 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-895-qdon314",
@@ -131,6 +120,17 @@
           "url": "https://github.com/obra/superpowers/issues/2000",
           "score": 3,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2034-vida994",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "vida994",
+          "date": "2026-07-24",
+          "text": "Subagent dispatches outside SDD have no model guidance, so they inherit the session model ### Summary `subagent-driven-development` treats the subagent model as a required, explicit choice. Every other skill that dispatches a subagent omits it entirely, so those dispatches silently inherit the session model — the exact failure SDD's own guidance calls out. ### The inconsistency SDD's prompt templates make it a required field: ``` Subagent (general-purpose): model: [MODEL — REQUIRED: choose per SKILL.md Model Selection; an omitted model silently inherits the session's most expensive one] ``` an",
+          "url": "https://github.com/obra/superpowers/issues/2034",
+          "score": 1,
+          "sentiment": "positive"
         }
       ]
     },
@@ -193,17 +193,6 @@
       "feedbackCount": 3,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-642-isaactoledano-blip",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Isaactoledano-blip",
-          "date": "2026-03-06",
-          "text": "Are some skills deliberalty not used ? — Skill Arborescence Review & Feedback First off, love the plugin — it's been a game changer for my workflow. I'm a young engineer working on a Rails migration and the structured brainstorming → planning → execution pipeline has genuinely improved how I build features. Thank you for that. That said, I spent some time mapping the full skill arborescence and I spotted a few things I wanted to flag. Not sure if they're intentional design choices or gaps so i want to point that i might be mistaken over this subject. 1) executing-plans is thinner than subagent",
-          "url": "https://github.com/obra/superpowers/issues/642",
-          "score": 3,
-          "sentiment": "positive"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-969-mcorbe",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -224,6 +213,17 @@
           "url": "https://github.com/obra/superpowers/issues/1754",
           "score": 1,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2199-adnasal",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "adnasal",
+          "date": "2026-08-24",
+          "text": "Pre-flight: Code Health checkpoint before refactor / review skills - [x] I searched existing issues. I did not find this proposed before. ## What problem does this solve? Superpowers already makes you verify before you call work done (`verification-before-completion`, TDD, code review). What agents still do not have is a maintainability check that gives the same answer twice. Lint and tests can pass while the file gets harder to change: longer methods, extra responsibilities, deeper nesting. Asking another model to review it is not a gate. Same diff, next run, different comments. And if you ch",
+          "url": "https://github.com/obra/superpowers/issues/2199",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -231,7 +231,7 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-895-qdon314",
@@ -256,6 +256,17 @@
           "sentiment": "positive"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2034-vida994",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "vida994",
+          "date": "2026-07-24",
+          "text": "Subagent dispatches outside SDD have no model guidance, so they inherit the session model ### Summary `subagent-driven-development` treats the subagent model as a required, explicit choice. Every other skill that dispatches a subagent omits it entirely, so those dispatches silently inherit the session model — the exact failure SDD's own guidance calls out. ### The inconsistency SDD's prompt templates make it a required field: ``` Subagent (general-purpose): model: [MODEL — REQUIRED: choose per SKILL.md Model Selection; an omitted model silently inherits the session's most expensive one] ``` an",
+          "url": "https://github.com/obra/superpowers/issues/2034",
+          "score": 1,
+          "sentiment": "positive"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2040-michaelholcomb-creator",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -275,28 +286,6 @@
       "feedbackCount": 3,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-642-isaactoledano-blip",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Isaactoledano-blip",
-          "date": "2026-03-06",
-          "text": "Are some skills deliberalty not used ? — Skill Arborescence Review & Feedback First off, love the plugin — it's been a game changer for my workflow. I'm a young engineer working on a Rails migration and the structured brainstorming → planning → execution pipeline has genuinely improved how I build features. Thank you for that. That said, I spent some time mapping the full skill arborescence and I spotted a few things I wanted to flag. Not sure if they're intentional design choices or gaps so i want to point that i might be mistaken over this subject. 1) executing-plans is thinner than subagent",
-          "url": "https://github.com/obra/superpowers/issues/642",
-          "score": 3,
-          "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "bbbbbbbbbbb114",
-          "date": "2026-05-31",
-          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
-          "url": "https://github.com/obra/superpowers/issues/1664",
-          "score": 3,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-1151-lapaca",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -306,6 +295,28 @@
           "url": "https://github.com/obra/superpowers/issues/1151",
           "score": 1,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2034-vida994",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "vida994",
+          "date": "2026-07-24",
+          "text": "Subagent dispatches outside SDD have no model guidance, so they inherit the session model ### Summary `subagent-driven-development` treats the subagent model as a required, explicit choice. Every other skill that dispatches a subagent omits it entirely, so those dispatches silently inherit the session model — the exact failure SDD's own guidance calls out. ### The inconsistency SDD's prompt templates make it a required field: ``` Subagent (general-purpose): model: [MODEL — REQUIRED: choose per SKILL.md Model Selection; an omitted model silently inherits the session's most expensive one] ``` an",
+          "url": "https://github.com/obra/superpowers/issues/2034",
+          "score": 1,
+          "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2199-adnasal",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "adnasal",
+          "date": "2026-08-24",
+          "text": "Pre-flight: Code Health checkpoint before refactor / review skills - [x] I searched existing issues. I did not find this proposed before. ## What problem does this solve? Superpowers already makes you verify before you call work done (`verification-before-completion`, TDD, code review). What agents still do not have is a maintainability check that gives the same answer twice. Lint and tests can pass while the file gets harder to change: longer methods, extra responsibilities, deeper nesting. Asking another model to review it is not a gate. Same diff, next run, different comments. And if you ch",
+          "url": "https://github.com/obra/superpowers/issues/2199",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -313,19 +324,8 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 5,
+      "feedbackCount": 2,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-645-jottr",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jottr",
-          "date": "2026-03-06",
-          "text": "Feature request: opt-in mode that disables auto-triggering # Feature request: opt-in mode that disables auto-triggering ## Problem Installing Superpowers changes Claude Code's default behavior globally. The SessionStart hook injects the `using-superpowers` meta-skill into every session, mandating skill checks before any response. There's no way to keep skills available via slash commands while leaving Claude's default behavior intact. Users who want to evaluate Superpowers incrementally — or only use it for specific workflows — must manually edit `session-start` after each install/update. ## P",
-          "url": "https://github.com/obra/superpowers/issues/645",
-          "score": 4,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-938-kekedou810",
           "source": "github",
@@ -335,28 +335,6 @@
           "text": "Feature Request: Conversation-level toggle to disable superpowers (e.g. `/superpower off`) ## Problem `using-superpowers` triggers on \"any conversation,\" which means it also fires during casual chat or non-coding conversations. This wastes tokens and adds unnecessary scaffolding when the user just wants a simple exchange. Currently, the only workaround is to go into `/plugin` and disable the plugin globally — there's no lightweight, per-conversation way to opt out. ## Proposed Solution A built-in toggle skill that lets users disable/re-enable superpowers for the current conversation: - `/super",
           "url": "https://github.com/obra/superpowers/issues/938",
           "score": 3,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2157-ovijincom",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "ovijincom",
-          "date": "2026-08-15",
-          "text": "[Bug]: Hermes tool mapping in v6.3.0 uses stale names and an unqualified plugin skill name - [x] I searched existing issues and this is not a duplicate. ## Environment | Field | Value | |-------|-------| | Superpowers version | v6.3.0 | | Superpowers commit | `b36e0829c6d0140e93cfef2ca599b1b07d4a7797` | | Harness | Hermes Agent desktop / native plugin | | Harness version | Hermes Agent v0.20.1 (2026.8.13), upstream `165c889e` | | Your model + version | OpenAI Codex / gpt-5.6-terra | | Relevant plugin | `superpowers v6.3.0`, enabled, source: user | | OS + shell | Windows 11, Git Bash / MSYS ter",
-          "url": "https://github.com/obra/superpowers/issues/2157",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2194-tugrulguner",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "tugrulguner",
-          "date": "2026-08-22",
-          "text": "[Feature]: Add Amazon Q Developer CLI harness support ## Summary Add support for **Amazon Q Developer CLI** (`q`) as a harness. It is one of the largest actively-developed agent CLIs with no Superpowers presence: zero issues, PRs, or mentions in this repository (I searched open and closed). It's AWS-backed, free-tier, cross-platform, and — importantly for this repo's integration bar — it has a native mechanism that satisfies the \"bootstrap at session start, no per-session opt-in\" requirement: - **Custom agents** (`.amazonq/cli-agents/<name>.json`, schema `agent-v1.json`) can bundle `resources`",
-          "url": "https://github.com/obra/superpowers/issues/2194",
-          "score": 0,
           "sentiment": "negative"
         },
         {
@@ -674,7 +652,7 @@
       "slug": "mcp-builder",
       "ecosystem": "anthropics-skills",
       "displayName": "MCP Builder",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1390-ejprice",
@@ -717,6 +695,17 @@
           "date": "2026-05-04",
           "text": "Feature request: add coordinator.domains: frontmatter to claude-api SKILL.md (for spec-coordinator tag-routing) ## Context A separate skills framework — [Agent Upskill's spec-coordinator](https://github.com/agentupskill/skills-core/tree/main/spec-coordinator) — uses an SME registry to route cross-domain spec requests to relevant skills. The registry has two routing layers: 1. **Tag-match (deterministic)** — picks skills whose `coordinator.domains: [...]` frontmatter overlaps query tokens (confidence 1.0). 2. **Sonnet classifier (fallback)** — scores skills against the query (threshold 0.6 for ",
           "url": "https://github.com/anthropics/skills/issues/1091",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1643-adnasal",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "adnasal",
+          "date": "2026-08-24",
+          "text": "Proposal: codehealth-mcp, a maintainability gate at agent checkpoints Hi. I would like to propose a community/example skill. This is not a request to endorse a vendor. ### Gap Skills teach Claude how to do a task. They do not tell you, with a stable yes/no, whether the code it just wrote is still maintainable. A second model judging the diff is another sample. Lint and tests do not measure structure. A check that runs at the wrong time, or too often, is also a problem. The agent loses focus and never settles. What works is a few checkpoints: before a risky edit, before commit, before the PR. S",
+          "url": "https://github.com/anthropics/skills/issues/1643",
           "score": 0,
           "sentiment": "negative"
         }
