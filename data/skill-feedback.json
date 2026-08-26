@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-25T02:01:31Z",
+    "lastUpdated": "2026-08-26T02:10:03Z",
     "skillCount": 20,
-    "totalComments": 59,
+    "totalComments": 61,
     "sources": [
       "hacker-news",
       "github",
@@ -15,7 +15,7 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1222-younes-io",
@@ -58,6 +58,17 @@
           "date": "2026-08-23",
           "text": "OpenCode: bootstrap not injected in non-interactive `opencode run` sessions (skills still register) ## Environment - superpowers v6.3.0 (also reproduced on v6.0.3), installed as an OpenCode plugin via `superpowers@git+https://github.com/obra/superpowers.git` - opencode CLI 1.18.21, macOS (darwin 24.x) ## Summary With the plugin loaded from global config, the `config` hook fires and all 14 skills register — but the `using-superpowers` bootstrap never reaches sessions started with non-interactive `opencode run`. Interactive (TUI) sessions on the same machine, same plugin, same config, do get the",
           "url": "https://github.com/obra/superpowers/issues/2197",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2203-zorvalth",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "zorvalth",
+          "date": "2026-08-25",
+          "text": "Bounded tasks fill the main session context <!-- BEFORE FILING: Search open AND closed issues. The Windows SessionStart hook alone has been reported 29 times. If your issue already exists, add a comment or reaction to the existing one instead. --> - [x] I searched existing issues and this is not a duplicate ## Environment (required) <!-- Required. We assume an agent filed this report - tell us which one and where it ran. We weigh reports by what produced them. --> | Field | Value | |-------|-------| | Superpowers version | v6.3.0 | | Harness (Claude Code, Cursor, etc.) | Codex App | | Harness ",
+          "url": "https://github.com/obra/superpowers/issues/2203",
           "score": 0,
           "sentiment": "negative"
         }
@@ -231,7 +242,7 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-895-qdon314",
@@ -276,6 +287,17 @@
           "url": "https://github.com/obra/superpowers/issues/2040",
           "score": 1,
           "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2203-zorvalth",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "zorvalth",
+          "date": "2026-08-25",
+          "text": "Bounded tasks fill the main session context <!-- BEFORE FILING: Search open AND closed issues. The Windows SessionStart hook alone has been reported 29 times. If your issue already exists, add a comment or reaction to the existing one instead. --> - [x] I searched existing issues and this is not a duplicate ## Environment (required) <!-- Required. We assume an agent filed this report - tell us which one and where it ran. We weigh reports by what produced them. --> | Field | Value | |-------|-------| | Superpowers version | v6.3.0 | | Harness (Claude Code, Cursor, etc.) | Codex App | | Harness ",
+          "url": "https://github.com/obra/superpowers/issues/2203",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -537,19 +559,8 @@
       "slug": "frontend-design",
       "ecosystem": "anthropics-skills",
       "displayName": "Frontend Design",
-      "feedbackCount": 5,
+      "feedbackCount": 3,
       "comments": [
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-189-chuggies510",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "chuggies510",
-          "date": "2025-12-30",
-          "text": "document-skills and example-skills plugins install identical content, causing duplicate skills ## Description When installing both `document-skills` and `example-skills` plugins from `anthropic-agent-skills`, they contain **identical skills**, causing duplicates in Claude Code's context window. ## Expected Behavior According to the repo README: - `document-skills` should contain only the production document skills (docx, pdf, pptx, xlsx) - `example-skills` should contain the open-source educational examples (algorithmic-art, canvas-design, etc.) ## Actual Behavior Both plugins install **all 17",
-          "url": "https://github.com/anthropics/skills/issues/189",
-          "score": 6,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-anthropics-skills-issues-141-michellepace",
           "source": "github",
@@ -582,17 +593,6 @@
           "url": "https://github.com/anthropics/skills/issues/206",
           "score": 1,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1109-harishwtf",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "harishwtf",
-          "date": "2026-05-08",
-          "text": "Add saas-motion-ideation skill: pre-production & creative ideation for SaaS marketing motion design ## Proposal A skill for **pre-production and creative ideation** of SaaS marketing motion design pieces — the thinking that happens *before* any animation or video production begins. This fills a gap in the current skills library. Existing skills cover frontend design, web artifacts, and document creation, but nothing addresses the **creative strategy and storyboarding** phase of marketing content. ## What it does Guides Claude through the full pre-production process for SaaS feature launch vide",
-          "url": "https://github.com/anthropics/skills/issues/1109",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -600,7 +600,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1169-tazmad",
@@ -645,6 +645,17 @@
           "url": "https://github.com/anthropics/skills/issues/1304",
           "score": 1,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1669-willorepo",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "WillORepO",
+          "date": "2026-08-25",
+          "text": "mcp-builder: evaluation.py discards a completed run on Windows — write_text() without encoding hits cp1252 on the report's emoji ## Summary `skills/mcp-builder/scripts/evaluation.py:366` writes the report with ```python args.output.write_text(report) ``` `Path.write_text()` uses the **locale** encoding. On a Windows default install that is cp1252, and the report contains emoji — the ✅/❌ correctness markers in `TASK_TEMPLATE`. So on Windows the run completes, every task is asked, every tool call is made, **every token is paid for**, and the results are then discarded by a `UnicodeEncodeError` o",
+          "url": "https://github.com/anthropics/skills/issues/1669",
+          "score": 0,
+          "sentiment": "neutral"
         }
       ]
     },
@@ -652,7 +663,7 @@
       "slug": "mcp-builder",
       "ecosystem": "anthropics-skills",
       "displayName": "MCP Builder",
-      "feedbackCount": 5,
+      "feedbackCount": 6,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1390-ejprice",
@@ -662,7 +673,7 @@
           "date": "2026-07-04",
           "text": "mcp-builder: evaluation.py scores 0/N against any real MCP server (TextContent not JSON serializable, swallowed into fabricated tool errors) ## Summary `skills/mcp-builder/scripts/evaluation.py` (the Phase-4 evaluation harness) silently fabricates a tool-execution error for **every tool call against every real MCP server**, so the driven agent sees nothing but errors and the evaluation scores 0/N. The failure is invisible unless you dig into what the model was actually shown. ## Root cause `connections.py:70` returns `result.content` from `call_tool()` — which for a real MCP server is `list[mc",
           "url": "https://github.com/anthropics/skills/issues/1390",
-          "score": 3,
+          "score": 4,
           "sentiment": "negative"
         },
         {
@@ -699,13 +710,24 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-anthropics-skills-issues-1643-adnasal",
+          "id": "github-https-github-com-anthropics-skills-issues-1669-willorepo",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "adnasal",
-          "date": "2026-08-24",
-          "text": "Proposal: codehealth-mcp, a maintainability gate at agent checkpoints Hi. I would like to propose a community/example skill. This is not a request to endorse a vendor. ### Gap Skills teach Claude how to do a task. They do not tell you, with a stable yes/no, whether the code it just wrote is still maintainable. A second model judging the diff is another sample. Lint and tests do not measure structure. A check that runs at the wrong time, or too often, is also a problem. The agent loses focus and never settles. What works is a few checkpoints: before a risky edit, before commit, before the PR. S",
-          "url": "https://github.com/anthropics/skills/issues/1643",
+          "author": "WillORepO",
+          "date": "2026-08-25",
+          "text": "mcp-builder: evaluation.py discards a completed run on Windows — write_text() without encoding hits cp1252 on the report's emoji ## Summary `skills/mcp-builder/scripts/evaluation.py:366` writes the report with ```python args.output.write_text(report) ``` `Path.write_text()` uses the **locale** encoding. On a Windows default install that is cp1252, and the report contains emoji — the ✅/❌ correctness markers in `TASK_TEMPLATE`. So on Windows the run completes, every task is asked, every tool call is made, **every token is paid for**, and the results are then discarded by a `UnicodeEncodeError` o",
+          "url": "https://github.com/anthropics/skills/issues/1669",
+          "score": 0,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1668-willorepo",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "WillORepO",
+          "date": "2026-08-25",
+          "text": "mcp-builder: requirements.txt allows mcp>=2, where connections.py fails at import (streamablehttp_client renamed) ## Summary `skills/mcp-builder/scripts/requirements.txt` pins `mcp>=1.1.0` with no upper bound. The MCP Python SDK is now at 2.x, where `streamablehttp_client` has been **renamed** to `streamable_http_client`. `connections.py` imports the old name at module scope, so a fresh install of the documented requirements fails at import — before any MCP server, evaluation file, or API key is involved. This is the first thing anyone following the Phase-4 instructions hits today. ## Repro ``",
+          "url": "https://github.com/anthropics/skills/issues/1668",
           "score": 0,
           "sentiment": "negative"
         }
