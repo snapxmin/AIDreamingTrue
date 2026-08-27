@@ -1,72 +1,41 @@
 {
-  "generatedAt": "2026-08-26T02:07:42Z",
+  "generatedAt": "2026-08-27T10:04:45Z",
   "isBaselineRun": false,
   "changes": [
     {
       "type": "added",
-      "key": "awesome-copilot/poka-yoke",
+      "key": "awesome-copilot/speak-summary",
       "ecosystem": "awesome-copilot",
-      "slug": "poka-yoke",
-      "displayName": "Poka Yoke",
-      "summary": "生态新增 Skill：Poka Yoke",
-      "detectedAt": "2026-08-26T02:08:36Z"
-    },
-    {
-      "type": "added",
-      "key": "awesome-copilot/roslyn-analyzers",
-      "ecosystem": "awesome-copilot",
-      "slug": "roslyn-analyzers",
-      "displayName": "Roslyn Analyzers",
-      "summary": "生态新增 Skill：Roslyn Analyzers",
-      "detectedAt": "2026-08-26T02:08:36Z"
-    },
-    {
-      "type": "added",
-      "key": "awesome-copilot/tugboat",
-      "ecosystem": "awesome-copilot",
-      "slug": "tugboat",
-      "displayName": "Tugboat",
-      "summary": "生态新增 Skill：Tugboat",
-      "detectedAt": "2026-08-26T02:08:36Z"
+      "slug": "speak-summary",
+      "displayName": "Speak Summary",
+      "summary": "生态新增 Skill：Speak Summary",
+      "detectedAt": "2026-08-27T10:06:04Z"
     },
     {
       "type": "updated",
-      "key": "awesome-copilot/copilot-sdk",
+      "key": "awesome-copilot/flowstudio-power-automate-build",
       "ecosystem": "awesome-copilot",
-      "slug": "copilot-sdk",
-      "displayName": "Copilot Sdk",
+      "slug": "flowstudio-power-automate-build",
+      "displayName": "Flowstudio Power Automate Build",
       "changedFields": [
         "content"
       ],
       "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/copilot-sdk",
-      "detectedAt": "2026-08-26T02:08:36Z"
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/flowstudio-power-automate-build",
+      "detectedAt": "2026-08-27T10:06:04Z"
     },
     {
       "type": "updated",
-      "key": "awesome-copilot/gem-devops-guidelines",
+      "key": "awesome-copilot/flowstudio-power-automate-debug",
       "ecosystem": "awesome-copilot",
-      "slug": "gem-devops-guidelines",
-      "displayName": "Gem Devops Guidelines",
+      "slug": "flowstudio-power-automate-debug",
+      "displayName": "Flowstudio Power Automate Debug",
       "changedFields": [
         "content"
       ],
       "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/gem-devops-guidelines",
-      "detectedAt": "2026-08-26T02:08:36Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/x-twitter-scraper",
-      "ecosystem": "awesome-copilot",
-      "slug": "x-twitter-scraper",
-      "displayName": "X Twitter Scraper",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/x-twitter-scraper",
-      "detectedAt": "2026-08-26T02:08:36Z"
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/flowstudio-power-automate-debug",
+      "detectedAt": "2026-08-27T10:06:04Z"
     }
   ]
 }
