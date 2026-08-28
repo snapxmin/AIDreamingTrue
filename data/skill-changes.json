@@ -1,41 +1,19 @@
 {
-  "generatedAt": "2026-08-27T10:04:45Z",
+  "generatedAt": "2026-08-28T11:36:09Z",
   "isBaselineRun": false,
   "changes": [
     {
-      "type": "added",
-      "key": "awesome-copilot/speak-summary",
-      "ecosystem": "awesome-copilot",
-      "slug": "speak-summary",
-      "displayName": "Speak Summary",
-      "summary": "生态新增 Skill：Speak Summary",
-      "detectedAt": "2026-08-27T10:06:04Z"
-    },
-    {
       "type": "updated",
-      "key": "awesome-copilot/flowstudio-power-automate-build",
+      "key": "awesome-copilot/apple-appstore-reviewer",
       "ecosystem": "awesome-copilot",
-      "slug": "flowstudio-power-automate-build",
-      "displayName": "Flowstudio Power Automate Build",
+      "slug": "apple-appstore-reviewer",
+      "displayName": "Apple Appstore Reviewer",
       "changedFields": [
         "content"
       ],
       "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/flowstudio-power-automate-build",
-      "detectedAt": "2026-08-27T10:06:04Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/flowstudio-power-automate-debug",
-      "ecosystem": "awesome-copilot",
-      "slug": "flowstudio-power-automate-debug",
-      "displayName": "Flowstudio Power Automate Debug",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/flowstudio-power-automate-debug",
-      "detectedAt": "2026-08-27T10:06:04Z"
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/apple-appstore-reviewer",
+      "detectedAt": "2026-08-28T11:36:57Z"
     }
   ]
 }
