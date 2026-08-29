@@ -1,19 +1,5 @@
 {
-  "generatedAt": "2026-08-28T11:36:09Z",
+  "generatedAt": "2026-08-29T07:14:13Z",
   "isBaselineRun": false,
-  "changes": [
-    {
-      "type": "updated",
-      "key": "awesome-copilot/apple-appstore-reviewer",
-      "ecosystem": "awesome-copilot",
-      "slug": "apple-appstore-reviewer",
-      "displayName": "Apple Appstore Reviewer",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/apple-appstore-reviewer",
-      "detectedAt": "2026-08-28T11:36:57Z"
-    }
-  ]
+  "changes": []
 }

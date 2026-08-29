@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-28T11:38:22Z",
+    "lastUpdated": "2026-08-29T07:16:29Z",
     "skillCount": 20,
     "totalComments": 58,
     "sources": [
@@ -70,17 +70,6 @@
       "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-895-qdon314",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "qdon314",
-          "date": "2026-03-23",
-          "text": "writing-plans: plans over-specify implementation, leaving no room for executor judgment - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? When using `writing-plans` to plan a multi-task implementation, the generated plan contained complete implementation code — full function bodies, 70-line test files, exact shell commands, and step-by-step TDD sequences per task. The executor (`executing-plans` / `subagent-driven-development`) had no decisions to make — it was copy-pasting code from the plan rather than engineering a solution. This caused ",
-          "url": "https://github.com/obra/superpowers/issues/895",
-          "score": 19,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2146-kylekellogg",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -89,6 +78,17 @@
           "text": "RED can pass for the wrong reason, and inverts on refactors **Repo:** obra/superpowers - **Skill:** `skills/test-driven-development/SKILL.md` - **Version seen:** 6.2.0 Two related gaps in `### Verify RED - Watch It Fail`. Both share a root: **RED is a proxy for the property that actually matters - that the test can distinguish correct from incorrect** - and in two common situations the proxy and the property come apart. In one the test goes RED without having that power; in the other it must not go RED at all. Filing as an issue rather than a PR because the second one argues an existing Red Fl",
           "url": "https://github.com/obra/superpowers/issues/2146",
           "score": 5,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2219-danielcalvolopez",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "danielcalvolopez",
+          "date": "2026-08-28",
+          "text": "Skills that script multi-branch git workflows never establish a remote-safety boundary, shared branches (production, dev) were unintentionally rewritten across three projects - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? `using-git-worktrees`, `executing-plans`, `subagent-driven-development`, and `finishing-a-development-branch` script every step of a multi-branch git workflow — create the branch, commit per task, merge, integrate — but none of them ever address the boundary between local and remote state. Across three of my projects in",
+          "url": "https://github.com/obra/superpowers/issues/2219",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -141,17 +141,6 @@
       "feedbackCount": 4,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1581-jfiscman",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jfiscman",
-          "date": "2026-05-19",
-          "text": "Feature Request: Hermes Agent harness support — make Superpowers skills available in native Hermes format ## Feature Description Make Superpowers skills available for **Hermes Agent** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)), an open-source autonomous agent framework by Nous Research. Hermes is in the same category as OpenCode, Claude Code, and Codex — it has its own native skill system and runs on any LLM provider. Many users who run multiple coding agents would benefit from having Superpowers skills available in Hermes as well. ## Motivation Hermes Agent ha",
-          "url": "https://github.com/obra/superpowers/issues/1581",
-          "score": 24,
-          "sentiment": "positive"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -183,6 +172,17 @@
           "url": "https://github.com/obra/superpowers/issues/969",
           "score": 1,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2219-danielcalvolopez",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "danielcalvolopez",
+          "date": "2026-08-28",
+          "text": "Skills that script multi-branch git workflows never establish a remote-safety boundary, shared branches (production, dev) were unintentionally rewritten across three projects - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? `using-git-worktrees`, `executing-plans`, `subagent-driven-development`, and `finishing-a-development-branch` script every step of a multi-branch git workflow — create the branch, commit per task, merge, integrate — but none of them ever address the boundary between local and remote state. Across three of my projects in",
+          "url": "https://github.com/obra/superpowers/issues/2219",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -204,17 +204,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1754-noaft",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "noaft",
-          "date": "2026-06-14",
-          "text": "verification-before-completion allows false success claims when provider change is not actually verified - [x] I searched existing issues and this is not a duplicate ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 5.1.0 / commit `6fd4507` | | Harness (Claude Code, Cursor, etc.) | Codex | | Harness version | codex-cli 0.42.0 | | Your model + version | GPT-5 / Codex | | All plugins installed | Superpowers | | OS + shell | Windows 10.0.22621, PowerShell 5.1.22621.4249 | ## Is this a Superpowers issue or a platform issue? - [x] I confirmed this issue does not ",
-          "url": "https://github.com/obra/superpowers/issues/1754",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2199-adnasal",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -222,6 +211,17 @@
           "date": "2026-08-24",
           "text": "Pre-flight: Code Health checkpoint before refactor / review skills - [x] I searched existing issues. I did not find this proposed before. ## What problem does this solve? Superpowers already makes you verify before you call work done (`verification-before-completion`, TDD, code review). What agents still do not have is a maintainability check that gives the same answer twice. Lint and tests can pass while the file gets harder to change: longer methods, extra responsibilities, deeper nesting. Asking another model to review it is not a gate. Same diff, next run, different comments. And if you ch",
           "url": "https://github.com/obra/superpowers/issues/2199",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2219-danielcalvolopez",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "danielcalvolopez",
+          "date": "2026-08-28",
+          "text": "Skills that script multi-branch git workflows never establish a remote-safety boundary, shared branches (production, dev) were unintentionally rewritten across three projects - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? `using-git-worktrees`, `executing-plans`, `subagent-driven-development`, and `finishing-a-development-branch` script every step of a multi-branch git workflow — create the branch, commit per task, merge, integrate — but none of them ever address the boundary between local and remote state. Across three of my projects in",
+          "url": "https://github.com/obra/superpowers/issues/2219",
           "score": 0,
           "sentiment": "negative"
         }
@@ -233,17 +233,6 @@
       "displayName": "Subagent-Driven Development",
       "feedbackCount": 4,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2017-smortezah",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "smortezah",
-          "date": "2026-07-22",
-          "text": "Retuning subagent driven development for Opus 6 and Sol 5.6 Superpowers is fantastic but it uses a lot of tokens and takes a long time to complete a task. A `Slim` version would be great as it would alleviate some of the constraints of superpowers to make completing tasks faster.",
-          "url": "https://github.com/obra/superpowers/issues/2017",
-          "score": 13,
-          "sentiment": "positive"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2203-zorvalth",
           "source": "github",
@@ -274,6 +263,17 @@
           "date": "2026-08-26",
           "text": "`finishing-a-development-branch` can silently delete an SDD workspace: ignored files don't make a worktree dirty **Skills:** `finishing-a-development-branch` (Step 6), interacting with `subagent-driven-development` **Versions:** reproduced against 6.3.0; the same code path and wording are in 6.2.0 **Environment:** git 2.55.0, Linux ## Summary Step 6 of `finishing-a-development-branch` protects uncommitted work by relying on `git worktree remove` to refuse: > **If removal is refused** (`contains modified or untracked files`): the worktree holds files that > exist nowhere else — uncommitted plan",
           "url": "https://github.com/obra/superpowers/issues/2207",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2219-danielcalvolopez",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "danielcalvolopez",
+          "date": "2026-08-28",
+          "text": "Skills that script multi-branch git workflows never establish a remote-safety boundary, shared branches (production, dev) were unintentionally rewritten across three projects - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? `using-git-worktrees`, `executing-plans`, `subagent-driven-development`, and `finishing-a-development-branch` script every step of a multi-branch git workflow — create the branch, commit per task, merge, integrate — but none of them ever address the boundary between local and remote state. Across three of my projects in",
+          "url": "https://github.com/obra/superpowers/issues/2219",
           "score": 0,
           "sentiment": "negative"
         }
@@ -567,7 +567,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 5,
+      "feedbackCount": 6,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1169-tazmad",
@@ -623,6 +623,17 @@
           "url": "https://github.com/anthropics/skills/issues/1669",
           "score": 0,
           "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1686-mladenaleta",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "mladenaleta",
+          "date": "2026-08-28",
+          "text": "skill-creator scripts crash on Windows for any skill containing non-ASCII text (missing encoding on read_text()) ## Summary Three scripts in `skills/skill-creator/scripts/` read or write text without specifying an encoding. On Windows, Python defaults to the ANSI code page (cp1252 on most systems), so any SKILL.md containing non-ASCII characters raises `UnicodeDecodeError` before validation begins. This affects Anthropic's own shipped skills. In a local library of 60 skills, **28 crashed the validator (47%)**, including `docx`, `pdf`, `pptx`, `xlsx`, `mcp-builder`, and `webapp-testing`. The bu",
+          "url": "https://github.com/anthropics/skills/issues/1686",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -630,19 +641,8 @@
       "slug": "mcp-builder",
       "ecosystem": "anthropics-skills",
       "displayName": "MCP Builder",
-      "feedbackCount": 6,
+      "feedbackCount": 5,
       "comments": [
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1390-ejprice",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "ejprice",
-          "date": "2026-07-04",
-          "text": "mcp-builder: evaluation.py scores 0/N against any real MCP server (TextContent not JSON serializable, swallowed into fabricated tool errors) ## Summary `skills/mcp-builder/scripts/evaluation.py` (the Phase-4 evaluation harness) silently fabricates a tool-execution error for **every tool call against every real MCP server**, so the driven agent sees nothing but errors and the evaluation scores 0/N. The failure is invisible unless you dig into what the model was actually shown. ## Root cause `connections.py:70` returns `result.content` from `call_tool()` — which for a real MCP server is `list[mc",
-          "url": "https://github.com/anthropics/skills/issues/1390",
-          "score": 4,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-anthropics-skills-issues-67-miq42",
           "source": "github",
@@ -688,15 +688,15 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-anthropics-skills-issues-1669-willorepo",
+          "id": "github-https-github-com-anthropics-skills-issues-1686-mladenaleta",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "WillORepO",
-          "date": "2026-08-25",
-          "text": "mcp-builder: evaluation.py discards a completed run on Windows — write_text() without encoding hits cp1252 on the report's emoji ## Summary `skills/mcp-builder/scripts/evaluation.py:366` writes the report with ```python args.output.write_text(report) ``` `Path.write_text()` uses the **locale** encoding. On a Windows default install that is cp1252, and the report contains emoji — the ✅/❌ correctness markers in `TASK_TEMPLATE`. So on Windows the run completes, every task is asked, every tool call is made, **every token is paid for**, and the results are then discarded by a `UnicodeEncodeError` o",
-          "url": "https://github.com/anthropics/skills/issues/1669",
+          "author": "mladenaleta",
+          "date": "2026-08-28",
+          "text": "skill-creator scripts crash on Windows for any skill containing non-ASCII text (missing encoding on read_text()) ## Summary Three scripts in `skills/skill-creator/scripts/` read or write text without specifying an encoding. On Windows, Python defaults to the ANSI code page (cp1252 on most systems), so any SKILL.md containing non-ASCII characters raises `UnicodeDecodeError` before validation begins. This affects Anthropic's own shipped skills. In a local library of 60 skills, **28 crashed the validator (47%)**, including `docx`, `pdf`, `pptx`, `xlsx`, `mcp-builder`, and `webapp-testing`. The bu",
+          "url": "https://github.com/anthropics/skills/issues/1686",
           "score": 0,
-          "sentiment": "neutral"
+          "sentiment": "negative"
         }
       ]
     },
