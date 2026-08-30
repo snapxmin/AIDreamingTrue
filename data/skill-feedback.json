@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-29T07:16:29Z",
+    "lastUpdated": "2026-08-30T05:39:45Z",
     "skillCount": 20,
-    "totalComments": 58,
+    "totalComments": 57,
     "sources": [
       "hacker-news",
       "github",
@@ -15,19 +15,8 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 4,
+      "feedbackCount": 2,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1222-younes-io",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "younes-io",
-          "date": "2026-04-19",
-          "text": "Pi agent with gpt-5.4 high - brainstorming skill is triggered all the time I like this skill but I think it is too aggressive in the sense that it gets triggered (almost) all the time, even when the use case doesn't require brainstorming. I asked Pi to apply some changes to a file, and it triggered the `brainstorming` skill. I would like to suggest to make it triggered manually, what do you think, @obra ? https://github.com/obra/superpowers/blob/b55764852ac78870e65c6565fb585b6cd8b3c5c9/skills/brainstorming/SKILL.md?plain=1#L2-L3 Thank you by the way for all the great work",
-          "url": "https://github.com/obra/superpowers/issues/1222",
-          "score": 7,
-          "sentiment": "positive"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2203-zorvalth",
           "source": "github",
@@ -49,17 +38,6 @@
           "url": "https://github.com/obra/superpowers/issues/2034",
           "score": 1,
           "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2197-swift22",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Swift22",
-          "date": "2026-08-23",
-          "text": "OpenCode: bootstrap not injected in non-interactive `opencode run` sessions (skills still register) ## Environment - superpowers v6.3.0 (also reproduced on v6.0.3), installed as an OpenCode plugin via `superpowers@git+https://github.com/obra/superpowers.git` - opencode CLI 1.18.21, macOS (darwin 24.x) ## Summary With the plugin loaded from global config, the `config` hook fires and all 14 skills register — but the `using-superpowers` bootstrap never reaches sessions started with non-interactive `opencode run`. Interactive (TUI) sessions on the same machine, same plugin, same config, do get the",
-          "url": "https://github.com/obra/superpowers/issues/2197",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -67,7 +45,7 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2146-kylekellogg",
@@ -88,6 +66,17 @@
           "date": "2026-08-28",
           "text": "Skills that script multi-branch git workflows never establish a remote-safety boundary, shared branches (production, dev) were unintentionally rewritten across three projects - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? `using-git-worktrees`, `executing-plans`, `subagent-driven-development`, and `finishing-a-development-branch` script every step of a multi-branch git workflow — create the branch, commit per task, merge, integrate — but none of them ever address the boundary between local and remote state. Across three of my projects in",
           "url": "https://github.com/obra/superpowers/issues/2219",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2222-ai-skill-shield",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ai-skill-shield",
+          "date": "2026-08-29",
+          "text": "AI Skill Shield scan report: obra/superpowers (14 skills) <!-- ai-skill-shield:obra/superpowers/ --> <p align=\"center\"> <a href=\"https://ai-skill-shield.suppeng.com\"> <img src=\"https://ai-skill-shield.suppeng.com/skill-shield-logo.svg\" alt=\"AI Skill Shield\" width=\"180\" /> </a> </p> ## AI Skill Shield scan updated [![AI Skill Shield](https://ai-skill-shield.suppeng.com/api/badge/github/obra/superpowers?v=2)](https://ai-skill-shield.suppeng.com/trust/github/obra/superpowers) | Field | Result | | --- | --- | | Commit | `b36e0829c6d0` | | Score | **94/100** | | Status | ⚠️ Review recommended | | F",
+          "url": "https://github.com/obra/superpowers/issues/2222",
           "score": 0,
           "sentiment": "negative"
         }
@@ -193,17 +182,6 @@
       "feedbackCount": 3,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-969-mcorbe",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "mcorbe",
-          "date": "2026-03-28",
-          "text": "New skill: post-mortem / incident analysis for production failures ## Is your feature request related to a problem? Please describe. After a deployment failure, I used Superpowers skills (brainstorming, systematic-debugging) to analyze what went wrong. The analysis was shallow — it produced a flat list of surface-level observations rather than a structured root cause analysis. I had to manually guide the agent toward using a proper framework (Lean 4M: Machine, Material, Man, Manual) to get actionable, separated root causes. The current skill set covers the full development lifecycle (brainstor",
-          "url": "https://github.com/obra/superpowers/issues/969",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2199-adnasal",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -222,6 +200,17 @@
           "date": "2026-08-28",
           "text": "Skills that script multi-branch git workflows never establish a remote-safety boundary, shared branches (production, dev) were unintentionally rewritten across three projects - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? `using-git-worktrees`, `executing-plans`, `subagent-driven-development`, and `finishing-a-development-branch` script every step of a multi-branch git workflow — create the branch, commit per task, merge, integrate — but none of them ever address the boundary between local and remote state. Across three of my projects in",
           "url": "https://github.com/obra/superpowers/issues/2219",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2222-ai-skill-shield",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ai-skill-shield",
+          "date": "2026-08-29",
+          "text": "AI Skill Shield scan report: obra/superpowers (14 skills) <!-- ai-skill-shield:obra/superpowers/ --> <p align=\"center\"> <a href=\"https://ai-skill-shield.suppeng.com\"> <img src=\"https://ai-skill-shield.suppeng.com/skill-shield-logo.svg\" alt=\"AI Skill Shield\" width=\"180\" /> </a> </p> ## AI Skill Shield scan updated [![AI Skill Shield](https://ai-skill-shield.suppeng.com/api/badge/github/obra/superpowers?v=2)](https://ai-skill-shield.suppeng.com/trust/github/obra/superpowers) | Field | Result | | --- | --- | | Commit | `b36e0829c6d0` | | Score | **94/100** | | Status | ⚠️ Review recommended | | F",
+          "url": "https://github.com/obra/superpowers/issues/2222",
           "score": 0,
           "sentiment": "negative"
         }
@@ -286,17 +275,6 @@
       "feedbackCount": 3,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1151-lapaca",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "lapaca",
-          "date": "2026-04-13",
-          "text": "Security expert for Many people neglect the underlying security causing applications to be highly vulnerable to cyber attacks once they are launched ## Context Public issue/PR cluster: * [https://github.com/obra/superpowers/issues/1151](<https://github.com/obra/superpowers/issues/1151>) * [https://github.com/obra/superpowers/pull/1119](<https://github.com/obra/superpowers/pull/1119>) * [https://github.com/obra/superpowers/pull/1154](<https://github.com/obra/superpowers/pull/1154>) * Superseded/duplicate PRs closed during triage: [https://github.com/obra/superpowers/pull/560](<https://github.co",
-          "url": "https://github.com/obra/superpowers/issues/1151",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2034-vida994",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -317,6 +295,17 @@
           "url": "https://github.com/obra/superpowers/issues/2199",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2222-ai-skill-shield",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ai-skill-shield",
+          "date": "2026-08-29",
+          "text": "AI Skill Shield scan report: obra/superpowers (14 skills) <!-- ai-skill-shield:obra/superpowers/ --> <p align=\"center\"> <a href=\"https://ai-skill-shield.suppeng.com\"> <img src=\"https://ai-skill-shield.suppeng.com/skill-shield-logo.svg\" alt=\"AI Skill Shield\" width=\"180\" /> </a> </p> ## AI Skill Shield scan updated [![AI Skill Shield](https://ai-skill-shield.suppeng.com/api/badge/github/obra/superpowers?v=2)](https://ai-skill-shield.suppeng.com/trust/github/obra/superpowers) | Field | Result | | --- | --- | | Commit | `b36e0829c6d0` | | Score | **94/100** | | Status | ⚠️ Review recommended | | F",
+          "url": "https://github.com/obra/superpowers/issues/2222",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -327,14 +316,14 @@
       "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2105-jgodboutpcs",
+          "id": "github-https-github-com-obra-superpowers-issues-2222-ai-skill-shield",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "jgodboutPCS",
-          "date": "2026-08-07",
-          "text": "SessionStart hook fails on Windows: ${CLAUDE_PLUGIN_ROOT} not substituted, interactive sessions silently lose the using-superpowers injection ## Summary On Windows, the `SessionStart` hook fails because `${CLAUDE_PLUGIN_ROOT}` is not substituted in the hook command. Every session start prints an error, and — the part that matters — **interactive sessions silently lose the `using-superpowers` context injection entirely.** Print mode (`claude -p`) is unaffected, which is probably why this has gone unnoticed. I suspect this is a **Claude Code** variable-substitution bug rather than a plugin defec",
-          "url": "https://github.com/obra/superpowers/issues/2105",
-          "score": 2,
+          "author": "ai-skill-shield",
+          "date": "2026-08-29",
+          "text": "AI Skill Shield scan report: obra/superpowers (14 skills) <!-- ai-skill-shield:obra/superpowers/ --> <p align=\"center\"> <a href=\"https://ai-skill-shield.suppeng.com\"> <img src=\"https://ai-skill-shield.suppeng.com/skill-shield-logo.svg\" alt=\"AI Skill Shield\" width=\"180\" /> </a> </p> ## AI Skill Shield scan updated [![AI Skill Shield](https://ai-skill-shield.suppeng.com/api/badge/github/obra/superpowers?v=2)](https://ai-skill-shield.suppeng.com/trust/github/obra/superpowers) | Field | Result | | --- | --- | | Commit | `b36e0829c6d0` | | Score | **94/100** | | Status | ⚠️ Review recommended | | F",
+          "url": "https://github.com/obra/superpowers/issues/2222",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
