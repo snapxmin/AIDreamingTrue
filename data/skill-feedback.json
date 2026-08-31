@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-30T05:39:45Z",
+    "lastUpdated": "2026-08-31T05:54:28Z",
     "skillCount": 20,
-    "totalComments": 57,
+    "totalComments": 54,
     "sources": [
       "hacker-news",
       "github",
@@ -15,7 +15,7 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 2,
+      "feedbackCount": 1,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2203-zorvalth",
@@ -27,17 +27,6 @@
           "url": "https://github.com/obra/superpowers/issues/2203",
           "score": 2,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2034-vida994",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "vida994",
-          "date": "2026-07-24",
-          "text": "Subagent dispatches outside SDD have no model guidance, so they inherit the session model ### Summary `subagent-driven-development` treats the subagent model as a required, explicit choice. Every other skill that dispatches a subagent omits it entirely, so those dispatches silently inherit the session model — the exact failure SDD's own guidance calls out. ### The inconsistency SDD's prompt templates make it a required field: ``` Subagent (general-purpose): model: [MODEL — REQUIRED: choose per SKILL.md Model Selection; an omitted model silently inherits the session's most expensive one] ``` an",
-          "url": "https://github.com/obra/superpowers/issues/2034",
-          "score": 1,
-          "sentiment": "positive"
         }
       ]
     },
@@ -220,7 +209,7 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 4,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2203-zorvalth",
@@ -231,28 +220,6 @@
           "text": "Bounded tasks fill the main session context <!-- BEFORE FILING: Search open AND closed issues. The Windows SessionStart hook alone has been reported 29 times. If your issue already exists, add a comment or reaction to the existing one instead. --> - [x] I searched existing issues and this is not a duplicate ## Environment (required) <!-- Required. We assume an agent filed this report - tell us which one and where it ran. We weigh reports by what produced them. --> | Field | Value | |-------|-------| | Superpowers version | v6.3.0 | | Harness (Claude Code, Cursor, etc.) | Codex App | | Harness ",
           "url": "https://github.com/obra/superpowers/issues/2203",
           "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2034-vida994",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "vida994",
-          "date": "2026-07-24",
-          "text": "Subagent dispatches outside SDD have no model guidance, so they inherit the session model ### Summary `subagent-driven-development` treats the subagent model as a required, explicit choice. Every other skill that dispatches a subagent omits it entirely, so those dispatches silently inherit the session model — the exact failure SDD's own guidance calls out. ### The inconsistency SDD's prompt templates make it a required field: ``` Subagent (general-purpose): model: [MODEL — REQUIRED: choose per SKILL.md Model Selection; an omitted model silently inherits the session's most expensive one] ``` an",
-          "url": "https://github.com/obra/superpowers/issues/2034",
-          "score": 1,
-          "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2207-kareemsasa",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "kareemsasa",
-          "date": "2026-08-26",
-          "text": "`finishing-a-development-branch` can silently delete an SDD workspace: ignored files don't make a worktree dirty **Skills:** `finishing-a-development-branch` (Step 6), interacting with `subagent-driven-development` **Versions:** reproduced against 6.3.0; the same code path and wording are in 6.2.0 **Environment:** git 2.55.0, Linux ## Summary Step 6 of `finishing-a-development-branch` protects uncommitted work by relying on `git worktree remove` to refuse: > **If removal is refused** (`contains modified or untracked files`): the worktree holds files that > exist nowhere else — uncommitted plan",
-          "url": "https://github.com/obra/superpowers/issues/2207",
-          "score": 0,
           "sentiment": "negative"
         },
         {
@@ -603,17 +570,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-anthropics-skills-issues-1669-willorepo",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "WillORepO",
-          "date": "2026-08-25",
-          "text": "mcp-builder: evaluation.py discards a completed run on Windows — write_text() without encoding hits cp1252 on the report's emoji ## Summary `skills/mcp-builder/scripts/evaluation.py:366` writes the report with ```python args.output.write_text(report) ``` `Path.write_text()` uses the **locale** encoding. On a Windows default install that is cp1252, and the report contains emoji — the ✅/❌ correctness markers in `TASK_TEMPLATE`. So on Windows the run completes, every task is asked, every tool call is made, **every token is paid for**, and the results are then discarded by a `UnicodeEncodeError` o",
-          "url": "https://github.com/anthropics/skills/issues/1669",
-          "score": 0,
-          "sentiment": "neutral"
-        },
-        {
           "id": "github-https-github-com-anthropics-skills-issues-1686-mladenaleta",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -623,6 +579,17 @@
           "url": "https://github.com/anthropics/skills/issues/1686",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1692-almezaniy",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "almezaniy",
+          "date": "2026-08-30",
+          "text": "[skill-creator] Trigger-eval harness silently broken on Windows: select() on pipes, probe files leak into global ~/.claude/commands, parallel twins cap recall at ~1/N ## Summary The skill-creator description-optimization harness (`skills/skill-creator/scripts/run_eval.py` + `run_loop.py`) is structurally broken on Windows. Worse than crashing, it **fails silently**: every probe dies or mismeasures, the loop reports `recall=0%` (or a hard ~1/N cap), and then happily \"improves\" the description against pure noise for up to 5 iterations. Each probe is a full `claude -p` session that loads the user",
+          "url": "https://github.com/anthropics/skills/issues/1692",
+          "score": 0,
+          "sentiment": "positive"
         }
       ]
     },

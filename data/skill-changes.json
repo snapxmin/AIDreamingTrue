@@ -1,5 +1,20 @@
 {
-  "generatedAt": "2026-08-30T05:36:59Z",
+  "generatedAt": "2026-08-31T05:52:03Z",
   "isBaselineRun": false,
-  "changes": []
+  "changes": [
+    {
+      "type": "updated",
+      "key": "awesome-copilot/github-issues",
+      "ecosystem": "awesome-copilot",
+      "slug": "github-issues",
+      "displayName": "Github Issues",
+      "changedFields": [
+        "content",
+        "description"
+      ],
+      "summary": "description 更新：Create, update, and manage GitHub issues using MCP tools. Use this skill when users want to create b…",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/github-issues",
+      "detectedAt": "2026-08-31T05:53:00Z"
+    }
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-30T05:36:59Z",
+    "lastUpdated": "2026-08-31T05:52:03Z",
     "totalCount": 487,
     "newCount": 0,
     "sources": [
@@ -26,7 +26,7 @@
       "installCommand": "gh skill install github/awesome-copilot ai-ready",
       "inTopCurated": true,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 40
@@ -46,7 +46,7 @@
       "installCommand": "gh skill install github/awesome-copilot acquire-codebase-knowledge",
       "inTopCurated": true,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 40
@@ -69,7 +69,7 @@
       "installCommand": "npx skills add obra/superpowers  # 或 Cursor/Claude 安装 superpowers 插件",
       "inTopCurated": true,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-13T03:06:44Z",
       "pathPrefix": "skills",
       "activityScore": 40
@@ -89,7 +89,7 @@
       "installCommand": "gh skill install github/awesome-copilot context-map",
       "inTopCurated": true,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 40
@@ -109,7 +109,7 @@
       "installCommand": "gh skill install github/awesome-copilot eval-driven-dev",
       "inTopCurated": true,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 40
@@ -131,7 +131,7 @@
       "installCommand": "npx skills add anthropics/skills --skill frontend-design",
       "inTopCurated": true,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 40
@@ -151,7 +151,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/gh-fix-ci/",
       "inTopCurated": true,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 40
@@ -171,7 +171,7 @@
       "installCommand": "gh skill install github/awesome-copilot harness-engineering",
       "inTopCurated": true,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 40
@@ -193,7 +193,7 @@
       "installCommand": "npx skills add anthropics/skills --skill mcp-builder",
       "inTopCurated": true,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 40
@@ -213,7 +213,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/playwright/",
       "inTopCurated": true,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 40
@@ -236,7 +236,7 @@
       "installCommand": "npx skills add obra/superpowers  # 或 Cursor/Claude 安装 superpowers 插件",
       "inTopCurated": true,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-24T00:59:27Z",
       "pathPrefix": "skills",
       "activityScore": 40
@@ -256,7 +256,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/security-best-practices/",
       "inTopCurated": true,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 40
@@ -276,7 +276,7 @@
       "installCommand": "gh skill install github/awesome-copilot security-review",
       "inTopCurated": true,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 40
@@ -298,7 +298,7 @@
       "installCommand": "npx skills add anthropics/skills --skill skill-creator",
       "inTopCurated": true,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 40
@@ -321,7 +321,7 @@
       "installCommand": "npx skills add obra/superpowers  # 或 Cursor/Claude 安装 superpowers 插件",
       "inTopCurated": true,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-13T03:06:44Z",
       "pathPrefix": "skills",
       "activityScore": 40
@@ -344,7 +344,7 @@
       "installCommand": "npx skills add obra/superpowers  # 或 Cursor/Claude 安装 superpowers 插件",
       "inTopCurated": true,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-24T00:59:27Z",
       "pathPrefix": "skills",
       "activityScore": 40
@@ -367,7 +367,7 @@
       "installCommand": "npx skills add obra/superpowers  # 或 Cursor/Claude 安装 superpowers 插件",
       "inTopCurated": true,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-24T00:59:27Z",
       "pathPrefix": "skills",
       "activityScore": 40
@@ -390,7 +390,7 @@
       "installCommand": "npx skills add obra/superpowers  # 或 Cursor/Claude 安装 superpowers 插件",
       "inTopCurated": true,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-13T03:06:44Z",
       "pathPrefix": "skills",
       "activityScore": 40
@@ -413,7 +413,7 @@
       "installCommand": "npx skills add obra/superpowers  # 或 Cursor/Claude 安装 superpowers 插件",
       "inTopCurated": true,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-24T00:59:27Z",
       "pathPrefix": "skills",
       "activityScore": 40
@@ -436,7 +436,7 @@
       "installCommand": "npx skills add obra/superpowers  # 或 Cursor/Claude 安装 superpowers 插件",
       "inTopCurated": true,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-13T03:06:44Z",
       "pathPrefix": "skills",
       "activityScore": 40
@@ -458,7 +458,7 @@
       "installCommand": "npx skills add anthropics/skills --skill pdf",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 33
@@ -478,7 +478,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/pdf/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 33
@@ -498,7 +498,7 @@
       "installCommand": "gh skill install github/awesome-copilot webapp-testing",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 33
@@ -520,7 +520,7 @@
       "installCommand": "npx skills add anthropics/skills --skill webapp-testing",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 33
@@ -542,7 +542,7 @@
       "installCommand": "npx skills add anthropics/skills --skill academy-guide",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-19T01:58:40Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -562,7 +562,7 @@
       "installCommand": "gh skill install github/awesome-copilot acreadiness-assess",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -582,7 +582,7 @@
       "installCommand": "gh skill install github/awesome-copilot acreadiness-generate-instructions",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -602,7 +602,7 @@
       "installCommand": "gh skill install github/awesome-copilot acreadiness-policy",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -622,7 +622,7 @@
       "installCommand": "gh skill install github/awesome-copilot ad-campaign-analyzer",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-24T00:59:27Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -642,7 +642,7 @@
       "installCommand": "gh skill install github/awesome-copilot add-educational-comments",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -662,7 +662,7 @@
       "installCommand": "gh skill install github/awesome-copilot adobe-illustrator-scripting",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -682,7 +682,7 @@
       "installCommand": "gh skill install github/awesome-copilot agent-governance",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -702,7 +702,7 @@
       "installCommand": "gh skill install github/awesome-copilot agent-owasp-compliance",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -722,7 +722,7 @@
       "installCommand": "gh skill install github/awesome-copilot agent-skill-stack",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-24T00:59:27Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -742,7 +742,7 @@
       "installCommand": "gh skill install github/awesome-copilot agent-supply-chain",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -762,7 +762,7 @@
       "installCommand": "gh skill install github/awesome-copilot agentic-eval",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -782,7 +782,7 @@
       "installCommand": "gh skill install github/awesome-copilot ai-prompt-engineering-safety-review",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -802,7 +802,7 @@
       "installCommand": "gh skill install github/awesome-copilot ai-team-orchestration",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-31T01:02:15Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -824,7 +824,7 @@
       "installCommand": "npx skills add anthropics/skills --skill algorithmic-art",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -844,7 +844,7 @@
       "installCommand": "gh skill install github/awesome-copilot anti-ui-slop",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-24T02:05:54Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -864,7 +864,7 @@
       "installCommand": "gh skill install github/awesome-copilot appinsights-instrumentation",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -884,7 +884,7 @@
       "installCommand": "gh skill install github/awesome-copilot apple-appstore-reviewer",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-28T11:36:09Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -904,7 +904,7 @@
       "installCommand": "gh skill install github/awesome-copilot arch-linux-triage",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -924,7 +924,7 @@
       "installCommand": "gh skill install github/awesome-copilot architecture-blueprint-generator",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -944,7 +944,7 @@
       "installCommand": "gh skill install github/awesome-copilot arduino-azure-iot-edge-integration",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-07T03:25:39Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -964,7 +964,7 @@
       "installCommand": "gh skill install github/awesome-copilot arize-ai-provider-integration",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -984,7 +984,7 @@
       "installCommand": "gh skill install github/awesome-copilot arize-annotation",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1004,7 +1004,7 @@
       "installCommand": "gh skill install github/awesome-copilot arize-dataset",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1024,7 +1024,7 @@
       "installCommand": "gh skill install github/awesome-copilot arize-evaluator",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1044,7 +1044,7 @@
       "installCommand": "gh skill install github/awesome-copilot arize-experiment",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1064,7 +1064,7 @@
       "installCommand": "gh skill install github/awesome-copilot arize-instrumentation",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1084,7 +1084,7 @@
       "installCommand": "gh skill install github/awesome-copilot arize-link",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1104,7 +1104,7 @@
       "installCommand": "gh skill install github/awesome-copilot arize-prompt-optimization",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1124,7 +1124,7 @@
       "installCommand": "gh skill install github/awesome-copilot arize-trace",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1144,7 +1144,7 @@
       "installCommand": "gh skill install github/awesome-copilot aspire",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1164,7 +1164,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/aspnet-core/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -1184,7 +1184,7 @@
       "installCommand": "gh skill install github/awesome-copilot aspnet-minimal-api-openapi",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1204,7 +1204,7 @@
       "installCommand": "gh skill install github/awesome-copilot audit-integrity",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1224,7 +1224,7 @@
       "installCommand": "gh skill install github/awesome-copilot automate-this",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1244,7 +1244,7 @@
       "installCommand": "gh skill install github/awesome-copilot autoresearch",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1264,7 +1264,7 @@
       "installCommand": "gh skill install github/awesome-copilot aws-cdk-python-setup",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1284,7 +1284,7 @@
       "installCommand": "gh skill install github/awesome-copilot aws-cloudwatch-investigation",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1304,7 +1304,7 @@
       "installCommand": "gh skill install github/awesome-copilot aws-cost-optimize",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-07T03:25:39Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1324,7 +1324,7 @@
       "installCommand": "gh skill install github/awesome-copilot aws-resource-health-diagnose",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1344,7 +1344,7 @@
       "installCommand": "gh skill install github/awesome-copilot aws-resource-query",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1364,7 +1364,7 @@
       "installCommand": "gh skill install github/awesome-copilot aws-well-architected-review",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-29T00:59:51Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1384,7 +1384,7 @@
       "installCommand": "gh skill install github/awesome-copilot az-cost-optimize",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1404,7 +1404,7 @@
       "installCommand": "gh skill install github/awesome-copilot azure-architecture-autopilot",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-07T03:25:39Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1424,7 +1424,7 @@
       "installCommand": "gh skill install github/awesome-copilot azure-container-registry-cli",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-31T01:02:15Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1444,7 +1444,7 @@
       "installCommand": "gh skill install github/awesome-copilot azure-deployment-preflight",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1464,7 +1464,7 @@
       "installCommand": "gh skill install github/awesome-copilot azure-developer-cli",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-06T03:48:02Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1484,7 +1484,7 @@
       "installCommand": "gh skill install github/awesome-copilot azure-devops-cli",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1504,7 +1504,7 @@
       "installCommand": "gh skill install github/awesome-copilot azure-pricing",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1524,7 +1524,7 @@
       "installCommand": "gh skill install github/awesome-copilot azure-resource-health-diagnose",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1544,7 +1544,7 @@
       "installCommand": "gh skill install github/awesome-copilot azure-resource-visualizer",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1564,7 +1564,7 @@
       "installCommand": "gh skill install github/awesome-copilot azure-role-selector",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1584,7 +1584,7 @@
       "installCommand": "gh skill install github/awesome-copilot azure-smart-city-iot-solution-builder",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-07T03:25:39Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1604,7 +1604,7 @@
       "installCommand": "gh skill install github/awesome-copilot azure-static-web-apps",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1624,7 +1624,7 @@
       "installCommand": "gh skill install github/awesome-copilot azure-well-architected-review",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-29T00:59:51Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1644,7 +1644,7 @@
       "installCommand": "gh skill install github/awesome-copilot batch-files",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1664,7 +1664,7 @@
       "installCommand": "gh skill install github/awesome-copilot bench-read",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-21T01:00:12Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1684,7 +1684,7 @@
       "installCommand": "gh skill install github/awesome-copilot bigquery-pipeline-audit",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1704,7 +1704,7 @@
       "installCommand": "gh skill install github/awesome-copilot boost-prompt",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1724,7 +1724,7 @@
       "installCommand": "gh skill install github/awesome-copilot brag-sheet",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1746,7 +1746,7 @@
       "installCommand": "npx skills add anthropics/skills --skill brand-guidelines",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1766,7 +1766,7 @@
       "installCommand": "gh skill install github/awesome-copilot breakdown-epic-arch",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1786,7 +1786,7 @@
       "installCommand": "gh skill install github/awesome-copilot breakdown-epic-pm",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1806,7 +1806,7 @@
       "installCommand": "gh skill install github/awesome-copilot breakdown-feature-implementation",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-07T03:25:39Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1826,7 +1826,7 @@
       "installCommand": "gh skill install github/awesome-copilot breakdown-feature-prd",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1846,7 +1846,7 @@
       "installCommand": "gh skill install github/awesome-copilot breakdown-plan",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1866,7 +1866,7 @@
       "installCommand": "gh skill install github/awesome-copilot breakdown-test",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1886,7 +1886,7 @@
       "installCommand": "gh skill install github/awesome-copilot bug-receipt",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-14T03:05:38Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1906,7 +1906,7 @@
       "installCommand": "gh skill install github/awesome-copilot bug-reproduction-brief",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-30T00:57:48Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1926,7 +1926,7 @@
       "installCommand": "gh skill install github/awesome-copilot build-evidence-map",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-06T03:48:02Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1948,7 +1948,7 @@
       "installCommand": "npx skills add anthropics/skills --skill canvas-design",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1968,7 +1968,7 @@
       "installCommand": "gh skill install github/awesome-copilot centos-linux-triage",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -1988,7 +1988,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/chatgpt-apps/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -2008,7 +2008,7 @@
       "installCommand": "gh skill install github/awesome-copilot chrome-devtools",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2030,7 +2030,7 @@
       "installCommand": "npx skills add anthropics/skills --skill claude-api",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-22T01:56:17Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2050,7 +2050,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/cli-creator/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -2070,7 +2070,7 @@
       "installCommand": "gh skill install github/awesome-copilot cli-mastery",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2090,7 +2090,7 @@
       "installCommand": "gh skill install github/awesome-copilot cloud-design-patterns",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2110,7 +2110,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/cloudflare-deploy/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -2130,7 +2130,7 @@
       "installCommand": "gh skill install github/awesome-copilot code-exemplars-blueprint-generator",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2150,7 +2150,7 @@
       "installCommand": "gh skill install github/awesome-copilot code-tour",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2170,7 +2170,7 @@
       "installCommand": "gh skill install github/awesome-copilot codebase-memory-mcp",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-18T01:56:16Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2190,7 +2190,7 @@
       "installCommand": "gh skill install github/awesome-copilot codeql",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2210,7 +2210,7 @@
       "installCommand": "gh skill install github/awesome-copilot comment-code-generate-a-tutorial",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2230,7 +2230,7 @@
       "installCommand": "gh skill install github/awesome-copilot commit-message-storyteller",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2250,7 +2250,7 @@
       "installCommand": "gh skill install github/awesome-copilot competitor-ad-intelligence",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-24T00:59:27Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2270,7 +2270,7 @@
       "installCommand": "gh skill install github/awesome-copilot containerize-aspnet-framework",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2290,7 +2290,7 @@
       "installCommand": "gh skill install github/awesome-copilot containerize-aspnetcore",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2310,7 +2310,7 @@
       "installCommand": "gh skill install github/awesome-copilot content-management-systems",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2330,7 +2330,7 @@
       "installCommand": "gh skill install github/awesome-copilot conventional-branch",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2350,7 +2350,7 @@
       "installCommand": "gh skill install github/awesome-copilot conventional-commit",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2370,7 +2370,7 @@
       "installCommand": "gh skill install github/awesome-copilot convert-excel-to-md",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-16T00:59:17Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2390,7 +2390,7 @@
       "installCommand": "gh skill install github/awesome-copilot convert-pdf-to-md",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-16T00:59:17Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2410,7 +2410,7 @@
       "installCommand": "gh skill install github/awesome-copilot convert-plaintext-to-md",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2430,7 +2430,7 @@
       "installCommand": "gh skill install github/awesome-copilot convert-word-to-md",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-16T00:59:17Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2450,7 +2450,7 @@
       "installCommand": "gh skill install github/awesome-copilot copilot-cli-quickstart",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2470,7 +2470,7 @@
       "installCommand": "gh skill install github/awesome-copilot copilot-instructions-blueprint-generator",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2490,7 +2490,7 @@
       "installCommand": "gh skill install github/awesome-copilot copilot-pr-autopilot",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2510,7 +2510,7 @@
       "installCommand": "gh skill install github/awesome-copilot copilot-sdk",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-26T02:07:42Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2530,7 +2530,7 @@
       "installCommand": "gh skill install github/awesome-copilot copilot-spaces",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2550,7 +2550,7 @@
       "installCommand": "gh skill install github/awesome-copilot copilot-usage-metrics",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2570,7 +2570,7 @@
       "installCommand": "gh skill install github/awesome-copilot cosmosdb-datamodeling",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2590,7 +2590,7 @@
       "installCommand": "gh skill install github/awesome-copilot create-agentsmd",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2610,7 +2610,7 @@
       "installCommand": "gh skill install github/awesome-copilot create-architectural-decision-record",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2630,7 +2630,7 @@
       "installCommand": "gh skill install github/awesome-copilot create-github-action-workflow-specification",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2650,7 +2650,7 @@
       "installCommand": "gh skill install github/awesome-copilot create-github-issue-feature-from-specification",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2670,7 +2670,7 @@
       "installCommand": "gh skill install github/awesome-copilot create-github-issues-feature-from-implementation-plan",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2690,7 +2690,7 @@
       "installCommand": "gh skill install github/awesome-copilot create-github-issues-for-unmet-specification-requirements",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2710,7 +2710,7 @@
       "installCommand": "gh skill install github/awesome-copilot create-implementation-plan",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2730,7 +2730,7 @@
       "installCommand": "gh skill install github/awesome-copilot create-llms",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2750,7 +2750,7 @@
       "installCommand": "gh skill install github/awesome-copilot create-readme",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2770,7 +2770,7 @@
       "installCommand": "gh skill install github/awesome-copilot create-specification",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-07T03:25:39Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2790,7 +2790,7 @@
       "installCommand": "gh skill install github/awesome-copilot create-spring-boot-java-project",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2810,7 +2810,7 @@
       "installCommand": "gh skill install github/awesome-copilot create-spring-boot-kotlin-project",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2830,7 +2830,7 @@
       "installCommand": "gh skill install github/awesome-copilot create-technical-spike",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2850,7 +2850,7 @@
       "installCommand": "gh skill install github/awesome-copilot create-tldr-page",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2870,7 +2870,7 @@
       "installCommand": "gh skill install github/awesome-copilot creating-oracle-to-postgres-master-migration-plan",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-12T03:03:19Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2890,7 +2890,7 @@
       "installCommand": "gh skill install github/awesome-copilot creating-oracle-to-postgres-migration-bug-report",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-12T03:03:19Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2910,7 +2910,7 @@
       "installCommand": "gh skill install github/awesome-copilot creating-oracle-to-postgres-migration-integration-tests",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-12T03:03:19Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2930,7 +2930,7 @@
       "installCommand": "gh skill install github/awesome-copilot csharp-async",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2950,7 +2950,7 @@
       "installCommand": "gh skill install github/awesome-copilot csharp-docs",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2970,7 +2970,7 @@
       "installCommand": "gh skill install github/awesome-copilot csharp-mstest",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -2990,7 +2990,7 @@
       "installCommand": "gh skill install github/awesome-copilot csharp-nunit",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3010,7 +3010,7 @@
       "installCommand": "gh skill install github/awesome-copilot csharp-tunit",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3030,7 +3030,7 @@
       "installCommand": "gh skill install github/awesome-copilot csharp-xunit",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3050,7 +3050,7 @@
       "installCommand": "gh skill install github/awesome-copilot d365-solution-blueprint",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-15T01:55:46Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3070,7 +3070,7 @@
       "installCommand": "gh skill install github/awesome-copilot daily-focus-board",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-08T02:27:10Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3090,7 +3090,7 @@
       "installCommand": "gh skill install github/awesome-copilot daily-prep",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3110,7 +3110,7 @@
       "installCommand": "gh skill install github/awesome-copilot data-breach-blast-radius",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3130,7 +3130,7 @@
       "installCommand": "gh skill install github/awesome-copilot datanalysis-credit-risk",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3150,7 +3150,7 @@
       "installCommand": "gh skill install github/awesome-copilot dataverse-python-advanced-patterns",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3170,7 +3170,7 @@
       "installCommand": "gh skill install github/awesome-copilot dataverse-python-production-code",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3190,7 +3190,7 @@
       "installCommand": "gh skill install github/awesome-copilot dataverse-python-quickstart",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3210,7 +3210,7 @@
       "installCommand": "gh skill install github/awesome-copilot dataverse-python-usecase-builder",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3230,7 +3230,7 @@
       "installCommand": "gh skill install github/awesome-copilot debian-linux-triage",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3250,7 +3250,7 @@
       "installCommand": "gh skill install github/awesome-copilot declarative-agents",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3270,7 +3270,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/define-goal/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -3290,7 +3290,7 @@
       "installCommand": "gh skill install github/awesome-copilot dependabot",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3310,7 +3310,7 @@
       "installCommand": "gh skill install github/awesome-copilot desk-journal",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-21T01:00:12Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3330,7 +3330,7 @@
       "installCommand": "gh skill install github/awesome-copilot desk-open",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-21T01:00:12Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3350,7 +3350,7 @@
       "installCommand": "gh skill install github/awesome-copilot devops-rollout-plan",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3370,7 +3370,7 @@
       "installCommand": "gh skill install github/awesome-copilot diagnose",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3392,7 +3392,7 @@
       "installCommand": "npx skills add anthropics/skills --skill discernment-nudge",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-18T01:56:16Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3415,7 +3415,7 @@
       "installCommand": "npx skills add obra/superpowers  # 或 Cursor/Claude 安装 superpowers 插件",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-24T00:59:27Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3435,7 +3435,7 @@
       "installCommand": "gh skill install github/awesome-copilot doc-and-modernize",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-10T01:03:57Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3457,7 +3457,7 @@
       "installCommand": "npx skills add anthropics/skills --skill doc-coauthoring",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3477,7 +3477,7 @@
       "installCommand": "gh skill install github/awesome-copilot documentation-writer",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3499,7 +3499,7 @@
       "installCommand": "npx skills add anthropics/skills --skill docx",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-18T00:58:58Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3519,7 +3519,7 @@
       "installCommand": "gh skill install github/awesome-copilot dotnet-best-practices",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3539,7 +3539,7 @@
       "installCommand": "gh skill install github/awesome-copilot dotnet-design-pattern-review",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3559,7 +3559,7 @@
       "installCommand": "gh skill install github/awesome-copilot dotnet-mcp-builder",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-31T01:02:15Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3579,7 +3579,7 @@
       "installCommand": "gh skill install github/awesome-copilot dotnet-timezone",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3599,7 +3599,7 @@
       "installCommand": "gh skill install github/awesome-copilot dotnet-upgrade",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3619,7 +3619,7 @@
       "installCommand": "gh skill install github/awesome-copilot doublecheck",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3639,7 +3639,7 @@
       "installCommand": "gh skill install github/awesome-copilot draw-io-diagram-generator",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3659,7 +3659,7 @@
       "installCommand": "gh skill install github/awesome-copilot drawio",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3679,7 +3679,7 @@
       "installCommand": "gh skill install github/awesome-copilot editorconfig",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3699,7 +3699,7 @@
       "installCommand": "gh skill install github/awesome-copilot ef-core",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3719,7 +3719,7 @@
       "installCommand": "gh skill install github/awesome-copilot efcore-d2-db-diagram",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3739,7 +3739,7 @@
       "installCommand": "gh skill install github/awesome-copilot em-dash",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3759,7 +3759,7 @@
       "installCommand": "gh skill install github/awesome-copilot email-drafter",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3779,7 +3779,7 @@
       "installCommand": "gh skill install github/awesome-copilot entra-agent-user",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3799,7 +3799,7 @@
       "installCommand": "gh skill install github/awesome-copilot exam-ready",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3819,7 +3819,7 @@
       "installCommand": "gh skill install github/awesome-copilot excalidraw-diagram-generator",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-24T02:05:54Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3842,7 +3842,7 @@
       "installCommand": "npx skills add obra/superpowers  # 或 Cursor/Claude 安装 superpowers 插件",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-24T00:59:27Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3862,7 +3862,7 @@
       "installCommand": "gh skill install github/awesome-copilot eyeball",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3882,7 +3882,7 @@
       "installCommand": "gh skill install github/awesome-copilot fabric-lakehouse",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3902,7 +3902,7 @@
       "installCommand": "gh skill install github/awesome-copilot fedora-linux-triage",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -3922,7 +3922,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/figma/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -3942,7 +3942,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/figma-code-connect-components/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -3962,7 +3962,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/figma-create-design-system-rules/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -3982,7 +3982,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/figma-create-new-file/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -4002,7 +4002,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/figma-generate-design/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -4022,7 +4022,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/figma-generate-library/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -4042,7 +4042,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/figma-implement-design/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -4062,7 +4062,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/figma-use/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -4082,7 +4082,7 @@
       "installCommand": "gh skill install github/awesome-copilot finalize-agent-prompt",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4105,7 +4105,7 @@
       "installCommand": "npx skills add obra/superpowers  # 或 Cursor/Claude 安装 superpowers 插件",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-13T03:06:44Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4125,7 +4125,7 @@
       "installCommand": "gh skill install github/awesome-copilot finnish-humanizer",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4145,7 +4145,7 @@
       "installCommand": "gh skill install github/awesome-copilot first-ask",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4165,7 +4165,7 @@
       "installCommand": "gh skill install github/awesome-copilot flowstudio-power-automate-build",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-27T10:04:45Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4185,7 +4185,7 @@
       "installCommand": "gh skill install github/awesome-copilot flowstudio-power-automate-debug",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-27T10:04:45Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4205,7 +4205,7 @@
       "installCommand": "gh skill install github/awesome-copilot flowstudio-power-automate-governance",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4225,7 +4225,7 @@
       "installCommand": "gh skill install github/awesome-copilot flowstudio-power-automate-mcp",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4245,7 +4245,7 @@
       "installCommand": "gh skill install github/awesome-copilot flowstudio-power-automate-monitoring",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4265,7 +4265,7 @@
       "installCommand": "gh skill install github/awesome-copilot fluentui-blazor",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4285,7 +4285,7 @@
       "installCommand": "gh skill install github/awesome-copilot folder-structure-blueprint-generator",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4305,7 +4305,7 @@
       "installCommand": "gh skill install github/awesome-copilot foundry-agent-sync",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4325,7 +4325,7 @@
       "installCommand": "gh skill install github/awesome-copilot foundry-hosted-agent-copilotkit",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-09T01:05:27Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4345,7 +4345,7 @@
       "installCommand": "gh skill install github/awesome-copilot freecad-scripts",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4365,7 +4365,7 @@
       "installCommand": "gh skill install github/awesome-copilot from-the-other-side-anitta",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4385,7 +4385,7 @@
       "installCommand": "gh skill install github/awesome-copilot from-the-other-side-quinn",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4405,7 +4405,7 @@
       "installCommand": "gh skill install github/awesome-copilot from-the-other-side-vega",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4425,7 +4425,7 @@
       "installCommand": "gh skill install github/awesome-copilot from-the-other-side-wiggins",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4445,7 +4445,7 @@
       "installCommand": "gh skill install github/awesome-copilot game-engine",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4465,7 +4465,7 @@
       "installCommand": "gh skill install github/awesome-copilot gdpr-compliant",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4485,7 +4485,7 @@
       "installCommand": "gh skill install github/awesome-copilot gem-devops-guidelines",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-26T02:07:42Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4505,7 +4505,7 @@
       "installCommand": "gh skill install github/awesome-copilot gen-specs-as-issues",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4525,7 +4525,7 @@
       "installCommand": "gh skill install github/awesome-copilot generate-custom-instructions-from-codebase",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4545,7 +4545,7 @@
       "installCommand": "gh skill install github/awesome-copilot generate-image",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4565,7 +4565,7 @@
       "installCommand": "gh skill install github/awesome-copilot geofeed-tuner",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-07T03:25:39Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4585,7 +4585,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/gh-address-comments/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -4605,7 +4605,7 @@
       "installCommand": "gh skill install github/awesome-copilot gh-attach",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-06T03:48:02Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4625,7 +4625,7 @@
       "installCommand": "gh skill install github/awesome-copilot git-commit",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4645,7 +4645,7 @@
       "installCommand": "gh skill install github/awesome-copilot git-flow-branch-creator",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4665,7 +4665,7 @@
       "installCommand": "gh skill install github/awesome-copilot github-actions-efficiency",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4685,7 +4685,7 @@
       "installCommand": "gh skill install github/awesome-copilot github-actions-hardening",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4705,7 +4705,7 @@
       "installCommand": "gh skill install github/awesome-copilot github-actions-runtime-upgrade-conventions",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4725,7 +4725,7 @@
       "installCommand": "gh skill install github/awesome-copilot github-codespaces-efficiency",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4745,7 +4745,7 @@
       "installCommand": "gh skill install github/awesome-copilot github-copilot-starter",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4760,13 +4760,13 @@
         "GitHub Copilot",
         "OpenCode"
       ],
-      "description": "Create, update, and manage GitHub issues using MCP tools. Use this skill when users want to create bug reports, feature requests, or task issues, update existing issues, add labels/assignees/milestones, set issue fields (dates, priority, custom fields), set issue types, manage issue workflows, link issues, add dependencies, or track blocked-by/blocking relationships. Triggers on requests like \"create an issue\", \"file a bug\", \"request a feature\", \"update issue X\", \"set the priority\", \"set the start date\", \"link issues\", \"add dependency\", \"blocked by\", \"blocking\", or any GitHub issue management task.",
+      "description": "Create, update, and manage GitHub issues using MCP tools. Use this skill when users want to create bug reports, feature requests, or task issues, update existing issues, add labels/assignees/milestones, manage repository labels, set issue fields (dates, priority, custom fields), set issue types, manage issue workflows, link issues, add dependencies, or track blocked-by/blocking relationships. Triggers on requests like \"create an issue\", \"file a bug\", \"request a feature\", \"update issue X\", \"set the priority\", \"set the start date\", \"create a label\", \"rename a label\", \"list repo labels\", \"link issues\", \"add dependency\", \"blocked by\", \"blocking\", or any GitHub issue management task.",
       "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/github-issues",
       "installCommand": "gh skill install github/awesome-copilot github-issues",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
-      "lastChangedAt": "2026-08-10T02:40:02Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
+      "lastChangedAt": "2026-08-31T05:52:03Z",
       "pathPrefix": "skills",
       "activityScore": 25
     },
@@ -4785,7 +4785,7 @@
       "installCommand": "gh skill install github/awesome-copilot github-release",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-07T03:25:39Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4805,7 +4805,7 @@
       "installCommand": "gh skill install github/awesome-copilot gitmoji",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-28T00:58:46Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4825,7 +4825,7 @@
       "installCommand": "gh skill install github/awesome-copilot go-mcp-server-generator",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4845,7 +4845,7 @@
       "installCommand": "gh skill install github/awesome-copilot gsap-framer-scroll-animation",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4865,7 +4865,7 @@
       "installCommand": "gh skill install github/awesome-copilot gtm-0-to-1-launch",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4885,7 +4885,7 @@
       "installCommand": "gh skill install github/awesome-copilot gtm-ai-gtm",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4905,7 +4905,7 @@
       "installCommand": "gh skill install github/awesome-copilot gtm-board-and-investor-communication",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4925,7 +4925,7 @@
       "installCommand": "gh skill install github/awesome-copilot gtm-developer-ecosystem",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4945,7 +4945,7 @@
       "installCommand": "gh skill install github/awesome-copilot gtm-enterprise-account-planning",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4965,7 +4965,7 @@
       "installCommand": "gh skill install github/awesome-copilot gtm-enterprise-onboarding",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -4985,7 +4985,7 @@
       "installCommand": "gh skill install github/awesome-copilot gtm-operating-cadence",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5005,7 +5005,7 @@
       "installCommand": "gh skill install github/awesome-copilot gtm-partnership-architecture",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5025,7 +5025,7 @@
       "installCommand": "gh skill install github/awesome-copilot gtm-positioning-strategy",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5045,7 +5045,7 @@
       "installCommand": "gh skill install github/awesome-copilot gtm-product-led-growth",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5065,7 +5065,7 @@
       "installCommand": "gh skill install github/awesome-copilot gtm-technical-product-pricing",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5085,7 +5085,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/hatch-pet/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -5105,7 +5105,7 @@
       "installCommand": "gh skill install github/awesome-copilot image-annotations",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-13T01:01:46Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5125,7 +5125,7 @@
       "installCommand": "gh skill install github/awesome-copilot image-manipulation-image-magick",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5145,7 +5145,7 @@
       "installCommand": "gh skill install github/awesome-copilot impediment-prioritization",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5165,7 +5165,7 @@
       "installCommand": "gh skill install github/awesome-copilot import-infrastructure-as-code",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5185,7 +5185,7 @@
       "installCommand": "gh skill install github/awesome-copilot incident-postmortem",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5205,7 +5205,7 @@
       "installCommand": "gh skill install github/awesome-copilot integrate-context-matic",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5227,7 +5227,7 @@
       "installCommand": "npx skills add anthropics/skills --skill internal-comms",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5247,7 +5247,7 @@
       "installCommand": "gh skill install github/awesome-copilot issue-fields-migration",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5267,7 +5267,7 @@
       "installCommand": "gh skill install github/awesome-copilot java-add-graalvm-native-image-support",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5287,7 +5287,7 @@
       "installCommand": "gh skill install github/awesome-copilot java-docs",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5307,7 +5307,7 @@
       "installCommand": "gh skill install github/awesome-copilot java-helidon",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-21T01:00:12Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5327,7 +5327,7 @@
       "installCommand": "gh skill install github/awesome-copilot java-junit",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5347,7 +5347,7 @@
       "installCommand": "gh skill install github/awesome-copilot java-mcp-server-generator",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-07T03:25:39Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5367,7 +5367,7 @@
       "installCommand": "gh skill install github/awesome-copilot java-refactoring-extract-method",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5387,7 +5387,7 @@
       "installCommand": "gh skill install github/awesome-copilot java-refactoring-remove-parameter",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5407,7 +5407,7 @@
       "installCommand": "gh skill install github/awesome-copilot java-springboot",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5427,7 +5427,7 @@
       "installCommand": "gh skill install github/awesome-copilot javascript-typescript-jest",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5447,7 +5447,7 @@
       "installCommand": "gh skill install github/awesome-copilot javax-to-jakarta-migration",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5467,7 +5467,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/jupyter-notebook/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -5487,7 +5487,7 @@
       "installCommand": "gh skill install github/awesome-copilot kotlin-mcp-server-generator",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5507,7 +5507,7 @@
       "installCommand": "gh skill install github/awesome-copilot kotlin-springboot",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5527,7 +5527,7 @@
       "installCommand": "gh skill install github/awesome-copilot landing-page-conversion-audit",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-10T01:30:57Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5547,7 +5547,7 @@
       "installCommand": "gh skill install github/awesome-copilot latchshot-page-capture",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-24T00:59:27Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5567,7 +5567,7 @@
       "installCommand": "gh skill install github/awesome-copilot legacy-circuit-mockups",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5587,7 +5587,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/linear/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -5607,7 +5607,7 @@
       "installCommand": "gh skill install github/awesome-copilot linkedin-post-formatter",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5627,7 +5627,7 @@
       "installCommand": "gh skill install github/awesome-copilot lsp-setup",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5647,7 +5647,7 @@
       "installCommand": "gh skill install github/awesome-copilot make-repo-contribution",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5667,7 +5667,7 @@
       "installCommand": "gh skill install github/awesome-copilot markdown-to-html",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5687,7 +5687,7 @@
       "installCommand": "gh skill install github/awesome-copilot markstream-install",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-21T01:00:12Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5707,7 +5707,7 @@
       "installCommand": "gh skill install github/awesome-copilot mcp-cli",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5727,7 +5727,7 @@
       "installCommand": "gh skill install github/awesome-copilot mcp-copilot-studio-server-generator",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5747,7 +5747,7 @@
       "installCommand": "gh skill install github/awesome-copilot mcp-create-adaptive-cards",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5767,7 +5767,7 @@
       "installCommand": "gh skill install github/awesome-copilot mcp-create-declarative-agent",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5787,7 +5787,7 @@
       "installCommand": "gh skill install github/awesome-copilot mcp-deploy-manage-agents",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5807,7 +5807,7 @@
       "installCommand": "gh skill install github/awesome-copilot mcp-implementation-security-review",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-10T01:03:57Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5827,7 +5827,7 @@
       "installCommand": "gh skill install github/awesome-copilot mcp-release-qa",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-07T03:25:39Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5847,7 +5847,7 @@
       "installCommand": "gh skill install github/awesome-copilot mcp-security-audit",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5867,7 +5867,7 @@
       "installCommand": "gh skill install github/awesome-copilot md-to-docx",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5887,7 +5887,7 @@
       "installCommand": "gh skill install github/awesome-copilot meeting-minutes",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5907,7 +5907,7 @@
       "installCommand": "gh skill install github/awesome-copilot memory-merger",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5927,7 +5927,7 @@
       "installCommand": "gh skill install github/awesome-copilot mentoring-juniors",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5947,7 +5947,7 @@
       "installCommand": "gh skill install github/awesome-copilot microsoft-agent-framework",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5967,7 +5967,7 @@
       "installCommand": "gh skill install github/awesome-copilot microsoft-code-reference",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -5987,7 +5987,7 @@
       "installCommand": "gh skill install github/awesome-copilot microsoft-docs",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6007,7 +6007,7 @@
       "installCommand": "gh skill install github/awesome-copilot microsoft-skill-creator",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6027,7 +6027,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/migrate-to-codex/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -6047,7 +6047,7 @@
       "installCommand": "gh skill install github/awesome-copilot migrating-oracle-to-postgres-data-access-code",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-12T03:03:19Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6067,7 +6067,7 @@
       "installCommand": "gh skill install github/awesome-copilot migrating-oracle-to-postgres-stored-procedures",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-12T03:03:19Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6087,7 +6087,7 @@
       "installCommand": "gh skill install github/awesome-copilot minecraft-plugin-development",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6107,7 +6107,7 @@
       "installCommand": "gh skill install github/awesome-copilot mini-context-graph",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-07T03:25:39Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6127,7 +6127,7 @@
       "installCommand": "gh skill install github/awesome-copilot mkdocs-translations",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6147,7 +6147,7 @@
       "installCommand": "gh skill install github/awesome-copilot msgraph-sdk",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6167,7 +6167,7 @@
       "installCommand": "gh skill install github/awesome-copilot msstore-cli",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6187,7 +6187,7 @@
       "installCommand": "gh skill install github/awesome-copilot multi-stage-dockerfile",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6207,7 +6207,7 @@
       "installCommand": "gh skill install github/awesome-copilot mvvm-toolkit",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6227,7 +6227,7 @@
       "installCommand": "gh skill install github/awesome-copilot mvvm-toolkit-di",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6247,7 +6247,7 @@
       "installCommand": "gh skill install github/awesome-copilot mvvm-toolkit-messenger",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6267,7 +6267,7 @@
       "installCommand": "gh skill install github/awesome-copilot namecheap",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6287,7 +6287,7 @@
       "installCommand": "gh skill install github/awesome-copilot nano-banana-pro-openrouter",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6307,7 +6307,7 @@
       "installCommand": "gh skill install github/awesome-copilot napkin",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-07T03:25:39Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6327,7 +6327,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/netlify-deploy/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -6347,7 +6347,7 @@
       "installCommand": "gh skill install github/awesome-copilot next-intl-add-language",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6367,7 +6367,7 @@
       "installCommand": "gh skill install github/awesome-copilot noob-mode",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6387,7 +6387,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/notion-knowledge-capture/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -6407,7 +6407,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/notion-meeting-intelligence/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -6427,7 +6427,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/notion-research-documentation/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -6447,7 +6447,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/notion-spec-to-implementation/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -6467,7 +6467,7 @@
       "installCommand": "gh skill install github/awesome-copilot nuget-manager",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6487,7 +6487,7 @@
       "installCommand": "gh skill install github/awesome-copilot onboard-context-matic",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6507,7 +6507,7 @@
       "installCommand": "gh skill install github/awesome-copilot oo-component-documentation",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6527,7 +6527,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/openai-docs/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -6547,7 +6547,7 @@
       "installCommand": "gh skill install github/awesome-copilot openapi-to-application-code",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6567,7 +6567,7 @@
       "installCommand": "gh skill install github/awesome-copilot optimize-simplicite-logs",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6587,7 +6587,7 @@
       "installCommand": "gh skill install github/awesome-copilot pdftk-server",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6607,7 +6607,7 @@
       "installCommand": "gh skill install github/awesome-copilot penpot-uiux-design",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6627,7 +6627,7 @@
       "installCommand": "gh skill install github/awesome-copilot performance-review-writer",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6647,7 +6647,7 @@
       "installCommand": "gh skill install github/awesome-copilot pester-migration",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-13T01:01:46Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6667,7 +6667,7 @@
       "installCommand": "gh skill install github/awesome-copilot pester-should-migration",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-03T01:05:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6687,7 +6687,7 @@
       "installCommand": "gh skill install github/awesome-copilot phoenix-cli",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6707,7 +6707,7 @@
       "installCommand": "gh skill install github/awesome-copilot phoenix-evals",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-07T03:25:39Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6727,7 +6727,7 @@
       "installCommand": "gh skill install github/awesome-copilot phoenix-tracing",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-07T03:25:39Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6747,7 +6747,7 @@
       "installCommand": "gh skill install github/awesome-copilot php-mcp-server-generator",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6767,7 +6767,7 @@
       "installCommand": "gh skill install github/awesome-copilot pinecone-rag",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6787,7 +6787,7 @@
       "installCommand": "gh skill install github/awesome-copilot planning-oracle-to-postgres-migration-integration-testing",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-15T00:56:36Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6807,7 +6807,7 @@
       "installCommand": "gh skill install github/awesome-copilot plantuml-ascii",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6827,7 +6827,7 @@
       "installCommand": "gh skill install github/awesome-copilot playwright-automation-fill-in-form",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6847,7 +6847,7 @@
       "installCommand": "gh skill install github/awesome-copilot playwright-explore-website",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6867,7 +6867,7 @@
       "installCommand": "gh skill install github/awesome-copilot playwright-generate-test",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6887,7 +6887,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/playwright-interactive/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -6907,7 +6907,7 @@
       "installCommand": "gh skill install github/awesome-copilot poka-yoke",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-26T02:07:42Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6927,7 +6927,7 @@
       "installCommand": "gh skill install github/awesome-copilot postgresql-code-review",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6947,7 +6947,7 @@
       "installCommand": "gh skill install github/awesome-copilot postgresql-optimization",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6967,7 +6967,7 @@
       "installCommand": "gh skill install github/awesome-copilot power-apps-code-app-scaffold",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -6987,7 +6987,7 @@
       "installCommand": "gh skill install github/awesome-copilot power-bi-dax-optimization",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7007,7 +7007,7 @@
       "installCommand": "gh skill install github/awesome-copilot power-bi-model-design-review",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7027,7 +7027,7 @@
       "installCommand": "gh skill install github/awesome-copilot power-bi-performance-troubleshooting",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7047,7 +7047,7 @@
       "installCommand": "gh skill install github/awesome-copilot power-bi-report-design-consultation",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7067,7 +7067,7 @@
       "installCommand": "gh skill install github/awesome-copilot power-platform-architect",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7087,7 +7087,7 @@
       "installCommand": "gh skill install github/awesome-copilot power-platform-mcp-connector-suite",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7107,7 +7107,7 @@
       "installCommand": "gh skill install github/awesome-copilot powerbi-modeling",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7129,7 +7129,7 @@
       "installCommand": "npx skills add anthropics/skills --skill pptx",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-18T00:58:58Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7149,7 +7149,7 @@
       "installCommand": "gh skill install github/awesome-copilot pr-dashboard",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7169,7 +7169,7 @@
       "installCommand": "gh skill install github/awesome-copilot pr-screenshots",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7189,7 +7189,7 @@
       "installCommand": "gh skill install github/awesome-copilot prd",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7209,7 +7209,7 @@
       "installCommand": "gh skill install github/awesome-copilot premium-frontend-ui",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7229,7 +7229,7 @@
       "installCommand": "gh skill install github/awesome-copilot project-workflow-analysis-blueprint-generator",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7249,7 +7249,7 @@
       "installCommand": "gh skill install github/awesome-copilot prompt-optimizer",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7269,7 +7269,7 @@
       "installCommand": "gh skill install github/awesome-copilot publish-to-pages",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7289,7 +7289,7 @@
       "installCommand": "gh skill install github/awesome-copilot pytest-coverage",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7309,7 +7309,7 @@
       "installCommand": "gh skill install github/awesome-copilot python-azure-iot-edge-modules",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-07T03:25:39Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7329,7 +7329,7 @@
       "installCommand": "gh skill install github/awesome-copilot python-mcp-server-generator",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7349,7 +7349,7 @@
       "installCommand": "gh skill install github/awesome-copilot python-pypi-package-builder",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7369,7 +7369,7 @@
       "installCommand": "gh skill install github/awesome-copilot qdrant-clients-sdk",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7389,7 +7389,7 @@
       "installCommand": "gh skill install github/awesome-copilot qdrant-deployment-options",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7409,7 +7409,7 @@
       "installCommand": "gh skill install github/awesome-copilot qdrant-model-migration",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7429,7 +7429,7 @@
       "installCommand": "gh skill install github/awesome-copilot qdrant-monitoring",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7449,7 +7449,7 @@
       "installCommand": "gh skill install github/awesome-copilot qdrant-performance-optimization",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7469,7 +7469,7 @@
       "installCommand": "gh skill install github/awesome-copilot qdrant-scaling",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7489,7 +7489,7 @@
       "installCommand": "gh skill install github/awesome-copilot qdrant-search-quality",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7509,7 +7509,7 @@
       "installCommand": "gh skill install github/awesome-copilot qdrant-version-upgrade",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7529,7 +7529,7 @@
       "installCommand": "gh skill install github/awesome-copilot quality-playbook",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7549,7 +7549,7 @@
       "installCommand": "gh skill install github/awesome-copilot quasi-coder",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7569,7 +7569,7 @@
       "installCommand": "gh skill install github/awesome-copilot react-audit-grep-patterns",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7589,7 +7589,7 @@
       "installCommand": "gh skill install github/awesome-copilot react-container-presentation-component",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7609,7 +7609,7 @@
       "installCommand": "gh skill install github/awesome-copilot react18-batching-patterns",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7629,7 +7629,7 @@
       "installCommand": "gh skill install github/awesome-copilot react18-dep-compatibility",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7649,7 +7649,7 @@
       "installCommand": "gh skill install github/awesome-copilot react18-enzyme-to-rtl",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7669,7 +7669,7 @@
       "installCommand": "gh skill install github/awesome-copilot react18-legacy-context",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7689,7 +7689,7 @@
       "installCommand": "gh skill install github/awesome-copilot react18-lifecycle-patterns",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7709,7 +7709,7 @@
       "installCommand": "gh skill install github/awesome-copilot react18-string-refs",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7729,7 +7729,7 @@
       "installCommand": "gh skill install github/awesome-copilot react19-concurrent-patterns",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7749,7 +7749,7 @@
       "installCommand": "gh skill install github/awesome-copilot react19-source-patterns",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7769,7 +7769,7 @@
       "installCommand": "gh skill install github/awesome-copilot react19-test-patterns",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-07T03:25:39Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7789,7 +7789,7 @@
       "installCommand": "gh skill install github/awesome-copilot readme-blueprint-generator",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7812,7 +7812,7 @@
       "installCommand": "npx skills add obra/superpowers  # 或 Cursor/Claude 安装 superpowers 插件",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-24T00:59:27Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7832,7 +7832,7 @@
       "installCommand": "gh skill install github/awesome-copilot refactor",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7852,7 +7852,7 @@
       "installCommand": "gh skill install github/awesome-copilot refactor-method-complexity-reduce",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7872,7 +7872,7 @@
       "installCommand": "gh skill install github/awesome-copilot refactor-plan",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7892,7 +7892,7 @@
       "installCommand": "gh skill install github/awesome-copilot remember",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7912,7 +7912,7 @@
       "installCommand": "gh skill install github/awesome-copilot remember-interactive-programming",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7932,7 +7932,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/render-deploy/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -7952,7 +7952,7 @@
       "installCommand": "gh skill install github/awesome-copilot repo-standardizer",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-22T01:56:17Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7972,7 +7972,7 @@
       "installCommand": "gh skill install github/awesome-copilot repo-story-time",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -7992,7 +7992,7 @@
       "installCommand": "gh skill install github/awesome-copilot resemble-detect",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8012,7 +8012,7 @@
       "installCommand": "gh skill install github/awesome-copilot resx-source-generator-migration",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-22T01:56:17Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8032,7 +8032,7 @@
       "installCommand": "gh skill install github/awesome-copilot review-and-refactor",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8052,7 +8052,7 @@
       "installCommand": "gh skill install github/awesome-copilot reviewing-oracle-to-postgres-migration",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-15T00:56:36Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8072,7 +8072,7 @@
       "installCommand": "gh skill install github/awesome-copilot rhino3d-scripts",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8092,7 +8092,7 @@
       "installCommand": "gh skill install github/awesome-copilot roslyn-analyzers",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-26T02:07:42Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8112,7 +8112,7 @@
       "installCommand": "gh skill install github/awesome-copilot roundup",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8132,7 +8132,7 @@
       "installCommand": "gh skill install github/awesome-copilot roundup-setup",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8152,7 +8152,7 @@
       "installCommand": "gh skill install github/awesome-copilot ruby-mcp-server-generator",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-07T03:25:39Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8172,7 +8172,7 @@
       "installCommand": "gh skill install github/awesome-copilot ruff-recursive-fix",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8192,7 +8192,7 @@
       "installCommand": "gh skill install github/awesome-copilot rust-mcp-server-generator",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8212,7 +8212,7 @@
       "installCommand": "gh skill install github/awesome-copilot salesforce-apex-quality",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8232,7 +8232,7 @@
       "installCommand": "gh skill install github/awesome-copilot salesforce-component-standards",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8252,7 +8252,7 @@
       "installCommand": "gh skill install github/awesome-copilot salesforce-flow-design",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8272,7 +8272,7 @@
       "installCommand": "gh skill install github/awesome-copilot sandbox-npm-install",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8292,7 +8292,7 @@
       "installCommand": "gh skill install github/awesome-copilot scaffolding-oracle-to-postgres-migration-test-project",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-12T03:03:19Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8312,7 +8312,7 @@
       "installCommand": "gh skill install github/awesome-copilot scoutqa-test",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8332,7 +8332,7 @@
       "installCommand": "gh skill install github/awesome-copilot screen-recording",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8352,7 +8352,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/screenshot/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -8372,7 +8372,7 @@
       "installCommand": "gh skill install github/awesome-copilot secret-scanning",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8392,7 +8392,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/security-ownership-map/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -8412,7 +8412,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/security-threat-model/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -8432,7 +8432,7 @@
       "installCommand": "gh skill install github/awesome-copilot semantic-kernel",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8452,7 +8452,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/sentry/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -8472,7 +8472,7 @@
       "installCommand": "gh skill install github/awesome-copilot server-side-conversion-tracking",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-10T01:30:57Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8492,7 +8492,7 @@
       "installCommand": "gh skill install github/awesome-copilot setup-my-iq",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8512,7 +8512,7 @@
       "installCommand": "gh skill install github/awesome-copilot shopify-review-triage",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-06T03:48:02Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8532,7 +8532,7 @@
       "installCommand": "gh skill install github/awesome-copilot shuffle-json-data",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8552,7 +8552,7 @@
       "installCommand": "gh skill install github/awesome-copilot signal-write",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-21T01:00:12Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8574,7 +8574,7 @@
       "installCommand": "npx skills add anthropics/skills --skill slack-gif-creator",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8594,7 +8594,7 @@
       "installCommand": "gh skill install github/awesome-copilot slang-shader-engineer",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8614,7 +8614,7 @@
       "installCommand": "gh skill install github/awesome-copilot snowflake-semanticview",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8634,7 +8634,7 @@
       "installCommand": "gh skill install github/awesome-copilot speak-summary",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-27T10:04:45Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8654,7 +8654,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/speech/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -8674,7 +8674,7 @@
       "installCommand": "gh skill install github/awesome-copilot sponsor-finder",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8694,7 +8694,7 @@
       "installCommand": "gh skill install github/awesome-copilot spring-boot-testing",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8714,7 +8714,7 @@
       "installCommand": "gh skill install github/awesome-copilot sql-code-review",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-07T03:25:39Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8734,7 +8734,7 @@
       "installCommand": "gh skill install github/awesome-copilot sql-optimization",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8754,7 +8754,7 @@
       "installCommand": "gh skill install github/awesome-copilot sql-server-table-reconciliation",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8774,7 +8774,7 @@
       "installCommand": "gh skill install github/awesome-copilot ssma-console",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8794,7 +8794,7 @@
       "installCommand": "gh skill install github/awesome-copilot steno-mode",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-15T00:56:36Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8814,7 +8814,7 @@
       "installCommand": "gh skill install github/awesome-copilot structured-autonomy-generate",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8834,7 +8834,7 @@
       "installCommand": "gh skill install github/awesome-copilot structured-autonomy-implement",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8854,7 +8854,7 @@
       "installCommand": "gh skill install github/awesome-copilot structured-autonomy-plan",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8874,7 +8874,7 @@
       "installCommand": "gh skill install github/awesome-copilot suggest-awesome-github-copilot-agents",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8894,7 +8894,7 @@
       "installCommand": "gh skill install github/awesome-copilot suggest-awesome-github-copilot-instructions",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8914,7 +8914,7 @@
       "installCommand": "gh skill install github/awesome-copilot suggest-awesome-github-copilot-skills",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8934,7 +8934,7 @@
       "installCommand": "gh skill install github/awesome-copilot swift-mcp-server-generator",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8954,7 +8954,7 @@
       "installCommand": "gh skill install github/awesome-copilot system-commandline-cli",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-10T01:30:57Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8974,7 +8974,7 @@
       "installCommand": "gh skill install github/awesome-copilot technical-job-search",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -8994,7 +8994,7 @@
       "installCommand": "gh skill install github/awesome-copilot technology-stack-blueprint-generator",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9014,7 +9014,7 @@
       "installCommand": "gh skill install github/awesome-copilot terraform-azurerm-set-diff-analyzer",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9036,7 +9036,7 @@
       "installCommand": "npx skills add anthropics/skills --skill theme-factory",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9056,7 +9056,7 @@
       "installCommand": "gh skill install github/awesome-copilot threat-model-analyst",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9076,7 +9076,7 @@
       "installCommand": "gh skill install github/awesome-copilot tiny-stepping",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9096,7 +9096,7 @@
       "installCommand": "gh skill install github/awesome-copilot tldr-prompt",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9116,7 +9116,7 @@
       "installCommand": "gh skill install github/awesome-copilot tm7-threat-model",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-15T00:56:36Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9136,7 +9136,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/transcribe/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -9156,7 +9156,7 @@
       "installCommand": "gh skill install github/awesome-copilot transloadit-media-processing",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9176,7 +9176,7 @@
       "installCommand": "gh skill install github/awesome-copilot tugboat",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-26T02:07:42Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9196,7 +9196,7 @@
       "installCommand": "gh skill install github/awesome-copilot typescript-mcp-server-generator",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-31T01:02:15Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9216,7 +9216,7 @@
       "installCommand": "gh skill install github/awesome-copilot typespec-api-operations",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9236,7 +9236,7 @@
       "installCommand": "gh skill install github/awesome-copilot typespec-create-agent",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9256,7 +9256,7 @@
       "installCommand": "gh skill install github/awesome-copilot typespec-create-api-plugin",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9276,7 +9276,7 @@
       "installCommand": "gh skill install github/awesome-copilot ui-screenshots",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9296,7 +9296,7 @@
       "installCommand": "gh skill install github/awesome-copilot unit-test-vue-pinia",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9316,7 +9316,7 @@
       "installCommand": "gh skill install github/awesome-copilot update-avm-modules-in-bicep",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9336,7 +9336,7 @@
       "installCommand": "gh skill install github/awesome-copilot update-implementation-plan",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9356,7 +9356,7 @@
       "installCommand": "gh skill install github/awesome-copilot update-llms",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9376,7 +9376,7 @@
       "installCommand": "gh skill install github/awesome-copilot update-markdown-file-index",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-07T03:25:39Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9396,7 +9396,7 @@
       "installCommand": "gh skill install github/awesome-copilot update-specification",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-07T03:25:39Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9419,7 +9419,7 @@
       "installCommand": "npx skills add obra/superpowers  # 或 Cursor/Claude 安装 superpowers 插件",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-24T00:59:27Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9439,7 +9439,7 @@
       "installCommand": "gh skill install github/awesome-copilot vardoger-analyze",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9459,7 +9459,7 @@
       "installCommand": "gh skill install github/awesome-copilot vcpkg",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-21T01:00:12Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9479,7 +9479,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/vercel-deploy/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -9499,7 +9499,7 @@
       "installCommand": "gh skill install github/awesome-copilot verify-agent-action",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-06T03:48:02Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9519,7 +9519,7 @@
       "installCommand": "gh skill install github/awesome-copilot vscode-ext-commands",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9539,7 +9539,7 @@
       "installCommand": "gh skill install github/awesome-copilot vscode-ext-localization",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9561,7 +9561,7 @@
       "installCommand": "npx skills add anthropics/skills --skill web-artifacts-builder",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9581,7 +9581,7 @@
       "installCommand": "gh skill install github/awesome-copilot web-design-reviewer",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-07T03:25:39Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9601,7 +9601,7 @@
       "installCommand": "gh skill install github/awesome-copilot webmcpify",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-24T00:59:27Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9621,7 +9621,7 @@
       "installCommand": "gh skill install github/awesome-copilot what-context-needed",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9641,7 +9641,7 @@
       "installCommand": "gh skill install github/awesome-copilot winmd-api-search",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9661,7 +9661,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/winui-app/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
@@ -9681,7 +9681,7 @@
       "installCommand": "gh skill install github/awesome-copilot winui3-migration-guide",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9701,7 +9701,7 @@
       "installCommand": "gh skill install github/awesome-copilot workiq-copilot",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9721,7 +9721,7 @@
       "installCommand": "gh skill install github/awesome-copilot workshop-create",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-21T01:00:12Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9741,7 +9741,7 @@
       "installCommand": "gh skill install github/awesome-copilot write-coding-standards-from-file",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9764,7 +9764,7 @@
       "installCommand": "npx skills add obra/superpowers  # 或 Cursor/Claude 安装 superpowers 插件",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-24T00:59:27Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9784,7 +9784,7 @@
       "installCommand": "gh skill install github/awesome-copilot x-twitter-scraper",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-08-26T02:07:42Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9806,7 +9806,7 @@
       "installCommand": "npx skills add anthropics/skills --skill xlsx",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-18T00:58:58Z",
       "pathPrefix": "skills",
       "activityScore": 25
@@ -9826,7 +9826,7 @@
       "installCommand": "复制到 ~/.codex/skills/ 或 $REPO/.agents/skills/yeet/",
       "inTopCurated": false,
       "isNew": false,
-      "discoveredAt": "2026-08-29T07:14:13Z",
+      "discoveredAt": "2026-08-30T05:36:59Z",
       "lastChangedAt": "2026-07-02T09:43:41Z",
       "pathPrefix": "skills/.curated",
       "activityScore": 25
