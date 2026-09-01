@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-31T06:29:33Z",
+    "lastUpdated": "2026-09-01T05:26:48Z",
     "skillCount": 20,
-    "totalComments": 54,
+    "totalComments": 56,
     "sources": [
       "hacker-news",
       "github",
@@ -18,14 +18,14 @@
       "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2203-zorvalth",
+          "id": "github-https-github-com-obra-superpowers-issues-1803-larya-dot-eu",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "zorvalth",
-          "date": "2026-08-25",
-          "text": "Bounded tasks fill the main session context <!-- BEFORE FILING: Search open AND closed issues. The Windows SessionStart hook alone has been reported 29 times. If your issue already exists, add a comment or reaction to the existing one instead. --> - [x] I searched existing issues and this is not a duplicate ## Environment (required) <!-- Required. We assume an agent filed this report - tell us which one and where it ran. We weigh reports by what produced them. --> | Field | Value | |-------|-------| | Superpowers version | v6.3.0 | | Harness (Claude Code, Cursor, etc.) | Codex App | | Harness ",
-          "url": "https://github.com/obra/superpowers/issues/2203",
-          "score": 2,
+          "author": "larya-dot-eu",
+          "date": "2026-06-18",
+          "text": "Checkpoints - Adversarial Review > [!TIP] > **TL;DR:** The Superpowers skill is great, but adding a adversarial review phase — forcing Claude to \"break the plan\" before execution — consistently catches real bugs that the built-in self-review misses. <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [X] I searched existing issues and this has not been proposed before ## What problem does this solve? <!-- Describe the problem from your own experience. W",
+          "url": "https://github.com/obra/superpowers/issues/1803",
+          "score": 7,
           "sentiment": "negative"
         }
       ]
@@ -34,7 +34,7 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2146-kylekellogg",
@@ -68,6 +68,17 @@
           "url": "https://github.com/obra/superpowers/issues/2222",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2230-abhineshkr",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "abhineshkr",
+          "date": "2026-08-31",
+          "text": "skills/test-driven-development: three gaps — tests as the deliverable, detector suites, and closing deferred work *Found in real use over ~10 days on a single large project, captured in a skill-observation log and triaged in a review on 2026-08-31. Filed upstream rather than patched locally because the plugin is version-pinned — a local edit is erased on the next update.* *Version: **superpowers 6.3.0 (`b36e0829c6d0`), via the claude-plugins-official marketplace**. Each item below gives what happened, a concrete suggested change, and the generalisable principle. Happy to open a PR for any of t",
+          "url": "https://github.com/obra/superpowers/issues/2230",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -75,17 +86,17 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-895-qdon314",
+          "id": "github-https-github-com-obra-superpowers-issues-1803-larya-dot-eu",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "qdon314",
-          "date": "2026-03-23",
-          "text": "writing-plans: plans over-specify implementation, leaving no room for executor judgment - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? When using `writing-plans` to plan a multi-task implementation, the generated plan contained complete implementation code — full function bodies, 70-line test files, exact shell commands, and step-by-step TDD sequences per task. The executor (`executing-plans` / `subagent-driven-development`) had no decisions to make — it was copy-pasting code from the plan rather than engineering a solution. This caused ",
-          "url": "https://github.com/obra/superpowers/issues/895",
-          "score": 19,
+          "author": "larya-dot-eu",
+          "date": "2026-06-18",
+          "text": "Checkpoints - Adversarial Review > [!TIP] > **TL;DR:** The Superpowers skill is great, but adding a adversarial review phase — forcing Claude to \"break the plan\" before execution — consistently catches real bugs that the built-in self-review misses. <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [X] I searched existing issues and this has not been proposed before ## What problem does this solve? <!-- Describe the problem from your own experience. W",
+          "url": "https://github.com/obra/superpowers/issues/1803",
+          "score": 7,
           "sentiment": "negative"
         },
         {
@@ -109,6 +120,17 @@
           "url": "https://github.com/obra/superpowers/issues/2034",
           "score": 1,
           "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2234-abhineshkr",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "abhineshkr",
+          "date": "2026-08-31",
+          "text": "skills/writing-plans + executing-plans: a guard a later plan should relax needs \"narrow it\", not \"delete it\" *Found in real use over ~10 days on a single large project, captured in a skill-observation log and triaged in a review on 2026-08-31. Filed upstream rather than patched locally because the plugin is version-pinned — a local edit is erased on the next update.* *Version: **superpowers 6.3.0 (`b36e0829c6d0`), via the claude-plugins-official marketplace**. Each item below gives what happened, a concrete suggested change, and the generalisable principle. Happy to open a PR for any of them i",
+          "url": "https://github.com/obra/superpowers/issues/2234",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -118,17 +140,6 @@
       "displayName": "Systematic Debugging",
       "feedbackCount": 4,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "bbbbbbbbbbb114",
-          "date": "2026-05-31",
-          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
-          "url": "https://github.com/obra/superpowers/issues/1664",
-          "score": 3,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1795-marcoabreu",
           "source": "github",
@@ -161,6 +172,17 @@
           "url": "https://github.com/obra/superpowers/issues/2219",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2232-abhineshkr",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "abhineshkr",
+          "date": "2026-08-31",
+          "text": "skills/systematic-debugging: sizing a probe for intermittent behaviour, and preserving evidence before reproducing *Found in real use over ~10 days on a single large project, captured in a skill-observation log and triaged in a review on 2026-08-31. Filed upstream rather than patched locally because the plugin is version-pinned — a local edit is erased on the next update.* *Version: **superpowers 6.3.0 (`b36e0829c6d0`), via the claude-plugins-official marketplace**. Each item below gives what happened, a concrete suggested change, and the generalisable principle. Happy to open a PR for any of ",
+          "url": "https://github.com/obra/superpowers/issues/2232",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -168,7 +190,7 @@
       "slug": "verification-before-completion",
       "ecosystem": "superpowers",
       "displayName": "Verification Before Completion",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2199-adnasal",
@@ -202,6 +224,17 @@
           "url": "https://github.com/obra/superpowers/issues/2222",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2231-abhineshkr",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "abhineshkr",
+          "date": "2026-08-31",
+          "text": "skills/verification-before-completion: `git checkout` in a verified-red loop destroys uncommitted work *Found in real use over ~10 days on a single large project, captured in a skill-observation log and triaged in a review on 2026-08-31. Filed upstream rather than patched locally because the plugin is version-pinned — a local edit is erased on the next update.* *Version: **superpowers 6.3.0 (`b36e0829c6d0`), via the claude-plugins-official marketplace**. Each item below gives what happened, a concrete suggested change, and the generalisable principle. Happy to open a PR for any of them if you'",
+          "url": "https://github.com/obra/superpowers/issues/2231",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -209,19 +242,8 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 2,
+      "feedbackCount": 1,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2203-zorvalth",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "zorvalth",
-          "date": "2026-08-25",
-          "text": "Bounded tasks fill the main session context <!-- BEFORE FILING: Search open AND closed issues. The Windows SessionStart hook alone has been reported 29 times. If your issue already exists, add a comment or reaction to the existing one instead. --> - [x] I searched existing issues and this is not a duplicate ## Environment (required) <!-- Required. We assume an agent filed this report - tell us which one and where it ran. We weigh reports by what produced them. --> | Field | Value | |-------|-------| | Superpowers version | v6.3.0 | | Harness (Claude Code, Cursor, etc.) | Codex App | | Harness ",
-          "url": "https://github.com/obra/superpowers/issues/2203",
-          "score": 2,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2219-danielcalvolopez",
           "source": "github",
@@ -280,16 +302,27 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2222-ai-skill-shield",
+          "id": "github-https-github-com-obra-superpowers-issues-1803-larya-dot-eu",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "ai-skill-shield",
-          "date": "2026-08-29",
-          "text": "AI Skill Shield scan report: obra/superpowers (14 skills) <!-- ai-skill-shield:obra/superpowers/ --> <p align=\"center\"> <a href=\"https://ai-skill-shield.suppeng.com\"> <img src=\"https://ai-skill-shield.suppeng.com/skill-shield-logo.svg\" alt=\"AI Skill Shield\" width=\"180\" /> </a> </p> ## AI Skill Shield scan updated [![AI Skill Shield](https://ai-skill-shield.suppeng.com/api/badge/github/obra/superpowers?v=2)](https://ai-skill-shield.suppeng.com/trust/github/obra/superpowers) | Field | Result | | --- | --- | | Commit | `b36e0829c6d0` | | Score | **94/100** | | Status | ⚠️ Review recommended | | F",
-          "url": "https://github.com/obra/superpowers/issues/2222",
+          "author": "larya-dot-eu",
+          "date": "2026-06-18",
+          "text": "Checkpoints - Adversarial Review > [!TIP] > **TL;DR:** The Superpowers skill is great, but adding a adversarial review phase — forcing Claude to \"break the plan\" before execution — consistently catches real bugs that the built-in self-review misses. <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [X] I searched existing issues and this has not been proposed before ## What problem does this solve? <!-- Describe the problem from your own experience. W",
+          "url": "https://github.com/obra/superpowers/issues/1803",
+          "score": 7,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2235-alexis-gillain",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "alexis-gillain",
+          "date": "2026-08-31",
+          "text": "[Withdrawn] SessionStart matcher omits resume: resumed sessions silently lose the using-superpowers injection **Withdrawn — filed in error.** `resume` was removed from the `SessionStart` matcher deliberately in d19703b0 (2026-03-15, \"fix: stop firing SessionStart hook on `--resume`\"), not omitted by accident. I did not check the file's history before opening this. Original report removed rather than left standing, to avoid preserving an incorrect claim. No action needed — apologies for the noise.",
+          "url": "https://github.com/obra/superpowers/issues/2235",
           "score": 0,
           "sentiment": "negative"
         }
@@ -523,7 +556,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 6,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1169-tazmad",
@@ -570,17 +603,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-anthropics-skills-issues-1686-mladenaleta",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "mladenaleta",
-          "date": "2026-08-28",
-          "text": "skill-creator scripts crash on Windows for any skill containing non-ASCII text (missing encoding on read_text()) ## Summary Three scripts in `skills/skill-creator/scripts/` read or write text without specifying an encoding. On Windows, Python defaults to the ANSI code page (cp1252 on most systems), so any SKILL.md containing non-ASCII characters raises `UnicodeDecodeError` before validation begins. This affects Anthropic's own shipped skills. In a local library of 60 skills, **28 crashed the validator (47%)**, including `docx`, `pdf`, `pptx`, `xlsx`, `mcp-builder`, and `webapp-testing`. The bu",
-          "url": "https://github.com/anthropics/skills/issues/1686",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-anthropics-skills-issues-1692-almezaniy",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -600,6 +622,17 @@
       "feedbackCount": 5,
       "comments": [
         {
+          "id": "github-https-github-com-anthropics-skills-issues-1643-adnasal",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "adnasal",
+          "date": "2026-08-24",
+          "text": "Proposal: codehealth-mcp, a maintainability gate at agent checkpoints Hi. I would like to propose a community/example skill. This is not a request to endorse a vendor. ### Gap Skills teach Claude how to do a task. They do not tell you, with a stable yes/no, whether the code it just wrote is still maintainable. A second model judging the diff is another sample. Lint and tests do not measure structure. A check that runs at the wrong time, or too often, is also a problem. The agent loses focus and never settles. What works is a few checkpoints: before a risky edit, before commit, before the PR. S",
+          "url": "https://github.com/anthropics/skills/issues/1643",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
           "id": "github-https-github-com-anthropics-skills-issues-67-miq42",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -618,17 +651,6 @@
           "date": "2026-01-04",
           "text": "Plugin Marketplace installs extra skills when plugin source is repo root (./) ## 🐞 Issue: Plugin Marketplace installs extra skills when `source` is repo root (`./`) ### Summary When installing a skills bundle via Plugin Marketplace (e.g. `plugin marketplace add anthropics/skills`), the installer installs **all skills found under the plugin `source` directory**, not only the skills explicitly listed in the `\"skills\"` array. This results in many unintended skills being installed. --- ### Expected behavior Given the following configuration: \"skills\": [ \"./skills/xlsx\", \"./skills/docx\", \"./skills/",
           "url": "https://github.com/anthropics/skills/issues/206",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1643-adnasal",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "adnasal",
-          "date": "2026-08-24",
-          "text": "Proposal: codehealth-mcp, a maintainability gate at agent checkpoints Hi. I would like to propose a community/example skill. This is not a request to endorse a vendor. ### Gap Skills teach Claude how to do a task. They do not tell you, with a stable yes/no, whether the code it just wrote is still maintainable. A second model judging the diff is another sample. Lint and tests do not measure structure. A check that runs at the wrong time, or too often, is also a problem. The agent loses focus and never settles. What works is a few checkpoints: before a risky edit, before commit, before the PR. S",
-          "url": "https://github.com/anthropics/skills/issues/1643",
           "score": 1,
           "sentiment": "negative"
         },
