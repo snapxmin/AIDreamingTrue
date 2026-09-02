@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-01T05:26:48Z",
+    "lastUpdated": "2026-09-02T04:54:16Z",
     "skillCount": 20,
-    "totalComments": 56,
+    "totalComments": 57,
     "sources": [
       "hacker-news",
       "github",
@@ -15,7 +15,7 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1803-larya-dot-eu",
@@ -27,6 +27,17 @@
           "url": "https://github.com/obra/superpowers/issues/1803",
           "score": 7,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2240-concon7",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "concon7",
+          "date": "2026-09-01",
+          "text": "skills/brainstorming: the one-question rule is a proxy for a quality property, and a named vendor is an unmarked claim - [x] I searched existing issues and this has not been proposed before Searched open and closed issues and PRs. Related but distinct: **#2213** (a request for context is not an answer — tightens the same rule), **#1915** (design rendering vs approval-question order), **#2215**, **#2116**, **#2128**. None addresses what the cadence rule is *for*, or evidence standards for a named third party. ## What problem does this solve? Two problems found in real use on one project, both i",
+          "url": "https://github.com/obra/superpowers/issues/2240",
+          "score": 0,
+          "sentiment": "neutral"
         }
       ]
     },
@@ -34,19 +45,8 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2146-kylekellogg",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "kylekellogg",
-          "date": "2026-08-13",
-          "text": "RED can pass for the wrong reason, and inverts on refactors **Repo:** obra/superpowers - **Skill:** `skills/test-driven-development/SKILL.md` - **Version seen:** 6.2.0 Two related gaps in `### Verify RED - Watch It Fail`. Both share a root: **RED is a proxy for the property that actually matters - that the test can distinguish correct from incorrect** - and in two common situations the proxy and the property come apart. In one the test goes RED without having that power; in the other it must not go RED at all. Filing as an issue rather than a PR because the second one argues an existing Red Fl",
-          "url": "https://github.com/obra/superpowers/issues/2146",
-          "score": 5,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2219-danielcalvolopez",
           "source": "github",
@@ -100,26 +100,15 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2000-chentingtodo",
+          "id": "github-https-github-com-obra-superpowers-issues-2052-mavericksea-ai",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "ChenTingToDo",
-          "date": "2026-07-17",
-          "text": "Feature request: add an opt-in/manual-only brainstorming profile ## Is your feature request related to a problem? Please describe. The current `brainstorming` skill is intentionally described as mandatory before any feature, bug fix, UI change, or behavior modification. That is useful for rough, high-uncertainty product ideas, but it creates avoidable friction when the user has already provided a complete PRD or precise acceptance criteria. I use Superpowers through the Codex app with GPT-5.6 and installed the `brainstorming` skill without the rest of the Superpowers pipeline. In real local us",
-          "url": "https://github.com/obra/superpowers/issues/2000",
+          "author": "mavericksea-ai",
+          "date": "2026-07-29",
+          "text": "Measured requesting-code-review and writing-plans across the sonnet-5 release — receipts inside - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? Skills are tested once (if ever), and model releases silently change behavior underneath them. When sonnet-5 shipped, there was no way to know which superpowers skills still did what their SKILL.md claims on the new model. I built a small OSS tool (Driftproof) that re-tests skills across model releases: same suite run with and without the skill, judge sampled 5x so every score carries a confidence",
+          "url": "https://github.com/obra/superpowers/issues/2052",
           "score": 3,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2034-vida994",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "vida994",
-          "date": "2026-07-24",
-          "text": "Subagent dispatches outside SDD have no model guidance, so they inherit the session model ### Summary `subagent-driven-development` treats the subagent model as a required, explicit choice. Every other skill that dispatches a subagent omits it entirely, so those dispatches silently inherit the session model — the exact failure SDD's own guidance calls out. ### The inconsistency SDD's prompt templates make it a required field: ``` Subagent (general-purpose): model: [MODEL — REQUIRED: choose per SKILL.md Model Selection; an omitted model silently inherits the session's most expensive one] ``` an",
-          "url": "https://github.com/obra/superpowers/issues/2034",
-          "score": 1,
-          "sentiment": "positive"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2234-abhineshkr",
@@ -129,6 +118,17 @@
           "date": "2026-08-31",
           "text": "skills/writing-plans + executing-plans: a guard a later plan should relax needs \"narrow it\", not \"delete it\" *Found in real use over ~10 days on a single large project, captured in a skill-observation log and triaged in a review on 2026-08-31. Filed upstream rather than patched locally because the plugin is version-pinned — a local edit is erased on the next update.* *Version: **superpowers 6.3.0 (`b36e0829c6d0`), via the claude-plugins-official marketplace**. Each item below gives what happened, a concrete suggested change, and the generalisable principle. Happy to open a PR for any of them i",
           "url": "https://github.com/obra/superpowers/issues/2234",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2241-concon7",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "concon7",
+          "date": "2026-09-01",
+          "text": "skills/writing-plans + executing-plans: plans assume application code, and a verification can silently check a different object than the operation it guards - [x] I searched existing issues and this has not been proposed before Searched open and closed issues and PRs. Related but distinct: **#2234** (same two skills, also about guards — but about how a guard's *relaxation instruction* should be worded across a plan handoff), **#2046** (writing-plans misreading structural RED as behaviour-test evidence — about TDD evidence quality, where this is about domains with no test framework at all), **#",
+          "url": "https://github.com/obra/superpowers/issues/2241",
           "score": 0,
           "sentiment": "negative"
         }
@@ -138,19 +138,8 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1795-marcoabreu",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "marcoabreu",
-          "date": "2026-06-18",
-          "text": "Feature request: Support for nested subagents (Claude Code) - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? Certain tasks, like early brainstorming, systematic debugging as well as implementation and review would benefit from the [new nested subagents that have been added to Claude Code](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21172). This would allow the main context to stay pristine and only have actual outcomes without all the noise that an intermediary coordinator would have. For example, if an implementer enc",
-          "url": "https://github.com/obra/superpowers/issues/1795",
-          "score": 2,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-969-mcorbe",
           "source": "github",
@@ -200,7 +189,7 @@
           "date": "2026-08-24",
           "text": "Pre-flight: Code Health checkpoint before refactor / review skills - [x] I searched existing issues. I did not find this proposed before. ## What problem does this solve? Superpowers already makes you verify before you call work done (`verification-before-completion`, TDD, code review). What agents still do not have is a maintainability check that gives the same answer twice. Lint and tests can pass while the file gets harder to change: longer methods, extra responsibilities, deeper nesting. Asking another model to review it is not a gate. Same diff, next run, different comments. And if you ch",
           "url": "https://github.com/obra/superpowers/issues/2199",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -245,15 +234,15 @@
       "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2219-danielcalvolopez",
+          "id": "github-https-github-com-obra-superpowers-issues-2242-rz1989s",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "danielcalvolopez",
-          "date": "2026-08-28",
-          "text": "Skills that script multi-branch git workflows never establish a remote-safety boundary, shared branches (production, dev) were unintentionally rewritten across three projects - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? `using-git-worktrees`, `executing-plans`, `subagent-driven-development`, and `finishing-a-development-branch` script every step of a multi-branch git workflow — create the branch, commit per task, merge, integrate — but none of them ever address the boundary between local and remote state. Across three of my projects in",
-          "url": "https://github.com/obra/superpowers/issues/2219",
+          "author": "rz1989s",
+          "date": "2026-09-02",
+          "text": "SDD scripts (task-brief/review-package) crash on greenfield Task 1 — no git repo yet ## Summary `subagent-driven-development`'s prep scripts hard-fail when the working directory is not yet a git repository — but **Task 1 of a greenfield project's purpose is to CREATE the repo**. The tooling cannot bootstrap its own first task. ## Repro ```bash cd /tmp && rm -rf greenfield && mkdir greenfield && cd greenfield printf '## Task 1: scaffold the repo\\n\\nCreate files.\\n' > plan.md task-brief plan.md 1 # fatal: not a git repository (or any of the parent directories): .git ``` `sdd-workspace` runs `git",
+          "url": "https://github.com/obra/superpowers/issues/2242",
           "score": 0,
-          "sentiment": "negative"
+          "sentiment": "neutral"
         }
       ]
     },
@@ -261,8 +250,19 @@
       "slug": "requesting-code-review",
       "ecosystem": "superpowers",
       "displayName": "Requesting Code Review",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2052-mavericksea-ai",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "mavericksea-ai",
+          "date": "2026-07-29",
+          "text": "Measured requesting-code-review and writing-plans across the sonnet-5 release — receipts inside - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? Skills are tested once (if ever), and model releases silently change behavior underneath them. When sonnet-5 shipped, there was no way to know which superpowers skills still did what their SKILL.md claims on the new model. I built a small OSS tool (Driftproof) that re-tests skills across model releases: same suite run with and without the skill, judge sampled 5x so every score carries a confidence",
+          "url": "https://github.com/obra/superpowers/issues/2052",
+          "score": 3,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2034-vida994",
           "source": "github",
@@ -282,7 +282,7 @@
           "date": "2026-08-24",
           "text": "Pre-flight: Code Health checkpoint before refactor / review skills - [x] I searched existing issues. I did not find this proposed before. ## What problem does this solve? Superpowers already makes you verify before you call work done (`verification-before-completion`, TDD, code review). What agents still do not have is a maintainability check that gives the same answer twice. Lint and tests can pass while the file gets harder to change: longer methods, extra responsibilities, deeper nesting. Asking another model to review it is not a gate. Same diff, next run, different comments. And if you ch",
           "url": "https://github.com/obra/superpowers/issues/2199",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -398,15 +398,15 @@
       "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-2415-github-actions-bot-",
+          "id": "github-https-github-com-github-awesome-copilot-issues-2899-omarmohelal",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "github-actions[bot]",
-          "date": "2026-07-24",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 746 resources - **Aging (14–30 days):** 18 resources - **Fresh (<14 days):** 46 resources (not listed) > Dates = last substantive modification commit (bulk line-ending fixes excluded). --- ### 🔴 Stale Resources (>30 days) **Agents — 201/221 stale.** Oldest: `agents/WinFormsExpert.agent.md`, `agents/amplitude-experiment-implementation.agent.md`, `agents/dynatrace-expert.agent.md`, `agents/jfrog-sec.agent.md`, `agents/launchdarkly-flag-cleanup.agent.md`, `agents/neon-migration-specialist.agent.md`, `agents/pagerduty-incident-respond",
-          "url": "https://github.com/github/awesome-copilot/issues/2415",
+          "author": "omarmohelal",
+          "date": "2026-09-01",
+          "text": "[External Plugin]: sechelix ### Plugin name sechelix ### Short description Evidence-first application-security Agent Skill for repositories and environments you are authorized to test. Every candidate finding goes to an independent verifier whose job is to disprove it before it is reported. ### GitHub repository omarmohelal/SecHelix ### Plugin path inside the repository _No response_ ### Ref to review _No response_ ### Commit SHA to review d1a09024aec53e186e5e1a67fba7eccba80853b2 ### Version 3.2.0-alpha.1 ### License identifier Apache-2.0 ### Author name Omar ### Author URL https://github.com/",
+          "url": "https://github.com/github/awesome-copilot/issues/2899",
           "score": 1,
-          "sentiment": "negative"
+          "sentiment": "positive"
         },
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-2578-github-actions-bot-",
@@ -559,17 +559,6 @@
       "feedbackCount": 5,
       "comments": [
         {
-          "id": "github-https-github-com-anthropics-skills-issues-1169-tazmad",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "tazmad",
-          "date": "2026-05-20",
-          "text": "skill-creator description-optimisation loop: recall=0% on every iteration, including literal slash-command queries ## Summary When running `scripts/run_loop.py` (or `scripts/improve_description.py`) against a skill that already has a defined slash-command name, every iteration scores **precision=100%, recall=0%, accuracy=50%** — including queries that are the literal slash-command invocation of that skill. The score is identical across iterations regardless of how much the candidate description changes, so the loop produces no usable signal for description tuning. ## Environment - skill-creato",
-          "url": "https://github.com/anthropics/skills/issues/1169",
-          "score": 3,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-anthropics-skills-issues-1412-guala19",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -603,14 +592,25 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-anthropics-skills-issues-1692-almezaniy",
+          "id": "github-https-github-com-anthropics-skills-issues-1669-willorepo",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "almezaniy",
-          "date": "2026-08-30",
-          "text": "[skill-creator] Trigger-eval harness silently broken on Windows: select() on pipes, probe files leak into global ~/.claude/commands, parallel twins cap recall at ~1/N ## Summary The skill-creator description-optimization harness (`skills/skill-creator/scripts/run_eval.py` + `run_loop.py`) is structurally broken on Windows. Worse than crashing, it **fails silently**: every probe dies or mismeasures, the loop reports `recall=0%` (or a hard ~1/N cap), and then happily \"improves\" the description against pure noise for up to 5 iterations. Each probe is a full `claude -p` session that loads the user",
-          "url": "https://github.com/anthropics/skills/issues/1692",
-          "score": 0,
+          "author": "WillORepO",
+          "date": "2026-08-25",
+          "text": "mcp-builder: evaluation.py discards a completed run on Windows — write_text() without encoding hits cp1252 on the report's emoji ## Summary `skills/mcp-builder/scripts/evaluation.py:366` writes the report with ```python args.output.write_text(report) ``` `Path.write_text()` uses the **locale** encoding. On a Windows default install that is cp1252, and the report contains emoji — the ✅/❌ correctness markers in `TASK_TEMPLATE`. So on Windows the run completes, every task is asked, every tool call is made, **every token is paid for**, and the results are then discarded by a `UnicodeEncodeError` o",
+          "url": "https://github.com/anthropics/skills/issues/1669",
+          "score": 1,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1706-stillpimpn",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "stillpimpn",
+          "date": "2026-09-02",
+          "text": "skill-creator: parallel trigger-eval workers share one commands dir, collapsing measured trigger rate to ~1/num_workers ## Summary `skill-creator`'s trigger-eval harness writes every worker's temp command file into a **single shared directory**, so parallel workers see each other's files. Each `claude -p` process is presented with N identical skills differing only by UUID, picks one, and is scored as \"triggered\" only if it happens to pick its own. The measured trigger rate therefore collapses toward `1/num_workers` **independently of the description being tested**. Since `--num-workers` defaul",
+          "url": "https://github.com/anthropics/skills/issues/1706",
+          "score": 1,
           "sentiment": "positive"
         }
       ]
@@ -619,7 +619,7 @@
       "slug": "mcp-builder",
       "ecosystem": "anthropics-skills",
       "displayName": "MCP Builder",
-      "feedbackCount": 5,
+      "feedbackCount": 6,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1643-adnasal",
@@ -653,6 +653,17 @@
           "url": "https://github.com/anthropics/skills/issues/206",
           "score": 1,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1669-willorepo",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "WillORepO",
+          "date": "2026-08-25",
+          "text": "mcp-builder: evaluation.py discards a completed run on Windows — write_text() without encoding hits cp1252 on the report's emoji ## Summary `skills/mcp-builder/scripts/evaluation.py:366` writes the report with ```python args.output.write_text(report) ``` `Path.write_text()` uses the **locale** encoding. On a Windows default install that is cp1252, and the report contains emoji — the ✅/❌ correctness markers in `TASK_TEMPLATE`. So on Windows the run completes, every task is asked, every tool call is made, **every token is paid for**, and the results are then discarded by a `UnicodeEncodeError` o",
+          "url": "https://github.com/anthropics/skills/issues/1669",
+          "score": 1,
+          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-anthropics-skills-issues-1091-agentupskill",
