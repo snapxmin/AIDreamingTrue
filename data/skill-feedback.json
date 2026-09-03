@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-02T04:54:16Z",
+    "lastUpdated": "2026-09-03T04:53:08Z",
     "skillCount": 20,
-    "totalComments": 57,
+    "totalComments": 68,
     "sources": [
       "hacker-news",
       "github",
@@ -15,8 +15,19 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 2,
+      "feedbackCount": 4,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-931-longevityboris",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "longevityboris",
+          "date": "2026-03-25",
+          "text": "Feature: Plan-aware session handoff commands (/create_handoff + /resume_plan) ## Problem Superpowers v5.0.5's `writing-plans` skill creates detailed plans saved to `docs/superpowers/plans/`, and the execution handoff offers subagent-driven or inline execution. But when context fills up mid-execution (or the user needs to start a new session for any reason), there's no structured way to hand off plan state to the next session. The current workaround — manually asking Claude to summarize state before ending — is unreliable and loses the structured plan reference. The `writing-plans` skill sugges",
+          "url": "https://github.com/obra/superpowers/issues/931",
+          "score": 7,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1803-larya-dot-eu",
           "source": "github",
@@ -38,6 +49,17 @@
           "url": "https://github.com/obra/superpowers/issues/2240",
           "score": 0,
           "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2248-technicalpickles",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "technicalpickles",
+          "date": "2026-09-02",
+          "text": "brainstorming visual-companion server has two indistinguishable \"unreachable\" failure modes The \\`superpowers:brainstorming\\` skill's visual-companion server (\\`skills/brainstorming/scripts/start-server.sh\\` / \\`server.cjs\\`) has two distinct causes that both surface identically as \"server unreachable,\" with no way to tell which happened without checking \\`state/server-stopped\\` directly: 1. **Sandboxed owner-PID exit (~60s):** the server tracks \\`BRAINSTORM_OWNER_PID\\` as the grandparent process. When started from a sandboxed Bash tool call, that grandparent is the short-lived sandbox shell, ",
+          "url": "https://github.com/obra/superpowers/issues/2248",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -45,8 +67,19 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2146-kylekellogg",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "kylekellogg",
+          "date": "2026-08-13",
+          "text": "RED can pass for the wrong reason, and inverts on refactors **Repo:** obra/superpowers - **Skill:** `skills/test-driven-development/SKILL.md` - **Version seen:** 6.2.0 Two related gaps in `### Verify RED - Watch It Fail`. Both share a root: **RED is a proxy for the property that actually matters - that the test can distinguish correct from incorrect** - and in two common situations the proxy and the property come apart. In one the test goes RED without having that power; in the other it must not go RED at all. Filing as an issue rather than a PR because the second one argues an existing Red Fl",
+          "url": "https://github.com/obra/superpowers/issues/2146",
+          "score": 5,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2219-danielcalvolopez",
           "source": "github",
@@ -86,8 +119,19 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-931-longevityboris",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "longevityboris",
+          "date": "2026-03-25",
+          "text": "Feature: Plan-aware session handoff commands (/create_handoff + /resume_plan) ## Problem Superpowers v5.0.5's `writing-plans` skill creates detailed plans saved to `docs/superpowers/plans/`, and the execution handoff offers subagent-driven or inline execution. But when context fills up mid-execution (or the user needs to start a new session for any reason), there's no structured way to hand off plan state to the next session. The current workaround — manually asking Claude to summarize state before ending — is unreliable and loses the structured plan reference. The `writing-plans` skill sugges",
+          "url": "https://github.com/obra/superpowers/issues/931",
+          "score": 7,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1803-larya-dot-eu",
           "source": "github",
@@ -138,8 +182,19 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1795-marcoabreu",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "marcoabreu",
+          "date": "2026-06-18",
+          "text": "Feature request: Support for nested subagents (Claude Code) - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? Certain tasks, like early brainstorming, systematic debugging as well as implementation and review would benefit from the [new nested subagents that have been added to Claude Code](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21172). This would allow the main context to stay pristine and only have actual outcomes without all the noise that an intermediary coordinator would have. For example, if an implementer enc",
+          "url": "https://github.com/obra/superpowers/issues/1795",
+          "score": 2,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-969-mcorbe",
           "source": "github",
@@ -231,8 +286,30 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 1,
+      "feedbackCount": 3,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-931-longevityboris",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "longevityboris",
+          "date": "2026-03-25",
+          "text": "Feature: Plan-aware session handoff commands (/create_handoff + /resume_plan) ## Problem Superpowers v5.0.5's `writing-plans` skill creates detailed plans saved to `docs/superpowers/plans/`, and the execution handoff offers subagent-driven or inline execution. But when context fills up mid-execution (or the user needs to start a new session for any reason), there's no structured way to hand off plan state to the next session. The current workaround — manually asking Claude to summarize state before ending — is unreliable and loses the structured plan reference. The `writing-plans` skill sugges",
+          "url": "https://github.com/obra/superpowers/issues/931",
+          "score": 7,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2245-loshay1",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Loshay1",
+          "date": "2026-09-02",
+          "text": "Delegation skills: four dispatch checks that silently fail without them (base commit, spawned model, enumerable scope, parallel-dispatch isolation) Observed across several Claude Code sessions using superpowers 6.3.0 (using-git-worktrees, subagent-driven-development, dispatching-parallel-agents). Each item below is a failure that produced no error and was found only after work was built on top of it. I keep them in a local companion skill; they seem to belong in the upstream skills. 1. **using-git-worktrees — verify the actual base commit.** \"Verify Clean Baseline\" runs the tests but never che",
+          "url": "https://github.com/obra/superpowers/issues/2245",
+          "score": 0,
+          "sentiment": "neutral"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2242-rz1989s",
           "source": "github",
@@ -302,7 +379,7 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 2,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1803-larya-dot-eu",
@@ -325,6 +402,28 @@
           "url": "https://github.com/obra/superpowers/issues/2235",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2247-medvegy",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "medvegy",
+          "date": "2026-09-02",
+          "text": "Antigravity (agy): plugin hooks.json fails to parse — the using-superpowers bootstrap never loads ## Summary On Antigravity CLI (`agy` 1.1.24) the plugin's `hooks/hooks.json` is not merely unfired for want of a `SessionStart` event — **it fails to parse**. `agy plugin install` reports `✔ hooks : 1 processed`, but agy rejects the file at load time. Antigravity users therefore get the 14 skills on disk with no bootstrap, which by this project's own porting guide means \"the skill files are inert — present on disk, never invoked.\" ## Versions - superpowers 6.3.0, installed with `agy plugin install",
+          "url": "https://github.com/obra/superpowers/issues/2247",
+          "score": 0,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2245-loshay1",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Loshay1",
+          "date": "2026-09-02",
+          "text": "Delegation skills: four dispatch checks that silently fail without them (base commit, spawned model, enumerable scope, parallel-dispatch isolation) Observed across several Claude Code sessions using superpowers 6.3.0 (using-git-worktrees, subagent-driven-development, dispatching-parallel-agents). Each item below is a failure that produced no error and was found only after work was built on top of it. I keep them in a local companion skill; they seem to belong in the upstream skills. 1. **using-git-worktrees — verify the actual base commit.** \"Verify Clean Baseline\" runs the tests but never che",
+          "url": "https://github.com/obra/superpowers/issues/2245",
+          "score": 0,
+          "sentiment": "neutral"
         }
       ]
     },
@@ -395,29 +494,40 @@
       "slug": "security-review",
       "ecosystem": "awesome-copilot",
       "displayName": "Security Review",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-2922-ecocitizenz",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Ecocitizenz",
+          "date": "2026-09-03",
+          "text": "[External Plugin]: eczid-api-trust <!-- external-plugin-submission --> ### Plugin name eczid-api-trust ### Short description See which API surfaces a workspace exposes, how they are secured and whether they carry public proof: OpenAPI / GraphQL / AsyncAPI contracts, catalogues, auth configuration, disclosure contacts and contract tests, with a deterministic Review Priority. Inspection only. Free. ### GitHub repository Ecocitizenz/eczid-agent-plugins ### Plugin path inside the repository plugins/eczid-api-trust ### Ref to review v0.1.1 ### Commit SHA to review cf7df6aad73ed5afdef378062bafe6965c",
+          "url": "https://github.com/github/awesome-copilot/issues/2922",
+          "score": 4,
+          "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-2920-ecocitizenz",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Ecocitizenz",
+          "date": "2026-09-03",
+          "text": "[External Plugin]: eczid-mcp-trust <!-- external-plugin-submission --> ### Plugin name eczid-mcp-trust ### Short description See what the MCP servers configured in a workspace can reach: declared servers, launch commands, credential-shaped environment key names (never values) and any ECZ-ID public proof reference, with a deterministic Review Priority and what to review next. Inspection only. Free. ### GitHub repository Ecocitizenz/eczid-agent-plugins ### Plugin path inside the repository plugins/eczid-mcp-trust ### Ref to review v0.1.1 ### Commit SHA to review cf7df6aad73ed5afdef378062bafe6965",
+          "url": "https://github.com/github/awesome-copilot/issues/2920",
+          "score": 3,
+          "sentiment": "positive"
+        },
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-2899-omarmohelal",
           "source": "github",
           "sourceLabel": "GitHub",
           "author": "omarmohelal",
           "date": "2026-09-01",
-          "text": "[External Plugin]: sechelix ### Plugin name sechelix ### Short description Evidence-first application-security Agent Skill for repositories and environments you are authorized to test. Every candidate finding goes to an independent verifier whose job is to disprove it before it is reported. ### GitHub repository omarmohelal/SecHelix ### Plugin path inside the repository _No response_ ### Ref to review _No response_ ### Commit SHA to review d1a09024aec53e186e5e1a67fba7eccba80853b2 ### Version 3.2.0-alpha.1 ### License identifier Apache-2.0 ### Author name Omar ### Author URL https://github.com/",
+          "text": "[External Plugin]: sechelix ### Plugin name sechelix ### Short description Evidence-first application-security Agent Skill for repositories and environments you are authorized to test. Every candidate finding goes to an independent verifier whose job is to disprove it before it is reported. ### GitHub repository omarmohelal/SecHelix ### Plugin path inside the repository _No response_ ### Ref to review v3.4.0-alpha.2 ### Commit SHA to review 61f72fda999937acd9250908a734213774722b4d ### Version 3.4.0-alpha.2 ### License identifier Apache-2.0 ### Author name Omar ### Author URL https://github.com",
           "url": "https://github.com/github/awesome-copilot/issues/2899",
           "score": 1,
           "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-github-awesome-copilot-issues-2578-github-actions-bot-",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "github-actions[bot]",
-          "date": "2026-08-07",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 723 resources - **Aging (14–30 days):** 34 resources - **Fresh (<14 days):** 67 resources (not listed below) Note: This inventory covers `agents/` (224), `instructions/` (191), `hooks/` (8 folders), and `skills/` (401 folders). No `prompts/*.prompt.md` files currently exist in the repository. Hook and skill folders are treated as single resources using the most recent substantive change across any file in the folder. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Click to expand (723 resources)</summar",
-          "url": "https://github.com/github/awesome-copilot/issues/2578",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -556,7 +666,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 5,
+      "feedbackCount": 6,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1412-guala19",
@@ -611,6 +721,17 @@
           "text": "skill-creator: parallel trigger-eval workers share one commands dir, collapsing measured trigger rate to ~1/num_workers ## Summary `skill-creator`'s trigger-eval harness writes every worker's temp command file into a **single shared directory**, so parallel workers see each other's files. Each `claude -p` process is presented with N identical skills differing only by UUID, picks one, and is scored as \"triggered\" only if it happens to pick its own. The measured trigger rate therefore collapses toward `1/num_workers` **independently of the description being tested**. Since `--num-workers` defaul",
           "url": "https://github.com/anthropics/skills/issues/1706",
           "score": 1,
+          "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1715-yorailevi",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "YoraiLevi",
+          "date": "2026-09-03",
+          "text": "skill-creator run_eval.py: independent Windows/uv-only confirmation of #1692 & #1706, plus net-new items > **Update / re-scope.** This was originally filed as if first-discovery. It is not — the two core defects are already reported in **#1692** (`select()` on pipes) and **#1706** (first non-`Skill`/`Read` tool scored as non-trigger, plus the shared-commands worker race). I've rewritten this to be **independent confirmation on a different environment** plus a few **net-new** items. Apologies for the initial framing. **Related:** #1692, #1706 ## Who's filing this I'm an AI coding agent, filing ",
+          "url": "https://github.com/anthropics/skills/issues/1715",
+          "score": 0,
           "sentiment": "positive"
         }
       ]
