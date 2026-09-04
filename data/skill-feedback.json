@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-03T04:53:08Z",
+    "lastUpdated": "2026-09-04T04:55:01Z",
     "skillCount": 20,
-    "totalComments": 68,
+    "totalComments": 65,
     "sources": [
       "hacker-news",
       "github",
@@ -15,53 +15,8 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 4,
-      "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-931-longevityboris",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "longevityboris",
-          "date": "2026-03-25",
-          "text": "Feature: Plan-aware session handoff commands (/create_handoff + /resume_plan) ## Problem Superpowers v5.0.5's `writing-plans` skill creates detailed plans saved to `docs/superpowers/plans/`, and the execution handoff offers subagent-driven or inline execution. But when context fills up mid-execution (or the user needs to start a new session for any reason), there's no structured way to hand off plan state to the next session. The current workaround — manually asking Claude to summarize state before ending — is unreliable and loses the structured plan reference. The `writing-plans` skill sugges",
-          "url": "https://github.com/obra/superpowers/issues/931",
-          "score": 7,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1803-larya-dot-eu",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "larya-dot-eu",
-          "date": "2026-06-18",
-          "text": "Checkpoints - Adversarial Review > [!TIP] > **TL;DR:** The Superpowers skill is great, but adding a adversarial review phase — forcing Claude to \"break the plan\" before execution — consistently catches real bugs that the built-in self-review misses. <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [X] I searched existing issues and this has not been proposed before ## What problem does this solve? <!-- Describe the problem from your own experience. W",
-          "url": "https://github.com/obra/superpowers/issues/1803",
-          "score": 7,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2240-concon7",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "concon7",
-          "date": "2026-09-01",
-          "text": "skills/brainstorming: the one-question rule is a proxy for a quality property, and a named vendor is an unmarked claim - [x] I searched existing issues and this has not been proposed before Searched open and closed issues and PRs. Related but distinct: **#2213** (a request for context is not an answer — tightens the same rule), **#1915** (design rendering vs approval-question order), **#2215**, **#2116**, **#2128**. None addresses what the cadence rule is *for*, or evidence standards for a named third party. ## What problem does this solve? Two problems found in real use on one project, both i",
-          "url": "https://github.com/obra/superpowers/issues/2240",
-          "score": 0,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2248-technicalpickles",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "technicalpickles",
-          "date": "2026-09-02",
-          "text": "brainstorming visual-companion server has two indistinguishable \"unreachable\" failure modes The \\`superpowers:brainstorming\\` skill's visual-companion server (\\`skills/brainstorming/scripts/start-server.sh\\` / \\`server.cjs\\`) has two distinct causes that both surface identically as \"server unreachable,\" with no way to tell which happened without checking \\`state/server-stopped\\` directly: 1. **Sandboxed owner-PID exit (~60s):** the server tracks \\`BRAINSTORM_OWNER_PID\\` as the grandparent process. When started from a sandboxed Bash tool call, that grandparent is the short-lived sandbox shell, ",
-          "url": "https://github.com/obra/superpowers/issues/2248",
-          "score": 0,
-          "sentiment": "negative"
-        }
-      ]
+      "feedbackCount": 0,
+      "comments": []
     },
     "superpowers/test-driven-development": {
       "slug": "test-driven-development",
@@ -70,14 +25,36 @@
       "feedbackCount": 4,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2146-kylekellogg",
+          "id": "github-https-github-com-obra-superpowers-issues-2046-thatht137",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "kylekellogg",
-          "date": "2026-08-13",
-          "text": "RED can pass for the wrong reason, and inverts on refactors **Repo:** obra/superpowers - **Skill:** `skills/test-driven-development/SKILL.md` - **Version seen:** 6.2.0 Two related gaps in `### Verify RED - Watch It Fail`. Both share a root: **RED is a proxy for the property that actually matters - that the test can distinguish correct from incorrect** - and in two common situations the proxy and the property come apart. In one the test goes RED without having that power; in the other it must not go RED at all. Filing as an issue rather than a PR because the second one argues an existing Red Fl",
-          "url": "https://github.com/obra/superpowers/issues/2146",
-          "score": 5,
+          "author": "Thatht137",
+          "date": "2026-07-27",
+          "text": "writing-plans can mistake structural RED for behavior-test evidence # Bug report: writing-plans can treat an import error as proof of a behavior test - [x] I searched existing open and closed issues and pull requests. Related: #711, #853, and #1576. None addresses the distinction between structural RED evidence and a behavior assertion actually rejecting a wrong result. ## Environment | Field | Value | |-------|-------| | Superpowers version | 6.2.0, commit `3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9` | | Harness | OpenAI Codex CLI | | Harness version | `codex-cli 0.145.0` | | Model | OpenAI Cod",
+          "url": "https://github.com/obra/superpowers/issues/2046",
+          "score": 3,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2222-ai-skill-shield",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ai-skill-shield",
+          "date": "2026-08-29",
+          "text": "AI Skill Shield scan report: obra/superpowers (14 skills) <!-- ai-skill-shield:obra/superpowers/ --> <p align=\"center\"> <a href=\"https://ai-skill-shield.suppeng.com\"> <img src=\"https://ai-skill-shield.suppeng.com/skill-shield-logo.svg\" alt=\"AI Skill Shield\" width=\"180\" /> </a> </p> ## AI Skill Shield scan updated [![AI Skill Shield](https://ai-skill-shield.suppeng.com/api/badge/github/obra/superpowers?v=2)](https://ai-skill-shield.suppeng.com/trust/github/obra/superpowers) | Field | Result | | --- | --- | | Commit | `b36e0829c6d0` | | Score | **94/100** | | Status | ⚠️ Review recommended | | F",
+          "url": "https://github.com/obra/superpowers/issues/2222",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2230-abhineshkr",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "abhineshkr",
+          "date": "2026-08-31",
+          "text": "skills/test-driven-development: three gaps — tests as the deliverable, detector suites, and closing deferred work *Found in real use over ~10 days on a single large project, captured in a skill-observation log and triaged in a review on 2026-08-31. Filed upstream rather than patched locally because the plugin is version-pinned — a local edit is erased on the next update.* *Version: **superpowers 6.3.0 (`b36e0829c6d0`), via the claude-plugins-official marketplace**. Each item below gives what happened, a concrete suggested change, and the generalisable principle. Happy to open a PR for any of t",
+          "url": "https://github.com/obra/superpowers/issues/2230",
+          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -90,28 +67,6 @@
           "url": "https://github.com/obra/superpowers/issues/2219",
           "score": 0,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2222-ai-skill-shield",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "ai-skill-shield",
-          "date": "2026-08-29",
-          "text": "AI Skill Shield scan report: obra/superpowers (14 skills) <!-- ai-skill-shield:obra/superpowers/ --> <p align=\"center\"> <a href=\"https://ai-skill-shield.suppeng.com\"> <img src=\"https://ai-skill-shield.suppeng.com/skill-shield-logo.svg\" alt=\"AI Skill Shield\" width=\"180\" /> </a> </p> ## AI Skill Shield scan updated [![AI Skill Shield](https://ai-skill-shield.suppeng.com/api/badge/github/obra/superpowers?v=2)](https://ai-skill-shield.suppeng.com/trust/github/obra/superpowers) | Field | Result | | --- | --- | | Commit | `b36e0829c6d0` | | Score | **94/100** | | Status | ⚠️ Review recommended | | F",
-          "url": "https://github.com/obra/superpowers/issues/2222",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2230-abhineshkr",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "abhineshkr",
-          "date": "2026-08-31",
-          "text": "skills/test-driven-development: three gaps — tests as the deliverable, detector suites, and closing deferred work *Found in real use over ~10 days on a single large project, captured in a skill-observation log and triaged in a review on 2026-08-31. Filed upstream rather than patched locally because the plugin is version-pinned — a local edit is erased on the next update.* *Version: **superpowers 6.3.0 (`b36e0829c6d0`), via the claude-plugins-official marketplace**. Each item below gives what happened, a concrete suggested change, and the generalisable principle. Happy to open a PR for any of t",
-          "url": "https://github.com/obra/superpowers/issues/2230",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -119,40 +74,29 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-931-longevityboris",
+          "id": "github-https-github-com-obra-superpowers-issues-1042-justyouso",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "longevityboris",
-          "date": "2026-03-25",
-          "text": "Feature: Plan-aware session handoff commands (/create_handoff + /resume_plan) ## Problem Superpowers v5.0.5's `writing-plans` skill creates detailed plans saved to `docs/superpowers/plans/`, and the execution handoff offers subagent-driven or inline execution. But when context fills up mid-execution (or the user needs to start a new session for any reason), there's no structured way to hand off plan state to the next session. The current workaround — manually asking Claude to summarize state before ending — is unreliable and loses the structured plan reference. The `writing-plans` skill sugges",
-          "url": "https://github.com/obra/superpowers/issues/931",
-          "score": 7,
+          "author": "Justyouso",
+          "date": "2026-04-03",
+          "text": "When using the `superpowers:writing-plans` skill, consecutive Write tool calls fail with \"missing required parameter 'file_path'\" error. ## Bug Description When using the `superpowers:writing-plans` skill, consecutive Write tool calls fail with \"missing required parameter 'file_path'\" error. ## Steps to Reproduce 1. Invoke `superpowers:writing-plans` skill 2. Attempt to use Write tool to create a plan file 3. First Write succeeds, subsequent Writes fail with: ## Root Cause Analysis The skill system appears to inject empty Write tool calls into the response stream. After a successful Write call",
+          "url": "https://github.com/obra/superpowers/issues/1042",
+          "score": 5,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1803-larya-dot-eu",
+          "id": "github-https-github-com-obra-superpowers-issues-1238-syliang2020",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "larya-dot-eu",
-          "date": "2026-06-18",
-          "text": "Checkpoints - Adversarial Review > [!TIP] > **TL;DR:** The Superpowers skill is great, but adding a adversarial review phase — forcing Claude to \"break the plan\" before execution — consistently catches real bugs that the built-in self-review misses. <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [X] I searched existing issues and this has not been proposed before ## What problem does this solve? <!-- Describe the problem from your own experience. W",
-          "url": "https://github.com/obra/superpowers/issues/1803",
-          "score": 7,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2052-mavericksea-ai",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "mavericksea-ai",
-          "date": "2026-07-29",
-          "text": "Measured requesting-code-review and writing-plans across the sonnet-5 release — receipts inside - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? Skills are tested once (if ever), and model releases silently change behavior underneath them. When sonnet-5 shipped, there was no way to know which superpowers skills still did what their SKILL.md claims on the new model. I built a small OSS tool (Driftproof) that re-tests skills across model releases: same suite run with and without the skill, judge sampled 5x so every score carries a confidence",
-          "url": "https://github.com/obra/superpowers/issues/2052",
-          "score": 3,
-          "sentiment": "negative"
+          "author": "syliang2020",
+          "date": "2026-04-21",
+          "text": "Feature request: feature-doc-pack planning mode for team workflows and legacy repos ## Summary I’d like to propose a new planning workflow for Superpowers: a **feature-doc-pack mode** that can generate a small set of coordinated markdown files instead of only a single monolithic implementation plan. This would be especially useful for: - multi-developer work - frontend/backend coordination - cross-module or cross-repo changes - legacy production codebases - parallel Codex / subagent workflows that need a shared source of truth before implementation --- ## Problem `writing-plans` is great for p",
+          "url": "https://github.com/obra/superpowers/issues/1238",
+          "score": 2,
+          "sentiment": "positive"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2234-abhineshkr",
@@ -244,6 +188,28 @@
           "date": "2026-08-24",
           "text": "Pre-flight: Code Health checkpoint before refactor / review skills - [x] I searched existing issues. I did not find this proposed before. ## What problem does this solve? Superpowers already makes you verify before you call work done (`verification-before-completion`, TDD, code review). What agents still do not have is a maintainability check that gives the same answer twice. Lint and tests can pass while the file gets harder to change: longer methods, extra responsibilities, deeper nesting. Asking another model to review it is not a gate. Same diff, next run, different comments. And if you ch",
           "url": "https://github.com/obra/superpowers/issues/2199",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2222-ai-skill-shield",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ai-skill-shield",
+          "date": "2026-08-29",
+          "text": "AI Skill Shield scan report: obra/superpowers (14 skills) <!-- ai-skill-shield:obra/superpowers/ --> <p align=\"center\"> <a href=\"https://ai-skill-shield.suppeng.com\"> <img src=\"https://ai-skill-shield.suppeng.com/skill-shield-logo.svg\" alt=\"AI Skill Shield\" width=\"180\" /> </a> </p> ## AI Skill Shield scan updated [![AI Skill Shield](https://ai-skill-shield.suppeng.com/api/badge/github/obra/superpowers?v=2)](https://ai-skill-shield.suppeng.com/trust/github/obra/superpowers) | Field | Result | | --- | --- | | Commit | `b36e0829c6d0` | | Score | **94/100** | | Status | ⚠️ Review recommended | | F",
+          "url": "https://github.com/obra/superpowers/issues/2222",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2231-abhineshkr",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "abhineshkr",
+          "date": "2026-08-31",
+          "text": "skills/verification-before-completion: `git checkout` in a verified-red loop destroys uncommitted work *Found in real use over ~10 days on a single large project, captured in a skill-observation log and triaged in a review on 2026-08-31. Filed upstream rather than patched locally because the plugin is version-pinned — a local edit is erased on the next update.* *Version: **superpowers 6.3.0 (`b36e0829c6d0`), via the claude-plugins-official marketplace**. Each item below gives what happened, a concrete suggested change, and the generalisable principle. Happy to open a PR for any of them if you'",
+          "url": "https://github.com/obra/superpowers/issues/2231",
           "score": 1,
           "sentiment": "negative"
         },
@@ -257,28 +223,6 @@
           "url": "https://github.com/obra/superpowers/issues/2219",
           "score": 0,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2222-ai-skill-shield",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "ai-skill-shield",
-          "date": "2026-08-29",
-          "text": "AI Skill Shield scan report: obra/superpowers (14 skills) <!-- ai-skill-shield:obra/superpowers/ --> <p align=\"center\"> <a href=\"https://ai-skill-shield.suppeng.com\"> <img src=\"https://ai-skill-shield.suppeng.com/skill-shield-logo.svg\" alt=\"AI Skill Shield\" width=\"180\" /> </a> </p> ## AI Skill Shield scan updated [![AI Skill Shield](https://ai-skill-shield.suppeng.com/api/badge/github/obra/superpowers?v=2)](https://ai-skill-shield.suppeng.com/trust/github/obra/superpowers) | Field | Result | | --- | --- | | Commit | `b36e0829c6d0` | | Score | **94/100** | | Status | ⚠️ Review recommended | | F",
-          "url": "https://github.com/obra/superpowers/issues/2222",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2231-abhineshkr",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "abhineshkr",
-          "date": "2026-08-31",
-          "text": "skills/verification-before-completion: `git checkout` in a verified-red loop destroys uncommitted work *Found in real use over ~10 days on a single large project, captured in a skill-observation log and triaged in a review on 2026-08-31. Filed upstream rather than patched locally because the plugin is version-pinned — a local edit is erased on the next update.* *Version: **superpowers 6.3.0 (`b36e0829c6d0`), via the claude-plugins-official marketplace**. Each item below gives what happened, a concrete suggested change, and the generalisable principle. Happy to open a PR for any of them if you'",
-          "url": "https://github.com/obra/superpowers/issues/2231",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -286,28 +230,50 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 3,
+      "feedbackCount": 7,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-931-longevityboris",
+          "id": "github-https-github-com-obra-superpowers-issues-1152-aiacoella",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "longevityboris",
-          "date": "2026-03-25",
-          "text": "Feature: Plan-aware session handoff commands (/create_handoff + /resume_plan) ## Problem Superpowers v5.0.5's `writing-plans` skill creates detailed plans saved to `docs/superpowers/plans/`, and the execution handoff offers subagent-driven or inline execution. But when context fills up mid-execution (or the user needs to start a new session for any reason), there's no structured way to hand off plan state to the next session. The current workaround — manually asking Claude to summarize state before ending — is unreliable and loses the structured plan reference. The `writing-plans` skill sugges",
-          "url": "https://github.com/obra/superpowers/issues/931",
-          "score": 7,
+          "author": "aIacoella",
+          "date": "2026-04-13",
+          "text": "Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan) - [x] I searched existing issues and this is not a duplicate ## Environment | Field | Value | | ----------------------------------- | --------------- | | Superpowers version | 5.0.7 | | Harness (Claude Code, Cursor, etc.) | Codex | | Harness version | 0.120.0 | | Model | 5.4 & 5.4-mini | | OS + shell | MacOS | ## Is this a Superpowers issue or a platform issue? **Superpowers issue** - [x] I confirmed this issue does not occur without Superpowers installed #",
+          "url": "https://github.com/obra/superpowers/issues/1152",
+          "score": 12,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2245-loshay1",
+          "id": "github-https-github-com-obra-superpowers-issues-1799-jiyimeta",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "Loshay1",
-          "date": "2026-09-02",
-          "text": "Delegation skills: four dispatch checks that silently fail without them (base commit, spawned model, enumerable scope, parallel-dispatch isolation) Observed across several Claude Code sessions using superpowers 6.3.0 (using-git-worktrees, subagent-driven-development, dispatching-parallel-agents). Each item below is a failure that produced no error and was found only after work was built on top of it. I keep them in a local companion skill; they seem to belong in the upstream skills. 1. **using-git-worktrees — verify the actual base commit.** \"Verify Clean Baseline\" runs the tests but never che",
-          "url": "https://github.com/obra/superpowers/issues/2245",
-          "score": 0,
+          "author": "jiyimeta",
+          "date": "2026-06-18",
+          "text": "subagent-driven-development: review-package operates on $PWD, forcing an un-allowlistable \"cd <repo> ; review-package\" compound ## What problem does this solve? `skills/subagent-driven-development/scripts/review-package` runs **every** git command against the current working directory — `git rev-parse`, `git log`, `git diff`, `git rev-list` are all invoked as bare `git` with no `-C`. So the script only works when the orchestrator's cwd already *is* the target repository. In worktree-based SDD flows that isn't the case. The driver session commonly stays in the main checkout while implementation",
+          "url": "https://github.com/obra/superpowers/issues/1799",
+          "score": 3,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1749-wokito",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "wokito",
+          "date": "2026-06-13",
+          "text": "Bug: subagent-driven-development: orchestrator fabricates entire subagent dialogues instead of dispatching real Agent tool calls ## Summary During subagent-driven-development execution, the orchestrator (main model) fabricates complete multi-turn subagent conversations — implementer results, reviewer verdicts, even user replies — as prose narrative **without ever invoking the Agent tool**. Once fabrication begins, it self-reinforces and continues indefinitely until the user manually interrupts. This is distinct from #1701 (reviewer concurs on unchanged tree) — in that case, the subagent IS dis",
+          "url": "https://github.com/obra/superpowers/issues/1749",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1986-lady-lin",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Lady-Lin",
+          "date": "2026-07-13",
+          "text": "SDD: enforce task-to-agent ownership to prevent cross-task subagent reuse - [x] I searched related open and closed issues. #1927 and #1979 are related, but neither covers cross-task ownership of an addressable child agent. ## Summary Subagent-Driven Development (SDD) requires a fresh implementer for each task, but it does not define a durable **task-to-agent ownership** contract. On agent harnesses that can send a new turn to an existing child, this makes it possible for a controller to accidentally assign work for a new task to children created for earlier work. In a sanitized observed case, ",
+          "url": "https://github.com/obra/superpowers/issues/1986",
+          "score": 2,
           "sentiment": "neutral"
         },
         {
@@ -318,6 +284,28 @@
           "date": "2026-09-02",
           "text": "SDD scripts (task-brief/review-package) crash on greenfield Task 1 — no git repo yet ## Summary `subagent-driven-development`'s prep scripts hard-fail when the working directory is not yet a git repository — but **Task 1 of a greenfield project's purpose is to CREATE the repo**. The tooling cannot bootstrap its own first task. ## Repro ```bash cd /tmp && rm -rf greenfield && mkdir greenfield && cd greenfield printf '## Task 1: scaffold the repo\\n\\nCreate files.\\n' > plan.md task-brief plan.md 1 # fatal: not a git repository (or any of the parent directories): .git ``` `sdd-workspace` runs `git",
           "url": "https://github.com/obra/superpowers/issues/2242",
+          "score": 1,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2219-danielcalvolopez",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "danielcalvolopez",
+          "date": "2026-08-28",
+          "text": "Skills that script multi-branch git workflows never establish a remote-safety boundary, shared branches (production, dev) were unintentionally rewritten across three projects - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? `using-git-worktrees`, `executing-plans`, `subagent-driven-development`, and `finishing-a-development-branch` script every step of a multi-branch git workflow — create the branch, commit per task, merge, integrate — but none of them ever address the boundary between local and remote state. Across three of my projects in",
+          "url": "https://github.com/obra/superpowers/issues/2219",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2245-loshay1",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Loshay1",
+          "date": "2026-09-02",
+          "text": "Delegation skills: four dispatch checks that silently fail without them (base commit, spawned model, enumerable scope, parallel-dispatch isolation) Observed across several Claude Code sessions using superpowers 6.3.0 (using-git-worktrees, subagent-driven-development, dispatching-parallel-agents). Each item below is a failure that produced no error and was found only after work was built on top of it. I keep them in a local companion skill; they seem to belong in the upstream skills. 1. **using-git-worktrees — verify the actual base commit.** \"Verify Clean Baseline\" runs the tests but never che",
+          "url": "https://github.com/obra/superpowers/issues/2245",
           "score": 0,
           "sentiment": "neutral"
         }
@@ -341,6 +329,17 @@
           "sentiment": "negative"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2199-adnasal",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "adnasal",
+          "date": "2026-08-24",
+          "text": "Pre-flight: Code Health checkpoint before refactor / review skills - [x] I searched existing issues. I did not find this proposed before. ## What problem does this solve? Superpowers already makes you verify before you call work done (`verification-before-completion`, TDD, code review). What agents still do not have is a maintainability check that gives the same answer twice. Lint and tests can pass while the file gets harder to change: longer methods, extra responsibilities, deeper nesting. Asking another model to review it is not a gate. Same diff, next run, different comments. And if you ch",
+          "url": "https://github.com/obra/superpowers/issues/2199",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2034-vida994",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -352,17 +351,6 @@
           "sentiment": "positive"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2199-adnasal",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "adnasal",
-          "date": "2026-08-24",
-          "text": "Pre-flight: Code Health checkpoint before refactor / review skills - [x] I searched existing issues. I did not find this proposed before. ## What problem does this solve? Superpowers already makes you verify before you call work done (`verification-before-completion`, TDD, code review). What agents still do not have is a maintainability check that gives the same answer twice. Lint and tests can pass while the file gets harder to change: longer methods, extra responsibilities, deeper nesting. Asking another model to review it is not a gate. Same diff, next run, different comments. And if you ch",
-          "url": "https://github.com/obra/superpowers/issues/2199",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2222-ai-skill-shield",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -370,7 +358,7 @@
           "date": "2026-08-29",
           "text": "AI Skill Shield scan report: obra/superpowers (14 skills) <!-- ai-skill-shield:obra/superpowers/ --> <p align=\"center\"> <a href=\"https://ai-skill-shield.suppeng.com\"> <img src=\"https://ai-skill-shield.suppeng.com/skill-shield-logo.svg\" alt=\"AI Skill Shield\" width=\"180\" /> </a> </p> ## AI Skill Shield scan updated [![AI Skill Shield](https://ai-skill-shield.suppeng.com/api/badge/github/obra/superpowers?v=2)](https://ai-skill-shield.suppeng.com/trust/github/obra/superpowers) | Field | Result | | --- | --- | | Commit | `b36e0829c6d0` | | Score | **94/100** | | Status | ⚠️ Review recommended | | F",
           "url": "https://github.com/obra/superpowers/issues/2222",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -379,53 +367,8 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 4,
-      "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1803-larya-dot-eu",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "larya-dot-eu",
-          "date": "2026-06-18",
-          "text": "Checkpoints - Adversarial Review > [!TIP] > **TL;DR:** The Superpowers skill is great, but adding a adversarial review phase — forcing Claude to \"break the plan\" before execution — consistently catches real bugs that the built-in self-review misses. <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [X] I searched existing issues and this has not been proposed before ## What problem does this solve? <!-- Describe the problem from your own experience. W",
-          "url": "https://github.com/obra/superpowers/issues/1803",
-          "score": 7,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2235-alexis-gillain",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "alexis-gillain",
-          "date": "2026-08-31",
-          "text": "[Withdrawn] SessionStart matcher omits resume: resumed sessions silently lose the using-superpowers injection **Withdrawn — filed in error.** `resume` was removed from the `SessionStart` matcher deliberately in d19703b0 (2026-03-15, \"fix: stop firing SessionStart hook on `--resume`\"), not omitted by accident. I did not check the file's history before opening this. Original report removed rather than left standing, to avoid preserving an incorrect claim. No action needed — apologies for the noise.",
-          "url": "https://github.com/obra/superpowers/issues/2235",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2247-medvegy",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "medvegy",
-          "date": "2026-09-02",
-          "text": "Antigravity (agy): plugin hooks.json fails to parse — the using-superpowers bootstrap never loads ## Summary On Antigravity CLI (`agy` 1.1.24) the plugin's `hooks/hooks.json` is not merely unfired for want of a `SessionStart` event — **it fails to parse**. `agy plugin install` reports `✔ hooks : 1 processed`, but agy rejects the file at load time. Antigravity users therefore get the 14 skills on disk with no bootstrap, which by this project's own porting guide means \"the skill files are inert — present on disk, never invoked.\" ## Versions - superpowers 6.3.0, installed with `agy plugin install",
-          "url": "https://github.com/obra/superpowers/issues/2247",
-          "score": 0,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2245-loshay1",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Loshay1",
-          "date": "2026-09-02",
-          "text": "Delegation skills: four dispatch checks that silently fail without them (base commit, spawned model, enumerable scope, parallel-dispatch isolation) Observed across several Claude Code sessions using superpowers 6.3.0 (using-git-worktrees, subagent-driven-development, dispatching-parallel-agents). Each item below is a failure that produced no error and was found only after work was built on top of it. I keep them in a local companion skill; they seem to belong in the upstream skills. 1. **using-git-worktrees — verify the actual base commit.** \"Verify Clean Baseline\" runs the tests but never che",
-          "url": "https://github.com/obra/superpowers/issues/2245",
-          "score": 0,
-          "sentiment": "neutral"
-        }
-      ]
+      "feedbackCount": 0,
+      "comments": []
     },
     "awesome-copilot/ai-ready": {
       "slug": "ai-ready",
@@ -497,25 +440,25 @@
       "feedbackCount": 3,
       "comments": [
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-2922-ecocitizenz",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Ecocitizenz",
-          "date": "2026-09-03",
-          "text": "[External Plugin]: eczid-api-trust <!-- external-plugin-submission --> ### Plugin name eczid-api-trust ### Short description See which API surfaces a workspace exposes, how they are secured and whether they carry public proof: OpenAPI / GraphQL / AsyncAPI contracts, catalogues, auth configuration, disclosure contacts and contract tests, with a deterministic Review Priority. Inspection only. Free. ### GitHub repository Ecocitizenz/eczid-agent-plugins ### Plugin path inside the repository plugins/eczid-api-trust ### Ref to review v0.1.1 ### Commit SHA to review cf7df6aad73ed5afdef378062bafe6965c",
-          "url": "https://github.com/github/awesome-copilot/issues/2922",
-          "score": 4,
-          "sentiment": "positive"
-        },
-        {
           "id": "github-https-github-com-github-awesome-copilot-issues-2920-ecocitizenz",
           "source": "github",
           "sourceLabel": "GitHub",
           "author": "Ecocitizenz",
           "date": "2026-09-03",
-          "text": "[External Plugin]: eczid-mcp-trust <!-- external-plugin-submission --> ### Plugin name eczid-mcp-trust ### Short description See what the MCP servers configured in a workspace can reach: declared servers, launch commands, credential-shaped environment key names (never values) and any ECZ-ID public proof reference, with a deterministic Review Priority and what to review next. Inspection only. Free. ### GitHub repository Ecocitizenz/eczid-agent-plugins ### Plugin path inside the repository plugins/eczid-mcp-trust ### Ref to review v0.1.1 ### Commit SHA to review cf7df6aad73ed5afdef378062bafe6965",
+          "text": "[External Plugin]: eczid-mcp-trust <!-- external-plugin-submission --> ### Plugin name eczid-mcp-trust ### Short description Free agent plugin, MIT-licensed: no purchase, account, sign-in, licence key or trial is required, and nothing it does is withheld pending a purchase. See what the MCP servers configured in a workspace can reach: declared servers, launch commands, credential-shaped environment key names (never values) and any ECZ-ID public proof reference, with a deterministic Review Priority and what to review next. Inspection only. Free. ### GitHub repository Ecocitizenz/eczid-agent-plu",
           "url": "https://github.com/github/awesome-copilot/issues/2920",
-          "score": 3,
+          "score": 6,
+          "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-2922-ecocitizenz",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Ecocitizenz",
+          "date": "2026-09-03",
+          "text": "[External Plugin]: eczid-api-trust <!-- external-plugin-submission --> ### Plugin name eczid-api-trust ### Short description Free agent plugin, MIT-licensed: no purchase, account, sign-in, licence key or trial is required, and nothing it does is withheld pending a purchase. See which API surfaces a workspace exposes, how they are secured and whether they carry public proof: OpenAPI / GraphQL / AsyncAPI contracts, catalogues, auth configuration, disclosure contacts and contract tests, with a deterministic Review Priority. Inspection only. Free. ### GitHub repository Ecocitizenz/eczid-agent-plug",
+          "url": "https://github.com/github/awesome-copilot/issues/2922",
+          "score": 5,
           "sentiment": "positive"
         },
         {
@@ -666,7 +609,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 6,
+      "feedbackCount": 7,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1412-guala19",
@@ -724,6 +667,17 @@
           "sentiment": "positive"
         },
         {
+          "id": "github-https-github-com-anthropics-skills-issues-1721-jparker-rg",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jparker-RG",
+          "date": "2026-09-03",
+          "text": "skill-creator: trigger detection reports 0% recall for every skill ## Summary `skill-creator`'s trigger evaluation reports `precision=100% recall=0%` for every skill, regardless of how good the description is. `run_loop` then \"improves\" the description against evidence that every positive query failed, and reports the result as an optimisation. This fails silently. Nothing errors, and the output looks like a legitimate measurement of a bad description. ## Cause `run_single_query()` in `skills/skill-creator/scripts/run_eval.py` decides whether the skill triggered by watching the `claude -p` eve",
+          "url": "https://github.com/anthropics/skills/issues/1721",
+          "score": 0,
+          "sentiment": "neutral"
+        },
+        {
           "id": "github-https-github-com-anthropics-skills-issues-1715-yorailevi",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -740,7 +694,7 @@
       "slug": "mcp-builder",
       "ecosystem": "anthropics-skills",
       "displayName": "MCP Builder",
-      "feedbackCount": 6,
+      "feedbackCount": 7,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1643-adnasal",
@@ -807,6 +761,17 @@
           "url": "https://github.com/anthropics/skills/issues/1686",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1716-supermuskk",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "supermuskk",
+          "date": "2026-09-03",
+          "text": "mcp-builder: evaluation.py defaults to claude-3-7-sonnet-20250219, and the low-score advice points back at that same model The evaluation harness in `mcp-builder` still defaults to `claude-3-7-sonnet-20250219`, and the troubleshooting section recommends that same snapshot as the *upgrade* path. Line numbers are against `main` at the time of writing. ### Where `skills/mcp-builder/scripts/evaluation.py` ```python 223: model: str = \"claude-3-7-sonnet-20250219\", 324: parser.add_argument(\"-m\", \"--model\", default=\"claude-3-7-sonnet-20250219\", help=\"Claude model to use (default: claude-3-7-sonnet-202",
+          "url": "https://github.com/anthropics/skills/issues/1716",
+          "score": 0,
+          "sentiment": "positive"
         }
       ]
     },
