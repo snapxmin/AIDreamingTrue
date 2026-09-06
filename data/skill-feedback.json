@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-05T04:49:10Z",
+    "lastUpdated": "2026-09-06T04:57:43Z",
     "skillCount": 20,
-    "totalComments": 57,
+    "totalComments": 58,
     "sources": [
       "hacker-news",
       "github",
@@ -15,8 +15,20 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 0,
-      "comments": []
+      "feedbackCount": 1,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1989-iskandersierra",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "iskandersierra",
+          "date": "2026-07-14",
+          "text": "brainstorming: keep the current question open when the user asks for context instead of answering - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? The `brainstorming` skill says to ask one question at a time, but it does not explicitly say what to do when the user cannot answer yet and instead asks for more context about the current question. In practice, this can produce a confusing flow: 1. The agent asks question A. 2. The user asks for more context, implications, or trade-offs about question A. 3. The agent provides that context. 4. Th",
+          "url": "https://github.com/obra/superpowers/issues/1989",
+          "score": 3,
+          "sentiment": "negative"
+        }
+      ]
     },
     "superpowers/test-driven-development": {
       "slug": "test-driven-development",
@@ -260,15 +272,15 @@
       "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2256-theabsdag",
+          "id": "github-https-github-com-obra-superpowers-issues-2260-kei-h0-9hgh",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "TheAbsdag",
-          "date": "2026-09-04",
-          "text": "IDE/Platform support request: DeepSeek Harness (dsh) - [x] I searched existing issues for this IDE/platform ## Which IDE or platform? [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) - DeepSeek's open-source agent harness (MIT, Cordis-based, \"Everything is a Plugin\", developer preview; local version 0.1.1-rc.2). Surfaces: `web`, `tui`, `headless` profiles. Prior discussion: [#2152](https://github.com/obra/superpowers/issues/2152) asked whether an opt-in dsh contribution would be accepted; the maintainer answered \"yes in principle\" and named PR #2144 as the live vehic",
-          "url": "https://github.com/obra/superpowers/issues/2256",
-          "score": 1,
-          "sentiment": "negative"
+          "author": "kei-H0-9HgH",
+          "date": "2026-09-05",
+          "text": "Codex reference assumes spawn capabilities unavailable in an observed desktop session ## Summary The Codex reference in Superpowers 6.3.0 conflicts with the `collaboration.spawn_agent` contract supplied to one inspected desktop session: 1. The reference says full-history forks accept model and reasoning-effort overrides, while this session's contract prohibits them. 2. The reference describes `agent_type`, but this session's tool schema does not expose that parameter. These findings are specific to the inspected environment. They do not establish that all Codex versions, presets, or tool surfa",
+          "url": "https://github.com/obra/superpowers/issues/2260",
+          "score": 0,
+          "sentiment": "neutral"
         }
       ]
     },
@@ -558,10 +570,10 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-anthropics-skills-issues-1669-willorepo",
+          "id": "github-https-github-com-anthropics-skills-issues-1669-willo-olliw",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "WillORepO",
+          "author": "WillO-OlliW",
           "date": "2026-08-25",
           "text": "mcp-builder: evaluation.py discards a completed run on Windows — write_text() without encoding hits cp1252 on the report's emoji ## Summary `skills/mcp-builder/scripts/evaluation.py:366` writes the report with ```python args.output.write_text(report) ``` `Path.write_text()` uses the **locale** encoding. On a Windows default install that is cp1252, and the report contains emoji — the ✅/❌ correctness markers in `TASK_TEMPLATE`. So on Windows the run completes, every task is asked, every tool call is made, **every token is paid for**, and the results are then discarded by a `UnicodeEncodeError` o",
           "url": "https://github.com/anthropics/skills/issues/1669",
@@ -643,10 +655,10 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-anthropics-skills-issues-1669-willorepo",
+          "id": "github-https-github-com-anthropics-skills-issues-1669-willo-olliw",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "WillORepO",
+          "author": "WillO-OlliW",
           "date": "2026-08-25",
           "text": "mcp-builder: evaluation.py discards a completed run on Windows — write_text() without encoding hits cp1252 on the report's emoji ## Summary `skills/mcp-builder/scripts/evaluation.py:366` writes the report with ```python args.output.write_text(report) ``` `Path.write_text()` uses the **locale** encoding. On a Windows default install that is cp1252, and the report contains emoji — the ✅/❌ correctness markers in `TASK_TEMPLATE`. So on Windows the run completes, every task is asked, every tool call is made, **every token is paid for**, and the results are then discarded by a `UnicodeEncodeError` o",
           "url": "https://github.com/anthropics/skills/issues/1669",
