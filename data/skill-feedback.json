@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-06T04:57:43Z",
+    "lastUpdated": "2026-09-07T05:02:32Z",
     "skillCount": 20,
-    "totalComments": 58,
+    "totalComments": 59,
     "sources": [
       "hacker-news",
       "github",
@@ -25,7 +25,7 @@
           "date": "2026-07-14",
           "text": "brainstorming: keep the current question open when the user asks for context instead of answering - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? The `brainstorming` skill says to ask one question at a time, but it does not explicitly say what to do when the user cannot answer yet and instead asks for more context about the current question. In practice, this can produce a confusing flow: 1. The agent asks question A. 2. The user asks for more context, implications, or trade-offs about question A. 3. The agent provides that context. 4. Th",
           "url": "https://github.com/obra/superpowers/issues/1989",
-          "score": 3,
+          "score": 4,
           "sentiment": "negative"
         }
       ]
@@ -34,26 +34,14 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 1,
-      "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2230-abhineshkr",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "abhineshkr",
-          "date": "2026-08-31",
-          "text": "skills/test-driven-development: three gaps — tests as the deliverable, detector suites, and closing deferred work *Found in real use over ~10 days on a single large project, captured in a skill-observation log and triaged in a review on 2026-08-31. Filed upstream rather than patched locally because the plugin is version-pinned — a local edit is erased on the next update.* *Version: **superpowers 6.3.0 (`b36e0829c6d0`), via the claude-plugins-official marketplace**. Each item below gives what happened, a concrete suggested change, and the generalisable principle. Happy to open a PR for any of t",
-          "url": "https://github.com/obra/superpowers/issues/2230",
-          "score": 1,
-          "sentiment": "negative"
-        }
-      ]
+      "feedbackCount": 0,
+      "comments": []
     },
     "superpowers/writing-plans": {
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1442-cdub615",
@@ -67,26 +55,15 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1042-justyouso",
+          "id": "github-https-github-com-obra-superpowers-issues-2264-wnqgphqn5t-cmyk",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "Justyouso",
-          "date": "2026-04-03",
-          "text": "When using the `superpowers:writing-plans` skill, consecutive Write tool calls fail with \"missing required parameter 'file_path'\" error. ## Bug Description When using the `superpowers:writing-plans` skill, consecutive Write tool calls fail with \"missing required parameter 'file_path'\" error. ## Steps to Reproduce 1. Invoke `superpowers:writing-plans` skill 2. Attempt to use Write tool to create a plan file 3. First Write succeeds, subsequent Writes fail with: ## Root Cause Analysis The skill system appears to inject empty Write tool calls into the response stream. After a successful Write call",
-          "url": "https://github.com/obra/superpowers/issues/1042",
-          "score": 5,
+          "author": "wnqgphqn5t-cmyk",
+          "date": "2026-09-06",
+          "text": "7 additive rules for superpowers skills (from real-session postmortems) These are seven small, additive rules for existing `superpowers:*` skills, each distilled from a concrete failure in real agent sessions. Grouping them into one issue rather than filing seven — happy to split into PRs per skill if you'd prefer. Each block is: the failure that happened → the proposed rule → the one-line principle. No structural changes, just rules added to sections that already exist. --- ## 1. `verification-before-completion` — verify a set-wide fix by count against an external source of truth **Failure.**",
+          "url": "https://github.com/obra/superpowers/issues/2264",
+          "score": 0,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1238-syliang2020",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "syliang2020",
-          "date": "2026-04-21",
-          "text": "Feature request: feature-doc-pack planning mode for team workflows and legacy repos ## Summary I’d like to propose a new planning workflow for Superpowers: a **feature-doc-pack mode** that can generate a small set of coordinated markdown files instead of only a single monolithic implementation plan. This would be especially useful for: - multi-developer work - frontend/backend coordination - cross-module or cross-repo changes - legacy production codebases - parallel Codex / subagent workflows that need a shared source of truth before implementation --- ## Problem `writing-plans` is great for p",
-          "url": "https://github.com/obra/superpowers/issues/1238",
-          "score": 2,
-          "sentiment": "positive"
         }
       ]
     },
@@ -94,19 +71,8 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-969-mcorbe",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "mcorbe",
-          "date": "2026-03-28",
-          "text": "New skill: post-mortem / incident analysis for production failures ## Is your feature request related to a problem? Please describe. After a deployment failure, I used Superpowers skills (brainstorming, systematic-debugging) to analyze what went wrong. The analysis was shallow — it produced a flat list of surface-level observations rather than a structured root cause analysis. I had to manually guide the agent toward using a proper framework (Lean 4M: Machine, Material, Man, Manual) to get actionable, separated root causes. The current skill set covers the full development lifecycle (brainstor",
-          "url": "https://github.com/obra/superpowers/issues/969",
-          "score": 1,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2219-danielcalvolopez",
           "source": "github",
@@ -128,6 +94,28 @@
           "url": "https://github.com/obra/superpowers/issues/2232",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2266-slowernet",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "slowernet",
+          "date": "2026-09-06",
+          "text": "Fixes keep creating new bugs because no skill requires tracing what a fix changes - [x] I searched existing issues and this has not been proposed before Closest prior art: #2145 B1 (enumerate readers of a stale field; the *root cause's* blast radius during diagnosis, where this is the *fix's*), #2264 §5 (re-run the objective check after a delegated edit; a dynamic check, where this is static), #2113 §4 (coverage gaps *between* tasks, not gaps *created by* a fix), PR #2198 (trace a bad value upstream to its producer; opposite direction), and closed #2066 (a \"blast radius\" row for spec self-revi",
+          "url": "https://github.com/obra/superpowers/issues/2266",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2264-wnqgphqn5t-cmyk",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "wnqgphqn5t-cmyk",
+          "date": "2026-09-06",
+          "text": "7 additive rules for superpowers skills (from real-session postmortems) These are seven small, additive rules for existing `superpowers:*` skills, each distilled from a concrete failure in real agent sessions. Grouping them into one issue rather than filing seven — happy to split into PRs per skill if you'd prefer. Each block is: the failure that happened → the proposed rule → the one-line principle. No structural changes, just rules added to sections that already exist. --- ## 1. `verification-before-completion` — verify a set-wide fix by count against an external source of truth **Failure.**",
+          "url": "https://github.com/obra/superpowers/issues/2264",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -135,7 +123,7 @@
       "slug": "verification-before-completion",
       "ecosystem": "superpowers",
       "displayName": "Verification Before Completion",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-429-evrenverse",
@@ -169,6 +157,17 @@
           "url": "https://github.com/obra/superpowers/issues/2231",
           "score": 1,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2264-wnqgphqn5t-cmyk",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "wnqgphqn5t-cmyk",
+          "date": "2026-09-06",
+          "text": "7 additive rules for superpowers skills (from real-session postmortems) These are seven small, additive rules for existing `superpowers:*` skills, each distilled from a concrete failure in real agent sessions. Grouping them into one issue rather than filing seven — happy to split into PRs per skill if you'd prefer. Each block is: the failure that happened → the proposed rule → the one-line principle. No structural changes, just rules added to sections that already exist. --- ## 1. `verification-before-completion` — verify a set-wide fix by count against an external source of truth **Failure.**",
+          "url": "https://github.com/obra/superpowers/issues/2264",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -176,7 +175,7 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-429-evrenverse",
@@ -201,14 +200,25 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1442-cdub615",
+          "id": "github-https-github-com-obra-superpowers-issues-2266-slowernet",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "cdub615",
-          "date": "2026-04-30",
-          "text": "Expose lifecycle events beyond SessionStart for external integration - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I’m trying to integrate Superpowers with [Beads](https://github.com/gastownhall/beads), a dependency-aware issue tracker designed for AI agents, so that the planning artifact lives in `bd` in addition to a markdown file and subagents pull work from `bd ready`. The motivation is currently beads are my canonical source of truth for tracking my work. I want that to remain true regardless of whether I use Superpowers for larger",
-          "url": "https://github.com/obra/superpowers/issues/1442",
-          "score": 7,
+          "author": "slowernet",
+          "date": "2026-09-06",
+          "text": "Fixes keep creating new bugs because no skill requires tracing what a fix changes - [x] I searched existing issues and this has not been proposed before Closest prior art: #2145 B1 (enumerate readers of a stale field; the *root cause's* blast radius during diagnosis, where this is the *fix's*), #2264 §5 (re-run the objective check after a delegated edit; a dynamic check, where this is static), #2113 §4 (coverage gaps *between* tasks, not gaps *created by* a fix), PR #2198 (trace a bad value upstream to its producer; opposite direction), and closed #2066 (a \"blast radius\" row for spec self-revi",
+          "url": "https://github.com/obra/superpowers/issues/2266",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2264-wnqgphqn5t-cmyk",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "wnqgphqn5t-cmyk",
+          "date": "2026-09-06",
+          "text": "7 additive rules for superpowers skills (from real-session postmortems) These are seven small, additive rules for existing `superpowers:*` skills, each distilled from a concrete failure in real agent sessions. Grouping them into one issue rather than filing seven — happy to split into PRs per skill if you'd prefer. Each block is: the failure that happened → the proposed rule → the one-line principle. No structural changes, just rules added to sections that already exist. --- ## 1. `verification-before-completion` — verify a set-wide fix by count against an external source of truth **Failure.**",
+          "url": "https://github.com/obra/superpowers/issues/2264",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -242,17 +252,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2034-vida994",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "vida994",
-          "date": "2026-07-24",
-          "text": "Subagent dispatches outside SDD have no model guidance, so they inherit the session model ### Summary `subagent-driven-development` treats the subagent model as a required, explicit choice. Every other skill that dispatches a subagent omits it entirely, so those dispatches silently inherit the session model — the exact failure SDD's own guidance calls out. ### The inconsistency SDD's prompt templates make it a required field: ``` Subagent (general-purpose): model: [MODEL — REQUIRED: choose per SKILL.md Model Selection; an omitted model silently inherits the session's most expensive one] ``` an",
-          "url": "https://github.com/obra/superpowers/issues/2034",
-          "score": 1,
-          "sentiment": "positive"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2222-ai-skill-shield",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -262,6 +261,17 @@
           "url": "https://github.com/obra/superpowers/issues/2222",
           "score": 1,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2266-slowernet",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "slowernet",
+          "date": "2026-09-06",
+          "text": "Fixes keep creating new bugs because no skill requires tracing what a fix changes - [x] I searched existing issues and this has not been proposed before Closest prior art: #2145 B1 (enumerate readers of a stale field; the *root cause's* blast radius during diagnosis, where this is the *fix's*), #2264 §5 (re-run the objective check after a delegated edit; a dynamic check, where this is static), #2113 §4 (coverage gaps *between* tasks, not gaps *created by* a fix), PR #2198 (trace a bad value upstream to its producer; opposite direction), and closed #2066 (a \"blast radius\" row for spec self-revi",
+          "url": "https://github.com/obra/superpowers/issues/2266",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -269,8 +279,19 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1941-dlivxpr",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "dlivxpr",
+          "date": "2026-07-06",
+          "text": "Feature request: First-class oh-my-pi (OMP) support via native extension ### Summary `Superpowers` now has first-class support for the Pi coding agent (closed #435, implemented in #1499), and it can already be loaded in `oh-my-pi` through the Claude-plugin compatibility path ([see this comment](https://github.com/obra/superpowers/issues/435#issuecomment-4057770017)). However, there is no dedicated, native `.omp/*` integration that allows `oh-my-pi` to discover and bootstrap `Superpowers` from a direct checkout of this repository. I would like to request a native `oh-my-pi` extension so that us",
+          "url": "https://github.com/obra/superpowers/issues/1941",
+          "score": 2,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2260-kei-h0-9hgh",
           "source": "github",
@@ -534,7 +555,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 7,
+      "feedbackCount": 6,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1412-guala19",
@@ -568,17 +589,6 @@
           "url": "https://github.com/anthropics/skills/issues/1304",
           "score": 1,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1669-willo-olliw",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "WillO-OlliW",
-          "date": "2026-08-25",
-          "text": "mcp-builder: evaluation.py discards a completed run on Windows — write_text() without encoding hits cp1252 on the report's emoji ## Summary `skills/mcp-builder/scripts/evaluation.py:366` writes the report with ```python args.output.write_text(report) ``` `Path.write_text()` uses the **locale** encoding. On a Windows default install that is cp1252, and the report contains emoji — the ✅/❌ correctness markers in `TASK_TEMPLATE`. So on Windows the run completes, every task is asked, every tool call is made, **every token is paid for**, and the results are then discarded by a `UnicodeEncodeError` o",
-          "url": "https://github.com/anthropics/skills/issues/1669",
-          "score": 1,
-          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-anthropics-skills-issues-1706-stillpimpn",
@@ -666,6 +676,17 @@
           "sentiment": "neutral"
         },
         {
+          "id": "github-https-github-com-anthropics-skills-issues-1716-supermuskk",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "supermuskk",
+          "date": "2026-09-03",
+          "text": "mcp-builder: evaluation.py defaults to claude-3-7-sonnet-20250219, and the low-score advice points back at that same model The evaluation harness in `mcp-builder` still defaults to `claude-3-7-sonnet-20250219`, and the troubleshooting section recommends that same snapshot as the *upgrade* path. Line numbers are against `main` at the time of writing. ### Where `skills/mcp-builder/scripts/evaluation.py` ```python 223: model: str = \"claude-3-7-sonnet-20250219\", 324: parser.add_argument(\"-m\", \"--model\", default=\"claude-3-7-sonnet-20250219\", help=\"Claude model to use (default: claude-3-7-sonnet-202",
+          "url": "https://github.com/anthropics/skills/issues/1716",
+          "score": 1,
+          "sentiment": "positive"
+        },
+        {
           "id": "github-https-github-com-anthropics-skills-issues-1091-agentupskill",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -686,17 +707,6 @@
           "url": "https://github.com/anthropics/skills/issues/1686",
           "score": 0,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1716-supermuskk",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "supermuskk",
-          "date": "2026-09-03",
-          "text": "mcp-builder: evaluation.py defaults to claude-3-7-sonnet-20250219, and the low-score advice points back at that same model The evaluation harness in `mcp-builder` still defaults to `claude-3-7-sonnet-20250219`, and the troubleshooting section recommends that same snapshot as the *upgrade* path. Line numbers are against `main` at the time of writing. ### Where `skills/mcp-builder/scripts/evaluation.py` ```python 223: model: str = \"claude-3-7-sonnet-20250219\", 324: parser.add_argument(\"-m\", \"--model\", default=\"claude-3-7-sonnet-20250219\", help=\"Claude model to use (default: claude-3-7-sonnet-202",
-          "url": "https://github.com/anthropics/skills/issues/1716",
-          "score": 0,
-          "sentiment": "positive"
         }
       ]
     },
