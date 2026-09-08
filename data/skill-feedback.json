@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-07T05:31:48Z",
+    "lastUpdated": "2026-09-08T05:00:40Z",
     "skillCount": 20,
     "totalComments": 59,
     "sources": [
@@ -175,30 +175,8 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-429-evrenverse",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "evrenverse",
-          "date": "2026-02-05",
-          "text": "Support for Claude Code Agent Teams (TeammateTool, SendMessage, TaskList) ## Is your feature request related to a problem? Please describe. Claude Code 2.1.32+ introduced experimental **Agent Teams** — a feature that allows coordinating multiple Claude Code instances as a team with a lead, teammates, shared task lists, and inter-agent messaging. See the [official documentation](https://code.claude.com/docs/en/agent-teams). Superpowers currently has skills for subagent-driven development (`subagent-driven-development`, `dispatching-parallel-agents`) but no awareness of or support for the newer ",
-          "url": "https://github.com/obra/superpowers/issues/429",
-          "score": 22,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1152-aiacoella",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "aIacoella",
-          "date": "2026-04-13",
-          "text": "Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan) - [x] I searched existing issues and this is not a duplicate ## Environment | Field | Value | | ----------------------------------- | --------------- | | Superpowers version | 5.0.7 | | Harness (Claude Code, Cursor, etc.) | Codex | | Harness version | 0.120.0 | | Model | 5.4 & 5.4-mini | | OS + shell | MacOS | ## Is this a Superpowers issue or a platform issue? **Superpowers issue** - [x] I confirmed this issue does not occur without Superpowers installed #",
-          "url": "https://github.com/obra/superpowers/issues/1152",
-          "score": 13,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2266-slowernet",
           "source": "github",
@@ -218,6 +196,17 @@
           "date": "2026-09-06",
           "text": "7 additive rules for superpowers skills (from real-session postmortems) These are seven small, additive rules for existing `superpowers:*` skills, each distilled from a concrete failure in real agent sessions. Grouping them into one issue rather than filing seven — happy to split into PRs per skill if you'd prefer. Each block is: the failure that happened → the proposed rule → the one-line principle. No structural changes, just rules added to sections that already exist. --- ## 1. `verification-before-completion` — verify a set-wide fix by count against an external source of truth **Failure.**",
           "url": "https://github.com/obra/superpowers/issues/2264",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2267-kaiser-data",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "kaiser-data",
+          "date": "2026-09-08",
+          "text": "subagent-driven-development: the progress ledger records completion but not cross-task discoveries, so a usage-limit interruption loses what earlier tasks learned *Found while starting an 18-task run of `subagent-driven-development` (2026-09-08). Filed rather than patched locally because the plugin is version-pinned.* *Version: **superpowers 6.1.1**.* Related but, I believe, distinct: #931 (broad session-handoff slash commands) and #2253 (deferred *findings* destroyed at finish). This one is about the ledger's missing channel for cross-task **discoveries** during execution. Close as duplicate ",
+          "url": "https://github.com/obra/superpowers/issues/2267",
           "score": 0,
           "sentiment": "negative"
         }
@@ -404,7 +393,7 @@
           "date": "2026-09-01",
           "text": "[External Plugin]: sechelix ### Plugin name sechelix ### Short description Evidence-first application-security Agent Skill for repositories and environments you are authorized to test. Every candidate finding goes to an independent verifier whose job is to disprove it before it is reported. ### GitHub repository omarmohelal/SecHelix ### Plugin path inside the repository _No response_ ### Ref to review v3.4.0-alpha.2 ### Commit SHA to review 61f72fda999937acd9250908a734213774722b4d ### Version 3.4.0-alpha.2 ### License identifier Apache-2.0 ### Author name Omar ### Author URL https://github.com",
           "url": "https://github.com/github/awesome-copilot/issues/2899",
-          "score": 1,
+          "score": 2,
           "sentiment": "positive"
         },
         {
@@ -415,7 +404,7 @@
           "date": "2026-09-04",
           "text": "[External Plugin]: tmforge ### Plugin name tmforge ### Short description The Strider agent that comes with the tmforge plugin adds evidence-backed STRIDE threat modeling to GitHub Copilot, with structured risk assessment, deterministic validation, and Markdown reports. Optional tmforge integration supports creating, updating, and verifying Microsoft Threat Modeling Tool (.tm7) models. ### GitHub repository Hacks4Snacks/tmforge ### Plugin path inside the repository plugins/tmforge ### Ref to review v0.11.0 ### Commit SHA to review 8c22d85c4cb65f416c228bb2a73ae9f364aa549b ### Version 0.11.0 ### ",
           "url": "https://github.com/github/awesome-copilot/issues/2947",
-          "score": 1,
+          "score": 2,
           "sentiment": "positive"
         }
       ]
@@ -555,7 +544,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 6,
+      "feedbackCount": 7,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1412-guala19",
@@ -567,6 +556,17 @@
           "url": "https://github.com/anthropics/skills/issues/1412",
           "score": 2,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1631-truongsontung",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "truongsontung",
+          "date": "2026-08-22",
+          "text": "Path traversal via unsanitized skill_name in run_eval.py ## Summary The `run_eval.py` script uses `skill_name` from SKILL.md frontmatter directly in file path construction without sanitization, allowing path traversal. ## Vulnerability **Location:** `skills/skill-creator/scripts/run_eval.py:54` ```python project_commands_dir = Path('~/.claude/commands') clean_name = re.sub(r'[^a-z0-9-]', '', skill_name.lower()) command_file = project_commands_dir / f{clean_name}.md ``` The `clean_name` only strips non- characters but doesn't prevent sequences. An attacker providing a SKILL.md with would write ",
+          "url": "https://github.com/anthropics/skills/issues/1631",
+          "score": 2,
+          "sentiment": "positive"
         },
         {
           "id": "github-https-github-com-anthropics-skills-issues-311-svobom57",
@@ -632,6 +632,17 @@
       "feedbackCount": 7,
       "comments": [
         {
+          "id": "github-https-github-com-anthropics-skills-issues-1716-supermuskk",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "supermuskk",
+          "date": "2026-09-03",
+          "text": "mcp-builder: evaluation.py defaults to claude-3-7-sonnet-20250219, and the low-score advice points back at that same model The evaluation harness in `mcp-builder` still defaults to `claude-3-7-sonnet-20250219`, and the troubleshooting section recommends that same snapshot as the *upgrade* path. Line numbers are against `main` at the time of writing. ### Where `skills/mcp-builder/scripts/evaluation.py` ```python 223: model: str = \"claude-3-7-sonnet-20250219\", 324: parser.add_argument(\"-m\", \"--model\", default=\"claude-3-7-sonnet-20250219\", help=\"Claude model to use (default: claude-3-7-sonnet-202",
+          "url": "https://github.com/anthropics/skills/issues/1716",
+          "score": 3,
+          "sentiment": "positive"
+        },
+        {
           "id": "github-https-github-com-anthropics-skills-issues-1643-adnasal",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -674,17 +685,6 @@
           "url": "https://github.com/anthropics/skills/issues/1669",
           "score": 1,
           "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1716-supermuskk",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "supermuskk",
-          "date": "2026-09-03",
-          "text": "mcp-builder: evaluation.py defaults to claude-3-7-sonnet-20250219, and the low-score advice points back at that same model The evaluation harness in `mcp-builder` still defaults to `claude-3-7-sonnet-20250219`, and the troubleshooting section recommends that same snapshot as the *upgrade* path. Line numbers are against `main` at the time of writing. ### Where `skills/mcp-builder/scripts/evaluation.py` ```python 223: model: str = \"claude-3-7-sonnet-20250219\", 324: parser.add_argument(\"-m\", \"--model\", default=\"claude-3-7-sonnet-20250219\", help=\"Claude model to use (default: claude-3-7-sonnet-202",
-          "url": "https://github.com/anthropics/skills/issues/1716",
-          "score": 1,
-          "sentiment": "positive"
         },
         {
           "id": "github-https-github-com-anthropics-skills-issues-1091-agentupskill",
