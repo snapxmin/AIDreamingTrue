@@ -1,32 +1,5 @@
 {
-  "generatedAt": "2026-09-08T04:57:26Z",
+  "generatedAt": "2026-09-09T04:57:48Z",
   "isBaselineRun": false,
-  "changes": [
-    {
-      "type": "updated",
-      "key": "awesome-copilot/docs-sync-audit",
-      "ecosystem": "awesome-copilot",
-      "slug": "docs-sync-audit",
-      "displayName": "Docs Sync Audit",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/docs-sync-audit",
-      "detectedAt": "2026-09-08T04:58:51Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/test-gap-audit",
-      "ecosystem": "awesome-copilot",
-      "slug": "test-gap-audit",
-      "displayName": "Test Gap Audit",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/test-gap-audit",
-      "detectedAt": "2026-09-08T04:58:51Z"
-    }
-  ]
+  "changes": []
 }

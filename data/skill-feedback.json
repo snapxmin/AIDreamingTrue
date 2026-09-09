@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-08T05:00:40Z",
+    "lastUpdated": "2026-09-09T05:01:53Z",
     "skillCount": 20,
     "totalComments": 59,
     "sources": [
@@ -15,7 +15,7 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1989-iskandersierra",
@@ -27,6 +27,17 @@
           "url": "https://github.com/obra/superpowers/issues/1989",
           "score": 4,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2240-concon7",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "concon7",
+          "date": "2026-09-01",
+          "text": "skills/brainstorming: the one-question rule is a proxy for a quality property, and a named vendor is an unmarked claim - [x] I searched existing issues and this has not been proposed before Searched open and closed issues and PRs. Related but distinct: **#2213** (a request for context is not an answer — tightens the same rule), **#1915** (design rendering vs approval-question order), **#2215**, **#2116**, **#2128**. None addresses what the cadence rule is *for*, or evidence standards for a named third party. ## What problem does this solve? Two problems found in real use on one project, both i",
+          "url": "https://github.com/obra/superpowers/issues/2240",
+          "score": 1,
+          "sentiment": "neutral"
         }
       ]
     },
@@ -375,6 +386,17 @@
           "sentiment": "positive"
         },
         {
+          "id": "github-https-github-com-github-awesome-copilot-issues-2947-hacks4snacks",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Hacks4Snacks",
+          "date": "2026-09-04",
+          "text": "[External Plugin]: tmforge ### Plugin name tmforge ### Short description The Strider agent that comes with the tmforge plugin adds evidence-backed STRIDE threat modeling to GitHub Copilot, with structured risk assessment, deterministic validation, and Markdown reports. Optional tmforge integration supports creating, updating, and verifying Microsoft Threat Modeling Tool (.tm7) models. ### GitHub repository Hacks4Snacks/tmforge ### Plugin path inside the repository plugins/tmforge ### Ref to review v0.11.0 ### Commit SHA to review 8c22d85c4cb65f416c228bb2a73ae9f364aa549b ### Version 0.11.0 ### ",
+          "url": "https://github.com/github/awesome-copilot/issues/2947",
+          "score": 6,
+          "sentiment": "positive"
+        },
+        {
           "id": "github-https-github-com-github-awesome-copilot-issues-2922-ecocitizenz",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -393,17 +415,6 @@
           "date": "2026-09-01",
           "text": "[External Plugin]: sechelix ### Plugin name sechelix ### Short description Evidence-first application-security Agent Skill for repositories and environments you are authorized to test. Every candidate finding goes to an independent verifier whose job is to disprove it before it is reported. ### GitHub repository omarmohelal/SecHelix ### Plugin path inside the repository _No response_ ### Ref to review v3.4.0-alpha.2 ### Commit SHA to review 61f72fda999937acd9250908a734213774722b4d ### Version 3.4.0-alpha.2 ### License identifier Apache-2.0 ### Author name Omar ### Author URL https://github.com",
           "url": "https://github.com/github/awesome-copilot/issues/2899",
-          "score": 2,
-          "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-github-awesome-copilot-issues-2947-hacks4snacks",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Hacks4Snacks",
-          "date": "2026-09-04",
-          "text": "[External Plugin]: tmforge ### Plugin name tmforge ### Short description The Strider agent that comes with the tmforge plugin adds evidence-backed STRIDE threat modeling to GitHub Copilot, with structured risk assessment, deterministic validation, and Markdown reports. Optional tmforge integration supports creating, updating, and verifying Microsoft Threat Modeling Tool (.tm7) models. ### GitHub repository Hacks4Snacks/tmforge ### Plugin path inside the repository plugins/tmforge ### Ref to review v0.11.0 ### Commit SHA to review 8c22d85c4cb65f416c228bb2a73ae9f364aa549b ### Version 0.11.0 ### ",
-          "url": "https://github.com/github/awesome-copilot/issues/2947",
           "score": 2,
           "sentiment": "positive"
         }
@@ -629,7 +640,7 @@
       "slug": "mcp-builder",
       "ecosystem": "anthropics-skills",
       "displayName": "MCP Builder",
-      "feedbackCount": 7,
+      "feedbackCount": 6,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1716-supermuskk",
@@ -694,17 +705,6 @@
           "date": "2026-05-04",
           "text": "Feature request: add coordinator.domains: frontmatter to claude-api SKILL.md (for spec-coordinator tag-routing) ## Context A separate skills framework — [Agent Upskill's spec-coordinator](https://github.com/agentupskill/skills-core/tree/main/spec-coordinator) — uses an SME registry to route cross-domain spec requests to relevant skills. The registry has two routing layers: 1. **Tag-match (deterministic)** — picks skills whose `coordinator.domains: [...]` frontmatter overlaps query tokens (confidence 1.0). 2. **Sonnet classifier (fallback)** — scores skills against the query (threshold 0.6 for ",
           "url": "https://github.com/anthropics/skills/issues/1091",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1686-mladenaleta",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "mladenaleta",
-          "date": "2026-08-28",
-          "text": "skill-creator scripts crash on Windows for any skill containing non-ASCII text (missing encoding on read_text()) ## Summary Three scripts in `skills/skill-creator/scripts/` read or write text without specifying an encoding. On Windows, Python defaults to the ANSI code page (cp1252 on most systems), so any SKILL.md containing non-ASCII characters raises `UnicodeDecodeError` before validation begins. This affects Anthropic's own shipped skills. In a local library of 60 skills, **28 crashed the validator (47%)**, including `docx`, `pdf`, `pptx`, `xlsx`, `mcp-builder`, and `webapp-testing`. The bu",
-          "url": "https://github.com/anthropics/skills/issues/1686",
           "score": 0,
           "sentiment": "negative"
         }
