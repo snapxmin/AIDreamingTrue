@@ -15,6 +15,36 @@
     "sourceUrl": "https://github.blog/changelog/2026-09-08-enterprise-managed-sandbox-in-copilot-for-jetbrains"
   },
   {
+    "id": "auto-claude-v2-1-267",
+    "title": "Claude Code v2.1.267 发布",
+    "date": "2026-09-09",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "Anthropic",
+    "heat": 75,
+    "growth": 8,
+    "sourceTier": "A",
+    "summary": "## What's changed  - Added `maxEffortLevel` setting (top-level or per model under `modelSettings`): caps the effort level on every provider, including Bedrock, Vertex and Foundry; users can still pick",
+    "whyImportant": "Claude Code 持续高频迭代，终端 Agent 能力不断增强。",
+    "impact": "关注 release notes 中的权限、MCP 和 subagent 相关变更。",
+    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.267"
+  },
+  {
+    "id": "auto-gh-enterprise-managed-permissions-for-githu",
+    "title": "Enterprise managed permissions for GitHub Copilot agent operations",
+    "date": "2026-09-09",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "GitHub",
+    "heat": 70,
+    "growth": 6,
+    "sourceTier": "A",
+    "summary": "GitHub 官方 Changelog 更新：Enterprise managed permissions for GitHub Copilot agent operations",
+    "whyImportant": "GitHub Copilot 生态动态，影响企业开发者工作流。",
+    "impact": "关注 Agent 模式、CLI 和企业策略相关变更。",
+    "sourceUrl": "https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations"
+  },
+  {
     "id": "auto-claude-v2-1-266",
     "title": "Claude Code v2.1.266 发布",
     "date": "2026-09-08",
