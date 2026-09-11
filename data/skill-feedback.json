@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-10T05:03:31Z",
+    "lastUpdated": "2026-09-11T04:59:20Z",
     "skillCount": 20,
-    "totalComments": 51,
+    "totalComments": 54,
     "sources": [
       "hacker-news",
       "github",
@@ -15,32 +15,67 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 0,
-      "comments": []
+      "feedbackCount": 1,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1566-jhochenbaum",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jhochenbaum",
+          "date": "2026-05-17",
+          "text": "Add lifecycle extension system for user-defined workflow hooks <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? One of Superpowers' core strengths is its minimal set of skills and configuration without bloating the core. It's a big part of why many of us keep coming back to it over similar frameworks. But in practice, my colleagues and I keep running",
+          "url": "https://github.com/obra/superpowers/issues/1566",
+          "score": 2,
+          "sentiment": "neutral"
+        }
+      ]
     },
     "superpowers/test-driven-development": {
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 0,
-      "comments": []
+      "feedbackCount": 1,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2046-thatht137",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Thatht137",
+          "date": "2026-07-27",
+          "text": "writing-plans can mistake structural RED for behavior-test evidence # Bug report: writing-plans can treat an import error as proof of a behavior test - [x] I searched existing open and closed issues and pull requests. Related: #711, #853, and #1576. None addresses the distinction between structural RED evidence and a behavior assertion actually rejecting a wrong result. ## Environment | Field | Value | |-------|-------| | Superpowers version | 6.2.0, commit `3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9` | | Harness | OpenAI Codex CLI | | Harness version | `codex-cli 0.145.0` | | Model | OpenAI Cod",
+          "url": "https://github.com/obra/superpowers/issues/2046",
+          "score": 4,
+          "sentiment": "negative"
+        }
+      ]
     },
     "superpowers/writing-plans": {
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2264-wnqgphqn5t-cmyk",
+          "id": "github-https-github-com-obra-superpowers-issues-2046-thatht137",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "wnqgphqn5t-cmyk",
-          "date": "2026-09-06",
-          "text": "7 additive rules for superpowers skills (from real-session postmortems) These are seven small, additive rules for existing `superpowers:*` skills, each distilled from a concrete failure in real agent sessions. Grouping them into one issue rather than filing seven — happy to split into PRs per skill if you'd prefer. Each block is: the failure that happened → the proposed rule → the one-line principle. No structural changes, just rules added to sections that already exist. --- ## 1. `verification-before-completion` — verify a set-wide fix by count against an external source of truth **Failure.**",
-          "url": "https://github.com/obra/superpowers/issues/2264",
-          "score": 0,
+          "author": "Thatht137",
+          "date": "2026-07-27",
+          "text": "writing-plans can mistake structural RED for behavior-test evidence # Bug report: writing-plans can treat an import error as proof of a behavior test - [x] I searched existing open and closed issues and pull requests. Related: #711, #853, and #1576. None addresses the distinction between structural RED evidence and a behavior assertion actually rejecting a wrong result. ## Environment | Field | Value | |-------|-------| | Superpowers version | 6.2.0, commit `3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9` | | Harness | OpenAI Codex CLI | | Harness version | `codex-cli 0.145.0` | | Model | OpenAI Cod",
+          "url": "https://github.com/obra/superpowers/issues/2046",
+          "score": 4,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1566-jhochenbaum",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jhochenbaum",
+          "date": "2026-05-17",
+          "text": "Add lifecycle extension system for user-defined workflow hooks <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? One of Superpowers' core strengths is its minimal set of skills and configuration without bloating the core. It's a big part of why many of us keep coming back to it over similar frameworks. But in practice, my colleagues and I keep running",
+          "url": "https://github.com/obra/superpowers/issues/1566",
+          "score": 2,
+          "sentiment": "neutral"
         }
       ]
     },
@@ -51,14 +86,14 @@
       "feedbackCount": 3,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2232-abhineshkr",
+          "id": "github-https-github-com-obra-superpowers-issues-2277-caarles00",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "abhineshkr",
-          "date": "2026-08-31",
-          "text": "skills/systematic-debugging: sizing a probe for intermittent behaviour, and preserving evidence before reproducing *Found in real use over ~10 days on a single large project, captured in a skill-observation log and triaged in a review on 2026-08-31. Filed upstream rather than patched locally because the plugin is version-pinned — a local edit is erased on the next update.* *Version: **superpowers 6.3.0 (`b36e0829c6d0`), via the claude-plugins-official marketplace**. Each item below gives what happened, a concrete suggested change, and the generalisable principle. Happy to open a PR for any of ",
-          "url": "https://github.com/obra/superpowers/issues/2232",
-          "score": 0,
+          "author": "Caarles00",
+          "date": "2026-09-10",
+          "text": "systematic-debugging ships its pressure-test fixtures inside the skill directory; they open with \"This is a real scenario. You must choose and act\" - [x] I searched existing issues and this is not a duplicate *(searched \"pressure test\", fixture, CREATION-LOG, test-academic — open and closed)* ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | skill fetched from `main` via skills.sh; directory listing re-checked against `b36e082` | | Harness (Claude Code, Cursor, etc.) | Claude Code, VS Code extension | | Harness version | 2.1.252 (Claude Code) | | Your model ",
+          "url": "https://github.com/obra/superpowers/issues/2277",
+          "score": 2,
           "sentiment": "negative"
         },
         {
@@ -133,15 +168,15 @@
       "feedbackCount": 3,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2266-slowernet",
+          "id": "github-https-github-com-obra-superpowers-issues-1566-jhochenbaum",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "slowernet",
-          "date": "2026-09-06",
-          "text": "Fixes keep creating new bugs because no skill requires tracing what a fix changes - [x] I searched existing issues and this has not been proposed before Closest prior art: #2145 B1 (enumerate readers of a stale field; the *root cause's* blast radius during diagnosis, where this is the *fix's*), #2264 §5 (re-run the objective check after a delegated edit; a dynamic check, where this is static), #2113 §4 (coverage gaps *between* tasks, not gaps *created by* a fix), PR #2198 (trace a bad value upstream to its producer; opposite direction), and closed #2066 (a \"blast radius\" row for spec self-revi",
-          "url": "https://github.com/obra/superpowers/issues/2266",
-          "score": 0,
-          "sentiment": "negative"
+          "author": "jhochenbaum",
+          "date": "2026-05-17",
+          "text": "Add lifecycle extension system for user-defined workflow hooks <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? One of Superpowers' core strengths is its minimal set of skills and configuration without bloating the core. It's a big part of why many of us keep coming back to it over similar frameworks. But in practice, my colleagues and I keep running",
+          "url": "https://github.com/obra/superpowers/issues/1566",
+          "score": 2,
+          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2267-kaiser-data",
@@ -185,15 +220,15 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2199-adnasal",
+          "id": "github-https-github-com-obra-superpowers-issues-1566-jhochenbaum",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "adnasal",
-          "date": "2026-08-24",
-          "text": "Pre-flight: Code Health checkpoint before refactor / review skills - [x] I searched existing issues. I did not find this proposed before. ## What problem does this solve? Superpowers already makes you verify before you call work done (`verification-before-completion`, TDD, code review). What agents still do not have is a maintainability check that gives the same answer twice. Lint and tests can pass while the file gets harder to change: longer methods, extra responsibilities, deeper nesting. Asking another model to review it is not a gate. Same diff, next run, different comments. And if you ch",
-          "url": "https://github.com/obra/superpowers/issues/2199",
-          "score": 3,
-          "sentiment": "negative"
+          "author": "jhochenbaum",
+          "date": "2026-05-17",
+          "text": "Add lifecycle extension system for user-defined workflow hooks <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? One of Superpowers' core strengths is its minimal set of skills and configuration without bloating the core. It's a big part of why many of us keep coming back to it over similar frameworks. But in practice, my colleagues and I keep running",
+          "url": "https://github.com/obra/superpowers/issues/1566",
+          "score": 2,
+          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2266-slowernet",
