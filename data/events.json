@@ -1,5 +1,50 @@
 [
   {
+    "id": "auto-claude-v2-1-269",
+    "title": "Claude Code v2.1.269 发布",
+    "date": "2026-09-11",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "Anthropic",
+    "heat": 75,
+    "growth": 8,
+    "sourceTier": "A",
+    "summary": "## What's changed  - Added `claude plugin eval`: run a plugin's eval suite against Claude Code and get scored, reproducible results (JSON + HTML report); see `claude plugin eval --help` - Added `/outp",
+    "whyImportant": "Claude Code 持续高频迭代，终端 Agent 能力不断增强。",
+    "impact": "关注 release notes 中的权限、MCP 和 subagent 相关变更。",
+    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.269"
+  },
+  {
+    "id": "auto-gh-add-vs-code-agents-to-copilot-usage-metr",
+    "title": "Add VS Code Agents to Copilot usage metrics",
+    "date": "2026-09-11",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "GitHub",
+    "heat": 70,
+    "growth": 6,
+    "sourceTier": "A",
+    "summary": "GitHub 官方 Changelog 更新：Add VS Code Agents to Copilot usage metrics",
+    "whyImportant": "GitHub Copilot 生态动态，影响企业开发者工作流。",
+    "impact": "关注 Agent 模式、CLI 和企业策略相关变更。",
+    "sourceUrl": "https://github.blog/changelog/2026-09-11-add-vs-code-agents-to-copilot-usage-metrics"
+  },
+  {
+    "id": "auto-gh-auto-resolution-and-analysis-updates-in-",
+    "title": "Auto-resolution and analysis updates in Copilot code review",
+    "date": "2026-09-11",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "GitHub",
+    "heat": 70,
+    "growth": 6,
+    "sourceTier": "A",
+    "summary": "GitHub 官方 Changelog 更新：Auto-resolution and analysis updates in Copilot code review",
+    "whyImportant": "GitHub Copilot 生态动态，影响企业开发者工作流。",
+    "impact": "关注 Agent 模式、CLI 和企业策略相关变更。",
+    "sourceUrl": "https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review"
+  },
+  {
     "id": "auto-claude-v2-1-268",
     "title": "Claude Code v2.1.268 发布",
     "date": "2026-09-10",
@@ -13,6 +58,21 @@
     "whyImportant": "Claude Code 持续高频迭代，终端 Agent 能力不断增强。",
     "impact": "关注 release notes 中的权限、MCP 和 subagent 相关变更。",
     "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.268"
+  },
+  {
+    "id": "auto-gh-github-copilot-weekly-releases-september",
+    "title": "GitHub Copilot weekly releases — September 7",
+    "date": "2026-09-10",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "GitHub",
+    "heat": 70,
+    "growth": 6,
+    "sourceTier": "A",
+    "summary": "GitHub 官方 Changelog 更新：GitHub Copilot weekly releases — September 7",
+    "whyImportant": "GitHub Copilot 生态动态，影响企业开发者工作流。",
+    "impact": "关注 Agent 模式、CLI 和企业策略相关变更。",
+    "sourceUrl": "https://github.blog/changelog/2026-09-10-github-copilot-weekly-releases-september-7"
   },
   {
     "id": "auto-gh-enterprise-managed-sandbox-in-copilot-fo",

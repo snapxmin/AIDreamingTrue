@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-11T04:59:20Z",
+    "lastUpdated": "2026-09-12T04:52:21Z",
     "skillCount": 20,
-    "totalComments": 54,
+    "totalComments": 53,
     "sources": [
       "hacker-news",
       "github",
@@ -53,7 +53,7 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2046-thatht137",
@@ -76,6 +76,17 @@
           "url": "https://github.com/obra/superpowers/issues/1566",
           "score": 2,
           "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2264-wnqgphqn5t-cmyk",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "wnqgphqn5t-cmyk",
+          "date": "2026-09-06",
+          "text": "7 additive rules for superpowers skills (from real-session postmortems) These are seven small, additive rules for existing `superpowers:*` skills, each distilled from a concrete failure in real agent sessions. Grouping them into one issue rather than filing seven — happy to split into PRs per skill if you'd prefer. Each block is: the failure that happened → the proposed rule → the one-line principle. No structural changes, just rules added to sections that already exist. --- ## 1. `verification-before-completion` — verify a set-wide fix by count against an external source of truth **Failure.**",
+          "url": "https://github.com/obra/superpowers/issues/2264",
+          "score": 1,
+          "sentiment": "negative"
         }
       ]
     },
@@ -97,17 +108,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2266-slowernet",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "slowernet",
-          "date": "2026-09-06",
-          "text": "Fixes keep creating new bugs because no skill requires tracing what a fix changes - [x] I searched existing issues and this has not been proposed before Closest prior art: #2145 B1 (enumerate readers of a stale field; the *root cause's* blast radius during diagnosis, where this is the *fix's*), #2264 §5 (re-run the objective check after a delegated edit; a dynamic check, where this is static), #2113 §4 (coverage gaps *between* tasks, not gaps *created by* a fix), PR #2198 (trace a bad value upstream to its producer; opposite direction), and closed #2066 (a \"blast radius\" row for spec self-revi",
-          "url": "https://github.com/obra/superpowers/issues/2266",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2264-wnqgphqn5t-cmyk",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -115,6 +115,17 @@
           "date": "2026-09-06",
           "text": "7 additive rules for superpowers skills (from real-session postmortems) These are seven small, additive rules for existing `superpowers:*` skills, each distilled from a concrete failure in real agent sessions. Grouping them into one issue rather than filing seven — happy to split into PRs per skill if you'd prefer. Each block is: the failure that happened → the proposed rule → the one-line principle. No structural changes, just rules added to sections that already exist. --- ## 1. `verification-before-completion` — verify a set-wide fix by count against an external source of truth **Failure.**",
           "url": "https://github.com/obra/superpowers/issues/2264",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2266-slowernet",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "slowernet",
+          "date": "2026-09-06",
+          "text": "Fixes keep creating new bugs because no skill requires tracing what a fix changes - [x] I searched existing issues and this has not been proposed before Closest prior art: #2145 B1 (enumerate readers of a stale field; the *root cause's* blast radius during diagnosis, where this is the *fix's*), #2264 §5 (re-run the objective check after a delegated edit; a dynamic check, where this is static), #2113 §4 (coverage gaps *between* tasks, not gaps *created by* a fix), PR #2198 (trace a bad value upstream to its producer; opposite direction), and closed #2066 (a \"blast radius\" row for spec self-revi",
+          "url": "https://github.com/obra/superpowers/issues/2266",
           "score": 0,
           "sentiment": "negative"
         }
@@ -156,7 +167,7 @@
           "date": "2026-09-06",
           "text": "7 additive rules for superpowers skills (from real-session postmortems) These are seven small, additive rules for existing `superpowers:*` skills, each distilled from a concrete failure in real agent sessions. Grouping them into one issue rather than filing seven — happy to split into PRs per skill if you'd prefer. Each block is: the failure that happened → the proposed rule → the one-line principle. No structural changes, just rules added to sections that already exist. --- ## 1. `verification-before-completion` — verify a set-wide fix by count against an external source of truth **Failure.**",
           "url": "https://github.com/obra/superpowers/issues/2264",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -179,14 +190,14 @@
           "sentiment": "neutral"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2267-kaiser-data",
+          "id": "github-https-github-com-obra-superpowers-issues-2264-wnqgphqn5t-cmyk",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "kaiser-data",
-          "date": "2026-09-08",
-          "text": "subagent-driven-development: the progress ledger records completion but not cross-task discoveries, so a usage-limit interruption loses what earlier tasks learned *Found while starting an 18-task run of `subagent-driven-development` (2026-09-08). Filed rather than patched locally because the plugin is version-pinned.* *Version: **superpowers 6.1.1**.* Related but, I believe, distinct: #931 (broad session-handoff slash commands) and #2253 (deferred *findings* destroyed at finish). This one is about the ledger's missing channel for cross-task **discoveries** during execution. Close as duplicate ",
-          "url": "https://github.com/obra/superpowers/issues/2267",
-          "score": 0,
+          "author": "wnqgphqn5t-cmyk",
+          "date": "2026-09-06",
+          "text": "7 additive rules for superpowers skills (from real-session postmortems) These are seven small, additive rules for existing `superpowers:*` skills, each distilled from a concrete failure in real agent sessions. Grouping them into one issue rather than filing seven — happy to split into PRs per skill if you'd prefer. Each block is: the failure that happened → the proposed rule → the one-line principle. No structural changes, just rules added to sections that already exist. --- ## 1. `verification-before-completion` — verify a set-wide fix by count against an external source of truth **Failure.**",
+          "url": "https://github.com/obra/superpowers/issues/2264",
+          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -257,7 +268,7 @@
           "date": "2026-07-06",
           "text": "Feature request: First-class oh-my-pi (OMP) support via native extension ### Summary `Superpowers` now has first-class support for the Pi coding agent (closed #435, implemented in #1499), and it can already be loaded in `oh-my-pi` through the Claude-plugin compatibility path ([see this comment](https://github.com/obra/superpowers/issues/435#issuecomment-4057770017)). However, there is no dedicated, native `.omp/*` integration that allows `oh-my-pi` to discover and bootstrap `Superpowers` from a direct checkout of this repository. I would like to request a native `oh-my-pi` extension so that us",
           "url": "https://github.com/obra/superpowers/issues/1941",
-          "score": 2,
+          "score": 4,
           "sentiment": "negative"
         }
       ]
@@ -501,7 +512,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 7,
+      "feedbackCount": 6,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1412-guala19",
@@ -548,6 +559,17 @@
           "sentiment": "negative"
         },
         {
+          "id": "github-https-github-com-anthropics-skills-issues-1692-almezaniy",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "almezaniy",
+          "date": "2026-08-30",
+          "text": "[skill-creator] Trigger-eval harness silently broken on Windows: select() on pipes, probe files leak into global ~/.claude/commands, parallel twins cap recall at ~1/N ## Summary The skill-creator description-optimization harness (`skills/skill-creator/scripts/run_eval.py` + `run_loop.py`) is structurally broken on Windows. Worse than crashing, it **fails silently**: every probe dies or mismeasures, the loop reports `recall=0%` (or a hard ~1/N cap), and then happily \"improves\" the description against pure noise for up to 5 iterations. Each probe is a full `claude -p` session that loads the user",
+          "url": "https://github.com/anthropics/skills/issues/1692",
+          "score": 1,
+          "sentiment": "positive"
+        },
+        {
           "id": "github-https-github-com-anthropics-skills-issues-1706-stillpimpn",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -557,28 +579,6 @@
           "url": "https://github.com/anthropics/skills/issues/1706",
           "score": 1,
           "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1721-jparker-rg",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jparker-RG",
-          "date": "2026-09-03",
-          "text": "skill-creator: trigger detection reports 0% recall for every skill ## Summary `skill-creator`'s trigger evaluation reports `precision=100% recall=0%` for every skill, regardless of how good the description is. `run_loop` then \"improves\" the description against evidence that every positive query failed, and reports the result as an optimisation. This fails silently. Nothing errors, and the output looks like a legitimate measurement of a bad description. ## Cause `run_single_query()` in `skills/skill-creator/scripts/run_eval.py` decides whether the skill triggered by watching the `claude -p` eve",
-          "url": "https://github.com/anthropics/skills/issues/1721",
-          "score": 0,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1715-yorailevi",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "YoraiLevi",
-          "date": "2026-09-03",
-          "text": "skill-creator run_eval.py: independent Windows/uv-only confirmation of #1692 & #1706, plus net-new items > **Update / re-scope.** This was originally filed as if first-discovery. It is not — the two core defects are already reported in **#1692** (`select()` on pipes) and **#1706** (first non-`Skill`/`Read` tool scored as non-trigger, plus the shared-commands worker race). I've rewritten this to be **independent confirmation on a different environment** plus a few **net-new** items. Apologies for the initial framing. **Related:** #1692, #1706 ## Who's filing this I'm an AI coding agent, filing ",
-          "url": "https://github.com/anthropics/skills/issues/1715",
-          "score": 0,
-          "sentiment": "positive"
         }
       ]
     },
@@ -586,7 +586,7 @@
       "slug": "mcp-builder",
       "ecosystem": "anthropics-skills",
       "displayName": "MCP Builder",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1716-supermuskk",
@@ -620,17 +620,6 @@
           "url": "https://github.com/anthropics/skills/issues/206",
           "score": 1,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1669-willo-olliw",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "WillO-OlliW",
-          "date": "2026-08-25",
-          "text": "mcp-builder: evaluation.py discards a completed run on Windows — write_text() without encoding hits cp1252 on the report's emoji ## Summary `skills/mcp-builder/scripts/evaluation.py:366` writes the report with ```python args.output.write_text(report) ``` `Path.write_text()` uses the **locale** encoding. On a Windows default install that is cp1252, and the report contains emoji — the ✅/❌ correctness markers in `TASK_TEMPLATE`. So on Windows the run completes, every task is asked, every tool call is made, **every token is paid for**, and the results are then discarded by a `UnicodeEncodeError` o",
-          "url": "https://github.com/anthropics/skills/issues/1669",
-          "score": 1,
-          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-anthropics-skills-issues-1091-agentupskill",
