@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-12T04:52:21Z",
+    "lastUpdated": "2026-09-13T05:09:28Z",
     "skillCount": 20,
-    "totalComments": 53,
+    "totalComments": 54,
     "sources": [
       "hacker-news",
       "github",
@@ -176,7 +176,7 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1566-jhochenbaum",
@@ -210,6 +210,17 @@
           "url": "https://github.com/obra/superpowers/issues/2273",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2293-kaiser-data",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "kaiser-data",
+          "date": "2026-09-12",
+          "text": "subagent-driven-development: the ledger records no in-flight task, so an outage mid-task re-dispatches work that is already committed *Found while setting up a sequential `subagent-driven-development` run (2026-09-12), reading the skill text before dispatching Task 1. Filed rather than patched locally because the plugin is version-pinned.* *Version: **superpowers 6.1.1**. Quotes below are from that copy of `skills/subagent-driven-development/SKILL.md`.* Related but, I believe, distinct — close as duplicate if you read them as the same thing: - **#2267** — the ledger carries no cross-task *disc",
+          "url": "https://github.com/obra/superpowers/issues/2293",
+          "score": 0,
+          "sentiment": "neutral"
         }
       ]
     },
@@ -537,6 +548,17 @@
           "sentiment": "positive"
         },
         {
+          "id": "github-https-github-com-anthropics-skills-issues-1692-almezaniy",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "almezaniy",
+          "date": "2026-08-30",
+          "text": "[skill-creator] Trigger-eval harness silently broken on Windows: select() on pipes, probe files leak into global ~/.claude/commands, parallel twins cap recall at ~1/N ## Summary The skill-creator description-optimization harness (`skills/skill-creator/scripts/run_eval.py` + `run_loop.py`) is structurally broken on Windows. Worse than crashing, it **fails silently**: every probe dies or mismeasures, the loop reports `recall=0%` (or a hard ~1/N cap), and then happily \"improves\" the description against pure noise for up to 5 iterations. Each probe is a full `claude -p` session that loads the user",
+          "url": "https://github.com/anthropics/skills/issues/1692",
+          "score": 2,
+          "sentiment": "positive"
+        },
+        {
           "id": "github-https-github-com-anthropics-skills-issues-311-svobom57",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -557,17 +579,6 @@
           "url": "https://github.com/anthropics/skills/issues/1304",
           "score": 1,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1692-almezaniy",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "almezaniy",
-          "date": "2026-08-30",
-          "text": "[skill-creator] Trigger-eval harness silently broken on Windows: select() on pipes, probe files leak into global ~/.claude/commands, parallel twins cap recall at ~1/N ## Summary The skill-creator description-optimization harness (`skills/skill-creator/scripts/run_eval.py` + `run_loop.py`) is structurally broken on Windows. Worse than crashing, it **fails silently**: every probe dies or mismeasures, the loop reports `recall=0%` (or a hard ~1/N cap), and then happily \"improves\" the description against pure noise for up to 5 iterations. Each probe is a full `claude -p` session that loads the user",
-          "url": "https://github.com/anthropics/skills/issues/1692",
-          "score": 1,
-          "sentiment": "positive"
         },
         {
           "id": "github-https-github-com-anthropics-skills-issues-1706-stillpimpn",
