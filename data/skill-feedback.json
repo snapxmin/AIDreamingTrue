@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-13T05:09:28Z",
+    "lastUpdated": "2026-09-14T05:17:35Z",
     "skillCount": 20,
-    "totalComments": 54,
+    "totalComments": 53,
     "sources": [
       "hacker-news",
       "github",
@@ -15,20 +15,8 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 1,
-      "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1566-jhochenbaum",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jhochenbaum",
-          "date": "2026-05-17",
-          "text": "Add lifecycle extension system for user-defined workflow hooks <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? One of Superpowers' core strengths is its minimal set of skills and configuration without bloating the core. It's a big part of why many of us keep coming back to it over similar frameworks. But in practice, my colleagues and I keep running",
-          "url": "https://github.com/obra/superpowers/issues/1566",
-          "score": 2,
-          "sentiment": "neutral"
-        }
-      ]
+      "feedbackCount": 0,
+      "comments": []
     },
     "superpowers/test-driven-development": {
       "slug": "test-driven-development",
@@ -179,13 +167,13 @@
       "feedbackCount": 4,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1566-jhochenbaum",
+          "id": "github-https-github-com-obra-superpowers-issues-2040-michaelholcomb-creator",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "jhochenbaum",
-          "date": "2026-05-17",
-          "text": "Add lifecycle extension system for user-defined workflow hooks <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? One of Superpowers' core strengths is its minimal set of skills and configuration without bloating the core. It's a big part of why many of us keep coming back to it over similar frameworks. But in practice, my colleagues and I keep running",
-          "url": "https://github.com/obra/superpowers/issues/1566",
+          "author": "michaelholcomb-creator",
+          "date": "2026-07-25",
+          "text": "Codex marketplace package drops executable bits on SDD helper scripts ## Summary Superpowers 6.2.0 installed through the Codex marketplace cache arrived with these helper files non-executable (observed mode `0644`): - `skills/subagent-driven-development/scripts/sdd-workspace` - `skills/subagent-driven-development/scripts/task-brief` - `skills/subagent-driven-development/scripts/review-package` Direct invocation fails with `Permission denied`. Invoking only `task-brief` or `review-package` through Bash does not fully recover the default-output path because both scripts directly execute their si",
+          "url": "https://github.com/obra/superpowers/issues/2040",
           "score": 2,
           "sentiment": "neutral"
         },
@@ -201,17 +189,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2273-samohod4ik",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "samohod4ik",
-          "date": "2026-09-09",
-          "text": "SDD: Approve + Important triggers mandatory re-review loop <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [x] I searched existing issues and this has not been proposed before Related (different problem): #2112 documents unbounded review/test ratcheting across many rounds (addressed in v6.3.0 via scoped re-review + round-5 breaker). This issue is narrower: a **single** task already returned **Task quality: Approved** / “no fixes required to accept,”",
-          "url": "https://github.com/obra/superpowers/issues/2273",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2293-kaiser-data",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -221,6 +198,17 @@
           "url": "https://github.com/obra/superpowers/issues/2293",
           "score": 0,
           "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2298-k-schmitt",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "K-Schmitt",
+          "date": "2026-09-13",
+          "text": "subagent-driven-development: review-package renders commit subjects only, so the task reviewer reports commit-body disclosures as undisclosed changes *Found during a `subagent-driven-development` run (2026-09-13), comparing a task reviewer's findings against the implementer's commits. Version: **superpowers 6.3.0**; the quoted lines are from that copy and are unchanged on `main` at `b36e082`.* Related but, I believe, distinct — close as duplicate if you read them as the same thing: - **#2054** — reviewer prompts make the reviewer spend turns establishing mechanical facts the controller could s",
+          "url": "https://github.com/obra/superpowers/issues/2298",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -230,17 +218,6 @@
       "displayName": "Requesting Code Review",
       "feedbackCount": 3,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-429-evrenverse",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "evrenverse",
-          "date": "2026-02-05",
-          "text": "Support for Claude Code Agent Teams (TeammateTool, SendMessage, TaskList) ## Is your feature request related to a problem? Please describe. Claude Code 2.1.32+ introduced experimental **Agent Teams** — a feature that allows coordinating multiple Claude Code instances as a team with a lead, teammates, shared task lists, and inter-agent messaging. See the [official documentation](https://code.claude.com/docs/en/agent-teams). Superpowers currently has skills for subagent-driven development (`subagent-driven-development`, `dispatching-parallel-agents`) but no awareness of or support for the newer ",
-          "url": "https://github.com/obra/superpowers/issues/429",
-          "score": 22,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-1566-jhochenbaum",
           "source": "github",
@@ -260,6 +237,17 @@
           "date": "2026-09-06",
           "text": "Fixes keep creating new bugs because no skill requires tracing what a fix changes - [x] I searched existing issues and this has not been proposed before Closest prior art: #2145 B1 (enumerate readers of a stale field; the *root cause's* blast radius during diagnosis, where this is the *fix's*), #2264 §5 (re-run the objective check after a delegated edit; a dynamic check, where this is static), #2113 §4 (coverage gaps *between* tasks, not gaps *created by* a fix), PR #2198 (trace a bad value upstream to its producer; opposite direction), and closed #2066 (a \"blast radius\" row for spec self-revi",
           "url": "https://github.com/obra/superpowers/issues/2266",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2298-k-schmitt",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "K-Schmitt",
+          "date": "2026-09-13",
+          "text": "subagent-driven-development: review-package renders commit subjects only, so the task reviewer reports commit-body disclosures as undisclosed changes *Found during a `subagent-driven-development` run (2026-09-13), comparing a task reviewer's findings against the implementer's commits. Version: **superpowers 6.3.0**; the quoted lines are from that copy and are unchanged on `main` at `b36e082`.* Related but, I believe, distinct — close as duplicate if you read them as the same thing: - **#2054** — reviewer prompts make the reviewer spend turns establishing mechanical facts the controller could s",
+          "url": "https://github.com/obra/superpowers/issues/2298",
           "score": 0,
           "sentiment": "negative"
         }
