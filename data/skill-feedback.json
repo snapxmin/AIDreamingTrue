@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-15T05:10:07Z",
+    "lastUpdated": "2026-09-16T05:05:02Z",
     "skillCount": 20,
-    "totalComments": 52,
+    "totalComments": 53,
     "sources": [
       "hacker-news",
       "github",
@@ -190,6 +190,17 @@
           "sentiment": "neutral"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2298-k-schmitt",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "K-Schmitt",
+          "date": "2026-09-13",
+          "text": "subagent-driven-development: review-package renders commit subjects only, so the task reviewer reports commit-body disclosures as undisclosed changes *Found during a `subagent-driven-development` run (2026-09-13), comparing a task reviewer's findings against the implementer's commits. Version: **superpowers 6.3.0**; the quoted lines are from that copy and are unchanged on `main` at `b36e082`.* Related but, I believe, distinct — close as duplicate if you read them as the same thing: - **#2054** — reviewer prompts make the reviewer spend turns establishing mechanical facts the controller could s",
+          "url": "https://github.com/obra/superpowers/issues/2298",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2293-kaiser-data",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -199,17 +210,6 @@
           "url": "https://github.com/obra/superpowers/issues/2293",
           "score": 0,
           "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2298-k-schmitt",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "K-Schmitt",
-          "date": "2026-09-13",
-          "text": "subagent-driven-development: review-package renders commit subjects only, so the task reviewer reports commit-body disclosures as undisclosed changes *Found during a `subagent-driven-development` run (2026-09-13), comparing a task reviewer's findings against the implementer's commits. Version: **superpowers 6.3.0**; the quoted lines are from that copy and are unchanged on `main` at `b36e082`.* Related but, I believe, distinct — close as duplicate if you read them as the same thing: - **#2054** — reviewer prompts make the reviewer spend turns establishing mechanical facts the controller could s",
-          "url": "https://github.com/obra/superpowers/issues/2298",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -231,17 +231,6 @@
           "sentiment": "neutral"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2266-slowernet",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "slowernet",
-          "date": "2026-09-06",
-          "text": "Fixes keep creating new bugs because no skill requires tracing what a fix changes - [x] I searched existing issues and this has not been proposed before Closest prior art: #2145 B1 (enumerate readers of a stale field; the *root cause's* blast radius during diagnosis, where this is the *fix's*), #2264 §5 (re-run the objective check after a delegated edit; a dynamic check, where this is static), #2113 §4 (coverage gaps *between* tasks, not gaps *created by* a fix), PR #2198 (trace a bad value upstream to its producer; opposite direction), and closed #2066 (a \"blast radius\" row for spec self-revi",
-          "url": "https://github.com/obra/superpowers/issues/2266",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2298-k-schmitt",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -249,6 +238,17 @@
           "date": "2026-09-13",
           "text": "subagent-driven-development: review-package renders commit subjects only, so the task reviewer reports commit-body disclosures as undisclosed changes *Found during a `subagent-driven-development` run (2026-09-13), comparing a task reviewer's findings against the implementer's commits. Version: **superpowers 6.3.0**; the quoted lines are from that copy and are unchanged on `main` at `b36e082`.* Related but, I believe, distinct — close as duplicate if you read them as the same thing: - **#2054** — reviewer prompts make the reviewer spend turns establishing mechanical facts the controller could s",
           "url": "https://github.com/obra/superpowers/issues/2298",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2266-slowernet",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "slowernet",
+          "date": "2026-09-06",
+          "text": "Fixes keep creating new bugs because no skill requires tracing what a fix changes - [x] I searched existing issues and this has not been proposed before Closest prior art: #2145 B1 (enumerate readers of a stale field; the *root cause's* blast radius during diagnosis, where this is the *fix's*), #2264 §5 (re-run the objective check after a delegated edit; a dynamic check, where this is static), #2113 §4 (coverage gaps *between* tasks, not gaps *created by* a fix), PR #2198 (trace a bad value upstream to its producer; opposite direction), and closed #2066 (a \"blast radius\" row for spec self-revi",
+          "url": "https://github.com/obra/superpowers/issues/2266",
           "score": 0,
           "sentiment": "negative"
         }
@@ -351,7 +351,7 @@
       "slug": "security-review",
       "ecosystem": "awesome-copilot",
       "displayName": "Security Review",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-2920-ecocitizenz",
@@ -385,6 +385,17 @@
           "url": "https://github.com/github/awesome-copilot/issues/2922",
           "score": 5,
           "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-3147-omarmohelal",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "omarmohelal",
+          "date": "2026-09-15",
+          "text": "[External Plugin]: sechelix-lite <!-- external-plugin-submission --> ### Plugin name sechelix-lite ### Short description Application-security review skill for codebases and pull requests you are authorized to assess. Maps trust boundaries, keeps issues as hypotheses until evidenced, runs a separate pass that tries to refute material findings, and ends with a release verdict. ### GitHub repository omarmohelal/SecHelix ### Plugin path inside the repository distributions/awesome-copilot ### Ref to review v4.0.0-alpha.6 ### Commit SHA to review a73be865fccf5cefcf98d4dcce2c2bf2b6afce2f ### Version ",
+          "url": "https://github.com/github/awesome-copilot/issues/3147",
+          "score": 2,
+          "sentiment": "neutral"
         }
       ]
     },
