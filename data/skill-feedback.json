@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-16T05:05:02Z",
+    "lastUpdated": "2026-09-17T05:07:56Z",
     "skillCount": 20,
-    "totalComments": 53,
+    "totalComments": 51,
     "sources": [
       "hacker-news",
       "github",
@@ -176,7 +176,7 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2040-michaelholcomb-creator",
@@ -199,17 +199,6 @@
           "url": "https://github.com/obra/superpowers/issues/2298",
           "score": 1,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2293-kaiser-data",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "kaiser-data",
-          "date": "2026-09-12",
-          "text": "subagent-driven-development: the ledger records no in-flight task, so an outage mid-task re-dispatches work that is already committed *Found while setting up a sequential `subagent-driven-development` run (2026-09-12), reading the skill text before dispatching Task 1. Filed rather than patched locally because the plugin is version-pinned.* *Version: **superpowers 6.1.1**. Quotes below are from that copy of `skills/subagent-driven-development/SKILL.md`.* Related but, I believe, distinct — close as duplicate if you read them as the same thing: - **#2267** — the ledger carries no cross-task *disc",
-          "url": "https://github.com/obra/superpowers/issues/2293",
-          "score": 0,
-          "sentiment": "neutral"
         }
       ]
     },
@@ -258,19 +247,8 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 2,
+      "feedbackCount": 1,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1941-dlivxpr",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "dlivxpr",
-          "date": "2026-07-06",
-          "text": "Feature request: First-class oh-my-pi (OMP) support via native extension ### Summary `Superpowers` now has first-class support for the Pi coding agent (closed #435, implemented in #1499), and it can already be loaded in `oh-my-pi` through the Claude-plugin compatibility path ([see this comment](https://github.com/obra/superpowers/issues/435#issuecomment-4057770017)). However, there is no dedicated, native `.omp/*` integration that allows `oh-my-pi` to discover and bootstrap `Superpowers` from a direct checkout of this repository. I would like to request a native `oh-my-pi` extension so that us",
-          "url": "https://github.com/obra/superpowers/issues/1941",
-          "score": 4,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2299-cody-nexustek",
           "source": "github",
