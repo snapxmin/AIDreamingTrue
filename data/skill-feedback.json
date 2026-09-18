@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-17T05:07:56Z",
+    "lastUpdated": "2026-09-18T05:00:00Z",
     "skillCount": 20,
-    "totalComments": 51,
+    "totalComments": 47,
     "sources": [
       "hacker-news",
       "github",
@@ -18,15 +18,15 @@
       "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2299-cody-nexustek",
+          "id": "github-https-github-com-obra-superpowers-issues-1442-cdub615",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "cody-nexustek",
-          "date": "2026-09-14",
-          "text": "SessionStart hook's \"invoke if even 1% relevant\" directive has no toggle, causing spurious mandatory-invoke triggers on unrelated plugins' skills ## Symptom In a session with the `data-engineering` plugin (Astronomer/Airflow skills) also enabled alongside `superpowers`, a coordinator session was told to treat the mere appearance of the word \"deploy\" (in a completely unrelated context — infrastructure deployment work, nothing to do with Airflow) as a mandatory-invoke match against the `data-engineering:deploying-airflow` skill, purely on keyword overlap with that skill's name/description. The m",
-          "url": "https://github.com/obra/superpowers/issues/2299",
-          "score": 1,
-          "sentiment": "neutral"
+          "author": "cdub615",
+          "date": "2026-04-30",
+          "text": "Expose lifecycle events beyond SessionStart for external integration - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I’m trying to integrate Superpowers with [Beads](https://github.com/gastownhall/beads), a dependency-aware issue tracker designed for AI agents, so that the planning artifact lives in `bd` in addition to a markdown file and subagents pull work from `bd ready`. The motivation is currently beads are my canonical source of truth for tracking my work. I want that to remain true regardless of whether I use Superpowers for larger",
+          "url": "https://github.com/obra/superpowers/issues/1442",
+          "score": 8,
+          "sentiment": "negative"
         }
       ]
     },
@@ -37,14 +37,14 @@
       "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2046-thatht137",
+          "id": "github-https-github-com-obra-superpowers-issues-895-qdon314",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "Thatht137",
-          "date": "2026-07-27",
-          "text": "writing-plans can mistake structural RED for behavior-test evidence # Bug report: writing-plans can treat an import error as proof of a behavior test - [x] I searched existing open and closed issues and pull requests. Related: #711, #853, and #1576. None addresses the distinction between structural RED evidence and a behavior assertion actually rejecting a wrong result. ## Environment | Field | Value | |-------|-------| | Superpowers version | 6.2.0, commit `3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9` | | Harness | OpenAI Codex CLI | | Harness version | `codex-cli 0.145.0` | | Model | OpenAI Cod",
-          "url": "https://github.com/obra/superpowers/issues/2046",
-          "score": 4,
+          "author": "qdon314",
+          "date": "2026-03-23",
+          "text": "writing-plans: plans over-specify implementation, leaving no room for executor judgment - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? When using `writing-plans` to plan a multi-task implementation, the generated plan contained complete implementation code — full function bodies, 70-line test files, exact shell commands, and step-by-step TDD sequences per task. The executor (`executing-plans` / `subagent-driven-development`) had no decisions to make — it was copy-pasting code from the plan rather than engineering a solution. This caused ",
+          "url": "https://github.com/obra/superpowers/issues/895",
+          "score": 21,
           "sentiment": "negative"
         }
       ]
@@ -53,38 +53,27 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2046-thatht137",
+          "id": "github-https-github-com-obra-superpowers-issues-1442-cdub615",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "Thatht137",
-          "date": "2026-07-27",
-          "text": "writing-plans can mistake structural RED for behavior-test evidence # Bug report: writing-plans can treat an import error as proof of a behavior test - [x] I searched existing open and closed issues and pull requests. Related: #711, #853, and #1576. None addresses the distinction between structural RED evidence and a behavior assertion actually rejecting a wrong result. ## Environment | Field | Value | |-------|-------| | Superpowers version | 6.2.0, commit `3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9` | | Harness | OpenAI Codex CLI | | Harness version | `codex-cli 0.145.0` | | Model | OpenAI Cod",
-          "url": "https://github.com/obra/superpowers/issues/2046",
-          "score": 4,
+          "author": "cdub615",
+          "date": "2026-04-30",
+          "text": "Expose lifecycle events beyond SessionStart for external integration - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I’m trying to integrate Superpowers with [Beads](https://github.com/gastownhall/beads), a dependency-aware issue tracker designed for AI agents, so that the planning artifact lives in `bd` in addition to a markdown file and subagents pull work from `bd ready`. The motivation is currently beads are my canonical source of truth for tracking my work. I want that to remain true regardless of whether I use Superpowers for larger",
+          "url": "https://github.com/obra/superpowers/issues/1442",
+          "score": 8,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1566-jhochenbaum",
+          "id": "github-https-github-com-obra-superpowers-issues-2314-teashaman-cyber",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "jhochenbaum",
-          "date": "2026-05-17",
-          "text": "Add lifecycle extension system for user-defined workflow hooks <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? One of Superpowers' core strengths is its minimal set of skills and configuration without bloating the core. It's a big part of why many of us keep coming back to it over similar frameworks. But in practice, my colleagues and I keep running",
-          "url": "https://github.com/obra/superpowers/issues/1566",
-          "score": 2,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2264-wnqgphqn5t-cmyk",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "wnqgphqn5t-cmyk",
-          "date": "2026-09-06",
-          "text": "7 additive rules for superpowers skills (from real-session postmortems) These are seven small, additive rules for existing `superpowers:*` skills, each distilled from a concrete failure in real agent sessions. Grouping them into one issue rather than filing seven — happy to split into PRs per skill if you'd prefer. Each block is: the failure that happened → the proposed rule → the one-line principle. No structural changes, just rules added to sections that already exist. --- ## 1. `verification-before-completion` — verify a set-wide fix by count against an external source of truth **Failure.**",
-          "url": "https://github.com/obra/superpowers/issues/2264",
+          "author": "TeaShaman-cyber",
+          "date": "2026-09-17",
+          "text": "writing-plans: discover and reuse available QA tools before inventing bespoke verification ## What problem does this solve? `writing-plans` requires concrete tests and verification commands, but it does not currently ask the planner to first discover which deterministic QA tools already exist in the repository/runtime for the surface being changed. At current `main` (`b36e0829c6d0140e93cfef2ca599b1b07d4a7797`), the skill tells the planner to specify exactly how to test each task and assumes the implementer knows little about the local toolset, but there is no explicit step to inspect and prefe",
+          "url": "https://github.com/obra/superpowers/issues/2314",
           "score": 1,
           "sentiment": "negative"
         }
@@ -94,19 +83,8 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2277-caarles00",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Caarles00",
-          "date": "2026-09-10",
-          "text": "systematic-debugging ships its pressure-test fixtures inside the skill directory; they open with \"This is a real scenario. You must choose and act\" - [x] I searched existing issues and this is not a duplicate *(searched \"pressure test\", fixture, CREATION-LOG, test-academic — open and closed)* ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | skill fetched from `main` via skills.sh; directory listing re-checked against `b36e082` | | Harness (Claude Code, Cursor, etc.) | Claude Code, VS Code extension | | Harness version | 2.1.252 (Claude Code) | | Your model ",
-          "url": "https://github.com/obra/superpowers/issues/2277",
-          "score": 2,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2264-wnqgphqn5t-cmyk",
           "source": "github",
@@ -135,7 +113,7 @@
       "slug": "verification-before-completion",
       "ecosystem": "superpowers",
       "displayName": "Verification Before Completion",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-429-evrenverse",
@@ -146,17 +124,6 @@
           "text": "Support for Claude Code Agent Teams (TeammateTool, SendMessage, TaskList) ## Is your feature request related to a problem? Please describe. Claude Code 2.1.32+ introduced experimental **Agent Teams** — a feature that allows coordinating multiple Claude Code instances as a team with a lead, teammates, shared task lists, and inter-agent messaging. See the [official documentation](https://code.claude.com/docs/en/agent-teams). Superpowers currently has skills for subagent-driven development (`subagent-driven-development`, `dispatching-parallel-agents`) but no awareness of or support for the newer ",
           "url": "https://github.com/obra/superpowers/issues/429",
           "score": 22,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2199-adnasal",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "adnasal",
-          "date": "2026-08-24",
-          "text": "Pre-flight: Code Health checkpoint before refactor / review skills - [x] I searched existing issues. I did not find this proposed before. ## What problem does this solve? Superpowers already makes you verify before you call work done (`verification-before-completion`, TDD, code review). What agents still do not have is a maintainability check that gives the same answer twice. Lint and tests can pass while the file gets harder to change: longer methods, extra responsibilities, deeper nesting. Asking another model to review it is not a gate. Same diff, next run, different comments. And if you ch",
-          "url": "https://github.com/obra/superpowers/issues/2199",
-          "score": 3,
           "sentiment": "negative"
         },
         {
@@ -176,28 +143,17 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 2,
+      "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2040-michaelholcomb-creator",
+          "id": "github-https-github-com-obra-superpowers-issues-1442-cdub615",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "michaelholcomb-creator",
-          "date": "2026-07-25",
-          "text": "Codex marketplace package drops executable bits on SDD helper scripts ## Summary Superpowers 6.2.0 installed through the Codex marketplace cache arrived with these helper files non-executable (observed mode `0644`): - `skills/subagent-driven-development/scripts/sdd-workspace` - `skills/subagent-driven-development/scripts/task-brief` - `skills/subagent-driven-development/scripts/review-package` Direct invocation fails with `Permission denied`. Invoking only `task-brief` or `review-package` through Bash does not fully recover the default-output path because both scripts directly execute their si",
-          "url": "https://github.com/obra/superpowers/issues/2040",
-          "score": 2,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2298-k-schmitt",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "K-Schmitt",
-          "date": "2026-09-13",
-          "text": "subagent-driven-development: review-package renders commit subjects only, so the task reviewer reports commit-body disclosures as undisclosed changes *Found during a `subagent-driven-development` run (2026-09-13), comparing a task reviewer's findings against the implementer's commits. Version: **superpowers 6.3.0**; the quoted lines are from that copy and are unchanged on `main` at `b36e082`.* Related but, I believe, distinct — close as duplicate if you read them as the same thing: - **#2054** — reviewer prompts make the reviewer spend turns establishing mechanical facts the controller could s",
-          "url": "https://github.com/obra/superpowers/issues/2298",
-          "score": 1,
+          "author": "cdub615",
+          "date": "2026-04-30",
+          "text": "Expose lifecycle events beyond SessionStart for external integration - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I’m trying to integrate Superpowers with [Beads](https://github.com/gastownhall/beads), a dependency-aware issue tracker designed for AI agents, so that the planning artifact lives in `bd` in addition to a markdown file and subagents pull work from `bd ready`. The motivation is currently beads are my canonical source of truth for tracking my work. I want that to remain true regardless of whether I use Superpowers for larger",
+          "url": "https://github.com/obra/superpowers/issues/1442",
+          "score": 8,
           "sentiment": "negative"
         }
       ]
@@ -206,7 +162,7 @@
       "slug": "requesting-code-review",
       "ecosystem": "superpowers",
       "displayName": "Requesting Code Review",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1566-jhochenbaum",
@@ -231,13 +187,24 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2266-slowernet",
+          "id": "github-https-github-com-obra-superpowers-issues-2311-errmakov",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "slowernet",
-          "date": "2026-09-06",
-          "text": "Fixes keep creating new bugs because no skill requires tracing what a fix changes - [x] I searched existing issues and this has not been proposed before Closest prior art: #2145 B1 (enumerate readers of a stale field; the *root cause's* blast radius during diagnosis, where this is the *fix's*), #2264 §5 (re-run the objective check after a delegated edit; a dynamic check, where this is static), #2113 §4 (coverage gaps *between* tasks, not gaps *created by* a fix), PR #2198 (trace a bad value upstream to its producer; opposite direction), and closed #2066 (a \"blast radius\" row for spec self-revi",
-          "url": "https://github.com/obra/superpowers/issues/2266",
+          "author": "errmakov",
+          "date": "2026-09-17",
+          "text": "requesting-code-review: Claude Code rewrites the example's `awk '{print $1}'` when the skill gets arguments - [x] I searched existing issues and this is not a duplicate ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | not installed; tested `skills/requesting-code-review/SKILL.md` from `dev` at 5940bd8 (file last changed in 22d65cf) | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | 2.1.274 | | Your model + version | Claude Opus 5 (`claude-opus-5`), which also wrote this report | | All plugins installed | `everything-claude-code` 1.1",
+          "url": "https://github.com/obra/superpowers/issues/2311",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2316-teashaman-cyber",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "TeaShaman-cyber",
+          "date": "2026-09-17",
+          "text": "finishing-a-development-branch: PR review has no lifecycle transition back to merge/release - [x] I searched open and closed issues and did not find this exact lifecycle gap. ## What problem does this solve? `finishing-a-development-branch` has a clear entry path for completed implementation: 1. verify tests; 2. choose merge / create PR / keep branch; 3. if Option 2 is chosen, push and create a PR; 4. **keep the worktree because the human partner iterates on PR feedback there.** The gap is what happens **after that feedback is addressed**. There is no explicit transition from: ```text PR opene",
+          "url": "https://github.com/obra/superpowers/issues/2316",
           "score": 0,
           "sentiment": "negative"
         }
@@ -247,20 +214,8 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 1,
-      "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2299-cody-nexustek",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "cody-nexustek",
-          "date": "2026-09-14",
-          "text": "SessionStart hook's \"invoke if even 1% relevant\" directive has no toggle, causing spurious mandatory-invoke triggers on unrelated plugins' skills ## Symptom In a session with the `data-engineering` plugin (Astronomer/Airflow skills) also enabled alongside `superpowers`, a coordinator session was told to treat the mere appearance of the word \"deploy\" (in a completely unrelated context — infrastructure deployment work, nothing to do with Airflow) as a mandatory-invoke match against the `data-engineering:deploying-airflow` skill, purely on keyword overlap with that skill's name/description. The m",
-          "url": "https://github.com/obra/superpowers/issues/2299",
-          "score": 1,
-          "sentiment": "neutral"
-        }
-      ]
+      "feedbackCount": 0,
+      "comments": []
     },
     "awesome-copilot/ai-ready": {
       "slug": "ai-ready",
@@ -512,7 +467,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1412-guala19",
@@ -557,6 +512,17 @@
           "url": "https://github.com/anthropics/skills/issues/1706",
           "score": 1,
           "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1721-jparker-rg",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jparker-RG",
+          "date": "2026-09-03",
+          "text": "skill-creator: trigger detection reports 0% recall for every skill ## Summary `skill-creator`'s trigger evaluation reports `precision=100% recall=0%` for every skill, regardless of how good the description is. `run_loop` then \"improves\" the description against evidence that every positive query failed, and reports the result as an optimisation. This fails silently. Nothing errors, and the output looks like a legitimate measurement of a bad description. ## Cause `run_single_query()` in `skills/skill-creator/scripts/run_eval.py` decides whether the skill triggered by watching the `claude -p` eve",
+          "url": "https://github.com/anthropics/skills/issues/1721",
+          "score": 1,
+          "sentiment": "neutral"
         }
       ]
     },
@@ -564,7 +530,7 @@
       "slug": "mcp-builder",
       "ecosystem": "anthropics-skills",
       "displayName": "MCP Builder",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1716-supermuskk",
@@ -576,17 +542,6 @@
           "url": "https://github.com/anthropics/skills/issues/1716",
           "score": 3,
           "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-67-miq42",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "MiQ42",
-          "date": "2025-10-27",
-          "text": "Plugin skills not loaded in Claude Code when installed via marketplace: Missing skills/ directory structure ## Problem Skills from this repository installed **via the official Claude Code marketplace feature** are **not loaded** by Claude Code, resulting in progressive disclosure not working. ## Installation Method **Installed using:** Official Claude Code marketplace functionality () **NOT:** Manual git clone The marketplace correctly installs the plugin to: `~/.claude/plugins/marketplaces/anthropic-agent-skills/` And shows in settings: ```json \"enabledPlugins\": { \"document-skills@anthropic-a",
-          "url": "https://github.com/anthropics/skills/issues/67",
-          "score": 1,
-          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-anthropics-skills-issues-206-thepexcel",

@@ -1,5 +1,28 @@
 {
-  "generatedAt": "2026-09-17T05:05:07Z",
+  "generatedAt": "2026-09-18T04:57:38Z",
   "isBaselineRun": false,
-  "changes": []
+  "changes": [
+    {
+      "type": "added",
+      "key": "awesome-copilot/sql-object-impact-analysis",
+      "ecosystem": "awesome-copilot",
+      "slug": "sql-object-impact-analysis",
+      "displayName": "Sql Object Impact Analysis",
+      "summary": "生态新增 Skill：Sql Object Impact Analysis",
+      "detectedAt": "2026-09-18T04:58:30Z"
+    },
+    {
+      "type": "updated",
+      "key": "awesome-copilot/gem-devops-guidelines",
+      "ecosystem": "awesome-copilot",
+      "slug": "gem-devops-guidelines",
+      "displayName": "Gem Devops Guidelines",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/gem-devops-guidelines",
+      "detectedAt": "2026-09-18T04:58:30Z"
+    }
+  ]
 }
