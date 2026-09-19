@@ -1,4 +1,14 @@
 {
-  "generatedAt": "2026-09-18T04:57:38Z",
-  "links": []
+  "generatedAt": "2026-09-19T04:50:01Z",
+  "links": [
+    {
+      "eventId": "auto-claude-v2-1-278",
+      "eventTitle": "Claude Code v2.1.278 发布",
+      "eventDate": "2026-09-19",
+      "slug": "claude-api",
+      "ecosystem": "anthropics-skills",
+      "displayName": "Claude Api",
+      "confidence": 0.9
+    }
+  ]
 }

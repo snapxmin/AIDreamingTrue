@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-18T05:00:00Z",
+    "lastUpdated": "2026-09-19T04:52:14Z",
     "skillCount": 20,
-    "totalComments": 47,
+    "totalComments": 54,
     "sources": [
       "hacker-news",
       "github",
@@ -15,7 +15,7 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1442-cdub615",
@@ -25,7 +25,18 @@
           "date": "2026-04-30",
           "text": "Expose lifecycle events beyond SessionStart for external integration - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I’m trying to integrate Superpowers with [Beads](https://github.com/gastownhall/beads), a dependency-aware issue tracker designed for AI agents, so that the planning artifact lives in `bd` in addition to a markdown file and subagents pull work from `bd ready`. The motivation is currently beads are my canonical source of truth for tracking my work. I want that to remain true regardless of whether I use Superpowers for larger",
           "url": "https://github.com/obra/superpowers/issues/1442",
-          "score": 8,
+          "score": 9,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2332-teashaman-cyber",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "TeaShaman-cyber",
+          "date": "2026-09-18",
+          "text": "Workflow has first-class specs/plans but no durable QA/acceptance artifact layer - [x] I searched open and closed issues and did not find this exact artifact/lifecycle gap. ## What problem does this solve? Superpowers has first-class durable artifacts for the front half of development: ```text brainstorming -> design/spec writing-plans -> implementation plan executing-plans / SDD -> implementation ``` It also has strong *procedural* verification skills such as `test-driven-development`, `verification-before-completion`, `requesting-code-review`, and `finishing-a-development-branch`. What is mi",
+          "url": "https://github.com/obra/superpowers/issues/2332",
+          "score": 4,
           "sentiment": "negative"
         }
       ]
@@ -37,14 +48,14 @@
       "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-895-qdon314",
+          "id": "github-https-github-com-obra-superpowers-issues-2332-teashaman-cyber",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "qdon314",
-          "date": "2026-03-23",
-          "text": "writing-plans: plans over-specify implementation, leaving no room for executor judgment - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? When using `writing-plans` to plan a multi-task implementation, the generated plan contained complete implementation code — full function bodies, 70-line test files, exact shell commands, and step-by-step TDD sequences per task. The executor (`executing-plans` / `subagent-driven-development`) had no decisions to make — it was copy-pasting code from the plan rather than engineering a solution. This caused ",
-          "url": "https://github.com/obra/superpowers/issues/895",
-          "score": 21,
+          "author": "TeaShaman-cyber",
+          "date": "2026-09-18",
+          "text": "Workflow has first-class specs/plans but no durable QA/acceptance artifact layer - [x] I searched open and closed issues and did not find this exact artifact/lifecycle gap. ## What problem does this solve? Superpowers has first-class durable artifacts for the front half of development: ```text brainstorming -> design/spec writing-plans -> implementation plan executing-plans / SDD -> implementation ``` It also has strong *procedural* verification skills such as `test-driven-development`, `verification-before-completion`, `requesting-code-review`, and `finishing-a-development-branch`. What is mi",
+          "url": "https://github.com/obra/superpowers/issues/2332",
+          "score": 4,
           "sentiment": "negative"
         }
       ]
@@ -53,17 +64,28 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1442-cdub615",
+          "id": "github-https-github-com-obra-superpowers-issues-2309-teashaman-cyber",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "cdub615",
-          "date": "2026-04-30",
-          "text": "Expose lifecycle events beyond SessionStart for external integration - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I’m trying to integrate Superpowers with [Beads](https://github.com/gastownhall/beads), a dependency-aware issue tracker designed for AI agents, so that the planning artifact lives in `bd` in addition to a markdown file and subagents pull work from `bd ready`. The motivation is currently beads are my canonical source of truth for tracking my work. I want that to remain true regardless of whether I use Superpowers for larger",
-          "url": "https://github.com/obra/superpowers/issues/1442",
-          "score": 8,
+          "author": "TeaShaman-cyber",
+          "date": "2026-09-17",
+          "text": "writing-plans: self-review misses task-state/DAG closure in executable plans ## What problem does this solve? `writing-plans` currently requires each task to produce a self-contained, independently testable deliverable and gives tasks explicit `Consumes` / `Produces` interfaces. It also asks for concrete test code, commands, implementation snippets, and frequent commits. At current `main` (`b36e0829c6d0140e93cfef2ca599b1b07d4a7797`), the final Self-Review checks three things: spec coverage, placeholders, and type/name consistency: https://github.com/obra/superpowers/blob/b36e0829c6d0140e93cfef",
+          "url": "https://github.com/obra/superpowers/issues/2309",
+          "score": 5,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2332-teashaman-cyber",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "TeaShaman-cyber",
+          "date": "2026-09-18",
+          "text": "Workflow has first-class specs/plans but no durable QA/acceptance artifact layer - [x] I searched open and closed issues and did not find this exact artifact/lifecycle gap. ## What problem does this solve? Superpowers has first-class durable artifacts for the front half of development: ```text brainstorming -> design/spec writing-plans -> implementation plan executing-plans / SDD -> implementation ``` It also has strong *procedural* verification skills such as `test-driven-development`, `verification-before-completion`, `requesting-code-review`, and `finishing-a-development-branch`. What is mi",
+          "url": "https://github.com/obra/superpowers/issues/2332",
+          "score": 4,
           "sentiment": "negative"
         },
         {
@@ -74,7 +96,7 @@
           "date": "2026-09-17",
           "text": "writing-plans: discover and reuse available QA tools before inventing bespoke verification ## What problem does this solve? `writing-plans` requires concrete tests and verification commands, but it does not currently ask the planner to first discover which deterministic QA tools already exist in the repository/runtime for the surface being changed. At current `main` (`b36e0829c6d0140e93cfef2ca599b1b07d4a7797`), the skill tells the planner to specify exactly how to test each task and assumes the implementer knows little about the local toolset, but there is no explicit step to inspect and prefe",
           "url": "https://github.com/obra/superpowers/issues/2314",
-          "score": 1,
+          "score": 2,
           "sentiment": "negative"
         }
       ]
@@ -83,31 +105,8 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 2,
-      "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2264-wnqgphqn5t-cmyk",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "wnqgphqn5t-cmyk",
-          "date": "2026-09-06",
-          "text": "7 additive rules for superpowers skills (from real-session postmortems) These are seven small, additive rules for existing `superpowers:*` skills, each distilled from a concrete failure in real agent sessions. Grouping them into one issue rather than filing seven — happy to split into PRs per skill if you'd prefer. Each block is: the failure that happened → the proposed rule → the one-line principle. No structural changes, just rules added to sections that already exist. --- ## 1. `verification-before-completion` — verify a set-wide fix by count against an external source of truth **Failure.**",
-          "url": "https://github.com/obra/superpowers/issues/2264",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2299-cody-nexustek",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "cody-nexustek",
-          "date": "2026-09-14",
-          "text": "SessionStart hook's \"invoke if even 1% relevant\" directive has no toggle, causing spurious mandatory-invoke triggers on unrelated plugins' skills ## Symptom In a session with the `data-engineering` plugin (Astronomer/Airflow skills) also enabled alongside `superpowers`, a coordinator session was told to treat the mere appearance of the word \"deploy\" (in a completely unrelated context — infrastructure deployment work, nothing to do with Airflow) as a mandatory-invoke match against the `data-engineering:deploying-airflow` skill, purely on keyword overlap with that skill's name/description. The m",
-          "url": "https://github.com/obra/superpowers/issues/2299",
-          "score": 1,
-          "sentiment": "neutral"
-        }
-      ]
+      "feedbackCount": 0,
+      "comments": []
     },
     "superpowers/verification-before-completion": {
       "slug": "verification-before-completion",
@@ -116,14 +115,14 @@
       "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-429-evrenverse",
+          "id": "github-https-github-com-obra-superpowers-issues-2332-teashaman-cyber",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "evrenverse",
-          "date": "2026-02-05",
-          "text": "Support for Claude Code Agent Teams (TeammateTool, SendMessage, TaskList) ## Is your feature request related to a problem? Please describe. Claude Code 2.1.32+ introduced experimental **Agent Teams** — a feature that allows coordinating multiple Claude Code instances as a team with a lead, teammates, shared task lists, and inter-agent messaging. See the [official documentation](https://code.claude.com/docs/en/agent-teams). Superpowers currently has skills for subagent-driven development (`subagent-driven-development`, `dispatching-parallel-agents`) but no awareness of or support for the newer ",
-          "url": "https://github.com/obra/superpowers/issues/429",
-          "score": 22,
+          "author": "TeaShaman-cyber",
+          "date": "2026-09-18",
+          "text": "Workflow has first-class specs/plans but no durable QA/acceptance artifact layer - [x] I searched open and closed issues and did not find this exact artifact/lifecycle gap. ## What problem does this solve? Superpowers has first-class durable artifacts for the front half of development: ```text brainstorming -> design/spec writing-plans -> implementation plan executing-plans / SDD -> implementation ``` It also has strong *procedural* verification skills such as `test-driven-development`, `verification-before-completion`, `requesting-code-review`, and `finishing-a-development-branch`. What is mi",
+          "url": "https://github.com/obra/superpowers/issues/2332",
+          "score": 4,
           "sentiment": "negative"
         },
         {
@@ -143,17 +142,61 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 1,
+      "feedbackCount": 5,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1442-cdub615",
+          "id": "github-https-github-com-obra-superpowers-issues-1917-jorgen-k",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "cdub615",
-          "date": "2026-04-30",
-          "text": "Expose lifecycle events beyond SessionStart for external integration - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I’m trying to integrate Superpowers with [Beads](https://github.com/gastownhall/beads), a dependency-aware issue tracker designed for AI agents, so that the planning artifact lives in `bd` in addition to a markdown file and subagents pull work from `bd ready`. The motivation is currently beads are my canonical source of truth for tracking my work. I want that to remain true regardless of whether I use Superpowers for larger",
-          "url": "https://github.com/obra/superpowers/issues/1442",
-          "score": 8,
+          "author": "jorgen-k",
+          "date": "2026-07-04",
+          "text": "subagent-driven-development: no inline-vs-dispatch threshold — small, tightly-coupled changes pay fan-out overhead for isolation they don't need - [x] I searched existing issues and this has not been proposed before *Closest prior art, checked open and closed: the cost-tiering stack (#1744 / #1717 / #1716) fixes which **model** each SDD role runs on, and #1747 adds the **reasoning-effort** dimension of the same problem. #1835 is about dispatch **mechanism** (inline Agent vs Workflow fan-out). All three optimize how cheaply a dispatched subagent runs. This proposal is a different, prior axis: *",
+          "url": "https://github.com/obra/superpowers/issues/1917",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2040-michaelholcomb-creator",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "michaelholcomb-creator",
+          "date": "2026-07-25",
+          "text": "Codex marketplace package drops executable bits on SDD helper scripts ## Summary Superpowers 6.2.0 installed through the Codex marketplace cache arrived with these helper files non-executable (observed mode `0644`): - `skills/subagent-driven-development/scripts/sdd-workspace` - `skills/subagent-driven-development/scripts/task-brief` - `skills/subagent-driven-development/scripts/review-package` Direct invocation fails with `Permission denied`. Invoking only `task-brief` or `review-package` through Bash does not fully recover the default-output path because both scripts directly execute their si",
+          "url": "https://github.com/obra/superpowers/issues/2040",
+          "score": 2,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2045-crgdan",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "CRGDan",
+          "date": "2026-07-27",
+          "text": "subagent-driven-development: plan-scoped workspace still collides when two plans share a basename (follow-up to #2012) Following up on #2012 as asked: *\"if you can still reproduce the collision on a release that includes #1943, please reopen with the session details.\"* I can, on released **v6.2.0** (`3dcbd5c`). #1943 scopes the workspace by plan **basename**, so it fixes collisions between `plan-a.md` and `plan-b.md` but not between `docs/alpha/plan.md` and `docs/beta/plan.md`. Any repo where plans are foldered — one directory per feature, per sprint, per subproject — still gets the original s",
+          "url": "https://github.com/obra/superpowers/issues/2045",
+          "score": 2,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-992-maxwangsongyuan",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "maxwangsongyuan",
+          "date": "2026-03-29",
+          "text": "executing-plans: should inform user before switching to subagent-driven-development ## Problem In `skills/executing-plans/SKILL.md` line 14: > **Note:** Tell your human partner that Superpowers works much better with access to subagents. The quality of its work will be significantly higher if run on a platform with subagent support (such as Claude Code or Codex). **If subagents are available, use superpowers:subagent-driven-development instead of this skill.** The last sentence instructs the AI to silently switch from `executing-plans` to `subagent-driven-development` without user consent. Thi",
+          "url": "https://github.com/obra/superpowers/issues/992",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2118-wan-huiyan",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "wan-huiyan",
+          "date": "2026-08-10",
+          "text": "requesting-code-review: the \"# or origin/main\" BASE_SHA feeds a moving ref into a two-dot diff, so reviewers are shown deletions the branch never made - [x] I searched existing issues and this is not a duplicate <sub>Searched open and closed for `merge-base`, `BASE_SHA`, `BASE_SHA diff`, `two-dot`, `code-reviewer diff origin/main`, `reviewer deletions`. Nearest hits (#1481, #1538, #436) are about review *scope* and uncommitted changes, not diff range semantics.</sub> ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.2.0 (latest release; also present on `ma",
+          "url": "https://github.com/obra/superpowers/issues/2118",
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -162,18 +205,40 @@
       "slug": "requesting-code-review",
       "ecosystem": "superpowers",
       "displayName": "Requesting Code Review",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1566-jhochenbaum",
+          "id": "github-https-github-com-obra-superpowers-issues-2332-teashaman-cyber",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "jhochenbaum",
-          "date": "2026-05-17",
-          "text": "Add lifecycle extension system for user-defined workflow hooks <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? One of Superpowers' core strengths is its minimal set of skills and configuration without bloating the core. It's a big part of why many of us keep coming back to it over similar frameworks. But in practice, my colleagues and I keep running",
-          "url": "https://github.com/obra/superpowers/issues/1566",
+          "author": "TeaShaman-cyber",
+          "date": "2026-09-18",
+          "text": "Workflow has first-class specs/plans but no durable QA/acceptance artifact layer - [x] I searched open and closed issues and did not find this exact artifact/lifecycle gap. ## What problem does this solve? Superpowers has first-class durable artifacts for the front half of development: ```text brainstorming -> design/spec writing-plans -> implementation plan executing-plans / SDD -> implementation ``` It also has strong *procedural* verification skills such as `test-driven-development`, `verification-before-completion`, `requesting-code-review`, and `finishing-a-development-branch`. What is mi",
+          "url": "https://github.com/obra/superpowers/issues/2332",
+          "score": 4,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2316-teashaman-cyber",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "TeaShaman-cyber",
+          "date": "2026-09-17",
+          "text": "finishing-a-development-branch: PR review has no lifecycle transition back to merge/release - [x] I searched open and closed issues and did not find this exact lifecycle gap. ## What problem does this solve? `finishing-a-development-branch` has a clear entry path for completed implementation: 1. verify tests; 2. choose merge / create PR / keep branch; 3. if Option 2 is chosen, push and create a PR; 4. **keep the worktree because the human partner iterates on PR feedback there.** The gap is what happens **after that feedback is addressed**. There is no explicit transition from: ```text PR opene",
+          "url": "https://github.com/obra/superpowers/issues/2316",
           "score": 2,
-          "sentiment": "neutral"
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2118-wan-huiyan",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "wan-huiyan",
+          "date": "2026-08-10",
+          "text": "requesting-code-review: the \"# or origin/main\" BASE_SHA feeds a moving ref into a two-dot diff, so reviewers are shown deletions the branch never made - [x] I searched existing issues and this is not a duplicate <sub>Searched open and closed for `merge-base`, `BASE_SHA`, `BASE_SHA diff`, `two-dot`, `code-reviewer diff origin/main`, `reviewer deletions`. Nearest hits (#1481, #1538, #436) are about review *scope* and uncommitted changes, not diff range semantics.</sub> ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.2.0 (latest release; also present on `ma",
+          "url": "https://github.com/obra/superpowers/issues/2118",
+          "score": 1,
+          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2298-k-schmitt",
@@ -196,17 +261,6 @@
           "url": "https://github.com/obra/superpowers/issues/2311",
           "score": 1,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2316-teashaman-cyber",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "TeaShaman-cyber",
-          "date": "2026-09-17",
-          "text": "finishing-a-development-branch: PR review has no lifecycle transition back to merge/release - [x] I searched open and closed issues and did not find this exact lifecycle gap. ## What problem does this solve? `finishing-a-development-branch` has a clear entry path for completed implementation: 1. verify tests; 2. choose merge / create PR / keep branch; 3. if Option 2 is chosen, push and create a PR; 4. **keep the worktree because the human partner iterates on PR feedback there.** The gap is what happens **after that feedback is addressed**. There is no explicit transition from: ```text PR opene",
-          "url": "https://github.com/obra/superpowers/issues/2316",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -214,8 +268,31 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 0,
-      "comments": []
+      "feedbackCount": 2,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2332-teashaman-cyber",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "TeaShaman-cyber",
+          "date": "2026-09-18",
+          "text": "Workflow has first-class specs/plans but no durable QA/acceptance artifact layer - [x] I searched open and closed issues and did not find this exact artifact/lifecycle gap. ## What problem does this solve? Superpowers has first-class durable artifacts for the front half of development: ```text brainstorming -> design/spec writing-plans -> implementation plan executing-plans / SDD -> implementation ``` It also has strong *procedural* verification skills such as `test-driven-development`, `verification-before-completion`, `requesting-code-review`, and `finishing-a-development-branch`. What is mi",
+          "url": "https://github.com/obra/superpowers/issues/2332",
+          "score": 4,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1917-jorgen-k",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jorgen-k",
+          "date": "2026-07-04",
+          "text": "subagent-driven-development: no inline-vs-dispatch threshold — small, tightly-coupled changes pay fan-out overhead for isolation they don't need - [x] I searched existing issues and this has not been proposed before *Closest prior art, checked open and closed: the cost-tiering stack (#1744 / #1717 / #1716) fixes which **model** each SDD role runs on, and #1747 adds the **reasoning-effort** dimension of the same problem. #1835 is about dispatch **mechanism** (inline Agent vs Workflow fan-out). All three optimize how cheaply a dispatched subagent runs. This proposal is a different, prior axis: *",
+          "url": "https://github.com/obra/superpowers/issues/1917",
+          "score": 2,
+          "sentiment": "negative"
+        }
+      ]
     },
     "awesome-copilot/ai-ready": {
       "slug": "ai-ready",

@@ -1,5 +1,28 @@
 [
   {
+    "id": "auto-claude-v2-1-278",
+    "title": "Claude Code v2.1.278 发布",
+    "date": "2026-09-19",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "Anthropic",
+    "heat": 75,
+    "growth": 8,
+    "sourceTier": "A",
+    "summary": "## What's changed  - Changed auto mode for Claude API and Enterprise users, and on Bedrock, Vertex, Foundry and gateways, to default to the server-side classifier, which does not charge for classifier",
+    "whyImportant": "Claude Code 持续高频迭代，终端 Agent 能力不断增强。",
+    "impact": "关注 release notes 中的权限、MCP 和 subagent 相关变更。",
+    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.278",
+    "relatedSkills": [
+      {
+        "slug": "claude-api",
+        "ecosystem": "anthropics-skills",
+        "displayName": "Claude Api",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
     "id": "auto-claude-v2-1-276",
     "title": "Claude Code v2.1.276 发布",
     "date": "2026-09-18",
@@ -13,6 +36,36 @@
     "whyImportant": "Claude Code 持续高频迭代，终端 Agent 能力不断增强。",
     "impact": "关注 release notes 中的权限、MCP 和 subagent 相关变更。",
     "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.276"
+  },
+  {
+    "id": "auto-claude-v2-1-277",
+    "title": "Claude Code v2.1.277 发布",
+    "date": "2026-09-18",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "Anthropic",
+    "heat": 75,
+    "growth": 8,
+    "sourceTier": "A",
+    "summary": "## What's changed  - Added AGENTS.md support: in a project with no CLAUDE.md, Claude Code reads AGENTS.md instead; change it under \"Project instructions\" in `/config` (not yet on Bedrock, Vertex or Fo",
+    "whyImportant": "Claude Code 持续高频迭代，终端 Agent 能力不断增强。",
+    "impact": "关注 release notes 中的权限、MCP 和 subagent 相关变更。",
+    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.277"
+  },
+  {
+    "id": "auto-gh-copilot-code-review-an-improved-review-e",
+    "title": "Copilot code review: An improved review experience",
+    "date": "2026-09-18",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "GitHub",
+    "heat": 70,
+    "growth": 6,
+    "sourceTier": "A",
+    "summary": "GitHub 官方 Changelog 更新：Copilot code review: An improved review experience",
+    "whyImportant": "GitHub Copilot 生态动态，影响企业开发者工作流。",
+    "impact": "关注 Agent 模式、CLI 和企业策略相关变更。",
+    "sourceUrl": "https://github.blog/changelog/2026-09-18-copilot-code-review-an-improved-review-experience"
   },
   {
     "id": "auto-claude-v2-1-274",
