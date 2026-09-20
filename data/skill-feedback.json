@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-19T04:52:14Z",
+    "lastUpdated": "2026-09-20T05:10:06Z",
     "skillCount": 20,
-    "totalComments": 54,
+    "totalComments": 55,
     "sources": [
       "hacker-news",
       "github",
@@ -15,17 +15,17 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1442-cdub615",
+          "id": "github-https-github-com-obra-superpowers-issues-892-cheapsteak",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "cdub615",
-          "date": "2026-04-30",
-          "text": "Expose lifecycle events beyond SessionStart for external integration - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I’m trying to integrate Superpowers with [Beads](https://github.com/gastownhall/beads), a dependency-aware issue tracker designed for AI agents, so that the planning artifact lives in `bd` in addition to a markdown file and subagents pull work from `bd ready`. The motivation is currently beads are my canonical source of truth for tracking my work. I want that to remain true regardless of whether I use Superpowers for larger",
-          "url": "https://github.com/obra/superpowers/issues/1442",
-          "score": 9,
+          "author": "cheapsteak",
+          "date": "2026-03-23",
+          "text": "Ability to opt-out of visual companion across sessions 🙏 <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? <!-- Describe the problem from your own experience. What were you doing, what went wrong or was missing, and why did it matter? \"It would be cool if...\" is not a problem statement. --> I would like to be able to permanently opt-out of the visual ",
+          "url": "https://github.com/obra/superpowers/issues/892",
+          "score": 8,
           "sentiment": "negative"
         },
         {
@@ -36,7 +36,18 @@
           "date": "2026-09-18",
           "text": "Workflow has first-class specs/plans but no durable QA/acceptance artifact layer - [x] I searched open and closed issues and did not find this exact artifact/lifecycle gap. ## What problem does this solve? Superpowers has first-class durable artifacts for the front half of development: ```text brainstorming -> design/spec writing-plans -> implementation plan executing-plans / SDD -> implementation ``` It also has strong *procedural* verification skills such as `test-driven-development`, `verification-before-completion`, `requesting-code-review`, and `finishing-a-development-branch`. What is mi",
           "url": "https://github.com/obra/superpowers/issues/2332",
-          "score": 4,
+          "score": 5,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2343-mcconfig",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "McConfig",
+          "date": "2026-09-19",
+          "text": "model degradation: long-context session answers with empty/garbage output instead of in-language reply (OpenCode) Title: model degradation: long-context session answers with empty/garbage output instead of in-language reply (OpenCode) - [x] I searched existing issues and this is not a duplicate (searched: \"garbage output\", \"empty response\", \"long context\", \"model degeneration\", \"compaction\", \"degradation\", \"hallucination language\"; closest: #42 \"superpower degradation since Anthropic Skills release...\" (closed, different), #1220 \"SessionStart bootstrap re-injection token cost accumulated acros",
+          "url": "https://github.com/obra/superpowers/issues/2343",
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -55,7 +66,7 @@
           "date": "2026-09-18",
           "text": "Workflow has first-class specs/plans but no durable QA/acceptance artifact layer - [x] I searched open and closed issues and did not find this exact artifact/lifecycle gap. ## What problem does this solve? Superpowers has first-class durable artifacts for the front half of development: ```text brainstorming -> design/spec writing-plans -> implementation plan executing-plans / SDD -> implementation ``` It also has strong *procedural* verification skills such as `test-driven-development`, `verification-before-completion`, `requesting-code-review`, and `finishing-a-development-branch`. What is mi",
           "url": "https://github.com/obra/superpowers/issues/2332",
-          "score": 4,
+          "score": 5,
           "sentiment": "negative"
         }
       ]
@@ -85,7 +96,7 @@
           "date": "2026-09-18",
           "text": "Workflow has first-class specs/plans but no durable QA/acceptance artifact layer - [x] I searched open and closed issues and did not find this exact artifact/lifecycle gap. ## What problem does this solve? Superpowers has first-class durable artifacts for the front half of development: ```text brainstorming -> design/spec writing-plans -> implementation plan executing-plans / SDD -> implementation ``` It also has strong *procedural* verification skills such as `test-driven-development`, `verification-before-completion`, `requesting-code-review`, and `finishing-a-development-branch`. What is mi",
           "url": "https://github.com/obra/superpowers/issues/2332",
-          "score": 4,
+          "score": 5,
           "sentiment": "negative"
         },
         {
@@ -105,8 +116,20 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 0,
-      "comments": []
+      "feedbackCount": 1,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2343-mcconfig",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "McConfig",
+          "date": "2026-09-19",
+          "text": "model degradation: long-context session answers with empty/garbage output instead of in-language reply (OpenCode) Title: model degradation: long-context session answers with empty/garbage output instead of in-language reply (OpenCode) - [x] I searched existing issues and this is not a duplicate (searched: \"garbage output\", \"empty response\", \"long context\", \"model degeneration\", \"compaction\", \"degradation\", \"hallucination language\"; closest: #42 \"superpower degradation since Anthropic Skills release...\" (closed, different), #1220 \"SessionStart bootstrap re-injection token cost accumulated acros",
+          "url": "https://github.com/obra/superpowers/issues/2343",
+          "score": 1,
+          "sentiment": "negative"
+        }
+      ]
     },
     "superpowers/verification-before-completion": {
       "slug": "verification-before-completion",
@@ -122,7 +145,7 @@
           "date": "2026-09-18",
           "text": "Workflow has first-class specs/plans but no durable QA/acceptance artifact layer - [x] I searched open and closed issues and did not find this exact artifact/lifecycle gap. ## What problem does this solve? Superpowers has first-class durable artifacts for the front half of development: ```text brainstorming -> design/spec writing-plans -> implementation plan executing-plans / SDD -> implementation ``` It also has strong *procedural* verification skills such as `test-driven-development`, `verification-before-completion`, `requesting-code-review`, and `finishing-a-development-branch`. What is mi",
           "url": "https://github.com/obra/superpowers/issues/2332",
-          "score": 4,
+          "score": 5,
           "sentiment": "negative"
         },
         {
@@ -142,7 +165,7 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 5,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1917-jorgen-k",
@@ -156,28 +179,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2040-michaelholcomb-creator",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "michaelholcomb-creator",
-          "date": "2026-07-25",
-          "text": "Codex marketplace package drops executable bits on SDD helper scripts ## Summary Superpowers 6.2.0 installed through the Codex marketplace cache arrived with these helper files non-executable (observed mode `0644`): - `skills/subagent-driven-development/scripts/sdd-workspace` - `skills/subagent-driven-development/scripts/task-brief` - `skills/subagent-driven-development/scripts/review-package` Direct invocation fails with `Permission denied`. Invoking only `task-brief` or `review-package` through Bash does not fully recover the default-output path because both scripts directly execute their si",
-          "url": "https://github.com/obra/superpowers/issues/2040",
-          "score": 2,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2045-crgdan",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "CRGDan",
-          "date": "2026-07-27",
-          "text": "subagent-driven-development: plan-scoped workspace still collides when two plans share a basename (follow-up to #2012) Following up on #2012 as asked: *\"if you can still reproduce the collision on a release that includes #1943, please reopen with the session details.\"* I can, on released **v6.2.0** (`3dcbd5c`). #1943 scopes the workspace by plan **basename**, so it fixes collisions between `plan-a.md` and `plan-b.md` but not between `docs/alpha/plan.md` and `docs/beta/plan.md`. Any repo where plans are foldered — one directory per feature, per sprint, per subproject — still gets the original s",
-          "url": "https://github.com/obra/superpowers/issues/2045",
-          "score": 2,
-          "sentiment": "neutral"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-992-maxwangsongyuan",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -189,15 +190,15 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2118-wan-huiyan",
+          "id": "github-https-github-com-obra-superpowers-issues-2344-drewzing",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "wan-huiyan",
-          "date": "2026-08-10",
-          "text": "requesting-code-review: the \"# or origin/main\" BASE_SHA feeds a moving ref into a two-dot diff, so reviewers are shown deletions the branch never made - [x] I searched existing issues and this is not a duplicate <sub>Searched open and closed for `merge-base`, `BASE_SHA`, `BASE_SHA diff`, `two-dot`, `code-reviewer diff origin/main`, `reviewer deletions`. Nearest hits (#1481, #1538, #436) are about review *scope* and uncommitted changes, not diff range semantics.</sub> ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.2.0 (latest release; also present on `ma",
-          "url": "https://github.com/obra/superpowers/issues/2118",
-          "score": 1,
-          "sentiment": "negative"
+          "author": "drewzing",
+          "date": "2026-09-19",
+          "text": "RELEASE-NOTES say a deleted .superpowers/sdd/progress.md can be recovered from git log; it cannot The v6.1.x release note for #1780 (\"SDD scratch files moved out of `.git/`\") ends: > because the workspace is git-ignored working-tree scratch, `git clean -fdx` will delete the progress ledger; recover from `git log` if that happens. `skills/subagent-driven-development/scripts/sdd-workspace` runs `printf '*\\n' > \"$dir/.gitignore\"` on every invocation, so nothing under `.superpowers/sdd/` is ever committed. There is no history to recover the ledger from: `git log` shows the commits the ledger descr",
+          "url": "https://github.com/obra/superpowers/issues/2344",
+          "score": 0,
+          "sentiment": "neutral"
         }
       ]
     },
@@ -215,7 +216,7 @@
           "date": "2026-09-18",
           "text": "Workflow has first-class specs/plans but no durable QA/acceptance artifact layer - [x] I searched open and closed issues and did not find this exact artifact/lifecycle gap. ## What problem does this solve? Superpowers has first-class durable artifacts for the front half of development: ```text brainstorming -> design/spec writing-plans -> implementation plan executing-plans / SDD -> implementation ``` It also has strong *procedural* verification skills such as `test-driven-development`, `verification-before-completion`, `requesting-code-review`, and `finishing-a-development-branch`. What is mi",
           "url": "https://github.com/obra/superpowers/issues/2332",
-          "score": 4,
+          "score": 5,
           "sentiment": "negative"
         },
         {
@@ -278,7 +279,7 @@
           "date": "2026-09-18",
           "text": "Workflow has first-class specs/plans but no durable QA/acceptance artifact layer - [x] I searched open and closed issues and did not find this exact artifact/lifecycle gap. ## What problem does this solve? Superpowers has first-class durable artifacts for the front half of development: ```text brainstorming -> design/spec writing-plans -> implementation plan executing-plans / SDD -> implementation ``` It also has strong *procedural* verification skills such as `test-driven-development`, `verification-before-completion`, `requesting-code-review`, and `finishing-a-development-branch`. What is mi",
           "url": "https://github.com/obra/superpowers/issues/2332",
-          "score": 4,
+          "score": 5,
           "sentiment": "negative"
         },
         {
@@ -544,7 +545,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 5,
+      "feedbackCount": 6,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1412-guala19",
@@ -599,6 +600,17 @@
           "text": "skill-creator: trigger detection reports 0% recall for every skill ## Summary `skill-creator`'s trigger evaluation reports `precision=100% recall=0%` for every skill, regardless of how good the description is. `run_loop` then \"improves\" the description against evidence that every positive query failed, and reports the result as an optimisation. This fails silently. Nothing errors, and the output looks like a legitimate measurement of a bad description. ## Cause `run_single_query()` in `skills/skill-creator/scripts/run_eval.py` decides whether the skill triggered by watching the `claude -p` eve",
           "url": "https://github.com/anthropics/skills/issues/1721",
           "score": 1,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1793-hypecloudmarketing",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "HypecloudMarketing",
+          "date": "2026-09-19",
+          "text": "skill-creator: eval-viewer renders untrusted content via sheet_to_html innerHTML and unsandboxed data: URI iframes **Files:** `skills/skill-creator/eval-viewer/viewer.html` (current main, blob 6d8e963) Two further sinks in the same display path as #1394, not covered by #1394, #1788 or #1789. **1. Spreadsheet preview: `XLSX.utils.sheet_to_html` output assigned with `innerHTML` (`renderXlsx`, line 849)** ```js const htmlStr = XLSX.utils.sheet_to_html(ws, { editable: false }); const wrapper = document.createElement(\"div\"); wrapper.innerHTML = htmlStr; ``` `sheet_to_html` escapes cell text, but ce",
+          "url": "https://github.com/anthropics/skills/issues/1793",
+          "score": 0,
           "sentiment": "neutral"
         }
       ]
