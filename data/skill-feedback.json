@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-20T05:10:06Z",
+    "lastUpdated": "2026-09-21T05:15:43Z",
     "skillCount": 20,
-    "totalComments": 55,
+    "totalComments": 54,
     "sources": [
       "hacker-news",
       "github",
@@ -15,19 +15,8 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 3,
+      "feedbackCount": 1,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-892-cheapsteak",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "cheapsteak",
-          "date": "2026-03-23",
-          "text": "Ability to opt-out of visual companion across sessions 🙏 <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? <!-- Describe the problem from your own experience. What were you doing, what went wrong or was missing, and why did it matter? \"It would be cool if...\" is not a problem statement. --> I would like to be able to permanently opt-out of the visual ",
-          "url": "https://github.com/obra/superpowers/issues/892",
-          "score": 8,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2332-teashaman-cyber",
           "source": "github",
@@ -37,17 +26,6 @@
           "text": "Workflow has first-class specs/plans but no durable QA/acceptance artifact layer - [x] I searched open and closed issues and did not find this exact artifact/lifecycle gap. ## What problem does this solve? Superpowers has first-class durable artifacts for the front half of development: ```text brainstorming -> design/spec writing-plans -> implementation plan executing-plans / SDD -> implementation ``` It also has strong *procedural* verification skills such as `test-driven-development`, `verification-before-completion`, `requesting-code-review`, and `finishing-a-development-branch`. What is mi",
           "url": "https://github.com/obra/superpowers/issues/2332",
           "score": 5,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2343-mcconfig",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "McConfig",
-          "date": "2026-09-19",
-          "text": "model degradation: long-context session answers with empty/garbage output instead of in-language reply (OpenCode) Title: model degradation: long-context session answers with empty/garbage output instead of in-language reply (OpenCode) - [x] I searched existing issues and this is not a duplicate (searched: \"garbage output\", \"empty response\", \"long context\", \"model degeneration\", \"compaction\", \"degradation\", \"hallucination language\"; closest: #42 \"superpower degradation since Anthropic Skills release...\" (closed, different), #1220 \"SessionStart bootstrap re-injection token cost accumulated acros",
-          "url": "https://github.com/obra/superpowers/issues/2343",
-          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -75,19 +53,8 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2309-teashaman-cyber",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "TeaShaman-cyber",
-          "date": "2026-09-17",
-          "text": "writing-plans: self-review misses task-state/DAG closure in executable plans ## What problem does this solve? `writing-plans` currently requires each task to produce a self-contained, independently testable deliverable and gives tasks explicit `Consumes` / `Produces` interfaces. It also asks for concrete test code, commands, implementation snippets, and frequent commits. At current `main` (`b36e0829c6d0140e93cfef2ca599b1b07d4a7797`), the final Self-Review checks three things: spec coverage, placeholders, and type/name consistency: https://github.com/obra/superpowers/blob/b36e0829c6d0140e93cfef",
-          "url": "https://github.com/obra/superpowers/issues/2309",
-          "score": 5,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2332-teashaman-cyber",
           "source": "github",
@@ -116,17 +83,50 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 1,
+      "feedbackCount": 4,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2343-mcconfig",
+          "id": "github-https-github-com-obra-superpowers-issues-2277-caarles00",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "McConfig",
-          "date": "2026-09-19",
-          "text": "model degradation: long-context session answers with empty/garbage output instead of in-language reply (OpenCode) Title: model degradation: long-context session answers with empty/garbage output instead of in-language reply (OpenCode) - [x] I searched existing issues and this is not a duplicate (searched: \"garbage output\", \"empty response\", \"long context\", \"model degeneration\", \"compaction\", \"degradation\", \"hallucination language\"; closest: #42 \"superpower degradation since Anthropic Skills release...\" (closed, different), #1220 \"SessionStart bootstrap re-injection token cost accumulated acros",
-          "url": "https://github.com/obra/superpowers/issues/2343",
+          "author": "Caarles00",
+          "date": "2026-09-10",
+          "text": "systematic-debugging ships its pressure-test fixtures inside the skill directory; they open with \"This is a real scenario. You must choose and act\" - [x] I searched existing issues and this is not a duplicate *(searched \"pressure test\", fixture, CREATION-LOG, test-academic — open and closed)* ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | skill fetched from `main` via skills.sh; directory listing re-checked against `b36e082` | | Harness (Claude Code, Cursor, etc.) | Claude Code, VS Code extension | | Harness version | 2.1.252 (Claude Code) | | Your model ",
+          "url": "https://github.com/obra/superpowers/issues/2277",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2264-wnqgphqn5t-cmyk",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "wnqgphqn5t-cmyk",
+          "date": "2026-09-06",
+          "text": "7 additive rules for superpowers skills (from real-session postmortems) These are seven small, additive rules for existing `superpowers:*` skills, each distilled from a concrete failure in real agent sessions. Grouping them into one issue rather than filing seven — happy to split into PRs per skill if you'd prefer. Each block is: the failure that happened → the proposed rule → the one-line principle. No structural changes, just rules added to sections that already exist. --- ## 1. `verification-before-completion` — verify a set-wide fix by count against an external source of truth **Failure.**",
+          "url": "https://github.com/obra/superpowers/issues/2264",
           "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2232-abhineshkr",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "abhineshkr",
+          "date": "2026-08-31",
+          "text": "skills/systematic-debugging: sizing a probe for intermittent behaviour, and preserving evidence before reproducing *Found in real use over ~10 days on a single large project, captured in a skill-observation log and triaged in a review on 2026-08-31. Filed upstream rather than patched locally because the plugin is version-pinned — a local edit is erased on the next update.* *Version: **superpowers 6.3.0 (`b36e0829c6d0`), via the claude-plugins-official marketplace**. Each item below gives what happened, a concrete suggested change, and the generalisable principle. Happy to open a PR for any of ",
+          "url": "https://github.com/obra/superpowers/issues/2232",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2266-slowernet",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "slowernet",
+          "date": "2026-09-06",
+          "text": "Fixes keep creating new bugs because no skill requires tracing what a fix changes - [x] I searched existing issues and this has not been proposed before Closest prior art: #2145 B1 (enumerate readers of a stale field; the *root cause's* blast radius during diagnosis, where this is the *fix's*), #2264 §5 (re-run the objective check after a delegated edit; a dynamic check, where this is static), #2113 §4 (coverage gaps *between* tasks, not gaps *created by* a fix), PR #2198 (trace a bad value upstream to its producer; opposite direction), and closed #2066 (a \"blast radius\" row for spec self-revi",
+          "url": "https://github.com/obra/superpowers/issues/2266",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -135,7 +135,7 @@
       "slug": "verification-before-completion",
       "ecosystem": "superpowers",
       "displayName": "Verification Before Completion",
-      "feedbackCount": 2,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2332-teashaman-cyber",
@@ -149,6 +149,17 @@
           "sentiment": "negative"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2231-abhineshkr",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "abhineshkr",
+          "date": "2026-08-31",
+          "text": "skills/verification-before-completion: `git checkout` in a verified-red loop destroys uncommitted work *Found in real use over ~10 days on a single large project, captured in a skill-observation log and triaged in a review on 2026-08-31. Filed upstream rather than patched locally because the plugin is version-pinned — a local edit is erased on the next update.* *Version: **superpowers 6.3.0 (`b36e0829c6d0`), via the claude-plugins-official marketplace**. Each item below gives what happened, a concrete suggested change, and the generalisable principle. Happy to open a PR for any of them if you'",
+          "url": "https://github.com/obra/superpowers/issues/2231",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2264-wnqgphqn5t-cmyk",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -158,6 +169,17 @@
           "url": "https://github.com/obra/superpowers/issues/2264",
           "score": 1,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2219-danielcalvolopez",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "danielcalvolopez",
+          "date": "2026-08-28",
+          "text": "Skills that script multi-branch git workflows never establish a remote-safety boundary, shared branches (production, dev) were unintentionally rewritten across three projects - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? `using-git-worktrees`, `executing-plans`, `subagent-driven-development`, and `finishing-a-development-branch` script every step of a multi-branch git workflow — create the branch, commit per task, merge, integrate — but none of them ever address the boundary between local and remote state. Across three of my projects in",
+          "url": "https://github.com/obra/superpowers/issues/2219",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -165,30 +187,8 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 3,
+      "feedbackCount": 1,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1917-jorgen-k",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jorgen-k",
-          "date": "2026-07-04",
-          "text": "subagent-driven-development: no inline-vs-dispatch threshold — small, tightly-coupled changes pay fan-out overhead for isolation they don't need - [x] I searched existing issues and this has not been proposed before *Closest prior art, checked open and closed: the cost-tiering stack (#1744 / #1717 / #1716) fixes which **model** each SDD role runs on, and #1747 adds the **reasoning-effort** dimension of the same problem. #1835 is about dispatch **mechanism** (inline Agent vs Workflow fan-out). All three optimize how cheaply a dispatched subagent runs. This proposal is a different, prior axis: *",
-          "url": "https://github.com/obra/superpowers/issues/1917",
-          "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-992-maxwangsongyuan",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "maxwangsongyuan",
-          "date": "2026-03-29",
-          "text": "executing-plans: should inform user before switching to subagent-driven-development ## Problem In `skills/executing-plans/SKILL.md` line 14: > **Note:** Tell your human partner that Superpowers works much better with access to subagents. The quality of its work will be significantly higher if run on a platform with subagent support (such as Claude Code or Codex). **If subagents are available, use superpowers:subagent-driven-development instead of this skill.** The last sentence instructs the AI to silently switch from `executing-plans` to `subagent-driven-development` without user consent. Thi",
-          "url": "https://github.com/obra/superpowers/issues/992",
-          "score": 1,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2344-drewzing",
           "source": "github",
@@ -231,17 +231,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2118-wan-huiyan",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "wan-huiyan",
-          "date": "2026-08-10",
-          "text": "requesting-code-review: the \"# or origin/main\" BASE_SHA feeds a moving ref into a two-dot diff, so reviewers are shown deletions the branch never made - [x] I searched existing issues and this is not a duplicate <sub>Searched open and closed for `merge-base`, `BASE_SHA`, `BASE_SHA diff`, `two-dot`, `code-reviewer diff origin/main`, `reviewer deletions`. Nearest hits (#1481, #1538, #436) are about review *scope* and uncommitted changes, not diff range semantics.</sub> ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.2.0 (latest release; also present on `ma",
-          "url": "https://github.com/obra/superpowers/issues/2118",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2298-k-schmitt",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -262,6 +251,17 @@
           "url": "https://github.com/obra/superpowers/issues/2311",
           "score": 1,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2266-slowernet",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "slowernet",
+          "date": "2026-09-06",
+          "text": "Fixes keep creating new bugs because no skill requires tracing what a fix changes - [x] I searched existing issues and this has not been proposed before Closest prior art: #2145 B1 (enumerate readers of a stale field; the *root cause's* blast radius during diagnosis, where this is the *fix's*), #2264 §5 (re-run the objective check after a delegated edit; a dynamic check, where this is static), #2113 §4 (coverage gaps *between* tasks, not gaps *created by* a fix), PR #2198 (trace a bad value upstream to its producer; opposite direction), and closed #2066 (a \"blast radius\" row for spec self-revi",
+          "url": "https://github.com/obra/superpowers/issues/2266",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -269,7 +269,7 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 2,
+      "feedbackCount": 1,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2332-teashaman-cyber",
@@ -280,17 +280,6 @@
           "text": "Workflow has first-class specs/plans but no durable QA/acceptance artifact layer - [x] I searched open and closed issues and did not find this exact artifact/lifecycle gap. ## What problem does this solve? Superpowers has first-class durable artifacts for the front half of development: ```text brainstorming -> design/spec writing-plans -> implementation plan executing-plans / SDD -> implementation ``` It also has strong *procedural* verification skills such as `test-driven-development`, `verification-before-completion`, `requesting-code-review`, and `finishing-a-development-branch`. What is mi",
           "url": "https://github.com/obra/superpowers/issues/2332",
           "score": 5,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1917-jorgen-k",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jorgen-k",
-          "date": "2026-07-04",
-          "text": "subagent-driven-development: no inline-vs-dispatch threshold — small, tightly-coupled changes pay fan-out overhead for isolation they don't need - [x] I searched existing issues and this has not been proposed before *Closest prior art, checked open and closed: the cost-tiering stack (#1744 / #1717 / #1716) fixes which **model** each SDD role runs on, and #1747 adds the **reasoning-effort** dimension of the same problem. #1835 is about dispatch **mechanism** (inline Agent vs Workflow fan-out). All three optimize how cheaply a dispatched subagent runs. This proposal is a different, prior axis: *",
-          "url": "https://github.com/obra/superpowers/issues/1917",
-          "score": 2,
           "sentiment": "negative"
         }
       ]
@@ -559,6 +548,17 @@
           "sentiment": "negative"
         },
         {
+          "id": "github-https-github-com-anthropics-skills-issues-1721-jparker-rg",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jparker-RG",
+          "date": "2026-09-03",
+          "text": "skill-creator: trigger detection reports 0% recall for every skill ## Summary `skill-creator`'s trigger evaluation reports `precision=100% recall=0%` for every skill, regardless of how good the description is. `run_loop` then \"improves\" the description against evidence that every positive query failed, and reports the result as an optimisation. This fails silently. Nothing errors, and the output looks like a legitimate measurement of a bad description. ## Cause `run_single_query()` in `skills/skill-creator/scripts/run_eval.py` decides whether the skill triggered by watching the `claude -p` eve",
+          "url": "https://github.com/anthropics/skills/issues/1721",
+          "score": 2,
+          "sentiment": "neutral"
+        },
+        {
           "id": "github-https-github-com-anthropics-skills-issues-311-svobom57",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -590,17 +590,6 @@
           "url": "https://github.com/anthropics/skills/issues/1706",
           "score": 1,
           "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1721-jparker-rg",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jparker-RG",
-          "date": "2026-09-03",
-          "text": "skill-creator: trigger detection reports 0% recall for every skill ## Summary `skill-creator`'s trigger evaluation reports `precision=100% recall=0%` for every skill, regardless of how good the description is. `run_loop` then \"improves\" the description against evidence that every positive query failed, and reports the result as an optimisation. This fails silently. Nothing errors, and the output looks like a legitimate measurement of a bad description. ## Cause `run_single_query()` in `skills/skill-creator/scripts/run_eval.py` decides whether the skill triggered by watching the `claude -p` eve",
-          "url": "https://github.com/anthropics/skills/issues/1721",
-          "score": 1,
-          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-anthropics-skills-issues-1793-hypecloudmarketing",

@@ -1,5 +1,33 @@
 {
-  "generatedAt": "2026-09-20T05:07:58Z",
+  "generatedAt": "2026-09-21T05:13:31Z",
   "isBaselineRun": false,
-  "changes": []
+  "changes": [
+    {
+      "type": "added",
+      "key": "awesome-copilot/agent-architecture",
+      "ecosystem": "awesome-copilot",
+      "slug": "agent-architecture",
+      "displayName": "Agent Architecture",
+      "summary": "生态新增 Skill：Agent Architecture",
+      "detectedAt": "2026-09-21T05:14:12Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/macos-golden-gate-design",
+      "ecosystem": "awesome-copilot",
+      "slug": "macos-golden-gate-design",
+      "displayName": "Macos Golden Gate Design",
+      "summary": "生态新增 Skill：Macos Golden Gate Design",
+      "detectedAt": "2026-09-21T05:14:12Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/protobuf-grpc-api-review",
+      "ecosystem": "awesome-copilot",
+      "slug": "protobuf-grpc-api-review",
+      "displayName": "Protobuf Grpc Api Review",
+      "summary": "生态新增 Skill：Protobuf Grpc Api Review",
+      "detectedAt": "2026-09-21T05:14:12Z"
+    }
+  ]
 }
