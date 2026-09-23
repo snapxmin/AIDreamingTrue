@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-22T05:16:12Z",
+    "lastUpdated": "2026-09-23T05:00:20Z",
     "skillCount": 20,
-    "totalComments": 54,
+    "totalComments": 58,
     "sources": [
       "hacker-news",
       "github",
@@ -15,7 +15,7 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2332-teashaman-cyber",
@@ -36,7 +36,18 @@
           "date": "2026-09-22",
           "text": "brainstorming visual companion: a screen containing $' (e.g. 'NT$' + amount) has its JS rendered as page text — wrapInFrame uses screen HTML as a replace() replacement string - [x] I searched existing issues and this is not a duplicate ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.3.0 | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | 2.1.278 | | Your model + version | Claude Opus 5 (1M context) — `claude-opus-5[1m]` | | All plugins installed | superpowers, claude-md-management, code-review, code-simplifier, commit-commands, co",
           "url": "https://github.com/obra/superpowers/issues/2362",
-          "score": 0,
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2197-swift22",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Swift22",
+          "date": "2026-08-23",
+          "text": "OpenCode: bootstrap not injected in non-interactive `opencode run` sessions (skills still register) ## Environment - superpowers v6.3.0 (also reproduced on v6.0.3), installed as an OpenCode plugin via `superpowers@git+https://github.com/obra/superpowers.git` - opencode CLI 1.18.21, macOS (darwin 24.x) ## Summary With the plugin loaded from global config, the `config` hook fires and all 14 skills register — but the `using-superpowers` bootstrap never reaches sessions started with non-interactive `opencode run`. Interactive (TUI) sessions on the same machine, same plugin, same config, do get the",
+          "url": "https://github.com/obra/superpowers/issues/2197",
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -64,7 +75,7 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2309-teashaman-cyber",
@@ -86,6 +97,17 @@
           "text": "Workflow has first-class specs/plans but no durable QA/acceptance artifact layer - [x] I searched open and closed issues and did not find this exact artifact/lifecycle gap. ## What problem does this solve? Superpowers has first-class durable artifacts for the front half of development: ```text brainstorming -> design/spec writing-plans -> implementation plan executing-plans / SDD -> implementation ``` It also has strong *procedural* verification skills such as `test-driven-development`, `verification-before-completion`, `requesting-code-review`, and `finishing-a-development-branch`. What is mi",
           "url": "https://github.com/obra/superpowers/issues/2332",
           "score": 6,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2368-tonyaw",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "tonyaw",
+          "date": "2026-09-22",
+          "text": "SDD: opt-in DAG/wave execution for independent plan tasks (not Agent Teams) <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [ ] I searched existing issues and this has not been proposed before Related prior art is listed below. This request is **not** a duplicate of Agent Teams / swarm-mode issues: it asks for a DAG scheduler on top of the existing `Task` subagent dispatch, not Claude Code teams. ## What problem does this solve? `subagent-driven-dev",
+          "url": "https://github.com/obra/superpowers/issues/2368",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -190,15 +212,15 @@
       "feedbackCount": 3,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2017-smortezah",
+          "id": "github-https-github-com-obra-superpowers-issues-2370-teashaman-cyber",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "smortezah",
-          "date": "2026-07-22",
-          "text": "Retuning subagent driven development for Opus 6 and Sol 5.6 Superpowers is fantastic but it uses a lot of tokens and takes a long time to complete a task. A `Slim` version would be great as it would alleviate some of the constraints of superpowers to make completing tasks faster.",
-          "url": "https://github.com/obra/superpowers/issues/2017",
-          "score": 14,
-          "sentiment": "positive"
+          "author": "TeaShaman-cyber",
+          "date": "2026-09-22",
+          "text": "executing-plans: add recovery path when helper scripts are not exposed by the host harness ## What problem does this solve? `executing-plans` and SDD can be visible to a host harness while their bundled helper scripts are not exposed in that runtime. At current upstream `main`: - commit: `5bf4e78011075bcfc0dc295f0724994cd123ee71` - `skills/executing-plans/SKILL.md` instructs the controller to use helpers such as `sdd-workspace`, `task-start`, `task-done`, and `review-package` - those helpers exist upstream under: - `skills/subagent-driven-development/scripts/sdd-workspace` - `skills/subagent-d",
+          "url": "https://github.com/obra/superpowers/issues/2370",
+          "score": 6,
+          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2356-crm-plus-company",
@@ -212,15 +234,15 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2344-drewzing",
+          "id": "github-https-github-com-obra-superpowers-issues-2368-tonyaw",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "drewzing",
-          "date": "2026-09-19",
-          "text": "RELEASE-NOTES say a deleted .superpowers/sdd/progress.md can be recovered from git log; it cannot The v6.1.x release note for #1780 (\"SDD scratch files moved out of `.git/`\") ends: > because the workspace is git-ignored working-tree scratch, `git clean -fdx` will delete the progress ledger; recover from `git log` if that happens. `skills/subagent-driven-development/scripts/sdd-workspace` runs `printf '*\\n' > \"$dir/.gitignore\"` on every invocation, so nothing under `.superpowers/sdd/` is ever committed. There is no history to recover the ledger from: `git log` shows the commits the ledger descr",
-          "url": "https://github.com/obra/superpowers/issues/2344",
+          "author": "tonyaw",
+          "date": "2026-09-22",
+          "text": "SDD: opt-in DAG/wave execution for independent plan tasks (not Agent Teams) <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [ ] I searched existing issues and this has not been proposed before Related prior art is listed below. This request is **not** a duplicate of Agent Teams / swarm-mode issues: it asks for a DAG scheduler on top of the existing `Task` subagent dispatch, not Claude Code teams. ## What problem does this solve? `subagent-driven-dev",
+          "url": "https://github.com/obra/superpowers/issues/2368",
           "score": 0,
-          "sentiment": "neutral"
+          "sentiment": "negative"
         }
       ]
     },
@@ -269,7 +291,7 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 1,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2332-teashaman-cyber",
@@ -280,6 +302,28 @@
           "text": "Workflow has first-class specs/plans but no durable QA/acceptance artifact layer - [x] I searched open and closed issues and did not find this exact artifact/lifecycle gap. ## What problem does this solve? Superpowers has first-class durable artifacts for the front half of development: ```text brainstorming -> design/spec writing-plans -> implementation plan executing-plans / SDD -> implementation ``` It also has strong *procedural* verification skills such as `test-driven-development`, `verification-before-completion`, `requesting-code-review`, and `finishing-a-development-branch`. What is mi",
           "url": "https://github.com/obra/superpowers/issues/2332",
           "score": 6,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-645-jottr",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jottr",
+          "date": "2026-03-06",
+          "text": "Feature request: opt-in mode that disables auto-triggering # Feature request: opt-in mode that disables auto-triggering ## Problem Installing Superpowers changes Claude Code's default behavior globally. The SessionStart hook injects the `using-superpowers` meta-skill into every session, mandating skill checks before any response. There's no way to keep skills available via slash commands while leaving Claude's default behavior intact. Users who want to evaluate Superpowers incrementally — or only use it for specific workflows — must manually edit `session-start` after each install/update. ## P",
+          "url": "https://github.com/obra/superpowers/issues/645",
+          "score": 5,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2197-swift22",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Swift22",
+          "date": "2026-08-23",
+          "text": "OpenCode: bootstrap not injected in non-interactive `opencode run` sessions (skills still register) ## Environment - superpowers v6.3.0 (also reproduced on v6.0.3), installed as an OpenCode plugin via `superpowers@git+https://github.com/obra/superpowers.git` - opencode CLI 1.18.21, macOS (darwin 24.x) ## Summary With the plugin loaded from global config, the `config` hook fires and all 14 skills register — but the `using-superpowers` bootstrap never reaches sessions started with non-interactive `opencode run`. Interactive (TUI) sessions on the same machine, same plugin, same config, do get the",
+          "url": "https://github.com/obra/superpowers/issues/2197",
+          "score": 1,
           "sentiment": "negative"
         }
       ]

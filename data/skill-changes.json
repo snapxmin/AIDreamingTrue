@@ -1,15 +1,5 @@
 {
-  "generatedAt": "2026-09-22T05:13:19Z",
+  "generatedAt": "2026-09-23T04:57:31Z",
   "isBaselineRun": false,
-  "changes": [
-    {
-      "type": "added",
-      "key": "awesome-copilot/api-breaking-change-detector",
-      "ecosystem": "awesome-copilot",
-      "slug": "api-breaking-change-detector",
-      "displayName": "Api Breaking Change Detector",
-      "summary": "生态新增 Skill：Api Breaking Change Detector",
-      "detectedAt": "2026-09-22T05:14:37Z"
-    }
-  ]
+  "changes": []
 }
