@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-23T05:00:20Z",
+    "lastUpdated": "2026-09-24T05:10:30Z",
     "skillCount": 20,
-    "totalComments": 58,
+    "totalComments": 61,
     "sources": [
       "hacker-news",
       "github",
@@ -15,7 +15,7 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2332-teashaman-cyber",
@@ -40,6 +40,17 @@
           "sentiment": "negative"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2372-aimansour",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "aimansour",
+          "date": "2026-09-23",
+          "text": "Codex Desktop: brainstorming approval gates skipped after skill read (6.4.1) - [x] I searched open and closed issues. This is not an exact duplicate. Closest: #1441 reports a similar gate skip on Claude Code auto mode with Superpowers 5.0.7; it was closed after a non-reproduction on another Claude Code version. #1895 asks for an explicitly non-interactive mode. This case is an interactive Codex Desktop session using Superpowers 6.4.1, with no user opt-in to bypass reviews. ## Environment | Field | Value | Provenance | |---|---|---| | Superpowers | 6.4.1 | Installed plugin path in the session; ",
+          "url": "https://github.com/obra/superpowers/issues/2372",
+          "score": 2,
+          "sentiment": "neutral"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2197-swift22",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -56,7 +67,7 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2332-teashaman-cyber",
@@ -68,6 +79,17 @@
           "url": "https://github.com/obra/superpowers/issues/2332",
           "score": 6,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2372-aimansour",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "aimansour",
+          "date": "2026-09-23",
+          "text": "Codex Desktop: brainstorming approval gates skipped after skill read (6.4.1) - [x] I searched open and closed issues. This is not an exact duplicate. Closest: #1441 reports a similar gate skip on Claude Code auto mode with Superpowers 5.0.7; it was closed after a non-reproduction on another Claude Code version. #1895 asks for an explicitly non-interactive mode. This case is an interactive Codex Desktop session using Superpowers 6.4.1, with no user opt-in to bypass reviews. ## Environment | Field | Value | Provenance | |---|---|---| | Superpowers | 6.4.1 | Installed plugin path in the session; ",
+          "url": "https://github.com/obra/superpowers/issues/2372",
+          "score": 2,
+          "sentiment": "neutral"
         }
       ]
     },
@@ -75,7 +97,7 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2309-teashaman-cyber",
@@ -100,6 +122,17 @@
           "sentiment": "negative"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2372-aimansour",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "aimansour",
+          "date": "2026-09-23",
+          "text": "Codex Desktop: brainstorming approval gates skipped after skill read (6.4.1) - [x] I searched open and closed issues. This is not an exact duplicate. Closest: #1441 reports a similar gate skip on Claude Code auto mode with Superpowers 5.0.7; it was closed after a non-reproduction on another Claude Code version. #1895 asks for an explicitly non-interactive mode. This case is an interactive Codex Desktop session using Superpowers 6.4.1, with no user opt-in to bypass reviews. ## Environment | Field | Value | Provenance | |---|---|---| | Superpowers | 6.4.1 | Installed plugin path in the session; ",
+          "url": "https://github.com/obra/superpowers/issues/2372",
+          "score": 2,
+          "sentiment": "neutral"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2368-tonyaw",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -116,7 +149,7 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2277-caarles00",
@@ -127,17 +160,6 @@
           "text": "systematic-debugging ships its pressure-test fixtures inside the skill directory; they open with \"This is a real scenario. You must choose and act\" - [x] I searched existing issues and this is not a duplicate *(searched \"pressure test\", fixture, CREATION-LOG, test-academic — open and closed)* ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | skill fetched from `main` via skills.sh; directory listing re-checked against `b36e082` | | Harness (Claude Code, Cursor, etc.) | Claude Code, VS Code extension | | Harness version | 2.1.252 (Claude Code) | | Your model ",
           "url": "https://github.com/obra/superpowers/issues/2277",
           "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2264-wnqgphqn5t-cmyk",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "wnqgphqn5t-cmyk",
-          "date": "2026-09-06",
-          "text": "7 additive rules for superpowers skills (from real-session postmortems) These are seven small, additive rules for existing `superpowers:*` skills, each distilled from a concrete failure in real agent sessions. Grouping them into one issue rather than filing seven — happy to split into PRs per skill if you'd prefer. Each block is: the failure that happened → the proposed rule → the one-line principle. No structural changes, just rules added to sections that already exist. --- ## 1. `verification-before-completion` — verify a set-wide fix by count against an external source of truth **Failure.**",
-          "url": "https://github.com/obra/superpowers/issues/2264",
-          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -291,19 +313,8 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2332-teashaman-cyber",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "TeaShaman-cyber",
-          "date": "2026-09-18",
-          "text": "Workflow has first-class specs/plans but no durable QA/acceptance artifact layer - [x] I searched open and closed issues and did not find this exact artifact/lifecycle gap. ## What problem does this solve? Superpowers has first-class durable artifacts for the front half of development: ```text brainstorming -> design/spec writing-plans -> implementation plan executing-plans / SDD -> implementation ``` It also has strong *procedural* verification skills such as `test-driven-development`, `verification-before-completion`, `requesting-code-review`, and `finishing-a-development-branch`. What is mi",
-          "url": "https://github.com/obra/superpowers/issues/2332",
-          "score": 6,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-645-jottr",
           "source": "github",
@@ -316,6 +327,17 @@
           "sentiment": "negative"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2372-aimansour",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "aimansour",
+          "date": "2026-09-23",
+          "text": "Codex Desktop: brainstorming approval gates skipped after skill read (6.4.1) - [x] I searched open and closed issues. This is not an exact duplicate. Closest: #1441 reports a similar gate skip on Claude Code auto mode with Superpowers 5.0.7; it was closed after a non-reproduction on another Claude Code version. #1895 asks for an explicitly non-interactive mode. This case is an interactive Codex Desktop session using Superpowers 6.4.1, with no user opt-in to bypass reviews. ## Environment | Field | Value | Provenance | |---|---|---| | Superpowers | 6.4.1 | Installed plugin path in the session; ",
+          "url": "https://github.com/obra/superpowers/issues/2372",
+          "score": 2,
+          "sentiment": "neutral"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2197-swift22",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -323,6 +345,17 @@
           "date": "2026-08-23",
           "text": "OpenCode: bootstrap not injected in non-interactive `opencode run` sessions (skills still register) ## Environment - superpowers v6.3.0 (also reproduced on v6.0.3), installed as an OpenCode plugin via `superpowers@git+https://github.com/obra/superpowers.git` - opencode CLI 1.18.21, macOS (darwin 24.x) ## Summary With the plugin loaded from global config, the `config` hook fires and all 14 skills register — but the `using-superpowers` bootstrap never reaches sessions started with non-interactive `opencode run`. Interactive (TUI) sessions on the same machine, same plugin, same config, do get the",
           "url": "https://github.com/obra/superpowers/issues/2197",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2310-krisk248",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "krisk248",
+          "date": "2026-09-17",
+          "text": "SessionStart hooks (run-hook.cmd, session-start) fail when PATH is broken: dirname/cat/bash not found ## Summary The `SessionStart` hook scripts (`hooks/run-hook.cmd` and `hooks/session-start`) call external commands (`dirname`, `cat`, and re-invoke `bash` via `PATH` lookup) that are not guaranteed to be resolvable in the environment Claude Code spawns hooks in. On a system where `PATH` is corrupted/empty at hook-spawn time (a known Claude Code issue — anthropics/claude-code#43127 and related), these hooks fail outright: ``` SessionStart:startup hook error Failed with non-blocking status code:",
+          "url": "https://github.com/obra/superpowers/issues/2310",
           "score": 1,
           "sentiment": "negative"
         }
@@ -581,17 +614,6 @@
       "feedbackCount": 6,
       "comments": [
         {
-          "id": "github-https-github-com-anthropics-skills-issues-1721-jparker-rg",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jparker-RG",
-          "date": "2026-09-03",
-          "text": "skill-creator: trigger detection reports 0% recall for every skill ## Summary `skill-creator`'s trigger evaluation reports `precision=100% recall=0%` for every skill, regardless of how good the description is. `run_loop` then \"improves\" the description against evidence that every positive query failed, and reports the result as an optimisation. This fails silently. Nothing errors, and the output looks like a legitimate measurement of a bad description. ## Cause `run_single_query()` in `skills/skill-creator/scripts/run_eval.py` decides whether the skill triggered by watching the `claude -p` eve",
-          "url": "https://github.com/anthropics/skills/issues/1721",
-          "score": 3,
-          "sentiment": "neutral"
-        },
-        {
           "id": "github-https-github-com-anthropics-skills-issues-1412-guala19",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -643,7 +665,18 @@
           "date": "2026-09-19",
           "text": "skill-creator: eval-viewer renders untrusted content via sheet_to_html innerHTML and unsandboxed data: URI iframes **Files:** `skills/skill-creator/eval-viewer/viewer.html` (current main, blob 6d8e963) Two further sinks in the same display path as #1394, not covered by #1394, #1788 or #1789. **1. Spreadsheet preview: `XLSX.utils.sheet_to_html` output assigned with `innerHTML` (`renderXlsx`, line 849)** ```js const htmlStr = XLSX.utils.sheet_to_html(ws, { editable: false }); const wrapper = document.createElement(\"div\"); wrapper.innerHTML = htmlStr; ``` `sheet_to_html` escapes cell text, but ce",
           "url": "https://github.com/anthropics/skills/issues/1793",
-          "score": 0,
+          "score": 1,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1817-sxh313",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "sxh313",
+          "date": "2026-09-24",
+          "text": "eval_review.html: \"+ Add Query\" focuses the last row, so typing overwrites an existing query ## Summary `skills/skill-creator/assets/eval_review.html` — clicking **+ Add Query** focuses the **last row in the DOM**, but `render()` sorts the should-trigger group above the should-not-trigger group, so a newly added row (which defaults to `should_trigger: true`) is never last whenever the set contains any negative query. The user therefore types the new query into an *existing* row, silently overwriting it, and the row that was actually added stays empty — so `exportEvalSet()` drops it. Both the o",
+          "url": "https://github.com/anthropics/skills/issues/1817",
+          "score": 1,
           "sentiment": "neutral"
         }
       ]
