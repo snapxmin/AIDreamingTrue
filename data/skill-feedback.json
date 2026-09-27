@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-26T05:18:26Z",
+    "lastUpdated": "2026-09-27T05:33:49Z",
     "skillCount": 20,
-    "totalComments": 67,
+    "totalComments": 56,
     "sources": [
       "hacker-news",
       "github",
@@ -15,51 +15,18 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 4,
+      "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2332-teashaman-cyber",
+          "id": "github-https-github-com-obra-superpowers-issues-2372-aimansour",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "TeaShaman-cyber",
-          "date": "2026-09-18",
-          "text": "Workflow has first-class specs/plans but no durable QA/acceptance artifact layer - [x] I searched open and closed issues and did not find this exact artifact/lifecycle gap. ## What problem does this solve? Superpowers has first-class durable artifacts for the front half of development: ```text brainstorming -> design/spec writing-plans -> implementation plan executing-plans / SDD -> implementation ``` It also has strong *procedural* verification skills such as `test-driven-development`, `verification-before-completion`, `requesting-code-review`, and `finishing-a-development-branch`. What is mi",
-          "url": "https://github.com/obra/superpowers/issues/2332",
-          "score": 8,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2362-andrew-yian",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "andrew-yian",
-          "date": "2026-09-22",
-          "text": "brainstorming visual companion: a screen containing $' (e.g. 'NT$' + amount) has its JS rendered as page text — wrapInFrame uses screen HTML as a replace() replacement string - [x] I searched existing issues and this is not a duplicate ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.3.0 | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | 2.1.278 | | Your model + version | Claude Opus 5 (1M context) — `claude-opus-5[1m]` | | All plugins installed | superpowers, claude-md-management, code-review, code-simplifier, commit-commands, co",
-          "url": "https://github.com/obra/superpowers/issues/2362",
-          "score": 5,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "haruntekin89",
-          "date": "2026-09-24",
-          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
-          "url": "https://github.com/obra/superpowers/issues/2377",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2378-technicalpickles",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "technicalpickles",
-          "date": "2026-09-24",
-          "text": "brainstorming: spec metadata renders as one line, and there's no design-doc template - [x] I searched existing issues and this has not been proposed before (Closest hit is #206, a skill grading report that dinged brainstorming for \"missing input/output examples or design document template\". Nothing about the rendering problem itself.) ## What problem does this solve? I use the architectural path of brainstorming a lot across my personal projects, and the specs it writes open with a metadata block like this (trimmed and renamed from a real one): ``` # Design: add a sync worker Date: 2026-09-23 ",
-          "url": "https://github.com/obra/superpowers/issues/2378",
-          "score": 0,
-          "sentiment": "negative"
+          "author": "aimansour",
+          "date": "2026-09-23",
+          "text": "Codex Desktop: brainstorming approval gates skipped after skill read (6.4.1) - [x] I searched open and closed issues. This is not an exact duplicate. Closest: #1441 reports a similar gate skip on Claude Code auto mode with Superpowers 5.0.7; it was closed after a non-reproduction on another Claude Code version. #1895 asks for an explicitly non-interactive mode. This case is an interactive Codex Desktop session using Superpowers 6.4.1, with no user opt-in to bypass reviews. ## Environment | Field | Value | Provenance | |---|---|---| | Superpowers | 6.4.1 | Installed plugin path in the session; ",
+          "url": "https://github.com/obra/superpowers/issues/2372",
+          "score": 4,
+          "sentiment": "neutral"
         }
       ]
     },
@@ -67,69 +34,6 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 5,
-      "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-895-qdon314",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "qdon314",
-          "date": "2026-03-23",
-          "text": "writing-plans: plans over-specify implementation, leaving no room for executor judgment - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? When using `writing-plans` to plan a multi-task implementation, the generated plan contained complete implementation code — full function bodies, 70-line test files, exact shell commands, and step-by-step TDD sequences per task. The executor (`executing-plans` / `subagent-driven-development`) had no decisions to make — it was copy-pasting code from the plan rather than engineering a solution. This caused ",
-          "url": "https://github.com/obra/superpowers/issues/895",
-          "score": 22,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2332-teashaman-cyber",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "TeaShaman-cyber",
-          "date": "2026-09-18",
-          "text": "Workflow has first-class specs/plans but no durable QA/acceptance artifact layer - [x] I searched open and closed issues and did not find this exact artifact/lifecycle gap. ## What problem does this solve? Superpowers has first-class durable artifacts for the front half of development: ```text brainstorming -> design/spec writing-plans -> implementation plan executing-plans / SDD -> implementation ``` It also has strong *procedural* verification skills such as `test-driven-development`, `verification-before-completion`, `requesting-code-review`, and `finishing-a-development-branch`. What is mi",
-          "url": "https://github.com/obra/superpowers/issues/2332",
-          "score": 8,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2046-thatht137",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Thatht137",
-          "date": "2026-07-27",
-          "text": "writing-plans can mistake structural RED for behavior-test evidence # Bug report: writing-plans can treat an import error as proof of a behavior test - [x] I searched existing open and closed issues and pull requests. Related: #711, #853, and #1576. None addresses the distinction between structural RED evidence and a behavior assertion actually rejecting a wrong result. ## Environment | Field | Value | |-------|-------| | Superpowers version | 6.2.0, commit `3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9` | | Harness | OpenAI Codex CLI | | Harness version | `codex-cli 0.145.0` | | Model | OpenAI Cod",
-          "url": "https://github.com/obra/superpowers/issues/2046",
-          "score": 5,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "haruntekin89",
-          "date": "2026-09-24",
-          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
-          "url": "https://github.com/obra/superpowers/issues/2377",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "kpdbcdt",
-          "date": "2026-09-25",
-          "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
-          "url": "https://github.com/obra/superpowers/issues/2386",
-          "score": 0,
-          "sentiment": "negative"
-        }
-      ]
-    },
-    "superpowers/writing-plans": {
-      "slug": "writing-plans",
-      "ecosystem": "superpowers",
-      "displayName": "Writing Plans",
       "feedbackCount": 3,
       "comments": [
         {
@@ -140,7 +44,7 @@
           "date": "2026-03-23",
           "text": "writing-plans: plans over-specify implementation, leaving no room for executor judgment - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? When using `writing-plans` to plan a multi-task implementation, the generated plan contained complete implementation code — full function bodies, 70-line test files, exact shell commands, and step-by-step TDD sequences per task. The executor (`executing-plans` / `subagent-driven-development`) had no decisions to make — it was copy-pasting code from the plan rather than engineering a solution. This caused ",
           "url": "https://github.com/obra/superpowers/issues/895",
-          "score": 22,
+          "score": 24,
           "sentiment": "negative"
         },
         {
@@ -151,18 +55,48 @@
           "date": "2026-07-27",
           "text": "writing-plans can mistake structural RED for behavior-test evidence # Bug report: writing-plans can treat an import error as proof of a behavior test - [x] I searched existing open and closed issues and pull requests. Related: #711, #853, and #1576. None addresses the distinction between structural RED evidence and a behavior assertion actually rejecting a wrong result. ## Environment | Field | Value | |-------|-------| | Superpowers version | 6.2.0, commit `3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9` | | Harness | OpenAI Codex CLI | | Harness version | `codex-cli 0.145.0` | | Model | OpenAI Cod",
           "url": "https://github.com/obra/superpowers/issues/2046",
-          "score": 5,
+          "score": 6,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
+          "id": "github-https-github-com-obra-superpowers-issues-2372-aimansour",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "kpdbcdt",
-          "date": "2026-09-25",
-          "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
-          "url": "https://github.com/obra/superpowers/issues/2386",
-          "score": 0,
+          "author": "aimansour",
+          "date": "2026-09-23",
+          "text": "Codex Desktop: brainstorming approval gates skipped after skill read (6.4.1) - [x] I searched open and closed issues. This is not an exact duplicate. Closest: #1441 reports a similar gate skip on Claude Code auto mode with Superpowers 5.0.7; it was closed after a non-reproduction on another Claude Code version. #1895 asks for an explicitly non-interactive mode. This case is an interactive Codex Desktop session using Superpowers 6.4.1, with no user opt-in to bypass reviews. ## Environment | Field | Value | Provenance | |---|---|---| | Superpowers | 6.4.1 | Installed plugin path in the session; ",
+          "url": "https://github.com/obra/superpowers/issues/2372",
+          "score": 4,
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    "superpowers/writing-plans": {
+      "slug": "writing-plans",
+      "ecosystem": "superpowers",
+      "displayName": "Writing Plans",
+      "feedbackCount": 2,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2372-aimansour",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "aimansour",
+          "date": "2026-09-23",
+          "text": "Codex Desktop: brainstorming approval gates skipped after skill read (6.4.1) - [x] I searched open and closed issues. This is not an exact duplicate. Closest: #1441 reports a similar gate skip on Claude Code auto mode with Superpowers 5.0.7; it was closed after a non-reproduction on another Claude Code version. #1895 asks for an explicitly non-interactive mode. This case is an interactive Codex Desktop session using Superpowers 6.4.1, with no user opt-in to bypass reviews. ## Environment | Field | Value | Provenance | |---|---|---| | Superpowers | 6.4.1 | Installed plugin path in the session; ",
+          "url": "https://github.com/obra/superpowers/issues/2372",
+          "score": 4,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2178-lonewolf36",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "LoneWolf36",
+          "date": "2026-08-19",
+          "text": "`writing-plans` template teaches line-number citations, which go stale by construction ## Summary Three text defects in `skills/writing-plans/SKILL.md` cause plans to carry citations that are wrong by the time anyone executes them. The first is the serious one: the Task Structure template demonstrates line-range citations, and models copy the demonstrated form. In one multi-session feature I found **eleven** stale citations in a single plan, and the two worst pointed roughly 30 lines past the symbol they named into an unrelated request class. An agent editing by those line numbers would have m",
+          "url": "https://github.com/obra/superpowers/issues/2178",
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -174,24 +108,24 @@
       "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
+          "id": "github-https-github-com-obra-superpowers-issues-2277-caarles00",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "haruntekin89",
-          "date": "2026-09-24",
-          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
-          "url": "https://github.com/obra/superpowers/issues/2377",
-          "score": 1,
+          "author": "Caarles00",
+          "date": "2026-09-10",
+          "text": "systematic-debugging ships its pressure-test fixtures inside the skill directory; they open with \"This is a real scenario. You must choose and act\" - [x] I searched existing issues and this is not a duplicate *(searched \"pressure test\", fixture, CREATION-LOG, test-academic — open and closed)* ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | skill fetched from `main` via skills.sh; directory listing re-checked against `b36e082` | | Harness (Claude Code, Cursor, etc.) | Claude Code, VS Code extension | | Harness version | 2.1.252 (Claude Code) | | Your model ",
+          "url": "https://github.com/obra/superpowers/issues/2277",
+          "score": 3,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2375-kennyg-g",
+          "id": "github-https-github-com-obra-superpowers-issues-2266-slowernet",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "kennyg-g",
-          "date": "2026-09-24",
-          "text": "systematic-debugging: multi-layer diagnostic example prints the secret it means to check - [x] I searched existing issues and this is not a duplicate ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | v6.4.1 (`5bf4e78`) | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | 2.1.222 | | Your model + version | Claude Opus 5.5, reviewing the skill source; a human reviewed this report before filing | | All plugins installed | N/A: found by reading `skills/systematic-debugging/SKILL.md`, not at runtime | | OS + shell | Windows 11, Git Bash (th",
-          "url": "https://github.com/obra/superpowers/issues/2375",
+          "author": "slowernet",
+          "date": "2026-09-06",
+          "text": "Fixes keep creating new bugs because no skill requires tracing what a fix changes - [x] I searched existing issues and this has not been proposed before Closest prior art: #2145 B1 (enumerate readers of a stale field; the *root cause's* blast radius during diagnosis, where this is the *fix's*), #2264 §5 (re-run the objective check after a delegated edit; a dynamic check, where this is static), #2113 §4 (coverage gaps *between* tasks, not gaps *created by* a fix), PR #2198 (trace a bad value upstream to its producer; opposite direction), and closed #2066 (a \"blast radius\" row for spec self-revi",
+          "url": "https://github.com/obra/superpowers/issues/2266",
           "score": 1,
           "sentiment": "negative"
         }
@@ -201,28 +135,17 @@
       "slug": "verification-before-completion",
       "ecosystem": "superpowers",
       "displayName": "Verification Before Completion",
-      "feedbackCount": 4,
+      "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2332-teashaman-cyber",
+          "id": "github-https-github-com-obra-superpowers-issues-429-evrenverse",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "TeaShaman-cyber",
-          "date": "2026-09-18",
-          "text": "Workflow has first-class specs/plans but no durable QA/acceptance artifact layer - [x] I searched open and closed issues and did not find this exact artifact/lifecycle gap. ## What problem does this solve? Superpowers has first-class durable artifacts for the front half of development: ```text brainstorming -> design/spec writing-plans -> implementation plan executing-plans / SDD -> implementation ``` It also has strong *procedural* verification skills such as `test-driven-development`, `verification-before-completion`, `requesting-code-review`, and `finishing-a-development-branch`. What is mi",
-          "url": "https://github.com/obra/superpowers/issues/2332",
-          "score": 8,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2231-abhineshkr",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "abhineshkr",
-          "date": "2026-08-31",
-          "text": "skills/verification-before-completion: `git checkout` in a verified-red loop destroys uncommitted work *Found in real use over ~10 days on a single large project, captured in a skill-observation log and triaged in a review on 2026-08-31. Filed upstream rather than patched locally because the plugin is version-pinned — a local edit is erased on the next update.* *Version: **superpowers 6.3.0 (`b36e0829c6d0`), via the claude-plugins-official marketplace**. Each item below gives what happened, a concrete suggested change, and the generalisable principle. Happy to open a PR for any of them if you'",
-          "url": "https://github.com/obra/superpowers/issues/2231",
-          "score": 1,
+          "author": "evrenverse",
+          "date": "2026-02-05",
+          "text": "Support for Claude Code Agent Teams (TeammateTool, SendMessage, TaskList) ## Is your feature request related to a problem? Please describe. Claude Code 2.1.32+ introduced experimental **Agent Teams** — a feature that allows coordinating multiple Claude Code instances as a team with a lead, teammates, shared task lists, and inter-agent messaging. See the [official documentation](https://code.claude.com/docs/en/agent-teams). Superpowers currently has skills for subagent-driven development (`subagent-driven-development`, `dispatching-parallel-agents`) but no awareness of or support for the newer ",
+          "url": "https://github.com/obra/superpowers/issues/429",
+          "score": 23,
           "sentiment": "negative"
         },
         {
@@ -233,18 +156,7 @@
           "date": "2026-09-06",
           "text": "7 additive rules for superpowers skills (from real-session postmortems) These are seven small, additive rules for existing `superpowers:*` skills, each distilled from a concrete failure in real agent sessions. Grouping them into one issue rather than filing seven — happy to split into PRs per skill if you'd prefer. Each block is: the failure that happened → the proposed rule → the one-line principle. No structural changes, just rules added to sections that already exist. --- ## 1. `verification-before-completion` — verify a set-wide fix by count against an external source of truth **Failure.**",
           "url": "https://github.com/obra/superpowers/issues/2264",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "haruntekin89",
-          "date": "2026-09-24",
-          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
-          "url": "https://github.com/obra/superpowers/issues/2377",
-          "score": 1,
+          "score": 3,
           "sentiment": "negative"
         }
       ]
@@ -253,40 +165,62 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 3,
+      "feedbackCount": 5,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-895-qdon314",
+          "id": "github-https-github-com-obra-superpowers-issues-2207-kareemsasa",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "qdon314",
-          "date": "2026-03-23",
-          "text": "writing-plans: plans over-specify implementation, leaving no room for executor judgment - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? When using `writing-plans` to plan a multi-task implementation, the generated plan contained complete implementation code — full function bodies, 70-line test files, exact shell commands, and step-by-step TDD sequences per task. The executor (`executing-plans` / `subagent-driven-development`) had no decisions to make — it was copy-pasting code from the plan rather than engineering a solution. This caused ",
-          "url": "https://github.com/obra/superpowers/issues/895",
-          "score": 22,
+          "author": "kareemsasa",
+          "date": "2026-08-26",
+          "text": "`finishing-a-development-branch` can silently delete an SDD workspace: ignored files don't make a worktree dirty **Skills:** `finishing-a-development-branch` (Step 6), interacting with `subagent-driven-development` **Versions:** reproduced against 6.3.0; the same code path and wording are in 6.2.0 **Environment:** git 2.55.0, Linux ## Summary Step 6 of `finishing-a-development-branch` protects uncommitted work by relying on `git worktree remove` to refuse: > **If removal is refused** (`contains modified or untracked files`): the worktree holds files that > exist nowhere else — uncommitted plan",
+          "url": "https://github.com/obra/superpowers/issues/2207",
+          "score": 1,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1044-peiledoir",
+          "id": "github-https-github-com-obra-superpowers-issues-2253-stevesims",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "peiledoir",
-          "date": "2026-04-03",
-          "text": "writing-plans: execution handoff should respect user-defined execution modes ## Problem The `writing-plans` skill hardcodes two execution options in its \"Execution Handoff\" section: 1. Subagent-Driven (recommended) 2. Inline Execution The plan header template also bakes this in: > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans Users who define custom execution modes in CLAUDE.md (e.g., agent teams with Builder/Inspector/Director roles) get overridden by the skill's prescriptive flow — even though superpowers",
-          "url": "https://github.com/obra/superpowers/issues/1044",
-          "score": 2,
+          "author": "stevesims",
+          "date": "2026-09-04",
+          "text": "subagent-driven-development: Finish deletes the only record of deferred findings — parked/deferred items need a durable export *Found in real use on a 16-task run of `subagent-driven-development` (2026-09-03/04). Filed upstream rather than patched locally because the plugin is version-pinned — a local edit is erased on the next update.* *Version: **superpowers 6.3.0, via the claude-plugins-official marketplace**.* --- ## What happened A 16-task plan ran end to end exactly as the skill prescribes. Along the way the per-task and final reviews produced about ten Minor findings — stale docstrings ",
+          "url": "https://github.com/obra/superpowers/issues/2253",
+          "score": 1,
           "sentiment": "neutral"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
+          "id": "github-https-github-com-obra-superpowers-issues-2266-slowernet",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "haruntekin89",
-          "date": "2026-09-24",
-          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
-          "url": "https://github.com/obra/superpowers/issues/2377",
+          "author": "slowernet",
+          "date": "2026-09-06",
+          "text": "Fixes keep creating new bugs because no skill requires tracing what a fix changes - [x] I searched existing issues and this has not been proposed before Closest prior art: #2145 B1 (enumerate readers of a stale field; the *root cause's* blast radius during diagnosis, where this is the *fix's*), #2264 §5 (re-run the objective check after a delegated edit; a dynamic check, where this is static), #2113 §4 (coverage gaps *between* tasks, not gaps *created by* a fix), PR #2198 (trace a bad value upstream to its producer; opposite direction), and closed #2066 (a \"blast radius\" row for spec self-revi",
+          "url": "https://github.com/obra/superpowers/issues/2266",
           "score": 1,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2273-samohod4ik",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "samohod4ik",
+          "date": "2026-09-09",
+          "text": "SDD: Approve + Important triggers mandatory re-review loop <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [x] I searched existing issues and this has not been proposed before Related (different problem): #2112 documents unbounded review/test ratcheting across many rounds (addressed in v6.3.0 via scoped re-review + round-5 breaker). This issue is narrower: a **single** task already returned **Task quality: Approved** / “no fixes required to accept,”",
+          "url": "https://github.com/obra/superpowers/issues/2273",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2344-drewzing",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "drewzing",
+          "date": "2026-09-19",
+          "text": "RELEASE-NOTES say a deleted .superpowers/sdd/progress.md can be recovered from git log; it cannot The v6.1.x release note for #1780 (\"SDD scratch files moved out of `.git/`\") ends: > because the workspace is git-ignored working-tree scratch, `git clean -fdx` will delete the progress ledger; recover from `git log` if that happens. `skills/subagent-driven-development/scripts/sdd-workspace` runs `printf '*\\n' > \"$dir/.gitignore\"` on every invocation, so nothing under `.superpowers/sdd/` is ever committed. There is no history to recover the ledger from: `git log` shows the commits the ledger descr",
+          "url": "https://github.com/obra/superpowers/issues/2344",
+          "score": 1,
+          "sentiment": "neutral"
         }
       ]
     },
@@ -297,25 +231,25 @@
       "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2332-teashaman-cyber",
+          "id": "github-https-github-com-obra-superpowers-issues-2034-vida994",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "TeaShaman-cyber",
-          "date": "2026-09-18",
-          "text": "Workflow has first-class specs/plans but no durable QA/acceptance artifact layer - [x] I searched open and closed issues and did not find this exact artifact/lifecycle gap. ## What problem does this solve? Superpowers has first-class durable artifacts for the front half of development: ```text brainstorming -> design/spec writing-plans -> implementation plan executing-plans / SDD -> implementation ``` It also has strong *procedural* verification skills such as `test-driven-development`, `verification-before-completion`, `requesting-code-review`, and `finishing-a-development-branch`. What is mi",
-          "url": "https://github.com/obra/superpowers/issues/2332",
-          "score": 8,
-          "sentiment": "negative"
+          "author": "vida994",
+          "date": "2026-07-24",
+          "text": "Subagent dispatches outside SDD have no model guidance, so they inherit the session model ### Summary `subagent-driven-development` treats the subagent model as a required, explicit choice. Every other skill that dispatches a subagent omits it entirely, so those dispatches silently inherit the session model — the exact failure SDD's own guidance calls out. ### The inconsistency SDD's prompt templates make it a required field: ``` Subagent (general-purpose): model: [MODEL — REQUIRED: choose per SKILL.md Model Selection; an omitted model silently inherits the session's most expensive one] ``` an",
+          "url": "https://github.com/obra/superpowers/issues/2034",
+          "score": 2,
+          "sentiment": "positive"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2316-teashaman-cyber",
+          "id": "github-https-github-com-obra-superpowers-issues-2266-slowernet",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "TeaShaman-cyber",
-          "date": "2026-09-17",
-          "text": "finishing-a-development-branch: PR review has no lifecycle transition back to merge/release - [x] I searched open and closed issues and did not find this exact lifecycle gap. ## What problem does this solve? `finishing-a-development-branch` has a clear entry path for completed implementation: 1. verify tests; 2. choose merge / create PR / keep branch; 3. if Option 2 is chosen, push and create a PR; 4. **keep the worktree because the human partner iterates on PR feedback there.** The gap is what happens **after that feedback is addressed**. There is no explicit transition from: ```text PR opene",
-          "url": "https://github.com/obra/superpowers/issues/2316",
-          "score": 2,
+          "author": "slowernet",
+          "date": "2026-09-06",
+          "text": "Fixes keep creating new bugs because no skill requires tracing what a fix changes - [x] I searched existing issues and this has not been proposed before Closest prior art: #2145 B1 (enumerate readers of a stale field; the *root cause's* blast radius during diagnosis, where this is the *fix's*), #2264 §5 (re-run the objective check after a delegated edit; a dynamic check, where this is static), #2113 §4 (coverage gaps *between* tasks, not gaps *created by* a fix), PR #2198 (trace a bad value upstream to its producer; opposite direction), and closed #2066 (a \"blast radius\" row for spec self-revi",
+          "url": "https://github.com/obra/superpowers/issues/2266",
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -324,19 +258,8 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 5,
+      "feedbackCount": 3,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2332-teashaman-cyber",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "TeaShaman-cyber",
-          "date": "2026-09-18",
-          "text": "Workflow has first-class specs/plans but no durable QA/acceptance artifact layer - [x] I searched open and closed issues and did not find this exact artifact/lifecycle gap. ## What problem does this solve? Superpowers has first-class durable artifacts for the front half of development: ```text brainstorming -> design/spec writing-plans -> implementation plan executing-plans / SDD -> implementation ``` It also has strong *procedural* verification skills such as `test-driven-development`, `verification-before-completion`, `requesting-code-review`, and `finishing-a-development-branch`. What is mi",
-          "url": "https://github.com/obra/superpowers/issues/2332",
-          "score": 8,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2372-aimansour",
           "source": "github",
@@ -345,7 +268,7 @@
           "date": "2026-09-23",
           "text": "Codex Desktop: brainstorming approval gates skipped after skill read (6.4.1) - [x] I searched open and closed issues. This is not an exact duplicate. Closest: #1441 reports a similar gate skip on Claude Code auto mode with Superpowers 5.0.7; it was closed after a non-reproduction on another Claude Code version. #1895 asks for an explicitly non-interactive mode. This case is an interactive Codex Desktop session using Superpowers 6.4.1, with no user opt-in to bypass reviews. ## Environment | Field | Value | Provenance | |---|---|---| | Superpowers | 6.4.1 | Installed plugin path in the session; ",
           "url": "https://github.com/obra/superpowers/issues/2372",
-          "score": 2,
+          "score": 4,
           "sentiment": "neutral"
         },
         {
@@ -356,30 +279,19 @@
           "date": "2026-08-04",
           "text": "hooks/session-start: six subprocess spawns cost ~2s on Windows (7.7x slower; byte-identical output without them) `hooks/session-start` spawns six subprocesses to do work that needs none. On Linux/macOS that is cheap enough to be invisible. On Windows, where `fork()` is emulated, it dominates: the hook takes **~2.25s** instead of **~0.29s**, and the whole difference is process-spawn overhead. Removing the spawns produces **byte-identical output** (same SHA-256, same length, same exit code). ## Environment | | | |---|---| | OS | Windows 11 Pro 26200 | | Shell | Git for Windows bash 5.2 (`C:\\Prog",
           "url": "https://github.com/obra/superpowers/issues/2081",
-          "score": 1,
+          "score": 2,
           "sentiment": "neutral"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
+          "id": "github-https-github-com-obra-superpowers-issues-2247-medvegy",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "haruntekin89",
-          "date": "2026-09-24",
-          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
-          "url": "https://github.com/obra/superpowers/issues/2377",
+          "author": "medvegy",
+          "date": "2026-09-02",
+          "text": "Antigravity (agy): plugin hooks.json fails to parse — the using-superpowers bootstrap never loads ## Summary On Antigravity CLI (`agy` 1.1.24) the plugin's `hooks/hooks.json` is not merely unfired for want of a `SessionStart` event — **it fails to parse**. `agy plugin install` reports `✔ hooks : 1 processed`, but agy rejects the file at load time. Antigravity users therefore get the 14 skills on disk with no bootstrap, which by this project's own porting guide means \"the skill files are inert — present on disk, never invoked.\" ## Versions - superpowers 6.3.0, installed with `agy plugin install",
+          "url": "https://github.com/obra/superpowers/issues/2247",
           "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "kpdbcdt",
-          "date": "2026-09-25",
-          "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
-          "url": "https://github.com/obra/superpowers/issues/2386",
-          "score": 0,
-          "sentiment": "negative"
+          "sentiment": "neutral"
         }
       ]
     },
@@ -401,15 +313,15 @@
           "sentiment": "positive"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-2058-github-actions-bot-",
+          "id": "github-https-github-com-github-awesome-copilot-issues-4022-xqliu",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "github-actions[bot]",
-          "date": "2026-06-19",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 705 resources - **Aging (14–30 days):** 26 resources - **Fresh (<14 days):** 46 resources (not listed below) --- ### 🔴 Stale Resources (>30 days since last major change) > 705 resources — collapsed for readability <details> <summary>Click to expand — 705 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instructions/nextjs-tailwind.instructions.md` | Instruction | 2025-07-02 | 352 | | `instructions/localization.instructions.md` | Instruction | 2025-07",
-          "url": "https://github.com/github/awesome-copilot/issues/2058",
-          "score": 1,
-          "sentiment": "negative"
+          "author": "xqliu",
+          "date": "2026-09-26",
+          "text": "[External Plugin]: orbi ### Plugin name orbi ### Short description Turn a conversation into a GitHub Issue with acceptance criteria an agent can verify in the repo. The skill files it with the ai-ready label so Orbi implements, reviews, merges and releases it unattended. ### GitHub repository orbi-build/orbi ### Plugin path inside the repository integrations/claude-plugin ### Ref to review v0.5.49 ### Commit SHA to review 89f4659d87ba37dcc5f932516062f8cb7b4237d8 ### Version 0.1.4 ### License identifier AGPL-3.0 ### Author name Orbi ### Author URL https://github.com/xqliu ### Homepage URL https",
+          "url": "https://github.com/github/awesome-copilot/issues/4022",
+          "score": 2,
+          "sentiment": "positive"
         },
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-2503-phodal",
@@ -655,28 +567,17 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 7,
+      "feedbackCount": 4,
       "comments": [
         {
-          "id": "github-https-github-com-anthropics-skills-issues-1383-zaesche",
+          "id": "github-https-github-com-anthropics-skills-issues-1394-griffithsbs",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "zaesche",
-          "date": "2026-07-03",
-          "text": "skill-creator: silent benchmark failures (layout mismatch, inverted delta), broken trigger evals on Windows, and skill shadowing in trigger evals Six reproducible issues in `skills/skill-creator`, found while auditing and testing the skill end-to-end. Roughly in order of impact: ## 1. SKILL.md directory layout is silently incompatible with aggregate_benchmark.py SKILL.md instructs subagents to save to `<workspace>/iteration-<N>/eval-<ID>/<config>/outputs/` and to put `grading.json` \"in each run directory\" — a flat layout with no `run-N` level. `aggregate_benchmark.py` however skips every confi",
-          "url": "https://github.com/anthropics/skills/issues/1383",
-          "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1412-guala19",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "guala19",
-          "date": "2026-07-09",
-          "text": "skill-creator: description-optimization loop burned 100% of a Max subscription in ~3 minutes — false-negative eval bug + no cost guardrails The description-optimization loop in skill-creator (scripts/run_loop.py → scripts/run_eval.py) consumed 100% of a Claude Max subscription's quota in roughly 3 minutes (121 claude -p invocations before crashing in iteration 2). Two independent problems compounded: 1. A correctness bug in run_eval.py produces false negatives (0% recall), which makes the loop believe the description never triggers, so it keeps iterating and burning quota on a problem that doe",
-          "url": "https://github.com/anthropics/skills/issues/1412",
-          "score": 2,
+          "author": "griffithsbs",
+          "date": "2026-07-05",
+          "text": "skill-creator: eval-viewer escapeHtml is not attribute-safe and is applied inconsistently (display-path XSS) ### Summary The skill-creator eval-viewer (`skills/skill-creator/eval-viewer/viewer.html`) assembles HTML by string concatenation and assigns it with `innerHTML` in `renderGrades` and `renderBenchmark`, relying on a helper `escapeHtml()` at each interpolation point. Two gaps let attacker-influenced data reach the DOM as markup: 1. **`escapeHtml()` is not attribute-safe.** It is implemented with the `textContent` → `innerHTML` round-trip, which escapes `<`, `>`, and `&` but **not** `\"` o",
+          "url": "https://github.com/anthropics/skills/issues/1394",
+          "score": 4,
           "sentiment": "negative"
         },
         {
@@ -702,17 +603,6 @@
           "sentiment": "positive"
         },
         {
-          "id": "github-https-github-com-anthropics-skills-issues-1793-hypecloudmarketing",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "HypecloudMarketing",
-          "date": "2026-09-19",
-          "text": "skill-creator: eval-viewer renders untrusted content via sheet_to_html innerHTML and unsandboxed data: URI iframes **Files:** `skills/skill-creator/eval-viewer/viewer.html` (current main, blob 6d8e963) Two further sinks in the same display path as #1394, not covered by #1394, #1788 or #1789. **1. Spreadsheet preview: `XLSX.utils.sheet_to_html` output assigned with `innerHTML` (`renderXlsx`, line 849)** ```js const htmlStr = XLSX.utils.sheet_to_html(ws, { editable: false }); const wrapper = document.createElement(\"div\"); wrapper.innerHTML = htmlStr; ``` `sheet_to_html` escapes cell text, but ce",
-          "url": "https://github.com/anthropics/skills/issues/1793",
-          "score": 1,
-          "sentiment": "neutral"
-        },
-        {
           "id": "github-https-github-com-anthropics-skills-issues-1827-ctrlcarlitos",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -720,17 +610,6 @@
           "date": "2026-09-24",
           "text": "skill-creator: description optimizer fails on Windows (select on a pipe, cp1252 report), and mis-measures when run outside the repo or with the skill installed ## Summary `skill-creator`'s description optimizer (`scripts/run_loop.py` → `scripts/run_eval.py`) cannot produce a valid result on Windows. Three independent problems; the first two make every query fail, the third silently invalidates the measurement when the skill under test is also installed. Environment: Windows 11, Python 3.14, Claude Code 2.1.281, skill-creator from `anthropics/skills` installed via `npx skills add anthropics/ski",
           "url": "https://github.com/anthropics/skills/issues/1827",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1823-haruntekin89",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "haruntekin89",
-          "date": "2026-09-24",
-          "text": "skill-creator: thinking-depth prose, all-caps workaround, and step-choreographed grader agents written for older models `skills/skill-creator/SKILL.md` and its `agents/*.md` (line numbers against `main` today). Found during a prompt audit targeting Claude Fable 5.1 / Claude Opus 5.5. (The `pdf/forms.md:4` missing `.py` is already covered by #1770, so not repeated here.) ## SKILL.md - **Line 306** steers thinking depth in prose and adds stakes pressure: *\"This task is pretty important (we are trying to create billions a year in economic value here!) and your thinking time is not the blocker; ta",
-          "url": "https://github.com/anthropics/skills/issues/1823",
           "score": 0,
           "sentiment": "negative"
         }
