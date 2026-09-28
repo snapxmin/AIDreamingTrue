@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-27T05:33:49Z",
+    "lastUpdated": "2026-09-28T05:43:04Z",
     "skillCount": 20,
-    "totalComments": 56,
+    "totalComments": 44,
     "sources": [
       "hacker-news",
       "github",
@@ -15,66 +15,6 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 1,
-      "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2372-aimansour",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "aimansour",
-          "date": "2026-09-23",
-          "text": "Codex Desktop: brainstorming approval gates skipped after skill read (6.4.1) - [x] I searched open and closed issues. This is not an exact duplicate. Closest: #1441 reports a similar gate skip on Claude Code auto mode with Superpowers 5.0.7; it was closed after a non-reproduction on another Claude Code version. #1895 asks for an explicitly non-interactive mode. This case is an interactive Codex Desktop session using Superpowers 6.4.1, with no user opt-in to bypass reviews. ## Environment | Field | Value | Provenance | |---|---|---| | Superpowers | 6.4.1 | Installed plugin path in the session; ",
-          "url": "https://github.com/obra/superpowers/issues/2372",
-          "score": 4,
-          "sentiment": "neutral"
-        }
-      ]
-    },
-    "superpowers/test-driven-development": {
-      "slug": "test-driven-development",
-      "ecosystem": "superpowers",
-      "displayName": "Test-Driven Development",
-      "feedbackCount": 3,
-      "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-895-qdon314",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "qdon314",
-          "date": "2026-03-23",
-          "text": "writing-plans: plans over-specify implementation, leaving no room for executor judgment - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? When using `writing-plans` to plan a multi-task implementation, the generated plan contained complete implementation code — full function bodies, 70-line test files, exact shell commands, and step-by-step TDD sequences per task. The executor (`executing-plans` / `subagent-driven-development`) had no decisions to make — it was copy-pasting code from the plan rather than engineering a solution. This caused ",
-          "url": "https://github.com/obra/superpowers/issues/895",
-          "score": 24,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2046-thatht137",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Thatht137",
-          "date": "2026-07-27",
-          "text": "writing-plans can mistake structural RED for behavior-test evidence # Bug report: writing-plans can treat an import error as proof of a behavior test - [x] I searched existing open and closed issues and pull requests. Related: #711, #853, and #1576. None addresses the distinction between structural RED evidence and a behavior assertion actually rejecting a wrong result. ## Environment | Field | Value | |-------|-------| | Superpowers version | 6.2.0, commit `3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9` | | Harness | OpenAI Codex CLI | | Harness version | `codex-cli 0.145.0` | | Model | OpenAI Cod",
-          "url": "https://github.com/obra/superpowers/issues/2046",
-          "score": 6,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2372-aimansour",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "aimansour",
-          "date": "2026-09-23",
-          "text": "Codex Desktop: brainstorming approval gates skipped after skill read (6.4.1) - [x] I searched open and closed issues. This is not an exact duplicate. Closest: #1441 reports a similar gate skip on Claude Code auto mode with Superpowers 5.0.7; it was closed after a non-reproduction on another Claude Code version. #1895 asks for an explicitly non-interactive mode. This case is an interactive Codex Desktop session using Superpowers 6.4.1, with no user opt-in to bypass reviews. ## Environment | Field | Value | Provenance | |---|---|---| | Superpowers | 6.4.1 | Installed plugin path in the session; ",
-          "url": "https://github.com/obra/superpowers/issues/2372",
-          "score": 4,
-          "sentiment": "neutral"
-        }
-      ]
-    },
-    "superpowers/writing-plans": {
-      "slug": "writing-plans",
-      "ecosystem": "superpowers",
-      "displayName": "Writing Plans",
       "feedbackCount": 2,
       "comments": [
         {
@@ -89,14 +29,51 @@
           "sentiment": "neutral"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2178-lonewolf36",
+          "id": "github-https-github-com-obra-superpowers-issues-2408-tamaro-skaljic",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "LoneWolf36",
-          "date": "2026-08-19",
-          "text": "`writing-plans` template teaches line-number citations, which go stale by construction ## Summary Three text defects in `skills/writing-plans/SKILL.md` cause plans to carry citations that are wrong by the time anyone executes them. The first is the serious one: the Task Structure template demonstrates line-range citations, and models copy the demonstrated form. In one multi-session feature I found **eleven** stale citations in a single plan, and the two worst pointed roughly 30 lines past the symbol they named into an unrelated request class. An agent editing by those line numbers would have m",
-          "url": "https://github.com/obra/superpowers/issues/2178",
-          "score": 1,
+          "author": "tamaro-skaljic",
+          "date": "2026-09-27",
+          "text": "writing-plans: the plan's code was built twice during planning, then the handoff offered to implement it a third time - [x] I searched existing issues and this is not a duplicate (searched: \"writing-plans prototype\", \"plan implemented twice\", \"execution handoff already implemented\", \"writing-plans code during planning\", \"writing-plans verify plan\"; closest: #895 (closed); related: #2285, #2065) ## Environment (required) | Field | Value | Provenance / supporting evidence | |-------|-------|-------------------------------| | Superpowers version | 6.4.1 (not a checkout) | current observation of p",
+          "url": "https://github.com/obra/superpowers/issues/2408",
+          "score": 0,
+          "sentiment": "negative"
+        }
+      ]
+    },
+    "superpowers/test-driven-development": {
+      "slug": "test-driven-development",
+      "ecosystem": "superpowers",
+      "displayName": "Test-Driven Development",
+      "feedbackCount": 0,
+      "comments": []
+    },
+    "superpowers/writing-plans": {
+      "slug": "writing-plans",
+      "ecosystem": "superpowers",
+      "displayName": "Writing Plans",
+      "feedbackCount": 2,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2408-tamaro-skaljic",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "tamaro-skaljic",
+          "date": "2026-09-27",
+          "text": "writing-plans: the plan's code was built twice during planning, then the handoff offered to implement it a third time - [x] I searched existing issues and this is not a duplicate (searched: \"writing-plans prototype\", \"plan implemented twice\", \"execution handoff already implemented\", \"writing-plans code during planning\", \"writing-plans verify plan\"; closest: #895 (closed); related: #2285, #2065) ## Environment (required) | Field | Value | Provenance / supporting evidence | |-------|-------|-------------------------------| | Superpowers version | 6.4.1 (not a checkout) | current observation of p",
+          "url": "https://github.com/obra/superpowers/issues/2408",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2413-ferrous26",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ferrous26",
+          "date": "2026-09-28",
+          "text": "writing-plans / task-reviewer: a plan step that infers identity from a string's shape ships its collision case unless the rubric asks for it - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? In one subagent-driven-development run (v6.4.2 lineage, 10-task plan), three plan steps decided *which thing they were looking at* from the shape of a string. Each step matched its brief, so the implementer transcribed it and the task reviewer graded it \"met\". Two of the three reached a human reviewer, who found the colliding input on the first pass; th",
+          "url": "https://github.com/obra/superpowers/issues/2413",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -135,92 +112,47 @@
       "slug": "verification-before-completion",
       "ecosystem": "superpowers",
       "displayName": "Verification Before Completion",
-      "feedbackCount": 2,
-      "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-429-evrenverse",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "evrenverse",
-          "date": "2026-02-05",
-          "text": "Support for Claude Code Agent Teams (TeammateTool, SendMessage, TaskList) ## Is your feature request related to a problem? Please describe. Claude Code 2.1.32+ introduced experimental **Agent Teams** — a feature that allows coordinating multiple Claude Code instances as a team with a lead, teammates, shared task lists, and inter-agent messaging. See the [official documentation](https://code.claude.com/docs/en/agent-teams). Superpowers currently has skills for subagent-driven development (`subagent-driven-development`, `dispatching-parallel-agents`) but no awareness of or support for the newer ",
-          "url": "https://github.com/obra/superpowers/issues/429",
-          "score": 23,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2264-wnqgphqn5t-cmyk",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "wnqgphqn5t-cmyk",
-          "date": "2026-09-06",
-          "text": "7 additive rules for superpowers skills (from real-session postmortems) These are seven small, additive rules for existing `superpowers:*` skills, each distilled from a concrete failure in real agent sessions. Grouping them into one issue rather than filing seven — happy to split into PRs per skill if you'd prefer. Each block is: the failure that happened → the proposed rule → the one-line principle. No structural changes, just rules added to sections that already exist. --- ## 1. `verification-before-completion` — verify a set-wide fix by count against an external source of truth **Failure.**",
-          "url": "https://github.com/obra/superpowers/issues/2264",
-          "score": 3,
-          "sentiment": "negative"
-        }
-      ]
+      "feedbackCount": 0,
+      "comments": []
     },
     "superpowers/subagent-driven-development": {
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 5,
+      "feedbackCount": 3,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2207-kareemsasa",
+          "id": "github-https-github-com-obra-superpowers-issues-2406-ferrous26",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "kareemsasa",
-          "date": "2026-08-26",
-          "text": "`finishing-a-development-branch` can silently delete an SDD workspace: ignored files don't make a worktree dirty **Skills:** `finishing-a-development-branch` (Step 6), interacting with `subagent-driven-development` **Versions:** reproduced against 6.3.0; the same code path and wording are in 6.2.0 **Environment:** git 2.55.0, Linux ## Summary Step 6 of `finishing-a-development-branch` protects uncommitted work by relying on `git worktree remove` to refuse: > **If removal is refused** (`contains modified or untracked files`): the worktree holds files that > exist nowhere else — uncommitted plan",
-          "url": "https://github.com/obra/superpowers/issues/2207",
-          "score": 1,
+          "author": "ferrous26",
+          "date": "2026-09-27",
+          "text": "task-brief: the last task of a section absorbs the following non-Task heading and its prose **Summary** `task-brief` toggles `intask` only on lines matching `^#+[ \\t]+Task[ \\t]+[0-9]+`. Any other heading -- `## Self-review notes`, `## Finishing`, `# Wave 2`, a PR template appendix -- cannot turn it off, so the final task before such a heading absorbs the heading and everything under it until the next `Task` heading or EOF. **Evidence from this repository's own plans (v6.4.2, all flat-numbered)** 7 of the 15 plans under `docs/superpowers/plans/` leak a non-task section into their last task's br",
+          "url": "https://github.com/obra/superpowers/issues/2406",
+          "score": 0,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2253-stevesims",
+          "id": "github-https-github-com-obra-superpowers-issues-2405-ferrous26",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "stevesims",
-          "date": "2026-09-04",
-          "text": "subagent-driven-development: Finish deletes the only record of deferred findings — parked/deferred items need a durable export *Found in real use on a 16-task run of `subagent-driven-development` (2026-09-03/04). Filed upstream rather than patched locally because the plugin is version-pinned — a local edit is erased on the next update.* *Version: **superpowers 6.3.0, via the claude-plugins-official marketplace**.* --- ## What happened A 16-task plan ran end to end exactly as the skill prescribes. Along the way the per-task and final reviews produced about ten Minor findings — stale docstrings ",
-          "url": "https://github.com/obra/superpowers/issues/2253",
-          "score": 1,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2266-slowernet",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "slowernet",
-          "date": "2026-09-06",
-          "text": "Fixes keep creating new bugs because no skill requires tracing what a fix changes - [x] I searched existing issues and this has not been proposed before Closest prior art: #2145 B1 (enumerate readers of a stale field; the *root cause's* blast radius during diagnosis, where this is the *fix's*), #2264 §5 (re-run the objective check after a delegated edit; a dynamic check, where this is static), #2113 §4 (coverage gaps *between* tasks, not gaps *created by* a fix), PR #2198 (trace a bad value upstream to its producer; opposite direction), and closed #2066 (a \"blast radius\" row for spec self-revi",
-          "url": "https://github.com/obra/superpowers/issues/2266",
-          "score": 1,
+          "author": "ferrous26",
+          "date": "2026-09-27",
+          "text": "task-brief: task number is an unanchored, unescaped regex prefix, so the wrong task is returned with exit 0 **Summary** `skills/subagent-driven-development/scripts/task-brief` builds its heading matcher by string-concatenating `N` into an awk regex: ```awk intask = ($0 ~ (\"^#+[ \\t]+Task[ \\t]+\" n \"([^0-9]|$)\")) ``` Two consequences, both silent (exit 0, plausible-looking brief): 1. **Prefix match.** In a plan numbered `Task 1.1`, `Task 1.2`, ..., `task-brief PLAN 1` returns *every* `Task 1.x` concatenated, because `.` is a non-digit and satisfies the terminator. This is the same root cause as #",
+          "url": "https://github.com/obra/superpowers/issues/2405",
+          "score": 0,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2273-samohod4ik",
+          "id": "github-https-github-com-obra-superpowers-issues-2413-ferrous26",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "samohod4ik",
-          "date": "2026-09-09",
-          "text": "SDD: Approve + Important triggers mandatory re-review loop <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [x] I searched existing issues and this has not been proposed before Related (different problem): #2112 documents unbounded review/test ratcheting across many rounds (addressed in v6.3.0 via scoped re-review + round-5 breaker). This issue is narrower: a **single** task already returned **Task quality: Approved** / “no fixes required to accept,”",
-          "url": "https://github.com/obra/superpowers/issues/2273",
-          "score": 1,
+          "author": "ferrous26",
+          "date": "2026-09-28",
+          "text": "writing-plans / task-reviewer: a plan step that infers identity from a string's shape ships its collision case unless the rubric asks for it - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? In one subagent-driven-development run (v6.4.2 lineage, 10-task plan), three plan steps decided *which thing they were looking at* from the shape of a string. Each step matched its brief, so the implementer transcribed it and the task reviewer graded it \"met\". Two of the three reached a human reviewer, who found the colliding input on the first pass; th",
+          "url": "https://github.com/obra/superpowers/issues/2413",
+          "score": 0,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2344-drewzing",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "drewzing",
-          "date": "2026-09-19",
-          "text": "RELEASE-NOTES say a deleted .superpowers/sdd/progress.md can be recovered from git log; it cannot The v6.1.x release note for #1780 (\"SDD scratch files moved out of `.git/`\") ends: > because the workspace is git-ignored working-tree scratch, `git clean -fdx` will delete the progress ledger; recover from `git log` if that happens. `skills/subagent-driven-development/scripts/sdd-workspace` runs `printf '*\\n' > \"$dir/.gitignore\"` on every invocation, so nothing under `.superpowers/sdd/` is ever committed. There is no history to recover the ledger from: `git log` shows the commits the ledger descr",
-          "url": "https://github.com/obra/superpowers/issues/2344",
-          "score": 1,
-          "sentiment": "neutral"
         }
       ]
     },
@@ -228,19 +160,8 @@
       "slug": "requesting-code-review",
       "ecosystem": "superpowers",
       "displayName": "Requesting Code Review",
-      "feedbackCount": 2,
+      "feedbackCount": 1,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2034-vida994",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "vida994",
-          "date": "2026-07-24",
-          "text": "Subagent dispatches outside SDD have no model guidance, so they inherit the session model ### Summary `subagent-driven-development` treats the subagent model as a required, explicit choice. Every other skill that dispatches a subagent omits it entirely, so those dispatches silently inherit the session model — the exact failure SDD's own guidance calls out. ### The inconsistency SDD's prompt templates make it a required field: ``` Subagent (general-purpose): model: [MODEL — REQUIRED: choose per SKILL.md Model Selection; an omitted model silently inherits the session's most expensive one] ``` an",
-          "url": "https://github.com/obra/superpowers/issues/2034",
-          "score": 2,
-          "sentiment": "positive"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2266-slowernet",
           "source": "github",
@@ -258,42 +179,8 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 3,
-      "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2372-aimansour",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "aimansour",
-          "date": "2026-09-23",
-          "text": "Codex Desktop: brainstorming approval gates skipped after skill read (6.4.1) - [x] I searched open and closed issues. This is not an exact duplicate. Closest: #1441 reports a similar gate skip on Claude Code auto mode with Superpowers 5.0.7; it was closed after a non-reproduction on another Claude Code version. #1895 asks for an explicitly non-interactive mode. This case is an interactive Codex Desktop session using Superpowers 6.4.1, with no user opt-in to bypass reviews. ## Environment | Field | Value | Provenance | |---|---|---| | Superpowers | 6.4.1 | Installed plugin path in the session; ",
-          "url": "https://github.com/obra/superpowers/issues/2372",
-          "score": 4,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2081-midirectiekade14-debug",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "midirectiekade14-debug",
-          "date": "2026-08-04",
-          "text": "hooks/session-start: six subprocess spawns cost ~2s on Windows (7.7x slower; byte-identical output without them) `hooks/session-start` spawns six subprocesses to do work that needs none. On Linux/macOS that is cheap enough to be invisible. On Windows, where `fork()` is emulated, it dominates: the hook takes **~2.25s** instead of **~0.29s**, and the whole difference is process-spawn overhead. Removing the spawns produces **byte-identical output** (same SHA-256, same length, same exit code). ## Environment | | | |---|---| | OS | Windows 11 Pro 26200 | | Shell | Git for Windows bash 5.2 (`C:\\Prog",
-          "url": "https://github.com/obra/superpowers/issues/2081",
-          "score": 2,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2247-medvegy",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "medvegy",
-          "date": "2026-09-02",
-          "text": "Antigravity (agy): plugin hooks.json fails to parse — the using-superpowers bootstrap never loads ## Summary On Antigravity CLI (`agy` 1.1.24) the plugin's `hooks/hooks.json` is not merely unfired for want of a `SessionStart` event — **it fails to parse**. `agy plugin install` reports `✔ hooks : 1 processed`, but agy rejects the file at load time. Antigravity users therefore get the 14 skills on disk with no bootstrap, which by this project's own porting guide means \"the skill files are inert — present on disk, never invoked.\" ## Versions - superpowers 6.3.0, installed with `agy plugin install",
-          "url": "https://github.com/obra/superpowers/issues/2247",
-          "score": 1,
-          "sentiment": "neutral"
-        }
-      ]
+      "feedbackCount": 0,
+      "comments": []
     },
     "awesome-copilot/ai-ready": {
       "slug": "ai-ready",
@@ -567,30 +454,8 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 4,
+      "feedbackCount": 2,
       "comments": [
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1394-griffithsbs",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "griffithsbs",
-          "date": "2026-07-05",
-          "text": "skill-creator: eval-viewer escapeHtml is not attribute-safe and is applied inconsistently (display-path XSS) ### Summary The skill-creator eval-viewer (`skills/skill-creator/eval-viewer/viewer.html`) assembles HTML by string concatenation and assigns it with `innerHTML` in `renderGrades` and `renderBenchmark`, relying on a helper `escapeHtml()` at each interpolation point. Two gaps let attacker-influenced data reach the DOM as markup: 1. **`escapeHtml()` is not attribute-safe.** It is implemented with the `textContent` → `innerHTML` round-trip, which escapes `<`, `>`, and `&` but **not** `\"` o",
-          "url": "https://github.com/anthropics/skills/issues/1394",
-          "score": 4,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1304-nhosler",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "nhosler",
-          "date": "2026-06-10",
-          "text": "Windows: eval/optimize harness broken — cp1252 read_text() crash + nested claude -p WinError 10038 silently zeroes all results ## Environment - OS: Windows 11 - Python 3.14.4 - `skill-creator` from `anthropics/skills` (example-skills plugin), run via `python -m scripts.run_loop` Two Windows bugs make the eval / description-optimization harness unusable; the second is the dangerous one because it **fails silently and reports plausible-looking but meaningless metrics**. ## Bug 1 — `parse_skill_md` crashes on any non-cp1252 SKILL.md (blocking) `scripts/utils.py:9` reads SKILL.md with no explicit ",
-          "url": "https://github.com/anthropics/skills/issues/1304",
-          "score": 1,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-anthropics-skills-issues-1706-stillpimpn",
           "source": "github",
@@ -622,17 +487,6 @@
       "feedbackCount": 3,
       "comments": [
         {
-          "id": "github-https-github-com-anthropics-skills-issues-1716-supermuskk",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "supermuskk",
-          "date": "2026-09-03",
-          "text": "mcp-builder: evaluation.py defaults to claude-3-7-sonnet-20250219, and the low-score advice points back at that same model The evaluation harness in `mcp-builder` still defaults to `claude-3-7-sonnet-20250219`, and the troubleshooting section recommends that same snapshot as the *upgrade* path. Line numbers are against `main` at the time of writing. ### Where `skills/mcp-builder/scripts/evaluation.py` ```python 223: model: str = \"claude-3-7-sonnet-20250219\", 324: parser.add_argument(\"-m\", \"--model\", default=\"claude-3-7-sonnet-20250219\", help=\"Claude model to use (default: claude-3-7-sonnet-202",
-          "url": "https://github.com/anthropics/skills/issues/1716",
-          "score": 3,
-          "sentiment": "positive"
-        },
-        {
           "id": "github-https-github-com-anthropics-skills-issues-206-thepexcel",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -640,6 +494,17 @@
           "date": "2026-01-04",
           "text": "Plugin Marketplace installs extra skills when plugin source is repo root (./) ## 🐞 Issue: Plugin Marketplace installs extra skills when `source` is repo root (`./`) ### Summary When installing a skills bundle via Plugin Marketplace (e.g. `plugin marketplace add anthropics/skills`), the installer installs **all skills found under the plugin `source` directory**, not only the skills explicitly listed in the `\"skills\"` array. This results in many unintended skills being installed. --- ### Expected behavior Given the following configuration: \"skills\": [ \"./skills/xlsx\", \"./skills/docx\", \"./skills/",
           "url": "https://github.com/anthropics/skills/issues/206",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1895-sxh313",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "sxh313",
+          "date": "2026-09-27",
+          "text": "mcp-builder: repeated -e/--env and -H/--header flags in evaluation.py silently drop all but the last value ## Summary `skills/mcp-builder/scripts/evaluation.py` declares `-e/--env` and `-H/--header` as `nargs=\"+\"` options with argparse's default `store` action, so when a user repeats the flag — which the skill's own guide tells them to do — the later occurrence **replaces** the earlier one. The first value is discarded silently: no warning, no error, non-zero exit. The guide documents the repeated form twice: - `skills/mcp-builder/reference/evaluation.md:440-446` ```bash python scripts/evaluat",
+          "url": "https://github.com/anthropics/skills/issues/1895",
           "score": 1,
           "sentiment": "negative"
         },
