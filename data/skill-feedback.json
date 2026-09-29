@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-28T06:11:45Z",
+    "lastUpdated": "2026-09-29T06:01:49Z",
     "skillCount": 20,
-    "totalComments": 44,
+    "totalComments": 52,
     "sources": [
       "hacker-news",
       "github",
@@ -15,19 +15,8 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2372-aimansour",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "aimansour",
-          "date": "2026-09-23",
-          "text": "Codex Desktop: brainstorming approval gates skipped after skill read (6.4.1) - [x] I searched open and closed issues. This is not an exact duplicate. Closest: #1441 reports a similar gate skip on Claude Code auto mode with Superpowers 5.0.7; it was closed after a non-reproduction on another Claude Code version. #1895 asks for an explicitly non-interactive mode. This case is an interactive Codex Desktop session using Superpowers 6.4.1, with no user opt-in to bypass reviews. ## Environment | Field | Value | Provenance | |---|---|---| | Superpowers | 6.4.1 | Installed plugin path in the session; ",
-          "url": "https://github.com/obra/superpowers/issues/2372",
-          "score": 4,
-          "sentiment": "neutral"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2408-tamaro-skaljic",
           "source": "github",
@@ -38,6 +27,28 @@
           "url": "https://github.com/obra/superpowers/issues/2408",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2423-mishastr",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "mishastr",
+          "date": "2026-09-29",
+          "text": "Pressure-register and update-suppressor wording over-triggers on Claude Opus 5.5 / Sonnet 5.5 **Version:** superpowers 6.3.0 (claude-plugins-official), Claude Code on Claude Opus 5.5. Current Claude models follow instructions more closely and literally than the models this wording was tuned against. Anthropic's current prompting guidance for Opus 5.5 / Sonnet 5.5 calls out three patterns that now degrade behavior rather than guard it, and superpowers ships all three in text that loads every session: **1. Emphatic always-invoke language (over-triggering).** - `hooks/session-start:27` wraps the ",
+          "url": "https://github.com/obra/superpowers/issues/2423",
+          "score": 0,
+          "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2421-darth-pie",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Darth-Pie",
+          "date": "2026-09-29",
+          "text": "brainstorming/visual-companion: a host's own preview pane can show a screen file directly, which breaks `/files/` assets and the injected helper; and hidden panes pause animation checks - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While running the visual companion in a desktop agent host that has its own built-in browser pane, a host hook opened every file written to the companion's content directory in that pane automatically. It loaded the file directly (as a file/data URL), not through the companion server. The result: - every `/fi",
+          "url": "https://github.com/obra/superpowers/issues/2421",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -45,15 +56,49 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 0,
-      "comments": []
+      "feedbackCount": 2,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "kpdbcdt",
+          "date": "2026-09-25",
+          "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
+          "url": "https://github.com/obra/superpowers/issues/2386",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2422-darth-pie",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Darth-Pie",
+          "date": "2026-09-29",
+          "text": "test-driven-development: no guidance when a layer has no test harness, so the agent either skips the Iron Law silently or installs a harness nobody asked for - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A feature spanned a server with a working integration-test setup and a React front end. The front end's test runner is node-only, with no DOM environment and no component-testing library installed. The server half went strictly red-green. For the UI half, the agent pulled the pure rules out into plain modules and test-drove those: - lab",
+          "url": "https://github.com/obra/superpowers/issues/2422",
+          "score": 0,
+          "sentiment": "negative"
+        }
+      ]
     },
     "superpowers/writing-plans": {
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "kpdbcdt",
+          "date": "2026-09-25",
+          "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
+          "url": "https://github.com/obra/superpowers/issues/2386",
+          "score": 1,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2408-tamaro-skaljic",
           "source": "github",
@@ -112,8 +157,20 @@
       "slug": "verification-before-completion",
       "ecosystem": "superpowers",
       "displayName": "Verification Before Completion",
-      "feedbackCount": 0,
-      "comments": []
+      "feedbackCount": 1,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2422-darth-pie",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Darth-Pie",
+          "date": "2026-09-29",
+          "text": "test-driven-development: no guidance when a layer has no test harness, so the agent either skips the Iron Law silently or installs a harness nobody asked for - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A feature spanned a server with a working integration-test setup and a React front end. The front end's test runner is node-only, with no DOM environment and no component-testing library installed. The server half went strictly red-green. For the UI half, the agent pulled the pure rules out into plain modules and test-drove those: - lab",
+          "url": "https://github.com/obra/superpowers/issues/2422",
+          "score": 0,
+          "sentiment": "negative"
+        }
+      ]
     },
     "superpowers/subagent-driven-development": {
       "slug": "subagent-driven-development",
@@ -122,25 +179,14 @@
       "feedbackCount": 3,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2406-ferrous26",
+          "id": "github-https-github-com-obra-superpowers-issues-2054-glen-84",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "ferrous26",
-          "date": "2026-09-27",
-          "text": "task-brief: the last task of a section absorbs the following non-Task heading and its prose **Summary** `task-brief` toggles `intask` only on lines matching `^#+[ \\t]+Task[ \\t]+[0-9]+`. Any other heading -- `## Self-review notes`, `## Finishing`, `# Wave 2`, a PR template appendix -- cannot turn it off, so the final task before such a heading absorbs the heading and everything under it until the next `Task` heading or EOF. **Evidence from this repository's own plans (v6.4.2, all flat-numbered)** 7 of the 15 plans under `docs/superpowers/plans/` leak a non-task section into their last task's br",
-          "url": "https://github.com/obra/superpowers/issues/2406",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2405-ferrous26",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "ferrous26",
-          "date": "2026-09-27",
-          "text": "task-brief: task number is an unanchored, unescaped regex prefix, so the wrong task is returned with exit 0 **Summary** `skills/subagent-driven-development/scripts/task-brief` builds its heading matcher by string-concatenating `N` into an awk regex: ```awk intask = ($0 ~ (\"^#+[ \\t]+Task[ \\t]+\" n \"([^0-9]|$)\")) ``` Two consequences, both silent (exit 0, plausible-looking brief): 1. **Prefix match.** In a plan numbered `Task 1.1`, `Task 1.2`, ..., `task-brief PLAN 1` returns *every* `Task 1.x` concatenated, because `.` is a non-digit and satisfies the terminator. This is the same root cause as #",
-          "url": "https://github.com/obra/superpowers/issues/2405",
-          "score": 0,
+          "author": "glen-84",
+          "date": "2026-07-29",
+          "text": "subagent-driven-development: reviewer prompts pay subagent turns for mechanical facts the controller can settle in one command - [x] I searched existing issues and this has not been proposed before *(Closest prior art, open and closed: #1930 targets reviewer **output** verbosity — what the reviewer reports back — which is the mirror image of this and complementary. #1120 is review cadence, whether a task needs a review at all. #1614 (closed) proposed admission receipts for extra review passes. This issue is about the reviewer's **input**: what the controller puts in the review prompt, and the ",
+          "url": "https://github.com/obra/superpowers/issues/2054",
+          "score": 3,
           "sentiment": "negative"
         },
         {
@@ -153,6 +199,17 @@
           "url": "https://github.com/obra/superpowers/issues/2413",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2423-mishastr",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "mishastr",
+          "date": "2026-09-29",
+          "text": "Pressure-register and update-suppressor wording over-triggers on Claude Opus 5.5 / Sonnet 5.5 **Version:** superpowers 6.3.0 (claude-plugins-official), Claude Code on Claude Opus 5.5. Current Claude models follow instructions more closely and literally than the models this wording was tuned against. Anthropic's current prompting guidance for Opus 5.5 / Sonnet 5.5 calls out three patterns that now degrade behavior rather than guard it, and superpowers ships all three in text that loads every session: **1. Emphatic always-invoke language (over-triggering).** - `hooks/session-start:27` wraps the ",
+          "url": "https://github.com/obra/superpowers/issues/2423",
+          "score": 0,
+          "sentiment": "positive"
         }
       ]
     },
@@ -179,8 +236,31 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 0,
-      "comments": []
+      "feedbackCount": 2,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "kpdbcdt",
+          "date": "2026-09-25",
+          "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
+          "url": "https://github.com/obra/superpowers/issues/2386",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2423-mishastr",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "mishastr",
+          "date": "2026-09-29",
+          "text": "Pressure-register and update-suppressor wording over-triggers on Claude Opus 5.5 / Sonnet 5.5 **Version:** superpowers 6.3.0 (claude-plugins-official), Claude Code on Claude Opus 5.5. Current Claude models follow instructions more closely and literally than the models this wording was tuned against. Anthropic's current prompting guidance for Opus 5.5 / Sonnet 5.5 calls out three patterns that now degrade behavior rather than guard it, and superpowers ships all three in text that loads every session: **1. Emphatic always-invoke language (over-triggering).** - `hooks/session-start:27` wraps the ",
+          "url": "https://github.com/obra/superpowers/issues/2423",
+          "score": 0,
+          "sentiment": "positive"
+        }
+      ]
     },
     "awesome-copilot/ai-ready": {
       "slug": "ai-ready",
@@ -454,8 +534,19 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1352-liam-ai-reality",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "liam-ai-reality",
+          "date": "2026-06-25",
+          "text": "skill-creator: run_eval.py parallel workers cross-match skill UUIDs, producing false-negative trigger rates ## Summary `skills/skill-creator/scripts/run_eval.py` produces **systematically wrong (near-zero) trigger rates whenever `--num-workers > 1`** (the default is 10). The failure is silent: every query — including ones that obviously *should* trigger — comes back with `trigger_rate ≈ 0`, which then makes all `should_trigger: false` cases \"pass\" trivially and all `should_trigger: true` cases \"fail\". The aggregate looks like a bad skill description when in fact the *measurement* is broken. ##",
+          "url": "https://github.com/anthropics/skills/issues/1352",
+          "score": 3,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-anthropics-skills-issues-1706-stillpimpn",
           "source": "github",
@@ -464,7 +555,7 @@
           "date": "2026-09-02",
           "text": "skill-creator: parallel trigger-eval workers share one commands dir, collapsing measured trigger rate to ~1/num_workers ## Summary `skill-creator`'s trigger-eval harness writes every worker's temp command file into a **single shared directory**, so parallel workers see each other's files. Each `claude -p` process is presented with N identical skills differing only by UUID, picks one, and is scored as \"triggered\" only if it happens to pick its own. The measured trigger rate therefore collapses toward `1/num_workers` **independently of the description being tested**. Since `--num-workers` defaul",
           "url": "https://github.com/anthropics/skills/issues/1706",
-          "score": 1,
+          "score": 2,
           "sentiment": "positive"
         },
         {
