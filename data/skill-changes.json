@@ -1,64 +1,15 @@
 {
-  "generatedAt": "2026-09-29T05:57:59Z",
+  "generatedAt": "2026-09-30T05:47:13Z",
   "isBaselineRun": false,
   "changes": [
     {
       "type": "added",
-      "key": "awesome-copilot/lean-comments",
+      "key": "awesome-copilot/microsoft-store-publisher",
       "ecosystem": "awesome-copilot",
-      "slug": "lean-comments",
-      "displayName": "Lean Comments",
-      "summary": "生态新增 Skill：Lean Comments",
-      "detectedAt": "2026-09-29T05:59:16Z"
-    },
-    {
-      "type": "added",
-      "key": "awesome-copilot/v-development",
-      "ecosystem": "awesome-copilot",
-      "slug": "v-development",
-      "displayName": "V Development",
-      "summary": "生态新增 Skill：V Development",
-      "detectedAt": "2026-09-29T05:59:16Z"
-    },
-    {
-      "type": "updated",
-      "key": "anthropics-skills/claude-api",
-      "ecosystem": "anthropics-skills",
-      "slug": "claude-api",
-      "displayName": "Claude Api",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/claude-api",
-      "detectedAt": "2026-09-29T05:59:16Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/audit-integrity",
-      "ecosystem": "awesome-copilot",
-      "slug": "audit-integrity",
-      "displayName": "Audit Integrity",
-      "changedFields": [
-        "content",
-        "description"
-      ],
-      "summary": "description 更新：Enforce output quality, evidence verification, and quality gates across security audits. Use this sk…",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/audit-integrity",
-      "detectedAt": "2026-09-29T05:59:16Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/roslyn-analyzers",
-      "ecosystem": "awesome-copilot",
-      "slug": "roslyn-analyzers",
-      "displayName": "Roslyn Analyzers",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/roslyn-analyzers",
-      "detectedAt": "2026-09-29T05:59:16Z"
+      "slug": "microsoft-store-publisher",
+      "displayName": "Microsoft Store Publisher",
+      "summary": "生态新增 Skill：Microsoft Store Publisher",
+      "detectedAt": "2026-09-30T05:48:11Z"
     }
   ]
 }

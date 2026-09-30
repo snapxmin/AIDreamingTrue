@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-29T06:01:49Z",
+    "lastUpdated": "2026-09-30T05:49:45Z",
     "skillCount": 20,
-    "totalComments": 52,
+    "totalComments": 49,
     "sources": [
       "hacker-news",
       "github",
@@ -15,19 +15,8 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2408-tamaro-skaljic",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "tamaro-skaljic",
-          "date": "2026-09-27",
-          "text": "writing-plans: the plan's code was built twice during planning, then the handoff offered to implement it a third time - [x] I searched existing issues and this is not a duplicate (searched: \"writing-plans prototype\", \"plan implemented twice\", \"execution handoff already implemented\", \"writing-plans code during planning\", \"writing-plans verify plan\"; closest: #895 (closed); related: #2285, #2065) ## Environment (required) | Field | Value | Provenance / supporting evidence | |-------|-------|-------------------------------| | Superpowers version | 6.4.1 (not a checkout) | current observation of p",
-          "url": "https://github.com/obra/superpowers/issues/2408",
-          "score": 0,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2423-mishastr",
           "source": "github",
@@ -329,7 +318,7 @@
       "slug": "security-review",
       "ecosystem": "awesome-copilot",
       "displayName": "Security Review",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-2947-hacks4snacks",
@@ -340,17 +329,6 @@
           "text": "[External Plugin]: tmforge ### Plugin name tmforge ### Short description The Strider agent that comes with the tmforge plugin adds evidence-backed STRIDE threat modeling to GitHub Copilot, with structured risk assessment, deterministic validation, and Markdown reports. Optional tmforge integration supports creating, updating, and verifying Microsoft Threat Modeling Tool (.tm7) models. ### GitHub repository Hacks4Snacks/tmforge ### Plugin path inside the repository plugins/tmforge ### Ref to review v0.11.0 ### Commit SHA to review 8c22d85c4cb65f416c228bb2a73ae9f364aa549b ### Version 0.11.0 ### ",
           "url": "https://github.com/github/awesome-copilot/issues/2947",
           "score": 6,
-          "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-github-awesome-copilot-issues-2922-ecocitizenz",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Ecocitizenz",
-          "date": "2026-09-03",
-          "text": "[External Plugin]: eczid-api-trust <!-- external-plugin-submission --> ### Plugin name eczid-api-trust ### Short description Free agent plugin, MIT-licensed: no purchase, account, sign-in, licence key or trial is required, and nothing it does is withheld pending a purchase. See which API surfaces a workspace exposes, how they are secured and whether they carry public proof: OpenAPI / GraphQL / AsyncAPI contracts, catalogues, auth configuration, disclosure contacts and contract tests, with a deterministic Review Priority. Inspection only. Free. ### GitHub repository Ecocitizenz/eczid-agent-plug",
-          "url": "https://github.com/github/awesome-copilot/issues/2922",
-          "score": 5,
           "sentiment": "positive"
         },
         {
@@ -575,7 +553,7 @@
       "slug": "mcp-builder",
       "ecosystem": "anthropics-skills",
       "displayName": "MCP Builder",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-206-thepexcel",
@@ -585,17 +563,6 @@
           "date": "2026-01-04",
           "text": "Plugin Marketplace installs extra skills when plugin source is repo root (./) ## 🐞 Issue: Plugin Marketplace installs extra skills when `source` is repo root (`./`) ### Summary When installing a skills bundle via Plugin Marketplace (e.g. `plugin marketplace add anthropics/skills`), the installer installs **all skills found under the plugin `source` directory**, not only the skills explicitly listed in the `\"skills\"` array. This results in many unintended skills being installed. --- ### Expected behavior Given the following configuration: \"skills\": [ \"./skills/xlsx\", \"./skills/docx\", \"./skills/",
           "url": "https://github.com/anthropics/skills/issues/206",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1895-sxh313",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "sxh313",
-          "date": "2026-09-27",
-          "text": "mcp-builder: repeated -e/--env and -H/--header flags in evaluation.py silently drop all but the last value ## Summary `skills/mcp-builder/scripts/evaluation.py` declares `-e/--env` and `-H/--header` as `nargs=\"+\"` options with argparse's default `store` action, so when a user repeats the flag — which the skill's own guide tells them to do — the later occurrence **replaces** the earlier one. The first value is discarded silently: no warning, no error, non-zero exit. The guide documents the repeated form twice: - `skills/mcp-builder/reference/evaluation.md:440-446` ```bash python scripts/evaluat",
-          "url": "https://github.com/anthropics/skills/issues/1895",
           "score": 1,
           "sentiment": "negative"
         },
