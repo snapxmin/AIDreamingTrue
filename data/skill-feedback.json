@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-30T05:49:45Z",
+    "lastUpdated": "2026-10-01T06:20:38Z",
     "skillCount": 20,
-    "totalComments": 49,
+    "totalComments": 58,
     "sources": [
       "hacker-news",
       "github",
@@ -15,8 +15,19 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "haruntekin89",
+          "date": "2026-09-24",
+          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
+          "url": "https://github.com/obra/superpowers/issues/2377",
+          "score": 2,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2423-mishastr",
           "source": "github",
@@ -29,13 +40,13 @@
           "sentiment": "positive"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2421-darth-pie",
+          "id": "github-https-github-com-obra-superpowers-issues-2434-abat-kek",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "Darth-Pie",
-          "date": "2026-09-29",
-          "text": "brainstorming/visual-companion: a host's own preview pane can show a screen file directly, which breaks `/files/` assets and the injected helper; and hidden panes pause animation checks - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While running the visual companion in a desktop agent host that has its own built-in browser pane, a host hook opened every file written to the companion's content directory in that pane automatically. It loaded the file directly (as a file/data URL), not through the companion server. The result: - every `/fi",
-          "url": "https://github.com/obra/superpowers/issues/2421",
+          "author": "abat-kek",
+          "date": "2026-09-30",
+          "text": "brainstorming: check YAGNI cuts against the goals the user stated, not only the features they named - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? The user described the purpose of a pantry feature explicitly: \"with expiry dates, so things don't go bad\". In the design section, an expiry reminder was nevertheless listed under \"deliberately left out\", because it had not been requested literally as a feature. The user had to ask and request it again. Without it, the stated goal is reached only if the user remembers to look — the cut removed",
+          "url": "https://github.com/obra/superpowers/issues/2434",
           "score": 0,
           "sentiment": "negative"
         }
@@ -45,8 +56,19 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "haruntekin89",
+          "date": "2026-09-24",
+          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
+          "url": "https://github.com/obra/superpowers/issues/2377",
+          "score": 2,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
           "source": "github",
@@ -75,7 +97,7 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
@@ -89,24 +111,35 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2408-tamaro-skaljic",
+          "id": "github-https-github-com-obra-superpowers-issues-2431-abat-kek",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "tamaro-skaljic",
-          "date": "2026-09-27",
-          "text": "writing-plans: the plan's code was built twice during planning, then the handoff offered to implement it a third time - [x] I searched existing issues and this is not a duplicate (searched: \"writing-plans prototype\", \"plan implemented twice\", \"execution handoff already implemented\", \"writing-plans code during planning\", \"writing-plans verify plan\"; closest: #895 (closed); related: #2285, #2065) ## Environment (required) | Field | Value | Provenance / supporting evidence | |-------|-------|-------------------------------| | Superpowers version | 6.4.1 (not a checkout) | current observation of p",
-          "url": "https://github.com/obra/superpowers/issues/2408",
+          "author": "abat-kek",
+          "date": "2026-09-30",
+          "text": "subagent-driven-development: \"no second fix wave\" should not cover breakage the final fix wave itself introduced - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? The final whole-branch review asked for an additional protection layer (block an admin path from outside the local network). The one allowed fix wave implemented it as a raw-path prefix check. The scoped re-review probed it and found a bypass: `/%61dmin/login` returned 200 — a new Important security finding that only the fix wave had created. The skill says: exactly one scoped re-",
+          "url": "https://github.com/obra/superpowers/issues/2431",
           "score": 0,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2413-ferrous26",
+          "id": "github-https-github-com-obra-superpowers-issues-2433-abat-kek",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "ferrous26",
-          "date": "2026-09-28",
-          "text": "writing-plans / task-reviewer: a plan step that infers identity from a string's shape ships its collision case unless the rubric asks for it - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? In one subagent-driven-development run (v6.4.2 lineage, 10-task plan), three plan steps decided *which thing they were looking at* from the shape of a string. Each step matched its brief, so the implementer transcribed it and the task reviewer graded it \"met\". Two of the three reached a human reviewer, who found the colliding input on the first pass; th",
-          "url": "https://github.com/obra/superpowers/issues/2413",
+          "author": "abat-kek",
+          "date": "2026-09-30",
+          "text": "writing-plans: user-facing text that describes app behaviour should cite the code it describes - [x] I searched existing issues and this has not been proposed before (related in spirit: #2285 — values asserted rather than produced) ## What problem does this solve? A plan fixed onboarding and help texts as \"final wording\" and ticked them off in self-review. Several described behaviour the code implements differently: \"end the session at the top right\" (the button sits at the bottom of the content), \"when your last set reaches the rep target, +5 kg appears\" (the suggestion needs at least two set",
+          "url": "https://github.com/obra/superpowers/issues/2433",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2432-abat-kek",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "abat-kek",
+          "date": "2026-09-30",
+          "text": "writing-plans: verifying a security boundary needs adversarial probes (encoded paths, concurrency), not happy-path negatives - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A plan exposed an API through a reverse proxy with a path allowlist, and its verification step checked the block with two harmless negatives (`/admin/login`, `/`). A review of the plan found that the proxy compares the decoded, normalised path but forwards the raw one, while the backend routes on the raw path: `/admin/users/..%2F..%2F..%2Fapi%2Fv1%2Fx` passes the allow",
+          "url": "https://github.com/obra/superpowers/issues/2432",
           "score": 0,
           "sentiment": "negative"
         }
@@ -116,7 +149,7 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2277-caarles00",
@@ -127,6 +160,17 @@
           "text": "systematic-debugging ships its pressure-test fixtures inside the skill directory; they open with \"This is a real scenario. You must choose and act\" - [x] I searched existing issues and this is not a duplicate *(searched \"pressure test\", fixture, CREATION-LOG, test-academic — open and closed)* ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | skill fetched from `main` via skills.sh; directory listing re-checked against `b36e082` | | Harness (Claude Code, Cursor, etc.) | Claude Code, VS Code extension | | Harness version | 2.1.252 (Claude Code) | | Your model ",
           "url": "https://github.com/obra/superpowers/issues/2277",
           "score": 3,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "haruntekin89",
+          "date": "2026-09-24",
+          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
+          "url": "https://github.com/obra/superpowers/issues/2377",
+          "score": 2,
           "sentiment": "negative"
         },
         {
@@ -146,8 +190,19 @@
       "slug": "verification-before-completion",
       "ecosystem": "superpowers",
       "displayName": "Verification Before Completion",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "haruntekin89",
+          "date": "2026-09-24",
+          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
+          "url": "https://github.com/obra/superpowers/issues/2377",
+          "score": 2,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2422-darth-pie",
           "source": "github",
@@ -165,40 +220,73 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 3,
+      "feedbackCount": 6,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2054-glen-84",
+          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "glen-84",
-          "date": "2026-07-29",
-          "text": "subagent-driven-development: reviewer prompts pay subagent turns for mechanical facts the controller can settle in one command - [x] I searched existing issues and this has not been proposed before *(Closest prior art, open and closed: #1930 targets reviewer **output** verbosity — what the reviewer reports back — which is the mirror image of this and complementary. #1120 is review cadence, whether a task needs a review at all. #1614 (closed) proposed admission receipts for extra review passes. This issue is about the reviewer's **input**: what the controller puts in the review prompt, and the ",
-          "url": "https://github.com/obra/superpowers/issues/2054",
-          "score": 3,
+          "author": "haruntekin89",
+          "date": "2026-09-24",
+          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
+          "url": "https://github.com/obra/superpowers/issues/2377",
+          "score": 2,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2413-ferrous26",
+          "id": "github-https-github-com-obra-superpowers-issues-2431-abat-kek",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "ferrous26",
-          "date": "2026-09-28",
-          "text": "writing-plans / task-reviewer: a plan step that infers identity from a string's shape ships its collision case unless the rubric asks for it - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? In one subagent-driven-development run (v6.4.2 lineage, 10-task plan), three plan steps decided *which thing they were looking at* from the shape of a string. Each step matched its brief, so the implementer transcribed it and the task reviewer graded it \"met\". Two of the three reached a human reviewer, who found the colliding input on the first pass; th",
-          "url": "https://github.com/obra/superpowers/issues/2413",
+          "author": "abat-kek",
+          "date": "2026-09-30",
+          "text": "subagent-driven-development: \"no second fix wave\" should not cover breakage the final fix wave itself introduced - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? The final whole-branch review asked for an additional protection layer (block an admin path from outside the local network). The one allowed fix wave implemented it as a raw-path prefix check. The scoped re-review probed it and found a bypass: `/%61dmin/login` returned 200 — a new Important security finding that only the fix wave had created. The skill says: exactly one scoped re-",
+          "url": "https://github.com/obra/superpowers/issues/2431",
           "score": 0,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2423-mishastr",
+          "id": "github-https-github-com-obra-superpowers-issues-2435-abat-kek",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "mishastr",
-          "date": "2026-09-29",
-          "text": "Pressure-register and update-suppressor wording over-triggers on Claude Opus 5.5 / Sonnet 5.5 **Version:** superpowers 6.3.0 (claude-plugins-official), Claude Code on Claude Opus 5.5. Current Claude models follow instructions more closely and literally than the models this wording was tuned against. Anthropic's current prompting guidance for Opus 5.5 / Sonnet 5.5 calls out three patterns that now degrade behavior rather than guard it, and superpowers ships all three in text that loads every session: **1. Emphatic always-invoke language (over-triggering).** - `hooks/session-start:27` wraps the ",
-          "url": "https://github.com/obra/superpowers/issues/2423",
+          "author": "abat-kek",
+          "date": "2026-09-30",
+          "text": "subagent-driven-development: in an unattended run, a step that needs a human at the screen should move to the next available tool, not be dropped - [x] I searched existing issues and this has not been proposed before (adjacent: #1664, closed in favour of the end-to-end testing direction in #374; this is narrower — what a controller rules about an existing manual step in a plan) ## What problem does this solve? In an unattended run, a plan step \"local visual check\" (a drag gesture in the browser) was ruled optional under **Rulings, not stalls**, and the implementer skipped it (\"nobody is watchi",
+          "url": "https://github.com/obra/superpowers/issues/2435",
           "score": 0,
-          "sentiment": "positive"
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2430-abat-kek",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "abat-kek",
+          "date": "2026-09-30",
+          "text": "subagent-driven-development: a reported DONE does not mean the implementer's processes have exited - [x] I searched existing issues and this has not been proposed before (adjacent: #2113 finding 1 is about implementers stopping mid-run on long suites; this is about processes left alive *after* a reported DONE) ## What problem does this solve? An implementer reported DONE with a commit. The task notification carried \"stopped with background work of its own still running\". The process list showed a shell of that subagent blocked in `python -`, waiting on stdin. The same command line continued wi",
+          "url": "https://github.com/obra/superpowers/issues/2430",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2429-abat-kek",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "abat-kek",
+          "date": "2026-09-30",
+          "text": "SDD scripts resolve repo and workspace from the cwd, not from PLAN_FILE — wrong workspace when called across worktrees - [x] I searched existing issues and this is not a duplicate (adjacent but different failure modes: #2242 greenfield crash, #2207 workspace deletion, #2307 Windows invocation) ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | observed on 6.3.0; the gap is still present on `dev` as of 2026-10-01 | | Harness (Claude Code, Cursor, etc.) | Claude Code (desktop app, Code tab) | | Harness version | 2.1.272 | | Your model + version | Claude Opus 5.",
+          "url": "https://github.com/obra/superpowers/issues/2429",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2436-bobbykim89",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "bobbykim89",
+          "date": "2026-10-01",
+          "text": "task-brief: an unclosed fence makes one task's brief absorb every later task, at exit 0 (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: `task-brief`, `brief fence`, `fence`, `task-brief over-capture`; closest: #2304 \"task-brief: track fence character and length so fenced examples cannot end a task early\" — see \"Relationship to #2304\" below) ## Environment (required) | Field | Value | Provenance / supporting evidence | |-------|-------|-------------------------------| | Superpowers version | 6.3.0 (session) and 6.4.1 (both present; not a checkout) | current",
+          "url": "https://github.com/obra/superpowers/issues/2436",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -228,14 +316,14 @@
       "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
+          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "kpdbcdt",
-          "date": "2026-09-25",
-          "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
-          "url": "https://github.com/obra/superpowers/issues/2386",
-          "score": 1,
+          "author": "haruntekin89",
+          "date": "2026-09-24",
+          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
+          "url": "https://github.com/obra/superpowers/issues/2377",
+          "score": 2,
           "sentiment": "negative"
         },
         {
@@ -318,7 +406,7 @@
       "slug": "security-review",
       "ecosystem": "awesome-copilot",
       "displayName": "Security Review",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-2947-hacks4snacks",
@@ -329,6 +417,17 @@
           "text": "[External Plugin]: tmforge ### Plugin name tmforge ### Short description The Strider agent that comes with the tmforge plugin adds evidence-backed STRIDE threat modeling to GitHub Copilot, with structured risk assessment, deterministic validation, and Markdown reports. Optional tmforge integration supports creating, updating, and verifying Microsoft Threat Modeling Tool (.tm7) models. ### GitHub repository Hacks4Snacks/tmforge ### Plugin path inside the repository plugins/tmforge ### Ref to review v0.11.0 ### Commit SHA to review 8c22d85c4cb65f416c228bb2a73ae9f364aa549b ### Version 0.11.0 ### ",
           "url": "https://github.com/github/awesome-copilot/issues/2947",
           "score": 6,
+          "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-2922-ecocitizenz",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Ecocitizenz",
+          "date": "2026-09-03",
+          "text": "[External Plugin]: eczid-api-trust <!-- external-plugin-submission --> ### Plugin name eczid-api-trust ### Short description Free agent plugin, MIT-licensed: no purchase, account, sign-in, licence key or trial is required, and nothing it does is withheld pending a purchase. See which API surfaces a workspace exposes, how they are secured and whether they carry public proof: OpenAPI / GraphQL / AsyncAPI contracts, catalogues, auth configuration, disclosure contacts and contract tests, with a deterministic Review Priority. Inspection only. Free. ### GitHub repository Ecocitizenz/eczid-agent-plug",
+          "url": "https://github.com/github/awesome-copilot/issues/2922",
+          "score": 5,
           "sentiment": "positive"
         },
         {
@@ -471,7 +570,7 @@
       "slug": "frontend-design",
       "ecosystem": "anthropics-skills",
       "displayName": "Frontend Design",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-141-michellepace",
@@ -481,17 +580,6 @@
           "date": "2025-12-12",
           "text": "Blog post: broken link (web-artifacts-builder skill ) Hello, On https://claude.com/blog/improving-frontend-design-through-skills there is a broken link: > This led us to create a [web-artifacts-builder skill](https://github.com/anthropics/skills/blob/main/web-artifacts-builder/SKILL.md) which leverages Claude’s ability to use a computer and guides Claude to build artifacts using multiple files and modern web technologies like React, Tailwind CSS and shadcn/ui. The link is: https://github.com/anthropics/skills/blob/main/web-artifacts-builder/SKILL.md Best wishes, Michelle",
           "url": "https://github.com/anthropics/skills/issues/141",
-          "score": 2,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1087-jianghe12",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "JiangHe12",
-          "date": "2026-05-04",
-          "text": "document-skills plugin loads all skills from repo instead of only declared ones in marketplace.json ## Description When installing the `document-skills` plugin via `/plugin install document-skills@anthropic-agent-skills`, **all 17 skills** from the repository are loaded, instead of only the **4 skills** declared in `marketplace.json`. ## Expected Behavior According to `.claude-plugin/marketplace.json`, the `document-skills` plugin declares only 4 skills: ```json { \"name\": \"document-skills\", \"skills\": [ \"./skills/xlsx\", \"./skills/docx\", \"./skills/pptx\", \"./skills/pdf\" ] } ``` Only these 4 skill",
-          "url": "https://github.com/anthropics/skills/issues/1087",
           "score": 2,
           "sentiment": "neutral"
         },
@@ -512,7 +600,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1352-liam-ai-reality",
@@ -535,6 +623,17 @@
           "url": "https://github.com/anthropics/skills/issues/1706",
           "score": 2,
           "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1467-100kimch",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "100kimch",
+          "date": "2026-07-23",
+          "text": "skill-creator: quick_validate.py imports PyYAML but it's not declared as a dependency anywhere `scripts/quick_validate.py` does: ```python import yaml ... frontmatter = yaml.safe_load(frontmatter_text) ... except yaml.YAMLError as e: ``` `yaml` (PyYAML) is not part of the Python standard library, and neither `skill-creator/` nor the repo root declares it as a dependency anywhere (no `requirements.txt`, `pyproject.toml`, etc. in this repo). On a machine that doesn't happen to have PyYAML already installed globally, running the skill's validation step fails with `ModuleNotFoundError: No module n",
+          "url": "https://github.com/anthropics/skills/issues/1467",
+          "score": 1,
+          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-anthropics-skills-issues-1827-ctrlcarlitos",

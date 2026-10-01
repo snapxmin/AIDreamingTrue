@@ -1,15 +1,5 @@
 {
-  "generatedAt": "2026-09-30T05:47:13Z",
+  "generatedAt": "2026-10-01T06:17:06Z",
   "isBaselineRun": false,
-  "changes": [
-    {
-      "type": "added",
-      "key": "awesome-copilot/microsoft-store-publisher",
-      "ecosystem": "awesome-copilot",
-      "slug": "microsoft-store-publisher",
-      "displayName": "Microsoft Store Publisher",
-      "summary": "生态新增 Skill：Microsoft Store Publisher",
-      "detectedAt": "2026-09-30T05:48:11Z"
-    }
-  ]
+  "changes": []
 }
