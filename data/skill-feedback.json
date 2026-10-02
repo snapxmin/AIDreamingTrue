@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-01T06:20:38Z",
+    "lastUpdated": "2026-10-02T06:01:27Z",
     "skillCount": 20,
-    "totalComments": 58,
+    "totalComments": 53,
     "sources": [
       "hacker-news",
       "github",
@@ -15,7 +15,7 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
@@ -27,17 +27,6 @@
           "url": "https://github.com/obra/superpowers/issues/2377",
           "score": 2,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2423-mishastr",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "mishastr",
-          "date": "2026-09-29",
-          "text": "Pressure-register and update-suppressor wording over-triggers on Claude Opus 5.5 / Sonnet 5.5 **Version:** superpowers 6.3.0 (claude-plugins-official), Claude Code on Claude Opus 5.5. Current Claude models follow instructions more closely and literally than the models this wording was tuned against. Anthropic's current prompting guidance for Opus 5.5 / Sonnet 5.5 calls out three patterns that now degrade behavior rather than guard it, and superpowers ships all three in text that loads every session: **1. Emphatic always-invoke language (over-triggering).** - `hooks/session-start:27` wraps the ",
-          "url": "https://github.com/obra/superpowers/issues/2423",
-          "score": 0,
-          "sentiment": "positive"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2434-abat-kek",
@@ -220,61 +209,17 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 6,
+      "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
+          "id": "github-https-github-com-obra-superpowers-issues-2440-tpischke",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "haruntekin89",
-          "date": "2026-09-24",
-          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
-          "url": "https://github.com/obra/superpowers/issues/2377",
-          "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2431-abat-kek",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "abat-kek",
-          "date": "2026-09-30",
-          "text": "subagent-driven-development: \"no second fix wave\" should not cover breakage the final fix wave itself introduced - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? The final whole-branch review asked for an additional protection layer (block an admin path from outside the local network). The one allowed fix wave implemented it as a raw-path prefix check. The scoped re-review probed it and found a bypass: `/%61dmin/login` returned 200 — a new Important security finding that only the fix wave had created. The skill says: exactly one scoped re-",
-          "url": "https://github.com/obra/superpowers/issues/2431",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2435-abat-kek",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "abat-kek",
-          "date": "2026-09-30",
-          "text": "subagent-driven-development: in an unattended run, a step that needs a human at the screen should move to the next available tool, not be dropped - [x] I searched existing issues and this has not been proposed before (adjacent: #1664, closed in favour of the end-to-end testing direction in #374; this is narrower — what a controller rules about an existing manual step in a plan) ## What problem does this solve? In an unattended run, a plan step \"local visual check\" (a drag gesture in the browser) was ruled optional under **Rulings, not stalls**, and the implementer skipped it (\"nobody is watchi",
-          "url": "https://github.com/obra/superpowers/issues/2435",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2430-abat-kek",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "abat-kek",
-          "date": "2026-09-30",
-          "text": "subagent-driven-development: a reported DONE does not mean the implementer's processes have exited - [x] I searched existing issues and this has not been proposed before (adjacent: #2113 finding 1 is about implementers stopping mid-run on long suites; this is about processes left alive *after* a reported DONE) ## What problem does this solve? An implementer reported DONE with a commit. The task notification carried \"stopped with background work of its own still running\". The process list showed a shell of that subagent blocked in `python -`, waiting on stdin. The same command line continued wi",
-          "url": "https://github.com/obra/superpowers/issues/2430",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2429-abat-kek",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "abat-kek",
-          "date": "2026-09-30",
-          "text": "SDD scripts resolve repo and workspace from the cwd, not from PLAN_FILE — wrong workspace when called across worktrees - [x] I searched existing issues and this is not a duplicate (adjacent but different failure modes: #2242 greenfield crash, #2207 workspace deletion, #2307 Windows invocation) ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | observed on 6.3.0; the gap is still present on `dev` as of 2026-10-01 | | Harness (Claude Code, Cursor, etc.) | Claude Code (desktop app, Code tab) | | Harness version | 2.1.272 | | Your model + version | Claude Opus 5.",
-          "url": "https://github.com/obra/superpowers/issues/2429",
-          "score": 0,
+          "author": "tpischke",
+          "date": "2026-10-01",
+          "text": "task-reviewer-prompt: requiring file:line for every passed check makes reviewers compute line numbers from diff offsets ## Summary `skills/subagent-driven-development/task-reviewer-prompt.md` contains two instructions that conflict: - Lines 135-137: \"Your report should point at evidence: file:line references for every finding **and for any check you would otherwise answer with a bare 'yes.'**\" - Earlier in the same prompt: \"Read the diff file once […] do not Read a changed file separately unless a hunk you must judge is cut off mid-function\", \"Do not re-run git commands\", \"Do not crawl the bro",
+          "url": "https://github.com/obra/superpowers/issues/2440",
+          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -316,6 +261,17 @@
       "feedbackCount": 2,
       "comments": [
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2247-medvegy",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "medvegy",
+          "date": "2026-09-02",
+          "text": "Antigravity (agy): plugin hooks.json fails to parse — the using-superpowers bootstrap never loads ## Summary On Antigravity CLI (`agy` 1.1.24) the plugin's `hooks/hooks.json` is not merely unfired for want of a `SessionStart` event — **it fails to parse**. `agy plugin install` reports `✔ hooks : 1 processed`, but agy rejects the file at load time. Antigravity users therefore get the 14 skills on disk with no bootstrap, which by this project's own porting guide means \"the skill files are inert — present on disk, never invoked.\" ## Versions - superpowers 6.3.0, installed with `agy plugin install",
+          "url": "https://github.com/obra/superpowers/issues/2247",
+          "score": 2,
+          "sentiment": "neutral"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -325,17 +281,6 @@
           "url": "https://github.com/obra/superpowers/issues/2377",
           "score": 2,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2423-mishastr",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "mishastr",
-          "date": "2026-09-29",
-          "text": "Pressure-register and update-suppressor wording over-triggers on Claude Opus 5.5 / Sonnet 5.5 **Version:** superpowers 6.3.0 (claude-plugins-official), Claude Code on Claude Opus 5.5. Current Claude models follow instructions more closely and literally than the models this wording was tuned against. Anthropic's current prompting guidance for Opus 5.5 / Sonnet 5.5 calls out three patterns that now degrade behavior rather than guard it, and superpowers ships all three in text that loads every session: **1. Emphatic always-invoke language (over-triggering).** - `hooks/session-start:27` wraps the ",
-          "url": "https://github.com/obra/superpowers/issues/2423",
-          "score": 0,
-          "sentiment": "positive"
         }
       ]
     },
