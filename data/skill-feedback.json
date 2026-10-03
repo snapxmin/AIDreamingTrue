@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-02T06:01:27Z",
+    "lastUpdated": "2026-10-03T05:35:32Z",
     "skillCount": 20,
-    "totalComments": 53,
+    "totalComments": 55,
     "sources": [
       "hacker-news",
       "github",
@@ -66,17 +66,17 @@
           "date": "2026-09-25",
           "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
           "url": "https://github.com/obra/superpowers/issues/2386",
-          "score": 1,
+          "score": 2,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2422-darth-pie",
+          "id": "github-https-github-com-obra-superpowers-issues-2445-tjs0",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "Darth-Pie",
-          "date": "2026-09-29",
-          "text": "test-driven-development: no guidance when a layer has no test harness, so the agent either skips the Iron Law silently or installs a harness nobody asked for - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A feature spanned a server with a working integration-test setup and a React front end. The front end's test runner is node-only, with no DOM environment and no component-testing library installed. The server half went strictly red-green. For the UI half, the agent pulled the pure rules out into plain modules and test-drove those: - lab",
-          "url": "https://github.com/obra/superpowers/issues/2422",
+          "author": "tjs0",
+          "date": "2026-10-02",
+          "text": "test-driven-development and subagent-driven-development disagree on running the full suite after a fix - [x] I searched existing issues and this is not a duplicate ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.4.1 (checked against main, unchanged) | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | 2.1.288 | | Your model + version | claude-opus-5-5 (found during a prompt audit) | | All plugins installed | superpowers, commit-commands, github, context7, rust-analyzer-lsp | | OS + shell | Linux, bash | ## Is this a Superpowers iss",
+          "url": "https://github.com/obra/superpowers/issues/2445",
           "score": 0,
           "sentiment": "negative"
         }
@@ -89,6 +89,17 @@
       "feedbackCount": 4,
       "comments": [
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2309-teashaman-cyber",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "TeaShaman-cyber",
+          "date": "2026-09-17",
+          "text": "writing-plans: self-review misses task-state/DAG closure in executable plans ## What problem does this solve? `writing-plans` currently requires each task to produce a self-contained, independently testable deliverable and gives tasks explicit `Consumes` / `Produces` interfaces. It also asks for concrete test code, commands, implementation snippets, and frequent commits. At current `main` (`b36e0829c6d0140e93cfef2ca599b1b07d4a7797`), the final Self-Review checks three things: spec coverage, placeholders, and type/name consistency: https://github.com/obra/superpowers/blob/b36e0829c6d0140e93cfef",
+          "url": "https://github.com/obra/superpowers/issues/2309",
+          "score": 8,
+          "sentiment": "negative"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -96,7 +107,7 @@
           "date": "2026-09-25",
           "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
           "url": "https://github.com/obra/superpowers/issues/2386",
-          "score": 1,
+          "score": 2,
           "sentiment": "negative"
         },
         {
@@ -107,7 +118,7 @@
           "date": "2026-09-30",
           "text": "subagent-driven-development: \"no second fix wave\" should not cover breakage the final fix wave itself introduced - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? The final whole-branch review asked for an additional protection layer (block an admin path from outside the local network). The one allowed fix wave implemented it as a raw-path prefix check. The scoped re-review probed it and found a bypass: `/%61dmin/login` returned 200 — a new Important security finding that only the fix wave had created. The skill says: exactly one scoped re-",
           "url": "https://github.com/obra/superpowers/issues/2431",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -118,17 +129,6 @@
           "date": "2026-09-30",
           "text": "writing-plans: user-facing text that describes app behaviour should cite the code it describes - [x] I searched existing issues and this has not been proposed before (related in spirit: #2285 — values asserted rather than produced) ## What problem does this solve? A plan fixed onboarding and help texts as \"final wording\" and ticked them off in self-review. Several described behaviour the code implements differently: \"end the session at the top right\" (the button sits at the bottom of the content), \"when your last set reaches the rep target, +5 kg appears\" (the suggestion needs at least two set",
           "url": "https://github.com/obra/superpowers/issues/2433",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2432-abat-kek",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "abat-kek",
-          "date": "2026-09-30",
-          "text": "writing-plans: verifying a security boundary needs adversarial probes (encoded paths, concurrency), not happy-path negatives - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A plan exposed an API through a reverse proxy with a path allowlist, and its verification step checked the block with two harmless negatives (`/admin/login`, `/`). A review of the plan found that the proxy compares the decoded, normalised path but forwards the raw one, while the backend routes on the raw path: `/admin/users/..%2F..%2F..%2Fapi%2Fv1%2Fx` passes the allow",
-          "url": "https://github.com/obra/superpowers/issues/2432",
           "score": 0,
           "sentiment": "negative"
         }
@@ -209,27 +209,49 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 2,
+      "feedbackCount": 4,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2440-tpischke",
+          "id": "github-https-github-com-obra-superpowers-issues-2431-abat-kek",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "tpischke",
-          "date": "2026-10-01",
-          "text": "task-reviewer-prompt: requiring file:line for every passed check makes reviewers compute line numbers from diff offsets ## Summary `skills/subagent-driven-development/task-reviewer-prompt.md` contains two instructions that conflict: - Lines 135-137: \"Your report should point at evidence: file:line references for every finding **and for any check you would otherwise answer with a bare 'yes.'**\" - Earlier in the same prompt: \"Read the diff file once […] do not Read a changed file separately unless a hunk you must judge is cut off mid-function\", \"Do not re-run git commands\", \"Do not crawl the bro",
-          "url": "https://github.com/obra/superpowers/issues/2440",
+          "author": "abat-kek",
+          "date": "2026-09-30",
+          "text": "subagent-driven-development: \"no second fix wave\" should not cover breakage the final fix wave itself introduced - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? The final whole-branch review asked for an additional protection layer (block an admin path from outside the local network). The one allowed fix wave implemented it as a raw-path prefix check. The scoped re-review probed it and found a bypass: `/%61dmin/login` returned 200 — a new Important security finding that only the fix wave had created. The skill says: exactly one scoped re-",
+          "url": "https://github.com/obra/superpowers/issues/2431",
           "score": 1,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2436-bobbykim89",
+          "id": "github-https-github-com-obra-superpowers-issues-2445-tjs0",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "bobbykim89",
-          "date": "2026-10-01",
-          "text": "task-brief: an unclosed fence makes one task's brief absorb every later task, at exit 0 (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: `task-brief`, `brief fence`, `fence`, `task-brief over-capture`; closest: #2304 \"task-brief: track fence character and length so fenced examples cannot end a task early\" — see \"Relationship to #2304\" below) ## Environment (required) | Field | Value | Provenance / supporting evidence | |-------|-------|-------------------------------| | Superpowers version | 6.3.0 (session) and 6.4.1 (both present; not a checkout) | current",
-          "url": "https://github.com/obra/superpowers/issues/2436",
+          "author": "tjs0",
+          "date": "2026-10-02",
+          "text": "test-driven-development and subagent-driven-development disagree on running the full suite after a fix - [x] I searched existing issues and this is not a duplicate ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.4.1 (checked against main, unchanged) | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | 2.1.288 | | Your model + version | claude-opus-5-5 (found during a prompt audit) | | All plugins installed | superpowers, commit-commands, github, context7, rust-analyzer-lsp | | OS + shell | Linux, bash | ## Is this a Superpowers iss",
+          "url": "https://github.com/obra/superpowers/issues/2445",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2446-tjs0",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "tjs0",
+          "date": "2026-10-02",
+          "text": "Final whole-branch review: code-reviewer.md re-derives the diff and has no model slot, contrary to SDD's Final Review - [x] I searched existing issues and this is not a duplicate ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.4.1 (checked against main, unchanged) | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | 2.1.288 | | Your model + version | claude-opus-5-5 (found during a prompt audit) | | All plugins installed | superpowers, commit-commands, github, context7, rust-analyzer-lsp | | OS + shell | Linux, bash | ## Is this a ",
+          "url": "https://github.com/obra/superpowers/issues/2446",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2443-khughitt",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "khughitt",
+          "date": "2026-10-02",
+          "text": "subagent-driven-development: implementers commit their ignored report files, and task review accepts them - [x] I searched existing issues and this is not a duplicate ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.4.1 (skills read from a pinned checkout) | | Harness (Claude Code, Cursor, etc.) | Codex CLI (codex-tui) | | Harness version | 0.159.2 | | Your model + version | gpt-6.1-sol (controller) | | All plugins installed | superpowers; others not recorded | | OS + shell | Arch Linux, zsh | ## Is this a Superpowers issue or a platform issue? - [ ] I co",
+          "url": "https://github.com/obra/superpowers/issues/2443",
           "score": 0,
           "sentiment": "negative"
         }
@@ -242,14 +264,14 @@
       "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2266-slowernet",
+          "id": "github-https-github-com-obra-superpowers-issues-2446-tjs0",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "slowernet",
-          "date": "2026-09-06",
-          "text": "Fixes keep creating new bugs because no skill requires tracing what a fix changes - [x] I searched existing issues and this has not been proposed before Closest prior art: #2145 B1 (enumerate readers of a stale field; the *root cause's* blast radius during diagnosis, where this is the *fix's*), #2264 §5 (re-run the objective check after a delegated edit; a dynamic check, where this is static), #2113 §4 (coverage gaps *between* tasks, not gaps *created by* a fix), PR #2198 (trace a bad value upstream to its producer; opposite direction), and closed #2066 (a \"blast radius\" row for spec self-revi",
-          "url": "https://github.com/obra/superpowers/issues/2266",
-          "score": 1,
+          "author": "tjs0",
+          "date": "2026-10-02",
+          "text": "Final whole-branch review: code-reviewer.md re-derives the diff and has no model slot, contrary to SDD's Final Review - [x] I searched existing issues and this is not a duplicate ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.4.1 (checked against main, unchanged) | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | 2.1.288 | | Your model + version | claude-opus-5-5 (found during a prompt audit) | | All plugins installed | superpowers, commit-commands, github, context7, rust-analyzer-lsp | | OS + shell | Linux, bash | ## Is this a ",
+          "url": "https://github.com/obra/superpowers/issues/2446",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -258,7 +280,7 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2247-medvegy",
@@ -279,6 +301,17 @@
           "date": "2026-09-24",
           "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
           "url": "https://github.com/obra/superpowers/issues/2377",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "kpdbcdt",
+          "date": "2026-09-25",
+          "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
+          "url": "https://github.com/obra/superpowers/issues/2386",
           "score": 2,
           "sentiment": "negative"
         }
@@ -545,19 +578,8 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1352-liam-ai-reality",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "liam-ai-reality",
-          "date": "2026-06-25",
-          "text": "skill-creator: run_eval.py parallel workers cross-match skill UUIDs, producing false-negative trigger rates ## Summary `skills/skill-creator/scripts/run_eval.py` produces **systematically wrong (near-zero) trigger rates whenever `--num-workers > 1`** (the default is 10). The failure is silent: every query — including ones that obviously *should* trigger — comes back with `trigger_rate ≈ 0`, which then makes all `should_trigger: false` cases \"pass\" trivially and all `should_trigger: true` cases \"fail\". The aggregate looks like a bad skill description when in fact the *measurement* is broken. ##",
-          "url": "https://github.com/anthropics/skills/issues/1352",
-          "score": 3,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-anthropics-skills-issues-1706-stillpimpn",
           "source": "github",
