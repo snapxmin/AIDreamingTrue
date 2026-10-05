@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-04T06:10:33Z",
+    "lastUpdated": "2026-10-05T06:03:25Z",
     "skillCount": 20,
-    "totalComments": 66,
+    "totalComments": 65,
     "sources": [
       "hacker-news",
       "github",
@@ -15,7 +15,7 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 2,
+      "feedbackCount": 1,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
@@ -26,17 +26,6 @@
           "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
           "url": "https://github.com/obra/superpowers/issues/2377",
           "score": 3,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2434-abat-kek",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "abat-kek",
-          "date": "2026-09-30",
-          "text": "brainstorming: check YAGNI cuts against the goals the user stated, not only the features they named - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? The user described the purpose of a pantry feature explicitly: \"with expiry dates, so things don't go bad\". In the design section, an expiry reminder was nevertheless listed under \"deliberately left out\", because it had not been requested literally as a feature. The user had to ask and request it again. Without it, the stated goal is reached only if the user remembers to look — the cut removed",
-          "url": "https://github.com/obra/superpowers/issues/2434",
-          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -108,7 +97,7 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2309-teashaman-cyber",
@@ -119,17 +108,6 @@
           "text": "writing-plans: self-review misses task-state/DAG closure in executable plans ## What problem does this solve? `writing-plans` currently requires each task to produce a self-contained, independently testable deliverable and gives tasks explicit `Consumes` / `Produces` interfaces. It also asks for concrete test code, commands, implementation snippets, and frequent commits. At current `main` (`b36e0829c6d0140e93cfef2ca599b1b07d4a7797`), the final Self-Review checks three things: spec coverage, placeholders, and type/name consistency: https://github.com/obra/superpowers/blob/b36e0829c6d0140e93cfef",
           "url": "https://github.com/obra/superpowers/issues/2309",
           "score": 8,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "kpdbcdt",
-          "date": "2026-09-25",
-          "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
-          "url": "https://github.com/obra/superpowers/issues/2386",
-          "score": 2,
           "sentiment": "negative"
         },
         {
@@ -357,7 +335,7 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
@@ -369,17 +347,6 @@
           "url": "https://github.com/obra/superpowers/issues/2377",
           "score": 3,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2247-medvegy",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "medvegy",
-          "date": "2026-09-02",
-          "text": "Antigravity (agy): plugin hooks.json fails to parse — the using-superpowers bootstrap never loads ## Summary On Antigravity CLI (`agy` 1.1.24) the plugin's `hooks/hooks.json` is not merely unfired for want of a `SessionStart` event — **it fails to parse**. `agy plugin install` reports `✔ hooks : 1 processed`, but agy rejects the file at load time. Antigravity users therefore get the 14 skills on disk with no bootstrap, which by this project's own porting guide means \"the skill files are inert — present on disk, never invoked.\" ## Versions - superpowers 6.3.0, installed with `agy plugin install",
-          "url": "https://github.com/obra/superpowers/issues/2247",
-          "score": 2,
-          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
@@ -409,7 +376,7 @@
       "slug": "ai-ready",
       "ecosystem": "awesome-copilot",
       "displayName": "AI Ready",
-      "feedbackCount": 5,
+      "feedbackCount": 6,
       "comments": [
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-2504-phodal",
@@ -463,6 +430,17 @@
           "date": "2026-09-25",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 802 resources - **Aging (14–30 days):** 21 resources - **Fresh (<14 days):** 24 resources (not listed below) ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Show all 802 entries</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|--------------------|----------| | `instructions/bicep-code-best-practices.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/cmake-vcpkg.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/generate-modern-terraform-c",
           "url": "https://github.com/github/awesome-copilot/issues/3751",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-4480-matinomari906-cloud",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "matinomari906-cloud",
+          "date": "2026-10-04",
+          "text": "## Skills (part 1) ## Skills (part 1) ``` npm warn EBADENGINE Unsupported engine { — @github/awesome-copilot-content-reviewers npm warn EBADENGINE package: 'commander@15.0.0', — @github/awesome-copilot-content-reviewers npm warn EBADENGINE required: { node: '>=22.12.0' }, — @github/awesome-copilot-content-reviewers npm warn EBADENGINE current: { node: 'v20.20.2', npm: '10.8.2' } — @github/awesome-copilot-content-reviewers npm warn EBADENGINE } — @github/awesome-copilot-content-reviewers npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant ",
+          "url": "https://github.com/github/awesome-copilot/issues/4480",
           "score": 0,
           "sentiment": "negative"
         }
@@ -524,7 +502,7 @@
       "slug": "eval-driven-dev",
       "ecosystem": "awesome-copilot",
       "displayName": "Eval-Driven Development",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-2578-github-actions-bot-",
@@ -545,6 +523,17 @@
           "date": "2026-09-25",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 802 resources - **Aging (14–30 days):** 21 resources - **Fresh (<14 days):** 24 resources (not listed below) ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Show all 802 entries</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|--------------------|----------| | `instructions/bicep-code-best-practices.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/cmake-vcpkg.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/generate-modern-terraform-c",
           "url": "https://github.com/github/awesome-copilot/issues/3751",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-4480-matinomari906-cloud",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "matinomari906-cloud",
+          "date": "2026-10-04",
+          "text": "## Skills (part 1) ## Skills (part 1) ``` npm warn EBADENGINE Unsupported engine { — @github/awesome-copilot-content-reviewers npm warn EBADENGINE package: 'commander@15.0.0', — @github/awesome-copilot-content-reviewers npm warn EBADENGINE required: { node: '>=22.12.0' }, — @github/awesome-copilot-content-reviewers npm warn EBADENGINE current: { node: 'v20.20.2', npm: '10.8.2' } — @github/awesome-copilot-content-reviewers npm warn EBADENGINE } — @github/awesome-copilot-content-reviewers npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant ",
+          "url": "https://github.com/github/awesome-copilot/issues/4480",
           "score": 0,
           "sentiment": "negative"
         }
@@ -606,7 +595,7 @@
       "slug": "acquire-codebase-knowledge",
       "ecosystem": "awesome-copilot",
       "displayName": "Acquire Codebase Knowledge",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-2058-github-actions-bot-",
@@ -627,6 +616,17 @@
           "date": "2026-08-07",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 723 resources - **Aging (14–30 days):** 34 resources - **Fresh (<14 days):** 67 resources (not listed below) Note: This inventory covers `agents/` (224), `instructions/` (191), `hooks/` (8 folders), and `skills/` (401 folders). No `prompts/*.prompt.md` files currently exist in the repository. Hook and skill folders are treated as single resources using the most recent substantive change across any file in the folder. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Click to expand (723 resources)</summar",
           "url": "https://github.com/github/awesome-copilot/issues/2578",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-4480-matinomari906-cloud",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "matinomari906-cloud",
+          "date": "2026-10-04",
+          "text": "## Skills (part 1) ## Skills (part 1) ``` npm warn EBADENGINE Unsupported engine { — @github/awesome-copilot-content-reviewers npm warn EBADENGINE package: 'commander@15.0.0', — @github/awesome-copilot-content-reviewers npm warn EBADENGINE required: { node: '>=22.12.0' }, — @github/awesome-copilot-content-reviewers npm warn EBADENGINE current: { node: 'v20.20.2', npm: '10.8.2' } — @github/awesome-copilot-content-reviewers npm warn EBADENGINE } — @github/awesome-copilot-content-reviewers npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant ",
+          "url": "https://github.com/github/awesome-copilot/issues/4480",
           "score": 0,
           "sentiment": "negative"
         }
@@ -666,7 +666,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 5,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1706-stillpimpn",
@@ -678,17 +678,6 @@
           "url": "https://github.com/anthropics/skills/issues/1706",
           "score": 2,
           "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1823-haruntekin89",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "haruntekin89",
-          "date": "2026-09-24",
-          "text": "skill-creator: thinking-depth prose, all-caps workaround, and step-choreographed grader agents written for older models `skills/skill-creator/SKILL.md` and its `agents/*.md` (line numbers against `main` today). Found during a prompt audit targeting Claude Fable 5.1 / Claude Opus 5.5. (The `pdf/forms.md:4` missing `.py` is already covered by #1770, so not repeated here.) ## SKILL.md - **Line 306** steers thinking depth in prose and adds stakes pressure: *\"This task is pretty important (we are trying to create billions a year in economic value here!) and your thinking time is not the blocker; ta",
-          "url": "https://github.com/anthropics/skills/issues/1823",
-          "score": 1,
-          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-anthropics-skills-issues-1960-kennethje",
@@ -709,17 +698,6 @@
           "date": "2026-10-03",
           "text": "skill-creator: init_skill.py's template emits `description: [TODO: ...]`, which YAML parses as a list — its own quick_validate.py then rejects it (and DSH silently drops the skill) --- repo: anthropics/skills skill: skill-creator kind: bug labels: [bug, skill-creator, frontmatter] 状态: 已投递（见文末 #号） --- # `skill-creator`：`init_skill.py` 的模板产出**它自己的 `quick_validate.py` 会拒收**的前言 > `- [x] 我已确认这不是文档里声明的有意行为` > —— 两个脚本同属 `skill-creator`，一个生成、一个校验，**结论互相打架**。 ## Summary `init_skill.py` 生成的 `SKILL.md` 模板里写着： ```yaml --- name: test-demo-skill description: [TODO: Complete and informative explanation of wh",
           "url": "https://github.com/anthropics/skills/issues/1957",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1959-longrunningprocess",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "longrunningprocess",
-          "date": "2026-10-03",
-          "text": "pptx, web-artifacts-builder, pdf: design defaults that contradict each other, an outdated avoid-list, and tutorial content (prompt audit for Opus 5.5) These came out of a prompt audit run against Claude Opus 5.5 as the reading model. Line numbers are against `main` at 8a1541c. skill-creator and its agents are already covered in #1823, so this issue covers only the three skills below. ## pptx - **`SKILL.md:82`** \"**Don't create boring slides.** Plain bullets on a white background won't impress anyone.\" This is a vague style nudge. On current models, naming the specific defaults to avoid works b",
-          "url": "https://github.com/anthropics/skills/issues/1959",
           "score": 0,
           "sentiment": "negative"
         }
@@ -870,7 +848,7 @@
       "slug": "context-map",
       "ecosystem": "awesome-copilot",
       "displayName": "Context Map",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-2578-github-actions-bot-",
@@ -891,6 +869,17 @@
           "date": "2026-09-25",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 802 resources - **Aging (14–30 days):** 21 resources - **Fresh (<14 days):** 24 resources (not listed below) ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Show all 802 entries</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|--------------------|----------| | `instructions/bicep-code-best-practices.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/cmake-vcpkg.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/generate-modern-terraform-c",
           "url": "https://github.com/github/awesome-copilot/issues/3751",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-4480-matinomari906-cloud",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "matinomari906-cloud",
+          "date": "2026-10-04",
+          "text": "## Skills (part 1) ## Skills (part 1) ``` npm warn EBADENGINE Unsupported engine { — @github/awesome-copilot-content-reviewers npm warn EBADENGINE package: 'commander@15.0.0', — @github/awesome-copilot-content-reviewers npm warn EBADENGINE required: { node: '>=22.12.0' }, — @github/awesome-copilot-content-reviewers npm warn EBADENGINE current: { node: 'v20.20.2', npm: '10.8.2' } — @github/awesome-copilot-content-reviewers npm warn EBADENGINE } — @github/awesome-copilot-content-reviewers npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant ",
+          "url": "https://github.com/github/awesome-copilot/issues/4480",
           "score": 0,
           "sentiment": "negative"
         }
