@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-05T06:28:19Z",
+    "lastUpdated": "2026-10-06T06:42:22Z",
     "skillCount": 20,
     "totalComments": 65,
     "sources": [
@@ -15,7 +15,7 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
@@ -26,6 +26,17 @@
           "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
           "url": "https://github.com/obra/superpowers/issues/2377",
           "score": 3,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2408-tamaro-skaljic",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "tamaro-skaljic",
+          "date": "2026-09-27",
+          "text": "writing-plans: the plan's code was built twice during planning, then the handoff offered to implement it a third time - [x] I searched existing issues and this is not a duplicate (searched: \"writing-plans prototype\", \"plan implemented twice\", \"execution handoff already implemented\", \"writing-plans code during planning\", \"writing-plans verify plan\"; closest: #895 (closed); related: #2285, #2065) ## Environment (required) | Field | Value | Provenance / supporting evidence | |-------|-------|-------------------------------| | Superpowers version | 6.4.1 (not a checkout) | current observation of p",
+          "url": "https://github.com/obra/superpowers/issues/2408",
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -59,6 +70,17 @@
           "sentiment": "negative"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2454-radekklein92",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "radekklein92",
+          "date": "2026-10-03",
+          "text": "Prompt audit against Claude Fable 5.1: pressure language and update suppressors in using-superpowers, executing-plans, subagent-driven-development Ran a prompt audit of the plugin's skills against the current Claude models (Fable 5.1 / Opus 5.5), which follow instructions more literally than the models much of this text was written for. Findings, with proposed changes: 1. `skills/using-superpowers/SKILL.md:10-16` and `:35-50` - `<EXTREMELY-IMPORTANT> ... even a 1% chance ... ABSOLUTELY MUST ... YOU DO NOT HAVE A CHOICE ... This is not negotiable` plus the 12-row \"Red Flags\" table. The skill is",
+          "url": "https://github.com/obra/superpowers/issues/2454",
+          "score": 1,
+          "sentiment": "neutral"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2445-tjs0",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -68,17 +90,6 @@
           "url": "https://github.com/obra/superpowers/issues/2445",
           "score": 0,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2454-radekklein92",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "radekklein92",
-          "date": "2026-10-03",
-          "text": "Prompt audit against Claude Fable 5.1: pressure language and update suppressors in using-superpowers, executing-plans, subagent-driven-development Ran a prompt audit of the plugin's skills against the current Claude models (Fable 5.1 / Opus 5.5), which follow instructions more literally than the models much of this text was written for. Findings, with proposed changes: 1. `skills/using-superpowers/SKILL.md:10-16` and `:35-50` - `<EXTREMELY-IMPORTANT> ... even a 1% chance ... ABSOLUTELY MUST ... YOU DO NOT HAVE A CHOICE ... This is not negotiable` plus the 12-row \"Red Flags\" table. The skill is",
-          "url": "https://github.com/obra/superpowers/issues/2454",
-          "score": 0,
-          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2452-abat-kek",
@@ -111,13 +122,13 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2431-abat-kek",
+          "id": "github-https-github-com-obra-superpowers-issues-2408-tamaro-skaljic",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "abat-kek",
-          "date": "2026-09-30",
-          "text": "subagent-driven-development: \"no second fix wave\" should not cover breakage the final fix wave itself introduced - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? The final whole-branch review asked for an additional protection layer (block an admin path from outside the local network). The one allowed fix wave implemented it as a raw-path prefix check. The scoped re-review probed it and found a bypass: `/%61dmin/login` returned 200 — a new Important security finding that only the fix wave had created. The skill says: exactly one scoped re-",
-          "url": "https://github.com/obra/superpowers/issues/2431",
+          "author": "tamaro-skaljic",
+          "date": "2026-09-27",
+          "text": "writing-plans: the plan's code was built twice during planning, then the handoff offered to implement it a third time - [x] I searched existing issues and this is not a duplicate (searched: \"writing-plans prototype\", \"plan implemented twice\", \"execution handoff already implemented\", \"writing-plans code during planning\", \"writing-plans verify plan\"; closest: #895 (closed); related: #2285, #2065) ## Environment (required) | Field | Value | Provenance / supporting evidence | |-------|-------|-------------------------------| | Superpowers version | 6.4.1 (not a checkout) | current observation of p",
+          "url": "https://github.com/obra/superpowers/issues/2408",
           "score": 1,
           "sentiment": "negative"
         },
@@ -149,19 +160,8 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2277-caarles00",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Caarles00",
-          "date": "2026-09-10",
-          "text": "systematic-debugging ships its pressure-test fixtures inside the skill directory; they open with \"This is a real scenario. You must choose and act\" - [x] I searched existing issues and this is not a duplicate *(searched \"pressure test\", fixture, CREATION-LOG, test-academic — open and closed)* ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | skill fetched from `main` via skills.sh; directory listing re-checked against `b36e082` | | Harness (Claude Code, Cursor, etc.) | Claude Code, VS Code extension | | Harness version | 2.1.252 (Claude Code) | | Your model ",
-          "url": "https://github.com/obra/superpowers/issues/2277",
-          "score": 3,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
           "source": "github",
@@ -204,6 +204,17 @@
           "sentiment": "negative"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2454-radekklein92",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "radekklein92",
+          "date": "2026-10-03",
+          "text": "Prompt audit against Claude Fable 5.1: pressure language and update suppressors in using-superpowers, executing-plans, subagent-driven-development Ran a prompt audit of the plugin's skills against the current Claude models (Fable 5.1 / Opus 5.5), which follow instructions more literally than the models much of this text was written for. Findings, with proposed changes: 1. `skills/using-superpowers/SKILL.md:10-16` and `:35-50` - `<EXTREMELY-IMPORTANT> ... even a 1% chance ... ABSOLUTELY MUST ... YOU DO NOT HAVE A CHOICE ... This is not negotiable` plus the 12-row \"Red Flags\" table. The skill is",
+          "url": "https://github.com/obra/superpowers/issues/2454",
+          "score": 1,
+          "sentiment": "neutral"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2422-darth-pie",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -213,17 +224,6 @@
           "url": "https://github.com/obra/superpowers/issues/2422",
           "score": 0,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2454-radekklein92",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "radekklein92",
-          "date": "2026-10-03",
-          "text": "Prompt audit against Claude Fable 5.1: pressure language and update suppressors in using-superpowers, executing-plans, subagent-driven-development Ran a prompt audit of the plugin's skills against the current Claude models (Fable 5.1 / Opus 5.5), which follow instructions more literally than the models much of this text was written for. Findings, with proposed changes: 1. `skills/using-superpowers/SKILL.md:10-16` and `:35-50` - `<EXTREMELY-IMPORTANT> ... even a 1% chance ... ABSOLUTELY MUST ... YOU DO NOT HAVE A CHOICE ... This is not negotiable` plus the 12-row \"Red Flags\" table. The skill is",
-          "url": "https://github.com/obra/superpowers/issues/2454",
-          "score": 0,
-          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2451-abat-kek",
@@ -245,17 +245,6 @@
       "feedbackCount": 6,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "haruntekin89",
-          "date": "2026-09-24",
-          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
-          "url": "https://github.com/obra/superpowers/issues/2377",
-          "score": 3,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2435-abat-kek",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -267,17 +256,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2455-grinidx",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "grinidx",
-          "date": "2026-10-03",
-          "text": "executing-plans and subagent-driven-development: the main/master consent rule does not defer to a declared branch policy Seen on superpowers 6.4.2 (`main`). `skills/executing-plans/SKILL.md:111-113` and `skills/subagent-driven-development/SKILL.md:127-129` both say: > Never start implementation on a main/master branch without your human partner's explicit consent. `using-git-worktrees` already defers to what the user has declared. Line 41 asks \"Has the user already indicated their worktree preference in your instructions?\", and line 45 says \"Honor any existing declared preference without askin",
-          "url": "https://github.com/obra/superpowers/issues/2455",
-          "score": 0,
-          "sentiment": "neutral"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2454-radekklein92",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -285,6 +263,17 @@
           "date": "2026-10-03",
           "text": "Prompt audit against Claude Fable 5.1: pressure language and update suppressors in using-superpowers, executing-plans, subagent-driven-development Ran a prompt audit of the plugin's skills against the current Claude models (Fable 5.1 / Opus 5.5), which follow instructions more literally than the models much of this text was written for. Findings, with proposed changes: 1. `skills/using-superpowers/SKILL.md:10-16` and `:35-50` - `<EXTREMELY-IMPORTANT> ... even a 1% chance ... ABSOLUTELY MUST ... YOU DO NOT HAVE A CHOICE ... This is not negotiable` plus the 12-row \"Red Flags\" table. The skill is",
           "url": "https://github.com/obra/superpowers/issues/2454",
+          "score": 1,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2455-grinidx",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "grinidx",
+          "date": "2026-10-03",
+          "text": "executing-plans and subagent-driven-development: the main/master consent rule does not defer to a declared branch policy Seen on superpowers 6.4.2 (`main`). `skills/executing-plans/SKILL.md:111-113` and `skills/subagent-driven-development/SKILL.md:127-129` both say: > Never start implementation on a main/master branch without your human partner's explicit consent. `using-git-worktrees` already defers to what the user has declared. Line 41 asks \"Has the user already indicated their worktree preference in your instructions?\", and line 45 says \"Honor any existing declared preference without askin",
+          "url": "https://github.com/obra/superpowers/issues/2455",
           "score": 0,
           "sentiment": "neutral"
         },
@@ -307,6 +296,17 @@
           "date": "2026-10-03",
           "text": "subagent-driven-development: a fix round that changes an interface leaves later tasks' plan text calling the old one - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? During an SDD run over a multi-plan feature, a task review raised an Important finding, and the fix round made a build script's packaging-only option stricter, so the old way of calling it now failed. The fix was correct and the scoped re-review passed. But the plan text of the following tasks and the plan's delivery section still invoked the mode the old way — about seven cal",
           "url": "https://github.com/obra/superpowers/issues/2450",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2459-rhuthik",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "rhuthik",
+          "date": "2026-10-05",
+          "text": "task-brief: alphanumeric task IDs (\"Task A1\", \"Task B2\") are never recognised as task headings - [x] I searched existing issues and this is not a duplicate. Related: #2175 and #2405 (anchoring of numeric IDs) and open PRs #2176 / #2359, which edit the same awk line but keep heading detection numeric-only (`Task[ \\t]+[0-9]+`), so they don't cover this case. ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.4.1 (code unchanged on `dev` as of b1f8774) | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | 2.1.286 | | Your model + version ",
+          "url": "https://github.com/obra/superpowers/issues/2459",
           "score": 0,
           "sentiment": "negative"
         }
@@ -367,7 +367,7 @@
           "date": "2026-10-03",
           "text": "Prompt audit against Claude Fable 5.1: pressure language and update suppressors in using-superpowers, executing-plans, subagent-driven-development Ran a prompt audit of the plugin's skills against the current Claude models (Fable 5.1 / Opus 5.5), which follow instructions more literally than the models much of this text was written for. Findings, with proposed changes: 1. `skills/using-superpowers/SKILL.md:10-16` and `:35-50` - `<EXTREMELY-IMPORTANT> ... even a 1% chance ... ABSOLUTELY MUST ... YOU DO NOT HAVE A CHOICE ... This is not negotiable` plus the 12-row \"Red Flags\" table. The skill is",
           "url": "https://github.com/obra/superpowers/issues/2454",
-          "score": 0,
+          "score": 1,
           "sentiment": "neutral"
         }
       ]
