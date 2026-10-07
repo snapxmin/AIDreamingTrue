@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-06T06:42:22Z",
+    "lastUpdated": "2026-10-07T06:18:55Z",
     "skillCount": 20,
-    "totalComments": 65,
+    "totalComments": 72,
     "sources": [
       "hacker-news",
       "github",
@@ -15,19 +15,8 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "haruntekin89",
-          "date": "2026-09-24",
-          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
-          "url": "https://github.com/obra/superpowers/issues/2377",
-          "score": 3,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2408-tamaro-skaljic",
           "source": "github",
@@ -37,6 +26,28 @@
           "text": "writing-plans: the plan's code was built twice during planning, then the handoff offered to implement it a third time - [x] I searched existing issues and this is not a duplicate (searched: \"writing-plans prototype\", \"plan implemented twice\", \"execution handoff already implemented\", \"writing-plans code during planning\", \"writing-plans verify plan\"; closest: #895 (closed); related: #2285, #2065) ## Environment (required) | Field | Value | Provenance / supporting evidence | |-------|-------|-------------------------------| | Superpowers version | 6.4.1 (not a checkout) | current observation of p",
           "url": "https://github.com/obra/superpowers/issues/2408",
           "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2465-jrgranell",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "JRGranell",
+          "date": "2026-10-06",
+          "text": "Support a handoff section (template or hook) in brainstorming specs, for downstream tools ### What A way for another tool to have `brainstorming` add a short, fixed-format section to the spec it writes. Either of these would work: 1. **A template slot.** If a project provides a handoff template, brainstorming fills it in as part of the spec. 2. **A hook.** A documented point after the spec is approved and before it is committed, where a plugin can add instructions. ### Why Some teams run a separate tool after planning, for example one that turns acceptance criteria into tracked requirements an",
+          "url": "https://github.com/obra/superpowers/issues/2465",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2473-edcjoel-maker",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "edcjoel-maker",
+          "date": "2026-10-07",
+          "text": "brainstorming / writing-plans: commit the spec/plan by path so pre-staged changes are not swept in - [x] I searched existing issues and this has not been proposed before (adjacent: #807, closed, asked whether to commit specs at all; this is about *how* the commit is made when it is) ## What problem does this solve? brainstorming says the design doc is written to `docs/superpowers/specs/…-design.md`, \"committed\". In a working tree with unrelated in-progress work, I ran `git add <spec>` then `git commit`. A `git rm` from an earlier task in the same session was still staged, so the \"spec\" commit ",
+          "url": "https://github.com/obra/superpowers/issues/2473",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -108,19 +119,8 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2309-teashaman-cyber",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "TeaShaman-cyber",
-          "date": "2026-09-17",
-          "text": "writing-plans: self-review misses task-state/DAG closure in executable plans ## What problem does this solve? `writing-plans` currently requires each task to produce a self-contained, independently testable deliverable and gives tasks explicit `Consumes` / `Produces` interfaces. It also asks for concrete test code, commands, implementation snippets, and frequent commits. At current `main` (`b36e0829c6d0140e93cfef2ca599b1b07d4a7797`), the final Self-Review checks three things: spec coverage, placeholders, and type/name consistency: https://github.com/obra/superpowers/blob/b36e0829c6d0140e93cfef",
-          "url": "https://github.com/obra/superpowers/issues/2309",
-          "score": 8,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2408-tamaro-skaljic",
           "source": "github",
@@ -144,13 +144,35 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2452-abat-kek",
+          "id": "github-https-github-com-obra-superpowers-issues-2468-dachria-cmyk",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "abat-kek",
-          "date": "2026-10-03",
-          "text": "writing-plans / test-driven-development: a test for a protective layer is evidence only once it fails when the layer is weakened - [x] I searched existing issues and this has not been proposed before (related: #2092 — a test whose arrange step silently fails passes every gate; #2285 — expected values asserted rather than produced) ## What problem does this solve? Three runs, same shape: 1. The tests for an outbound fetch's safety checks (foreign redirect, deadline, size limit, a lock) all passed on the first run. Only weakening each safeguard in turn by script (user part not checked, hostname ",
-          "url": "https://github.com/obra/superpowers/issues/2452",
+          "author": "dachria-cmyk",
+          "date": "2026-10-06",
+          "text": "writing-plans: a task that reads from a row-capped service should name the cap, and its fake should enforce it - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A plan specified a task that read up to 5,000 rows in one request from a PostgREST API, with a guard that returned early when that many rows came back, and a test fake whose `limit(n)` returned up to n rows. The real server cuts every request at 1,000 rows (`max_rows`) without an error, so in production the read could never see more than 1,000 rows and the guard could never fire. Ev",
+          "url": "https://github.com/obra/superpowers/issues/2468",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2473-edcjoel-maker",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "edcjoel-maker",
+          "date": "2026-10-07",
+          "text": "brainstorming / writing-plans: commit the spec/plan by path so pre-staged changes are not swept in - [x] I searched existing issues and this has not been proposed before (adjacent: #807, closed, asked whether to commit specs at all; this is about *how* the commit is made when it is) ## What problem does this solve? brainstorming says the design doc is written to `docs/superpowers/specs/…-design.md`, \"committed\". In a working tree with unrelated in-progress work, I ran `git add <spec>` then `git commit`. A `git rm` from an earlier task in the same session was still staged, so the \"spec\" commit ",
+          "url": "https://github.com/obra/superpowers/issues/2473",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2470-edcjoel-maker",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "edcjoel-maker",
+          "date": "2026-10-07",
+          "text": "subagent-driven-development: plan-verbatim code passes its own tests — reviewers need adversarial probes per named risk, including the seam with unchanged code - [x] I searched existing issues and this has not been proposed before (adjacent: #766 covers product-vs-intent gaps; this is narrower — security/correctness holes in code the plan supplied verbatim) ## What problem does this solve? When `writing-plans` embeds complete code and tests in a task, the implementer copies them and the task reviewer checks the diff against the brief. Both pass by construction: the tests were written by the sa",
+          "url": "https://github.com/obra/superpowers/issues/2470",
           "score": 0,
           "sentiment": "negative"
         }
@@ -242,7 +264,7 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 6,
+      "feedbackCount": 8,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2435-abat-kek",
@@ -267,6 +289,17 @@
           "sentiment": "neutral"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2472-edcjoel-maker",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "edcjoel-maker",
+          "date": "2026-10-07",
+          "text": "subagent-driven-development: interactive/manual verification steps in a brief must be bounded by command flags, not by prose - [x] I searched existing issues and this has not been proposed before (adjacent: #2113 §1 covers implementers stopping to wait for a long suite and reporting stale logs; #2435 covers a controller ruling a human-at-the-screen step away. This one is the implementer hanging silently inside an unbounded command until the watchdog kills it.) ## What problem does this solve? A plan step \"check in the browser: import an MP4…\" was passed to an implementer as-is. The implementer",
+          "url": "https://github.com/obra/superpowers/issues/2472",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2455-grinidx",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -289,17 +322,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2450-abat-kek",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "abat-kek",
-          "date": "2026-10-03",
-          "text": "subagent-driven-development: a fix round that changes an interface leaves later tasks' plan text calling the old one - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? During an SDD run over a multi-plan feature, a task review raised an Important finding, and the fix round made a build script's packaging-only option stricter, so the old way of calling it now failed. The fix was correct and the scoped re-review passed. But the plan text of the following tasks and the plan's delivery section still invoked the mode the old way — about seven cal",
-          "url": "https://github.com/obra/superpowers/issues/2450",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2459-rhuthik",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -309,6 +331,28 @@
           "url": "https://github.com/obra/superpowers/issues/2459",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2469-dachria-cmyk",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "dachria-cmyk",
+          "date": "2026-10-06",
+          "text": "subagent-driven-development: document a tool-only fallback for each helper script - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I ran subagent-driven-development on a six-task plan inside a git worktree. The harness had a worktree-isolation guard that refused any command it could not prove stayed inside the worktree. It refused every `bash scripts/sdd-workspace`, `bash scripts/task-brief` and `bash scripts/review-package` call, and any compound command or shell redirect that touched git. File edits and single, plainly-targeted commands ",
+          "url": "https://github.com/obra/superpowers/issues/2469",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2471-edcjoel-maker",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "edcjoel-maker",
+          "date": "2026-10-07",
+          "text": "subagent-driven-development: deferred \"minor\" findings are graded by likelihood only — add recoverability - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? SDD routes Minor findings to the ledger (`Task <N>: minor (deferred): …`) and asks the final reviewer to triage them. Task reviewers labelled findings \"minor\" because the trigger looked rare — e.g. a transient network error mid-playback after which a probe succeeds and the item is permanently marked broken. In the final review, re-reading the list through \"can the user get back from this",
+          "url": "https://github.com/obra/superpowers/issues/2471",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -316,7 +360,7 @@
       "slug": "requesting-code-review",
       "ecosystem": "superpowers",
       "displayName": "Requesting Code Review",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2446-tjs0",
@@ -326,6 +370,17 @@
           "date": "2026-10-02",
           "text": "Final whole-branch review: code-reviewer.md re-derives the diff and has no model slot, contrary to SDD's Final Review - [x] I searched existing issues and this is not a duplicate ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.4.1 (checked against main, unchanged) | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | 2.1.288 | | Your model + version | claude-opus-5-5 (found during a prompt audit) | | All plugins installed | superpowers, commit-commands, github, context7, rust-analyzer-lsp | | OS + shell | Linux, bash | ## Is this a ",
           "url": "https://github.com/obra/superpowers/issues/2446",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2474-edcjoel-maker",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "edcjoel-maker",
+          "date": "2026-10-07",
+          "text": "requesting-code-review: verification must cover the changed files' own build config and the real deploy path - [x] I searched existing issues and this has not been proposed before (related in spirit: #2054 on keeping reviewer runs cheap — both checks below are single commands or a single file read) ## What problem does this solve? Two misses in one project, same shape — a check that passes proves nothing about what it does not cover: 1. **Typecheck config.** A task reviewer graded as \"cosmetic\" a source comment containing literal U+2028/U+2029 (JS line terminators, so the rest of the `//` comm",
+          "url": "https://github.com/obra/superpowers/issues/2474",
           "score": 0,
           "sentiment": "negative"
         }
@@ -666,8 +721,19 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 3,
+      "feedbackCount": 5,
       "comments": [
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1692-almezaniy",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "almezaniy",
+          "date": "2026-08-30",
+          "text": "[skill-creator] Trigger-eval harness silently broken on Windows: select() on pipes, probe files leak into global ~/.claude/commands, parallel twins cap recall at ~1/N ## Summary The skill-creator description-optimization harness (`skills/skill-creator/scripts/run_eval.py` + `run_loop.py`) is structurally broken on Windows. Worse than crashing, it **fails silently**: every probe dies or mismeasures, the loop reports `recall=0%` (or a hard ~1/N cap), and then happily \"improves\" the description against pure noise for up to 5 iterations. Each probe is a full `claude -p` session that loads the user",
+          "url": "https://github.com/anthropics/skills/issues/1692",
+          "score": 3,
+          "sentiment": "positive"
+        },
         {
           "id": "github-https-github-com-anthropics-skills-issues-1706-stillpimpn",
           "source": "github",
@@ -700,6 +766,17 @@
           "url": "https://github.com/anthropics/skills/issues/1957",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1982-whoosjohngalt",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "whoosjohngalt",
+          "date": "2026-10-06",
+          "text": "skill-creator eval viewer: script-context injection in embedded JSON + cross-origin writes to /api/feedback ## Summary `skills/skill-creator/eval-viewer/generate_review.py` injects all eval data into `viewer.html` with: ```python data_json = json.dumps(embedded) return template.replace(\"/*__EMBEDDED_DATA__*/\", f\"const EMBEDDED_DATA = {data_json};\") ``` The placeholder sits inside a `<script>` block (`viewer.html`, ~line 647). `json.dumps` does not escape `<`, `>` or `&`, so any eval output whose text contains `</script>` closes the script element early, and everything after it is parsed as HTM",
+          "url": "https://github.com/anthropics/skills/issues/1982",
+          "score": 0,
+          "sentiment": "neutral"
         }
       ]
     },
