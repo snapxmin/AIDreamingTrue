@@ -1,55 +1,5 @@
 {
-  "generatedAt": "2026-10-07T06:15:53Z",
+  "generatedAt": "2026-10-08T06:25:29Z",
   "isBaselineRun": false,
-  "changes": [
-    {
-      "type": "added",
-      "key": "awesome-copilot/make-blog-post",
-      "ecosystem": "awesome-copilot",
-      "slug": "make-blog-post",
-      "displayName": "Make Blog Post",
-      "summary": "生态新增 Skill：Make Blog Post",
-      "detectedAt": "2026-10-07T06:17:17Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/codebase-memory-mcp",
-      "ecosystem": "awesome-copilot",
-      "slug": "codebase-memory-mcp",
-      "displayName": "Codebase Memory Mcp",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/codebase-memory-mcp",
-      "detectedAt": "2026-10-07T06:17:17Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/foundry-hosted-agent-copilotkit",
-      "ecosystem": "awesome-copilot",
-      "slug": "foundry-hosted-agent-copilotkit",
-      "displayName": "Foundry Hosted Agent Copilotkit",
-      "changedFields": [
-        "content",
-        "description"
-      ],
-      "summary": "description 更新：Build and evolve agentic web apps that pair a CopilotKit React frontend with a Microsoft Agent Frame…",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/foundry-hosted-agent-copilotkit",
-      "detectedAt": "2026-10-07T06:17:17Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/mcp-security-audit",
-      "ecosystem": "awesome-copilot",
-      "slug": "mcp-security-audit",
-      "displayName": "Mcp Security Audit",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/mcp-security-audit",
-      "detectedAt": "2026-10-07T06:17:17Z"
-    }
-  ]
+  "changes": []
 }

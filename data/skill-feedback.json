@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-07T06:18:55Z",
+    "lastUpdated": "2026-10-08T06:28:03Z",
     "skillCount": 20,
-    "totalComments": 72,
+    "totalComments": 66,
     "sources": [
       "hacker-news",
       "github",
@@ -15,30 +15,8 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 3,
+      "feedbackCount": 1,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2408-tamaro-skaljic",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "tamaro-skaljic",
-          "date": "2026-09-27",
-          "text": "writing-plans: the plan's code was built twice during planning, then the handoff offered to implement it a third time - [x] I searched existing issues and this is not a duplicate (searched: \"writing-plans prototype\", \"plan implemented twice\", \"execution handoff already implemented\", \"writing-plans code during planning\", \"writing-plans verify plan\"; closest: #895 (closed); related: #2285, #2065) ## Environment (required) | Field | Value | Provenance / supporting evidence | |-------|-------|-------------------------------| | Superpowers version | 6.4.1 (not a checkout) | current observation of p",
-          "url": "https://github.com/obra/superpowers/issues/2408",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2465-jrgranell",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "JRGranell",
-          "date": "2026-10-06",
-          "text": "Support a handoff section (template or hook) in brainstorming specs, for downstream tools ### What A way for another tool to have `brainstorming` add a short, fixed-format section to the spec it writes. Either of these would work: 1. **A template slot.** If a project provides a handoff template, brainstorming fills it in as part of the spec. 2. **A hook.** A documented point after the spec is approved and before it is committed, where a plugin can add instructions. ### Why Some teams run a separate tool after planning, for example one that turns acceptance criteria into tracked requirements an",
-          "url": "https://github.com/obra/superpowers/issues/2465",
-          "score": 0,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2473-edcjoel-maker",
           "source": "github",
@@ -56,7 +34,7 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
@@ -67,17 +45,6 @@
           "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
           "url": "https://github.com/obra/superpowers/issues/2377",
           "score": 3,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "kpdbcdt",
-          "date": "2026-09-25",
-          "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
-          "url": "https://github.com/obra/superpowers/issues/2386",
-          "score": 2,
           "sentiment": "negative"
         },
         {
@@ -119,7 +86,7 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2408-tamaro-skaljic",
@@ -130,17 +97,6 @@
           "text": "writing-plans: the plan's code was built twice during planning, then the handoff offered to implement it a third time - [x] I searched existing issues and this is not a duplicate (searched: \"writing-plans prototype\", \"plan implemented twice\", \"execution handoff already implemented\", \"writing-plans code during planning\", \"writing-plans verify plan\"; closest: #895 (closed); related: #2285, #2065) ## Environment (required) | Field | Value | Provenance / supporting evidence | |-------|-------|-------------------------------| | Superpowers version | 6.4.1 (not a checkout) | current observation of p",
           "url": "https://github.com/obra/superpowers/issues/2408",
           "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2453-abat-kek",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "abat-kek",
-          "date": "2026-10-03",
-          "text": "writing-plans Review Focus: name three edge classes that verified plans still missed (largest allowed value, failure after a side effect, rapid successive writes) - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? Three plans had been verified unusually thoroughly before execution (prototypes against real fixtures, every code block applied to a fresh copy, full suites green). Task reviews during SDD still found plan-mandated Important gaps, all at the edges: 1. A route validated a date parameter only as \"a valid calendar date\" (up to year 99",
-          "url": "https://github.com/obra/superpowers/issues/2453",
-          "score": 0,
           "sentiment": "negative"
         },
         {
@@ -267,17 +223,6 @@
       "feedbackCount": 8,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2435-abat-kek",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "abat-kek",
-          "date": "2026-09-30",
-          "text": "subagent-driven-development: in an unattended run, a step that needs a human at the screen should move to the next available tool, not be dropped - [x] I searched existing issues and this has not been proposed before (adjacent: #1664, closed in favour of the end-to-end testing direction in #374; this is narrower — what a controller rules about an existing manual step in a plan) ## What problem does this solve? In an unattended run, a plan step \"local visual check\" (a drag gesture in the browser) was ruled optional under **Rulings, not stalls**, and the implementer skipped it (\"nobody is watchi",
-          "url": "https://github.com/obra/superpowers/issues/2435",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2454-radekklein92",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -311,17 +256,6 @@
           "sentiment": "neutral"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2451-abat-kek",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "abat-kek",
-          "date": "2026-10-03",
-          "text": "subagent-driven-development / executing-plans: the final report should be derived from a plan-to-diff mapping, not written freely - [x] I searched existing issues and this has not been proposed before (related: #2435 — a skipped visual check reported as a \"known limitation\") ## What problem does this solve? An unattended run finished a UI plan and wrote its completion report. Two statements in it did not match the diff, and the run's own review step did not catch either: 1. The plan required reordering the settings cards to follow the app's navigation. The diff only renamed the headings; the o",
-          "url": "https://github.com/obra/superpowers/issues/2451",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2459-rhuthik",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -351,6 +285,28 @@
           "date": "2026-10-07",
           "text": "subagent-driven-development: deferred \"minor\" findings are graded by likelihood only — add recoverability - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? SDD routes Minor findings to the ledger (`Task <N>: minor (deferred): …`) and asks the final reviewer to triage them. Task reviewers labelled findings \"minor\" because the trigger looked rare — e.g. a transient network error mid-playback after which a probe succeeds and the item is permanently marked broken. In the final review, re-reading the list through \"can the user get back from this",
           "url": "https://github.com/obra/superpowers/issues/2471",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2470-edcjoel-maker",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "edcjoel-maker",
+          "date": "2026-10-07",
+          "text": "subagent-driven-development: plan-verbatim code passes its own tests — reviewers need adversarial probes per named risk, including the seam with unchanged code - [x] I searched existing issues and this has not been proposed before (adjacent: #766 covers product-vs-intent gaps; this is narrower — security/correctness holes in code the plan supplied verbatim) ## What problem does this solve? When `writing-plans` embeds complete code and tests in a task, the implementer copies them and the task reviewer checks the diff against the brief. Both pass by construction: the tests were written by the sa",
+          "url": "https://github.com/obra/superpowers/issues/2470",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2481-dan-1492",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "dan-1492",
+          "date": "2026-10-08",
+          "text": "subagent-driven-development: \"Five rounds maximum per task\" lies past the 20,000-character compaction re-attach cut, and one task ran 18+ fix rounds (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"compaction truncated skill\", \"five rounds maximum\", \"subagent-driven-development compaction\", \"breaker fix round\", \"skill truncated 20000\", \"compaction\", \"truncated\", \"round limit\"; closest: #2267 \"subagent-driven-development: the progress ledger records completion but not cross-task discoveries, so a usage-limit interruption loses what earlier tasks learned\", w",
+          "url": "https://github.com/obra/superpowers/issues/2481",
           "score": 0,
           "sentiment": "negative"
         }
@@ -390,30 +346,8 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 3,
+      "feedbackCount": 1,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "haruntekin89",
-          "date": "2026-09-24",
-          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
-          "url": "https://github.com/obra/superpowers/issues/2377",
-          "score": 3,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "kpdbcdt",
-          "date": "2026-09-25",
-          "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
-          "url": "https://github.com/obra/superpowers/issues/2386",
-          "score": 2,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2454-radekklein92",
           "source": "github",
