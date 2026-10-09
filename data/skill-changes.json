@@ -1,5 +1,20 @@
 {
-  "generatedAt": "2026-10-08T06:25:29Z",
+  "generatedAt": "2026-10-09T06:26:24Z",
   "isBaselineRun": false,
-  "changes": []
+  "changes": [
+    {
+      "type": "updated",
+      "key": "awesome-copilot/python-mcp-server-generator",
+      "ecosystem": "awesome-copilot",
+      "slug": "python-mcp-server-generator",
+      "displayName": "Python Mcp Server Generator",
+      "changedFields": [
+        "content",
+        "description"
+      ],
+      "summary": "description 更新：Use this skill when the user wants to create a new Model Context Protocol (MCP) server in Python. Al…",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/python-mcp-server-generator",
+      "detectedAt": "2026-10-09T06:27:08Z"
+    }
+  ]
 }

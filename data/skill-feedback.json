@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-08T06:28:03Z",
+    "lastUpdated": "2026-10-09T06:28:37Z",
     "skillCount": 20,
-    "totalComments": 66,
+    "totalComments": 67,
     "sources": [
       "hacker-news",
       "github",
@@ -25,7 +25,7 @@
           "date": "2026-10-07",
           "text": "brainstorming / writing-plans: commit the spec/plan by path so pre-staged changes are not swept in - [x] I searched existing issues and this has not been proposed before (adjacent: #807, closed, asked whether to commit specs at all; this is about *how* the commit is made when it is) ## What problem does this solve? brainstorming says the design doc is written to `docs/superpowers/specs/…-design.md`, \"committed\". In a working tree with unrelated in-progress work, I ran `git add <spec>` then `git commit`. A `git rm` from an earlier task in the same session was still staged, so the \"spec\" commit ",
           "url": "https://github.com/obra/superpowers/issues/2473",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -100,17 +100,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2468-dachria-cmyk",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "dachria-cmyk",
-          "date": "2026-10-06",
-          "text": "writing-plans: a task that reads from a row-capped service should name the cap, and its fake should enforce it - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A plan specified a task that read up to 5,000 rows in one request from a PostgREST API, with a guard that returned early when that many rows came back, and a test fake whose `limit(n)` returned up to n rows. The real server cuts every request at 1,000 rows (`max_rows`) without an error, so in production the read could never see more than 1,000 rows and the guard could never fire. Ev",
-          "url": "https://github.com/obra/superpowers/issues/2468",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2473-edcjoel-maker",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -118,6 +107,17 @@
           "date": "2026-10-07",
           "text": "brainstorming / writing-plans: commit the spec/plan by path so pre-staged changes are not swept in - [x] I searched existing issues and this has not been proposed before (adjacent: #807, closed, asked whether to commit specs at all; this is about *how* the commit is made when it is) ## What problem does this solve? brainstorming says the design doc is written to `docs/superpowers/specs/…-design.md`, \"committed\". In a working tree with unrelated in-progress work, I ran `git add <spec>` then `git commit`. A `git rm` from an earlier task in the same session was still staged, so the \"spec\" commit ",
           "url": "https://github.com/obra/superpowers/issues/2473",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2468-dachria-cmyk",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "dachria-cmyk",
+          "date": "2026-10-06",
+          "text": "writing-plans: a task that reads from a row-capped service should name the cap, and its fake should enforce it - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A plan specified a task that read up to 5,000 rows in one request from a PostgREST API, with a guard that returned early when that many rows came back, and a test fake whose `limit(n)` returned up to n rows. The real server cuts every request at 1,000 rows (`max_rows`) without an error, so in production the read could never see more than 1,000 rows and the guard could never fire. Ev",
+          "url": "https://github.com/obra/superpowers/issues/2468",
           "score": 0,
           "sentiment": "negative"
         },
@@ -220,7 +220,7 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 8,
+      "feedbackCount": 7,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2454-radekklein92",
@@ -243,17 +243,6 @@
           "url": "https://github.com/obra/superpowers/issues/2472",
           "score": 1,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2455-grinidx",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "grinidx",
-          "date": "2026-10-03",
-          "text": "executing-plans and subagent-driven-development: the main/master consent rule does not defer to a declared branch policy Seen on superpowers 6.4.2 (`main`). `skills/executing-plans/SKILL.md:111-113` and `skills/subagent-driven-development/SKILL.md:127-129` both say: > Never start implementation on a main/master branch without your human partner's explicit consent. `using-git-worktrees` already defers to what the user has declared. Line 41 asks \"Has the user already indicated their worktree preference in your instructions?\", and line 45 says \"Honor any existing declared preference without askin",
-          "url": "https://github.com/obra/superpowers/issues/2455",
-          "score": 0,
-          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2459-rhuthik",
@@ -346,20 +335,8 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 1,
-      "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2454-radekklein92",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "radekklein92",
-          "date": "2026-10-03",
-          "text": "Prompt audit against Claude Fable 5.1: pressure language and update suppressors in using-superpowers, executing-plans, subagent-driven-development Ran a prompt audit of the plugin's skills against the current Claude models (Fable 5.1 / Opus 5.5), which follow instructions more literally than the models much of this text was written for. Findings, with proposed changes: 1. `skills/using-superpowers/SKILL.md:10-16` and `:35-50` - `<EXTREMELY-IMPORTANT> ... even a 1% chance ... ABSOLUTELY MUST ... YOU DO NOT HAVE A CHOICE ... This is not negotiable` plus the 12-row \"Red Flags\" table. The skill is",
-          "url": "https://github.com/obra/superpowers/issues/2454",
-          "score": 1,
-          "sentiment": "neutral"
-        }
-      ]
+      "feedbackCount": 0,
+      "comments": []
     },
     "awesome-copilot/ai-ready": {
       "slug": "ai-ready",
@@ -390,15 +367,15 @@
           "sentiment": "positive"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-2503-phodal",
+          "id": "github-https-github-com-github-awesome-copilot-issues-3751-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "phodal",
-          "date": "2026-07-31",
-          "text": "[External Plugin]: better-harness ### Plugin name better-harness ### Short description Build an AI-ready engineering system for safe coding-agent delivery and continuous software improvement. ### GitHub repository QoderAI/better-harness ### Plugin path inside the repository _No response_ ### Ref to review _No response_ ### Commit SHA to review cfa7c123acbe9bbbf23c8065123f41643bdecf18 ### Version 0.4.0 ### License identifier MIT ### Author name Qoder ### Author URL https://qoder.com/ ### Homepage URL https://qoderai.github.io/better-harness/ ### Keywords copilot-plugin better-harness coding-age",
-          "url": "https://github.com/github/awesome-copilot/issues/2503",
+          "author": "github-actions[bot]",
+          "date": "2026-09-25",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 802 resources - **Aging (14–30 days):** 21 resources - **Fresh (<14 days):** 24 resources (not listed below) ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Show all 802 entries</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|--------------------|----------| | `instructions/bicep-code-best-practices.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/cmake-vcpkg.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/generate-modern-terraform-c",
+          "url": "https://github.com/github/awesome-copilot/issues/3751",
           "score": 1,
-          "sentiment": "positive"
+          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-2578-github-actions-bot-",
@@ -412,17 +389,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-3751-github-actions-bot-",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "github-actions[bot]",
-          "date": "2026-09-25",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 802 resources - **Aging (14–30 days):** 21 resources - **Fresh (<14 days):** 24 resources (not listed below) ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Show all 802 entries</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|--------------------|----------| | `instructions/bicep-code-best-practices.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/cmake-vcpkg.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/generate-modern-terraform-c",
-          "url": "https://github.com/github/awesome-copilot/issues/3751",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-github-awesome-copilot-issues-4480-matinomari906-cloud",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -430,6 +396,17 @@
           "date": "2026-10-04",
           "text": "## Skills (part 1) ## Skills (part 1) ``` npm warn EBADENGINE Unsupported engine { — @github/awesome-copilot-content-reviewers npm warn EBADENGINE package: 'commander@15.0.0', — @github/awesome-copilot-content-reviewers npm warn EBADENGINE required: { node: '>=22.12.0' }, — @github/awesome-copilot-content-reviewers npm warn EBADENGINE current: { node: 'v20.20.2', npm: '10.8.2' } — @github/awesome-copilot-content-reviewers npm warn EBADENGINE } — @github/awesome-copilot-content-reviewers npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant ",
           "url": "https://github.com/github/awesome-copilot/issues/4480",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-4746-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-10-09",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 813 resources - **Aging (14–30 days):** 24 resources - **Fresh (<14 days):** 14 resources (not listed below) _Dates use the latest non-formatting/non-rename modification (or add) commit per file; folder resources use their newest file. Many dates are early because of history shape, so age alone is a weak signal._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>Show 813 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instru",
+          "url": "https://github.com/github/awesome-copilot/issues/4746",
           "score": 0,
           "sentiment": "negative"
         }
@@ -453,21 +430,10 @@
           "sentiment": "positive"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-2922-ecocitizenz",
+          "id": "github-https-github-com-github-awesome-copilot-issues-3147-omarmohelal2",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "Ecocitizenz",
-          "date": "2026-09-03",
-          "text": "[External Plugin]: eczid-api-trust <!-- external-plugin-submission --> ### Plugin name eczid-api-trust ### Short description Free agent plugin, MIT-licensed: no purchase, account, sign-in, licence key or trial is required, and nothing it does is withheld pending a purchase. See which API surfaces a workspace exposes, how they are secured and whether they carry public proof: OpenAPI / GraphQL / AsyncAPI contracts, catalogues, auth configuration, disclosure contacts and contract tests, with a deterministic Review Priority. Inspection only. Free. ### GitHub repository Ecocitizenz/eczid-agent-plug",
-          "url": "https://github.com/github/awesome-copilot/issues/2922",
-          "score": 5,
-          "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-github-awesome-copilot-issues-3147-omarmohelal",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "omarmohelal",
+          "author": "omarmohelal2",
           "date": "2026-09-15",
           "text": "[External Plugin]: sechelix-lite <!-- external-plugin-submission --> ### Plugin name sechelix-lite ### Short description Application-security review skill for codebases and pull requests you are authorized to assess. Maps trust boundaries, keeps issues as hypotheses until evidenced, runs a separate pass that tries to refute material findings, and ends with a release verdict. ### GitHub repository omarmohelal/SecHelix ### Plugin path inside the repository distributions/awesome-copilot ### Ref to review v4.0.0-alpha.6 ### Commit SHA to review a73be865fccf5cefcf98d4dcce2c2bf2b6afce2f ### Version ",
           "url": "https://github.com/github/awesome-copilot/issues/3147",
@@ -482,6 +448,17 @@
           "date": "2026-09-25",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 802 resources - **Aging (14–30 days):** 21 resources - **Fresh (<14 days):** 24 resources (not listed below) ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Show all 802 entries</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|--------------------|----------| | `instructions/bicep-code-best-practices.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/cmake-vcpkg.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/generate-modern-terraform-c",
           "url": "https://github.com/github/awesome-copilot/issues/3751",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-4746-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-10-09",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 813 resources - **Aging (14–30 days):** 24 resources - **Fresh (<14 days):** 14 resources (not listed below) _Dates use the latest non-formatting/non-rename modification (or add) commit per file; folder resources use their newest file. Many dates are early because of history shape, so age alone is a weak signal._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>Show 813 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instru",
+          "url": "https://github.com/github/awesome-copilot/issues/4746",
           "score": 0,
           "sentiment": "negative"
         }
@@ -491,19 +468,8 @@
       "slug": "eval-driven-dev",
       "ecosystem": "awesome-copilot",
       "displayName": "Eval-Driven Development",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
-        {
-          "id": "github-https-github-com-github-awesome-copilot-issues-2578-github-actions-bot-",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "github-actions[bot]",
-          "date": "2026-08-07",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 723 resources - **Aging (14–30 days):** 34 resources - **Fresh (<14 days):** 67 resources (not listed below) Note: This inventory covers `agents/` (224), `instructions/` (191), `hooks/` (8 folders), and `skills/` (401 folders). No `prompts/*.prompt.md` files currently exist in the repository. Hook and skill folders are treated as single resources using the most recent substantive change across any file in the folder. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Click to expand (723 resources)</summar",
-          "url": "https://github.com/github/awesome-copilot/issues/2578",
-          "score": 0,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-3751-github-actions-bot-",
           "source": "github",
@@ -512,6 +478,17 @@
           "date": "2026-09-25",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 802 resources - **Aging (14–30 days):** 21 resources - **Fresh (<14 days):** 24 resources (not listed below) ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Show all 802 entries</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|--------------------|----------| | `instructions/bicep-code-best-practices.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/cmake-vcpkg.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/generate-modern-terraform-c",
           "url": "https://github.com/github/awesome-copilot/issues/3751",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-2578-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-08-07",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 723 resources - **Aging (14–30 days):** 34 resources - **Fresh (<14 days):** 67 resources (not listed below) Note: This inventory covers `agents/` (224), `instructions/` (191), `hooks/` (8 folders), and `skills/` (401 folders). No `prompts/*.prompt.md` files currently exist in the repository. Hook and skill folders are treated as single resources using the most recent substantive change across any file in the folder. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Click to expand (723 resources)</summar",
+          "url": "https://github.com/github/awesome-copilot/issues/2578",
           "score": 0,
           "sentiment": "negative"
         },
@@ -525,6 +502,17 @@
           "url": "https://github.com/github/awesome-copilot/issues/4480",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-4746-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-10-09",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 813 resources - **Aging (14–30 days):** 24 resources - **Fresh (<14 days):** 14 resources (not listed below) _Dates use the latest non-formatting/non-rename modification (or add) commit per file; folder resources use their newest file. Many dates are early because of history shape, so age alone is a weak signal._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>Show 813 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instru",
+          "url": "https://github.com/github/awesome-copilot/issues/4746",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -532,7 +520,7 @@
       "slug": "harness-engineering",
       "ecosystem": "awesome-copilot",
       "displayName": "Harness Engineering",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-2504-phodal",
@@ -557,6 +545,17 @@
           "sentiment": "positive"
         },
         {
+          "id": "github-https-github-com-github-awesome-copilot-issues-3751-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-09-25",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 802 resources - **Aging (14–30 days):** 21 resources - **Fresh (<14 days):** 24 resources (not listed below) ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Show all 802 entries</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|--------------------|----------| | `instructions/bicep-code-best-practices.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/cmake-vcpkg.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/generate-modern-terraform-c",
+          "url": "https://github.com/github/awesome-copilot/issues/3751",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
           "id": "github-https-github-com-github-awesome-copilot-issues-2578-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -568,13 +567,13 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-3751-github-actions-bot-",
+          "id": "github-https-github-com-github-awesome-copilot-issues-4746-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
           "author": "github-actions[bot]",
-          "date": "2026-09-25",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 802 resources - **Aging (14–30 days):** 21 resources - **Fresh (<14 days):** 24 resources (not listed below) ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Show all 802 entries</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|--------------------|----------| | `instructions/bicep-code-best-practices.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/cmake-vcpkg.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/generate-modern-terraform-c",
-          "url": "https://github.com/github/awesome-copilot/issues/3751",
+          "date": "2026-10-09",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 813 resources - **Aging (14–30 days):** 24 resources - **Fresh (<14 days):** 14 resources (not listed below) _Dates use the latest non-formatting/non-rename modification (or add) commit per file; folder resources use their newest file. Many dates are early because of history shape, so age alone is a weak signal._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>Show 813 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instru",
+          "url": "https://github.com/github/awesome-copilot/issues/4746",
           "score": 0,
           "sentiment": "negative"
         }
@@ -584,7 +583,7 @@
       "slug": "acquire-codebase-knowledge",
       "ecosystem": "awesome-copilot",
       "displayName": "Acquire Codebase Knowledge",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-2058-github-actions-bot-",
@@ -616,6 +615,17 @@
           "date": "2026-10-04",
           "text": "## Skills (part 1) ## Skills (part 1) ``` npm warn EBADENGINE Unsupported engine { — @github/awesome-copilot-content-reviewers npm warn EBADENGINE package: 'commander@15.0.0', — @github/awesome-copilot-content-reviewers npm warn EBADENGINE required: { node: '>=22.12.0' }, — @github/awesome-copilot-content-reviewers npm warn EBADENGINE current: { node: 'v20.20.2', npm: '10.8.2' } — @github/awesome-copilot-content-reviewers npm warn EBADENGINE } — @github/awesome-copilot-content-reviewers npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant ",
           "url": "https://github.com/github/awesome-copilot/issues/4480",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-4746-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-10-09",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 813 resources - **Aging (14–30 days):** 24 resources - **Fresh (<14 days):** 14 resources (not listed below) _Dates use the latest non-formatting/non-rename modification (or add) commit per file; folder resources use their newest file. Many dates are early because of history shape, so age alone is a weak signal._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>Show 813 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instru",
+          "url": "https://github.com/github/awesome-copilot/issues/4746",
           "score": 0,
           "sentiment": "negative"
         }
@@ -655,18 +665,18 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
         {
-          "id": "github-https-github-com-anthropics-skills-issues-1692-almezaniy",
+          "id": "github-https-github-com-anthropics-skills-issues-1352-liam-ai-reality",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "almezaniy",
-          "date": "2026-08-30",
-          "text": "[skill-creator] Trigger-eval harness silently broken on Windows: select() on pipes, probe files leak into global ~/.claude/commands, parallel twins cap recall at ~1/N ## Summary The skill-creator description-optimization harness (`skills/skill-creator/scripts/run_eval.py` + `run_loop.py`) is structurally broken on Windows. Worse than crashing, it **fails silently**: every probe dies or mismeasures, the loop reports `recall=0%` (or a hard ~1/N cap), and then happily \"improves\" the description against pure noise for up to 5 iterations. Each probe is a full `claude -p` session that loads the user",
-          "url": "https://github.com/anthropics/skills/issues/1692",
-          "score": 3,
-          "sentiment": "positive"
+          "author": "liam-ai-reality",
+          "date": "2026-06-25",
+          "text": "skill-creator: run_eval.py parallel workers cross-match skill UUIDs, producing false-negative trigger rates ## Summary `skills/skill-creator/scripts/run_eval.py` produces **systematically wrong (near-zero) trigger rates whenever `--num-workers > 1`** (the default is 10). The failure is silent: every query — including ones that obviously *should* trigger — comes back with `trigger_rate ≈ 0`, which then makes all `should_trigger: false` cases \"pass\" trivially and all `should_trigger: true` cases \"fail\". The aggregate looks like a bad skill description when in fact the *measurement* is broken. ##",
+          "url": "https://github.com/anthropics/skills/issues/1352",
+          "score": 4,
+          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-anthropics-skills-issues-1706-stillpimpn",
@@ -700,17 +710,6 @@
           "url": "https://github.com/anthropics/skills/issues/1957",
           "score": 0,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1982-whoosjohngalt",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "whoosjohngalt",
-          "date": "2026-10-06",
-          "text": "skill-creator eval viewer: script-context injection in embedded JSON + cross-origin writes to /api/feedback ## Summary `skills/skill-creator/eval-viewer/generate_review.py` injects all eval data into `viewer.html` with: ```python data_json = json.dumps(embedded) return template.replace(\"/*__EMBEDDED_DATA__*/\", f\"const EMBEDDED_DATA = {data_json};\") ``` The placeholder sits inside a `<script>` block (`viewer.html`, ~line 647). `json.dumps` does not escape `<`, `>` or `&`, so any eval output whose text contains `</script>` closes the script element early, and everything after it is parsed as HTM",
-          "url": "https://github.com/anthropics/skills/issues/1982",
-          "score": 0,
-          "sentiment": "neutral"
         }
       ]
     },
@@ -859,8 +858,19 @@
       "slug": "context-map",
       "ecosystem": "awesome-copilot",
       "displayName": "Context Map",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-3751-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-09-25",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 802 resources - **Aging (14–30 days):** 21 resources - **Fresh (<14 days):** 24 resources (not listed below) ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Show all 802 entries</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|--------------------|----------| | `instructions/bicep-code-best-practices.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/cmake-vcpkg.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/generate-modern-terraform-c",
+          "url": "https://github.com/github/awesome-copilot/issues/3751",
+          "score": 1,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-2578-github-actions-bot-",
           "source": "github",
@@ -873,17 +883,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-3751-github-actions-bot-",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "github-actions[bot]",
-          "date": "2026-09-25",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 802 resources - **Aging (14–30 days):** 21 resources - **Fresh (<14 days):** 24 resources (not listed below) ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Show all 802 entries</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|--------------------|----------| | `instructions/bicep-code-best-practices.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/cmake-vcpkg.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/generate-modern-terraform-c",
-          "url": "https://github.com/github/awesome-copilot/issues/3751",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-github-awesome-copilot-issues-4480-matinomari906-cloud",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -891,6 +890,17 @@
           "date": "2026-10-04",
           "text": "## Skills (part 1) ## Skills (part 1) ``` npm warn EBADENGINE Unsupported engine { — @github/awesome-copilot-content-reviewers npm warn EBADENGINE package: 'commander@15.0.0', — @github/awesome-copilot-content-reviewers npm warn EBADENGINE required: { node: '>=22.12.0' }, — @github/awesome-copilot-content-reviewers npm warn EBADENGINE current: { node: 'v20.20.2', npm: '10.8.2' } — @github/awesome-copilot-content-reviewers npm warn EBADENGINE } — @github/awesome-copilot-content-reviewers npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant ",
           "url": "https://github.com/github/awesome-copilot/issues/4480",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-4746-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-10-09",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 813 resources - **Aging (14–30 days):** 24 resources - **Fresh (<14 days):** 14 resources (not listed below) _Dates use the latest non-formatting/non-rename modification (or add) commit per file; folder resources use their newest file. Many dates are early because of history shape, so age alone is a weak signal._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>Show 813 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instru",
+          "url": "https://github.com/github/awesome-copilot/issues/4746",
           "score": 0,
           "sentiment": "negative"
         }
