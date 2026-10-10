@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-09T06:28:37Z",
+    "lastUpdated": "2026-10-10T06:11:36Z",
     "skillCount": 20,
-    "totalComments": 67,
+    "totalComments": 72,
     "sources": [
       "hacker-news",
       "github",
@@ -18,15 +18,15 @@
       "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2473-edcjoel-maker",
+          "id": "github-https-github-com-obra-superpowers-issues-2372-aimansour",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "edcjoel-maker",
-          "date": "2026-10-07",
-          "text": "brainstorming / writing-plans: commit the spec/plan by path so pre-staged changes are not swept in - [x] I searched existing issues and this has not been proposed before (adjacent: #807, closed, asked whether to commit specs at all; this is about *how* the commit is made when it is) ## What problem does this solve? brainstorming says the design doc is written to `docs/superpowers/specs/…-design.md`, \"committed\". In a working tree with unrelated in-progress work, I ran `git add <spec>` then `git commit`. A `git rm` from an earlier task in the same session was still staged, so the \"spec\" commit ",
-          "url": "https://github.com/obra/superpowers/issues/2473",
-          "score": 1,
-          "sentiment": "negative"
+          "author": "aimansour",
+          "date": "2026-09-23",
+          "text": "Codex Desktop: brainstorming approval gates skipped after skill read (6.4.1) - [x] I searched open and closed issues. This is not an exact duplicate. Closest: #1441 reports a similar gate skip on Claude Code auto mode with Superpowers 5.0.7; it was closed after a non-reproduction on another Claude Code version. #1895 asks for an explicitly non-interactive mode. This case is an interactive Codex Desktop session using Superpowers 6.4.1, with no user opt-in to bypass reviews. ## Environment | Field | Value | Provenance | |---|---|---| | Superpowers | 6.4.1 | Installed plugin path in the session; ",
+          "url": "https://github.com/obra/superpowers/issues/2372",
+          "score": 5,
+          "sentiment": "neutral"
         }
       ]
     },
@@ -34,8 +34,19 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2372-aimansour",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "aimansour",
+          "date": "2026-09-23",
+          "text": "Codex Desktop: brainstorming approval gates skipped after skill read (6.4.1) - [x] I searched open and closed issues. This is not an exact duplicate. Closest: #1441 reports a similar gate skip on Claude Code auto mode with Superpowers 5.0.7; it was closed after a non-reproduction on another Claude Code version. #1895 asks for an explicitly non-interactive mode. This case is an interactive Codex Desktop session using Superpowers 6.4.1, with no user opt-in to bypass reviews. ## Environment | Field | Value | Provenance | |---|---|---| | Superpowers | 6.4.1 | Installed plugin path in the session; ",
+          "url": "https://github.com/obra/superpowers/issues/2372",
+          "score": 5,
+          "sentiment": "neutral"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
           "source": "github",
@@ -59,17 +70,6 @@
           "sentiment": "neutral"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2445-tjs0",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "tjs0",
-          "date": "2026-10-02",
-          "text": "test-driven-development and subagent-driven-development disagree on running the full suite after a fix - [x] I searched existing issues and this is not a duplicate ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.4.1 (checked against main, unchanged) | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | 2.1.288 | | Your model + version | claude-opus-5-5 (found during a prompt audit) | | All plugins installed | superpowers, commit-commands, github, context7, rust-analyzer-lsp | | OS + shell | Linux, bash | ## Is this a Superpowers iss",
-          "url": "https://github.com/obra/superpowers/issues/2445",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2452-abat-kek",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -79,6 +79,17 @@
           "url": "https://github.com/obra/superpowers/issues/2452",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2487-bombajom-admin",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "bombajom-admin",
+          "date": "2026-10-09",
+          "text": "Pressure language in using-superpowers (injected every session) makes current models over-apply skills The SessionStart hook injects the whole `using-superpowers` skill into every session, wrapped in a second `<EXTREMELY_IMPORTANT>` tag: - `superpowers/6.0.2/hooks/session-start:11` reads `skills/using-superpowers/SKILL.md` - `superpowers/6.0.2/hooks/session-start:27` wraps it in `<EXTREMELY_IMPORTANT>` That body contains: - `skills/using-superpowers/SKILL.md:10-16`: `<EXTREMELY-IMPORTANT>` block, \"even a 1% chance a skill might apply ... you ABSOLUTELY MUST invoke the skill\", \"YOU DO NOT HAVE ",
+          "url": "https://github.com/obra/superpowers/issues/2487",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -86,8 +97,30 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 4,
+      "feedbackCount": 6,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2372-aimansour",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "aimansour",
+          "date": "2026-09-23",
+          "text": "Codex Desktop: brainstorming approval gates skipped after skill read (6.4.1) - [x] I searched open and closed issues. This is not an exact duplicate. Closest: #1441 reports a similar gate skip on Claude Code auto mode with Superpowers 5.0.7; it was closed after a non-reproduction on another Claude Code version. #1895 asks for an explicitly non-interactive mode. This case is an interactive Codex Desktop session using Superpowers 6.4.1, with no user opt-in to bypass reviews. ## Environment | Field | Value | Provenance | |---|---|---| | Superpowers | 6.4.1 | Installed plugin path in the session; ",
+          "url": "https://github.com/obra/superpowers/issues/2372",
+          "score": 5,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2376-xianfengsong",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "xianfengsong",
+          "date": "2026-09-24",
+          "text": "Open a rendered HTML preview of the saved spec or plan in the browser - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I run Claude Code in a terminal. When the brainstorming and writing-plans skills finish, they save the spec or plan to `docs/superpowers/specs/` or `docs/superpowers/plans/` and tell me to review it. To actually review it I have to open the raw markdown in an editor, or read plain text in the terminal. For a multi-page plan that's painful enough that I've caught myself skimming instead of reading. Which is a bit ironic, si",
+          "url": "https://github.com/obra/superpowers/issues/2376",
+          "score": 1,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2408-tamaro-skaljic",
           "source": "github",
@@ -141,24 +174,24 @@
       "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
+          "id": "github-https-github-com-obra-superpowers-issues-2487-bombajom-admin",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "haruntekin89",
-          "date": "2026-09-24",
-          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
-          "url": "https://github.com/obra/superpowers/issues/2377",
-          "score": 3,
+          "author": "bombajom-admin",
+          "date": "2026-10-09",
+          "text": "Pressure language in using-superpowers (injected every session) makes current models over-apply skills The SessionStart hook injects the whole `using-superpowers` skill into every session, wrapped in a second `<EXTREMELY_IMPORTANT>` tag: - `superpowers/6.0.2/hooks/session-start:11` reads `skills/using-superpowers/SKILL.md` - `superpowers/6.0.2/hooks/session-start:27` wraps it in `<EXTREMELY_IMPORTANT>` That body contains: - `skills/using-superpowers/SKILL.md:10-16`: `<EXTREMELY-IMPORTANT>` block, \"even a 1% chance a skill might apply ... you ABSOLUTELY MUST invoke the skill\", \"YOU DO NOT HAVE ",
+          "url": "https://github.com/obra/superpowers/issues/2487",
+          "score": 0,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2449-abat-kek",
+          "id": "github-https-github-com-obra-superpowers-issues-2485-gugaibarros-cpu",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "abat-kek",
-          "date": "2026-10-03",
-          "text": "systematic-debugging: check the hypothesis against the user's own data before reporting it as the cause - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? The user reported: \"an all-day event shows on two days in the calendar\". I derived a cause from the code (an all-day toggle kept an end date on the following day when the pre-filled time slot started late in the evening), reproduced it with a unit test and in the browser with fabricated input, fixed it, committed, and reported it as \"the cause\". Only afterwards, at the user's request, did ",
-          "url": "https://github.com/obra/superpowers/issues/2449",
+          "author": "gugaibarros-cpu",
+          "date": "2026-10-09",
+          "text": "skills/systematic-debugging: a flaky test that \"passes alone\" — check the same-tick race at a time window that ends at now() *Found in real use on 2026-10-09 (a flaky unit test in a Node + SQLite project on Windows), captured in a skill-observation log and triaged in a review the same day. Filed upstream rather than patched locally because the plugin is version-pinned. Version: superpowers 6.4.2; `skills/systematic-debugging/SKILL.md` and `condition-based-waiting.md` in the local install are byte-identical to `main` at the time of writing (checked with `cmp`). Drafted by Claude Opus 5.5 in the",
+          "url": "https://github.com/obra/superpowers/issues/2485",
           "score": 0,
           "sentiment": "negative"
         }
@@ -168,7 +201,7 @@
       "slug": "verification-before-completion",
       "ecosystem": "superpowers",
       "displayName": "Verification Before Completion",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
@@ -213,6 +246,17 @@
           "url": "https://github.com/obra/superpowers/issues/2451",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2487-bombajom-admin",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "bombajom-admin",
+          "date": "2026-10-09",
+          "text": "Pressure language in using-superpowers (injected every session) makes current models over-apply skills The SessionStart hook injects the whole `using-superpowers` skill into every session, wrapped in a second `<EXTREMELY_IMPORTANT>` tag: - `superpowers/6.0.2/hooks/session-start:11` reads `skills/using-superpowers/SKILL.md` - `superpowers/6.0.2/hooks/session-start:27` wraps it in `<EXTREMELY_IMPORTANT>` That body contains: - `skills/using-superpowers/SKILL.md:10-16`: `<EXTREMELY-IMPORTANT>` block, \"even a 1% chance a skill might apply ... you ABSOLUTELY MUST invoke the skill\", \"YOU DO NOT HAVE ",
+          "url": "https://github.com/obra/superpowers/issues/2487",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -241,6 +285,17 @@
           "date": "2026-10-07",
           "text": "subagent-driven-development: interactive/manual verification steps in a brief must be bounded by command flags, not by prose - [x] I searched existing issues and this has not been proposed before (adjacent: #2113 §1 covers implementers stopping to wait for a long suite and reporting stale logs; #2435 covers a controller ruling a human-at-the-screen step away. This one is the implementer hanging silently inside an unbounded command until the watchdog kills it.) ## What problem does this solve? A plan step \"check in the browser: import an MP4…\" was passed to an implementer as-is. The implementer",
           "url": "https://github.com/obra/superpowers/issues/2472",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2481-dan-1492",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "dan-1492",
+          "date": "2026-10-08",
+          "text": "subagent-driven-development: \"Five rounds maximum per task\" lies past the 20,000-character compaction re-attach cut, and one task ran 18+ fix rounds (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"compaction truncated skill\", \"five rounds maximum\", \"subagent-driven-development compaction\", \"breaker fix round\", \"skill truncated 20000\", \"compaction\", \"truncated\", \"round limit\"; closest: #2267 \"subagent-driven-development: the progress ledger records completion but not cross-task discoveries, so a usage-limit interruption loses what earlier tasks learned\", w",
+          "url": "https://github.com/obra/superpowers/issues/2481",
           "score": 1,
           "sentiment": "negative"
         },
@@ -287,17 +342,6 @@
           "url": "https://github.com/obra/superpowers/issues/2470",
           "score": 0,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2481-dan-1492",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "dan-1492",
-          "date": "2026-10-08",
-          "text": "subagent-driven-development: \"Five rounds maximum per task\" lies past the 20,000-character compaction re-attach cut, and one task ran 18+ fix rounds (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"compaction truncated skill\", \"five rounds maximum\", \"subagent-driven-development compaction\", \"breaker fix round\", \"skill truncated 20000\", \"compaction\", \"truncated\", \"round limit\"; closest: #2267 \"subagent-driven-development: the progress ledger records completion but not cross-task discoveries, so a usage-limit interruption loses what earlier tasks learned\", w",
-          "url": "https://github.com/obra/superpowers/issues/2481",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -335,26 +379,38 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 0,
-      "comments": []
+      "feedbackCount": 2,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2372-aimansour",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "aimansour",
+          "date": "2026-09-23",
+          "text": "Codex Desktop: brainstorming approval gates skipped after skill read (6.4.1) - [x] I searched open and closed issues. This is not an exact duplicate. Closest: #1441 reports a similar gate skip on Claude Code auto mode with Superpowers 5.0.7; it was closed after a non-reproduction on another Claude Code version. #1895 asks for an explicitly non-interactive mode. This case is an interactive Codex Desktop session using Superpowers 6.4.1, with no user opt-in to bypass reviews. ## Environment | Field | Value | Provenance | |---|---|---| | Superpowers | 6.4.1 | Installed plugin path in the session; ",
+          "url": "https://github.com/obra/superpowers/issues/2372",
+          "score": 5,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2487-bombajom-admin",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "bombajom-admin",
+          "date": "2026-10-09",
+          "text": "Pressure language in using-superpowers (injected every session) makes current models over-apply skills The SessionStart hook injects the whole `using-superpowers` skill into every session, wrapped in a second `<EXTREMELY_IMPORTANT>` tag: - `superpowers/6.0.2/hooks/session-start:11` reads `skills/using-superpowers/SKILL.md` - `superpowers/6.0.2/hooks/session-start:27` wraps it in `<EXTREMELY_IMPORTANT>` That body contains: - `skills/using-superpowers/SKILL.md:10-16`: `<EXTREMELY-IMPORTANT>` block, \"even a 1% chance a skill might apply ... you ABSOLUTELY MUST invoke the skill\", \"YOU DO NOT HAVE ",
+          "url": "https://github.com/obra/superpowers/issues/2487",
+          "score": 0,
+          "sentiment": "negative"
+        }
+      ]
     },
     "awesome-copilot/ai-ready": {
       "slug": "ai-ready",
       "ecosystem": "awesome-copilot",
       "displayName": "AI Ready",
-      "feedbackCount": 6,
+      "feedbackCount": 5,
       "comments": [
-        {
-          "id": "github-https-github-com-github-awesome-copilot-issues-2504-phodal",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "phodal",
-          "date": "2026-07-31",
-          "text": "[External Plugin]: better-harness ### Plugin name better-harness ### Short description Build an AI-ready engineering system for safe coding-agent delivery and continuous software improvement. ### GitHub repository QoderAI/better-harness ### Plugin path inside the repository _No response_ ### Ref to review _No response_ ### Commit SHA to review cfa7c123acbe9bbbf23c8065123f41643bdecf18 ### Version 0.4.0 ### License identifier MIT ### Author name Qoder ### Author URL https://qoder.com/ ### Homepage URL https://qoderai.github.io/better-harness/ ### Keywords copilot-plugin better-harness coding-age",
-          "url": "https://github.com/github/awesome-copilot/issues/2504",
-          "score": 3,
-          "sentiment": "positive"
-        },
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-4022-xqliu",
           "source": "github",
@@ -416,7 +472,7 @@
       "slug": "security-review",
       "ecosystem": "awesome-copilot",
       "displayName": "Security Review",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-2947-hacks4snacks",
@@ -450,6 +506,17 @@
           "url": "https://github.com/github/awesome-copilot/issues/3751",
           "score": 1,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-4800-notaaaronfr",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "notaaaronfr",
+          "date": "2026-10-09",
+          "text": "[External Plugin]: ship-ready <!-- external-plugin-submission --> Thanks for submitting a public external plugin. ### Plugin name ship-ready ### Short description Makes AI-written code production-ready, with proof: behavior lock-in with characterization tests, OWASP 2025 / CWE Top 25 security review, oracle-tested Big-O optimization, property and mutation testing, and a READY / NOT_READY verdict computed from a quality gate. ### GitHub repository notaaaronfr/ship-ready ### Plugin path inside the repository _No response_ ### Ref to review v2.6.1 ### Commit SHA to review eade177e5801c81d8e8b3066",
+          "url": "https://github.com/github/awesome-copilot/issues/4800",
+          "score": 1,
+          "sentiment": "positive"
         },
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-4746-github-actions-bot-",
@@ -665,19 +732,8 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1352-liam-ai-reality",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "liam-ai-reality",
-          "date": "2026-06-25",
-          "text": "skill-creator: run_eval.py parallel workers cross-match skill UUIDs, producing false-negative trigger rates ## Summary `skills/skill-creator/scripts/run_eval.py` produces **systematically wrong (near-zero) trigger rates whenever `--num-workers > 1`** (the default is 10). The failure is silent: every query — including ones that obviously *should* trigger — comes back with `trigger_rate ≈ 0`, which then makes all `should_trigger: false` cases \"pass\" trivially and all `should_trigger: true` cases \"fail\". The aggregate looks like a bad skill description when in fact the *measurement* is broken. ##",
-          "url": "https://github.com/anthropics/skills/issues/1352",
-          "score": 4,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-anthropics-skills-issues-1706-stillpimpn",
           "source": "github",

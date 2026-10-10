@@ -1,5 +1,35 @@
 [
   {
+    "id": "auto-claude-v2-1-296",
+    "title": "Claude Code v2.1.296 发布",
+    "date": "2026-10-09",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "Anthropic",
+    "heat": 75,
+    "growth": 8,
+    "sourceTier": "A",
+    "summary": "## What's changed  - Added a `code` key to the Claude apps gateway's `managed.policies[]`: the same settings as `cli`, also applied in Claude Desktop's Code tab; beside `desktop`, it turns on Claude D",
+    "whyImportant": "Claude Code 持续高频迭代，终端 Agent 能力不断增强。",
+    "impact": "关注 release notes 中的权限、MCP 和 subagent 相关变更。",
+    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.296"
+  },
+  {
+    "id": "auto-gh-github-copilot-weekly-releases-october-5",
+    "title": "GitHub Copilot weekly releases — October 5",
+    "date": "2026-10-09",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "GitHub",
+    "heat": 70,
+    "growth": 6,
+    "sourceTier": "A",
+    "summary": "GitHub 官方 Changelog 更新：GitHub Copilot weekly releases — October 5",
+    "whyImportant": "GitHub Copilot 生态动态，影响企业开发者工作流。",
+    "impact": "关注 Agent 模式、CLI 和企业策略相关变更。",
+    "sourceUrl": "https://github.blog/changelog/2026-10-09-github-copilot-weekly-releases-october-5"
+  },
+  {
     "id": "auto-claude-v2-1-294",
     "title": "Claude Code v2.1.294 发布",
     "date": "2026-10-08",
@@ -28,6 +58,21 @@
     "whyImportant": "Claude Code 持续高频迭代，终端 Agent 能力不断增强。",
     "impact": "关注 release notes 中的权限、MCP 和 subagent 相关变更。",
     "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.295"
+  },
+  {
+    "id": "auto-gh-copilot-code-review-new-organization-bil",
+    "title": "Copilot code review: New organization billing options and controls",
+    "date": "2026-10-08",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "GitHub",
+    "heat": 70,
+    "growth": 6,
+    "sourceTier": "A",
+    "summary": "GitHub 官方 Changelog 更新：Copilot code review: New organization billing options and controls",
+    "whyImportant": "GitHub Copilot 生态动态，影响企业开发者工作流。",
+    "impact": "关注 Agent 模式、CLI 和企业策略相关变更。",
+    "sourceUrl": "https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls"
   },
   {
     "id": "auto-claude-v2-1-293",

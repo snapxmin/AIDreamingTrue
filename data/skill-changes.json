@@ -1,20 +1,59 @@
 {
-  "generatedAt": "2026-10-09T06:26:24Z",
+  "generatedAt": "2026-10-10T06:09:20Z",
   "isBaselineRun": false,
   "changes": [
     {
       "type": "updated",
-      "key": "awesome-copilot/python-mcp-server-generator",
-      "ecosystem": "awesome-copilot",
-      "slug": "python-mcp-server-generator",
-      "displayName": "Python Mcp Server Generator",
+      "key": "anthropics-skills/claude-api",
+      "ecosystem": "anthropics-skills",
+      "slug": "claude-api",
+      "displayName": "Claude Api",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/claude-api",
+      "detectedAt": "2026-10-10T06:10:01Z"
+    },
+    {
+      "type": "updated",
+      "key": "superpowers/brainstorming",
+      "ecosystem": "superpowers",
+      "slug": "brainstorming",
+      "displayName": "Brainstorming",
       "changedFields": [
         "content",
         "description"
       ],
-      "summary": "description 更新：Use this skill when the user wants to create a new Model Context Protocol (MCP) server in Python. Al…",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/python-mcp-server-generator",
-      "detectedAt": "2026-10-09T06:27:08Z"
+      "summary": "description 更新：You MUST use this before any creative work - creating features, building components, adding function…",
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/brainstorming",
+      "detectedAt": "2026-10-10T06:10:01Z"
+    },
+    {
+      "type": "updated",
+      "key": "superpowers/requesting-code-review",
+      "ecosystem": "superpowers",
+      "slug": "requesting-code-review",
+      "displayName": "Requesting Code Review",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/requesting-code-review",
+      "detectedAt": "2026-10-10T06:10:01Z"
+    },
+    {
+      "type": "updated",
+      "key": "superpowers/systematic-debugging",
+      "ecosystem": "superpowers",
+      "slug": "systematic-debugging",
+      "displayName": "Systematic Debugging",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/systematic-debugging",
+      "detectedAt": "2026-10-10T06:10:01Z"
     }
   ]
 }
