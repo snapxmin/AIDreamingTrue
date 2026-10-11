@@ -1,5 +1,20 @@
 [
   {
+    "id": "auto-gh-new-controls-and-chat-improvements-in-co",
+    "title": "New controls and chat improvements in Copilot for JetBrains",
+    "date": "2026-10-10",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "GitHub",
+    "heat": 70,
+    "growth": 6,
+    "sourceTier": "A",
+    "summary": "GitHub 官方 Changelog 更新：New controls and chat improvements in Copilot for JetBrains",
+    "whyImportant": "GitHub Copilot 生态动态，影响企业开发者工作流。",
+    "impact": "关注 Agent 模式、CLI 和企业策略相关变更。",
+    "sourceUrl": "https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains"
+  },
+  {
     "id": "auto-claude-v2-1-296",
     "title": "Claude Code v2.1.296 发布",
     "date": "2026-10-09",

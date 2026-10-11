@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-10T06:11:36Z",
+    "lastUpdated": "2026-10-11T06:09:34Z",
     "skillCount": 20,
-    "totalComments": 72,
+    "totalComments": 70,
     "sources": [
       "hacker-news",
       "github",
@@ -18,15 +18,15 @@
       "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2372-aimansour",
+          "id": "github-https-github-com-obra-superpowers-issues-2398-obra",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "aimansour",
-          "date": "2026-09-23",
-          "text": "Codex Desktop: brainstorming approval gates skipped after skill read (6.4.1) - [x] I searched open and closed issues. This is not an exact duplicate. Closest: #1441 reports a similar gate skip on Claude Code auto mode with Superpowers 5.0.7; it was closed after a non-reproduction on another Claude Code version. #1895 asks for an explicitly non-interactive mode. This case is an interactive Codex Desktop session using Superpowers 6.4.1, with no user opt-in to bypass reviews. ## Environment | Field | Value | Provenance | |---|---|---| | Superpowers | 6.4.1 | Installed plugin path in the session; ",
-          "url": "https://github.com/obra/superpowers/issues/2372",
-          "score": 5,
-          "sentiment": "neutral"
+          "author": "obra",
+          "date": "2026-09-26",
+          "text": "Master tracking ticket for configurability Hi all! I'm Claude (Opus 5.5, running in Claude Code 2.1.283), helping @obra triage the issue tracker. While going through open issues and PRs, I found fourteen that each ask, in different ways, for superpowers to be more configurable: where it writes things, how its workflow runs, and where people can hook in their own steps. They're good requests, and many come from real friction. Taken one at a time, though, each would add its own env var, flag, config file or hook system, and superpowers would end up with a pile of unrelated knobs. Configurability",
+          "url": "https://github.com/obra/superpowers/issues/2398",
+          "score": 1,
+          "sentiment": "negative"
         }
       ]
     },
@@ -48,17 +48,6 @@
           "sentiment": "neutral"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "haruntekin89",
-          "date": "2026-09-24",
-          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
-          "url": "https://github.com/obra/superpowers/issues/2377",
-          "score": 3,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2454-radekklein92",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -70,17 +59,6 @@
           "sentiment": "neutral"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2452-abat-kek",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "abat-kek",
-          "date": "2026-10-03",
-          "text": "writing-plans / test-driven-development: a test for a protective layer is evidence only once it fails when the layer is weakened - [x] I searched existing issues and this has not been proposed before (related: #2092 — a test whose arrange step silently fails passes every gate; #2285 — expected values asserted rather than produced) ## What problem does this solve? Three runs, same shape: 1. The tests for an outbound fetch's safety checks (foreign redirect, deadline, size limit, a lock) all passed on the first run. Only weakening each safeguard in turn by script (user part not checked, hostname ",
-          "url": "https://github.com/obra/superpowers/issues/2452",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2487-bombajom-admin",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -88,6 +66,28 @@
           "date": "2026-10-09",
           "text": "Pressure language in using-superpowers (injected every session) makes current models over-apply skills The SessionStart hook injects the whole `using-superpowers` skill into every session, wrapped in a second `<EXTREMELY_IMPORTANT>` tag: - `superpowers/6.0.2/hooks/session-start:11` reads `skills/using-superpowers/SKILL.md` - `superpowers/6.0.2/hooks/session-start:27` wraps it in `<EXTREMELY_IMPORTANT>` That body contains: - `skills/using-superpowers/SKILL.md:10-16`: `<EXTREMELY-IMPORTANT>` block, \"even a 1% chance a skill might apply ... you ABSOLUTELY MUST invoke the skill\", \"YOU DO NOT HAVE ",
           "url": "https://github.com/obra/superpowers/issues/2487",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2495-jnrod03-rgb",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jnrod03-rgb",
+          "date": "2026-10-10",
+          "text": "verification-before-completion: a commit message is a claim about the diff, not the diff; and \"add one more X\" predictably breaks hardcoded counts in sibling tests - [x] I searched existing issues and this has not been proposed before (adjacent: #2186 V4 \"reported is not verified\" is the general form for tool return values; #2373 covers unverified regexes and self-test cleanup; neither names git history as a source of claims, nor the count-assertion case) ## What problem does this solve? Two cases the Gate Function (`SKILL.md`, 7.0.0, 120 lines) does not currently cover; neither `git show`, \"c",
+          "url": "https://github.com/obra/superpowers/issues/2495",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2494-jnrod03-rgb",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jnrod03-rgb",
+          "date": "2026-10-10",
+          "text": "writing-plans: test code written inside a plan has two failure modes of its own, and the Self-Review does not ask about either - [x] I searched existing issues and this has not been proposed before (adjacent: #2178 is about line-number citations in the same template; `test-driven-development/writing-good-tests.md` §\"The Mutation Check\" covers tautological tests, but at execution time and for the executor — this is about the plan author, before any code exists) ## What problem does this solve? `writing-plans` 7.0.0 asks the plan author to write each test step as code, \"the test's name and its a",
+          "url": "https://github.com/obra/superpowers/issues/2494",
           "score": 0,
           "sentiment": "negative"
         }
@@ -111,57 +111,57 @@
           "sentiment": "neutral"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2376-xianfengsong",
+          "id": "github-https-github-com-obra-superpowers-issues-2178-lonewolf36",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "xianfengsong",
-          "date": "2026-09-24",
-          "text": "Open a rendered HTML preview of the saved spec or plan in the browser - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I run Claude Code in a terminal. When the brainstorming and writing-plans skills finish, they save the spec or plan to `docs/superpowers/specs/` or `docs/superpowers/plans/` and tell me to review it. To actually review it I have to open the raw markdown in an editor, or read plain text in the terminal. For a multi-page plan that's painful enough that I've caught myself skimming instead of reading. Which is a bit ironic, si",
-          "url": "https://github.com/obra/superpowers/issues/2376",
+          "author": "LoneWolf36",
+          "date": "2026-08-19",
+          "text": "`writing-plans` template teaches line-number citations, which go stale by construction ## Summary Three text defects in `skills/writing-plans/SKILL.md` cause plans to carry citations that are wrong by the time anyone executes them. The first is the serious one: the Task Structure template demonstrates line-range citations, and models copy the demonstrated form. In one multi-session feature I found **eleven** stale citations in a single plan, and the two worst pointed roughly 30 lines past the symbol they named into an unrelated request class. An agent editing by those line numbers would have m",
+          "url": "https://github.com/obra/superpowers/issues/2178",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2398-obra",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "obra",
+          "date": "2026-09-26",
+          "text": "Master tracking ticket for configurability Hi all! I'm Claude (Opus 5.5, running in Claude Code 2.1.283), helping @obra triage the issue tracker. While going through open issues and PRs, I found fourteen that each ask, in different ways, for superpowers to be more configurable: where it writes things, how its workflow runs, and where people can hook in their own steps. They're good requests, and many come from real friction. Taken one at a time, though, each would add its own env var, flag, config file or hook system, and superpowers would end up with a pile of unrelated knobs. Configurability",
+          "url": "https://github.com/obra/superpowers/issues/2398",
           "score": 1,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2408-tamaro-skaljic",
+          "id": "github-https-github-com-obra-superpowers-issues-2496-jnrod03-rgb",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "tamaro-skaljic",
-          "date": "2026-09-27",
-          "text": "writing-plans: the plan's code was built twice during planning, then the handoff offered to implement it a third time - [x] I searched existing issues and this is not a duplicate (searched: \"writing-plans prototype\", \"plan implemented twice\", \"execution handoff already implemented\", \"writing-plans code during planning\", \"writing-plans verify plan\"; closest: #895 (closed); related: #2285, #2065) ## Environment (required) | Field | Value | Provenance / supporting evidence | |-------|-------|-------------------------------| | Superpowers version | 6.4.1 (not a checkout) | current observation of p",
-          "url": "https://github.com/obra/superpowers/issues/2408",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2473-edcjoel-maker",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "edcjoel-maker",
-          "date": "2026-10-07",
-          "text": "brainstorming / writing-plans: commit the spec/plan by path so pre-staged changes are not swept in - [x] I searched existing issues and this has not been proposed before (adjacent: #807, closed, asked whether to commit specs at all; this is about *how* the commit is made when it is) ## What problem does this solve? brainstorming says the design doc is written to `docs/superpowers/specs/…-design.md`, \"committed\". In a working tree with unrelated in-progress work, I ran `git add <spec>` then `git commit`. A `git rm` from an earlier task in the same session was still staged, so the \"spec\" commit ",
-          "url": "https://github.com/obra/superpowers/issues/2473",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2468-dachria-cmyk",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "dachria-cmyk",
-          "date": "2026-10-06",
-          "text": "writing-plans: a task that reads from a row-capped service should name the cap, and its fake should enforce it - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A plan specified a task that read up to 5,000 rows in one request from a PostgREST API, with a guard that returned early when that many rows came back, and a test fake whose `limit(n)` returned up to n rows. The real server cuts every request at 1,000 rows (`max_rows`) without an error, so in production the read could never see more than 1,000 rows and the guard could never fire. Ev",
-          "url": "https://github.com/obra/superpowers/issues/2468",
+          "author": "jnrod03-rgb",
+          "date": "2026-10-10",
+          "text": "task-brief / task-start: only the English literal \"Task N\" is a task heading, and the error for a plan written in another language does not say so - [x] I searched existing issues and this is not a duplicate (adjacent: #2459 alphanumeric IDs \"Task A1\"; #2175, #2405, #2406, #2436 and PRs #2176, #2359, #2438, #2466 all edit the same awk line for numbering or fencing, and every one of them keeps the literal `Task`) ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 7.0.0 (`scripts/task-brief:32-33`; `executing-plans/scripts/task-start` delegates to it) | | Harne",
+          "url": "https://github.com/obra/superpowers/issues/2496",
           "score": 0,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2470-edcjoel-maker",
+          "id": "github-https-github-com-obra-superpowers-issues-2494-jnrod03-rgb",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "edcjoel-maker",
-          "date": "2026-10-07",
-          "text": "subagent-driven-development: plan-verbatim code passes its own tests — reviewers need adversarial probes per named risk, including the seam with unchanged code - [x] I searched existing issues and this has not been proposed before (adjacent: #766 covers product-vs-intent gaps; this is narrower — security/correctness holes in code the plan supplied verbatim) ## What problem does this solve? When `writing-plans` embeds complete code and tests in a task, the implementer copies them and the task reviewer checks the diff against the brief. Both pass by construction: the tests were written by the sa",
-          "url": "https://github.com/obra/superpowers/issues/2470",
+          "author": "jnrod03-rgb",
+          "date": "2026-10-10",
+          "text": "writing-plans: test code written inside a plan has two failure modes of its own, and the Self-Review does not ask about either - [x] I searched existing issues and this has not been proposed before (adjacent: #2178 is about line-number citations in the same template; `test-driven-development/writing-good-tests.md` §\"The Mutation Check\" covers tautological tests, but at execution time and for the executor — this is about the plan author, before any code exists) ## What problem does this solve? `writing-plans` 7.0.0 asks the plan author to write each test step as code, \"the test's name and its a",
+          "url": "https://github.com/obra/superpowers/issues/2494",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2493-jnrod03-rgb",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jnrod03-rgb",
+          "date": "2026-10-10",
+          "text": "task-brief / dispatch: the plan's Global Constraints and Review Focus never reach the implementer, although the plan template says they apply to every task - [x] I searched existing issues and this is not a duplicate (adjacent: #2469 proposes a tool-only fallback whose task-brief step says \"copy the task's section, plus the Global Constraints\", which assumes the brief should carry them; #1746/#1715 introduced the section; the open task-brief issues #2405, #2406, #2436, #2459 are about heading matching, not about the header) ## Environment (required) | Field | Value | |-------|-------| | Superp",
+          "url": "https://github.com/obra/superpowers/issues/2493",
           "score": 0,
           "sentiment": "negative"
         }
@@ -226,17 +226,6 @@
           "sentiment": "neutral"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2422-darth-pie",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Darth-Pie",
-          "date": "2026-09-29",
-          "text": "test-driven-development: no guidance when a layer has no test harness, so the agent either skips the Iron Law silently or installs a harness nobody asked for - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A feature spanned a server with a working integration-test setup and a React front end. The front end's test runner is node-only, with no DOM environment and no component-testing library installed. The server half went strictly red-green. For the UI half, the agent pulled the pure rules out into plain modules and test-drove those: - lab",
-          "url": "https://github.com/obra/superpowers/issues/2422",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2451-abat-kek",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -257,6 +246,17 @@
           "url": "https://github.com/obra/superpowers/issues/2487",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2495-jnrod03-rgb",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jnrod03-rgb",
+          "date": "2026-10-10",
+          "text": "verification-before-completion: a commit message is a claim about the diff, not the diff; and \"add one more X\" predictably breaks hardcoded counts in sibling tests - [x] I searched existing issues and this has not been proposed before (adjacent: #2186 V4 \"reported is not verified\" is the general form for tool return values; #2373 covers unverified regexes and self-test cleanup; neither names git history as a source of claims, nor the count-assertion case) ## What problem does this solve? Two cases the Gate Function (`SKILL.md`, 7.0.0, 120 lines) does not currently cover; neither `git show`, \"c",
+          "url": "https://github.com/obra/superpowers/issues/2495",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -264,18 +264,18 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 7,
+      "feedbackCount": 5,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2454-radekklein92",
+          "id": "github-https-github-com-obra-superpowers-issues-2429-abat-kek",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "radekklein92",
-          "date": "2026-10-03",
-          "text": "Prompt audit against Claude Fable 5.1: pressure language and update suppressors in using-superpowers, executing-plans, subagent-driven-development Ran a prompt audit of the plugin's skills against the current Claude models (Fable 5.1 / Opus 5.5), which follow instructions more literally than the models much of this text was written for. Findings, with proposed changes: 1. `skills/using-superpowers/SKILL.md:10-16` and `:35-50` - `<EXTREMELY-IMPORTANT> ... even a 1% chance ... ABSOLUTELY MUST ... YOU DO NOT HAVE A CHOICE ... This is not negotiable` plus the 12-row \"Red Flags\" table. The skill is",
-          "url": "https://github.com/obra/superpowers/issues/2454",
+          "author": "abat-kek",
+          "date": "2026-09-30",
+          "text": "SDD scripts resolve repo and workspace from the cwd, not from PLAN_FILE — wrong workspace when called across worktrees - [x] I searched existing issues and this is not a duplicate (adjacent but different failure modes: #2242 greenfield crash, #2207 workspace deletion, #2307 Windows invocation) ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | observed on 6.3.0; the gap is still present on `dev` as of 2026-10-01 | | Harness (Claude Code, Cursor, etc.) | Claude Code (desktop app, Code tab) | | Harness version | 2.1.272 | | Your model + version | Claude Opus 5.",
+          "url": "https://github.com/obra/superpowers/issues/2429",
           "score": 1,
-          "sentiment": "neutral"
+          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2472-edcjoel-maker",
@@ -300,17 +300,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2459-rhuthik",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "rhuthik",
-          "date": "2026-10-05",
-          "text": "task-brief: alphanumeric task IDs (\"Task A1\", \"Task B2\") are never recognised as task headings - [x] I searched existing issues and this is not a duplicate. Related: #2175 and #2405 (anchoring of numeric IDs) and open PRs #2176 / #2359, which edit the same awk line but keep heading detection numeric-only (`Task[ \\t]+[0-9]+`), so they don't cover this case. ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.4.1 (code unchanged on `dev` as of b1f8774) | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | 2.1.286 | | Your model + version ",
-          "url": "https://github.com/obra/superpowers/issues/2459",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2469-dachria-cmyk",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -322,24 +311,13 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2471-edcjoel-maker",
+          "id": "github-https-github-com-obra-superpowers-issues-2493-jnrod03-rgb",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "edcjoel-maker",
-          "date": "2026-10-07",
-          "text": "subagent-driven-development: deferred \"minor\" findings are graded by likelihood only — add recoverability - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? SDD routes Minor findings to the ledger (`Task <N>: minor (deferred): …`) and asks the final reviewer to triage them. Task reviewers labelled findings \"minor\" because the trigger looked rare — e.g. a transient network error mid-playback after which a probe succeeds and the item is permanently marked broken. In the final review, re-reading the list through \"can the user get back from this",
-          "url": "https://github.com/obra/superpowers/issues/2471",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2470-edcjoel-maker",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "edcjoel-maker",
-          "date": "2026-10-07",
-          "text": "subagent-driven-development: plan-verbatim code passes its own tests — reviewers need adversarial probes per named risk, including the seam with unchanged code - [x] I searched existing issues and this has not been proposed before (adjacent: #766 covers product-vs-intent gaps; this is narrower — security/correctness holes in code the plan supplied verbatim) ## What problem does this solve? When `writing-plans` embeds complete code and tests in a task, the implementer copies them and the task reviewer checks the diff against the brief. Both pass by construction: the tests were written by the sa",
-          "url": "https://github.com/obra/superpowers/issues/2470",
+          "author": "jnrod03-rgb",
+          "date": "2026-10-10",
+          "text": "task-brief / dispatch: the plan's Global Constraints and Review Focus never reach the implementer, although the plan template says they apply to every task - [x] I searched existing issues and this is not a duplicate (adjacent: #2469 proposes a tool-only fallback whose task-brief step says \"copy the task's section, plus the Global Constraints\", which assumes the brief should carry them; #1746/#1715 introduced the section; the open task-brief issues #2405, #2406, #2436, #2459 are about heading matching, not about the header) ## Environment (required) | Field | Value | |-------|-------| | Superp",
+          "url": "https://github.com/obra/superpowers/issues/2493",
           "score": 0,
           "sentiment": "negative"
         }
