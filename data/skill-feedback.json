@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-11T06:09:34Z",
+    "lastUpdated": "2026-10-12T06:18:59Z",
     "skillCount": 20,
-    "totalComments": 70,
+    "totalComments": 68,
     "sources": [
       "hacker-news",
       "github",
@@ -264,7 +264,7 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2429-abat-kek",
@@ -274,17 +274,6 @@
           "date": "2026-09-30",
           "text": "SDD scripts resolve repo and workspace from the cwd, not from PLAN_FILE — wrong workspace when called across worktrees - [x] I searched existing issues and this is not a duplicate (adjacent but different failure modes: #2242 greenfield crash, #2207 workspace deletion, #2307 Windows invocation) ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | observed on 6.3.0; the gap is still present on `dev` as of 2026-10-01 | | Harness (Claude Code, Cursor, etc.) | Claude Code (desktop app, Code tab) | | Harness version | 2.1.272 | | Your model + version | Claude Opus 5.",
           "url": "https://github.com/obra/superpowers/issues/2429",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2472-edcjoel-maker",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "edcjoel-maker",
-          "date": "2026-10-07",
-          "text": "subagent-driven-development: interactive/manual verification steps in a brief must be bounded by command flags, not by prose - [x] I searched existing issues and this has not been proposed before (adjacent: #2113 §1 covers implementers stopping to wait for a long suite and reporting stale logs; #2435 covers a controller ruling a human-at-the-screen step away. This one is the implementer hanging silently inside an unbounded command until the watchdog kills it.) ## What problem does this solve? A plan step \"check in the browser: import an MP4…\" was passed to an implementer as-is. The implementer",
-          "url": "https://github.com/obra/superpowers/issues/2472",
           "score": 1,
           "sentiment": "negative"
         },
@@ -300,17 +289,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2469-dachria-cmyk",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "dachria-cmyk",
-          "date": "2026-10-06",
-          "text": "subagent-driven-development: document a tool-only fallback for each helper script - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I ran subagent-driven-development on a six-task plan inside a git worktree. The harness had a worktree-isolation guard that refused any command it could not prove stayed inside the worktree. It refused every `bash scripts/sdd-workspace`, `bash scripts/task-brief` and `bash scripts/review-package` call, and any compound command or shell redirect that touched git. File edits and single, plainly-targeted commands ",
-          "url": "https://github.com/obra/superpowers/issues/2469",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2493-jnrod03-rgb",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -318,6 +296,17 @@
           "date": "2026-10-10",
           "text": "task-brief / dispatch: the plan's Global Constraints and Review Focus never reach the implementer, although the plan template says they apply to every task - [x] I searched existing issues and this is not a duplicate (adjacent: #2469 proposes a tool-only fallback whose task-brief step says \"copy the task's section, plus the Global Constraints\", which assumes the brief should carry them; #1746/#1715 introduced the section; the open task-brief issues #2405, #2406, #2436, #2459 are about heading matching, not about the header) ## Environment (required) | Field | Value | |-------|-------| | Superp",
           "url": "https://github.com/obra/superpowers/issues/2493",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2499-xiongdl",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "xiongdl",
+          "date": "2026-10-11",
+          "text": "subagent-driven-development: scoped re-review resumed the existing reviewer in Codex - [x] I searched open and closed issues (queries included `re-review reviewer`, `fresh reviewer`, and `followup_task`). Related: #1218 and #1988. This report focuses on reviewer identity during scoped re-review in Codex. ## Environment (required) | Field | Value | Provenance / supporting evidence | |---|---|---| | Superpowers version | `v6.4.2` | Human-reported historical version, supplied during the diagnosis follow-up. Captured skill output: MAIN transcript line 487. Matching quoted SDD passages were also ch",
+          "url": "https://github.com/obra/superpowers/issues/2499",
           "score": 0,
           "sentiment": "negative"
         }
@@ -464,6 +453,17 @@
           "sentiment": "positive"
         },
         {
+          "id": "github-https-github-com-github-awesome-copilot-issues-4800-notaaaronfr",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "notaaaronfr",
+          "date": "2026-10-09",
+          "text": "[External Plugin]: ship-ready <!-- external-plugin-submission --> Thanks for submitting a public external plugin. ### Plugin name ship-ready ### Short description Makes AI-written code production-ready, with proof: behavior lock-in with characterization tests, OWASP 2025 / CWE Top 25 security review, oracle-tested Big-O optimization, property and mutation testing, and a READY / NOT_READY verdict computed from a quality gate. ### GitHub repository notaaaronfr/ship-ready ### Plugin path inside the repository _No response_ ### Ref to review v2.6.1 ### Commit SHA to review eade177e5801c81d8e8b3066",
+          "url": "https://github.com/github/awesome-copilot/issues/4800",
+          "score": 3,
+          "sentiment": "positive"
+        },
+        {
           "id": "github-https-github-com-github-awesome-copilot-issues-3147-omarmohelal2",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -484,17 +484,6 @@
           "url": "https://github.com/github/awesome-copilot/issues/3751",
           "score": 1,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-github-awesome-copilot-issues-4800-notaaaronfr",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "notaaaronfr",
-          "date": "2026-10-09",
-          "text": "[External Plugin]: ship-ready <!-- external-plugin-submission --> Thanks for submitting a public external plugin. ### Plugin name ship-ready ### Short description Makes AI-written code production-ready, with proof: behavior lock-in with characterization tests, OWASP 2025 / CWE Top 25 security review, oracle-tested Big-O optimization, property and mutation testing, and a READY / NOT_READY verdict computed from a quality gate. ### GitHub repository notaaaronfr/ship-ready ### Plugin path inside the repository _No response_ ### Ref to review v2.6.1 ### Commit SHA to review eade177e5801c81d8e8b3066",
-          "url": "https://github.com/github/awesome-copilot/issues/4800",
-          "score": 1,
-          "sentiment": "positive"
         },
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-4746-github-actions-bot-",
@@ -751,7 +740,7 @@
       "slug": "mcp-builder",
       "ecosystem": "anthropics-skills",
       "displayName": "MCP Builder",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1091-agentupskill",
@@ -774,17 +763,6 @@
           "url": "https://github.com/anthropics/skills/issues/1960",
           "score": 0,
           "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1967-kai-y-chen",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Kai-Y-Chen",
-          "date": "2026-10-04",
-          "text": "mcp-builder: advises \"concise tool descriptions\", against Anthropic's tool-use guidance `skills/mcp-builder/SKILL.md` advises \"Agents benefit from concise tool descriptions and the ability to filter/paginate results.\" and lists \"Concise summary of functionality\" first under **Tool Description**. Anthropic's tool-use documentation calls detailed descriptions by far the most important factor in tool performance, so servers built from this skill inherit the most common tool-description failure: under-description. **Fix:** ask for precise, complete descriptions — what the tool does, when to use it",
-          "url": "https://github.com/anthropics/skills/issues/1967",
-          "score": 0,
-          "sentiment": "neutral"
         }
       ]
     },
