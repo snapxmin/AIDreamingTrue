@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-12T06:51:42Z",
+    "lastUpdated": "2026-10-13T06:59:43Z",
     "skillCount": 20,
-    "totalComments": 68,
+    "totalComments": 71,
     "sources": [
       "hacker-news",
       "github",
@@ -267,17 +267,6 @@
       "feedbackCount": 4,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2429-abat-kek",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "abat-kek",
-          "date": "2026-09-30",
-          "text": "SDD scripts resolve repo and workspace from the cwd, not from PLAN_FILE — wrong workspace when called across worktrees - [x] I searched existing issues and this is not a duplicate (adjacent but different failure modes: #2242 greenfield crash, #2207 workspace deletion, #2307 Windows invocation) ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | observed on 6.3.0; the gap is still present on `dev` as of 2026-10-01 | | Harness (Claude Code, Cursor, etc.) | Claude Code (desktop app, Code tab) | | Harness version | 2.1.272 | | Your model + version | Claude Opus 5.",
-          "url": "https://github.com/obra/superpowers/issues/2429",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2481-dan-1492",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -285,6 +274,17 @@
           "date": "2026-10-08",
           "text": "subagent-driven-development: \"Five rounds maximum per task\" lies past the 20,000-character compaction re-attach cut, and one task ran 18+ fix rounds (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"compaction truncated skill\", \"five rounds maximum\", \"subagent-driven-development compaction\", \"breaker fix round\", \"skill truncated 20000\", \"compaction\", \"truncated\", \"round limit\"; closest: #2267 \"subagent-driven-development: the progress ledger records completion but not cross-task discoveries, so a usage-limit interruption loses what earlier tasks learned\", w",
           "url": "https://github.com/obra/superpowers/issues/2481",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2429-abat-kek",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "abat-kek",
+          "date": "2026-09-30",
+          "text": "SDD scripts resolve repo and workspace from the cwd, not from PLAN_FILE — wrong workspace when called across worktrees - [x] I searched existing issues and this is not a duplicate (adjacent but different failure modes: #2242 greenfield crash, #2207 workspace deletion, #2307 Windows invocation) ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | observed on 6.3.0; the gap is still present on `dev` as of 2026-10-01 | | Harness (Claude Code, Cursor, etc.) | Claude Code (desktop app, Code tab) | | Harness version | 2.1.272 | | Your model + version | Claude Opus 5.",
+          "url": "https://github.com/obra/superpowers/issues/2429",
           "score": 1,
           "sentiment": "negative"
         },
@@ -346,7 +346,7 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 2,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2372-aimansour",
@@ -360,6 +360,17 @@
           "sentiment": "neutral"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2081-midirectiekade14-debug",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "midirectiekade14-debug",
+          "date": "2026-08-04",
+          "text": "hooks/session-start: six subprocess spawns cost ~2s on Windows (7.7x slower; byte-identical output without them) `hooks/session-start` spawns six subprocesses to do work that needs none. On Linux/macOS that is cheap enough to be invisible. On Windows, where `fork()` is emulated, it dominates: the hook takes **~2.25s** instead of **~0.29s**, and the whole difference is process-spawn overhead. Removing the spawns produces **byte-identical output** (same SHA-256, same length, same exit code). ## Environment | | | |---|---| | OS | Windows 11 Pro 26200 | | Shell | Git for Windows bash 5.2 (`C:\\Prog",
+          "url": "https://github.com/obra/superpowers/issues/2081",
+          "score": 3,
+          "sentiment": "neutral"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2487-bombajom-admin",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -367,6 +378,28 @@
           "date": "2026-10-09",
           "text": "Pressure language in using-superpowers (injected every session) makes current models over-apply skills The SessionStart hook injects the whole `using-superpowers` skill into every session, wrapped in a second `<EXTREMELY_IMPORTANT>` tag: - `superpowers/6.0.2/hooks/session-start:11` reads `skills/using-superpowers/SKILL.md` - `superpowers/6.0.2/hooks/session-start:27` wraps it in `<EXTREMELY_IMPORTANT>` That body contains: - `skills/using-superpowers/SKILL.md:10-16`: `<EXTREMELY-IMPORTANT>` block, \"even a 1% chance a skill might apply ... you ABSOLUTELY MUST invoke the skill\", \"YOU DO NOT HAVE ",
           "url": "https://github.com/obra/superpowers/issues/2487",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2503-hearth-bot",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "hearth-bot",
+          "date": "2026-10-12",
+          "text": "run-hook.cmd: SessionStart fails on Unix without bash (\"command not found: bash\"); session-start itself runs under zsh ## Summary On a Unix system without bash (here a sandbox that ships zsh only), the SessionStart hook fails on every session start: ``` Failed with non-blocking status code: .../hooks/run-hook.cmd:46: command not found: bash ``` and the using-superpowers bootstrap is not injected. The Windows half of `run-hook.cmd` already handles \"no bash\" (\"exit silently rather than error\"); the Unix half does not. #2310 (fixed in #2349) does not cover this: `exec \"${BASH:-bash}\"` helps when ",
+          "url": "https://github.com/obra/superpowers/issues/2503",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2505-agent-dmo",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "agent-dmo",
+          "date": "2026-10-12",
+          "text": "SessionStart hook never runs in Claude desktop SSH remote sessions; naming the hooks file in plugin.json fixes it 🤖 agent-dmo · builder · session 1673d458 <!-- agent:v1 role=builder run=1673d458 --> - [x] I searched existing issues and this is not a duplicate ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 7.0.0 (bb92a77) | | Harness (Claude Code, Cursor, etc.) | Claude desktop app (macOS), Code tab, SSH remote session to an Ubuntu host | | Harness version | Claude Code 2.1.296 on the remote host | | Your model + version | Claude Opus 5.5 (claude-opus-5-5)",
+          "url": "https://github.com/obra/superpowers/issues/2505",
           "score": 0,
           "sentiment": "negative"
         }
@@ -386,7 +419,7 @@
           "date": "2026-09-26",
           "text": "[External Plugin]: orbi ### Plugin name orbi ### Short description Turn a conversation into a GitHub Issue with acceptance criteria an agent can verify in the repo. The skill files it with the ai-ready label so Orbi implements, reviews, merges and releases it unattended. ### GitHub repository orbi-build/orbi ### Plugin path inside the repository integrations/claude-plugin ### Ref to review v0.5.49 ### Commit SHA to review 89f4659d87ba37dcc5f932516062f8cb7b4237d8 ### Version 0.1.4 ### License identifier AGPL-3.0 ### Author name Orbi ### Author URL https://github.com/xqliu ### Homepage URL https",
           "url": "https://github.com/github/awesome-copilot/issues/4022",
-          "score": 2,
+          "score": 4,
           "sentiment": "positive"
         },
         {
@@ -453,6 +486,17 @@
           "sentiment": "positive"
         },
         {
+          "id": "github-https-github-com-github-awesome-copilot-issues-3147-omarmohelal2",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "omarmohelal2",
+          "date": "2026-09-15",
+          "text": "[External Plugin]: sechelix-lite <!-- external-plugin-submission --> ### Plugin name sechelix-lite ### Short description Application-security review skill for codebases and pull requests you are authorized to assess. Maps trust boundaries, keeps issues as hypotheses until evidenced, runs a separate pass that tries to refute material findings, and ends with a release verdict. ### GitHub repository omarmohelal/SecHelix ### Plugin path inside the repository distributions/awesome-copilot ### Ref to review v4.0.0-alpha.6 ### Commit SHA to review a73be865fccf5cefcf98d4dcce2c2bf2b6afce2f ### Version ",
+          "url": "https://github.com/github/awesome-copilot/issues/3147",
+          "score": 3,
+          "sentiment": "neutral"
+        },
+        {
           "id": "github-https-github-com-github-awesome-copilot-issues-4800-notaaaronfr",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -462,17 +506,6 @@
           "url": "https://github.com/github/awesome-copilot/issues/4800",
           "score": 3,
           "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-github-awesome-copilot-issues-3147-omarmohelal2",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "omarmohelal2",
-          "date": "2026-09-15",
-          "text": "[External Plugin]: sechelix-lite <!-- external-plugin-submission --> ### Plugin name sechelix-lite ### Short description Application-security review skill for codebases and pull requests you are authorized to assess. Maps trust boundaries, keeps issues as hypotheses until evidenced, runs a separate pass that tries to refute material findings, and ends with a release verdict. ### GitHub repository omarmohelal/SecHelix ### Plugin path inside the repository distributions/awesome-copilot ### Ref to review v4.0.0-alpha.6 ### Commit SHA to review a73be865fccf5cefcf98d4dcce2c2bf2b6afce2f ### Version ",
-          "url": "https://github.com/github/awesome-copilot/issues/3147",
-          "score": 2,
-          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-3751-github-actions-bot-",
