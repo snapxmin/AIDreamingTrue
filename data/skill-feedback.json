@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-13T06:59:43Z",
+    "lastUpdated": "2026-10-14T05:12:19Z",
     "skillCount": 20,
-    "totalComments": 71,
+    "totalComments": 73,
     "sources": [
       "hacker-news",
       "github",
@@ -15,7 +15,7 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2398-obra",
@@ -26,6 +26,17 @@
           "text": "Master tracking ticket for configurability Hi all! I'm Claude (Opus 5.5, running in Claude Code 2.1.283), helping @obra triage the issue tracker. While going through open issues and PRs, I found fourteen that each ask, in different ways, for superpowers to be more configurable: where it writes things, how its workflow runs, and where people can hook in their own steps. They're good requests, and many come from real friction. Taken one at a time, though, each would add its own env var, flag, config file or hook system, and superpowers would end up with a pile of unrelated knobs. Configurability",
           "url": "https://github.com/obra/superpowers/issues/2398",
           "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2507-hypyc95",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "hypyc95",
+          "date": "2026-10-13",
+          "text": "brainstorming: make recon a default step for project-sized work, not only an offer - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I ran a personal fork of Superpowers (6.2.1 → 6.3.1) for a couple of months. Its only substantive change was in `brainstorming`: on architectural / project-sized work, a research pass (docs, web, prior art) was **mandatory** before the goal and the approaches were written down, instead of the design being built from the model's recall alone. The rationale: a design built on recall alone can be approved against",
+          "url": "https://github.com/obra/superpowers/issues/2507",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -45,17 +56,6 @@
           "text": "Codex Desktop: brainstorming approval gates skipped after skill read (6.4.1) - [x] I searched open and closed issues. This is not an exact duplicate. Closest: #1441 reports a similar gate skip on Claude Code auto mode with Superpowers 5.0.7; it was closed after a non-reproduction on another Claude Code version. #1895 asks for an explicitly non-interactive mode. This case is an interactive Codex Desktop session using Superpowers 6.4.1, with no user opt-in to bypass reviews. ## Environment | Field | Value | Provenance | |---|---|---| | Superpowers | 6.4.1 | Installed plugin path in the session; ",
           "url": "https://github.com/obra/superpowers/issues/2372",
           "score": 5,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2454-radekklein92",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "radekklein92",
-          "date": "2026-10-03",
-          "text": "Prompt audit against Claude Fable 5.1: pressure language and update suppressors in using-superpowers, executing-plans, subagent-driven-development Ran a prompt audit of the plugin's skills against the current Claude models (Fable 5.1 / Opus 5.5), which follow instructions more literally than the models much of this text was written for. Findings, with proposed changes: 1. `skills/using-superpowers/SKILL.md:10-16` and `:35-50` - `<EXTREMELY-IMPORTANT> ... even a 1% chance ... ABSOLUTELY MUST ... YOU DO NOT HAVE A CHOICE ... This is not negotiable` plus the 12-row \"Red Flags\" table. The skill is",
-          "url": "https://github.com/obra/superpowers/issues/2454",
-          "score": 1,
           "sentiment": "neutral"
         },
         {
@@ -90,6 +90,17 @@
           "url": "https://github.com/obra/superpowers/issues/2494",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2510-animeshios7",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "animeshios7",
+          "date": "2026-10-13",
+          "text": "executing-plans: agent changed an approved plan by a ledger \"Ruling:\" without asking, while CLAUDE.md said \"flag real problems and wait\", then claimed the phase done with verify lines unmet (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"rulings not stalls\", \"executing-plans ruling deviates plan\", \"follow plan exactly CLAUDE.md conflict\", \"deviated from plan without asking\", \"claimed complete verify\", \"verification-before-completion plan verify lines\", \"executing-plans user instructions precedence\", \"ruling\", \"deviation\", \"plan deviation\", \"ledger ruling\"",
+          "url": "https://github.com/obra/superpowers/issues/2510",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -99,17 +110,6 @@
       "displayName": "Writing Plans",
       "feedbackCount": 6,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2372-aimansour",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "aimansour",
-          "date": "2026-09-23",
-          "text": "Codex Desktop: brainstorming approval gates skipped after skill read (6.4.1) - [x] I searched open and closed issues. This is not an exact duplicate. Closest: #1441 reports a similar gate skip on Claude Code auto mode with Superpowers 5.0.7; it was closed after a non-reproduction on another Claude Code version. #1895 asks for an explicitly non-interactive mode. This case is an interactive Codex Desktop session using Superpowers 6.4.1, with no user opt-in to bypass reviews. ## Environment | Field | Value | Provenance | |---|---|---| | Superpowers | 6.4.1 | Installed plugin path in the session; ",
-          "url": "https://github.com/obra/superpowers/issues/2372",
-          "score": 5,
-          "sentiment": "neutral"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2178-lonewolf36",
           "source": "github",
@@ -164,6 +164,17 @@
           "url": "https://github.com/obra/superpowers/issues/2493",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2506-xiongdl",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "xiongdl",
+          "date": "2026-10-13",
+          "text": "[Codex] using-git-worktrees is read, but design approval is used to skip worktree consent (v7.0.0) - [x] I searched existing issues. - [ ] I confirmed this is not a duplicate. Search terms: `worktree consent skip Codex`, `v7.0.0 worktree`, and `worktree existing checkout`. Closest symptom match: [#445, Codex usage issues](https://github.com/obra/superpowers/issues/445) (closed). That report describes missing worktree creation after clarification, but does not establish the same sequence of reading the skill and interpreting design approval as an execution-method decision. Duplicate status rema",
+          "url": "https://github.com/obra/superpowers/issues/2506",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -201,7 +212,7 @@
       "slug": "verification-before-completion",
       "ecosystem": "superpowers",
       "displayName": "Verification Before Completion",
-      "feedbackCount": 5,
+      "feedbackCount": 6,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
@@ -257,6 +268,17 @@
           "url": "https://github.com/obra/superpowers/issues/2495",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2510-animeshios7",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "animeshios7",
+          "date": "2026-10-13",
+          "text": "executing-plans: agent changed an approved plan by a ledger \"Ruling:\" without asking, while CLAUDE.md said \"flag real problems and wait\", then claimed the phase done with verify lines unmet (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"rulings not stalls\", \"executing-plans ruling deviates plan\", \"follow plan exactly CLAUDE.md conflict\", \"deviated from plan without asking\", \"claimed complete verify\", \"verification-before-completion plan verify lines\", \"executing-plans user instructions precedence\", \"ruling\", \"deviation\", \"plan deviation\", \"ledger ruling\"",
+          "url": "https://github.com/obra/superpowers/issues/2510",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -278,28 +300,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2429-abat-kek",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "abat-kek",
-          "date": "2026-09-30",
-          "text": "SDD scripts resolve repo and workspace from the cwd, not from PLAN_FILE — wrong workspace when called across worktrees - [x] I searched existing issues and this is not a duplicate (adjacent but different failure modes: #2242 greenfield crash, #2207 workspace deletion, #2307 Windows invocation) ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | observed on 6.3.0; the gap is still present on `dev` as of 2026-10-01 | | Harness (Claude Code, Cursor, etc.) | Claude Code (desktop app, Code tab) | | Harness version | 2.1.272 | | Your model + version | Claude Opus 5.",
-          "url": "https://github.com/obra/superpowers/issues/2429",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2493-jnrod03-rgb",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jnrod03-rgb",
-          "date": "2026-10-10",
-          "text": "task-brief / dispatch: the plan's Global Constraints and Review Focus never reach the implementer, although the plan template says they apply to every task - [x] I searched existing issues and this is not a duplicate (adjacent: #2469 proposes a tool-only fallback whose task-brief step says \"copy the task's section, plus the Global Constraints\", which assumes the brief should carry them; #1746/#1715 introduced the section; the open task-brief issues #2405, #2406, #2436, #2459 are about heading matching, not about the header) ## Environment (required) | Field | Value | |-------|-------| | Superp",
-          "url": "https://github.com/obra/superpowers/issues/2493",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2499-xiongdl",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -307,6 +307,28 @@
           "date": "2026-10-11",
           "text": "subagent-driven-development: scoped re-review resumed the existing reviewer in Codex - [x] I searched open and closed issues (queries included `re-review reviewer`, `fresh reviewer`, and `followup_task`). Related: #1218 and #1988. This report focuses on reviewer identity during scoped re-review in Codex. ## Environment (required) | Field | Value | Provenance / supporting evidence | |---|---|---| | Superpowers version | `v6.4.2` | Human-reported historical version, supplied during the diagnosis follow-up. Captured skill output: MAIN transcript line 487. Matching quoted SDD passages were also ch",
           "url": "https://github.com/obra/superpowers/issues/2499",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2510-animeshios7",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "animeshios7",
+          "date": "2026-10-13",
+          "text": "executing-plans: agent changed an approved plan by a ledger \"Ruling:\" without asking, while CLAUDE.md said \"flag real problems and wait\", then claimed the phase done with verify lines unmet (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"rulings not stalls\", \"executing-plans ruling deviates plan\", \"follow plan exactly CLAUDE.md conflict\", \"deviated from plan without asking\", \"claimed complete verify\", \"verification-before-completion plan verify lines\", \"executing-plans user instructions precedence\", \"ruling\", \"deviation\", \"plan deviation\", \"ledger ruling\"",
+          "url": "https://github.com/obra/superpowers/issues/2510",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2506-xiongdl",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "xiongdl",
+          "date": "2026-10-13",
+          "text": "[Codex] using-git-worktrees is read, but design approval is used to skip worktree consent (v7.0.0) - [x] I searched existing issues. - [ ] I confirmed this is not a duplicate. Search terms: `worktree consent skip Codex`, `v7.0.0 worktree`, and `worktree existing checkout`. Closest symptom match: [#445, Codex usage issues](https://github.com/obra/superpowers/issues/445) (closed). That report describes missing worktree creation after clarification, but does not establish the same sequence of reading the skill and interpreting design approval as an execution-method decision. Duplicate status rema",
+          "url": "https://github.com/obra/superpowers/issues/2506",
           "score": 0,
           "sentiment": "negative"
         }
@@ -349,17 +371,6 @@
       "feedbackCount": 5,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2372-aimansour",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "aimansour",
-          "date": "2026-09-23",
-          "text": "Codex Desktop: brainstorming approval gates skipped after skill read (6.4.1) - [x] I searched open and closed issues. This is not an exact duplicate. Closest: #1441 reports a similar gate skip on Claude Code auto mode with Superpowers 5.0.7; it was closed after a non-reproduction on another Claude Code version. #1895 asks for an explicitly non-interactive mode. This case is an interactive Codex Desktop session using Superpowers 6.4.1, with no user opt-in to bypass reviews. ## Environment | Field | Value | Provenance | |---|---|---| | Superpowers | 6.4.1 | Installed plugin path in the session; ",
-          "url": "https://github.com/obra/superpowers/issues/2372",
-          "score": 5,
-          "sentiment": "neutral"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2081-midirectiekade14-debug",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -369,17 +380,6 @@
           "url": "https://github.com/obra/superpowers/issues/2081",
           "score": 3,
           "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2487-bombajom-admin",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "bombajom-admin",
-          "date": "2026-10-09",
-          "text": "Pressure language in using-superpowers (injected every session) makes current models over-apply skills The SessionStart hook injects the whole `using-superpowers` skill into every session, wrapped in a second `<EXTREMELY_IMPORTANT>` tag: - `superpowers/6.0.2/hooks/session-start:11` reads `skills/using-superpowers/SKILL.md` - `superpowers/6.0.2/hooks/session-start:27` wraps it in `<EXTREMELY_IMPORTANT>` That body contains: - `skills/using-superpowers/SKILL.md:10-16`: `<EXTREMELY-IMPORTANT>` block, \"even a 1% chance a skill might apply ... you ABSOLUTELY MUST invoke the skill\", \"YOU DO NOT HAVE ",
-          "url": "https://github.com/obra/superpowers/issues/2487",
-          "score": 0,
-          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2503-hearth-bot",
@@ -400,6 +400,28 @@
           "date": "2026-10-12",
           "text": "SessionStart hook never runs in Claude desktop SSH remote sessions; naming the hooks file in plugin.json fixes it 🤖 agent-dmo · builder · session 1673d458 <!-- agent:v1 role=builder run=1673d458 --> - [x] I searched existing issues and this is not a duplicate ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 7.0.0 (bb92a77) | | Harness (Claude Code, Cursor, etc.) | Claude desktop app (macOS), Code tab, SSH remote session to an Ubuntu host | | Harness version | Claude Code 2.1.296 on the remote host | | Your model + version | Claude Opus 5.5 (claude-opus-5-5)",
           "url": "https://github.com/obra/superpowers/issues/2505",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2509-blakeharv",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "blakeharv",
+          "date": "2026-10-13",
+          "text": "<EXTREMELY-IMPORTANT> injection overrides users' own instructions ### Background I've been using Claude + superpowers since early 2026 without an issue. Since the Opus 5.5 release it has been impossible to use. Overriding commands, doing things unprompted, and not speaking in proper tone. I did a full purge of my setup across VS Code, terminal, and desktop app. Rebuilt a completely new global CLAUDE.md expressly designed with it's help to address all of these issues. Even after this, the problem persisted. Eventually, through subsequent prompts, it found that the issue originates with superpow",
+          "url": "https://github.com/obra/superpowers/issues/2509",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2510-animeshios7",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "animeshios7",
+          "date": "2026-10-13",
+          "text": "executing-plans: agent changed an approved plan by a ledger \"Ruling:\" without asking, while CLAUDE.md said \"flag real problems and wait\", then claimed the phase done with verify lines unmet (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"rulings not stalls\", \"executing-plans ruling deviates plan\", \"follow plan exactly CLAUDE.md conflict\", \"deviated from plan without asking\", \"claimed complete verify\", \"verification-before-completion plan verify lines\", \"executing-plans user instructions precedence\", \"ruling\", \"deviation\", \"plan deviation\", \"ledger ruling\"",
+          "url": "https://github.com/obra/superpowers/issues/2510",
           "score": 0,
           "sentiment": "negative"
         }

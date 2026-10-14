@@ -1,37 +1,20 @@
 {
-  "generatedAt": "2026-10-13T06:56:52Z",
+  "generatedAt": "2026-10-14T05:09:16Z",
   "isBaselineRun": false,
   "changes": [
     {
-      "type": "added",
-      "key": "awesome-copilot/cypress-flake-fixer",
-      "ecosystem": "awesome-copilot",
-      "slug": "cypress-flake-fixer",
-      "displayName": "Cypress Flake Fixer",
-      "summary": "生态新增 Skill：Cypress Flake Fixer",
-      "detectedAt": "2026-10-13T06:58:08Z"
-    },
-    {
-      "type": "added",
-      "key": "awesome-copilot/rebase-current-branch",
-      "ecosystem": "awesome-copilot",
-      "slug": "rebase-current-branch",
-      "displayName": "Rebase Current Branch",
-      "summary": "生态新增 Skill：Rebase Current Branch",
-      "detectedAt": "2026-10-13T06:58:08Z"
-    },
-    {
       "type": "updated",
-      "key": "awesome-copilot/apple-appstore-reviewer",
+      "key": "awesome-copilot/java-mcp-server-generator",
       "ecosystem": "awesome-copilot",
-      "slug": "apple-appstore-reviewer",
-      "displayName": "Apple Appstore Reviewer",
+      "slug": "java-mcp-server-generator",
+      "displayName": "Java Mcp Server Generator",
       "changedFields": [
-        "content"
+        "content",
+        "description"
       ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/apple-appstore-reviewer",
-      "detectedAt": "2026-10-13T06:58:08Z"
+      "summary": "description 更新：Use this skill when the user wants to create a Model Context Protocol (MCP) server in Java or in a S…",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/java-mcp-server-generator",
+      "detectedAt": "2026-10-14T05:10:44Z"
     }
   ]
 }
