@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-15T05:01:51Z",
+    "lastUpdated": "2026-10-16T04:50:19Z",
     "skillCount": 20,
-    "totalComments": 70,
+    "totalComments": 78,
     "sources": [
       "hacker-news",
       "github",
@@ -15,27 +15,38 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2398-obra",
+          "id": "github-https-github-com-obra-superpowers-issues-2157-ovijincom",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "obra",
-          "date": "2026-09-26",
-          "text": "Master tracking ticket for configurability Hi all! I'm Claude (Opus 5.5, running in Claude Code 2.1.283), helping @obra triage the issue tracker. While going through open issues and PRs, I found fourteen that each ask, in different ways, for superpowers to be more configurable: where it writes things, how its workflow runs, and where people can hook in their own steps. They're good requests, and many come from real friction. Taken one at a time, though, each would add its own env var, flag, config file or hook system, and superpowers would end up with a pile of unrelated knobs. Configurability",
-          "url": "https://github.com/obra/superpowers/issues/2398",
-          "score": 1,
+          "author": "ovijincom",
+          "date": "2026-08-15",
+          "text": "[Bug]: Hermes tool mapping in v6.3.0 uses stale names and an unqualified plugin skill name - [x] I searched existing issues and this is not a duplicate. ## Environment | Field | Value | |-------|-------| | Superpowers version | v6.3.0 | | Superpowers commit | `b36e0829c6d0140e93cfef2ca599b1b07d4a7797` | | Harness | Hermes Agent desktop / native plugin | | Harness version | Hermes Agent v0.20.1 (2026.8.13), upstream `165c889e` | | Your model + version | OpenAI Codex / gpt-5.6-terra | | Relevant plugin | `superpowers v6.3.0`, enabled, source: user | | OS + shell | Windows 11, Git Bash / MSYS ter",
+          "url": "https://github.com/obra/superpowers/issues/2157",
+          "score": 2,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2507-hypyc95",
+          "id": "github-https-github-com-obra-superpowers-issues-2524-anchore-jesset",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "hypyc95",
-          "date": "2026-10-13",
-          "text": "brainstorming: make recon a default step for project-sized work, not only an offer - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I ran a personal fork of Superpowers (6.2.1 → 6.3.1) for a couple of months. Its only substantive change was in `brainstorming`: on architectural / project-sized work, a research pass (docs, web, prior art) was **mandatory** before the goal and the approaches were written down, instead of the design being built from the model's recall alone. The rationale: a design built on recall alone can be approved against",
-          "url": "https://github.com/obra/superpowers/issues/2507",
+          "author": "anchore-jesset",
+          "date": "2026-10-15",
+          "text": "brainstorming: start-server.sh with a relative --project-dir fails after it cds into the scripts dir `skills/brainstorming/scripts/start-server.sh` (v6.4.1, unchanged on `main`) builds `SESSION_DIR` from `--project-dir` as given (line 117), then runs `cd \"$SCRIPT_DIR\"` (line 151) before it uses the derived paths. With a relative project dir, the log/PID redirects and the `BRAINSTORM_DIR` passed to the server end up resolved against the scripts directory, not the project. ``` $ cd myproject && start-server.sh --project-dir . --background start-server.sh: line 183: ./.superpowers/brainstorm/<id>",
+          "url": "https://github.com/obra/superpowers/issues/2524",
+          "score": 0,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "mbcrawfo",
+          "date": "2026-10-16",
+          "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
+          "url": "https://github.com/obra/superpowers/issues/2530",
           "score": 0,
           "sentiment": "negative"
         }
@@ -122,6 +133,17 @@
           "sentiment": "negative"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2473-edcjoel-maker",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "edcjoel-maker",
+          "date": "2026-10-07",
+          "text": "brainstorming / writing-plans: commit the spec/plan by path so pre-staged changes are not swept in - [x] I searched existing issues and this has not been proposed before (adjacent: #807, closed, asked whether to commit specs at all; this is about *how* the commit is made when it is) ## What problem does this solve? brainstorming says the design doc is written to `docs/superpowers/specs/…-design.md`, \"committed\". In a working tree with unrelated in-progress work, I ran `git add <spec>` then `git commit`. A `git rm` from an earlier task in the same session was still staged, so the \"spec\" commit ",
+          "url": "https://github.com/obra/superpowers/issues/2473",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2398-obra",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -144,28 +166,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2494-jnrod03-rgb",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jnrod03-rgb",
-          "date": "2026-10-10",
-          "text": "writing-plans: test code written inside a plan has two failure modes of its own, and the Self-Review does not ask about either - [x] I searched existing issues and this has not been proposed before (adjacent: #2178 is about line-number citations in the same template; `test-driven-development/writing-good-tests.md` §\"The Mutation Check\" covers tautological tests, but at execution time and for the executor — this is about the plan author, before any code exists) ## What problem does this solve? `writing-plans` 7.0.0 asks the plan author to write each test step as code, \"the test's name and its a",
-          "url": "https://github.com/obra/superpowers/issues/2494",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2493-jnrod03-rgb",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jnrod03-rgb",
-          "date": "2026-10-10",
-          "text": "task-brief / dispatch: the plan's Global Constraints and Review Focus never reach the implementer, although the plan template says they apply to every task - [x] I searched existing issues and this is not a duplicate (adjacent: #2469 proposes a tool-only fallback whose task-brief step says \"copy the task's section, plus the Global Constraints\", which assumes the brief should carry them; #1746/#1715 introduced the section; the open task-brief issues #2405, #2406, #2436, #2459 are about heading matching, not about the header) ## Environment (required) | Field | Value | |-------|-------| | Superp",
-          "url": "https://github.com/obra/superpowers/issues/2493",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2506-xiongdl",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -173,6 +173,17 @@
           "date": "2026-10-13",
           "text": "[Codex] using-git-worktrees is read, but design approval is used to skip worktree consent (v7.0.0) - [x] I searched existing issues. - [ ] I confirmed this is not a duplicate. Search terms: `worktree consent skip Codex`, `v7.0.0 worktree`, and `worktree existing checkout`. Closest symptom match: [#445, Codex usage issues](https://github.com/obra/superpowers/issues/445) (closed). That report describes missing worktree creation after clarification, but does not establish the same sequence of reading the skill and interpreting design approval as an execution-method decision. Duplicate status rema",
           "url": "https://github.com/obra/superpowers/issues/2506",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2522-dolmen",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "dolmen",
+          "date": "2026-10-15",
+          "text": "writing-plans: a plan must not touch the spec - [x] I searched existing issues and this is not a duplicate ## Environment (required) Issue filed by a human, but with some parts produced by superpowers/6.4.1. ## Is this a Superpowers issue or a platform issue? - [x] I confirmed this issue does not occur without Superpowers installed ## What happened? In the writing-plans phase, the agent wrote in the plan instructions to modify the spec! From the agent's diagnosis (`/superpowers:diagnosing-superpowers`): > I'm sure of the sequence of actions; the reasoning behind them is only partly in the tran",
+          "url": "https://github.com/obra/superpowers/issues/2522",
           "score": 0,
           "sentiment": "negative"
         }
@@ -296,39 +307,39 @@
           "date": "2026-10-08",
           "text": "subagent-driven-development: \"Five rounds maximum per task\" lies past the 20,000-character compaction re-attach cut, and one task ran 18+ fix rounds (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"compaction truncated skill\", \"five rounds maximum\", \"subagent-driven-development compaction\", \"breaker fix round\", \"skill truncated 20000\", \"compaction\", \"truncated\", \"round limit\"; closest: #2267 \"subagent-driven-development: the progress ledger records completion but not cross-task discoveries, so a usage-limit interruption loses what earlier tasks learned\", w",
           "url": "https://github.com/obra/superpowers/issues/2481",
-          "score": 2,
+          "score": 3,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2499-xiongdl",
+          "id": "github-https-github-com-obra-superpowers-issues-2293-kaiser-data",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "xiongdl",
-          "date": "2026-10-11",
-          "text": "subagent-driven-development: scoped re-review resumed the existing reviewer in Codex - [x] I searched open and closed issues (queries included `re-review reviewer`, `fresh reviewer`, and `followup_task`). Related: #1218 and #1988. This report focuses on reviewer identity during scoped re-review in Codex. ## Environment (required) | Field | Value | Provenance / supporting evidence | |---|---|---| | Superpowers version | `v6.4.2` | Human-reported historical version, supplied during the diagnosis follow-up. Captured skill output: MAIN transcript line 487. Matching quoted SDD passages were also ch",
-          "url": "https://github.com/obra/superpowers/issues/2499",
+          "author": "kaiser-data",
+          "date": "2026-09-12",
+          "text": "subagent-driven-development: the ledger records no in-flight task, so an outage mid-task re-dispatches work that is already committed *Found while setting up a sequential `subagent-driven-development` run (2026-09-12), reading the skill text before dispatching Task 1. Filed rather than patched locally because the plugin is version-pinned.* *Version: **superpowers 6.1.1**. Quotes below are from that copy of `skills/subagent-driven-development/SKILL.md`.* Related but, I believe, distinct — close as duplicate if you read them as the same thing: - **#2267** — the ledger carries no cross-task *disc",
+          "url": "https://github.com/obra/superpowers/issues/2293",
+          "score": 1,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2521-achievebysteve",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "achievebysteve",
+          "date": "2026-10-15",
+          "text": "subagent-driven-development: when a subagent cannot write its report file, the full report comes back inline, and there is no fallback - [x] I searched existing issues and this is not a duplicate. Adjacent: #1930 and PR #1966, where task-reviewer-prompt.md tells reviewers to return the whole report as their final message. This is a different cause: the subagent was told to write the file and reported that it could not. ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.4.2 (SDD `SKILL.md` unchanged at 7.0.0 HEAD) | | Harness (Claude Code, Cursor, etc.) | Cl",
+          "url": "https://github.com/obra/superpowers/issues/2521",
           "score": 0,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2510-animeshios7",
+          "id": "github-https-github-com-obra-superpowers-issues-2520-achievebysteve",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "animeshios7",
-          "date": "2026-10-13",
-          "text": "executing-plans: agent changed an approved plan by a ledger \"Ruling:\" without asking, while CLAUDE.md said \"flag real problems and wait\", then claimed the phase done with verify lines unmet (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"rulings not stalls\", \"executing-plans ruling deviates plan\", \"follow plan exactly CLAUDE.md conflict\", \"deviated from plan without asking\", \"claimed complete verify\", \"verification-before-completion plan verify lines\", \"executing-plans user instructions precedence\", \"ruling\", \"deviation\", \"plan deviation\", \"ledger ruling\"",
-          "url": "https://github.com/obra/superpowers/issues/2510",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2506-xiongdl",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "xiongdl",
-          "date": "2026-10-13",
-          "text": "[Codex] using-git-worktrees is read, but design approval is used to skip worktree consent (v7.0.0) - [x] I searched existing issues. - [ ] I confirmed this is not a duplicate. Search terms: `worktree consent skip Codex`, `v7.0.0 worktree`, and `worktree existing checkout`. Closest symptom match: [#445, Codex usage issues](https://github.com/obra/superpowers/issues/445) (closed). That report describes missing worktree creation after clarification, but does not establish the same sequence of reading the skill and interpreting design approval as an execution-method decision. Duplicate status rema",
-          "url": "https://github.com/obra/superpowers/issues/2506",
+          "author": "achievebysteve",
+          "date": "2026-10-15",
+          "text": "subagent-driven-development: controller git writes race a live background implementer in the same checkout - [x] I searched existing issues and this is not a duplicate. Adjacent: #2430 (an implementer's processes still alive after a reported DONE) and #2293 (the ledger has no in-flight record). This one is about the controller's own git writes while a dispatched worker is live. ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.4.2 (SDD `SKILL.md` unchanged at 7.0.0 HEAD) | | Harness (Claude Code, Cursor, etc.) | Claude Code, Claude desktop app | | Harness ",
+          "url": "https://github.com/obra/superpowers/issues/2520",
           "score": 0,
           "sentiment": "negative"
         }
@@ -368,8 +379,19 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 2,
+      "feedbackCount": 4,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2157-ovijincom",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ovijincom",
+          "date": "2026-08-15",
+          "text": "[Bug]: Hermes tool mapping in v6.3.0 uses stale names and an unqualified plugin skill name - [x] I searched existing issues and this is not a duplicate. ## Environment | Field | Value | |-------|-------| | Superpowers version | v6.3.0 | | Superpowers commit | `b36e0829c6d0140e93cfef2ca599b1b07d4a7797` | | Harness | Hermes Agent desktop / native plugin | | Harness version | Hermes Agent v0.20.1 (2026.8.13), upstream `165c889e` | | Your model + version | OpenAI Codex / gpt-5.6-terra | | Relevant plugin | `superpowers v6.3.0`, enabled, source: user | | OS + shell | Windows 11, Git Bash / MSYS ter",
+          "url": "https://github.com/obra/superpowers/issues/2157",
+          "score": 2,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2509-blakeharv",
           "source": "github",
@@ -382,13 +404,24 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2510-animeshios7",
+          "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "animeshios7",
-          "date": "2026-10-13",
-          "text": "executing-plans: agent changed an approved plan by a ledger \"Ruling:\" without asking, while CLAUDE.md said \"flag real problems and wait\", then claimed the phase done with verify lines unmet (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"rulings not stalls\", \"executing-plans ruling deviates plan\", \"follow plan exactly CLAUDE.md conflict\", \"deviated from plan without asking\", \"claimed complete verify\", \"verification-before-completion plan verify lines\", \"executing-plans user instructions precedence\", \"ruling\", \"deviation\", \"plan deviation\", \"ledger ruling\"",
-          "url": "https://github.com/obra/superpowers/issues/2510",
+          "author": "mbcrawfo",
+          "date": "2026-10-16",
+          "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
+          "url": "https://github.com/obra/superpowers/issues/2530",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2528-rahul05ranjan",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "rahul05ranjan",
+          "date": "2026-10-16",
+          "text": "Muse: SessionStart hook invokes the bash-only hooks/session-start with `sh` — \"Bad substitution\" on Linux where sh is dash ## What happens `.muse-plugin/plugin.json` registers the SessionStart hook as: ```json \"hooks\": [ { \"id\": \"session-start\", \"event\": \"SessionStart\", \"command\": [ \"sh\", \"hooks/session-start\" ], \"timeoutMs\": 5000 } ] ``` But `hooks/session-start` is a bash script (`#!/usr/bin/env bash`) that relies on bash-only syntax: - `escape_for_json()` uses bash pattern substitution: `s=\"${s//\\\\/\\\\\\\\}\"`, `s=\"${s//\\\"/\\\\\\\"}\"`, `s=\"${s//$'\\n'/\\\\n}\"` (lines 30-33) - it reads the skill via `$",
+          "url": "https://github.com/obra/superpowers/issues/2528",
           "score": 0,
           "sentiment": "negative"
         }
@@ -423,14 +456,14 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-2578-github-actions-bot-",
+          "id": "github-https-github-com-github-awesome-copilot-issues-4746-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
           "author": "github-actions[bot]",
-          "date": "2026-08-07",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 723 resources - **Aging (14–30 days):** 34 resources - **Fresh (<14 days):** 67 resources (not listed below) Note: This inventory covers `agents/` (224), `instructions/` (191), `hooks/` (8 folders), and `skills/` (401 folders). No `prompts/*.prompt.md` files currently exist in the repository. Hook and skill folders are treated as single resources using the most recent substantive change across any file in the folder. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Click to expand (723 resources)</summar",
-          "url": "https://github.com/github/awesome-copilot/issues/2578",
-          "score": 0,
+          "date": "2026-10-09",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 813 resources - **Aging (14–30 days):** 24 resources - **Fresh (<14 days):** 14 resources (not listed below) _Dates use the latest non-formatting/non-rename modification (or add) commit per file; folder resources use their newest file. Many dates are early because of history shape, so age alone is a weak signal._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>Show 813 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instru",
+          "url": "https://github.com/github/awesome-copilot/issues/4746",
+          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -445,13 +478,13 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-4746-github-actions-bot-",
+          "id": "github-https-github-com-github-awesome-copilot-issues-5114-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
           "author": "github-actions[bot]",
-          "date": "2026-10-09",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 813 resources - **Aging (14–30 days):** 24 resources - **Fresh (<14 days):** 14 resources (not listed below) _Dates use the latest non-formatting/non-rename modification (or add) commit per file; folder resources use their newest file. Many dates are early because of history shape, so age alone is a weak signal._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>Show 813 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instru",
-          "url": "https://github.com/github/awesome-copilot/issues/4746",
+          "date": "2026-10-16",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 15 resources - **Fresh (<14 days):** 38 resources (not listed below) Note: dates come from the latest `M`/`A` commit per file (no renames; commits mentioning formatting/line endings/bulk/normalize/rename excluded). Prompts directory (`prompts/`) no longer exists. Many old dates (2025-07-02/13) reflect bulk lint-style commits that could not all be filtered, so some dates may be slightly generous. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources (o",
+          "url": "https://github.com/github/awesome-copilot/issues/5114",
           "score": 0,
           "sentiment": "negative"
         }
@@ -463,17 +496,6 @@
       "displayName": "Security Review",
       "feedbackCount": 5,
       "comments": [
-        {
-          "id": "github-https-github-com-github-awesome-copilot-issues-2947-hacks4snacks",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Hacks4Snacks",
-          "date": "2026-09-04",
-          "text": "[External Plugin]: tmforge ### Plugin name tmforge ### Short description The Strider agent that comes with the tmforge plugin adds evidence-backed STRIDE threat modeling to GitHub Copilot, with structured risk assessment, deterministic validation, and Markdown reports. Optional tmforge integration supports creating, updating, and verifying Microsoft Threat Modeling Tool (.tm7) models. ### GitHub repository Hacks4Snacks/tmforge ### Plugin path inside the repository plugins/tmforge ### Ref to review v0.11.0 ### Commit SHA to review 8c22d85c4cb65f416c228bb2a73ae9f364aa549b ### Version 0.11.0 ### ",
-          "url": "https://github.com/github/awesome-copilot/issues/2947",
-          "score": 6,
-          "sentiment": "positive"
-        },
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-3147-omarmohelal",
           "source": "github",
@@ -515,6 +537,17 @@
           "date": "2026-10-09",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 813 resources - **Aging (14–30 days):** 24 resources - **Fresh (<14 days):** 14 resources (not listed below) _Dates use the latest non-formatting/non-rename modification (or add) commit per file; folder resources use their newest file. Many dates are early because of history shape, so age alone is a weak signal._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>Show 813 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instru",
           "url": "https://github.com/github/awesome-copilot/issues/4746",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-5114-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-10-16",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 15 resources - **Fresh (<14 days):** 38 resources (not listed below) Note: dates come from the latest `M`/`A` commit per file (no renames; commits mentioning formatting/line endings/bulk/normalize/rename excluded). Prompts directory (`prompts/`) no longer exists. Many old dates (2025-07-02/13) reflect bulk lint-style commits that could not all be filtered, so some dates may be slightly generous. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources (o",
+          "url": "https://github.com/github/awesome-copilot/issues/5114",
           "score": 0,
           "sentiment": "negative"
         }
@@ -524,7 +557,7 @@
       "slug": "eval-driven-dev",
       "ecosystem": "awesome-copilot",
       "displayName": "Eval-Driven Development",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-3751-github-actions-bot-",
@@ -534,6 +567,17 @@
           "date": "2026-09-25",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 802 resources - **Aging (14–30 days):** 21 resources - **Fresh (<14 days):** 24 resources (not listed below) ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Show all 802 entries</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|--------------------|----------| | `instructions/bicep-code-best-practices.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/cmake-vcpkg.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/generate-modern-terraform-c",
           "url": "https://github.com/github/awesome-copilot/issues/3751",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-4746-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-10-09",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 813 resources - **Aging (14–30 days):** 24 resources - **Fresh (<14 days):** 14 resources (not listed below) _Dates use the latest non-formatting/non-rename modification (or add) commit per file; folder resources use their newest file. Many dates are early because of history shape, so age alone is a weak signal._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>Show 813 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instru",
+          "url": "https://github.com/github/awesome-copilot/issues/4746",
           "score": 1,
           "sentiment": "negative"
         },
@@ -560,13 +604,13 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-4746-github-actions-bot-",
+          "id": "github-https-github-com-github-awesome-copilot-issues-5114-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
           "author": "github-actions[bot]",
-          "date": "2026-10-09",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 813 resources - **Aging (14–30 days):** 24 resources - **Fresh (<14 days):** 14 resources (not listed below) _Dates use the latest non-formatting/non-rename modification (or add) commit per file; folder resources use their newest file. Many dates are early because of history shape, so age alone is a weak signal._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>Show 813 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instru",
-          "url": "https://github.com/github/awesome-copilot/issues/4746",
+          "date": "2026-10-16",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 15 resources - **Fresh (<14 days):** 38 resources (not listed below) Note: dates come from the latest `M`/`A` commit per file (no renames; commits mentioning formatting/line endings/bulk/normalize/rename excluded). Prompts directory (`prompts/`) no longer exists. Many old dates (2025-07-02/13) reflect bulk lint-style commits that could not all be filtered, so some dates may be slightly generous. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources (o",
+          "url": "https://github.com/github/awesome-copilot/issues/5114",
           "score": 0,
           "sentiment": "negative"
         }
@@ -576,7 +620,7 @@
       "slug": "harness-engineering",
       "ecosystem": "awesome-copilot",
       "displayName": "Harness Engineering",
-      "feedbackCount": 5,
+      "feedbackCount": 6,
       "comments": [
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-2504-phodal",
@@ -612,6 +656,17 @@
           "sentiment": "negative"
         },
         {
+          "id": "github-https-github-com-github-awesome-copilot-issues-4746-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-10-09",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 813 resources - **Aging (14–30 days):** 24 resources - **Fresh (<14 days):** 14 resources (not listed below) _Dates use the latest non-formatting/non-rename modification (or add) commit per file; folder resources use their newest file. Many dates are early because of history shape, so age alone is a weak signal._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>Show 813 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instru",
+          "url": "https://github.com/github/awesome-copilot/issues/4746",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
           "id": "github-https-github-com-github-awesome-copilot-issues-2578-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -623,13 +678,13 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-4746-github-actions-bot-",
+          "id": "github-https-github-com-github-awesome-copilot-issues-5114-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
           "author": "github-actions[bot]",
-          "date": "2026-10-09",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 813 resources - **Aging (14–30 days):** 24 resources - **Fresh (<14 days):** 14 resources (not listed below) _Dates use the latest non-formatting/non-rename modification (or add) commit per file; folder resources use their newest file. Many dates are early because of history shape, so age alone is a weak signal._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>Show 813 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instru",
-          "url": "https://github.com/github/awesome-copilot/issues/4746",
+          "date": "2026-10-16",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 15 resources - **Fresh (<14 days):** 38 resources (not listed below) Note: dates come from the latest `M`/`A` commit per file (no renames; commits mentioning formatting/line endings/bulk/normalize/rename excluded). Prompts directory (`prompts/`) no longer exists. Many old dates (2025-07-02/13) reflect bulk lint-style commits that could not all be filtered, so some dates may be slightly generous. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources (o",
+          "url": "https://github.com/github/awesome-copilot/issues/5114",
           "score": 0,
           "sentiment": "negative"
         }
@@ -639,7 +694,7 @@
       "slug": "acquire-codebase-knowledge",
       "ecosystem": "awesome-copilot",
       "displayName": "Acquire Codebase Knowledge",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-2058-github-actions-bot-",
@@ -649,6 +704,17 @@
           "date": "2026-06-19",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 705 resources - **Aging (14–30 days):** 26 resources - **Fresh (<14 days):** 46 resources (not listed below) --- ### 🔴 Stale Resources (>30 days since last major change) > 705 resources — collapsed for readability <details> <summary>Click to expand — 705 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instructions/nextjs-tailwind.instructions.md` | Instruction | 2025-07-02 | 352 | | `instructions/localization.instructions.md` | Instruction | 2025-07",
           "url": "https://github.com/github/awesome-copilot/issues/2058",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-4746-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-10-09",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 813 resources - **Aging (14–30 days):** 24 resources - **Fresh (<14 days):** 14 resources (not listed below) _Dates use the latest non-formatting/non-rename modification (or add) commit per file; folder resources use their newest file. Many dates are early because of history shape, so age alone is a weak signal._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>Show 813 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instru",
+          "url": "https://github.com/github/awesome-copilot/issues/4746",
           "score": 1,
           "sentiment": "negative"
         },
@@ -675,13 +741,13 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-4746-github-actions-bot-",
+          "id": "github-https-github-com-github-awesome-copilot-issues-5114-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
           "author": "github-actions[bot]",
-          "date": "2026-10-09",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 813 resources - **Aging (14–30 days):** 24 resources - **Fresh (<14 days):** 14 resources (not listed below) _Dates use the latest non-formatting/non-rename modification (or add) commit per file; folder resources use their newest file. Many dates are early because of history shape, so age alone is a weak signal._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>Show 813 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instru",
-          "url": "https://github.com/github/awesome-copilot/issues/4746",
+          "date": "2026-10-16",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 15 resources - **Fresh (<14 days):** 38 resources (not listed below) Note: dates come from the latest `M`/`A` commit per file (no renames; commits mentioning formatting/line endings/bulk/normalize/rename excluded). Prompts directory (`prompts/`) no longer exists. Many old dates (2025-07-02/13) reflect bulk lint-style commits that could not all be filtered, so some dates may be slightly generous. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources (o",
+          "url": "https://github.com/github/awesome-copilot/issues/5114",
           "score": 0,
           "sentiment": "negative"
         }
@@ -762,8 +828,19 @@
       "slug": "mcp-builder",
       "ecosystem": "anthropics-skills",
       "displayName": "MCP Builder",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-2033-gltknky",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "gltknky",
+          "date": "2026-10-15",
+          "text": "Office validators parse document XML with lxml's default parser (XXE on lxml < 5) ## Summary The Office validators (`skills/{docx,pptx,xlsx}/scripts/office/validators/base.py`, and `pptx.py`) parse the XML parts of the document being validated with lxml's default parser: ```python lxml.etree.parse(str(xml_file)) ``` On **lxml < 5.0** the default parser resolves external entities, so a crafted `.docx` / `.pptx` / `.xlsx` makes the validator read local files into the parsed tree. lxml 5.0 changed the default, but the skills don't pin lxml, and the system packages on two current LTS releases are ",
+          "url": "https://github.com/anthropics/skills/issues/2033",
+          "score": 1,
+          "sentiment": "neutral"
+        },
         {
           "id": "github-https-github-com-anthropics-skills-issues-1091-agentupskill",
           "source": "github",
@@ -892,7 +969,7 @@
       "slug": "context-map",
       "ecosystem": "awesome-copilot",
       "displayName": "Context Map",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-3751-github-actions-bot-",
@@ -902,6 +979,17 @@
           "date": "2026-09-25",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 802 resources - **Aging (14–30 days):** 21 resources - **Fresh (<14 days):** 24 resources (not listed below) ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Show all 802 entries</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|--------------------|----------| | `instructions/bicep-code-best-practices.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/cmake-vcpkg.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/generate-modern-terraform-c",
           "url": "https://github.com/github/awesome-copilot/issues/3751",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-4746-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-10-09",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 813 resources - **Aging (14–30 days):** 24 resources - **Fresh (<14 days):** 14 resources (not listed below) _Dates use the latest non-formatting/non-rename modification (or add) commit per file; folder resources use their newest file. Many dates are early because of history shape, so age alone is a weak signal._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>Show 813 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instru",
+          "url": "https://github.com/github/awesome-copilot/issues/4746",
           "score": 1,
           "sentiment": "negative"
         },
@@ -928,13 +1016,13 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-4746-github-actions-bot-",
+          "id": "github-https-github-com-github-awesome-copilot-issues-5114-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
           "author": "github-actions[bot]",
-          "date": "2026-10-09",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 813 resources - **Aging (14–30 days):** 24 resources - **Fresh (<14 days):** 14 resources (not listed below) _Dates use the latest non-formatting/non-rename modification (or add) commit per file; folder resources use their newest file. Many dates are early because of history shape, so age alone is a weak signal._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>Show 813 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instru",
-          "url": "https://github.com/github/awesome-copilot/issues/4746",
+          "date": "2026-10-16",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 15 resources - **Fresh (<14 days):** 38 resources (not listed below) Note: dates come from the latest `M`/`A` commit per file (no renames; commits mentioning formatting/line endings/bulk/normalize/rename excluded). Prompts directory (`prompts/`) no longer exists. Many old dates (2025-07-02/13) reflect bulk lint-style commits that could not all be filtered, so some dates may be slightly generous. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources (o",
+          "url": "https://github.com/github/awesome-copilot/issues/5114",
           "score": 0,
           "sentiment": "negative"
         }
