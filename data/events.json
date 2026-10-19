@@ -1,5 +1,20 @@
 [
   {
+    "id": "auto-claude-v2-1-303",
+    "title": "Claude Code v2.1.303 发布",
+    "date": "2026-10-18",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "Anthropic",
+    "heat": 75,
+    "growth": 8,
+    "sourceTier": "A",
+    "summary": "## What's changed  - Bug fixes and reliability improvements",
+    "whyImportant": "Claude Code 持续高频迭代，终端 Agent 能力不断增强。",
+    "impact": "关注 release notes 中的权限、MCP 和 subagent 相关变更。",
+    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.303"
+  },
+  {
     "id": "auto-gh-multi-repo-support-and-other-improvement",
     "title": "Multi-repo support and other improvements for GitHub Copilot in Slack and Microsoft Teams",
     "date": "2026-10-16",

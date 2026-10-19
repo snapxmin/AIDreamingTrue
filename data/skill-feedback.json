@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-18T04:56:01Z",
+    "lastUpdated": "2026-10-19T05:04:30Z",
     "skillCount": 20,
-    "totalComments": 71,
+    "totalComments": 75,
     "sources": [
       "hacker-news",
       "github",
@@ -15,7 +15,7 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
@@ -25,7 +25,7 @@
           "date": "2026-10-16",
           "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
           "url": "https://github.com/obra/superpowers/issues/2530",
-          "score": 4,
+          "score": 7,
           "sentiment": "negative"
         },
         {
@@ -40,6 +40,17 @@
           "sentiment": "neutral"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2423-mishastr",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "mishastr",
+          "date": "2026-09-29",
+          "text": "Pressure-register and update-suppressor wording over-triggers on Claude Opus 5.5 / Sonnet 5.5 **Version:** superpowers 6.3.0 (claude-plugins-official), Claude Code on Claude Opus 5.5. Current Claude models follow instructions more closely and literally than the models this wording was tuned against. Anthropic's current prompting guidance for Opus 5.5 / Sonnet 5.5 calls out three patterns that now degrade behavior rather than guard it, and superpowers ships all three in text that loads every session: **1. Emphatic always-invoke language (over-triggering).** - `hooks/session-start:27` wraps the ",
+          "url": "https://github.com/obra/superpowers/issues/2423",
+          "score": 1,
+          "sentiment": "positive"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2536-thealps01-netizen",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -47,7 +58,7 @@
           "date": "2026-10-16",
           "text": "Hermes: using-superpowers bootstrap is injected into delegate_task subagents (Hermes counterpart of #2160) - [x] I searched existing issues and this is not a duplicate. #2160 reports the same class for OpenCode; I found no Hermes report (searched \"hermes subagent\", \"subagent bootstrap\", \"SUBAGENT-STOP\"). #2223, the OpenCode fix, was closed unmerged and does not touch `.hermes-plugin/`. ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | v7.0.0, `bb92a77741419a4ab5f06e711a283343f1ada0c3` (git-clone plugin install, tracking `main`) | | Harness | Hermes Agent des",
           "url": "https://github.com/obra/superpowers/issues/2536",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -108,7 +119,7 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2473-edcjoel-maker",
@@ -119,17 +130,6 @@
           "text": "brainstorming / writing-plans: commit the spec/plan by path so pre-staged changes are not swept in - [x] I searched existing issues and this has not been proposed before (adjacent: #807, closed, asked whether to commit specs at all; this is about *how* the commit is made when it is) ## What problem does this solve? brainstorming says the design doc is written to `docs/superpowers/specs/…-design.md`, \"committed\". In a working tree with unrelated in-progress work, I ran `git add <spec>` then `git commit`. A `git rm` from an earlier task in the same session was still staged, so the \"spec\" commit ",
           "url": "https://github.com/obra/superpowers/issues/2473",
           "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2398-obra",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "obra",
-          "date": "2026-09-26",
-          "text": "Master tracking ticket for configurability Hi all! I'm Claude (Opus 5.5, running in Claude Code 2.1.283), helping @obra triage the issue tracker. While going through open issues and PRs, I found fourteen that each ask, in different ways, for superpowers to be more configurable: where it writes things, how its workflow runs, and where people can hook in their own steps. They're good requests, and many come from real friction. Taken one at a time, though, each would add its own env var, flag, config file or hook system, and superpowers would end up with a pile of unrelated knobs. Configurability",
-          "url": "https://github.com/obra/superpowers/issues/2398",
-          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -253,7 +253,7 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 2,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2293-kaiser-data",
@@ -275,6 +275,28 @@
           "text": "subagent-driven-development: the progress ledger records completion but not cross-task discoveries, so a usage-limit interruption loses what earlier tasks learned *Found while starting an 18-task run of `subagent-driven-development` (2026-09-08). Filed rather than patched locally because the plugin is version-pinned.* *Version: **superpowers 6.1.1**.* Related but, I believe, distinct: #931 (broad session-handoff slash commands) and #2253 (deferred *findings* destroyed at finish). This one is about the ledger's missing channel for cross-task **discoveries** during execution. Close as duplicate ",
           "url": "https://github.com/obra/superpowers/issues/2267",
           "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2423-mishastr",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "mishastr",
+          "date": "2026-09-29",
+          "text": "Pressure-register and update-suppressor wording over-triggers on Claude Opus 5.5 / Sonnet 5.5 **Version:** superpowers 6.3.0 (claude-plugins-official), Claude Code on Claude Opus 5.5. Current Claude models follow instructions more closely and literally than the models this wording was tuned against. Anthropic's current prompting guidance for Opus 5.5 / Sonnet 5.5 calls out three patterns that now degrade behavior rather than guard it, and superpowers ships all three in text that loads every session: **1. Emphatic always-invoke language (over-triggering).** - `hooks/session-start:27` wraps the ",
+          "url": "https://github.com/obra/superpowers/issues/2423",
+          "score": 1,
+          "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2551-builddev2",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "builddev2",
+          "date": "2026-10-18",
+          "text": "subagent-driven-development: implementers resumed for fix rounds grow to 300k+ context and dominate token use (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"subagent-driven\", \"token usage\", \"context\", \"reviewer\", \"fix round resume implementer\", \"controller context\"; closest: #2203 \"Bounded tasks fill the main session context\" — different trigger, no subagents used there; #2499 \"scoped re-review resumed the existing reviewer in Codex\" — same resume-vs-fresh question, but for reviewers on Codex) ## Environment (required) | Field | Value | Provenance / supp",
+          "url": "https://github.com/obra/superpowers/issues/2551",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -313,7 +335,7 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 3,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
@@ -323,7 +345,7 @@
           "date": "2026-10-16",
           "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
           "url": "https://github.com/obra/superpowers/issues/2530",
-          "score": 4,
+          "score": 7,
           "sentiment": "negative"
         },
         {
@@ -338,6 +360,17 @@
           "sentiment": "neutral"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2423-mishastr",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "mishastr",
+          "date": "2026-09-29",
+          "text": "Pressure-register and update-suppressor wording over-triggers on Claude Opus 5.5 / Sonnet 5.5 **Version:** superpowers 6.3.0 (claude-plugins-official), Claude Code on Claude Opus 5.5. Current Claude models follow instructions more closely and literally than the models this wording was tuned against. Anthropic's current prompting guidance for Opus 5.5 / Sonnet 5.5 calls out three patterns that now degrade behavior rather than guard it, and superpowers ships all three in text that loads every session: **1. Emphatic always-invoke language (over-triggering).** - `hooks/session-start:27` wraps the ",
+          "url": "https://github.com/obra/superpowers/issues/2423",
+          "score": 1,
+          "sentiment": "positive"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2509-blakeharv",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -345,6 +378,17 @@
           "date": "2026-10-13",
           "text": "<EXTREMELY-IMPORTANT> injection overrides users' own instructions ### Background I've been using Claude + superpowers since early 2026 without an issue. Since the Opus 5.5 release it has been impossible to use. Overriding commands, doing things unprompted, and not speaking in proper tone. I did a full purge of my setup across VS Code, terminal, and desktop app. Rebuilt a completely new global CLAUDE.md expressly designed with it's help to address all of these issues. Even after this, the problem persisted. Eventually, through subsequent prompts, it found that the issue originates with superpow",
           "url": "https://github.com/obra/superpowers/issues/2509",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2536-thealps01-netizen",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "thealps01-netizen",
+          "date": "2026-10-16",
+          "text": "Hermes: using-superpowers bootstrap is injected into delegate_task subagents (Hermes counterpart of #2160) - [x] I searched existing issues and this is not a duplicate. #2160 reports the same class for OpenCode; I found no Hermes report (searched \"hermes subagent\", \"subagent bootstrap\", \"SUBAGENT-STOP\"). #2223, the OpenCode fix, was closed unmerged and does not touch `.hermes-plugin/`. ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | v7.0.0, `bb92a77741419a4ab5f06e711a283343f1ada0c3` (git-clone plugin install, tracking `main`) | | Harness | Hermes Agent des",
+          "url": "https://github.com/obra/superpowers/issues/2536",
           "score": 1,
           "sentiment": "negative"
         }
