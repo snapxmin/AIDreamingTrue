@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-19T05:33:32Z",
+    "lastUpdated": "2026-10-20T05:07:37Z",
     "skillCount": 20,
-    "totalComments": 75,
+    "totalComments": 70,
     "sources": [
       "hacker-news",
       "github",
@@ -15,7 +15,7 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 4,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
@@ -25,19 +25,8 @@
           "date": "2026-10-16",
           "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
           "url": "https://github.com/obra/superpowers/issues/2530",
-          "score": 7,
+          "score": 16,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2240-concon7",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "concon7",
-          "date": "2026-09-01",
-          "text": "skills/brainstorming: the one-question rule is a proxy for a quality property, and a named vendor is an unmarked claim - [x] I searched existing issues and this has not been proposed before Searched open and closed issues and PRs. Related but distinct: **#2213** (a request for context is not an answer — tightens the same rule), **#1915** (design rendering vs approval-question order), **#2215**, **#2116**, **#2128**. None addresses what the cadence rule is *for*, or evidence standards for a named third party. ## What problem does this solve? Two problems found in real use on one project, both i",
-          "url": "https://github.com/obra/superpowers/issues/2240",
-          "score": 2,
-          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2423-mishastr",
@@ -49,17 +38,6 @@
           "url": "https://github.com/obra/superpowers/issues/2423",
           "score": 1,
           "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2536-thealps01-netizen",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "thealps01-netizen",
-          "date": "2026-10-16",
-          "text": "Hermes: using-superpowers bootstrap is injected into delegate_task subagents (Hermes counterpart of #2160) - [x] I searched existing issues and this is not a duplicate. #2160 reports the same class for OpenCode; I found no Hermes report (searched \"hermes subagent\", \"subagent bootstrap\", \"SUBAGENT-STOP\"). #2223, the OpenCode fix, was closed unmerged and does not touch `.hermes-plugin/`. ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | v7.0.0, `bb92a77741419a4ab5f06e711a283343f1ada0c3` (git-clone plugin install, tracking `main`) | | Harness | Hermes Agent des",
-          "url": "https://github.com/obra/superpowers/issues/2536",
-          "score": 1,
-          "sentiment": "negative"
         }
       ]
     },
@@ -67,28 +45,17 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2495-jnrod03-rgb",
+          "id": "github-https-github-com-obra-superpowers-issues-2558-patdeachilla",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "jnrod03-rgb",
-          "date": "2026-10-10",
-          "text": "verification-before-completion: a commit message is a claim about the diff, not the diff; and \"add one more X\" predictably breaks hardcoded counts in sibling tests - [x] I searched existing issues and this has not been proposed before (adjacent: #2186 V4 \"reported is not verified\" is the general form for tool return values; #2373 covers unverified regexes and self-test cleanup; neither names git history as a source of claims, nor the count-assertion case) ## What problem does this solve? Two cases the Gate Function (`SKILL.md`, 7.0.0, 120 lines) does not currently cover; neither `git show`, \"c",
-          "url": "https://github.com/obra/superpowers/issues/2495",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2494-jnrod03-rgb",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jnrod03-rgb",
-          "date": "2026-10-10",
-          "text": "writing-plans: test code written inside a plan has two failure modes of its own, and the Self-Review does not ask about either - [x] I searched existing issues and this has not been proposed before (adjacent: #2178 is about line-number citations in the same template; `test-driven-development/writing-good-tests.md` §\"The Mutation Check\" covers tautological tests, but at execution time and for the executor — this is about the plan author, before any code exists) ## What problem does this solve? `writing-plans` 7.0.0 asks the plan author to write each test step as code, \"the test's name and its a",
-          "url": "https://github.com/obra/superpowers/issues/2494",
-          "score": 0,
+          "author": "patdeachilla",
+          "date": "2026-10-20",
+          "text": "Resource loading failure: writing-good-tests.md in installed marketplace plugin ## Summary The installed Superpowers marketplace plugin intermittently becomes unavailable, and when the plugin is available, its TDD companion file `writing-good-tests.md` fails to load. This reports an observed integration failure. Responsibility between the plugin bundle and the OpenAI host's loading service is unconfirmed. ## Environment - OpenAI plugin-enabled conversation, accessed through web and iOS clients. - Superpowers is reported as installed, enabled, and available during the latest check. - Delivered ",
+          "url": "https://github.com/obra/superpowers/issues/2558",
+          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -119,30 +86,8 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2473-edcjoel-maker",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "edcjoel-maker",
-          "date": "2026-10-07",
-          "text": "brainstorming / writing-plans: commit the spec/plan by path so pre-staged changes are not swept in - [x] I searched existing issues and this has not been proposed before (adjacent: #807, closed, asked whether to commit specs at all; this is about *how* the commit is made when it is) ## What problem does this solve? brainstorming says the design doc is written to `docs/superpowers/specs/…-design.md`, \"committed\". In a working tree with unrelated in-progress work, I ran `git add <spec>` then `git commit`. A `git rm` from an earlier task in the same session was still staged, so the \"spec\" commit ",
-          "url": "https://github.com/obra/superpowers/issues/2473",
-          "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2506-xiongdl",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "xiongdl",
-          "date": "2026-10-13",
-          "text": "[Codex] using-git-worktrees is read, but design approval is used to skip worktree consent (v7.0.0) - [x] I searched existing issues. - [ ] I confirmed this is not a duplicate. Search terms: `worktree consent skip Codex`, `v7.0.0 worktree`, and `worktree existing checkout`. Closest symptom match: [#445, Codex usage issues](https://github.com/obra/superpowers/issues/445) (closed). That report describes missing worktree creation after clarification, but does not establish the same sequence of reading the skill and interpreting design approval as an execution-method decision. Duplicate status rema",
-          "url": "https://github.com/obra/superpowers/issues/2506",
-          "score": 0,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2522-dolmen",
           "source": "github",
@@ -151,6 +96,17 @@
           "date": "2026-10-15",
           "text": "writing-plans: a plan must not touch the spec - [x] I searched existing issues and this is not a duplicate ## Environment (required) Issue filed by a human, but with some parts produced by superpowers/6.4.1. ## Is this a Superpowers issue or a platform issue? - [x] I confirmed this issue does not occur without Superpowers installed ## What happened? In the writing-plans phase, the agent wrote in the plan instructions to modify the spec! From the agent's diagnosis (`/superpowers:diagnosing-superpowers`): > I'm sure of the sequence of actions; the reasoning behind them is only partly in the tran",
           "url": "https://github.com/obra/superpowers/issues/2522",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2552-cc-hsu",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "CC-Hsu",
+          "date": "2026-10-19",
+          "text": "Making claude code `opusplan` to work: `opus` planning when `writing-plans` and `sonnet` execution for the subsequent steps <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [v] I searched existing issues and this has not been proposed before ## What problem does this solve? <!-- Describe the problem from your own experience. What were you doing, what went wrong or was missing, and why did it matter? \"It would be cool if...\" is not a problem statement",
+          "url": "https://github.com/obra/superpowers/issues/2552",
           "score": 0,
           "sentiment": "negative"
         }
@@ -190,28 +146,17 @@
       "slug": "verification-before-completion",
       "ecosystem": "superpowers",
       "displayName": "Verification Before Completion",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2454-radekklein92",
+          "id": "github-https-github-com-obra-superpowers-issues-429-evrenverse",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "radekklein92",
-          "date": "2026-10-03",
-          "text": "Prompt audit against Claude Fable 5.1: pressure language and update suppressors in using-superpowers, executing-plans, subagent-driven-development Ran a prompt audit of the plugin's skills against the current Claude models (Fable 5.1 / Opus 5.5), which follow instructions more literally than the models much of this text was written for. Findings, with proposed changes: 1. `skills/using-superpowers/SKILL.md:10-16` and `:35-50` - `<EXTREMELY-IMPORTANT> ... even a 1% chance ... ABSOLUTELY MUST ... YOU DO NOT HAVE A CHOICE ... This is not negotiable` plus the 12-row \"Red Flags\" table. The skill is",
-          "url": "https://github.com/obra/superpowers/issues/2454",
-          "score": 1,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2451-abat-kek",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "abat-kek",
-          "date": "2026-10-03",
-          "text": "subagent-driven-development / executing-plans: the final report should be derived from a plan-to-diff mapping, not written freely - [x] I searched existing issues and this has not been proposed before (related: #2435 — a skipped visual check reported as a \"known limitation\") ## What problem does this solve? An unattended run finished a UI plan and wrote its completion report. Two statements in it did not match the diff, and the run's own review step did not catch either: 1. The plan required reordering the settings cards to follow the app's navigation. The diff only renamed the headings; the o",
-          "url": "https://github.com/obra/superpowers/issues/2451",
-          "score": 0,
+          "author": "evrenverse",
+          "date": "2026-02-05",
+          "text": "Support for Claude Code Agent Teams (TeammateTool, SendMessage, TaskList) ## Is your feature request related to a problem? Please describe. Claude Code 2.1.32+ introduced experimental **Agent Teams** — a feature that allows coordinating multiple Claude Code instances as a team with a lead, teammates, shared task lists, and inter-agent messaging. See the [official documentation](https://code.claude.com/docs/en/agent-teams). Superpowers currently has skills for subagent-driven development (`subagent-driven-development`, `dispatching-parallel-agents`) but no awareness of or support for the newer ",
+          "url": "https://github.com/obra/superpowers/issues/429",
+          "score": 24,
           "sentiment": "negative"
         },
         {
@@ -253,8 +198,19 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-429-evrenverse",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "evrenverse",
+          "date": "2026-02-05",
+          "text": "Support for Claude Code Agent Teams (TeammateTool, SendMessage, TaskList) ## Is your feature request related to a problem? Please describe. Claude Code 2.1.32+ introduced experimental **Agent Teams** — a feature that allows coordinating multiple Claude Code instances as a team with a lead, teammates, shared task lists, and inter-agent messaging. See the [official documentation](https://code.claude.com/docs/en/agent-teams). Superpowers currently has skills for subagent-driven development (`subagent-driven-development`, `dispatching-parallel-agents`) but no awareness of or support for the newer ",
+          "url": "https://github.com/obra/superpowers/issues/429",
+          "score": 24,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2293-kaiser-data",
           "source": "github",
@@ -265,17 +221,6 @@
           "url": "https://github.com/obra/superpowers/issues/2293",
           "score": 2,
           "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2267-kaiser-data",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "kaiser-data",
-          "date": "2026-09-08",
-          "text": "subagent-driven-development: the progress ledger records completion but not cross-task discoveries, so a usage-limit interruption loses what earlier tasks learned *Found while starting an 18-task run of `subagent-driven-development` (2026-09-08). Filed rather than patched locally because the plugin is version-pinned.* *Version: **superpowers 6.1.1**.* Related but, I believe, distinct: #931 (broad session-handoff slash commands) and #2253 (deferred *findings* destroyed at finish). This one is about the ledger's missing channel for cross-task **discoveries** during execution. Close as duplicate ",
-          "url": "https://github.com/obra/superpowers/issues/2267",
-          "score": 1,
-          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2423-mishastr",
@@ -298,6 +243,17 @@
           "url": "https://github.com/obra/superpowers/issues/2551",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2552-cc-hsu",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "CC-Hsu",
+          "date": "2026-10-19",
+          "text": "Making claude code `opusplan` to work: `opus` planning when `writing-plans` and `sonnet` execution for the subsequent steps <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [v] I searched existing issues and this has not been proposed before ## What problem does this solve? <!-- Describe the problem from your own experience. What were you doing, what went wrong or was missing, and why did it matter? \"It would be cool if...\" is not a problem statement",
+          "url": "https://github.com/obra/superpowers/issues/2552",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -305,8 +261,19 @@
       "slug": "requesting-code-review",
       "ecosystem": "superpowers",
       "displayName": "Requesting Code Review",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-429-evrenverse",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "evrenverse",
+          "date": "2026-02-05",
+          "text": "Support for Claude Code Agent Teams (TeammateTool, SendMessage, TaskList) ## Is your feature request related to a problem? Please describe. Claude Code 2.1.32+ introduced experimental **Agent Teams** — a feature that allows coordinating multiple Claude Code instances as a team with a lead, teammates, shared task lists, and inter-agent messaging. See the [official documentation](https://code.claude.com/docs/en/agent-teams). Superpowers currently has skills for subagent-driven development (`subagent-driven-development`, `dispatching-parallel-agents`) but no awareness of or support for the newer ",
+          "url": "https://github.com/obra/superpowers/issues/429",
+          "score": 24,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2446-tjs0",
           "source": "github",
@@ -335,8 +302,19 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 5,
+      "feedbackCount": 3,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-429-evrenverse",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "evrenverse",
+          "date": "2026-02-05",
+          "text": "Support for Claude Code Agent Teams (TeammateTool, SendMessage, TaskList) ## Is your feature request related to a problem? Please describe. Claude Code 2.1.32+ introduced experimental **Agent Teams** — a feature that allows coordinating multiple Claude Code instances as a team with a lead, teammates, shared task lists, and inter-agent messaging. See the [official documentation](https://code.claude.com/docs/en/agent-teams). Superpowers currently has skills for subagent-driven development (`subagent-driven-development`, `dispatching-parallel-agents`) but no awareness of or support for the newer ",
+          "url": "https://github.com/obra/superpowers/issues/429",
+          "score": 24,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
           "source": "github",
@@ -345,19 +323,8 @@
           "date": "2026-10-16",
           "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
           "url": "https://github.com/obra/superpowers/issues/2530",
-          "score": 7,
+          "score": 16,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2260-kei-h0-9hgh",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "kei-H0-9HgH",
-          "date": "2026-09-05",
-          "text": "Codex reference assumes spawn capabilities unavailable in an observed desktop session ## Summary The Codex reference in Superpowers 6.3.0 conflicts with the `collaboration.spawn_agent` contract supplied to one inspected desktop session: 1. The reference says full-history forks accept model and reasoning-effort overrides, while this session's contract prohibits them. 2. The reference describes `agent_type`, but this session's tool schema does not expose that parameter. These findings are specific to the inspected environment. They do not establish that all Codex versions, presets, or tool surfa",
-          "url": "https://github.com/obra/superpowers/issues/2260",
-          "score": 1,
-          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2423-mishastr",
@@ -369,28 +336,6 @@
           "url": "https://github.com/obra/superpowers/issues/2423",
           "score": 1,
           "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2509-blakeharv",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "blakeharv",
-          "date": "2026-10-13",
-          "text": "<EXTREMELY-IMPORTANT> injection overrides users' own instructions ### Background I've been using Claude + superpowers since early 2026 without an issue. Since the Opus 5.5 release it has been impossible to use. Overriding commands, doing things unprompted, and not speaking in proper tone. I did a full purge of my setup across VS Code, terminal, and desktop app. Rebuilt a completely new global CLAUDE.md expressly designed with it's help to address all of these issues. Even after this, the problem persisted. Eventually, through subsequent prompts, it found that the issue originates with superpow",
-          "url": "https://github.com/obra/superpowers/issues/2509",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2536-thealps01-netizen",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "thealps01-netizen",
-          "date": "2026-10-16",
-          "text": "Hermes: using-superpowers bootstrap is injected into delegate_task subagents (Hermes counterpart of #2160) - [x] I searched existing issues and this is not a duplicate. #2160 reports the same class for OpenCode; I found no Hermes report (searched \"hermes subagent\", \"subagent bootstrap\", \"SUBAGENT-STOP\"). #2223, the OpenCode fix, was closed unmerged and does not touch `.hermes-plugin/`. ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | v7.0.0, `bb92a77741419a4ab5f06e711a283343f1ada0c3` (git-clone plugin install, tracking `main`) | | Harness | Hermes Agent des",
-          "url": "https://github.com/obra/superpowers/issues/2536",
-          "score": 1,
-          "sentiment": "negative"
         }
       ]
     },
