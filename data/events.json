@@ -1,5 +1,35 @@
 [
   {
+    "id": "auto-claude-v2-1-306",
+    "title": "Claude Code v2.1.306 发布",
+    "date": "2026-10-21",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "Anthropic",
+    "heat": 75,
+    "growth": 8,
+    "sourceTier": "A",
+    "summary": "## What's changed  - Fixed `claude -p` inside cloud sessions reporting \"Not logged in\" when started without the session's environment variables - Fixed an API error being replaced by \"prompt is too lo",
+    "whyImportant": "Claude Code 持续高频迭代，终端 Agent 能力不断增强。",
+    "impact": "关注 release notes 中的权限、MCP 和 subagent 相关变更。",
+    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.306"
+  },
+  {
+    "id": "auto-claude-v2-1-305",
+    "title": "Claude Code v2.1.305 发布",
+    "date": "2026-10-20",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "Anthropic",
+    "heat": 75,
+    "growth": 8,
+    "sourceTier": "A",
+    "summary": "## What's changed  - Added `sandbox.allowNestedUserNamespaces` so sandboxed commands on Linux can create user namespaces (Chromium, rootless podman); this lets them get around the sandbox's file prote",
+    "whyImportant": "Claude Code 持续高频迭代，终端 Agent 能力不断增强。",
+    "impact": "关注 release notes 中的权限、MCP 和 subagent 相关变更。",
+    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.305"
+  },
+  {
     "id": "auto-claude-v2-1-304",
     "title": "Claude Code v2.1.304 发布",
     "date": "2026-10-19",
