@@ -1,6 +1,15 @@
 {
-  "generatedAt": "2026-10-21T05:05:56Z",
+  "generatedAt": "2026-10-22T05:08:38Z",
   "links": [
+    {
+      "eventId": "auto-claude-v2-1-307",
+      "eventTitle": "Claude Code v2.1.307 发布",
+      "eventDate": "2026-10-21",
+      "slug": "claude-api",
+      "ecosystem": "anthropics-skills",
+      "displayName": "Claude Api",
+      "confidence": 0.9
+    },
     {
       "eventId": "auto-claude-v2-1-278",
       "eventTitle": "Claude Code v2.1.278 发布",

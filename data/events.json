@@ -1,5 +1,20 @@
 [
   {
+    "id": "auto-claude-v2-1-308",
+    "title": "Claude Code v2.1.308 发布",
+    "date": "2026-10-22",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "Anthropic",
+    "heat": 75,
+    "growth": 8,
+    "sourceTier": "A",
+    "summary": "## What's changed  - Bug fixes and reliability improvements",
+    "whyImportant": "Claude Code 持续高频迭代，终端 Agent 能力不断增强。",
+    "impact": "关注 release notes 中的权限、MCP 和 subagent 相关变更。",
+    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.308"
+  },
+  {
     "id": "auto-claude-v2-1-306",
     "title": "Claude Code v2.1.306 发布",
     "date": "2026-10-21",
@@ -13,6 +28,29 @@
     "whyImportant": "Claude Code 持续高频迭代，终端 Agent 能力不断增强。",
     "impact": "关注 release notes 中的权限、MCP 和 subagent 相关变更。",
     "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.306"
+  },
+  {
+    "id": "auto-claude-v2-1-307",
+    "title": "Claude Code v2.1.307 发布",
+    "date": "2026-10-21",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "Anthropic",
+    "heat": 75,
+    "growth": 8,
+    "sourceTier": "A",
+    "summary": "## What's changed  - Added `/claude-api api-version` to move Claude API code to API version `2026-10-21` - Added the `claude_code.safety_event` OpenTelemetry event for each tool call a permission rule",
+    "whyImportant": "Claude Code 持续高频迭代，终端 Agent 能力不断增强。",
+    "impact": "关注 release notes 中的权限、MCP 和 subagent 相关变更。",
+    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.307",
+    "relatedSkills": [
+      {
+        "slug": "claude-api",
+        "ecosystem": "anthropics-skills",
+        "displayName": "Claude Api",
+        "confidence": 0.9
+      }
+    ]
   },
   {
     "id": "auto-claude-v2-1-305",
