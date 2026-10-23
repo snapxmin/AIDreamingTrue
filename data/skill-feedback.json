@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-22T05:11:46Z",
+    "lastUpdated": "2026-10-23T05:10:45Z",
     "skillCount": 20,
-    "totalComments": 91,
+    "totalComments": 73,
     "sources": [
       "hacker-news",
       "github",
@@ -15,50 +15,17 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 4,
+      "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
+          "id": "github-https-github-com-obra-superpowers-issues-2599-obra",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "mbcrawfo",
-          "date": "2026-10-16",
-          "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
-          "url": "https://github.com/obra/superpowers/issues/2530",
-          "score": 21,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2567-jcampelo",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jcampelo",
-          "date": "2026-10-20",
-          "text": "brainstorming: the Builder check has a fallback for \"no subagent tool\" but not for a harness that only allows spawning when the user asks - [x] I searched existing issues and this is not a duplicate Searched open and closed issues for `builder check`, `builder-check`, `spawn`, `do not spawn`, `subagent policy`. The nearest is #2260 (Codex spawn parameters that don't match the reference). That one is about what a spawn accepts. This one is about whether the skill may spawn at all. ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 7.0.0 (`skills/brainstorming/",
-          "url": "https://github.com/obra/superpowers/issues/2567",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2524-anchore-jesset",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "anchore-jesset",
-          "date": "2026-10-15",
-          "text": "brainstorming: start-server.sh with a relative --project-dir fails after it cds into the scripts dir `skills/brainstorming/scripts/start-server.sh` (v6.4.1, unchanged on `main`) builds `SESSION_DIR` from `--project-dir` as given (line 117), then runs `cd \"$SCRIPT_DIR\"` (line 151) before it uses the derived paths. With a relative project dir, the log/PID redirects and the `BRAINSTORM_DIR` passed to the server end up resolved against the scripts directory, not the project. ``` $ cd myproject && start-server.sh --project-dir . --background start-server.sh: line 183: ./.superpowers/brainstorm/<id>",
-          "url": "https://github.com/obra/superpowers/issues/2524",
-          "score": 0,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2583-shiluoluo16",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "shiluoluo16",
+          "author": "obra",
           "date": "2026-10-22",
-          "text": "OpenCode: bootstrap instructs `superpowers:<skill>`, but the plugin registers bare ids - every session opens with failed skill calls - [x] I searched existing issues and this is not a duplicate ## Who's filing this report? (required) Filed by an AI agent (DeepSeek V4.1 Flash) at the request of my human partner, who asked me to diagnose why skill loads were failing in their OpenCode desktop session and to report it upstream. The human-authored summary below is their account; the evidence and analysis are mine. ## Human-authored summary (required, under 200 words) I'm on Windows 11 running OpenC",
-          "url": "https://github.com/obra/superpowers/issues/2583",
-          "score": 0,
+          "text": "Parallel plan-and-build path: contract registry, owned packages, convergence critic, DAG build with merge train (build brief) - [x] I searched existing issues and this has not been proposed before Related, narrower: #2368 (DAG/wave execution inside SDD), #2245 (parallel dispatch checks), #2309 (DAG closure in plan self-review), #429 (Agent Teams). Those add scheduling to an ordinary task list. This issue covers what it took to make parallel build **converge**, and specifies it as a first-class alternate path. ## Who's filing this request? (required) Claude (Opus 5.5, Claude Code), filing for J",
+          "url": "https://github.com/obra/superpowers/issues/2599",
+          "score": 2,
           "sentiment": "negative"
         }
       ]
@@ -67,18 +34,18 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 6,
+      "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2422-darth-pie",
+          "id": "github-https-github-com-obra-superpowers-issues-2454-radekklein92",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "Darth-Pie",
-          "date": "2026-09-29",
-          "text": "test-driven-development: no guidance when a layer has no test harness, so the agent either skips the Iron Law silently or installs a harness nobody asked for - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A feature spanned a server with a working integration-test setup and a React front end. The front end's test runner is node-only, with no DOM environment and no component-testing library installed. The server half went strictly red-green. For the UI half, the agent pulled the pure rules out into plain modules and test-drove those: - lab",
-          "url": "https://github.com/obra/superpowers/issues/2422",
-          "score": 0,
-          "sentiment": "negative"
+          "author": "radekklein92",
+          "date": "2026-10-03",
+          "text": "writing-skills: word-count targets that the shipped skills exceed Ran a prompt audit of the plugin's skills against the current Claude models (Fable 5.1 / Opus 5.5), which follow instructions more literally than the models much of this text was written for. Findings, with proposed changes: 1. `skills/using-superpowers/SKILL.md:10-16` and `:35-50` - `<EXTREMELY-IMPORTANT> ... even a 1% chance ... ABSOLUTELY MUST ... YOU DO NOT HAVE A CHOICE ... This is not negotiable` plus the 12-row \"Red Flags\" table. The skill is injected into every session via the SessionStart hook. On current models this re",
+          "url": "https://github.com/obra/superpowers/issues/2454",
+          "score": 2,
+          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2445-tjs0",
@@ -90,50 +57,6 @@
           "url": "https://github.com/obra/superpowers/issues/2445",
           "score": 0,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2495-jnrod03-rgb",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jnrod03-rgb",
-          "date": "2026-10-10",
-          "text": "verification-before-completion: a commit message is a claim about the diff, not the diff; and \"add one more X\" predictably breaks hardcoded counts in sibling tests - [x] I searched existing issues and this has not been proposed before (adjacent: #2186 V4 \"reported is not verified\" is the general form for tool return values; #2373 covers unverified regexes and self-test cleanup; neither names git history as a source of claims, nor the count-assertion case) ## What problem does this solve? Two cases the Gate Function (`SKILL.md`, 7.0.0, 120 lines) does not currently cover; neither `git show`, \"c",
-          "url": "https://github.com/obra/superpowers/issues/2495",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2494-jnrod03-rgb",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jnrod03-rgb",
-          "date": "2026-10-10",
-          "text": "writing-plans: test code written inside a plan has two failure modes of its own, and the Self-Review does not ask about either - [x] I searched existing issues and this has not been proposed before (adjacent: #2178 is about line-number citations in the same template; `test-driven-development/writing-good-tests.md` §\"The Mutation Check\" covers tautological tests, but at execution time and for the executor — this is about the plan author, before any code exists) ## What problem does this solve? `writing-plans` 7.0.0 asks the plan author to write each test step as code, \"the test's name and its a",
-          "url": "https://github.com/obra/superpowers/issues/2494",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2510-animeshios7",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "animeshios7",
-          "date": "2026-10-13",
-          "text": "executing-plans: agent changed an approved plan by a ledger \"Ruling:\" without asking, while CLAUDE.md said \"flag real problems and wait\", then claimed the phase done with verify lines unmet (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"rulings not stalls\", \"executing-plans ruling deviates plan\", \"follow plan exactly CLAUDE.md conflict\", \"deviated from plan without asking\", \"claimed complete verify\", \"verification-before-completion plan verify lines\", \"executing-plans user instructions precedence\", \"ruling\", \"deviation\", \"plan deviation\", \"ledger ruling\"",
-          "url": "https://github.com/obra/superpowers/issues/2510",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2546-achievebysteve",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "achievebysteve",
-          "date": "2026-10-17",
-          "text": "test-driven-development / executing-plans: \"batch the test and the code to save a turn\" is missing from the rationalization table, and fix-pass ledger lines don't require RED output - [x] I searched existing issues and this has not been proposed before Related but distinct: #994 (closed — RED evidence in TDD subagent reports), #2146 (RED passing for the wrong reason), #2230. ## What problem does this solve? During an executing-plans Final Review fix pass, the agent wrote the new failing tests and the implementation in consecutive responses without running the tests in between. The context moni",
-          "url": "https://github.com/obra/superpowers/issues/2546",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -141,71 +64,49 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 6,
+      "feedbackCount": 4,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2522-dolmen",
+          "id": "github-https-github-com-obra-superpowers-issues-2473-edcjoel-maker",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "dolmen",
-          "date": "2026-10-15",
-          "text": "writing-plans: a plan must not touch the spec - [x] I searched existing issues and this is not a duplicate ## Environment (required) Issue filed by a human, but with some parts produced by superpowers/6.4.1. ## Is this a Superpowers issue or a platform issue? - [x] I confirmed this issue does not occur without Superpowers installed ## What happened? In the writing-plans phase, the agent wrote in the plan instructions to modify the spec! From the agent's diagnosis (`/superpowers:diagnosing-superpowers`): > I'm sure of the sequence of actions; the reasoning behind them is only partly in the tran",
-          "url": "https://github.com/obra/superpowers/issues/2522",
+          "author": "edcjoel-maker",
+          "date": "2026-10-07",
+          "text": "brainstorming / writing-plans: commit the spec/plan by path so pre-staged changes are not swept in - [x] I searched existing issues and this has not been proposed before (adjacent: #807, closed, asked whether to commit specs at all; this is about *how* the commit is made when it is) ## What problem does this solve? brainstorming says the design doc is written to `docs/superpowers/specs/…-design.md`, \"committed\". In a working tree with unrelated in-progress work, I ran `git add <spec>` then `git commit`. A `git rm` from an earlier task in the same session was still staged, so the \"spec\" commit ",
+          "url": "https://github.com/obra/superpowers/issues/2473",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2599-obra",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "obra",
+          "date": "2026-10-22",
+          "text": "Parallel plan-and-build path: contract registry, owned packages, convergence critic, DAG build with merge train (build brief) - [x] I searched existing issues and this has not been proposed before Related, narrower: #2368 (DAG/wave execution inside SDD), #2245 (parallel dispatch checks), #2309 (DAG closure in plan self-review), #429 (Agent Teams). Those add scheduling to an ordinary task list. This issue covers what it took to make parallel build **converge**, and specifies it as a first-class alternate path. ## Who's filing this request? (required) Claude (Opus 5.5, Claude Code), filing for J",
+          "url": "https://github.com/obra/superpowers/issues/2599",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2431-abat-kek",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "abat-kek",
+          "date": "2026-09-30",
+          "text": "subagent-driven-development: \"no second fix wave\" should not cover breakage the final fix wave itself introduced - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? The final whole-branch review asked for an additional protection layer (block an admin path from outside the local network). The one allowed fix wave implemented it as a raw-path prefix check. The scoped re-review probed it and found a bypass: `/%61dmin/login` returned 200 — a new Important security finding that only the fix wave had created. The skill says: exactly one scoped re-",
+          "url": "https://github.com/obra/superpowers/issues/2431",
           "score": 1,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2496-jnrod03-rgb",
+          "id": "github-https-github-com-obra-superpowers-issues-2470-edcjoel-maker",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "jnrod03-rgb",
-          "date": "2026-10-10",
-          "text": "task-brief / task-start: only the English literal \"Task N\" is a task heading, and the error for a plan written in another language does not say so - [x] I searched existing issues and this is not a duplicate (adjacent: #2459 alphanumeric IDs \"Task A1\"; #2175, #2405, #2406, #2436 and PRs #2176, #2359, #2438, #2466 all edit the same awk line for numbering or fencing, and every one of them keeps the literal `Task`) ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 7.0.0 (`scripts/task-brief:32-33`; `executing-plans/scripts/task-start` delegates to it) | | Harne",
-          "url": "https://github.com/obra/superpowers/issues/2496",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2494-jnrod03-rgb",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jnrod03-rgb",
-          "date": "2026-10-10",
-          "text": "writing-plans: test code written inside a plan has two failure modes of its own, and the Self-Review does not ask about either - [x] I searched existing issues and this has not been proposed before (adjacent: #2178 is about line-number citations in the same template; `test-driven-development/writing-good-tests.md` §\"The Mutation Check\" covers tautological tests, but at execution time and for the executor — this is about the plan author, before any code exists) ## What problem does this solve? `writing-plans` 7.0.0 asks the plan author to write each test step as code, \"the test's name and its a",
-          "url": "https://github.com/obra/superpowers/issues/2494",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2493-jnrod03-rgb",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jnrod03-rgb",
-          "date": "2026-10-10",
-          "text": "task-brief / dispatch: the plan's Global Constraints and Review Focus never reach the implementer, although the plan template says they apply to every task - [x] I searched existing issues and this is not a duplicate (adjacent: #2469 proposes a tool-only fallback whose task-brief step says \"copy the task's section, plus the Global Constraints\", which assumes the brief should carry them; #1746/#1715 introduced the section; the open task-brief issues #2405, #2406, #2436, #2459 are about heading matching, not about the header) ## Environment (required) | Field | Value | |-------|-------| | Superp",
-          "url": "https://github.com/obra/superpowers/issues/2493",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2506-xiongdl",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "xiongdl",
-          "date": "2026-10-13",
-          "text": "[Codex] using-git-worktrees is read, but design approval is used to skip worktree consent (v7.0.0) - [x] I searched existing issues. - [ ] I confirmed this is not a duplicate. Search terms: `worktree consent skip Codex`, `v7.0.0 worktree`, and `worktree existing checkout`. Closest symptom match: [#445, Codex usage issues](https://github.com/obra/superpowers/issues/445) (closed). That report describes missing worktree creation after clarification, but does not establish the same sequence of reading the skill and interpreting design approval as an execution-method decision. Duplicate status rema",
-          "url": "https://github.com/obra/superpowers/issues/2506",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2583-shiluoluo16",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "shiluoluo16",
-          "date": "2026-10-22",
-          "text": "OpenCode: bootstrap instructs `superpowers:<skill>`, but the plugin registers bare ids - every session opens with failed skill calls - [x] I searched existing issues and this is not a duplicate ## Who's filing this report? (required) Filed by an AI agent (DeepSeek V4.1 Flash) at the request of my human partner, who asked me to diagnose why skill loads were failing in their OpenCode desktop session and to report it upstream. The human-authored summary below is their account; the evidence and analysis are mine. ## Human-authored summary (required, under 200 words) I'm on Windows 11 running OpenC",
-          "url": "https://github.com/obra/superpowers/issues/2583",
+          "author": "edcjoel-maker",
+          "date": "2026-10-07",
+          "text": "subagent-driven-development: plan-verbatim code passes its own tests — reviewers need adversarial probes per named risk, including the seam with unchanged code - [x] I searched existing issues and this has not been proposed before (adjacent: #766 covers product-vs-intent gaps; this is narrower — security/correctness holes in code the plan supplied verbatim) ## What problem does this solve? When `writing-plans` embeds complete code and tests in a task, the implementer copies them and the task reviewer checks the diff against the brief. Both pass by construction: the tests were written by the sa",
+          "url": "https://github.com/obra/superpowers/issues/2470",
           "score": 0,
           "sentiment": "negative"
         }
@@ -215,28 +116,17 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 6,
+      "feedbackCount": 4,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2145-kylekellogg",
+          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "kylekellogg",
-          "date": "2026-08-13",
-          "text": "Four additions: when the error names the wrong thing, and when the fix is wider than the symptom **Repo:** obra/superpowers - **Skill:** `skills/systematic-debugging/SKILL.md` - **Version seen:** 6.2.0 Four proposed additions, all additive - no existing guidance is contradicted, so this could go straight to a PR if the wording lands. They fall into two pairs. **Pair A (Phase 1)** - the error message is accurate but points at the wrong thing. The skill already opens with \"Read Error Messages Carefully... they often contain the exact solution.\" These are the two cases where reading carefully mea",
-          "url": "https://github.com/obra/superpowers/issues/2145",
-          "score": 5,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2277-caarles00",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Caarles00",
-          "date": "2026-09-10",
-          "text": "systematic-debugging ships its pressure-test fixtures inside the skill directory; they open with \"This is a real scenario. You must choose and act\" - [x] I searched existing issues and this is not a duplicate *(searched \"pressure test\", fixture, CREATION-LOG, test-academic — open and closed)* ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | skill fetched from `main` via skills.sh; directory listing re-checked against `b36e082` | | Harness (Claude Code, Cursor, etc.) | Claude Code, VS Code extension | | Harness version | 2.1.252 (Claude Code) | | Your model ",
-          "url": "https://github.com/obra/superpowers/issues/2277",
-          "score": 4,
+          "author": "haruntekin89",
+          "date": "2026-09-24",
+          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
+          "url": "https://github.com/obra/superpowers/issues/2377",
+          "score": 3,
           "sentiment": "negative"
         },
         {
@@ -251,35 +141,24 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2449-abat-kek",
+          "id": "github-https-github-com-obra-superpowers-issues-2266-slowernet",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "abat-kek",
-          "date": "2026-10-03",
-          "text": "systematic-debugging: check the hypothesis against the user's own data before reporting it as the cause - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? The user reported: \"an all-day event shows on two days in the calendar\". I derived a cause from the code (an all-day toggle kept an end date on the following day when the pre-filled time slot started late in the evening), reproduced it with a unit test and in the browser with fabricated input, fixed it, committed, and reported it as \"the cause\". Only afterwards, at the user's request, did ",
-          "url": "https://github.com/obra/superpowers/issues/2449",
-          "score": 0,
+          "author": "slowernet",
+          "date": "2026-09-06",
+          "text": "Fixes keep creating new bugs because no skill requires tracing what a fix changes - [x] I searched existing issues and this has not been proposed before Closest prior art: #2145 B1 (enumerate readers of a stale field; the *root cause's* blast radius during diagnosis, where this is the *fix's*), #2264 §5 (re-run the objective check after a delegated edit; a dynamic check, where this is static), #2113 §4 (coverage gaps *between* tasks, not gaps *created by* a fix), PR #2198 (trace a bad value upstream to its producer; opposite direction), and closed #2066 (a \"blast radius\" row for spec self-revi",
+          "url": "https://github.com/obra/superpowers/issues/2266",
+          "score": 1,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2485-gugaibarros-cpu",
+          "id": "github-https-github-com-obra-superpowers-issues-2219-danielcalvolopez",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "gugaibarros-cpu",
-          "date": "2026-10-09",
-          "text": "skills/systematic-debugging: a flaky test that \"passes alone\" — check the same-tick race at a time window that ends at now() *Found in real use on 2026-10-09 (a flaky unit test in a Node + SQLite project on Windows), captured in a skill-observation log and triaged in a review the same day. Filed upstream rather than patched locally because the plugin is version-pinned. Version: superpowers 6.4.2; `skills/systematic-debugging/SKILL.md` and `condition-based-waiting.md` in the local install are byte-identical to `main` at the time of writing (checked with `cmp`). Drafted by Claude Opus 5.5 in the",
-          "url": "https://github.com/obra/superpowers/issues/2485",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2583-shiluoluo16",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "shiluoluo16",
-          "date": "2026-10-22",
-          "text": "OpenCode: bootstrap instructs `superpowers:<skill>`, but the plugin registers bare ids - every session opens with failed skill calls - [x] I searched existing issues and this is not a duplicate ## Who's filing this report? (required) Filed by an AI agent (DeepSeek V4.1 Flash) at the request of my human partner, who asked me to diagnose why skill loads were failing in their OpenCode desktop session and to report it upstream. The human-authored summary below is their account; the evidence and analysis are mine. ## Human-authored summary (required, under 200 words) I'm on Windows 11 running OpenC",
-          "url": "https://github.com/obra/superpowers/issues/2583",
+          "author": "danielcalvolopez",
+          "date": "2026-08-28",
+          "text": "Skills that script multi-branch git workflows never establish a remote-safety boundary, shared branches (production, dev) were unintentionally rewritten across three projects - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? `using-git-worktrees`, `executing-plans`, `subagent-driven-development`, and `finishing-a-development-branch` script every step of a multi-branch git workflow — create the branch, commit per task, merge, integrate — but none of them ever address the boundary between local and remote state. Across three of my projects in",
+          "url": "https://github.com/obra/superpowers/issues/2219",
           "score": 0,
           "sentiment": "negative"
         }
@@ -289,7 +168,7 @@
       "slug": "verification-before-completion",
       "ecosystem": "superpowers",
       "displayName": "Verification Before Completion",
-      "feedbackCount": 6,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2332-teashaman-cyber",
@@ -300,6 +179,17 @@
           "text": "Workflow has first-class specs/plans but no durable QA/acceptance artifact layer - [x] I searched open and closed issues and did not find this exact artifact/lifecycle gap. ## What problem does this solve? Superpowers has first-class durable artifacts for the front half of development: ```text brainstorming -> design/spec writing-plans -> implementation plan executing-plans / SDD -> implementation ``` It also has strong *procedural* verification skills such as `test-driven-development`, `verification-before-completion`, `requesting-code-review`, and `finishing-a-development-branch`. What is mi",
           "url": "https://github.com/obra/superpowers/issues/2332",
           "score": 8,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "haruntekin89",
+          "date": "2026-09-24",
+          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
+          "url": "https://github.com/obra/superpowers/issues/2377",
+          "score": 3,
           "sentiment": "negative"
         },
         {
@@ -314,6 +204,17 @@
           "sentiment": "neutral"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2231-abhineshkr",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "abhineshkr",
+          "date": "2026-08-31",
+          "text": "skills/verification-before-completion: `git checkout` in a verified-red loop destroys uncommitted work *Found in real use over ~10 days on a single large project, captured in a skill-observation log and triaged in a review on 2026-08-31. Filed upstream rather than patched locally because the plugin is version-pinned — a local edit is erased on the next update.* *Version: **superpowers 6.3.0 (`b36e0829c6d0`), via the claude-plugins-official marketplace**. Each item below gives what happened, a concrete suggested change, and the generalisable principle. Happy to open a PR for any of them if you'",
+          "url": "https://github.com/obra/superpowers/issues/2231",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2422-darth-pie",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -323,39 +224,6 @@
           "url": "https://github.com/obra/superpowers/issues/2422",
           "score": 0,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2451-abat-kek",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "abat-kek",
-          "date": "2026-10-03",
-          "text": "subagent-driven-development / executing-plans: the final report should be derived from a plan-to-diff mapping, not written freely - [x] I searched existing issues and this has not been proposed before (related: #2435 — a skipped visual check reported as a \"known limitation\") ## What problem does this solve? An unattended run finished a UI plan and wrote its completion report. Two statements in it did not match the diff, and the run's own review step did not catch either: 1. The plan required reordering the settings cards to follow the app's navigation. The diff only renamed the headings; the o",
-          "url": "https://github.com/obra/superpowers/issues/2451",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2495-jnrod03-rgb",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jnrod03-rgb",
-          "date": "2026-10-10",
-          "text": "verification-before-completion: a commit message is a claim about the diff, not the diff; and \"add one more X\" predictably breaks hardcoded counts in sibling tests - [x] I searched existing issues and this has not been proposed before (adjacent: #2186 V4 \"reported is not verified\" is the general form for tool return values; #2373 covers unverified regexes and self-test cleanup; neither names git history as a source of claims, nor the count-assertion case) ## What problem does this solve? Two cases the Gate Function (`SKILL.md`, 7.0.0, 120 lines) does not currently cover; neither `git show`, \"c",
-          "url": "https://github.com/obra/superpowers/issues/2495",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2510-animeshios7",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "animeshios7",
-          "date": "2026-10-13",
-          "text": "executing-plans: agent changed an approved plan by a ledger \"Ruling:\" without asking, while CLAUDE.md said \"flag real problems and wait\", then claimed the phase done with verify lines unmet (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"rulings not stalls\", \"executing-plans ruling deviates plan\", \"follow plan exactly CLAUDE.md conflict\", \"deviated from plan without asking\", \"claimed complete verify\", \"verification-before-completion plan verify lines\", \"executing-plans user instructions precedence\", \"ruling\", \"deviation\", \"plan deviation\", \"ledger ruling\"",
-          "url": "https://github.com/obra/superpowers/issues/2510",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -363,72 +231,28 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 6,
+      "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2245-loshay1",
+          "id": "github-https-github-com-obra-superpowers-issues-2472-edcjoel-maker",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "Loshay1",
-          "date": "2026-09-02",
-          "text": "Delegation skills: four dispatch checks that silently fail without them (base commit, spawned model, enumerable scope, parallel-dispatch isolation) Observed across several Claude Code sessions using superpowers 6.3.0 (using-git-worktrees, subagent-driven-development, dispatching-parallel-agents). Each item below is a failure that produced no error and was found only after work was built on top of it. I keep them in a local companion skill; they seem to belong in the upstream skills. 1. **using-git-worktrees — verify the actual base commit.** \"Verify Clean Baseline\" runs the tests but never che",
-          "url": "https://github.com/obra/superpowers/issues/2245",
+          "author": "edcjoel-maker",
+          "date": "2026-10-07",
+          "text": "subagent-driven-development: interactive/manual verification steps in a brief must be bounded by command flags, not by prose - [x] I searched existing issues and this has not been proposed before (adjacent: #2113 §1 covers implementers stopping to wait for a long suite and reporting stale logs; #2435 covers a controller ruling a human-at-the-screen step away. This one is the implementer hanging silently inside an unbounded command until the watchdog kills it.) ## What problem does this solve? A plan step \"check in the browser: import an MP4…\" was passed to an implementer as-is. The implementer",
+          "url": "https://github.com/obra/superpowers/issues/2472",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2469-dachria-cmyk",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "dachria-cmyk",
+          "date": "2026-10-06",
+          "text": "subagent-driven-development: document a tool-only fallback for each helper script - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I ran subagent-driven-development on a six-task plan inside a git worktree. The harness had a worktree-isolation guard that refused any command it could not prove stayed inside the worktree. It refused every `bash scripts/sdd-workspace`, `bash scripts/task-brief` and `bash scripts/review-package` call, and any compound command or shell redirect that touched git. File edits and single, plainly-targeted commands ",
+          "url": "https://github.com/obra/superpowers/issues/2469",
           "score": 1,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2510-animeshios7",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "animeshios7",
-          "date": "2026-10-13",
-          "text": "executing-plans: agent changed an approved plan by a ledger \"Ruling:\" without asking, while CLAUDE.md said \"flag real problems and wait\", then claimed the phase done with verify lines unmet (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"rulings not stalls\", \"executing-plans ruling deviates plan\", \"follow plan exactly CLAUDE.md conflict\", \"deviated from plan without asking\", \"claimed complete verify\", \"verification-before-completion plan verify lines\", \"executing-plans user instructions precedence\", \"ruling\", \"deviation\", \"plan deviation\", \"ledger ruling\"",
-          "url": "https://github.com/obra/superpowers/issues/2510",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2521-achievebysteve",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "achievebysteve",
-          "date": "2026-10-15",
-          "text": "subagent-driven-development: when a subagent cannot write its report file, the full report comes back inline, and there is no fallback - [x] I searched existing issues and this is not a duplicate. Adjacent: #1930 and PR #1966, where task-reviewer-prompt.md tells reviewers to return the whole report as their final message. This is a different cause: the subagent was told to write the file and reported that it could not. ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.4.2 (SDD `SKILL.md` unchanged at 7.0.0 HEAD) | | Harness (Claude Code, Cursor, etc.) | Cl",
-          "url": "https://github.com/obra/superpowers/issues/2521",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2520-achievebysteve",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "achievebysteve",
-          "date": "2026-10-15",
-          "text": "subagent-driven-development: controller git writes race a live background implementer in the same checkout - [x] I searched existing issues and this is not a duplicate. Adjacent: #2430 (an implementer's processes still alive after a reported DONE) and #2293 (the ledger has no in-flight record). This one is about the controller's own git writes while a dispatched worker is live. ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.4.2 (SDD `SKILL.md` unchanged at 7.0.0 HEAD) | | Harness (Claude Code, Cursor, etc.) | Claude Code, Claude desktop app | | Harness ",
-          "url": "https://github.com/obra/superpowers/issues/2520",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2568-jcampelo",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jcampelo",
-          "date": "2026-10-20",
-          "text": "subagent-driven-development: a finding the reviewer can't verify because it depends on the production environment gets graded Minor and deferred \"to check at deploy\" - [x] I searched existing issues and this has not been proposed before Related but different: #2471 asks for deferred Minors to carry recoverability as well as likelihood. This issue is about findings nobody could verify. A reviewer who can't check a finding has no likelihood to grade, and that gets read as low risk. ## What problem does this solve? In one SDD run, the implementer flagged that a login redirect built with `new URL(",
-          "url": "https://github.com/obra/superpowers/issues/2568",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2583-shiluoluo16",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "shiluoluo16",
-          "date": "2026-10-22",
-          "text": "OpenCode: bootstrap instructs `superpowers:<skill>`, but the plugin registers bare ids - every session opens with failed skill calls - [x] I searched existing issues and this is not a duplicate ## Who's filing this report? (required) Filed by an AI agent (DeepSeek V4.1 Flash) at the request of my human partner, who asked me to diagnose why skill loads were failing in their OpenCode desktop session and to report it upstream. The human-authored summary below is their account; the evidence and analysis are mine. ## Human-authored summary (required, under 200 words) I'm on Windows 11 running OpenC",
-          "url": "https://github.com/obra/superpowers/issues/2583",
-          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -437,7 +261,7 @@
       "slug": "requesting-code-review",
       "ecosystem": "superpowers",
       "displayName": "Requesting Code Review",
-      "feedbackCount": 6,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2332-teashaman-cyber",
@@ -448,28 +272,6 @@
           "text": "Workflow has first-class specs/plans but no durable QA/acceptance artifact layer - [x] I searched open and closed issues and did not find this exact artifact/lifecycle gap. ## What problem does this solve? Superpowers has first-class durable artifacts for the front half of development: ```text brainstorming -> design/spec writing-plans -> implementation plan executing-plans / SDD -> implementation ``` It also has strong *procedural* verification skills such as `test-driven-development`, `verification-before-completion`, `requesting-code-review`, and `finishing-a-development-branch`. What is mi",
           "url": "https://github.com/obra/superpowers/issues/2332",
           "score": 8,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2316-teashaman-cyber",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "TeaShaman-cyber",
-          "date": "2026-09-17",
-          "text": "finishing-a-development-branch: PR review has no lifecycle transition back to merge/release - [x] I searched open and closed issues and did not find this exact lifecycle gap. ## What problem does this solve? `finishing-a-development-branch` has a clear entry path for completed implementation: 1. verify tests; 2. choose merge / create PR / keep branch; 3. if Option 2 is chosen, push and create a PR; 4. **keep the worktree because the human partner iterates on PR feedback there.** The gap is what happens **after that feedback is addressed**. There is no explicit transition from: ```text PR opene",
-          "url": "https://github.com/obra/superpowers/issues/2316",
-          "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2298-k-schmitt",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "K-Schmitt",
-          "date": "2026-09-13",
-          "text": "subagent-driven-development: review-package renders commit subjects only, so the task reviewer reports commit-body disclosures as undisclosed changes *Found during a `subagent-driven-development` run (2026-09-13), comparing a task reviewer's findings against the implementer's commits. Version: **superpowers 6.3.0**; the quoted lines are from that copy and are unchanged on `main` at `b36e082`.* Related but, I believe, distinct — close as duplicate if you read them as the same thing: - **#2054** — reviewer prompts make the reviewer spend turns establishing mechanical facts the controller could s",
-          "url": "https://github.com/obra/superpowers/issues/2298",
-          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -493,17 +295,6 @@
           "url": "https://github.com/obra/superpowers/issues/2446",
           "score": 0,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2474-edcjoel-maker",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "edcjoel-maker",
-          "date": "2026-10-07",
-          "text": "requesting-code-review: verification must cover the changed files' own build config and the real deploy path - [x] I searched existing issues and this has not been proposed before (related in spirit: #2054 on keeping reviewer runs cheap — both checks below are single commands or a single file read) ## What problem does this solve? Two misses in one project, same shape — a check that passes proves nothing about what it does not cover: 1. **Typecheck config.** A task reviewer graded as \"cosmetic\" a source comment containing literal U+2028/U+2029 (JS line terminators, so the rest of the `//` comm",
-          "url": "https://github.com/obra/superpowers/issues/2474",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -511,50 +302,17 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 4,
+      "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
+          "id": "github-https-github-com-obra-superpowers-issues-2105-jgodboutpcs",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "mbcrawfo",
-          "date": "2026-10-16",
-          "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
-          "url": "https://github.com/obra/superpowers/issues/2530",
-          "score": 21,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2245-loshay1",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Loshay1",
-          "date": "2026-09-02",
-          "text": "Delegation skills: four dispatch checks that silently fail without them (base commit, spawned model, enumerable scope, parallel-dispatch isolation) Observed across several Claude Code sessions using superpowers 6.3.0 (using-git-worktrees, subagent-driven-development, dispatching-parallel-agents). Each item below is a failure that produced no error and was found only after work was built on top of it. I keep them in a local companion skill; they seem to belong in the upstream skills. 1. **using-git-worktrees — verify the actual base commit.** \"Verify Clean Baseline\" runs the tests but never che",
-          "url": "https://github.com/obra/superpowers/issues/2245",
-          "score": 1,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2510-animeshios7",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "animeshios7",
-          "date": "2026-10-13",
-          "text": "executing-plans: agent changed an approved plan by a ledger \"Ruling:\" without asking, while CLAUDE.md said \"flag real problems and wait\", then claimed the phase done with verify lines unmet (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"rulings not stalls\", \"executing-plans ruling deviates plan\", \"follow plan exactly CLAUDE.md conflict\", \"deviated from plan without asking\", \"claimed complete verify\", \"verification-before-completion plan verify lines\", \"executing-plans user instructions precedence\", \"ruling\", \"deviation\", \"plan deviation\", \"ledger ruling\"",
-          "url": "https://github.com/obra/superpowers/issues/2510",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2583-shiluoluo16",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "shiluoluo16",
-          "date": "2026-10-22",
-          "text": "OpenCode: bootstrap instructs `superpowers:<skill>`, but the plugin registers bare ids - every session opens with failed skill calls - [x] I searched existing issues and this is not a duplicate ## Who's filing this report? (required) Filed by an AI agent (DeepSeek V4.1 Flash) at the request of my human partner, who asked me to diagnose why skill loads were failing in their OpenCode desktop session and to report it upstream. The human-authored summary below is their account; the evidence and analysis are mine. ## Human-authored summary (required, under 200 words) I'm on Windows 11 running OpenC",
-          "url": "https://github.com/obra/superpowers/issues/2583",
-          "score": 0,
+          "author": "jgodboutPCS",
+          "date": "2026-08-07",
+          "text": "SessionStart hook fails on Windows: ${CLAUDE_PLUGIN_ROOT} not substituted, interactive sessions silently lose the using-superpowers injection ## Summary On Windows, the `SessionStart` hook fails because `${CLAUDE_PLUGIN_ROOT}` is not substituted in the hook command. Every session start prints an error, and — the part that matters — **interactive sessions silently lose the `using-superpowers` context injection entirely.** Print mode (`claude -p`) is unaffected, which is probably why this has gone unnoticed. I suspect this is a **Claude Code** variable-substitution bug rather than a plugin defec",
+          "url": "https://github.com/obra/superpowers/issues/2105",
+          "score": 4,
           "sentiment": "negative"
         }
       ]
@@ -599,17 +357,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-4480-matinomari906-cloud",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "matinomari906-cloud",
-          "date": "2026-10-04",
-          "text": "## Skills (part 1) ## Skills (part 1) ``` npm warn EBADENGINE Unsupported engine { — @github/awesome-copilot-content-reviewers npm warn EBADENGINE package: 'commander@15.0.0', — @github/awesome-copilot-content-reviewers npm warn EBADENGINE required: { node: '>=22.12.0' }, — @github/awesome-copilot-content-reviewers npm warn EBADENGINE current: { node: 'v20.20.2', npm: '10.8.2' } — @github/awesome-copilot-content-reviewers npm warn EBADENGINE } — @github/awesome-copilot-content-reviewers npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant ",
-          "url": "https://github.com/github/awesome-copilot/issues/4480",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-github-awesome-copilot-issues-5114-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -617,8 +364,19 @@
           "date": "2026-10-16",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 15 resources - **Fresh (<14 days):** 38 resources (not listed below) Note: dates come from the latest `M`/`A` commit per file (no renames; commits mentioning formatting/line endings/bulk/normalize/rename excluded). Prompts directory (`prompts/`) no longer exists. Many old dates (2025-07-02/13) reflect bulk lint-style commits that could not all be filtered, so some dates may be slightly generous. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources (o",
           "url": "https://github.com/github/awesome-copilot/issues/5114",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-5320-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-10-23",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 791 resources - **Aging (14–30 days):** 17 resources - **Fresh (<14 days):** 45 resources (not listed below) Dates are from `git log` on the current checkout, ignoring commits whose messages indicate formatting, renaming, line-ending or bulk changes. Most files were last touched by large repo-wide commits, so the age figures are approximate. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>791 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|----------------",
+          "url": "https://github.com/github/awesome-copilot/issues/5320",
+          "score": 0,
+          "sentiment": "neutral"
         }
       ]
     },
@@ -626,7 +384,7 @@
       "slug": "security-review",
       "ecosystem": "awesome-copilot",
       "displayName": "Security Review",
-      "feedbackCount": 5,
+      "feedbackCount": 6,
       "comments": [
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-3147-omarmohelal",
@@ -680,8 +438,19 @@
           "date": "2026-10-16",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 15 resources - **Fresh (<14 days):** 38 resources (not listed below) Note: dates come from the latest `M`/`A` commit per file (no renames; commits mentioning formatting/line endings/bulk/normalize/rename excluded). Prompts directory (`prompts/`) no longer exists. Many old dates (2025-07-02/13) reflect bulk lint-style commits that could not all be filtered, so some dates may be slightly generous. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources (o",
           "url": "https://github.com/github/awesome-copilot/issues/5114",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-5320-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-10-23",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 791 resources - **Aging (14–30 days):** 17 resources - **Fresh (<14 days):** 45 resources (not listed below) Dates are from `git log` on the current checkout, ignoring commits whose messages indicate formatting, renaming, line-ending or bulk changes. Most files were last touched by large repo-wide commits, so the age figures are approximate. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>791 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|----------------",
+          "url": "https://github.com/github/awesome-copilot/issues/5320",
+          "score": 0,
+          "sentiment": "neutral"
         }
       ]
     },
@@ -689,7 +458,7 @@
       "slug": "eval-driven-dev",
       "ecosystem": "awesome-copilot",
       "displayName": "Eval-Driven Development",
-      "feedbackCount": 5,
+      "feedbackCount": 6,
       "comments": [
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-3751-github-actions-bot-",
@@ -710,6 +479,17 @@
           "date": "2026-10-09",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 813 resources - **Aging (14–30 days):** 24 resources - **Fresh (<14 days):** 14 resources (not listed below) _Dates use the latest non-formatting/non-rename modification (or add) commit per file; folder resources use their newest file. Many dates are early because of history shape, so age alone is a weak signal._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>Show 813 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instru",
           "url": "https://github.com/github/awesome-copilot/issues/4746",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-5114-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-10-16",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 15 resources - **Fresh (<14 days):** 38 resources (not listed below) Note: dates come from the latest `M`/`A` commit per file (no renames; commits mentioning formatting/line endings/bulk/normalize/rename excluded). Prompts directory (`prompts/`) no longer exists. Many old dates (2025-07-02/13) reflect bulk lint-style commits that could not all be filtered, so some dates may be slightly generous. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources (o",
+          "url": "https://github.com/github/awesome-copilot/issues/5114",
           "score": 1,
           "sentiment": "negative"
         },
@@ -736,15 +516,15 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-5114-github-actions-bot-",
+          "id": "github-https-github-com-github-awesome-copilot-issues-5320-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
           "author": "github-actions[bot]",
-          "date": "2026-10-16",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 15 resources - **Fresh (<14 days):** 38 resources (not listed below) Note: dates come from the latest `M`/`A` commit per file (no renames; commits mentioning formatting/line endings/bulk/normalize/rename excluded). Prompts directory (`prompts/`) no longer exists. Many old dates (2025-07-02/13) reflect bulk lint-style commits that could not all be filtered, so some dates may be slightly generous. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources (o",
-          "url": "https://github.com/github/awesome-copilot/issues/5114",
+          "date": "2026-10-23",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 791 resources - **Aging (14–30 days):** 17 resources - **Fresh (<14 days):** 45 resources (not listed below) Dates are from `git log` on the current checkout, ignoring commits whose messages indicate formatting, renaming, line-ending or bulk changes. Most files were last touched by large repo-wide commits, so the age figures are approximate. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>791 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|----------------",
+          "url": "https://github.com/github/awesome-copilot/issues/5320",
           "score": 0,
-          "sentiment": "negative"
+          "sentiment": "neutral"
         }
       ]
     },
@@ -763,17 +543,6 @@
           "text": "[External Plugin]: better-harness ### Plugin name better-harness ### Short description Build an AI-ready engineering system for safe coding-agent delivery and continuous software improvement. ### GitHub repository QoderAI/better-harness ### Plugin path inside the repository _No response_ ### Ref to review _No response_ ### Commit SHA to review cfa7c123acbe9bbbf23c8065123f41643bdecf18 ### Version 0.4.0 ### License identifier MIT ### Author name Qoder ### Author URL https://qoder.com/ ### Homepage URL https://qoderai.github.io/better-harness/ ### Keywords copilot-plugin better-harness coding-age",
           "url": "https://github.com/github/awesome-copilot/issues/2504",
           "score": 3,
-          "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-github-awesome-copilot-issues-2503-phodal",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "phodal",
-          "date": "2026-07-31",
-          "text": "[External Plugin]: better-harness ### Plugin name better-harness ### Short description Build an AI-ready engineering system for safe coding-agent delivery and continuous software improvement. ### GitHub repository QoderAI/better-harness ### Plugin path inside the repository _No response_ ### Ref to review _No response_ ### Commit SHA to review cfa7c123acbe9bbbf23c8065123f41643bdecf18 ### Version 0.4.0 ### License identifier MIT ### Author name Qoder ### Author URL https://qoder.com/ ### Homepage URL https://qoderai.github.io/better-harness/ ### Keywords copilot-plugin better-harness coding-age",
-          "url": "https://github.com/github/awesome-copilot/issues/2503",
-          "score": 1,
           "sentiment": "positive"
         },
         {
@@ -799,6 +568,17 @@
           "sentiment": "negative"
         },
         {
+          "id": "github-https-github-com-github-awesome-copilot-issues-5114-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-10-16",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 15 resources - **Fresh (<14 days):** 38 resources (not listed below) Note: dates come from the latest `M`/`A` commit per file (no renames; commits mentioning formatting/line endings/bulk/normalize/rename excluded). Prompts directory (`prompts/`) no longer exists. Many old dates (2025-07-02/13) reflect bulk lint-style commits that could not all be filtered, so some dates may be slightly generous. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources (o",
+          "url": "https://github.com/github/awesome-copilot/issues/5114",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
           "id": "github-https-github-com-github-awesome-copilot-issues-2578-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -810,15 +590,15 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-5114-github-actions-bot-",
+          "id": "github-https-github-com-github-awesome-copilot-issues-5320-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
           "author": "github-actions[bot]",
-          "date": "2026-10-16",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 15 resources - **Fresh (<14 days):** 38 resources (not listed below) Note: dates come from the latest `M`/`A` commit per file (no renames; commits mentioning formatting/line endings/bulk/normalize/rename excluded). Prompts directory (`prompts/`) no longer exists. Many old dates (2025-07-02/13) reflect bulk lint-style commits that could not all be filtered, so some dates may be slightly generous. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources (o",
-          "url": "https://github.com/github/awesome-copilot/issues/5114",
+          "date": "2026-10-23",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 791 resources - **Aging (14–30 days):** 17 resources - **Fresh (<14 days):** 45 resources (not listed below) Dates are from `git log` on the current checkout, ignoring commits whose messages indicate formatting, renaming, line-ending or bulk changes. Most files were last touched by large repo-wide commits, so the age figures are approximate. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>791 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|----------------",
+          "url": "https://github.com/github/awesome-copilot/issues/5320",
           "score": 0,
-          "sentiment": "negative"
+          "sentiment": "neutral"
         }
       ]
     },
@@ -826,7 +606,7 @@
       "slug": "acquire-codebase-knowledge",
       "ecosystem": "awesome-copilot",
       "displayName": "Acquire Codebase Knowledge",
-      "feedbackCount": 5,
+      "feedbackCount": 6,
       "comments": [
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-2058-github-actions-bot-",
@@ -851,6 +631,17 @@
           "sentiment": "negative"
         },
         {
+          "id": "github-https-github-com-github-awesome-copilot-issues-5114-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-10-16",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 15 resources - **Fresh (<14 days):** 38 resources (not listed below) Note: dates come from the latest `M`/`A` commit per file (no renames; commits mentioning formatting/line endings/bulk/normalize/rename excluded). Prompts directory (`prompts/`) no longer exists. Many old dates (2025-07-02/13) reflect bulk lint-style commits that could not all be filtered, so some dates may be slightly generous. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources (o",
+          "url": "https://github.com/github/awesome-copilot/issues/5114",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
           "id": "github-https-github-com-github-awesome-copilot-issues-2578-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -873,15 +664,15 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-5114-github-actions-bot-",
+          "id": "github-https-github-com-github-awesome-copilot-issues-5320-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
           "author": "github-actions[bot]",
-          "date": "2026-10-16",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 15 resources - **Fresh (<14 days):** 38 resources (not listed below) Note: dates come from the latest `M`/`A` commit per file (no renames; commits mentioning formatting/line endings/bulk/normalize/rename excluded). Prompts directory (`prompts/`) no longer exists. Many old dates (2025-07-02/13) reflect bulk lint-style commits that could not all be filtered, so some dates may be slightly generous. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources (o",
-          "url": "https://github.com/github/awesome-copilot/issues/5114",
+          "date": "2026-10-23",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 791 resources - **Aging (14–30 days):** 17 resources - **Fresh (<14 days):** 45 resources (not listed below) Dates are from `git log` on the current checkout, ignoring commits whose messages indicate formatting, renaming, line-ending or bulk changes. Most files were last touched by large repo-wide commits, so the age figures are approximate. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>791 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|----------------",
+          "url": "https://github.com/github/awesome-copilot/issues/5320",
           "score": 0,
-          "sentiment": "negative"
+          "sentiment": "neutral"
         }
       ]
     },
@@ -940,7 +731,7 @@
           "date": "2026-07-25",
           "text": "skill-creator run_eval: a crashed eval run is recorded as \"did not trigger\", so infrastructure failure scores as a PASS on negative queries (and steers run_loop's optimiser) ## Summary In `skills/skill-creator/scripts/run_eval.py`, a query whose eval run raises — a subprocess crash, a timeout, an API error — is recorded as `False`, the same value a legitimate \"the skill did not trigger\" produces. Nothing in the emitted payload distinguishes them. For a query with `should_trigger: false`, the pass criterion is `trigger_rate < threshold`, so **an infrastructure failure is scored as a correct res",
           "url": "https://github.com/anthropics/skills/issues/1478",
-          "score": 1,
+          "score": 2,
           "sentiment": "neutral"
         },
         {
@@ -1112,7 +903,7 @@
       "slug": "context-map",
       "ecosystem": "awesome-copilot",
       "displayName": "Context Map",
-      "feedbackCount": 5,
+      "feedbackCount": 6,
       "comments": [
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-3751-github-actions-bot-",
@@ -1133,6 +924,17 @@
           "date": "2026-10-09",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 813 resources - **Aging (14–30 days):** 24 resources - **Fresh (<14 days):** 14 resources (not listed below) _Dates use the latest non-formatting/non-rename modification (or add) commit per file; folder resources use their newest file. Many dates are early because of history shape, so age alone is a weak signal._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>Show 813 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instru",
           "url": "https://github.com/github/awesome-copilot/issues/4746",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-5114-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-10-16",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 15 resources - **Fresh (<14 days):** 38 resources (not listed below) Note: dates come from the latest `M`/`A` commit per file (no renames; commits mentioning formatting/line endings/bulk/normalize/rename excluded). Prompts directory (`prompts/`) no longer exists. Many old dates (2025-07-02/13) reflect bulk lint-style commits that could not all be filtered, so some dates may be slightly generous. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources (o",
+          "url": "https://github.com/github/awesome-copilot/issues/5114",
           "score": 1,
           "sentiment": "negative"
         },
@@ -1159,15 +961,15 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-5114-github-actions-bot-",
+          "id": "github-https-github-com-github-awesome-copilot-issues-5320-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
           "author": "github-actions[bot]",
-          "date": "2026-10-16",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 15 resources - **Fresh (<14 days):** 38 resources (not listed below) Note: dates come from the latest `M`/`A` commit per file (no renames; commits mentioning formatting/line endings/bulk/normalize/rename excluded). Prompts directory (`prompts/`) no longer exists. Many old dates (2025-07-02/13) reflect bulk lint-style commits that could not all be filtered, so some dates may be slightly generous. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources (o",
-          "url": "https://github.com/github/awesome-copilot/issues/5114",
+          "date": "2026-10-23",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 791 resources - **Aging (14–30 days):** 17 resources - **Fresh (<14 days):** 45 resources (not listed below) Dates are from `git log` on the current checkout, ignoring commits whose messages indicate formatting, renaming, line-ending or bulk changes. Most files were last touched by large repo-wide commits, so the age figures are approximate. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>791 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|----------------",
+          "url": "https://github.com/github/awesome-copilot/issues/5320",
           "score": 0,
-          "sentiment": "negative"
+          "sentiment": "neutral"
         }
       ]
     }
