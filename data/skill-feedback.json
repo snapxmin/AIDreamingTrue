@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-23T05:10:45Z",
+    "lastUpdated": "2026-10-24T04:54:33Z",
     "skillCount": 20,
-    "totalComments": 73,
+    "totalComments": 74,
     "sources": [
       "hacker-news",
       "github",
@@ -15,8 +15,19 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 1,
+      "feedbackCount": 3,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2522-dolmen",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "dolmen",
+          "date": "2026-10-15",
+          "text": "writing-plans: a plan must not touch the spec - [x] I searched existing issues and this is not a duplicate ## Environment (required) Issue filed by a human, but with some parts produced by superpowers/6.4.1. ## Is this a Superpowers issue or a platform issue? - [x] I confirmed this issue does not occur without Superpowers installed ## What happened? In the writing-plans phase, the agent wrote in the plan instructions to modify the spec! From the agent's diagnosis (`/superpowers:diagnosing-superpowers`): > I'm sure of the sequence of actions; the reasoning behind them is only partly in the tran",
+          "url": "https://github.com/obra/superpowers/issues/2522",
+          "score": 2,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2599-obra",
           "source": "github",
@@ -26,6 +37,17 @@
           "text": "Parallel plan-and-build path: contract registry, owned packages, convergence critic, DAG build with merge train (build brief) - [x] I searched existing issues and this has not been proposed before Related, narrower: #2368 (DAG/wave execution inside SDD), #2245 (parallel dispatch checks), #2309 (DAG closure in plan self-review), #429 (Agent Teams). Those add scheduling to an ordinary task list. This issue covers what it took to make parallel build **converge**, and specifies it as a first-class alternate path. ## Who's filing this request? (required) Claude (Opus 5.5, Claude Code), filing for J",
           "url": "https://github.com/obra/superpowers/issues/2599",
           "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "mattallshops",
+          "date": "2026-10-23",
+          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
+          "url": "https://github.com/obra/superpowers/issues/2612",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -64,16 +86,16 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2473-edcjoel-maker",
+          "id": "github-https-github-com-obra-superpowers-issues-2522-dolmen",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "edcjoel-maker",
-          "date": "2026-10-07",
-          "text": "brainstorming / writing-plans: commit the spec/plan by path so pre-staged changes are not swept in - [x] I searched existing issues and this has not been proposed before (adjacent: #807, closed, asked whether to commit specs at all; this is about *how* the commit is made when it is) ## What problem does this solve? brainstorming says the design doc is written to `docs/superpowers/specs/…-design.md`, \"committed\". In a working tree with unrelated in-progress work, I ran `git add <spec>` then `git commit`. A `git rm` from an earlier task in the same session was still staged, so the \"spec\" commit ",
-          "url": "https://github.com/obra/superpowers/issues/2473",
+          "author": "dolmen",
+          "date": "2026-10-15",
+          "text": "writing-plans: a plan must not touch the spec - [x] I searched existing issues and this is not a duplicate ## Environment (required) Issue filed by a human, but with some parts produced by superpowers/6.4.1. ## Is this a Superpowers issue or a platform issue? - [x] I confirmed this issue does not occur without Superpowers installed ## What happened? In the writing-plans phase, the agent wrote in the plan instructions to modify the spec! From the agent's diagnosis (`/superpowers:diagnosing-superpowers`): > I'm sure of the sequence of actions; the reasoning behind them is only partly in the tran",
+          "url": "https://github.com/obra/superpowers/issues/2522",
           "score": 2,
           "sentiment": "negative"
         },
@@ -89,24 +111,13 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2431-abat-kek",
+          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "abat-kek",
-          "date": "2026-09-30",
-          "text": "subagent-driven-development: \"no second fix wave\" should not cover breakage the final fix wave itself introduced - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? The final whole-branch review asked for an additional protection layer (block an admin path from outside the local network). The one allowed fix wave implemented it as a raw-path prefix check. The scoped re-review probed it and found a bypass: `/%61dmin/login` returned 200 — a new Important security finding that only the fix wave had created. The skill says: exactly one scoped re-",
-          "url": "https://github.com/obra/superpowers/issues/2431",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2470-edcjoel-maker",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "edcjoel-maker",
-          "date": "2026-10-07",
-          "text": "subagent-driven-development: plan-verbatim code passes its own tests — reviewers need adversarial probes per named risk, including the seam with unchanged code - [x] I searched existing issues and this has not been proposed before (adjacent: #766 covers product-vs-intent gaps; this is narrower — security/correctness holes in code the plan supplied verbatim) ## What problem does this solve? When `writing-plans` embeds complete code and tests in a task, the implementer copies them and the task reviewer checks the diff against the brief. Both pass by construction: the tests were written by the sa",
-          "url": "https://github.com/obra/superpowers/issues/2470",
+          "author": "mattallshops",
+          "date": "2026-10-23",
+          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
+          "url": "https://github.com/obra/superpowers/issues/2612",
           "score": 0,
           "sentiment": "negative"
         }
@@ -234,25 +245,25 @@
       "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2472-edcjoel-maker",
+          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "edcjoel-maker",
-          "date": "2026-10-07",
-          "text": "subagent-driven-development: interactive/manual verification steps in a brief must be bounded by command flags, not by prose - [x] I searched existing issues and this has not been proposed before (adjacent: #2113 §1 covers implementers stopping to wait for a long suite and reporting stale logs; #2435 covers a controller ruling a human-at-the-screen step away. This one is the implementer hanging silently inside an unbounded command until the watchdog kills it.) ## What problem does this solve? A plan step \"check in the browser: import an MP4…\" was passed to an implementer as-is. The implementer",
-          "url": "https://github.com/obra/superpowers/issues/2472",
-          "score": 2,
+          "author": "mattallshops",
+          "date": "2026-10-23",
+          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
+          "url": "https://github.com/obra/superpowers/issues/2612",
+          "score": 0,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2469-dachria-cmyk",
+          "id": "github-https-github-com-obra-superpowers-issues-2611-ethan826",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "dachria-cmyk",
-          "date": "2026-10-06",
-          "text": "subagent-driven-development: document a tool-only fallback for each helper script - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? I ran subagent-driven-development on a six-task plan inside a git worktree. The harness had a worktree-isolation guard that refused any command it could not prove stayed inside the worktree. It refused every `bash scripts/sdd-workspace`, `bash scripts/task-brief` and `bash scripts/review-package` call, and any compound command or shell redirect that touched git. File edits and single, plainly-targeted commands ",
-          "url": "https://github.com/obra/superpowers/issues/2469",
-          "score": 1,
+          "author": "Ethan826",
+          "date": "2026-10-23",
+          "text": "task-brief: a task that isn't found leaves an empty task-N-brief.md behind (exit 3) - [x] I searched existing issues and this is not a duplicate ## Who's filing this report? (required) An agent (Claude Code, Opus 5.5) found this bug while working for Ethan Kent and is filing it at his request. His instruction was: \"Please open issues if you can do it through gh.\" ## Human-authored summary (required, under 200 words) The task-brief script creates an empty file before checking whether the task actually exists. If an agent gets told to read its brief, it will find that empty file and fail silentl",
+          "url": "https://github.com/obra/superpowers/issues/2611",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -263,17 +274,6 @@
       "displayName": "Requesting Code Review",
       "feedbackCount": 3,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2332-teashaman-cyber",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "TeaShaman-cyber",
-          "date": "2026-09-18",
-          "text": "Workflow has first-class specs/plans but no durable QA/acceptance artifact layer - [x] I searched open and closed issues and did not find this exact artifact/lifecycle gap. ## What problem does this solve? Superpowers has first-class durable artifacts for the front half of development: ```text brainstorming -> design/spec writing-plans -> implementation plan executing-plans / SDD -> implementation ``` It also has strong *procedural* verification skills such as `test-driven-development`, `verification-before-completion`, `requesting-code-review`, and `finishing-a-development-branch`. What is mi",
-          "url": "https://github.com/obra/superpowers/issues/2332",
-          "score": 8,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2394-adrian-85",
           "source": "github",
@@ -295,6 +295,17 @@
           "url": "https://github.com/obra/superpowers/issues/2446",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "mattallshops",
+          "date": "2026-10-23",
+          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
+          "url": "https://github.com/obra/superpowers/issues/2612",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -305,14 +316,14 @@
       "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2105-jgodboutpcs",
+          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "jgodboutPCS",
-          "date": "2026-08-07",
-          "text": "SessionStart hook fails on Windows: ${CLAUDE_PLUGIN_ROOT} not substituted, interactive sessions silently lose the using-superpowers injection ## Summary On Windows, the `SessionStart` hook fails because `${CLAUDE_PLUGIN_ROOT}` is not substituted in the hook command. Every session start prints an error, and — the part that matters — **interactive sessions silently lose the `using-superpowers` context injection entirely.** Print mode (`claude -p`) is unaffected, which is probably why this has gone unnoticed. I suspect this is a **Claude Code** variable-substitution bug rather than a plugin defec",
-          "url": "https://github.com/obra/superpowers/issues/2105",
-          "score": 4,
+          "author": "mattallshops",
+          "date": "2026-10-23",
+          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
+          "url": "https://github.com/obra/superpowers/issues/2612",
+          "score": 0,
           "sentiment": "negative"
         }
       ]

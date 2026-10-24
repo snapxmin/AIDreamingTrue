@@ -1,24 +1,5 @@
 {
-  "generatedAt": "2026-10-23T05:08:34Z",
+  "generatedAt": "2026-10-24T04:51:50Z",
   "isBaselineRun": false,
-  "changes": [
-    {
-      "type": "added",
-      "key": "awesome-copilot/npm-trusted-publishing",
-      "ecosystem": "awesome-copilot",
-      "slug": "npm-trusted-publishing",
-      "displayName": "Npm Trusted Publishing",
-      "summary": "生态新增 Skill：Npm Trusted Publishing",
-      "detectedAt": "2026-10-23T05:09:18Z"
-    },
-    {
-      "type": "added",
-      "key": "awesome-copilot/pr-address-feedback",
-      "ecosystem": "awesome-copilot",
-      "slug": "pr-address-feedback",
-      "displayName": "Pr Address Feedback",
-      "summary": "生态新增 Skill：Pr Address Feedback",
-      "detectedAt": "2026-10-23T05:09:18Z"
-    }
-  ]
+  "changes": []
 }

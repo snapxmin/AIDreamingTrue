@@ -15,6 +15,36 @@
     "sourceUrl": "https://github.blog/changelog/2026-10-22-github-copilot-in-visual-studio-september-update-2"
   },
   {
+    "id": "auto-claude-v2-1-310",
+    "title": "Claude Code v2.1.310 发布",
+    "date": "2026-10-23",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "Anthropic",
+    "heat": 75,
+    "growth": 8,
+    "sourceTier": "A",
+    "summary": "## What's changed  - Added the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry, and when telemetry or nonessential traffic is disabled; long foreground sleeps are now blocked there to",
+    "whyImportant": "Claude Code 持续高频迭代，终端 Agent 能力不断增强。",
+    "impact": "关注 release notes 中的权限、MCP 和 subagent 相关变更。",
+    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.310"
+  },
+  {
+    "id": "auto-gh-turn-notifications-into-code-with-github",
+    "title": "Turn notifications into code with GitHub Copilot in Teams",
+    "date": "2026-10-23",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "GitHub",
+    "heat": 70,
+    "growth": 6,
+    "sourceTier": "A",
+    "summary": "GitHub 官方 Changelog 更新：Turn notifications into code with GitHub Copilot in Teams",
+    "whyImportant": "GitHub Copilot 生态动态，影响企业开发者工作流。",
+    "impact": "关注 Agent 模式、CLI 和企业策略相关变更。",
+    "sourceUrl": "https://github.blog/changelog/2026-10-23-turn-notifications-into-code-with-github-copilot-in-teams"
+  },
+  {
     "id": "auto-claude-v2-1-308",
     "title": "Claude Code v2.1.308 发布",
     "date": "2026-10-22",
