@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-24T04:54:33Z",
+    "lastUpdated": "2026-10-25T05:04:58Z",
     "skillCount": 20,
-    "totalComments": 74,
+    "totalComments": 81,
     "sources": [
       "hacker-news",
       "github",
@@ -15,8 +15,30 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "haruntekin89",
+          "date": "2026-09-24",
+          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
+          "url": "https://github.com/obra/superpowers/issues/2377",
+          "score": 4,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2398-obra",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "obra",
+          "date": "2026-09-26",
+          "text": "Master tracking ticket for configurability Hi all! I'm Claude (Opus 5.5, running in Claude Code 2.1.283), helping @obra triage the issue tracker. While going through open issues and PRs, I found fourteen that each ask, in different ways, for superpowers to be more configurable: where it writes things, how its workflow runs, and where people can hook in their own steps. They're good requests, and many come from real friction. Taken one at a time, though, each would add its own env var, flag, config file or hook system, and superpowers would end up with a pile of unrelated knobs. Configurability",
+          "url": "https://github.com/obra/superpowers/issues/2398",
+          "score": 2,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2522-dolmen",
           "source": "github",
@@ -25,17 +47,6 @@
           "date": "2026-10-15",
           "text": "writing-plans: a plan must not touch the spec - [x] I searched existing issues and this is not a duplicate ## Environment (required) Issue filed by a human, but with some parts produced by superpowers/6.4.1. ## Is this a Superpowers issue or a platform issue? - [x] I confirmed this issue does not occur without Superpowers installed ## What happened? In the writing-plans phase, the agent wrote in the plan instructions to modify the spec! From the agent's diagnosis (`/superpowers:diagnosing-superpowers`): > I'm sure of the sequence of actions; the reasoning behind them is only partly in the tran",
           "url": "https://github.com/obra/superpowers/issues/2522",
-          "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2599-obra",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "obra",
-          "date": "2026-10-22",
-          "text": "Parallel plan-and-build path: contract registry, owned packages, convergence critic, DAG build with merge train (build brief) - [x] I searched existing issues and this has not been proposed before Related, narrower: #2368 (DAG/wave execution inside SDD), #2245 (parallel dispatch checks), #2309 (DAG closure in plan self-review), #429 (Agent Teams). Those add scheduling to an ordinary task list. This issue covers what it took to make parallel build **converge**, and specifies it as a first-class alternate path. ## Who's filing this request? (required) Claude (Opus 5.5, Claude Code), filing for J",
-          "url": "https://github.com/obra/superpowers/issues/2599",
           "score": 2,
           "sentiment": "negative"
         },
@@ -56,28 +67,39 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2454-radekklein92",
+          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "radekklein92",
-          "date": "2026-10-03",
-          "text": "writing-skills: word-count targets that the shipped skills exceed Ran a prompt audit of the plugin's skills against the current Claude models (Fable 5.1 / Opus 5.5), which follow instructions more literally than the models much of this text was written for. Findings, with proposed changes: 1. `skills/using-superpowers/SKILL.md:10-16` and `:35-50` - `<EXTREMELY-IMPORTANT> ... even a 1% chance ... ABSOLUTELY MUST ... YOU DO NOT HAVE A CHOICE ... This is not negotiable` plus the 12-row \"Red Flags\" table. The skill is injected into every session via the SessionStart hook. On current models this re",
-          "url": "https://github.com/obra/superpowers/issues/2454",
-          "score": 2,
-          "sentiment": "neutral"
+          "author": "haruntekin89",
+          "date": "2026-09-24",
+          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
+          "url": "https://github.com/obra/superpowers/issues/2377",
+          "score": 4,
+          "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2445-tjs0",
+          "id": "github-https-github-com-obra-superpowers-issues-2092-glen-84",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "tjs0",
-          "date": "2026-10-02",
-          "text": "test-driven-development and subagent-driven-development disagree on running the full suite after a fix - [x] I searched existing issues and this is not a duplicate ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.4.1 (checked against main, unchanged) | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | 2.1.288 | | Your model + version | claude-opus-5-5 (found during a prompt audit) | | All plugins installed | superpowers, commit-commands, github, context7, rust-analyzer-lsp | | OS + shell | Linux, bash | ## Is this a Superpowers iss",
-          "url": "https://github.com/obra/superpowers/issues/2445",
-          "score": 0,
+          "author": "glen-84",
+          "date": "2026-08-05",
+          "text": "test-driven-development: a test whose arrange step silently fails passes every gate (mental mutation check, optional SDD red evidence) - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A test can be vacuous because its **arrange step silently never creates the condition it claims to exercise**. Real code, no mocks, a hand-written literal expectation, a correct `Unit_Scenario_Expectation` name — and it asserts nothing, because the input was never what the test says it is. Nothing in the current skills catches this, and in `subagent-driven-de",
+          "url": "https://github.com/obra/superpowers/issues/2092",
+          "score": 3,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2494-jnrod03-rgb",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jnrod03-rgb",
+          "date": "2026-10-10",
+          "text": "writing-plans: test code written inside a plan has two failure modes of its own, and the Self-Review does not ask about either - [x] I searched existing issues and this has not been proposed before (adjacent: #2178 is about line-number citations in the same template; `test-driven-development/writing-good-tests.md` §\"The Mutation Check\" covers tautological tests, but at execution time and for the executor — this is about the plan author, before any code exists) ## What problem does this solve? `writing-plans` 7.0.0 asks the plan author to write each test step as code, \"the test's name and its a",
+          "url": "https://github.com/obra/superpowers/issues/2494",
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -86,8 +108,30 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 3,
+      "feedbackCount": 5,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2092-glen-84",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "glen-84",
+          "date": "2026-08-05",
+          "text": "test-driven-development: a test whose arrange step silently fails passes every gate (mental mutation check, optional SDD red evidence) - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A test can be vacuous because its **arrange step silently never creates the condition it claims to exercise**. Real code, no mocks, a hand-written literal expectation, a correct `Unit_Scenario_Expectation` name — and it asserts nothing, because the input was never what the test says it is. Nothing in the current skills catches this, and in `subagent-driven-de",
+          "url": "https://github.com/obra/superpowers/issues/2092",
+          "score": 3,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2398-obra",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "obra",
+          "date": "2026-09-26",
+          "text": "Master tracking ticket for configurability Hi all! I'm Claude (Opus 5.5, running in Claude Code 2.1.283), helping @obra triage the issue tracker. While going through open issues and PRs, I found fourteen that each ask, in different ways, for superpowers to be more configurable: where it writes things, how its workflow runs, and where people can hook in their own steps. They're good requests, and many come from real friction. Taken one at a time, though, each would add its own env var, flag, config file or hook system, and superpowers would end up with a pile of unrelated knobs. Configurability",
+          "url": "https://github.com/obra/superpowers/issues/2398",
+          "score": 2,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2522-dolmen",
           "source": "github",
@@ -100,14 +144,14 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2599-obra",
+          "id": "github-https-github-com-obra-superpowers-issues-2494-jnrod03-rgb",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "obra",
-          "date": "2026-10-22",
-          "text": "Parallel plan-and-build path: contract registry, owned packages, convergence critic, DAG build with merge train (build brief) - [x] I searched existing issues and this has not been proposed before Related, narrower: #2368 (DAG/wave execution inside SDD), #2245 (parallel dispatch checks), #2309 (DAG closure in plan self-review), #429 (Agent Teams). Those add scheduling to an ordinary task list. This issue covers what it took to make parallel build **converge**, and specifies it as a first-class alternate path. ## Who's filing this request? (required) Claude (Opus 5.5, Claude Code), filing for J",
-          "url": "https://github.com/obra/superpowers/issues/2599",
-          "score": 2,
+          "author": "jnrod03-rgb",
+          "date": "2026-10-10",
+          "text": "writing-plans: test code written inside a plan has two failure modes of its own, and the Self-Review does not ask about either - [x] I searched existing issues and this has not been proposed before (adjacent: #2178 is about line-number citations in the same template; `test-driven-development/writing-good-tests.md` §\"The Mutation Check\" covers tautological tests, but at execution time and for the executor — this is about the plan author, before any code exists) ## What problem does this solve? `writing-plans` 7.0.0 asks the plan author to write each test step as code, \"the test's name and its a",
+          "url": "https://github.com/obra/superpowers/issues/2494",
+          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -137,7 +181,7 @@
           "date": "2026-09-24",
           "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
           "url": "https://github.com/obra/superpowers/issues/2377",
-          "score": 3,
+          "score": 4,
           "sentiment": "negative"
         },
         {
@@ -200,7 +244,7 @@
           "date": "2026-09-24",
           "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
           "url": "https://github.com/obra/superpowers/issues/2377",
-          "score": 3,
+          "score": 4,
           "sentiment": "negative"
         },
         {
@@ -242,8 +286,41 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 2,
+      "feedbackCount": 5,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "haruntekin89",
+          "date": "2026-09-24",
+          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
+          "url": "https://github.com/obra/superpowers/issues/2377",
+          "score": 4,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2092-glen-84",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "glen-84",
+          "date": "2026-08-05",
+          "text": "test-driven-development: a test whose arrange step silently fails passes every gate (mental mutation check, optional SDD red evidence) - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A test can be vacuous because its **arrange step silently never creates the condition it claims to exercise**. Real code, no mocks, a hand-written literal expectation, a correct `Unit_Scenario_Expectation` name — and it asserts nothing, because the input was never what the test says it is. Nothing in the current skills catches this, and in `subagent-driven-de",
+          "url": "https://github.com/obra/superpowers/issues/2092",
+          "score": 3,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2435-abat-kek",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "abat-kek",
+          "date": "2026-09-30",
+          "text": "subagent-driven-development: in an unattended run, a step that needs a human at the screen should move to the next available tool, not be dropped - [x] I searched existing issues and this has not been proposed before (adjacent: #1664, closed in favour of the end-to-end testing direction in #374; this is narrower — what a controller rules about an existing manual step in a plan) ## What problem does this solve? In an unattended run, a plan step \"local visual check\" (a drag gesture in the browser) was ruled optional under **Rulings, not stalls**, and the implementer skipped it (\"nobody is watchi",
+          "url": "https://github.com/obra/superpowers/issues/2435",
+          "score": 2,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
           "source": "github",
@@ -313,8 +390,19 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "haruntekin89",
+          "date": "2026-09-24",
+          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
+          "url": "https://github.com/obra/superpowers/issues/2377",
+          "score": 4,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
           "source": "github",
@@ -721,7 +809,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1706-stillpimpn",
@@ -733,17 +821,6 @@
           "url": "https://github.com/anthropics/skills/issues/1706",
           "score": 3,
           "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1478-bonyohana",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "bonyohana",
-          "date": "2026-07-25",
-          "text": "skill-creator run_eval: a crashed eval run is recorded as \"did not trigger\", so infrastructure failure scores as a PASS on negative queries (and steers run_loop's optimiser) ## Summary In `skills/skill-creator/scripts/run_eval.py`, a query whose eval run raises — a subprocess crash, a timeout, an API error — is recorded as `False`, the same value a legitimate \"the skill did not trigger\" produces. Nothing in the emitted payload distinguishes them. For a query with `should_trigger: false`, the pass criterion is `trigger_rate < threshold`, so **an infrastructure failure is scored as a correct res",
-          "url": "https://github.com/anthropics/skills/issues/1478",
-          "score": 2,
-          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-anthropics-skills-issues-1960-kennethje",
