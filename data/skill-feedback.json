@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-26T05:09:03Z",
+    "lastUpdated": "2026-10-26T05:40:08Z",
     "skillCount": 20,
-    "totalComments": 83,
+    "totalComments": 81,
     "sources": [
       "hacker-news",
       "github",
@@ -67,7 +67,7 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2092-glen-84",
@@ -89,17 +89,6 @@
           "text": "Six test-discipline gaps from heavy real-world use: mutation-survival diagnosis, escape-proof literals, cached editor diagnostics, e2e mock reloads, verdict-shaped output, seed-path invariants Six test-discipline gaps from heavy real-world use Context: several months of daily superpowers use across multiple projects (TDD, verification-before-completion). Six recurring failure shapes are not covered by the current skill text. Each is independent; happy to split into separate issues if that's easier to triage. Duplicate search done — nearest existing issues are #2146 (RED for the wrong reason), ",
           "url": "https://github.com/obra/superpowers/issues/2618",
           "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2494-jnrod03-rgb",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jnrod03-rgb",
-          "date": "2026-10-10",
-          "text": "writing-plans: test code written inside a plan has two failure modes of its own, and the Self-Review does not ask about either - [x] I searched existing issues and this has not been proposed before (adjacent: #2178 is about line-number citations in the same template; `test-driven-development/writing-good-tests.md` §\"The Mutation Check\" covers tautological tests, but at execution time and for the executor — this is about the plan author, before any code exists) ## What problem does this solve? `writing-plans` 7.0.0 asks the plan author to write each test step as code, \"the test's name and its a",
-          "url": "https://github.com/obra/superpowers/issues/2494",
-          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -286,19 +275,8 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2092-glen-84",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "glen-84",
-          "date": "2026-08-05",
-          "text": "test-driven-development: a test whose arrange step silently fails passes every gate (mental mutation check, optional SDD red evidence) - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A test can be vacuous because its **arrange step silently never creates the condition it claims to exercise**. Real code, no mocks, a hand-written literal expectation, a correct `Unit_Scenario_Expectation` name — and it asserts nothing, because the input was never what the test says it is. Nothing in the current skills catches this, and in `subagent-driven-de",
-          "url": "https://github.com/obra/superpowers/issues/2092",
-          "score": 3,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2429-abat-kek",
           "source": "github",
