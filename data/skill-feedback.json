@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-25T05:04:58Z",
+    "lastUpdated": "2026-10-26T05:09:03Z",
     "skillCount": 20,
-    "totalComments": 81,
+    "totalComments": 83,
     "sources": [
       "hacker-news",
       "github",
@@ -18,6 +18,17 @@
       "feedbackCount": 4,
       "comments": [
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "mbcrawfo",
+          "date": "2026-10-16",
+          "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
+          "url": "https://github.com/obra/superpowers/issues/2530",
+          "score": 23,
+          "sentiment": "negative"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -40,24 +51,13 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2522-dolmen",
+          "id": "github-https-github-com-obra-superpowers-issues-2619-morningstar0709",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "dolmen",
-          "date": "2026-10-15",
-          "text": "writing-plans: a plan must not touch the spec - [x] I searched existing issues and this is not a duplicate ## Environment (required) Issue filed by a human, but with some parts produced by superpowers/6.4.1. ## Is this a Superpowers issue or a platform issue? - [x] I confirmed this issue does not occur without Superpowers installed ## What happened? In the writing-plans phase, the agent wrote in the plan instructions to modify the spec! From the agent's diagnosis (`/superpowers:diagnosing-superpowers`): > I'm sure of the sequence of actions; the reasoning behind them is only partly in the tran",
-          "url": "https://github.com/obra/superpowers/issues/2522",
-          "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "mattallshops",
-          "date": "2026-10-23",
-          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
-          "url": "https://github.com/obra/superpowers/issues/2612",
+          "author": "MorningStar0709",
+          "date": "2026-10-25",
+          "text": "sdd-workspace: owns() cannot distinguish 'unusable' from 'foreign-owned' — infinite slug loop; marker claim is check-then-create <!-- ISSUE A — obra/superpowers --> - [x] I searched existing issues and this is not a duplicate (searched: owns, sdd-workspace, spin, loop, unwritable, mkdir; closest: #2444 (different script: brainstorming start-server.sh), #2520 (different race: controller git writes vs background implementer). Neither covers this.) ## Who's filing this report? (required) Agent: Qwen3.8-flash running in OpenCode v2.1.3 (OpenChamber-managed), on a forked harness that vendors superp",
+          "url": "https://github.com/obra/superpowers/issues/2619",
           "score": 0,
           "sentiment": "negative"
         }
@@ -67,19 +67,8 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "haruntekin89",
-          "date": "2026-09-24",
-          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
-          "url": "https://github.com/obra/superpowers/issues/2377",
-          "score": 4,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2092-glen-84",
           "source": "github",
@@ -89,6 +78,17 @@
           "text": "test-driven-development: a test whose arrange step silently fails passes every gate (mental mutation check, optional SDD red evidence) - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A test can be vacuous because its **arrange step silently never creates the condition it claims to exercise**. Real code, no mocks, a hand-written literal expectation, a correct `Unit_Scenario_Expectation` name — and it asserts nothing, because the input was never what the test says it is. Nothing in the current skills catches this, and in `subagent-driven-de",
           "url": "https://github.com/obra/superpowers/issues/2092",
           "score": 3,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2618-haiggoh",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "haiggoh",
+          "date": "2026-10-25",
+          "text": "Six test-discipline gaps from heavy real-world use: mutation-survival diagnosis, escape-proof literals, cached editor diagnostics, e2e mock reloads, verdict-shaped output, seed-path invariants Six test-discipline gaps from heavy real-world use Context: several months of daily superpowers use across multiple projects (TDD, verification-before-completion). Six recurring failure shapes are not covered by the current skill text. Each is independent; happy to split into separate issues if that's easier to triage. Duplicate search done — nearest existing issues are #2146 (RED for the wrong reason), ",
+          "url": "https://github.com/obra/superpowers/issues/2618",
+          "score": 2,
           "sentiment": "negative"
         },
         {
@@ -101,6 +101,17 @@
           "url": "https://github.com/obra/superpowers/issues/2494",
           "score": 1,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2628-kadirkayarr-beep",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "kadirkayarr-beep",
+          "date": "2026-10-25",
+          "text": "diagnosing-superpowers: a fix request in the same turn as the skill is left after an intake question (Cursor) Title: diagnosing-superpowers: a fix request in the same turn as the skill is left after an intake question (Cursor) - [x] I searched existing issues and this is not a duplicate (searched: \"diagnosing-superpowers fix\"; \"diagnosing\"; closest: #2510 executing-plans claimed a phase done with verify lines unmet, and #2386 test-driven-development not invoked for a plain add-a-function request) ## Environment (required) | Field | Value | Provenance / supporting evidence | |-------|-------|--",
+          "url": "https://github.com/obra/superpowers/issues/2628",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -108,7 +119,7 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2092-glen-84",
@@ -129,17 +140,6 @@
           "date": "2026-09-26",
           "text": "Master tracking ticket for configurability Hi all! I'm Claude (Opus 5.5, running in Claude Code 2.1.283), helping @obra triage the issue tracker. While going through open issues and PRs, I found fourteen that each ask, in different ways, for superpowers to be more configurable: where it writes things, how its workflow runs, and where people can hook in their own steps. They're good requests, and many come from real friction. Taken one at a time, though, each would add its own env var, flag, config file or hook system, and superpowers would end up with a pile of unrelated knobs. Configurability",
           "url": "https://github.com/obra/superpowers/issues/2398",
-          "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2522-dolmen",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "dolmen",
-          "date": "2026-10-15",
-          "text": "writing-plans: a plan must not touch the spec - [x] I searched existing issues and this is not a duplicate ## Environment (required) Issue filed by a human, but with some parts produced by superpowers/6.4.1. ## Is this a Superpowers issue or a platform issue? - [x] I confirmed this issue does not occur without Superpowers installed ## What happened? In the writing-plans phase, the agent wrote in the plan instructions to modify the spec! From the agent's diagnosis (`/superpowers:diagnosing-superpowers`): > I'm sure of the sequence of actions; the reasoning behind them is only partly in the tran",
-          "url": "https://github.com/obra/superpowers/issues/2522",
           "score": 2,
           "sentiment": "negative"
         },
@@ -259,14 +259,14 @@
           "sentiment": "neutral"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2231-abhineshkr",
+          "id": "github-https-github-com-obra-superpowers-issues-2618-haiggoh",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "abhineshkr",
-          "date": "2026-08-31",
-          "text": "skills/verification-before-completion: `git checkout` in a verified-red loop destroys uncommitted work *Found in real use over ~10 days on a single large project, captured in a skill-observation log and triaged in a review on 2026-08-31. Filed upstream rather than patched locally because the plugin is version-pinned — a local edit is erased on the next update.* *Version: **superpowers 6.3.0 (`b36e0829c6d0`), via the claude-plugins-official marketplace**. Each item below gives what happened, a concrete suggested change, and the generalisable principle. Happy to open a PR for any of them if you'",
-          "url": "https://github.com/obra/superpowers/issues/2231",
-          "score": 1,
+          "author": "haiggoh",
+          "date": "2026-10-25",
+          "text": "Six test-discipline gaps from heavy real-world use: mutation-survival diagnosis, escape-proof literals, cached editor diagnostics, e2e mock reloads, verdict-shaped output, seed-path invariants Six test-discipline gaps from heavy real-world use Context: several months of daily superpowers use across multiple projects (TDD, verification-before-completion). Six recurring failure shapes are not covered by the current skill text. Each is independent; happy to split into separate issues if that's easier to triage. Duplicate search done — nearest existing issues are #2146 (RED for the wrong reason), ",
+          "url": "https://github.com/obra/superpowers/issues/2618",
+          "score": 2,
           "sentiment": "negative"
         },
         {
@@ -289,17 +289,6 @@
       "feedbackCount": 5,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "haruntekin89",
-          "date": "2026-09-24",
-          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
-          "url": "https://github.com/obra/superpowers/issues/2377",
-          "score": 4,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2092-glen-84",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -311,35 +300,46 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2435-abat-kek",
+          "id": "github-https-github-com-obra-superpowers-issues-2429-abat-kek",
           "source": "github",
           "sourceLabel": "GitHub",
           "author": "abat-kek",
           "date": "2026-09-30",
-          "text": "subagent-driven-development: in an unattended run, a step that needs a human at the screen should move to the next available tool, not be dropped - [x] I searched existing issues and this has not been proposed before (adjacent: #1664, closed in favour of the end-to-end testing direction in #374; this is narrower — what a controller rules about an existing manual step in a plan) ## What problem does this solve? In an unattended run, a plan step \"local visual check\" (a drag gesture in the browser) was ruled optional under **Rulings, not stalls**, and the implementer skipped it (\"nobody is watchi",
-          "url": "https://github.com/obra/superpowers/issues/2435",
+          "text": "SDD scripts resolve repo and workspace from the cwd, not from PLAN_FILE — wrong workspace when called across worktrees - [x] I searched existing issues and this is not a duplicate (adjacent but different failure modes: #2242 greenfield crash, #2207 workspace deletion, #2307 Windows invocation) ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | observed on 6.3.0; the gap is still present on `dev` as of 2026-10-01 | | Harness (Claude Code, Cursor, etc.) | Claude Code (desktop app, Code tab) | | Harness version | 2.1.272 | | Your model + version | Claude Opus 5.",
+          "url": "https://github.com/obra/superpowers/issues/2429",
           "score": 2,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
+          "id": "github-https-github-com-obra-superpowers-issues-2405-ferrous26",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "mattallshops",
-          "date": "2026-10-23",
-          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
-          "url": "https://github.com/obra/superpowers/issues/2612",
+          "author": "ferrous26",
+          "date": "2026-09-27",
+          "text": "task-brief: task number is an unanchored, unescaped regex prefix, so the wrong task is returned with exit 0 **Summary** `skills/subagent-driven-development/scripts/task-brief` builds its heading matcher by string-concatenating `N` into an awk regex: ```awk intask = ($0 ~ (\"^#+[ \\t]+Task[ \\t]+\" n \"([^0-9]|$)\")) ``` Two consequences, both silent (exit 0, plausible-looking brief): 1. **Prefix match.** In a plan numbered `Task 1.1`, `Task 1.2`, ..., `task-brief PLAN 1` returns *every* `Task 1.x` concatenated, because `.` is a non-digit and satisfies the terminator. This is the same root cause as #",
+          "url": "https://github.com/obra/superpowers/issues/2405",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2620-morningstar0709",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "MorningStar0709",
+          "date": "2026-10-25",
+          "text": "review-package: BASE/HEAD guards accept tree/blob revisions — descendant guard misdiagnoses with exit 3 <!-- ISSUE B — obra/superpowers --> - [x] I searched existing issues and this is not a duplicate (searched: review-package, bad BASE, tree, blob, revision, 128; #2136/#2050 covered the descendant/empty-range guards themselves — this is about what slips THROUGH them.) ## Who's filing this report? (required) Agent: Qwen3.8-flash, OpenCode v2.1.3 (OpenChamber). Filing at the request of my human partner (MorningStar0709), instruction verbatim: \"给你授权，帮我直接pr吧\". ## Human-authored summary (required,",
+          "url": "https://github.com/obra/superpowers/issues/2620",
           "score": 0,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2611-ethan826",
+          "id": "github-https-github-com-obra-superpowers-issues-2619-morningstar0709",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "Ethan826",
-          "date": "2026-10-23",
-          "text": "task-brief: a task that isn't found leaves an empty task-N-brief.md behind (exit 3) - [x] I searched existing issues and this is not a duplicate ## Who's filing this report? (required) An agent (Claude Code, Opus 5.5) found this bug while working for Ethan Kent and is filing it at his request. His instruction was: \"Please open issues if you can do it through gh.\" ## Human-authored summary (required, under 200 words) The task-brief script creates an empty file before checking whether the task actually exists. If an agent gets told to read its brief, it will find that empty file and fail silentl",
-          "url": "https://github.com/obra/superpowers/issues/2611",
+          "author": "MorningStar0709",
+          "date": "2026-10-25",
+          "text": "sdd-workspace: owns() cannot distinguish 'unusable' from 'foreign-owned' — infinite slug loop; marker claim is check-then-create <!-- ISSUE A — obra/superpowers --> - [x] I searched existing issues and this is not a duplicate (searched: owns, sdd-workspace, spin, loop, unwritable, mkdir; closest: #2444 (different script: brainstorming start-server.sh), #2520 (different race: controller git writes vs background implementer). Neither covers this.) ## Who's filing this report? (required) Agent: Qwen3.8-flash running in OpenCode v2.1.3 (OpenChamber-managed), on a forked harness that vendors superp",
+          "url": "https://github.com/obra/superpowers/issues/2619",
           "score": 0,
           "sentiment": "negative"
         }
@@ -390,8 +390,19 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "mbcrawfo",
+          "date": "2026-10-16",
+          "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
+          "url": "https://github.com/obra/superpowers/issues/2530",
+          "score": 23,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
           "source": "github",
@@ -809,7 +820,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1706-stillpimpn",
@@ -843,6 +854,17 @@
           "url": "https://github.com/anthropics/skills/issues/1957",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-2078-somayehghasemi13688-ship-it",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "somayehghasemi13688-ship-it",
+          "date": "2026-10-25",
+          "text": "skills/skill-creator/SKILL.md None",
+          "url": "https://github.com/anthropics/skills/issues/2078",
+          "score": 0,
+          "sentiment": "neutral"
         }
       ]
     },

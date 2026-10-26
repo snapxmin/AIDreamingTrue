@@ -1,5 +1,47 @@
 {
-  "generatedAt": "2026-10-25T05:02:29Z",
+  "generatedAt": "2026-10-26T05:05:41Z",
   "isBaselineRun": false,
-  "changes": []
+  "changes": [
+    {
+      "type": "added",
+      "key": "awesome-copilot/azure-logic-apps-standard-cli",
+      "ecosystem": "awesome-copilot",
+      "slug": "azure-logic-apps-standard-cli",
+      "displayName": "Azure Logic Apps Standard Cli",
+      "summary": "生态新增 Skill：Azure Logic Apps Standard Cli",
+      "detectedAt": "2026-10-26T05:07:25Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/foundry-agentic-loop",
+      "ecosystem": "awesome-copilot",
+      "slug": "foundry-agentic-loop",
+      "displayName": "Foundry Agentic Loop",
+      "summary": "生态新增 Skill：Foundry Agentic Loop",
+      "detectedAt": "2026-10-26T05:07:25Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/globestudio",
+      "ecosystem": "awesome-copilot",
+      "slug": "globestudio",
+      "displayName": "Globestudio",
+      "summary": "生态新增 Skill：Globestudio",
+      "detectedAt": "2026-10-26T05:07:25Z"
+    },
+    {
+      "type": "updated",
+      "key": "awesome-copilot/webmcpify",
+      "ecosystem": "awesome-copilot",
+      "slug": "webmcpify",
+      "displayName": "Webmcpify",
+      "changedFields": [
+        "content",
+        "description"
+      ],
+      "summary": "description 更新：WebMCP agent skill for curated core coverage or route-by-route parity — inventory an existing web ap…",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/webmcpify",
+      "detectedAt": "2026-10-26T05:07:25Z"
+    }
+  ]
 }
