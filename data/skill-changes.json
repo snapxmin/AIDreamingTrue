@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-26T05:37:52Z",
+  "generatedAt": "2026-10-27T05:21:19Z",
   "isBaselineRun": false,
   "changes": [
     {
       "type": "added",
-      "key": "awesome-copilot/markdown-to-word-mermaid",
+      "key": "awesome-copilot/caption-qa",
       "ecosystem": "awesome-copilot",
-      "slug": "markdown-to-word-mermaid",
-      "displayName": "Markdown To Word Mermaid",
-      "summary": "生态新增 Skill：Markdown To Word Mermaid",
-      "detectedAt": "2026-10-26T05:38:39Z"
+      "slug": "caption-qa",
+      "displayName": "Caption Qa",
+      "summary": "生态新增 Skill：Caption Qa",
+      "detectedAt": "2026-10-27T05:22:37Z"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-26T05:40:08Z",
+    "lastUpdated": "2026-10-27T05:24:07Z",
     "skillCount": 20,
-    "totalComments": 81,
+    "totalComments": 80,
     "sources": [
       "hacker-news",
       "github",
@@ -25,7 +25,7 @@
           "date": "2026-10-16",
           "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
           "url": "https://github.com/obra/superpowers/issues/2530",
-          "score": 23,
+          "score": 24,
           "sentiment": "negative"
         },
         {
@@ -215,17 +215,6 @@
       "feedbackCount": 5,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2332-teashaman-cyber",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "TeaShaman-cyber",
-          "date": "2026-09-18",
-          "text": "Workflow has first-class specs/plans but no durable QA/acceptance artifact layer - [x] I searched open and closed issues and did not find this exact artifact/lifecycle gap. ## What problem does this solve? Superpowers has first-class durable artifacts for the front half of development: ```text brainstorming -> design/spec writing-plans -> implementation plan executing-plans / SDD -> implementation ``` It also has strong *procedural* verification skills such as `test-driven-development`, `verification-before-completion`, `requesting-code-review`, and `finishing-a-development-branch`. What is mi",
-          "url": "https://github.com/obra/superpowers/issues/2332",
-          "score": 8,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -259,6 +248,17 @@
           "sentiment": "negative"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2451-abat-kek",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "abat-kek",
+          "date": "2026-10-03",
+          "text": "subagent-driven-development / executing-plans: the final report should be derived from a plan-to-diff mapping, not written freely - [x] I searched existing issues and this has not been proposed before (related: #2435 — a skipped visual check reported as a \"known limitation\") ## What problem does this solve? An unattended run finished a UI plan and wrote its completion report. Two statements in it did not match the diff, and the run's own review step did not catch either: 1. The plan required reordering the settings cards to follow the app's navigation. The diff only renamed the headings; the o",
+          "url": "https://github.com/obra/superpowers/issues/2451",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2422-darth-pie",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -289,13 +289,13 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2405-ferrous26",
+          "id": "github-https-github-com-obra-superpowers-issues-2451-abat-kek",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "ferrous26",
-          "date": "2026-09-27",
-          "text": "task-brief: task number is an unanchored, unescaped regex prefix, so the wrong task is returned with exit 0 **Summary** `skills/subagent-driven-development/scripts/task-brief` builds its heading matcher by string-concatenating `N` into an awk regex: ```awk intask = ($0 ~ (\"^#+[ \\t]+Task[ \\t]+\" n \"([^0-9]|$)\")) ``` Two consequences, both silent (exit 0, plausible-looking brief): 1. **Prefix match.** In a plan numbered `Task 1.1`, `Task 1.2`, ..., `task-brief PLAN 1` returns *every* `Task 1.x` concatenated, because `.` is a non-digit and satisfies the terminator. This is the same root cause as #",
-          "url": "https://github.com/obra/superpowers/issues/2405",
+          "author": "abat-kek",
+          "date": "2026-10-03",
+          "text": "subagent-driven-development / executing-plans: the final report should be derived from a plan-to-diff mapping, not written freely - [x] I searched existing issues and this has not been proposed before (related: #2435 — a skipped visual check reported as a \"known limitation\") ## What problem does this solve? An unattended run finished a UI plan and wrote its completion report. Two statements in it did not match the diff, and the run's own review step did not catch either: 1. The plan required reordering the settings cards to follow the app's navigation. The diff only renamed the headings; the o",
+          "url": "https://github.com/obra/superpowers/issues/2451",
           "score": 1,
           "sentiment": "negative"
         },
@@ -311,13 +311,13 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2619-morningstar0709",
+          "id": "github-https-github-com-obra-superpowers-issues-2630-pius-hwang",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "MorningStar0709",
-          "date": "2026-10-25",
-          "text": "sdd-workspace: owns() cannot distinguish 'unusable' from 'foreign-owned' — infinite slug loop; marker claim is check-then-create <!-- ISSUE A — obra/superpowers --> - [x] I searched existing issues and this is not a duplicate (searched: owns, sdd-workspace, spin, loop, unwritable, mkdir; closest: #2444 (different script: brainstorming start-server.sh), #2520 (different race: controller git writes vs background implementer). Neither covers this.) ## Who's filing this report? (required) Agent: Qwen3.8-flash running in OpenCode v2.1.3 (OpenChamber-managed), on a forked harness that vendors superp",
-          "url": "https://github.com/obra/superpowers/issues/2619",
+          "author": "pius-hwang",
+          "date": "2026-10-26",
+          "text": "subagent-driven-development: review-package and sdd-workspace fail once a plan task deletes the plan file ## What happened `subagent-driven-development` keys the plan workspace on the plan file's path, and both helper scripts require that file to exist: - `scripts/sdd-workspace`: `[ -f \"$plan\" ] || { echo \"no such plan file: $plan\" >&2; exit 2; }` - `scripts/review-package`: same check, then resolves the output directory through `sdd-workspace \"$plan\"` If a plan task deletes or moves the plan file (a common convention: \"the PR that finishes the work deletes the plan\"), every later step that ne",
+          "url": "https://github.com/obra/superpowers/issues/2630",
           "score": 0,
           "sentiment": "negative"
         }
@@ -368,7 +368,7 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
@@ -378,7 +378,7 @@
           "date": "2026-10-16",
           "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
           "url": "https://github.com/obra/superpowers/issues/2530",
-          "score": 23,
+          "score": 24,
           "sentiment": "negative"
         },
         {
@@ -391,17 +391,6 @@
           "url": "https://github.com/obra/superpowers/issues/2377",
           "score": 4,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "mattallshops",
-          "date": "2026-10-23",
-          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
-          "url": "https://github.com/obra/superpowers/issues/2612",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -409,7 +398,7 @@
       "slug": "ai-ready",
       "ecosystem": "awesome-copilot",
       "displayName": "AI Ready",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-4022-xqliu",
@@ -421,17 +410,6 @@
           "url": "https://github.com/github/awesome-copilot/issues/4022",
           "score": 4,
           "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-github-awesome-copilot-issues-3751-github-actions-bot-",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "github-actions[bot]",
-          "date": "2026-09-25",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 802 resources - **Aging (14–30 days):** 21 resources - **Fresh (<14 days):** 24 resources (not listed below) ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Show all 802 entries</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|--------------------|----------| | `instructions/bicep-code-best-practices.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/cmake-vcpkg.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/generate-modern-terraform-c",
-          "url": "https://github.com/github/awesome-copilot/issues/3751",
-          "score": 1,
-          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-4746-github-actions-bot-",
@@ -798,7 +776,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1706-stillpimpn",
@@ -841,6 +819,17 @@
           "date": "2026-10-25",
           "text": "skills/skill-creator/SKILL.md None",
           "url": "https://github.com/anthropics/skills/issues/2078",
+          "score": 0,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-2084-benharvey-bis",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "benharvey-bis",
+          "date": "2026-10-26",
+          "text": "skill-creator: run_eval threshold logic is asymmetric: should_trigger and should_not_trigger use opposite pass conditions anthropics/skills/blob/main/skills/skill-creator/scripts/run_eval.py A higher --trigger-threshold makes positive queries harder while also making negative queries easier to pass. This is because the pass rule is >= threshold for positive examples and < threshold for negative examples, which effectively expands the acceptance band for negatives as the threshold increases. Being able to specify separate thresholds for should and should-not trigger queries would help.",
+          "url": "https://github.com/anthropics/skills/issues/2084",
           "score": 0,
           "sentiment": "neutral"
         }
