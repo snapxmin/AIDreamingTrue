@@ -1,5 +1,35 @@
 [
   {
+    "id": "auto-claude-v2-1-312",
+    "title": "Claude Code v2.1.312 发布",
+    "date": "2026-10-27",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "Anthropic",
+    "heat": 75,
+    "growth": 8,
+    "sourceTier": "A",
+    "summary": "## What's changed  - Added `oidc.user_id_claim` to the Claude apps gateway, to identify people by an id_token claim other than `sub`, such as Microsoft Entra ID's `oid` - Added click to send: in fulls",
+    "whyImportant": "Claude Code 持续高频迭代，终端 Agent 能力不断增强。",
+    "impact": "关注 release notes 中的权限、MCP 和 subagent 相关变更。",
+    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.312"
+  },
+  {
+    "id": "auto-gh-github-copilot-supports-server-to-server",
+    "title": "GitHub Copilot supports server-to-server authentication",
+    "date": "2026-10-27",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "GitHub",
+    "heat": 70,
+    "growth": 6,
+    "sourceTier": "A",
+    "summary": "GitHub 官方 Changelog 更新：GitHub Copilot supports server-to-server authentication",
+    "whyImportant": "GitHub Copilot 生态动态，影响企业开发者工作流。",
+    "impact": "关注 Agent 模式、CLI 和企业策略相关变更。",
+    "sourceUrl": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication"
+  },
+  {
     "id": "auto-claude-v2-1-311",
     "title": "Claude Code v2.1.311 发布",
     "date": "2026-10-26",

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-27T05:24:07Z",
+    "lastUpdated": "2026-10-28T06:03:28Z",
     "skillCount": 20,
-    "totalComments": 80,
+    "totalComments": 69,
     "sources": [
       "hacker-news",
       "github",
@@ -15,7 +15,7 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 4,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
@@ -26,28 +26,6 @@
           "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
           "url": "https://github.com/obra/superpowers/issues/2530",
           "score": 24,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "haruntekin89",
-          "date": "2026-09-24",
-          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
-          "url": "https://github.com/obra/superpowers/issues/2377",
-          "score": 4,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2398-obra",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "obra",
-          "date": "2026-09-26",
-          "text": "Master tracking ticket for configurability Hi all! I'm Claude (Opus 5.5, running in Claude Code 2.1.283), helping @obra triage the issue tracker. While going through open issues and PRs, I found fourteen that each ask, in different ways, for superpowers to be more configurable: where it writes things, how its workflow runs, and where people can hook in their own steps. They're good requests, and many come from real friction. Taken one at a time, though, each would add its own env var, flag, config file or hook system, and superpowers would end up with a pile of unrelated knobs. Configurability",
-          "url": "https://github.com/obra/superpowers/issues/2398",
-          "score": 2,
           "sentiment": "negative"
         },
         {
@@ -67,19 +45,8 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2092-glen-84",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "glen-84",
-          "date": "2026-08-05",
-          "text": "test-driven-development: a test whose arrange step silently fails passes every gate (mental mutation check, optional SDD red evidence) - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A test can be vacuous because its **arrange step silently never creates the condition it claims to exercise**. Real code, no mocks, a hand-written literal expectation, a correct `Unit_Scenario_Expectation` name — and it asserts nothing, because the input was never what the test says it is. Nothing in the current skills catches this, and in `subagent-driven-de",
-          "url": "https://github.com/obra/superpowers/issues/2092",
-          "score": 3,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2618-haiggoh",
           "source": "github",
@@ -108,7 +75,7 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 4,
+      "feedbackCount": 1,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2092-glen-84",
@@ -120,39 +87,6 @@
           "url": "https://github.com/obra/superpowers/issues/2092",
           "score": 3,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2398-obra",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "obra",
-          "date": "2026-09-26",
-          "text": "Master tracking ticket for configurability Hi all! I'm Claude (Opus 5.5, running in Claude Code 2.1.283), helping @obra triage the issue tracker. While going through open issues and PRs, I found fourteen that each ask, in different ways, for superpowers to be more configurable: where it writes things, how its workflow runs, and where people can hook in their own steps. They're good requests, and many come from real friction. Taken one at a time, though, each would add its own env var, flag, config file or hook system, and superpowers would end up with a pile of unrelated knobs. Configurability",
-          "url": "https://github.com/obra/superpowers/issues/2398",
-          "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2494-jnrod03-rgb",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jnrod03-rgb",
-          "date": "2026-10-10",
-          "text": "writing-plans: test code written inside a plan has two failure modes of its own, and the Self-Review does not ask about either - [x] I searched existing issues and this has not been proposed before (adjacent: #2178 is about line-number citations in the same template; `test-driven-development/writing-good-tests.md` §\"The Mutation Check\" covers tautological tests, but at execution time and for the executor — this is about the plan author, before any code exists) ## What problem does this solve? `writing-plans` 7.0.0 asks the plan author to write each test step as code, \"the test's name and its a",
-          "url": "https://github.com/obra/superpowers/issues/2494",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "mattallshops",
-          "date": "2026-10-23",
-          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
-          "url": "https://github.com/obra/superpowers/issues/2612",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -160,7 +94,7 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
@@ -194,17 +128,6 @@
           "url": "https://github.com/obra/superpowers/issues/2266",
           "score": 1,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2219-danielcalvolopez",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "danielcalvolopez",
-          "date": "2026-08-28",
-          "text": "Skills that script multi-branch git workflows never establish a remote-safety boundary, shared branches (production, dev) were unintentionally rewritten across three projects - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? `using-git-worktrees`, `executing-plans`, `subagent-driven-development`, and `finishing-a-development-branch` script every step of a multi-branch git workflow — create the branch, commit per task, merge, integrate — but none of them ever address the boundary between local and remote state. Across three of my projects in",
-          "url": "https://github.com/obra/superpowers/issues/2219",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -212,7 +135,7 @@
       "slug": "verification-before-completion",
       "ecosystem": "superpowers",
       "displayName": "Verification Before Completion",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
@@ -257,17 +180,6 @@
           "url": "https://github.com/obra/superpowers/issues/2451",
           "score": 1,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2422-darth-pie",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Darth-Pie",
-          "date": "2026-09-29",
-          "text": "test-driven-development: no guidance when a layer has no test harness, so the agent either skips the Iron Law silently or installs a harness nobody asked for - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? A feature spanned a server with a working integration-test setup and a React front end. The front end's test runner is node-only, with no DOM environment and no component-testing library installed. The server half went strictly red-green. For the UI half, the agent pulled the pure rules out into plain modules and test-drove those: - lab",
-          "url": "https://github.com/obra/superpowers/issues/2422",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -275,19 +187,8 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 4,
+      "feedbackCount": 2,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2429-abat-kek",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "abat-kek",
-          "date": "2026-09-30",
-          "text": "SDD scripts resolve repo and workspace from the cwd, not from PLAN_FILE — wrong workspace when called across worktrees - [x] I searched existing issues and this is not a duplicate (adjacent but different failure modes: #2242 greenfield crash, #2207 workspace deletion, #2307 Windows invocation) ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | observed on 6.3.0; the gap is still present on `dev` as of 2026-10-01 | | Harness (Claude Code, Cursor, etc.) | Claude Code (desktop app, Code tab) | | Harness version | 2.1.272 | | Your model + version | Claude Opus 5.",
-          "url": "https://github.com/obra/superpowers/issues/2429",
-          "score": 2,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2451-abat-kek",
           "source": "github",
@@ -297,17 +198,6 @@
           "text": "subagent-driven-development / executing-plans: the final report should be derived from a plan-to-diff mapping, not written freely - [x] I searched existing issues and this has not been proposed before (related: #2435 — a skipped visual check reported as a \"known limitation\") ## What problem does this solve? An unattended run finished a UI plan and wrote its completion report. Two statements in it did not match the diff, and the run's own review step did not catch either: 1. The plan required reordering the settings cards to follow the app's navigation. The diff only renamed the headings; the o",
           "url": "https://github.com/obra/superpowers/issues/2451",
           "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2620-morningstar0709",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "MorningStar0709",
-          "date": "2026-10-25",
-          "text": "review-package: BASE/HEAD guards accept tree/blob revisions — descendant guard misdiagnoses with exit 3 <!-- ISSUE B — obra/superpowers --> - [x] I searched existing issues and this is not a duplicate (searched: review-package, bad BASE, tree, blob, revision, 128; #2136/#2050 covered the descendant/empty-range guards themselves — this is about what slips THROUGH them.) ## Who's filing this report? (required) Agent: Qwen3.8-flash, OpenCode v2.1.3 (OpenChamber). Filing at the request of my human partner (MorningStar0709), instruction verbatim: \"给你授权，帮我直接pr吧\". ## Human-authored summary (required,",
-          "url": "https://github.com/obra/superpowers/issues/2620",
-          "score": 0,
           "sentiment": "negative"
         },
         {
@@ -980,7 +870,7 @@
       "slug": "context-map",
       "ecosystem": "awesome-copilot",
       "displayName": "Context Map",
-      "feedbackCount": 6,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-3751-github-actions-bot-",
@@ -1013,17 +903,6 @@
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 15 resources - **Fresh (<14 days):** 38 resources (not listed below) Note: dates come from the latest `M`/`A` commit per file (no renames; commits mentioning formatting/line endings/bulk/normalize/rename excluded). Prompts directory (`prompts/`) no longer exists. Many old dates (2025-07-02/13) reflect bulk lint-style commits that could not all be filtered, so some dates may be slightly generous. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources (o",
           "url": "https://github.com/github/awesome-copilot/issues/5114",
           "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-github-awesome-copilot-issues-2578-github-actions-bot-",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "github-actions[bot]",
-          "date": "2026-08-07",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 723 resources - **Aging (14–30 days):** 34 resources - **Fresh (<14 days):** 67 resources (not listed below) Note: This inventory covers `agents/` (224), `instructions/` (191), `hooks/` (8 folders), and `skills/` (401 folders). No `prompts/*.prompt.md` files currently exist in the repository. Hook and skill folders are treated as single resources using the most recent substantive change across any file in the folder. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Click to expand (723 resources)</summar",
-          "url": "https://github.com/github/awesome-copilot/issues/2578",
-          "score": 0,
           "sentiment": "negative"
         },
         {
