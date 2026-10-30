@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-29T06:11:15Z",
+    "lastUpdated": "2026-10-30T06:11:43Z",
     "skillCount": 20,
-    "totalComments": 75,
+    "totalComments": 81,
     "sources": [
       "hacker-news",
       "github",
@@ -25,7 +25,7 @@
           "date": "2026-10-16",
           "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
           "url": "https://github.com/obra/superpowers/issues/2530",
-          "score": 25,
+          "score": 26,
           "sentiment": "negative"
         },
         {
@@ -36,7 +36,7 @@
           "date": "2026-10-28",
           "text": "writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation without invoking writing-plans or creating task artifact (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `writing-plans brainstorming`, `skill not invoked`, `antigravity`; closest: #2386 `test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present`) ## Who's filing this report? (required) Gemini 4 Argon (High) on Google Antigravity (`agy`), filing on behalf of my human partner, who asked:",
           "url": "https://github.com/obra/superpowers/issues/2638",
-          "score": 0,
+          "score": 1,
           "sentiment": "neutral"
         },
         {
@@ -47,7 +47,7 @@
           "date": "2026-10-28",
           "text": "Some skills don't follow Anthropic's skill authoring best practices (size, test files, contents lists) Checked against https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices: - **Over 500 lines**: `writing-skills/SKILL.md` (678), `subagent-driven-development/SKILL.md` (565). - **Files nothing links to**: `systematic-debugging/` ships `CREATION-LOG.md`, `test-academic.md`, `test-pressure-1.md`, `-2.md`, `-3.md` inside the installed skill; `using-superpowers/references/gemini-tools.md`. Moving test/history files out of the skill folder keeps them out of users' installs.",
           "url": "https://github.com/obra/superpowers/issues/2634",
-          "score": 0,
+          "score": 1,
           "sentiment": "neutral"
         }
       ]
@@ -56,8 +56,19 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "kpdbcdt",
+          "date": "2026-09-25",
+          "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
+          "url": "https://github.com/obra/superpowers/issues/2386",
+          "score": 4,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2638-pedroreusch",
           "source": "github",
@@ -66,7 +77,18 @@
           "date": "2026-10-28",
           "text": "writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation without invoking writing-plans or creating task artifact (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `writing-plans brainstorming`, `skill not invoked`, `antigravity`; closest: #2386 `test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present`) ## Who's filing this report? (required) Gemini 4 Argon (High) on Google Antigravity (`agy`), filing on behalf of my human partner, who asked:",
           "url": "https://github.com/obra/superpowers/issues/2638",
-          "score": 0,
+          "score": 1,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2634-niaf-dw",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "NIAF-DW",
+          "date": "2026-10-28",
+          "text": "Some skills don't follow Anthropic's skill authoring best practices (size, test files, contents lists) Checked against https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices: - **Over 500 lines**: `writing-skills/SKILL.md` (678), `subagent-driven-development/SKILL.md` (565). - **Files nothing links to**: `systematic-debugging/` ships `CREATION-LOG.md`, `test-academic.md`, `test-pressure-1.md`, `-2.md`, `-3.md` inside the installed skill; `using-superpowers/references/gemini-tools.md`. Moving test/history files out of the skill folder keeps them out of users' installs.",
+          "url": "https://github.com/obra/superpowers/issues/2634",
+          "score": 1,
           "sentiment": "neutral"
         },
         {
@@ -79,17 +101,6 @@
           "url": "https://github.com/obra/superpowers/issues/2635",
           "score": 0,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2634-niaf-dw",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "NIAF-DW",
-          "date": "2026-10-28",
-          "text": "Some skills don't follow Anthropic's skill authoring best practices (size, test files, contents lists) Checked against https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices: - **Over 500 lines**: `writing-skills/SKILL.md` (678), `subagent-driven-development/SKILL.md` (565). - **Files nothing links to**: `systematic-debugging/` ships `CREATION-LOG.md`, `test-academic.md`, `test-pressure-1.md`, `-2.md`, `-3.md` inside the installed skill; `using-superpowers/references/gemini-tools.md`. Moving test/history files out of the skill folder keeps them out of users' installs.",
-          "url": "https://github.com/obra/superpowers/issues/2634",
-          "score": 0,
-          "sentiment": "neutral"
         }
       ]
     },
@@ -97,8 +108,19 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 2,
+      "feedbackCount": 4,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "kpdbcdt",
+          "date": "2026-09-25",
+          "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
+          "url": "https://github.com/obra/superpowers/issues/2386",
+          "score": 4,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2638-pedroreusch",
           "source": "github",
@@ -107,7 +129,18 @@
           "date": "2026-10-28",
           "text": "writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation without invoking writing-plans or creating task artifact (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `writing-plans brainstorming`, `skill not invoked`, `antigravity`; closest: #2386 `test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present`) ## Who's filing this report? (required) Gemini 4 Argon (High) on Google Antigravity (`agy`), filing on behalf of my human partner, who asked:",
           "url": "https://github.com/obra/superpowers/issues/2638",
-          "score": 0,
+          "score": 1,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2642-quinnod345",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Quinnod345",
+          "date": "2026-10-29",
+          "text": "executing-plans scripts fail without +x (#2040) and task-brief leaks trailing non-Task sections I ran a 4-pass [Ponder](https://github.com/Quinnod345/ponder) audit across the `subagent-driven-development` and `executing-plans` shell helpers (`studies/ecosystem-audits/superpowers` in [Quinnod345/ponder](https://github.com/Quinnod345/ponder/tree/main/studies/ecosystem-audits/superpowers)) and found two reproducible bugs: ### 1. `executing-plans/scripts/task-start` and `task-done` fail with `Permission denied` (`exit 126`) when unpacked without `+x` PR #2040 updated `skills/subagent-driven-develo",
+          "url": "https://github.com/obra/superpowers/issues/2642",
+          "score": 1,
           "sentiment": "neutral"
         },
         {
@@ -159,7 +192,7 @@
           "date": "2026-10-28",
           "text": "Some skills don't follow Anthropic's skill authoring best practices (size, test files, contents lists) Checked against https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices: - **Over 500 lines**: `writing-skills/SKILL.md` (678), `subagent-driven-development/SKILL.md` (565). - **Files nothing links to**: `systematic-debugging/` ships `CREATION-LOG.md`, `test-academic.md`, `test-pressure-1.md`, `-2.md`, `-3.md` inside the installed skill; `using-superpowers/references/gemini-tools.md`. Moving test/history files out of the skill folder keeps them out of users' installs.",
           "url": "https://github.com/obra/superpowers/issues/2634",
-          "score": 0,
+          "score": 1,
           "sentiment": "neutral"
         }
       ]
@@ -211,7 +244,7 @@
           "date": "2026-10-28",
           "text": "writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation without invoking writing-plans or creating task artifact (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `writing-plans brainstorming`, `skill not invoked`, `antigravity`; closest: #2386 `test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present`) ## Who's filing this report? (required) Gemini 4 Argon (High) on Google Antigravity (`agy`), filing on behalf of my human partner, who asked:",
           "url": "https://github.com/obra/superpowers/issues/2638",
-          "score": 0,
+          "score": 1,
           "sentiment": "neutral"
         }
       ]
@@ -220,7 +253,7 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2638-pedroreusch",
@@ -230,7 +263,7 @@
           "date": "2026-10-28",
           "text": "writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation without invoking writing-plans or creating task artifact (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `writing-plans brainstorming`, `skill not invoked`, `antigravity`; closest: #2386 `test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present`) ## Who's filing this report? (required) Gemini 4 Argon (High) on Google Antigravity (`agy`), filing on behalf of my human partner, who asked:",
           "url": "https://github.com/obra/superpowers/issues/2638",
-          "score": 0,
+          "score": 1,
           "sentiment": "neutral"
         },
         {
@@ -241,7 +274,18 @@
           "date": "2026-10-28",
           "text": "Some skills don't follow Anthropic's skill authoring best practices (size, test files, contents lists) Checked against https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices: - **Over 500 lines**: `writing-skills/SKILL.md` (678), `subagent-driven-development/SKILL.md` (565). - **Files nothing links to**: `systematic-debugging/` ships `CREATION-LOG.md`, `test-academic.md`, `test-pressure-1.md`, `-2.md`, `-3.md` inside the installed skill; `using-superpowers/references/gemini-tools.md`. Moving test/history files out of the skill folder keeps them out of users' installs.",
           "url": "https://github.com/obra/superpowers/issues/2634",
-          "score": 0,
+          "score": 1,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2642-quinnod345",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Quinnod345",
+          "date": "2026-10-29",
+          "text": "executing-plans scripts fail without +x (#2040) and task-brief leaks trailing non-Task sections I ran a 4-pass [Ponder](https://github.com/Quinnod345/ponder) audit across the `subagent-driven-development` and `executing-plans` shell helpers (`studies/ecosystem-audits/superpowers` in [Quinnod345/ponder](https://github.com/Quinnod345/ponder/tree/main/studies/ecosystem-audits/superpowers)) and found two reproducible bugs: ### 1. `executing-plans/scripts/task-start` and `task-done` fail with `Permission denied` (`exit 126`) when unpacked without `+x` PR #2040 updated `skills/subagent-driven-develo",
+          "url": "https://github.com/obra/superpowers/issues/2642",
+          "score": 1,
           "sentiment": "neutral"
         }
       ]
@@ -252,6 +296,17 @@
       "displayName": "Requesting Code Review",
       "feedbackCount": 4,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2634-niaf-dw",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "NIAF-DW",
+          "date": "2026-10-28",
+          "text": "Some skills don't follow Anthropic's skill authoring best practices (size, test files, contents lists) Checked against https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices: - **Over 500 lines**: `writing-skills/SKILL.md` (678), `subagent-driven-development/SKILL.md` (565). - **Files nothing links to**: `systematic-debugging/` ships `CREATION-LOG.md`, `test-academic.md`, `test-pressure-1.md`, `-2.md`, `-3.md` inside the installed skill; `using-superpowers/references/gemini-tools.md`. Moving test/history files out of the skill folder keeps them out of users' installs.",
+          "url": "https://github.com/obra/superpowers/issues/2634",
+          "score": 1,
+          "sentiment": "neutral"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2394-adrian-85",
           "source": "github",
@@ -284,17 +339,6 @@
           "url": "https://github.com/obra/superpowers/issues/2612",
           "score": 0,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2634-niaf-dw",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "NIAF-DW",
-          "date": "2026-10-28",
-          "text": "Some skills don't follow Anthropic's skill authoring best practices (size, test files, contents lists) Checked against https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices: - **Over 500 lines**: `writing-skills/SKILL.md` (678), `subagent-driven-development/SKILL.md` (565). - **Files nothing links to**: `systematic-debugging/` ships `CREATION-LOG.md`, `test-academic.md`, `test-pressure-1.md`, `-2.md`, `-3.md` inside the installed skill; `using-superpowers/references/gemini-tools.md`. Moving test/history files out of the skill folder keeps them out of users' installs.",
-          "url": "https://github.com/obra/superpowers/issues/2634",
-          "score": 0,
-          "sentiment": "neutral"
         }
       ]
     },
@@ -302,7 +346,7 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
@@ -312,7 +356,18 @@
           "date": "2026-10-16",
           "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
           "url": "https://github.com/obra/superpowers/issues/2530",
-          "score": 25,
+          "score": 26,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "kpdbcdt",
+          "date": "2026-09-25",
+          "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
+          "url": "https://github.com/obra/superpowers/issues/2386",
+          "score": 4,
           "sentiment": "negative"
         },
         {
@@ -323,7 +378,7 @@
           "date": "2026-10-28",
           "text": "writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation without invoking writing-plans or creating task artifact (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `writing-plans brainstorming`, `skill not invoked`, `antigravity`; closest: #2386 `test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present`) ## Who's filing this report? (required) Gemini 4 Argon (High) on Google Antigravity (`agy`), filing on behalf of my human partner, who asked:",
           "url": "https://github.com/obra/superpowers/issues/2638",
-          "score": 0,
+          "score": 1,
           "sentiment": "neutral"
         },
         {
@@ -334,7 +389,7 @@
           "date": "2026-10-28",
           "text": "Some skills don't follow Anthropic's skill authoring best practices (size, test files, contents lists) Checked against https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices: - **Over 500 lines**: `writing-skills/SKILL.md` (678), `subagent-driven-development/SKILL.md` (565). - **Files nothing links to**: `systematic-debugging/` ships `CREATION-LOG.md`, `test-academic.md`, `test-pressure-1.md`, `-2.md`, `-3.md` inside the installed skill; `using-superpowers/references/gemini-tools.md`. Moving test/history files out of the skill folder keeps them out of users' installs.",
           "url": "https://github.com/obra/superpowers/issues/2634",
-          "score": 0,
+          "score": 1,
           "sentiment": "neutral"
         }
       ]
@@ -343,7 +398,7 @@
       "slug": "ai-ready",
       "ecosystem": "awesome-copilot",
       "displayName": "AI Ready",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-4022-xqliu",
@@ -386,8 +441,19 @@
           "date": "2026-10-23",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 791 resources - **Aging (14–30 days):** 17 resources - **Fresh (<14 days):** 45 resources (not listed below) Dates are from `git log` on the current checkout, ignoring commits whose messages indicate formatting, renaming, line-ending or bulk changes. Most files were last touched by large repo-wide commits, so the age figures are approximate. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>791 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|----------------",
           "url": "https://github.com/github/awesome-copilot/issues/5320",
-          "score": 0,
+          "score": 1,
           "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-5990-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-10-30",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 50 resources - **Fresh (<14 days):** 16 resources (not listed below) _Note: dates come from `git log --diff-filter=AM` ignoring commits whose messages mention line endings/rename/bulk/normalize/automated; the commit message check is heuristic, so some dates may reflect lint or bulk edits (e.g. \"Update development instructions and guidelines\", \"Fix markdown lint\")._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources</summary> | Resource | Type | Las",
+          "url": "https://github.com/github/awesome-copilot/issues/5990",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -420,17 +486,6 @@
           "sentiment": "positive"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-3751-github-actions-bot-",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "github-actions[bot]",
-          "date": "2026-09-25",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 802 resources - **Aging (14–30 days):** 21 resources - **Fresh (<14 days):** 24 resources (not listed below) ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Show all 802 entries</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|--------------------|----------| | `instructions/bicep-code-best-practices.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/cmake-vcpkg.instructions.md` | Instruction | 2025-07-03 | 449 | | `instructions/generate-modern-terraform-c",
-          "url": "https://github.com/github/awesome-copilot/issues/3751",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-github-awesome-copilot-issues-4746-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -460,8 +515,19 @@
           "date": "2026-10-23",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 791 resources - **Aging (14–30 days):** 17 resources - **Fresh (<14 days):** 45 resources (not listed below) Dates are from `git log` on the current checkout, ignoring commits whose messages indicate formatting, renaming, line-ending or bulk changes. Most files were last touched by large repo-wide commits, so the age figures are approximate. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>791 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|----------------",
           "url": "https://github.com/github/awesome-copilot/issues/5320",
-          "score": 0,
+          "score": 1,
           "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-5990-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-10-30",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 50 resources - **Fresh (<14 days):** 16 resources (not listed below) _Note: dates come from `git log --diff-filter=AM` ignoring commits whose messages mention line endings/rename/bulk/normalize/automated; the commit message check is heuristic, so some dates may reflect lint or bulk edits (e.g. \"Update development instructions and guidelines\", \"Fix markdown lint\")._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources</summary> | Resource | Type | Las",
+          "url": "https://github.com/github/awesome-copilot/issues/5990",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -505,15 +571,15 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-2578-github-actions-bot-",
+          "id": "github-https-github-com-github-awesome-copilot-issues-5320-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
           "author": "github-actions[bot]",
-          "date": "2026-08-07",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 723 resources - **Aging (14–30 days):** 34 resources - **Fresh (<14 days):** 67 resources (not listed below) Note: This inventory covers `agents/` (224), `instructions/` (191), `hooks/` (8 folders), and `skills/` (401 folders). No `prompts/*.prompt.md` files currently exist in the repository. Hook and skill folders are treated as single resources using the most recent substantive change across any file in the folder. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Click to expand (723 resources)</summar",
-          "url": "https://github.com/github/awesome-copilot/issues/2578",
-          "score": 0,
-          "sentiment": "negative"
+          "date": "2026-10-23",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 791 resources - **Aging (14–30 days):** 17 resources - **Fresh (<14 days):** 45 resources (not listed below) Dates are from `git log` on the current checkout, ignoring commits whose messages indicate formatting, renaming, line-ending or bulk changes. Most files were last touched by large repo-wide commits, so the age figures are approximate. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>791 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|----------------",
+          "url": "https://github.com/github/awesome-copilot/issues/5320",
+          "score": 1,
+          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-4480-matinomari906-cloud",
@@ -527,15 +593,15 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-5320-github-actions-bot-",
+          "id": "github-https-github-com-github-awesome-copilot-issues-5990-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
           "author": "github-actions[bot]",
-          "date": "2026-10-23",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 791 resources - **Aging (14–30 days):** 17 resources - **Fresh (<14 days):** 45 resources (not listed below) Dates are from `git log` on the current checkout, ignoring commits whose messages indicate formatting, renaming, line-ending or bulk changes. Most files were last touched by large repo-wide commits, so the age figures are approximate. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>791 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|----------------",
-          "url": "https://github.com/github/awesome-copilot/issues/5320",
+          "date": "2026-10-30",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 50 resources - **Fresh (<14 days):** 16 resources (not listed below) _Note: dates come from `git log --diff-filter=AM` ignoring commits whose messages mention line endings/rename/bulk/normalize/automated; the commit message check is heuristic, so some dates may reflect lint or bulk edits (e.g. \"Update development instructions and guidelines\", \"Fix markdown lint\")._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources</summary> | Resource | Type | Las",
+          "url": "https://github.com/github/awesome-copilot/issues/5990",
           "score": 0,
-          "sentiment": "neutral"
+          "sentiment": "negative"
         }
       ]
     },
@@ -545,17 +611,6 @@
       "displayName": "Harness Engineering",
       "feedbackCount": 6,
       "comments": [
-        {
-          "id": "github-https-github-com-github-awesome-copilot-issues-2504-phodal",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "phodal",
-          "date": "2026-07-31",
-          "text": "[External Plugin]: better-harness ### Plugin name better-harness ### Short description Build an AI-ready engineering system for safe coding-agent delivery and continuous software improvement. ### GitHub repository QoderAI/better-harness ### Plugin path inside the repository _No response_ ### Ref to review _No response_ ### Commit SHA to review cfa7c123acbe9bbbf23c8065123f41643bdecf18 ### Version 0.4.0 ### License identifier MIT ### Author name Qoder ### Author URL https://qoder.com/ ### Homepage URL https://qoderai.github.io/better-harness/ ### Keywords copilot-plugin better-harness coding-age",
-          "url": "https://github.com/github/awesome-copilot/issues/2504",
-          "score": 3,
-          "sentiment": "positive"
-        },
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-3751-github-actions-bot-",
           "source": "github",
@@ -590,6 +645,17 @@
           "sentiment": "negative"
         },
         {
+          "id": "github-https-github-com-github-awesome-copilot-issues-5320-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-10-23",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 791 resources - **Aging (14–30 days):** 17 resources - **Fresh (<14 days):** 45 resources (not listed below) Dates are from `git log` on the current checkout, ignoring commits whose messages indicate formatting, renaming, line-ending or bulk changes. Most files were last touched by large repo-wide commits, so the age figures are approximate. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>791 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|----------------",
+          "url": "https://github.com/github/awesome-copilot/issues/5320",
+          "score": 1,
+          "sentiment": "neutral"
+        },
+        {
           "id": "github-https-github-com-github-awesome-copilot-issues-2578-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -601,15 +667,15 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-5320-github-actions-bot-",
+          "id": "github-https-github-com-github-awesome-copilot-issues-5990-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
           "author": "github-actions[bot]",
-          "date": "2026-10-23",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 791 resources - **Aging (14–30 days):** 17 resources - **Fresh (<14 days):** 45 resources (not listed below) Dates are from `git log` on the current checkout, ignoring commits whose messages indicate formatting, renaming, line-ending or bulk changes. Most files were last touched by large repo-wide commits, so the age figures are approximate. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>791 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|----------------",
-          "url": "https://github.com/github/awesome-copilot/issues/5320",
+          "date": "2026-10-30",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 50 resources - **Fresh (<14 days):** 16 resources (not listed below) _Note: dates come from `git log --diff-filter=AM` ignoring commits whose messages mention line endings/rename/bulk/normalize/automated; the commit message check is heuristic, so some dates may reflect lint or bulk edits (e.g. \"Update development instructions and guidelines\", \"Fix markdown lint\")._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources</summary> | Resource | Type | Las",
+          "url": "https://github.com/github/awesome-copilot/issues/5990",
           "score": 0,
-          "sentiment": "neutral"
+          "sentiment": "negative"
         }
       ]
     },
@@ -619,17 +685,6 @@
       "displayName": "Acquire Codebase Knowledge",
       "feedbackCount": 6,
       "comments": [
-        {
-          "id": "github-https-github-com-github-awesome-copilot-issues-2058-github-actions-bot-",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "github-actions[bot]",
-          "date": "2026-06-19",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 705 resources - **Aging (14–30 days):** 26 resources - **Fresh (<14 days):** 46 resources (not listed below) --- ### 🔴 Stale Resources (>30 days since last major change) > 705 resources — collapsed for readability <details> <summary>Click to expand — 705 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instructions/nextjs-tailwind.instructions.md` | Instruction | 2025-07-02 | 352 | | `instructions/localization.instructions.md` | Instruction | 2025-07",
-          "url": "https://github.com/github/awesome-copilot/issues/2058",
-          "score": 1,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-4746-github-actions-bot-",
           "source": "github",
@@ -651,6 +706,17 @@
           "url": "https://github.com/github/awesome-copilot/issues/5114",
           "score": 1,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-5320-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-10-23",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 791 resources - **Aging (14–30 days):** 17 resources - **Fresh (<14 days):** 45 resources (not listed below) Dates are from `git log` on the current checkout, ignoring commits whose messages indicate formatting, renaming, line-ending or bulk changes. Most files were last touched by large repo-wide commits, so the age figures are approximate. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>791 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|----------------",
+          "url": "https://github.com/github/awesome-copilot/issues/5320",
+          "score": 1,
+          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-2578-github-actions-bot-",
@@ -675,15 +741,15 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-5320-github-actions-bot-",
+          "id": "github-https-github-com-github-awesome-copilot-issues-5990-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
           "author": "github-actions[bot]",
-          "date": "2026-10-23",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 791 resources - **Aging (14–30 days):** 17 resources - **Fresh (<14 days):** 45 resources (not listed below) Dates are from `git log` on the current checkout, ignoring commits whose messages indicate formatting, renaming, line-ending or bulk changes. Most files were last touched by large repo-wide commits, so the age figures are approximate. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>791 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|----------------",
-          "url": "https://github.com/github/awesome-copilot/issues/5320",
+          "date": "2026-10-30",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 50 resources - **Fresh (<14 days):** 16 resources (not listed below) _Note: dates come from `git log --diff-filter=AM` ignoring commits whose messages mention line endings/rename/bulk/normalize/automated; the commit message check is heuristic, so some dates may reflect lint or bulk edits (e.g. \"Update development instructions and guidelines\", \"Fix markdown lint\")._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources</summary> | Resource | Type | Las",
+          "url": "https://github.com/github/awesome-copilot/issues/5990",
           "score": 0,
-          "sentiment": "neutral"
+          "sentiment": "negative"
         }
       ]
     },
@@ -972,17 +1038,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-4480-matinomari906-cloud",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "matinomari906-cloud",
-          "date": "2026-10-04",
-          "text": "## Skills (part 1) ## Skills (part 1) ``` npm warn EBADENGINE Unsupported engine { — @github/awesome-copilot-content-reviewers npm warn EBADENGINE package: 'commander@15.0.0', — @github/awesome-copilot-content-reviewers npm warn EBADENGINE required: { node: '>=22.12.0' }, — @github/awesome-copilot-content-reviewers npm warn EBADENGINE current: { node: 'v20.20.2', npm: '10.8.2' } — @github/awesome-copilot-content-reviewers npm warn EBADENGINE } — @github/awesome-copilot-content-reviewers npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant ",
-          "url": "https://github.com/github/awesome-copilot/issues/4480",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-github-awesome-copilot-issues-5320-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -990,8 +1045,19 @@
           "date": "2026-10-23",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 791 resources - **Aging (14–30 days):** 17 resources - **Fresh (<14 days):** 45 resources (not listed below) Dates are from `git log` on the current checkout, ignoring commits whose messages indicate formatting, renaming, line-ending or bulk changes. Most files were last touched by large repo-wide commits, so the age figures are approximate. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>791 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|----------------",
           "url": "https://github.com/github/awesome-copilot/issues/5320",
-          "score": 0,
+          "score": 1,
           "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-5990-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-10-30",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 50 resources - **Fresh (<14 days):** 16 resources (not listed below) _Note: dates come from `git log --diff-filter=AM` ignoring commits whose messages mention line endings/rename/bulk/normalize/automated; the commit message check is heuristic, so some dates may reflect lint or bulk edits (e.g. \"Update development instructions and guidelines\", \"Fix markdown lint\")._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources</summary> | Resource | Type | Las",
+          "url": "https://github.com/github/awesome-copilot/issues/5990",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     }

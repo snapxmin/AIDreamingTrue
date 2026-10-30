@@ -1,28 +1,5 @@
 {
-  "generatedAt": "2026-10-29T06:08:25Z",
+  "generatedAt": "2026-10-30T06:08:49Z",
   "isBaselineRun": false,
-  "changes": [
-    {
-      "type": "added",
-      "key": "awesome-copilot/pr-artifact-explorer",
-      "ecosystem": "awesome-copilot",
-      "slug": "pr-artifact-explorer",
-      "displayName": "Pr Artifact Explorer",
-      "summary": "生态新增 Skill：Pr Artifact Explorer",
-      "detectedAt": "2026-10-29T06:09:39Z"
-    },
-    {
-      "type": "updated",
-      "key": "anthropics-skills/mcp-builder",
-      "ecosystem": "anthropics-skills",
-      "slug": "mcp-builder",
-      "displayName": "Mcp Builder",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/mcp-builder",
-      "detectedAt": "2026-10-29T06:09:39Z"
-    }
-  ]
+  "changes": []
 }
