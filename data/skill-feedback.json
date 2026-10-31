@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-30T06:11:43Z",
+    "lastUpdated": "2026-10-31T06:06:47Z",
     "skillCount": 20,
-    "totalComments": 81,
+    "totalComments": 77,
     "sources": [
       "hacker-news",
       "github",
@@ -15,7 +15,7 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
@@ -25,7 +25,7 @@
           "date": "2026-10-16",
           "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
           "url": "https://github.com/obra/superpowers/issues/2530",
-          "score": 26,
+          "score": 27,
           "sentiment": "negative"
         },
         {
@@ -38,17 +38,6 @@
           "url": "https://github.com/obra/superpowers/issues/2638",
           "score": 1,
           "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2634-niaf-dw",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "NIAF-DW",
-          "date": "2026-10-28",
-          "text": "Some skills don't follow Anthropic's skill authoring best practices (size, test files, contents lists) Checked against https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices: - **Over 500 lines**: `writing-skills/SKILL.md` (678), `subagent-driven-development/SKILL.md` (565). - **Files nothing links to**: `systematic-debugging/` ships `CREATION-LOG.md`, `test-academic.md`, `test-pressure-1.md`, `-2.md`, `-3.md` inside the installed skill; `using-superpowers/references/gemini-tools.md`. Moving test/history files out of the skill folder keeps them out of users' installs.",
-          "url": "https://github.com/obra/superpowers/issues/2634",
-          "score": 1,
-          "sentiment": "neutral"
         }
       ]
     },
@@ -56,7 +45,7 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
@@ -101,6 +90,17 @@
           "url": "https://github.com/obra/superpowers/issues/2635",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2651-swmacdonald",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "swmacdonald",
+          "date": "2026-10-30",
+          "text": "subagent-driven-development: task reviewer isn't told to flag a report with no RED evidence - [x] I searched existing issues and this has not been proposed before (related: #994, fixed by #1065, which made implementers report RED evidence; #1961; #2046; #2146; #2452) ## Who's filing this request? Claude (Opus 5.5, in Claude Code), on behalf of the owner of this GitHub account, who owns the project where this came up. Their instruction was to check for similar issues and then \"Draft it\"; they reviewed this text and wrote the summary below before it was filed. ## Human-authored summary I'm build",
+          "url": "https://github.com/obra/superpowers/issues/2651",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -108,7 +108,7 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
@@ -129,17 +129,6 @@
           "date": "2026-10-28",
           "text": "writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation without invoking writing-plans or creating task artifact (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `writing-plans brainstorming`, `skill not invoked`, `antigravity`; closest: #2386 `test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present`) ## Who's filing this report? (required) Gemini 4 Argon (High) on Google Antigravity (`agy`), filing on behalf of my human partner, who asked:",
           "url": "https://github.com/obra/superpowers/issues/2638",
-          "score": 1,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2642-quinnod345",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Quinnod345",
-          "date": "2026-10-29",
-          "text": "executing-plans scripts fail without +x (#2040) and task-brief leaks trailing non-Task sections I ran a 4-pass [Ponder](https://github.com/Quinnod345/ponder) audit across the `subagent-driven-development` and `executing-plans` shell helpers (`studies/ecosystem-audits/superpowers` in [Quinnod345/ponder](https://github.com/Quinnod345/ponder/tree/main/studies/ecosystem-audits/superpowers)) and found two reproducible bugs: ### 1. `executing-plans/scripts/task-start` and `task-done` fail with `Permission denied` (`exit 126`) when unpacked without `+x` PR #2040 updated `skills/subagent-driven-develo",
-          "url": "https://github.com/obra/superpowers/issues/2642",
           "score": 1,
           "sentiment": "neutral"
         },
@@ -278,15 +267,15 @@
           "sentiment": "neutral"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2642-quinnod345",
+          "id": "github-https-github-com-obra-superpowers-issues-2651-swmacdonald",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "Quinnod345",
-          "date": "2026-10-29",
-          "text": "executing-plans scripts fail without +x (#2040) and task-brief leaks trailing non-Task sections I ran a 4-pass [Ponder](https://github.com/Quinnod345/ponder) audit across the `subagent-driven-development` and `executing-plans` shell helpers (`studies/ecosystem-audits/superpowers` in [Quinnod345/ponder](https://github.com/Quinnod345/ponder/tree/main/studies/ecosystem-audits/superpowers)) and found two reproducible bugs: ### 1. `executing-plans/scripts/task-start` and `task-done` fail with `Permission denied` (`exit 126`) when unpacked without `+x` PR #2040 updated `skills/subagent-driven-develo",
-          "url": "https://github.com/obra/superpowers/issues/2642",
-          "score": 1,
-          "sentiment": "neutral"
+          "author": "swmacdonald",
+          "date": "2026-10-30",
+          "text": "subagent-driven-development: task reviewer isn't told to flag a report with no RED evidence - [x] I searched existing issues and this has not been proposed before (related: #994, fixed by #1065, which made implementers report RED evidence; #1961; #2046; #2146; #2452) ## Who's filing this request? Claude (Opus 5.5, in Claude Code), on behalf of the owner of this GitHub account, who owns the project where this came up. Their instruction was to check for similar issues and then \"Draft it\"; they reviewed this text and wrote the summary below before it was filed. ## Human-authored summary I'm build",
+          "url": "https://github.com/obra/superpowers/issues/2651",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -346,7 +335,7 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
@@ -356,17 +345,17 @@
           "date": "2026-10-16",
           "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
           "url": "https://github.com/obra/superpowers/issues/2530",
-          "score": 26,
+          "score": 27,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
+          "id": "github-https-github-com-obra-superpowers-issues-2083-dknight927",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "kpdbcdt",
-          "date": "2026-09-25",
-          "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
-          "url": "https://github.com/obra/superpowers/issues/2386",
+          "author": "DKnight927",
+          "date": "2026-08-04",
+          "text": "Pi extension bootstrap only injected on the first turn: agent_end fires per run, not per session ## Summary The Pi extension (`.pi/extensions/superpowers.ts`) gates bootstrap injection on `session_start`/`session_compact` and clears it on `agent_end`: ```ts pi.on(\"session_start\", async () => { injectBootstrap = true; }); pi.on(\"session_compact\", async () => { injectBootstrap = true; }); pi.on(\"agent_end\", async () => { injectBootstrap = false; }); ``` The intent (per `tests/pi/test-pi-extension.mjs`: *\"startup bootstrap should clear after agent_end\"*) is that `agent_end` marks the end of a **s",
+          "url": "https://github.com/obra/superpowers/issues/2083",
           "score": 4,
           "sentiment": "negative"
         },
@@ -378,17 +367,6 @@
           "date": "2026-10-28",
           "text": "writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation without invoking writing-plans or creating task artifact (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `writing-plans brainstorming`, `skill not invoked`, `antigravity`; closest: #2386 `test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present`) ## Who's filing this report? (required) Gemini 4 Argon (High) on Google Antigravity (`agy`), filing on behalf of my human partner, who asked:",
           "url": "https://github.com/obra/superpowers/issues/2638",
-          "score": 1,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2634-niaf-dw",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "NIAF-DW",
-          "date": "2026-10-28",
-          "text": "Some skills don't follow Anthropic's skill authoring best practices (size, test files, contents lists) Checked against https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices: - **Over 500 lines**: `writing-skills/SKILL.md` (678), `subagent-driven-development/SKILL.md` (565). - **Files nothing links to**: `systematic-debugging/` ships `CREATION-LOG.md`, `test-academic.md`, `test-pressure-1.md`, `-2.md`, `-3.md` inside the installed skill; `using-superpowers/references/gemini-tools.md`. Moving test/history files out of the skill folder keeps them out of users' installs.",
-          "url": "https://github.com/obra/superpowers/issues/2634",
           "score": 1,
           "sentiment": "neutral"
         }
@@ -461,7 +439,7 @@
       "slug": "security-review",
       "ecosystem": "awesome-copilot",
       "displayName": "Security Review",
-      "feedbackCount": 6,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-3147-omarmohelal",
@@ -473,17 +451,6 @@
           "url": "https://github.com/github/awesome-copilot/issues/3147",
           "score": 3,
           "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-github-awesome-copilot-issues-4800-notaaaronfr",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "notaaaronfr",
-          "date": "2026-10-09",
-          "text": "[External Plugin]: ship-ready <!-- external-plugin-submission --> Thanks for submitting a public external plugin. ### Plugin name ship-ready ### Short description Makes AI-written code production-ready, with proof: behavior lock-in with characterization tests, OWASP 2025 / CWE Top 25 security review, oracle-tested Big-O optimization, property and mutation testing, and a READY / NOT_READY verdict computed from a quality gate. ### GitHub repository notaaaronfr/ship-ready ### Plugin path inside the repository _No response_ ### Ref to review v2.6.1 ### Commit SHA to review eade177e5801c81d8e8b3066",
-          "url": "https://github.com/github/awesome-copilot/issues/4800",
-          "score": 3,
-          "sentiment": "positive"
         },
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-4746-github-actions-bot-",
@@ -787,7 +754,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 6,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1706-stillpimpn",
@@ -821,17 +788,6 @@
           "url": "https://github.com/anthropics/skills/issues/1957",
           "score": 0,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-2078-somayehghasemi13688-ship-it",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "somayehghasemi13688-ship-it",
-          "date": "2026-10-25",
-          "text": "skills/skill-creator/SKILL.md None",
-          "url": "https://github.com/anthropics/skills/issues/2078",
-          "score": 0,
-          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-anthropics-skills-issues-2084-benharvey-bis",

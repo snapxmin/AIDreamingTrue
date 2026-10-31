@@ -1,5 +1,20 @@
 [
   {
+    "id": "auto-claude-v2-1-316",
+    "title": "Claude Code v2.1.316 发布",
+    "date": "2026-10-31",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "Anthropic",
+    "heat": 75,
+    "growth": 8,
+    "sourceTier": "A",
+    "summary": "## What's changed  - Added `CLAUDE_CODE_DISABLE_ULTRATHINK`, which turns the `ultrathink` keyword off - Added pooled group budgets to the Claude apps gateway: one monthly budget that a group's members",
+    "whyImportant": "Claude Code 持续高频迭代，终端 Agent 能力不断增强。",
+    "impact": "关注 release notes 中的权限、MCP 和 subagent 相关变更。",
+    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.316"
+  },
+  {
     "id": "auto-claude-v2-1-314",
     "title": "Claude Code v2.1.314 发布",
     "date": "2026-10-30",
