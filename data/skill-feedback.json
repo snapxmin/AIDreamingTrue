@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-31T06:06:47Z",
+    "lastUpdated": "2026-11-01T06:36:44Z",
     "skillCount": 20,
-    "totalComments": 77,
+    "totalComments": 76,
     "sources": [
       "hacker-news",
       "github",
@@ -335,7 +335,7 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
@@ -358,17 +358,6 @@
           "url": "https://github.com/obra/superpowers/issues/2083",
           "score": 4,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2638-pedroreusch",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "PedroReusCh",
-          "date": "2026-10-28",
-          "text": "writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation without invoking writing-plans or creating task artifact (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `writing-plans brainstorming`, `skill not invoked`, `antigravity`; closest: #2386 `test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present`) ## Who's filing this report? (required) Gemini 4 Argon (High) on Google Antigravity (`agy`), filing on behalf of my human partner, who asked:",
-          "url": "https://github.com/obra/superpowers/issues/2638",
-          "score": 1,
-          "sentiment": "neutral"
         }
       ]
     },
