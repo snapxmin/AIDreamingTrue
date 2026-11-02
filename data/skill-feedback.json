@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-01T06:36:44Z",
+    "lastUpdated": "2026-11-02T06:35:55Z",
     "skillCount": 20,
-    "totalComments": 76,
+    "totalComments": 80,
     "sources": [
       "hacker-news",
       "github",
@@ -15,7 +15,7 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
@@ -29,15 +29,26 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2638-pedroreusch",
+          "id": "github-https-github-com-obra-superpowers-issues-1803-larya-dot-eu",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "PedroReusCh",
-          "date": "2026-10-28",
-          "text": "writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation without invoking writing-plans or creating task artifact (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `writing-plans brainstorming`, `skill not invoked`, `antigravity`; closest: #2386 `test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present`) ## Who's filing this report? (required) Gemini 4 Argon (High) on Google Antigravity (`agy`), filing on behalf of my human partner, who asked:",
-          "url": "https://github.com/obra/superpowers/issues/2638",
-          "score": 1,
-          "sentiment": "neutral"
+          "author": "larya-dot-eu",
+          "date": "2026-06-18",
+          "text": "Checkpoints - Adversarial Review > [!TIP] > **TL;DR:** The Superpowers skill is great, but adding a adversarial review phase — forcing Claude to \"break the plan\" before execution — consistently catches real bugs that the built-in self-review misses. <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [X] I searched existing issues and this has not been proposed before ## What problem does this solve? <!-- Describe the problem from your own experience. W",
+          "url": "https://github.com/obra/superpowers/issues/1803",
+          "score": 8,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2653-rrojasmsa",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "rrojasmsa",
+          "date": "2026-11-01",
+          "text": "brainstorming / writing-plans: a spec's assumptions about existing data are never checked against the data, so tests and review pass on the assumption **Skills:** `brainstorming`, `writing-plans` (Self-Review item 4, Review Focus), `test-driven-development`. Checked against 7.0.0. - [x] I searched existing issues and PRs. Adjacent: #2553 checks the spec's claims about today's *code*; #2468 asks plans to name a service's row cap. Neither asks for a check of the claims a design makes about the *data already stored*, or about the production volume. ## What problem does this solve? Three failures ",
+          "url": "https://github.com/obra/superpowers/issues/2653",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -45,7 +56,7 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 5,
+      "feedbackCount": 6,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
@@ -101,6 +112,17 @@
           "url": "https://github.com/obra/superpowers/issues/2651",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2653-rrojasmsa",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "rrojasmsa",
+          "date": "2026-11-01",
+          "text": "brainstorming / writing-plans: a spec's assumptions about existing data are never checked against the data, so tests and review pass on the assumption **Skills:** `brainstorming`, `writing-plans` (Self-Review item 4, Review Focus), `test-driven-development`. Checked against 7.0.0. - [x] I searched existing issues and PRs. Adjacent: #2553 checks the spec's claims about today's *code*; #2468 asks plans to name a service's row cap. Neither asks for a check of the claims a design makes about the *data already stored*, or about the production volume. ## What problem does this solve? Three failures ",
+          "url": "https://github.com/obra/superpowers/issues/2653",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -108,8 +130,19 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1803-larya-dot-eu",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "larya-dot-eu",
+          "date": "2026-06-18",
+          "text": "Checkpoints - Adversarial Review > [!TIP] > **TL;DR:** The Superpowers skill is great, but adding a adversarial review phase — forcing Claude to \"break the plan\" before execution — consistently catches real bugs that the built-in self-review misses. <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [X] I searched existing issues and this has not been proposed before ## What problem does this solve? <!-- Describe the problem from your own experience. W",
+          "url": "https://github.com/obra/superpowers/issues/1803",
+          "score": 8,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
           "source": "github",
@@ -133,13 +166,13 @@
           "sentiment": "neutral"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2635-strongastheunion",
+          "id": "github-https-github-com-obra-superpowers-issues-2653-rrojasmsa",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "strongastheunion",
-          "date": "2026-10-28",
-          "text": "test-driven-development / writing-plans: synthetic mock fixtures substitute for real intake while claiming 100% test completion (Antigravity) # test-driven-development / writing-plans: synthetic mock fixtures substitute for real intake while claiming 100% test completion (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: synthetic fixture, test-driven-development mock; closest: #2539) ## Environment (required) | Field | Value | Provenance / supporting evidence | |-------|-------|-------------------------------| | Superpowers version | 2026-10-26 (Antigravity ",
-          "url": "https://github.com/obra/superpowers/issues/2635",
+          "author": "rrojasmsa",
+          "date": "2026-11-01",
+          "text": "brainstorming / writing-plans: a spec's assumptions about existing data are never checked against the data, so tests and review pass on the assumption **Skills:** `brainstorming`, `writing-plans` (Self-Review item 4, Review Focus), `test-driven-development`. Checked against 7.0.0. - [x] I searched existing issues and PRs. Adjacent: #2553 checks the spec's claims about today's *code*; #2468 asks plans to name a service's row cap. Neither asks for a check of the claims a design makes about the *data already stored*, or about the production volume. ## What problem does this solve? Three failures ",
+          "url": "https://github.com/obra/superpowers/issues/2653",
           "score": 0,
           "sentiment": "negative"
         }
@@ -335,7 +368,7 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
@@ -346,6 +379,17 @@
           "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
           "url": "https://github.com/obra/superpowers/issues/2530",
           "score": 27,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1803-larya-dot-eu",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "larya-dot-eu",
+          "date": "2026-06-18",
+          "text": "Checkpoints - Adversarial Review > [!TIP] > **TL;DR:** The Superpowers skill is great, but adding a adversarial review phase — forcing Claude to \"break the plan\" before execution — consistently catches real bugs that the built-in self-review misses. <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [X] I searched existing issues and this has not been proposed before ## What problem does this solve? <!-- Describe the problem from your own experience. W",
+          "url": "https://github.com/obra/superpowers/issues/1803",
+          "score": 8,
           "sentiment": "negative"
         },
         {

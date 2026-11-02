@@ -1,5 +1,138 @@
 {
-  "generatedAt": "2026-11-01T06:33:18Z",
+  "generatedAt": "2026-11-02T06:33:34Z",
   "isBaselineRun": false,
-  "changes": []
+  "changes": [
+    {
+      "type": "added",
+      "key": "awesome-copilot/embedding-anisotropy-check",
+      "ecosystem": "awesome-copilot",
+      "slug": "embedding-anisotropy-check",
+      "displayName": "Embedding Anisotropy Check",
+      "summary": "生态新增 Skill：Embedding Anisotropy Check",
+      "detectedAt": "2026-11-02T06:34:24Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/lightweight-charts-react-components",
+      "ecosystem": "awesome-copilot",
+      "slug": "lightweight-charts-react-components",
+      "displayName": "Lightweight Charts React Components",
+      "summary": "生态新增 Skill：Lightweight Charts React Components",
+      "detectedAt": "2026-11-02T06:34:24Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/openapi-to-application-java-spring-boot",
+      "ecosystem": "awesome-copilot",
+      "slug": "openapi-to-application-java-spring-boot",
+      "displayName": "Openapi To Application Java Spring Boot",
+      "summary": "生态新增 Skill：Openapi To Application Java Spring Boot",
+      "detectedAt": "2026-11-02T06:34:24Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/ponder",
+      "ecosystem": "awesome-copilot",
+      "slug": "ponder",
+      "displayName": "Ponder",
+      "summary": "生态新增 Skill：Ponder",
+      "detectedAt": "2026-11-02T06:34:24Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/spring-boot-4-migration",
+      "ecosystem": "awesome-copilot",
+      "slug": "spring-boot-4-migration",
+      "displayName": "Spring Boot 4 Migration",
+      "summary": "生态新增 Skill：Spring Boot 4 Migration",
+      "detectedAt": "2026-11-02T06:34:24Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/spring-observability",
+      "ecosystem": "awesome-copilot",
+      "slug": "spring-observability",
+      "displayName": "Spring Observability",
+      "summary": "生态新增 Skill：Spring Observability",
+      "detectedAt": "2026-11-02T06:34:24Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/spring-security",
+      "ecosystem": "awesome-copilot",
+      "slug": "spring-security",
+      "displayName": "Spring Security",
+      "summary": "生态新增 Skill：Spring Security",
+      "detectedAt": "2026-11-02T06:34:24Z"
+    },
+    {
+      "type": "updated",
+      "key": "awesome-copilot/copilot-sdk",
+      "ecosystem": "awesome-copilot",
+      "slug": "copilot-sdk",
+      "displayName": "Copilot Sdk",
+      "changedFields": [
+        "content",
+        "description"
+      ],
+      "summary": "description 更新：Build agentic applications with the Microsoft Copilot SDK, transitioning from GitHub Copilot SDK. Us…",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/copilot-sdk",
+      "detectedAt": "2026-11-02T06:34:24Z"
+    },
+    {
+      "type": "updated",
+      "key": "awesome-copilot/create-spring-boot-java-project",
+      "ecosystem": "awesome-copilot",
+      "slug": "create-spring-boot-java-project",
+      "displayName": "Create Spring Boot Java Project",
+      "changedFields": [
+        "content",
+        "description"
+      ],
+      "summary": "description 更新：Create a new Spring Boot Java project (Maven or Gradle) from start.spring.io with sensible defaults …",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/create-spring-boot-java-project",
+      "detectedAt": "2026-11-02T06:34:24Z"
+    },
+    {
+      "type": "updated",
+      "key": "awesome-copilot/java-springboot",
+      "ecosystem": "awesome-copilot",
+      "slug": "java-springboot",
+      "displayName": "Java Springboot",
+      "changedFields": [
+        "content",
+        "description"
+      ],
+      "summary": "description 更新：Write and review application code in an existing Spring Boot 3/4 project: controllers, validation an…",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/java-springboot",
+      "detectedAt": "2026-11-02T06:34:24Z"
+    },
+    {
+      "type": "updated",
+      "key": "awesome-copilot/mcp-security-audit",
+      "ecosystem": "awesome-copilot",
+      "slug": "mcp-security-audit",
+      "displayName": "Mcp Security Audit",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/mcp-security-audit",
+      "detectedAt": "2026-11-02T06:34:24Z"
+    },
+    {
+      "type": "updated",
+      "key": "awesome-copilot/spring-boot-testing",
+      "ecosystem": "awesome-copilot",
+      "slug": "spring-boot-testing",
+      "displayName": "Spring Boot Testing",
+      "changedFields": [
+        "content",
+        "description"
+      ],
+      "summary": "description 更新：Expert Spring Boot testing specialist that selects the best testing techniques for your situation: t…",
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/spring-boot-testing",
+      "detectedAt": "2026-11-02T06:34:24Z"
+    }
+  ]
 }
