@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-02T07:03:11Z",
+    "lastUpdated": "2026-11-03T07:07:30Z",
     "skillCount": 20,
-    "totalComments": 80,
+    "totalComments": 63,
     "sources": [
       "hacker-news",
       "github",
@@ -15,40 +15,18 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 3,
+      "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
+          "id": "github-https-github-com-obra-superpowers-issues-2655-dougss",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "mbcrawfo",
-          "date": "2026-10-16",
-          "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
-          "url": "https://github.com/obra/superpowers/issues/2530",
-          "score": 27,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1803-larya-dot-eu",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "larya-dot-eu",
-          "date": "2026-06-18",
-          "text": "Checkpoints - Adversarial Review > [!TIP] > **TL;DR:** The Superpowers skill is great, but adding a adversarial review phase — forcing Claude to \"break the plan\" before execution — consistently catches real bugs that the built-in self-review misses. <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [X] I searched existing issues and this has not been proposed before ## What problem does this solve? <!-- Describe the problem from your own experience. W",
-          "url": "https://github.com/obra/superpowers/issues/1803",
-          "score": 8,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2653-rrojasmsa",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "rrojasmsa",
-          "date": "2026-11-01",
-          "text": "brainstorming / writing-plans: a spec's assumptions about existing data are never checked against the data, so tests and review pass on the assumption **Skills:** `brainstorming`, `writing-plans` (Self-Review item 4, Review Focus), `test-driven-development`. Checked against 7.0.0. - [x] I searched existing issues and PRs. Adjacent: #2553 checks the spec's claims about today's *code*; #2468 asks plans to name a service's row cap. Neither asks for a check of the claims a design makes about the *data already stored*, or about the production volume. ## What problem does this solve? Three failures ",
-          "url": "https://github.com/obra/superpowers/issues/2653",
-          "score": 0,
-          "sentiment": "negative"
+          "author": "dougss",
+          "date": "2026-11-03",
+          "text": "brainstorming: a request that says \"I've decided everything, don't ask, just write the code\" is treated as approval and skips the HARD-GATE Hi, and thanks for superpowers. We vendor `brainstorming` (6.3.0) in a private plugin and measure it with `claude plugin eval`. We found a reproducible way the HARD-GATE gets skipped and we are proposing a one-sentence fix. **What happens.** When the request is large, detailed, and explicitly says the design is decided and the assistant should not ask (\"I've decided all of this, no need to ask anything: write the code now\"), the skill sometimes treats the ",
+          "url": "https://github.com/obra/superpowers/issues/2655",
+          "score": 1,
+          "sentiment": "neutral"
         }
       ]
     },
@@ -56,18 +34,18 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 6,
+      "feedbackCount": 3,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
+          "id": "github-https-github-com-obra-superpowers-issues-2634-niaf-dw",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "kpdbcdt",
-          "date": "2026-09-25",
-          "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
-          "url": "https://github.com/obra/superpowers/issues/2386",
-          "score": 4,
-          "sentiment": "negative"
+          "author": "NIAF-DW",
+          "date": "2026-10-28",
+          "text": "Some skills don't follow Anthropic's skill authoring best practices (size, test files, contents lists) Checked against https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices: - **Over 500 lines**: `writing-skills/SKILL.md` (678), `subagent-driven-development/SKILL.md` (565). - **Files nothing links to**: `systematic-debugging/` ships `CREATION-LOG.md`, `test-academic.md`, `test-pressure-1.md`, `-2.md`, `-3.md` inside the installed skill; `using-superpowers/references/gemini-tools.md`. Moving test/history files out of the skill folder keeps them out of users' installs.",
+          "url": "https://github.com/obra/superpowers/issues/2634",
+          "score": 2,
+          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2638-pedroreusch",
@@ -77,51 +55,18 @@
           "date": "2026-10-28",
           "text": "writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation without invoking writing-plans or creating task artifact (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `writing-plans brainstorming`, `skill not invoked`, `antigravity`; closest: #2386 `test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present`) ## Who's filing this report? (required) Gemini 4 Argon (High) on Google Antigravity (`agy`), filing on behalf of my human partner, who asked:",
           "url": "https://github.com/obra/superpowers/issues/2638",
-          "score": 1,
+          "score": 2,
           "sentiment": "neutral"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2634-niaf-dw",
+          "id": "github-https-github-com-obra-superpowers-issues-2628-kadirkayarr-beep",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "NIAF-DW",
-          "date": "2026-10-28",
-          "text": "Some skills don't follow Anthropic's skill authoring best practices (size, test files, contents lists) Checked against https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices: - **Over 500 lines**: `writing-skills/SKILL.md` (678), `subagent-driven-development/SKILL.md` (565). - **Files nothing links to**: `systematic-debugging/` ships `CREATION-LOG.md`, `test-academic.md`, `test-pressure-1.md`, `-2.md`, `-3.md` inside the installed skill; `using-superpowers/references/gemini-tools.md`. Moving test/history files out of the skill folder keeps them out of users' installs.",
-          "url": "https://github.com/obra/superpowers/issues/2634",
+          "author": "kadirkayarr-beep",
+          "date": "2026-10-25",
+          "text": "diagnosing-superpowers: a fix request in the same turn as the skill is left after an intake question (Cursor) Title: diagnosing-superpowers: a fix request in the same turn as the skill is left after an intake question (Cursor) - [x] I searched existing issues and this is not a duplicate (searched: \"diagnosing-superpowers fix\"; \"diagnosing\"; closest: #2510 executing-plans claimed a phase done with verify lines unmet, and #2386 test-driven-development not invoked for a plain add-a-function request) ## Environment (required) | Field | Value | Provenance / supporting evidence | |-------|-------|--",
+          "url": "https://github.com/obra/superpowers/issues/2628",
           "score": 1,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2635-strongastheunion",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "strongastheunion",
-          "date": "2026-10-28",
-          "text": "test-driven-development / writing-plans: synthetic mock fixtures substitute for real intake while claiming 100% test completion (Antigravity) # test-driven-development / writing-plans: synthetic mock fixtures substitute for real intake while claiming 100% test completion (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: synthetic fixture, test-driven-development mock; closest: #2539) ## Environment (required) | Field | Value | Provenance / supporting evidence | |-------|-------|-------------------------------| | Superpowers version | 2026-10-26 (Antigravity ",
-          "url": "https://github.com/obra/superpowers/issues/2635",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2651-swmacdonald",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "swmacdonald",
-          "date": "2026-10-30",
-          "text": "subagent-driven-development: task reviewer isn't told to flag a report with no RED evidence - [x] I searched existing issues and this has not been proposed before (related: #994, fixed by #1065, which made implementers report RED evidence; #1961; #2046; #2146; #2452) ## Who's filing this request? Claude (Opus 5.5, in Claude Code), on behalf of the owner of this GitHub account, who owns the project where this came up. Their instruction was to check for similar issues and then \"Draft it\"; they reviewed this text and wrote the summary below before it was filed. ## Human-authored summary I'm build",
-          "url": "https://github.com/obra/superpowers/issues/2651",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2653-rrojasmsa",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "rrojasmsa",
-          "date": "2026-11-01",
-          "text": "brainstorming / writing-plans: a spec's assumptions about existing data are never checked against the data, so tests and review pass on the assumption **Skills:** `brainstorming`, `writing-plans` (Self-Review item 4, Review Focus), `test-driven-development`. Checked against 7.0.0. - [x] I searched existing issues and PRs. Adjacent: #2553 checks the spec's claims about today's *code*; #2468 asks plans to name a service's row cap. Neither asks for a check of the claims a design makes about the *data already stored*, or about the production volume. ## What problem does this solve? Three failures ",
-          "url": "https://github.com/obra/superpowers/issues/2653",
-          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -130,82 +75,15 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 4,
-      "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1803-larya-dot-eu",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "larya-dot-eu",
-          "date": "2026-06-18",
-          "text": "Checkpoints - Adversarial Review > [!TIP] > **TL;DR:** The Superpowers skill is great, but adding a adversarial review phase — forcing Claude to \"break the plan\" before execution — consistently catches real bugs that the built-in self-review misses. <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [X] I searched existing issues and this has not been proposed before ## What problem does this solve? <!-- Describe the problem from your own experience. W",
-          "url": "https://github.com/obra/superpowers/issues/1803",
-          "score": 8,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "kpdbcdt",
-          "date": "2026-09-25",
-          "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
-          "url": "https://github.com/obra/superpowers/issues/2386",
-          "score": 4,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2638-pedroreusch",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "PedroReusCh",
-          "date": "2026-10-28",
-          "text": "writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation without invoking writing-plans or creating task artifact (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `writing-plans brainstorming`, `skill not invoked`, `antigravity`; closest: #2386 `test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present`) ## Who's filing this report? (required) Gemini 4 Argon (High) on Google Antigravity (`agy`), filing on behalf of my human partner, who asked:",
-          "url": "https://github.com/obra/superpowers/issues/2638",
-          "score": 1,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2653-rrojasmsa",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "rrojasmsa",
-          "date": "2026-11-01",
-          "text": "brainstorming / writing-plans: a spec's assumptions about existing data are never checked against the data, so tests and review pass on the assumption **Skills:** `brainstorming`, `writing-plans` (Self-Review item 4, Review Focus), `test-driven-development`. Checked against 7.0.0. - [x] I searched existing issues and PRs. Adjacent: #2553 checks the spec's claims about today's *code*; #2468 asks plans to name a service's row cap. Neither asks for a check of the claims a design makes about the *data already stored*, or about the production volume. ## What problem does this solve? Three failures ",
-          "url": "https://github.com/obra/superpowers/issues/2653",
-          "score": 0,
-          "sentiment": "negative"
-        }
-      ]
+      "feedbackCount": 0,
+      "comments": []
     },
     "superpowers/systematic-debugging": {
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 3,
+      "feedbackCount": 1,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2377-haruntekin89",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "haruntekin89",
-          "date": "2026-09-24",
-          "text": "Pressure-language bootstrap and narration suppressors degrade behavior on current Claude models Found during a prompt audit of my global Claude Code setup (target models: Claude Fable 5.1 as main model, Claude Opus 5.5 for subagents). Line numbers are against `main` today. Happy to turn any of this into a PR. ## 1. The session-start bootstrap is a pressure booster, injected into every context `hooks/session-start:27` wraps the whole `using-superpowers` skill in `<EXTREMELY_IMPORTANT>` and injects it on `startup|clear|compact`. The skill body (`skills/using-superpowers/SKILL.md:10-16`) says: > ",
-          "url": "https://github.com/obra/superpowers/issues/2377",
-          "score": 4,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2266-slowernet",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "slowernet",
-          "date": "2026-09-06",
-          "text": "Fixes keep creating new bugs because no skill requires tracing what a fix changes - [x] I searched existing issues and this has not been proposed before Closest prior art: #2145 B1 (enumerate readers of a stale field; the *root cause's* blast radius during diagnosis, where this is the *fix's*), #2264 §5 (re-run the objective check after a delegated edit; a dynamic check, where this is static), #2113 §4 (coverage gaps *between* tasks, not gaps *created by* a fix), PR #2198 (trace a bad value upstream to its producer; opposite direction), and closed #2066 (a \"blast radius\" row for spec self-revi",
-          "url": "https://github.com/obra/superpowers/issues/2266",
-          "score": 1,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2634-niaf-dw",
           "source": "github",
@@ -214,7 +92,7 @@
           "date": "2026-10-28",
           "text": "Some skills don't follow Anthropic's skill authoring best practices (size, test files, contents lists) Checked against https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices: - **Over 500 lines**: `writing-skills/SKILL.md` (678), `subagent-driven-development/SKILL.md` (565). - **Files nothing links to**: `systematic-debugging/` ships `CREATION-LOG.md`, `test-academic.md`, `test-pressure-1.md`, `-2.md`, `-3.md` inside the installed skill; `using-superpowers/references/gemini-tools.md`. Moving test/history files out of the skill folder keeps them out of users' installs.",
           "url": "https://github.com/obra/superpowers/issues/2634",
-          "score": 1,
+          "score": 2,
           "sentiment": "neutral"
         }
       ]
@@ -248,6 +126,17 @@
           "sentiment": "negative"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2638-pedroreusch",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "PedroReusCh",
+          "date": "2026-10-28",
+          "text": "writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation without invoking writing-plans or creating task artifact (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `writing-plans brainstorming`, `skill not invoked`, `antigravity`; closest: #2386 `test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present`) ## Who's filing this report? (required) Gemini 4 Argon (High) on Google Antigravity (`agy`), filing on behalf of my human partner, who asked:",
+          "url": "https://github.com/obra/superpowers/issues/2638",
+          "score": 2,
+          "sentiment": "neutral"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2451-abat-kek",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -257,17 +146,6 @@
           "url": "https://github.com/obra/superpowers/issues/2451",
           "score": 1,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2638-pedroreusch",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "PedroReusCh",
-          "date": "2026-10-28",
-          "text": "writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation without invoking writing-plans or creating task artifact (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `writing-plans brainstorming`, `skill not invoked`, `antigravity`; closest: #2386 `test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present`) ## Who's filing this report? (required) Gemini 4 Argon (High) on Google Antigravity (`agy`), filing on behalf of my human partner, who asked:",
-          "url": "https://github.com/obra/superpowers/issues/2638",
-          "score": 1,
-          "sentiment": "neutral"
         }
       ]
     },
@@ -275,40 +153,18 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 3,
+      "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2638-pedroreusch",
+          "id": "github-https-github-com-obra-superpowers-issues-2253-stevesims",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "PedroReusCh",
-          "date": "2026-10-28",
-          "text": "writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation without invoking writing-plans or creating task artifact (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `writing-plans brainstorming`, `skill not invoked`, `antigravity`; closest: #2386 `test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present`) ## Who's filing this report? (required) Gemini 4 Argon (High) on Google Antigravity (`agy`), filing on behalf of my human partner, who asked:",
-          "url": "https://github.com/obra/superpowers/issues/2638",
-          "score": 1,
+          "author": "stevesims",
+          "date": "2026-09-04",
+          "text": "subagent-driven-development: Finish deletes the only record of deferred findings — parked/deferred items need a durable export *Found in real use on a 16-task run of `subagent-driven-development` (2026-09-03/04). Filed upstream rather than patched locally because the plugin is version-pinned — a local edit is erased on the next update.* *Version: **superpowers 6.3.0, via the claude-plugins-official marketplace**.* --- ## What happened A 16-task plan ran end to end exactly as the skill prescribes. Along the way the per-task and final reviews produced about ten Minor findings — stale docstrings ",
+          "url": "https://github.com/obra/superpowers/issues/2253",
+          "score": 2,
           "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2634-niaf-dw",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "NIAF-DW",
-          "date": "2026-10-28",
-          "text": "Some skills don't follow Anthropic's skill authoring best practices (size, test files, contents lists) Checked against https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices: - **Over 500 lines**: `writing-skills/SKILL.md` (678), `subagent-driven-development/SKILL.md` (565). - **Files nothing links to**: `systematic-debugging/` ships `CREATION-LOG.md`, `test-academic.md`, `test-pressure-1.md`, `-2.md`, `-3.md` inside the installed skill; `using-superpowers/references/gemini-tools.md`. Moving test/history files out of the skill folder keeps them out of users' installs.",
-          "url": "https://github.com/obra/superpowers/issues/2634",
-          "score": 1,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2651-swmacdonald",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "swmacdonald",
-          "date": "2026-10-30",
-          "text": "subagent-driven-development: task reviewer isn't told to flag a report with no RED evidence - [x] I searched existing issues and this has not been proposed before (related: #994, fixed by #1065, which made implementers report RED evidence; #1961; #2046; #2146; #2452) ## Who's filing this request? Claude (Opus 5.5, in Claude Code), on behalf of the owner of this GitHub account, who owns the project where this came up. Their instruction was to check for similar issues and then \"Draft it\"; they reviewed this text and wrote the summary below before it was filed. ## Human-authored summary I'm build",
-          "url": "https://github.com/obra/superpowers/issues/2651",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -316,7 +172,7 @@
       "slug": "requesting-code-review",
       "ecosystem": "superpowers",
       "displayName": "Requesting Code Review",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2634-niaf-dw",
@@ -326,19 +182,8 @@
           "date": "2026-10-28",
           "text": "Some skills don't follow Anthropic's skill authoring best practices (size, test files, contents lists) Checked against https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices: - **Over 500 lines**: `writing-skills/SKILL.md` (678), `subagent-driven-development/SKILL.md` (565). - **Files nothing links to**: `systematic-debugging/` ships `CREATION-LOG.md`, `test-academic.md`, `test-pressure-1.md`, `-2.md`, `-3.md` inside the installed skill; `using-superpowers/references/gemini-tools.md`. Moving test/history files out of the skill folder keeps them out of users' installs.",
           "url": "https://github.com/obra/superpowers/issues/2634",
-          "score": 1,
+          "score": 2,
           "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2394-adrian-85",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "adrian-85",
-          "date": "2026-09-26",
-          "text": "pi extension: resources_discover re-adds every skill, defeating package skill filters (pi) - [x] I searched existing issues and this is not a duplicate (searched: `resources_discover`, `pi config skills`, `skill collision`, `package filter`; closest: #2083 — different bug, same file) ## Environment (required) | Field | Value | Provenance / supporting evidence | |-------|-------|-------| | Superpowers version | 6.4.2 (8ca22db) | current observation; `~/.pi/agent/git/github.com/obra/superpowers` checkout | | Harness | pi | current observation; `pi --version` | | Harness version | 0.87.1 | curren",
-          "url": "https://github.com/obra/superpowers/issues/2394",
-          "score": 0,
-          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2446-tjs0",
@@ -368,42 +213,8 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 3,
-      "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "mbcrawfo",
-          "date": "2026-10-16",
-          "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
-          "url": "https://github.com/obra/superpowers/issues/2530",
-          "score": 27,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1803-larya-dot-eu",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "larya-dot-eu",
-          "date": "2026-06-18",
-          "text": "Checkpoints - Adversarial Review > [!TIP] > **TL;DR:** The Superpowers skill is great, but adding a adversarial review phase — forcing Claude to \"break the plan\" before execution — consistently catches real bugs that the built-in self-review misses. <!-- BEFORE FILING: Search open AND closed issues. Many features have been requested before — some were implemented differently, some are in progress, and some were intentionally declined. --> - [X] I searched existing issues and this has not been proposed before ## What problem does this solve? <!-- Describe the problem from your own experience. W",
-          "url": "https://github.com/obra/superpowers/issues/1803",
-          "score": 8,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2083-dknight927",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "DKnight927",
-          "date": "2026-08-04",
-          "text": "Pi extension bootstrap only injected on the first turn: agent_end fires per run, not per session ## Summary The Pi extension (`.pi/extensions/superpowers.ts`) gates bootstrap injection on `session_start`/`session_compact` and clears it on `agent_end`: ```ts pi.on(\"session_start\", async () => { injectBootstrap = true; }); pi.on(\"session_compact\", async () => { injectBootstrap = true; }); pi.on(\"agent_end\", async () => { injectBootstrap = false; }); ``` The intent (per `tests/pi/test-pi-extension.mjs`: *\"startup bootstrap should clear after agent_end\"*) is that `agent_end` marks the end of a **s",
-          "url": "https://github.com/obra/superpowers/issues/2083",
-          "score": 4,
-          "sentiment": "negative"
-        }
-      ]
+      "feedbackCount": 0,
+      "comments": []
     },
     "awesome-copilot/ai-ready": {
       "slug": "ai-ready",
@@ -790,6 +601,17 @@
       "feedbackCount": 5,
       "comments": [
         {
+          "id": "github-https-github-com-anthropics-skills-issues-1478-bonyohana",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "bonyohana",
+          "date": "2026-07-25",
+          "text": "skill-creator run_eval: a crashed eval run is recorded as \"did not trigger\", so infrastructure failure scores as a PASS on negative queries (and steers run_loop's optimiser) ## Summary In `skills/skill-creator/scripts/run_eval.py`, a query whose eval run raises — a subprocess crash, a timeout, an API error — is recorded as `False`, the same value a legitimate \"the skill did not trigger\" produces. Nothing in the emitted payload distinguishes them. For a query with `should_trigger: false`, the pass criterion is `trigger_rate < threshold`, so **an infrastructure failure is scored as a correct res",
+          "url": "https://github.com/anthropics/skills/issues/1478",
+          "score": 3,
+          "sentiment": "neutral"
+        },
+        {
           "id": "github-https-github-com-anthropics-skills-issues-1706-stillpimpn",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -832,17 +654,6 @@
           "url": "https://github.com/anthropics/skills/issues/2084",
           "score": 0,
           "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-2090-niaf-dw",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "NIAF-DW",
-          "date": "2026-10-28",
-          "text": "docx/pdf/pptx/xlsx descriptions aren't third person; skill-creator is over 500 lines Checked against your own skill authoring best practices (https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices): - **Description point of view**: `docx`, `pdf`, `pptx` and `xlsx` descriptions start \"Use this skill…\". The guide asks for third person (\"Processes Excel files…\"). - **`skill-creator/SKILL.md` is 503 lines** (limit 500). - **No contents list (over 100 lines)**: `pdf/REFERENCE.md` (612), `pdf/FORMS.md` (294), `skill-creator/references/schemas.md` (514), `skill-creator/agent",
-          "url": "https://github.com/anthropics/skills/issues/2090",
-          "score": 0,
-          "sentiment": "positive"
         }
       ]
     },
