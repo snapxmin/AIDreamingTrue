@@ -1,19 +1,63 @@
 {
-  "generatedAt": "2026-11-03T07:03:59Z",
+  "generatedAt": "2026-11-04T06:48:09Z",
   "isBaselineRun": false,
   "changes": [
     {
-      "type": "updated",
-      "key": "awesome-copilot/gem-devops-guidelines",
+      "type": "added",
+      "key": "awesome-copilot/adobe-illustrator-integrations",
       "ecosystem": "awesome-copilot",
-      "slug": "gem-devops-guidelines",
-      "displayName": "Gem Devops Guidelines",
+      "slug": "adobe-illustrator-integrations",
+      "displayName": "Adobe Illustrator Integrations",
+      "summary": "生态新增 Skill：Adobe Illustrator Integrations",
+      "detectedAt": "2026-11-04T06:48:36Z"
+    },
+    {
+      "type": "added",
+      "key": "awesome-copilot/diagnose-ci-gate",
+      "ecosystem": "awesome-copilot",
+      "slug": "diagnose-ci-gate",
+      "displayName": "Diagnose Ci Gate",
+      "summary": "生态新增 Skill：Diagnose Ci Gate",
+      "detectedAt": "2026-11-04T06:48:36Z"
+    },
+    {
+      "type": "updated",
+      "key": "superpowers/brainstorming",
+      "ecosystem": "superpowers",
+      "slug": "brainstorming",
+      "displayName": "Brainstorming",
       "changedFields": [
         "content"
       ],
       "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/gem-devops-guidelines",
-      "detectedAt": "2026-11-03T07:05:49Z"
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/brainstorming",
+      "detectedAt": "2026-11-04T06:48:36Z"
+    },
+    {
+      "type": "updated",
+      "key": "superpowers/executing-plans",
+      "ecosystem": "superpowers",
+      "slug": "executing-plans",
+      "displayName": "Executing Plans",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/executing-plans",
+      "detectedAt": "2026-11-04T06:48:36Z"
+    },
+    {
+      "type": "updated",
+      "key": "superpowers/subagent-driven-development",
+      "ecosystem": "superpowers",
+      "slug": "subagent-driven-development",
+      "displayName": "Subagent Driven Development",
+      "changedFields": [
+        "content"
+      ],
+      "summary": "Skill 内容已更新",
+      "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/subagent-driven-development",
+      "detectedAt": "2026-11-04T06:48:36Z"
     }
   ]
 }
