@@ -30,6 +30,21 @@
     "sourceUrl": "https://github.blog/changelog/2026-11-03-byok-and-enterprise-custom-models-in-the-copilot-usage-api"
   },
   {
+    "id": "auto-gh-github-copilot-is-now-available-in-xcode",
+    "title": "GitHub Copilot is now available in Xcode&#8217;s coding assistant",
+    "date": "2026-11-04",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "GitHub",
+    "heat": 70,
+    "growth": 6,
+    "sourceTier": "A",
+    "summary": "GitHub 官方 Changelog 更新：GitHub Copilot is now available in Xcode&#8217;s coding assistant",
+    "whyImportant": "GitHub Copilot 生态动态，影响企业开发者工作流。",
+    "impact": "关注 Agent 模式、CLI 和企业策略相关变更。",
+    "sourceUrl": "https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant"
+  },
+  {
     "id": "auto-claude-v2-1-317",
     "title": "Claude Code v2.1.317 发布",
     "date": "2026-11-03",
