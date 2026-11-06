@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-05T07:11:09Z",
+    "lastUpdated": "2026-11-06T07:10:44Z",
     "skillCount": 20,
-    "totalComments": 80,
+    "totalComments": 82,
     "sources": [
       "hacker-news",
       "github",
@@ -15,7 +15,7 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
@@ -25,7 +25,18 @@
           "date": "2026-10-16",
           "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
           "url": "https://github.com/obra/superpowers/issues/2530",
-          "score": 30,
+          "score": 31,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "bbbbbbbbbbb114",
+          "date": "2026-05-31",
+          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
+          "url": "https://github.com/obra/superpowers/issues/1664",
+          "score": 4,
           "sentiment": "negative"
         },
         {
@@ -59,14 +70,14 @@
       "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2628-kadirkayarr-beep",
+          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "kadirkayarr-beep",
-          "date": "2026-10-25",
-          "text": "diagnosing-superpowers: a fix request in the same turn as the skill is left after an intake question (Cursor) Title: diagnosing-superpowers: a fix request in the same turn as the skill is left after an intake question (Cursor) - [x] I searched existing issues and this is not a duplicate (searched: \"diagnosing-superpowers fix\"; \"diagnosing\"; closest: #2510 executing-plans claimed a phase done with verify lines unmet, and #2386 test-driven-development not invoked for a plain add-a-function request) ## Environment (required) | Field | Value | Provenance / supporting evidence | |-------|-------|--",
-          "url": "https://github.com/obra/superpowers/issues/2628",
-          "score": 1,
+          "author": "bbbbbbbbbbb114",
+          "date": "2026-05-31",
+          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
+          "url": "https://github.com/obra/superpowers/issues/1664",
+          "score": 4,
           "sentiment": "negative"
         },
         {
@@ -100,14 +111,14 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2496-jnrod03-rgb",
+          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "jnrod03-rgb",
-          "date": "2026-10-10",
-          "text": "task-brief / task-start: only the English literal \"Task N\" is a task heading, and the error for a plan written in another language does not say so - [x] I searched existing issues and this is not a duplicate (adjacent: #2459 alphanumeric IDs \"Task A1\"; #2175, #2405, #2406, #2436 and PRs #2176, #2359, #2438, #2466 all edit the same awk line for numbering or fencing, and every one of them keeps the literal `Task`) ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 7.0.0 (`scripts/task-brief:32-33`; `executing-plans/scripts/task-start` delegates to it) | | Harne",
-          "url": "https://github.com/obra/superpowers/issues/2496",
-          "score": 0,
+          "author": "bbbbbbbbbbb114",
+          "date": "2026-05-31",
+          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
+          "url": "https://github.com/obra/superpowers/issues/1664",
+          "score": 4,
           "sentiment": "negative"
         },
         {
@@ -149,8 +160,19 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "bbbbbbbbbbb114",
+          "date": "2026-05-31",
+          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
+          "url": "https://github.com/obra/superpowers/issues/1664",
+          "score": 4,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2277-caarles00",
           "source": "github",
@@ -204,14 +226,14 @@
       "feedbackCount": 4,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2618-haiggoh",
+          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "haiggoh",
-          "date": "2026-10-25",
-          "text": "Six test-discipline gaps from heavy real-world use: mutation-survival diagnosis, escape-proof literals, cached editor diagnostics, e2e mock reloads, verdict-shaped output, seed-path invariants Six test-discipline gaps from heavy real-world use Context: several months of daily superpowers use across multiple projects (TDD, verification-before-completion). Six recurring failure shapes are not covered by the current skill text. Each is independent; happy to split into separate issues if that's easier to triage. Duplicate search done — nearest existing issues are #2146 (RED for the wrong reason), ",
-          "url": "https://github.com/obra/superpowers/issues/2618",
-          "score": 2,
+          "author": "bbbbbbbbbbb114",
+          "date": "2026-05-31",
+          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
+          "url": "https://github.com/obra/superpowers/issues/1664",
+          "score": 4,
           "sentiment": "negative"
         },
         {
@@ -253,7 +275,7 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 7,
+      "feedbackCount": 6,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1776-shssoichiro",
@@ -274,17 +296,6 @@
           "date": "2026-09-30",
           "text": "subagent-driven-development: a reported DONE does not mean the implementer's processes have exited - [x] I searched existing issues and this has not been proposed before (adjacent: #2113 finding 1 is about implementers stopping mid-run on long suites; this is about processes left alive *after* a reported DONE) ## What problem does this solve? An implementer reported DONE with a commit. The task notification carried \"stopped with background work of its own still running\". The process list showed a shell of that subagent blocked in `python -`, waiting on stdin. The same command line continued wi",
           "url": "https://github.com/obra/superpowers/issues/2430",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2459-rhuthik",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "rhuthik",
-          "date": "2026-10-05",
-          "text": "task-brief: alphanumeric task IDs (\"Task A1\", \"Task B2\") are never recognised as task headings - [x] I searched existing issues and this is not a duplicate. Related: #2175 and #2405 (anchoring of numeric IDs) and open PRs #2176 / #2359, which edit the same awk line but keep heading detection numeric-only (`Task[ \\t]+[0-9]+`), so they don't cover this case. ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | 6.4.1 (code unchanged on `dev` as of b1f8774) | | Harness (Claude Code, Cursor, etc.) | Claude Code | | Harness version | 2.1.286 | | Your model + version ",
-          "url": "https://github.com/obra/superpowers/issues/2459",
           "score": 0,
           "sentiment": "negative"
         },
@@ -341,15 +352,15 @@
       "feedbackCount": 4,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2634-niaf-dw",
+          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "NIAF-DW",
-          "date": "2026-10-28",
-          "text": "Some skills don't follow Anthropic's skill authoring best practices (size, test files, contents lists) Checked against https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices: - **Over 500 lines**: `writing-skills/SKILL.md` (678), `subagent-driven-development/SKILL.md` (565). - **Files nothing links to**: `systematic-debugging/` ships `CREATION-LOG.md`, `test-academic.md`, `test-pressure-1.md`, `-2.md`, `-3.md` inside the installed skill; `using-superpowers/references/gemini-tools.md`. Moving test/history files out of the skill folder keeps them out of users' installs.",
-          "url": "https://github.com/obra/superpowers/issues/2634",
-          "score": 2,
-          "sentiment": "neutral"
+          "author": "bbbbbbbbbbb114",
+          "date": "2026-05-31",
+          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
+          "url": "https://github.com/obra/superpowers/issues/1664",
+          "score": 4,
+          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2394-adrian-85",
@@ -390,7 +401,7 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
@@ -400,17 +411,28 @@
           "date": "2026-10-16",
           "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
           "url": "https://github.com/obra/superpowers/issues/2530",
-          "score": 30,
+          "score": 31,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
+          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "mattallshops",
-          "date": "2026-10-23",
-          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
-          "url": "https://github.com/obra/superpowers/issues/2612",
+          "author": "bbbbbbbbbbb114",
+          "date": "2026-05-31",
+          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
+          "url": "https://github.com/obra/superpowers/issues/1664",
+          "score": 4,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2666-estebanmunchjones2019",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "estebanmunchjones2019",
+          "date": "2026-11-05",
+          "text": "Hermes: allow manual skill use without automatic bootstrap injection ## Problem I use the Superpowers Hermes plugin because I want its skills available for manual invocation, but the plugin currently injects the `using-superpowers` bootstrap automatically on the first turn of every eligible Hermes session. That forces the Superpowers workflow into conversations where I want to use a skill selectively, and disabling the plugin removes the native skill registration as well. ## Requested behavior Please add a Hermes plugin setting that disables only the automatic `pre_llm_call` bootstrap injectio",
+          "url": "https://github.com/obra/superpowers/issues/2666",
           "score": 0,
           "sentiment": "negative"
         },
@@ -434,17 +456,6 @@
       "feedbackCount": 5,
       "comments": [
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-4022-xqliu",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "xqliu",
-          "date": "2026-09-26",
-          "text": "[External Plugin]: orbi ### Plugin name orbi ### Short description Turn a conversation into a GitHub Issue with acceptance criteria an agent can verify in the repo. The skill files it with the ai-ready label so Orbi implements, reviews, merges and releases it unattended. ### GitHub repository orbi-build/orbi ### Plugin path inside the repository integrations/claude-plugin ### Ref to review v0.5.49 ### Commit SHA to review 89f4659d87ba37dcc5f932516062f8cb7b4237d8 ### Version 0.1.4 ### License identifier AGPL-3.0 ### Author name Orbi ### Author URL https://github.com/xqliu ### Homepage URL https",
-          "url": "https://github.com/github/awesome-copilot/issues/4022",
-          "score": 4,
-          "sentiment": "positive"
-        },
-        {
           "id": "github-https-github-com-github-awesome-copilot-issues-4746-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -485,6 +496,17 @@
           "date": "2026-10-30",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 50 resources - **Fresh (<14 days):** 16 resources (not listed below) _Note: dates come from `git log --diff-filter=AM` ignoring commits whose messages mention line endings/rename/bulk/normalize/automated; the commit message check is heuristic, so some dates may reflect lint or bulk edits (e.g. \"Update development instructions and guidelines\", \"Fix markdown lint\")._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources</summary> | Resource | Type | Las",
           "url": "https://github.com/github/awesome-copilot/issues/5990",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-6277-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-11-06",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 793 resources - **Aging (14–30 days):** 58 resources - **Fresh (<14 days):** 33 resources (not listed below) Scope: agents, instructions, hooks, skills (`prompts/` does not exist). Commits whose messages indicate renames, formatting, line endings, or bulk/normalize updates were skipped when dating changes. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>793 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instructions/nextj",
+          "url": "https://github.com/github/awesome-copilot/issues/6277",
           "score": 0,
           "sentiment": "negative"
         }
@@ -497,17 +519,6 @@
       "feedbackCount": 5,
       "comments": [
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-3147-omarmohelal",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "omarmohelal",
-          "date": "2026-09-15",
-          "text": "[External Plugin]: sechelix-lite <!-- external-plugin-submission --> ### Plugin name sechelix-lite ### Short description Application-security review skill for codebases and pull requests you are authorized to assess. Maps trust boundaries, keeps issues as hypotheses until evidenced, runs a separate pass that tries to refute material findings, and ends with a release verdict. ### GitHub repository omarmohelal/SecHelix ### Plugin path inside the repository distributions/awesome-copilot ### Ref to review v4.0.0-alpha.6 ### Commit SHA to review a73be865fccf5cefcf98d4dcce2c2bf2b6afce2f ### Version ",
-          "url": "https://github.com/github/awesome-copilot/issues/3147",
-          "score": 3,
-          "sentiment": "neutral"
-        },
-        {
           "id": "github-https-github-com-github-awesome-copilot-issues-4746-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -548,6 +559,17 @@
           "date": "2026-10-30",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 50 resources - **Fresh (<14 days):** 16 resources (not listed below) _Note: dates come from `git log --diff-filter=AM` ignoring commits whose messages mention line endings/rename/bulk/normalize/automated; the commit message check is heuristic, so some dates may reflect lint or bulk edits (e.g. \"Update development instructions and guidelines\", \"Fix markdown lint\")._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources</summary> | Resource | Type | Las",
           "url": "https://github.com/github/awesome-copilot/issues/5990",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-6277-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-11-06",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 793 resources - **Aging (14–30 days):** 58 resources - **Fresh (<14 days):** 33 resources (not listed below) Scope: agents, instructions, hooks, skills (`prompts/` does not exist). Commits whose messages indicate renames, formatting, line endings, or bulk/normalize updates were skipped when dating changes. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>793 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instructions/nextj",
+          "url": "https://github.com/github/awesome-copilot/issues/6277",
           "score": 0,
           "sentiment": "negative"
         }
@@ -604,17 +626,6 @@
           "sentiment": "neutral"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-4480-matinomari906-cloud",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "matinomari906-cloud",
-          "date": "2026-10-04",
-          "text": "## Skills (part 1) ## Skills (part 1) ``` npm warn EBADENGINE Unsupported engine { — @github/awesome-copilot-content-reviewers npm warn EBADENGINE package: 'commander@15.0.0', — @github/awesome-copilot-content-reviewers npm warn EBADENGINE required: { node: '>=22.12.0' }, — @github/awesome-copilot-content-reviewers npm warn EBADENGINE current: { node: 'v20.20.2', npm: '10.8.2' } — @github/awesome-copilot-content-reviewers npm warn EBADENGINE } — @github/awesome-copilot-content-reviewers npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant ",
-          "url": "https://github.com/github/awesome-copilot/issues/4480",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-github-awesome-copilot-issues-5990-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -622,6 +633,17 @@
           "date": "2026-10-30",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 50 resources - **Fresh (<14 days):** 16 resources (not listed below) _Note: dates come from `git log --diff-filter=AM` ignoring commits whose messages mention line endings/rename/bulk/normalize/automated; the commit message check is heuristic, so some dates may reflect lint or bulk edits (e.g. \"Update development instructions and guidelines\", \"Fix markdown lint\")._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources</summary> | Resource | Type | Las",
           "url": "https://github.com/github/awesome-copilot/issues/5990",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-6277-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-11-06",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 793 resources - **Aging (14–30 days):** 58 resources - **Fresh (<14 days):** 33 resources (not listed below) Scope: agents, instructions, hooks, skills (`prompts/` does not exist). Commits whose messages indicate renames, formatting, line endings, or bulk/normalize updates were skipped when dating changes. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>793 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instructions/nextj",
+          "url": "https://github.com/github/awesome-copilot/issues/6277",
           "score": 0,
           "sentiment": "negative"
         }
@@ -678,17 +700,6 @@
           "sentiment": "neutral"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-2578-github-actions-bot-",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "github-actions[bot]",
-          "date": "2026-08-07",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 723 resources - **Aging (14–30 days):** 34 resources - **Fresh (<14 days):** 67 resources (not listed below) Note: This inventory covers `agents/` (224), `instructions/` (191), `hooks/` (8 folders), and `skills/` (401 folders). No `prompts/*.prompt.md` files currently exist in the repository. Hook and skill folders are treated as single resources using the most recent substantive change across any file in the folder. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Click to expand (723 resources)</summar",
-          "url": "https://github.com/github/awesome-copilot/issues/2578",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-github-awesome-copilot-issues-5990-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -696,6 +707,17 @@
           "date": "2026-10-30",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 50 resources - **Fresh (<14 days):** 16 resources (not listed below) _Note: dates come from `git log --diff-filter=AM` ignoring commits whose messages mention line endings/rename/bulk/normalize/automated; the commit message check is heuristic, so some dates may reflect lint or bulk edits (e.g. \"Update development instructions and guidelines\", \"Fix markdown lint\")._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources</summary> | Resource | Type | Las",
           "url": "https://github.com/github/awesome-copilot/issues/5990",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-6277-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-11-06",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 793 resources - **Aging (14–30 days):** 58 resources - **Fresh (<14 days):** 33 resources (not listed below) Scope: agents, instructions, hooks, skills (`prompts/` does not exist). Commits whose messages indicate renames, formatting, line endings, or bulk/normalize updates were skipped when dating changes. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>793 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instructions/nextj",
+          "url": "https://github.com/github/awesome-copilot/issues/6277",
           "score": 0,
           "sentiment": "negative"
         }
@@ -741,14 +763,14 @@
           "sentiment": "neutral"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-2578-github-actions-bot-",
+          "id": "github-https-github-com-github-awesome-copilot-issues-5990-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
           "author": "github-actions[bot]",
-          "date": "2026-08-07",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 723 resources - **Aging (14–30 days):** 34 resources - **Fresh (<14 days):** 67 resources (not listed below) Note: This inventory covers `agents/` (224), `instructions/` (191), `hooks/` (8 folders), and `skills/` (401 folders). No `prompts/*.prompt.md` files currently exist in the repository. Hook and skill folders are treated as single resources using the most recent substantive change across any file in the folder. ### 🔴 Stale Resources (>30 days since last major change) <details> <summary>Click to expand (723 resources)</summar",
-          "url": "https://github.com/github/awesome-copilot/issues/2578",
-          "score": 0,
+          "date": "2026-10-30",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 50 resources - **Fresh (<14 days):** 16 resources (not listed below) _Note: dates come from `git log --diff-filter=AM` ignoring commits whose messages mention line endings/rename/bulk/normalize/automated; the commit message check is heuristic, so some dates may reflect lint or bulk edits (e.g. \"Update development instructions and guidelines\", \"Fix markdown lint\")._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources</summary> | Resource | Type | Las",
+          "url": "https://github.com/github/awesome-copilot/issues/5990",
+          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -763,13 +785,13 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-5990-github-actions-bot-",
+          "id": "github-https-github-com-github-awesome-copilot-issues-6277-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
           "author": "github-actions[bot]",
-          "date": "2026-10-30",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 50 resources - **Fresh (<14 days):** 16 resources (not listed below) _Note: dates come from `git log --diff-filter=AM` ignoring commits whose messages mention line endings/rename/bulk/normalize/automated; the commit message check is heuristic, so some dates may reflect lint or bulk edits (e.g. \"Update development instructions and guidelines\", \"Fix markdown lint\")._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources</summary> | Resource | Type | Las",
-          "url": "https://github.com/github/awesome-copilot/issues/5990",
+          "date": "2026-11-06",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 793 resources - **Aging (14–30 days):** 58 resources - **Fresh (<14 days):** 33 resources (not listed below) Scope: agents, instructions, hooks, skills (`prompts/` does not exist). Commits whose messages indicate renames, formatting, line endings, or bulk/normalize updates were skipped when dating changes. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>793 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instructions/nextj",
+          "url": "https://github.com/github/awesome-copilot/issues/6277",
           "score": 0,
           "sentiment": "negative"
         }
@@ -1005,17 +1027,6 @@
       "feedbackCount": 4,
       "comments": [
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-4746-github-actions-bot-",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "github-actions[bot]",
-          "date": "2026-10-09",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 813 resources - **Aging (14–30 days):** 24 resources - **Fresh (<14 days):** 14 resources (not listed below) _Dates use the latest non-formatting/non-rename modification (or add) commit per file; folder resources use their newest file. Many dates are early because of history shape, so age alone is a weak signal._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>Show 813 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instru",
-          "url": "https://github.com/github/awesome-copilot/issues/4746",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-github-awesome-copilot-issues-5114-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -1045,6 +1056,17 @@
           "date": "2026-10-30",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 803 resources - **Aging (14–30 days):** 50 resources - **Fresh (<14 days):** 16 resources (not listed below) _Note: dates come from `git log --diff-filter=AM` ignoring commits whose messages mention line endings/rename/bulk/normalize/automated; the commit message check is heuristic, so some dates may reflect lint or bulk edits (e.g. \"Update development instructions and guidelines\", \"Fix markdown lint\")._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>803 stale resources</summary> | Resource | Type | Las",
           "url": "https://github.com/github/awesome-copilot/issues/5990",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-6277-github-actions-bot-",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "github-actions[bot]",
+          "date": "2026-11-06",
+          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 793 resources - **Aging (14–30 days):** 58 resources - **Fresh (<14 days):** 33 resources (not listed below) Scope: agents, instructions, hooks, skills (`prompts/` does not exist). Commits whose messages indicate renames, formatting, line endings, or bulk/normalize updates were skipped when dating changes. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>793 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instructions/nextj",
+          "url": "https://github.com/github/awesome-copilot/issues/6277",
           "score": 0,
           "sentiment": "negative"
         }

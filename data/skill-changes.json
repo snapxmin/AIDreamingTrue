@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-11-05T07:08:05Z",
+  "generatedAt": "2026-11-06T07:07:43Z",
   "isBaselineRun": false,
   "changes": [
     {
       "type": "updated",
-      "key": "awesome-copilot/dependabot",
+      "key": "awesome-copilot/git-commit",
       "ecosystem": "awesome-copilot",
-      "slug": "dependabot",
-      "displayName": "Dependabot",
+      "slug": "git-commit",
+      "displayName": "Git Commit",
       "changedFields": [
         "content"
       ],
       "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/dependabot",
-      "detectedAt": "2026-11-05T07:09:27Z"
+      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/git-commit",
+      "detectedAt": "2026-11-06T07:09:02Z"
     }
   ]
 }
