@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-07T06:21:25Z",
+    "lastUpdated": "2026-11-08T06:29:22Z",
     "skillCount": 20,
-    "totalComments": 87,
+    "totalComments": 82,
     "sources": [
       "hacker-news",
       "github",
@@ -47,7 +47,7 @@
           "date": "2026-11-05",
           "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
           "url": "https://github.com/obra/superpowers/issues/2665",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -99,7 +99,7 @@
           "date": "2026-11-05",
           "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
           "url": "https://github.com/obra/superpowers/issues/2665",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -119,7 +119,7 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 6,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
@@ -133,28 +133,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "bbbbbbbbbbb114",
-          "date": "2026-05-31",
-          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
-          "url": "https://github.com/obra/superpowers/issues/1664",
-          "score": 4,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2493-jnrod03-rgb",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jnrod03-rgb",
-          "date": "2026-10-10",
-          "text": "task-brief / dispatch: the plan's Global Constraints and Review Focus never reach the implementer, although the plan template says they apply to every task - [x] I searched existing issues and this is not a duplicate (adjacent: #2469 proposes a tool-only fallback whose task-brief step says \"copy the task's section, plus the Global Constraints\", which assumes the brief should carry them; #1746/#1715 introduced the section; the open task-brief issues #2405, #2406, #2436, #2459 are about heading matching, not about the header) ## Environment (required) | Field | Value | |-------|-------| | Superp",
-          "url": "https://github.com/obra/superpowers/issues/2493",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2665-napetrov",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -162,7 +140,7 @@
           "date": "2026-11-05",
           "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
           "url": "https://github.com/obra/superpowers/issues/2665",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -218,6 +196,17 @@
           "sentiment": "negative"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2665-napetrov",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "napetrov",
+          "date": "2026-11-05",
+          "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
+          "url": "https://github.com/obra/superpowers/issues/2665",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2485-gugaibarros-cpu",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -238,17 +227,6 @@
           "url": "https://github.com/obra/superpowers/issues/2583",
           "score": 0,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2665-napetrov",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "napetrov",
-          "date": "2026-11-05",
-          "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
-          "url": "https://github.com/obra/superpowers/issues/2665",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -256,7 +234,7 @@
       "slug": "verification-before-completion",
       "ecosystem": "superpowers",
       "displayName": "Verification Before Completion",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
@@ -270,15 +248,15 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2638-pedroreusch",
+          "id": "github-https-github-com-obra-superpowers-issues-2665-napetrov",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "PedroReusCh",
-          "date": "2026-10-28",
-          "text": "writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation without invoking writing-plans or creating task artifact (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `writing-plans brainstorming`, `skill not invoked`, `antigravity`; closest: #2386 `test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present`) ## Who's filing this report? (required) Gemini 4 Argon (High) on Google Antigravity (`agy`), filing on behalf of my human partner, who asked:",
-          "url": "https://github.com/obra/superpowers/issues/2638",
-          "score": 2,
-          "sentiment": "neutral"
+          "author": "napetrov",
+          "date": "2026-11-05",
+          "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
+          "url": "https://github.com/obra/superpowers/issues/2665",
+          "score": 1,
+          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2660-auza009",
@@ -288,17 +266,6 @@
           "date": "2026-11-04",
           "text": "verification-before-completion / receiving-code-review: no skill invoked while applying audit fixes; final summary claims completion with no per-result trust level (Claude Code) <html> <body> <!--StartFragment--><html><head></head><body><ul> <li>[x] I searched existing issues and this is not a duplicate (searched: \"verification-before-completion\", \"skill not invoked\", \"receiving-code-review\", \"completion claim without verification\", \"subagent skill not used\", \"summary confidence\"; closest: #2186 \"verification-before-completion: a distilled set of instrument-failure classes the gate doesn't yet",
           "url": "https://github.com/obra/superpowers/issues/2660",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2665-napetrov",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "napetrov",
-          "date": "2026-11-05",
-          "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
-          "url": "https://github.com/obra/superpowers/issues/2665",
           "score": 0,
           "sentiment": "negative"
         },
@@ -319,7 +286,7 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 6,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2435-abat-kek",
@@ -333,24 +300,13 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2207-kareemsasa",
+          "id": "github-https-github-com-obra-superpowers-issues-2665-napetrov",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "kareemsasa",
-          "date": "2026-08-26",
-          "text": "`finishing-a-development-branch` can silently delete an SDD workspace: ignored files don't make a worktree dirty **Skills:** `finishing-a-development-branch` (Step 6), interacting with `subagent-driven-development` **Versions:** reproduced against 6.3.0; the same code path and wording are in 6.2.0 **Environment:** git 2.55.0, Linux ## Summary Step 6 of `finishing-a-development-branch` protects uncommitted work by relying on `git worktree remove` to refuse: > **If removal is refused** (`contains modified or untracked files`): the worktree holds files that > exist nowhere else — uncommitted plan",
-          "url": "https://github.com/obra/superpowers/issues/2207",
-          "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2493-jnrod03-rgb",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jnrod03-rgb",
-          "date": "2026-10-10",
-          "text": "task-brief / dispatch: the plan's Global Constraints and Review Focus never reach the implementer, although the plan template says they apply to every task - [x] I searched existing issues and this is not a duplicate (adjacent: #2469 proposes a tool-only fallback whose task-brief step says \"copy the task's section, plus the Global Constraints\", which assumes the brief should carry them; #1746/#1715 introduced the section; the open task-brief issues #2405, #2406, #2436, #2459 are about heading matching, not about the header) ## Environment (required) | Field | Value | |-------|-------| | Superp",
-          "url": "https://github.com/obra/superpowers/issues/2493",
+          "author": "napetrov",
+          "date": "2026-11-05",
+          "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
+          "url": "https://github.com/obra/superpowers/issues/2665",
           "score": 1,
           "sentiment": "negative"
         },
@@ -407,6 +363,17 @@
           "sentiment": "negative"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2665-napetrov",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "napetrov",
+          "date": "2026-11-05",
+          "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
+          "url": "https://github.com/obra/superpowers/issues/2665",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2394-adrian-85",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -427,17 +394,6 @@
           "url": "https://github.com/obra/superpowers/issues/2612",
           "score": 0,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2665-napetrov",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "napetrov",
-          "date": "2026-11-05",
-          "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
-          "url": "https://github.com/obra/superpowers/issues/2665",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -445,19 +401,8 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "mbcrawfo",
-          "date": "2026-10-16",
-          "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
-          "url": "https://github.com/obra/superpowers/issues/2530",
-          "score": 34,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
           "source": "github",
@@ -470,14 +415,14 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
+          "id": "github-https-github-com-obra-superpowers-issues-2665-napetrov",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "bbbbbbbbbbb114",
-          "date": "2026-05-31",
-          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
-          "url": "https://github.com/obra/superpowers/issues/1664",
-          "score": 4,
+          "author": "napetrov",
+          "date": "2026-11-05",
+          "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
+          "url": "https://github.com/obra/superpowers/issues/2665",
+          "score": 1,
           "sentiment": "negative"
         },
         {
