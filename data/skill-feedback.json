@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-08T06:29:22Z",
+    "lastUpdated": "2026-11-09T07:02:00Z",
     "skillCount": 20,
     "totalComments": 82,
     "sources": [
@@ -18,25 +18,14 @@
       "feedbackCount": 4,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
+          "id": "github-https-github-com-obra-superpowers-issues-2398-obra",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "mbcrawfo",
-          "date": "2026-10-16",
-          "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
-          "url": "https://github.com/obra/superpowers/issues/2530",
-          "score": 34,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "bbbbbbbbbbb114",
-          "date": "2026-05-31",
-          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
-          "url": "https://github.com/obra/superpowers/issues/1664",
-          "score": 4,
+          "author": "obra",
+          "date": "2026-09-26",
+          "text": "Master tracking ticket for configurability Hi all! I'm Claude (Opus 5.5, running in Claude Code 2.1.283), helping @obra triage the issue tracker. While going through open issues and PRs, I found fourteen that each ask, in different ways, for superpowers to be more configurable: where it writes things, how its workflow runs, and where people can hook in their own steps. They're good requests, and many come from real friction. Taken one at a time, though, each would add its own env var, flag, config file or hook system, and superpowers would end up with a pile of unrelated knobs. Configurability",
+          "url": "https://github.com/obra/superpowers/issues/2398",
+          "score": 3,
           "sentiment": "negative"
         },
         {
@@ -47,7 +36,7 @@
           "date": "2026-11-05",
           "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
           "url": "https://github.com/obra/superpowers/issues/2665",
-          "score": 1,
+          "score": 2,
           "sentiment": "negative"
         },
         {
@@ -60,6 +49,17 @@
           "url": "https://github.com/obra/superpowers/issues/2676",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2678-ngochuyen0393-prog",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ngochuyen0393-prog",
+          "date": "2026-11-08",
+          "text": "Field report: superpowers as the front half of a two-framework shop (solo non-coder PM + AI crew, no remote) — critique welcome # Field report: superpowers as the front half of a two-framework shop (solo non-coder PM + AI crew, no remote) — critique welcome ## Context One-person shop: a **non-coder product owner** directing AI coding agents (Claude Code) to build a WeChat mini-program (consumer app with payment flows). Constraints that shape everything: Windows, **no git remote** (local-only repo), Chinese-language workflow, UI via the local WeChat component ecosystem rather than web stacks. #",
+          "url": "https://github.com/obra/superpowers/issues/2678",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -67,7 +67,7 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
@@ -99,6 +99,17 @@
           "date": "2026-11-05",
           "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
           "url": "https://github.com/obra/superpowers/issues/2665",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2651-swmacdonald",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "swmacdonald",
+          "date": "2026-10-30",
+          "text": "subagent-driven-development: task reviewer isn't told to flag a report with no RED evidence - [x] I searched existing issues and this has not been proposed before (related: #994, fixed by #1065, which made implementers report RED evidence; #1961; #2046; #2146; #2452) ## Who's filing this request? Claude (Opus 5.5, in Claude Code), on behalf of the owner of this GitHub account, who owns the project where this came up. Their instruction was to check for similar issues and then \"Draft it\"; they reviewed this text and wrote the summary below before it was filed. ## Human-authored summary I'm build",
+          "url": "https://github.com/obra/superpowers/issues/2651",
           "score": 1,
           "sentiment": "negative"
         },
@@ -133,6 +144,17 @@
           "sentiment": "negative"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2398-obra",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "obra",
+          "date": "2026-09-26",
+          "text": "Master tracking ticket for configurability Hi all! I'm Claude (Opus 5.5, running in Claude Code 2.1.283), helping @obra triage the issue tracker. While going through open issues and PRs, I found fourteen that each ask, in different ways, for superpowers to be more configurable: where it writes things, how its workflow runs, and where people can hook in their own steps. They're good requests, and many come from real friction. Taken one at a time, though, each would add its own env var, flag, config file or hook system, and superpowers would end up with a pile of unrelated knobs. Configurability",
+          "url": "https://github.com/obra/superpowers/issues/2398",
+          "score": 3,
+          "sentiment": "negative"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2665-napetrov",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -140,18 +162,7 @@
           "date": "2026-11-05",
           "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
           "url": "https://github.com/obra/superpowers/issues/2665",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2672-abat-kek",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "abat-kek",
-          "date": "2026-11-06",
-          "text": "writing-plans: effects triggered outside the app session (notifications, alarms, deep links) need \"signed out\" and \"other account\" cases in the plan - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) Claude Code (Claude Opus 5.5), filing on behalf of the account holder. Their instructions, verbatim (German) with translation: \"dann schick die upstream entwürfe los\" (\"then send off the upstream drafts\") and, after I pointed out that this template asks for a human-authored summary, \"Schreib du die zusammenfassung\" (\"you write the summar",
-          "url": "https://github.com/obra/superpowers/issues/2672",
-          "score": 0,
+          "score": 2,
           "sentiment": "negative"
         },
         {
@@ -203,7 +214,7 @@
           "date": "2026-11-05",
           "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
           "url": "https://github.com/obra/superpowers/issues/2665",
-          "score": 1,
+          "score": 2,
           "sentiment": "negative"
         },
         {
@@ -255,7 +266,7 @@
           "date": "2026-11-05",
           "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
           "url": "https://github.com/obra/superpowers/issues/2665",
-          "score": 1,
+          "score": 2,
           "sentiment": "negative"
         },
         {
@@ -289,17 +300,6 @@
       "feedbackCount": 5,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2435-abat-kek",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "abat-kek",
-          "date": "2026-09-30",
-          "text": "subagent-driven-development: in an unattended run, a step that needs a human at the screen should move to the next available tool, not be dropped - [x] I searched existing issues and this has not been proposed before (adjacent: #1664, closed in favour of the end-to-end testing direction in #374; this is narrower — what a controller rules about an existing manual step in a plan) ## What problem does this solve? In an unattended run, a plan step \"local visual check\" (a drag gesture in the browser) was ruled optional under **Rulings, not stalls**, and the implementer skipped it (\"nobody is watchi",
-          "url": "https://github.com/obra/superpowers/issues/2435",
-          "score": 3,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2665-napetrov",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -307,6 +307,17 @@
           "date": "2026-11-05",
           "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
           "url": "https://github.com/obra/superpowers/issues/2665",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2651-swmacdonald",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "swmacdonald",
+          "date": "2026-10-30",
+          "text": "subagent-driven-development: task reviewer isn't told to flag a report with no RED evidence - [x] I searched existing issues and this has not been proposed before (related: #994, fixed by #1065, which made implementers report RED evidence; #1961; #2046; #2146; #2452) ## Who's filing this request? Claude (Opus 5.5, in Claude Code), on behalf of the owner of this GitHub account, who owns the project where this came up. Their instruction was to check for similar issues and then \"Draft it\"; they reviewed this text and wrote the summary below before it was filed. ## Human-authored summary I'm build",
+          "url": "https://github.com/obra/superpowers/issues/2651",
           "score": 1,
           "sentiment": "negative"
         },
@@ -370,7 +381,7 @@
           "date": "2026-11-05",
           "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
           "url": "https://github.com/obra/superpowers/issues/2665",
-          "score": 1,
+          "score": 2,
           "sentiment": "negative"
         },
         {
@@ -401,19 +412,8 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 3,
+      "feedbackCount": 1,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "kpdbcdt",
-          "date": "2026-09-25",
-          "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
-          "url": "https://github.com/obra/superpowers/issues/2386",
-          "score": 6,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2665-napetrov",
           "source": "github",
@@ -422,18 +422,7 @@
           "date": "2026-11-05",
           "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
           "url": "https://github.com/obra/superpowers/issues/2665",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2676-brandonappnv",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "brandonappnv",
-          "date": "2026-11-07",
-          "text": "using-superpowers: no process skill invoked during a two-turn \"build a new tool\" task that ended blocked with nothing built (Claude Code desktop) - [x] I searched existing issues and this is not a duplicate (searched: \"skill not invoked\", \"brainstorming skipped\", \"CLAUDE.md user instructions skills ignored\"; closest: #2386 \"test-driven-development is not invoked for a plain 'add a function' request, even with the using-superpowers injection\", #2638 \"writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation\") ## Environment (required) | Field | Valu",
-          "url": "https://github.com/obra/superpowers/issues/2676",
-          "score": 0,
+          "score": 2,
           "sentiment": "negative"
         }
       ]
@@ -820,8 +809,19 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 5,
+      "feedbackCount": 6,
       "comments": [
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1352-liam-ai-reality",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "liam-ai-reality",
+          "date": "2026-06-25",
+          "text": "skill-creator: run_eval.py parallel workers cross-match skill UUIDs, producing false-negative trigger rates ## Summary `skills/skill-creator/scripts/run_eval.py` produces **systematically wrong (near-zero) trigger rates whenever `--num-workers > 1`** (the default is 10). The failure is silent: every query — including ones that obviously *should* trigger — comes back with `trigger_rate ≈ 0`, which then makes all `should_trigger: false` cases \"pass\" trivially and all `should_trigger: true` cases \"fail\". The aggregate looks like a bad skill description when in fact the *measurement* is broken. ##",
+          "url": "https://github.com/anthropics/skills/issues/1352",
+          "score": 5,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-anthropics-skills-issues-1706-stillpimpn",
           "source": "github",
