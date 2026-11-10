@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-09T07:32:16Z",
+    "lastUpdated": "2026-11-10T07:38:07Z",
     "skillCount": 20,
-    "totalComments": 82,
+    "totalComments": 91,
     "sources": [
       "hacker-news",
       "github",
@@ -15,19 +15,8 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 4,
+      "feedbackCount": 6,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2398-obra",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "obra",
-          "date": "2026-09-26",
-          "text": "Master tracking ticket for configurability Hi all! I'm Claude (Opus 5.5, running in Claude Code 2.1.283), helping @obra triage the issue tracker. While going through open issues and PRs, I found fourteen that each ask, in different ways, for superpowers to be more configurable: where it writes things, how its workflow runs, and where people can hook in their own steps. They're good requests, and many come from real friction. Taken one at a time, though, each would add its own env var, flag, config file or hook system, and superpowers would end up with a pile of unrelated knobs. Configurability",
-          "url": "https://github.com/obra/superpowers/issues/2398",
-          "score": 3,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2665-napetrov",
           "source": "github",
@@ -36,29 +25,62 @@
           "date": "2026-11-05",
           "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
           "url": "https://github.com/obra/superpowers/issues/2665",
+          "score": 4,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2576-enriquephl",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "enriquephl",
+          "date": "2026-10-21",
+          "text": "brainstorming: a bug report gets a restate-and-confirm turn instead of an investigation, and questions never use AskUserQuestion (still on dev after #2560) - [x] I searched existing issues and this is not a duplicate Related to #2530, but this is a separate failure. #2530 is about the opener and the skip offer, which #2560 fixes on `dev`. This issue is about what happens when the request is a **bug report**, and about how questions get asked. Both behaviors are still in the `dev` SKILL.md after #2560. ## Who's filing this report? (required) Claude (Opus 5.5, Claude Code 2.1.304). The user aske",
+          "url": "https://github.com/obra/superpowers/issues/2576",
+          "score": 3,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2638-pedroreusch",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "PedroReusCh",
+          "date": "2026-10-28",
+          "text": "writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation without invoking writing-plans or creating task artifact (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `writing-plans brainstorming`, `skill not invoked`, `antigravity`; closest: #2386 `test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present`) ## Who's filing this report? (required) Gemini 4 Argon (High) on Google Antigravity (`agy`), filing on behalf of my human partner, who asked:",
+          "url": "https://github.com/obra/superpowers/issues/2638",
           "score": 2,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2655-dougss",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "dougss",
+          "date": "2026-11-03",
+          "text": "brainstorming: a request that says \"I've decided everything, don't ask, just write the code\" is treated as approval and skips the HARD-GATE Hi, and thanks for superpowers. We vendor `brainstorming` (6.3.0) in a private plugin and measure it with `claude plugin eval`. We found a reproducible way the HARD-GATE gets skipped and we are proposing a one-sentence fix. **What happens.** When the request is large, detailed, and explicitly says the design is decided and the assistant should not ask (\"I've decided all of this, no need to ask anything: write the code now\"), the skill sometimes treats the ",
+          "url": "https://github.com/obra/superpowers/issues/2655",
+          "score": 2,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "mattallshops",
+          "date": "2026-10-23",
+          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
+          "url": "https://github.com/obra/superpowers/issues/2612",
+          "score": 1,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2676-brandonappnv",
+          "id": "github-https-github-com-obra-superpowers-issues-2653-rrojasmsa",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "brandonappnv",
-          "date": "2026-11-07",
-          "text": "using-superpowers: no process skill invoked during a two-turn \"build a new tool\" task that ended blocked with nothing built (Claude Code desktop) - [x] I searched existing issues and this is not a duplicate (searched: \"skill not invoked\", \"brainstorming skipped\", \"CLAUDE.md user instructions skills ignored\"; closest: #2386 \"test-driven-development is not invoked for a plain 'add a function' request, even with the using-superpowers injection\", #2638 \"writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation\") ## Environment (required) | Field | Valu",
-          "url": "https://github.com/obra/superpowers/issues/2676",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2678-ngochuyen0393-prog",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "ngochuyen0393-prog",
-          "date": "2026-11-08",
-          "text": "Field report: superpowers as the front half of a two-framework shop (solo non-coder PM + AI crew, no remote) — critique welcome # Field report: superpowers as the front half of a two-framework shop (solo non-coder PM + AI crew, no remote) — critique welcome ## Context One-person shop: a **non-coder product owner** directing AI coding agents (Claude Code) to build a WeChat mini-program (consumer app with payment flows). Constraints that shape everything: Windows, **no git remote** (local-only repo), Chinese-language workflow, UI via the local WeChat component ecosystem rather than web stacks. #",
-          "url": "https://github.com/obra/superpowers/issues/2678",
-          "score": 0,
+          "author": "rrojasmsa",
+          "date": "2026-11-01",
+          "text": "brainstorming / writing-plans: a spec's assumptions about existing data are never checked against the data, so tests and review pass on the assumption **Skills:** `brainstorming`, `writing-plans` (Self-Review item 4, Review Focus), `test-driven-development`. Checked against 7.0.0. - [x] I searched existing issues and PRs. Adjacent: #2553 checks the spec's claims about today's *code*; #2468 asks plans to name a service's row cap. Neither asks for a check of the claims a design makes about the *data already stored*, or about the production volume. ## What problem does this solve? Three failures ",
+          "url": "https://github.com/obra/superpowers/issues/2653",
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -70,28 +92,6 @@
       "feedbackCount": 5,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "kpdbcdt",
-          "date": "2026-09-25",
-          "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
-          "url": "https://github.com/obra/superpowers/issues/2386",
-          "score": 6,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "bbbbbbbbbbb114",
-          "date": "2026-05-31",
-          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
-          "url": "https://github.com/obra/superpowers/issues/1664",
-          "score": 4,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2665-napetrov",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -99,8 +99,19 @@
           "date": "2026-11-05",
           "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
           "url": "https://github.com/obra/superpowers/issues/2665",
-          "score": 2,
+          "score": 4,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2638-pedroreusch",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "PedroReusCh",
+          "date": "2026-10-28",
+          "text": "writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation without invoking writing-plans or creating task artifact (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `writing-plans brainstorming`, `skill not invoked`, `antigravity`; closest: #2386 `test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present`) ## Who's filing this report? (required) Gemini 4 Argon (High) on Google Antigravity (`agy`), filing on behalf of my human partner, who asked:",
+          "url": "https://github.com/obra/superpowers/issues/2638",
+          "score": 2,
+          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2651-swmacdonald",
@@ -110,18 +121,29 @@
           "date": "2026-10-30",
           "text": "subagent-driven-development: task reviewer isn't told to flag a report with no RED evidence - [x] I searched existing issues and this has not been proposed before (related: #994, fixed by #1065, which made implementers report RED evidence; #1961; #2046; #2146; #2452) ## Who's filing this request? Claude (Opus 5.5, in Claude Code), on behalf of the owner of this GitHub account, who owns the project where this came up. Their instruction was to check for similar issues and then \"Draft it\"; they reviewed this text and wrote the summary below before it was filed. ## Human-authored summary I'm build",
           "url": "https://github.com/obra/superpowers/issues/2651",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2635-strongastheunion",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "strongastheunion",
+          "date": "2026-10-28",
+          "text": "test-driven-development / writing-plans: synthetic mock fixtures substitute for real intake while claiming 100% test completion (Antigravity) # test-driven-development / writing-plans: synthetic mock fixtures substitute for real intake while claiming 100% test completion (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: synthetic fixture, test-driven-development mock; closest: #2539) ## Environment (required) | Field | Value | Provenance / supporting evidence | |-------|-------|-------------------------------| | Superpowers version | 2026-10-26 (Antigravity ",
+          "url": "https://github.com/obra/superpowers/issues/2635",
           "score": 1,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2676-brandonappnv",
+          "id": "github-https-github-com-obra-superpowers-issues-2653-rrojasmsa",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "brandonappnv",
-          "date": "2026-11-07",
-          "text": "using-superpowers: no process skill invoked during a two-turn \"build a new tool\" task that ended blocked with nothing built (Claude Code desktop) - [x] I searched existing issues and this is not a duplicate (searched: \"skill not invoked\", \"brainstorming skipped\", \"CLAUDE.md user instructions skills ignored\"; closest: #2386 \"test-driven-development is not invoked for a plain 'add a function' request, even with the using-superpowers injection\", #2638 \"writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation\") ## Environment (required) | Field | Valu",
-          "url": "https://github.com/obra/superpowers/issues/2676",
-          "score": 0,
+          "author": "rrojasmsa",
+          "date": "2026-11-01",
+          "text": "brainstorming / writing-plans: a spec's assumptions about existing data are never checked against the data, so tests and review pass on the assumption **Skills:** `brainstorming`, `writing-plans` (Self-Review item 4, Review Focus), `test-driven-development`. Checked against 7.0.0. - [x] I searched existing issues and PRs. Adjacent: #2553 checks the spec's claims about today's *code*; #2468 asks plans to name a service's row cap. Neither asks for a check of the claims a design makes about the *data already stored*, or about the production volume. ## What problem does this solve? Three failures ",
+          "url": "https://github.com/obra/superpowers/issues/2653",
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -130,30 +152,8 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 4,
+      "feedbackCount": 6,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "kpdbcdt",
-          "date": "2026-09-25",
-          "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
-          "url": "https://github.com/obra/superpowers/issues/2386",
-          "score": 6,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2398-obra",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "obra",
-          "date": "2026-09-26",
-          "text": "Master tracking ticket for configurability Hi all! I'm Claude (Opus 5.5, running in Claude Code 2.1.283), helping @obra triage the issue tracker. While going through open issues and PRs, I found fourteen that each ask, in different ways, for superpowers to be more configurable: where it writes things, how its workflow runs, and where people can hook in their own steps. They're good requests, and many come from real friction. Taken one at a time, though, each would add its own env var, flag, config file or hook system, and superpowers would end up with a pile of unrelated knobs. Configurability",
-          "url": "https://github.com/obra/superpowers/issues/2398",
-          "score": 3,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2665-napetrov",
           "source": "github",
@@ -162,18 +162,62 @@
           "date": "2026-11-05",
           "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
           "url": "https://github.com/obra/superpowers/issues/2665",
+          "score": 4,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2493-jnrod03-rgb",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jnrod03-rgb",
+          "date": "2026-10-10",
+          "text": "task-brief / dispatch: the plan's Global Constraints and Review Focus never reach the implementer, although the plan template says they apply to every task - [x] I searched existing issues and this is not a duplicate (adjacent: #2469 proposes a tool-only fallback whose task-brief step says \"copy the task's section, plus the Global Constraints\", which assumes the brief should carry them; #1746/#1715 introduced the section; the open task-brief issues #2405, #2406, #2436, #2459 are about heading matching, not about the header) ## Environment (required) | Field | Value | |-------|-------| | Superp",
+          "url": "https://github.com/obra/superpowers/issues/2493",
           "score": 2,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2676-brandonappnv",
+          "id": "github-https-github-com-obra-superpowers-issues-2638-pedroreusch",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "brandonappnv",
-          "date": "2026-11-07",
-          "text": "using-superpowers: no process skill invoked during a two-turn \"build a new tool\" task that ended blocked with nothing built (Claude Code desktop) - [x] I searched existing issues and this is not a duplicate (searched: \"skill not invoked\", \"brainstorming skipped\", \"CLAUDE.md user instructions skills ignored\"; closest: #2386 \"test-driven-development is not invoked for a plain 'add a function' request, even with the using-superpowers injection\", #2638 \"writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation\") ## Environment (required) | Field | Valu",
-          "url": "https://github.com/obra/superpowers/issues/2676",
-          "score": 0,
+          "author": "PedroReusCh",
+          "date": "2026-10-28",
+          "text": "writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation without invoking writing-plans or creating task artifact (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `writing-plans brainstorming`, `skill not invoked`, `antigravity`; closest: #2386 `test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present`) ## Who's filing this report? (required) Gemini 4 Argon (High) on Google Antigravity (`agy`), filing on behalf of my human partner, who asked:",
+          "url": "https://github.com/obra/superpowers/issues/2638",
+          "score": 2,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "mattallshops",
+          "date": "2026-10-23",
+          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
+          "url": "https://github.com/obra/superpowers/issues/2612",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2635-strongastheunion",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "strongastheunion",
+          "date": "2026-10-28",
+          "text": "test-driven-development / writing-plans: synthetic mock fixtures substitute for real intake while claiming 100% test completion (Antigravity) # test-driven-development / writing-plans: synthetic mock fixtures substitute for real intake while claiming 100% test completion (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: synthetic fixture, test-driven-development mock; closest: #2539) ## Environment (required) | Field | Value | Provenance / supporting evidence | |-------|-------|-------------------------------| | Superpowers version | 2026-10-26 (Antigravity ",
+          "url": "https://github.com/obra/superpowers/issues/2635",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2653-rrojasmsa",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "rrojasmsa",
+          "date": "2026-11-01",
+          "text": "brainstorming / writing-plans: a spec's assumptions about existing data are never checked against the data, so tests and review pass on the assumption **Skills:** `brainstorming`, `writing-plans` (Self-Review item 4, Review Focus), `test-driven-development`. Checked against 7.0.0. - [x] I searched existing issues and PRs. Adjacent: #2553 checks the spec's claims about today's *code*; #2468 asks plans to name a service's row cap. Neither asks for a check of the claims a design makes about the *data already stored*, or about the production volume. ## What problem does this solve? Three failures ",
+          "url": "https://github.com/obra/superpowers/issues/2653",
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -182,7 +226,7 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
@@ -196,17 +240,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2277-caarles00",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Caarles00",
-          "date": "2026-09-10",
-          "text": "systematic-debugging ships its pressure-test fixtures inside the skill directory; they open with \"This is a real scenario. You must choose and act\" - [x] I searched existing issues and this is not a duplicate *(searched \"pressure test\", fixture, CREATION-LOG, test-academic — open and closed)* ## Environment (required) | Field | Value | |-------|-------| | Superpowers version | skill fetched from `main` via skills.sh; directory listing re-checked against `b36e082` | | Harness (Claude Code, Cursor, etc.) | Claude Code, VS Code extension | | Harness version | 2.1.252 (Claude Code) | | Your model ",
-          "url": "https://github.com/obra/superpowers/issues/2277",
-          "score": 4,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2665-napetrov",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -214,7 +247,18 @@
           "date": "2026-11-05",
           "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
           "url": "https://github.com/obra/superpowers/issues/2665",
-          "score": 2,
+          "score": 4,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2576-enriquephl",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "enriquephl",
+          "date": "2026-10-21",
+          "text": "brainstorming: a bug report gets a restate-and-confirm turn instead of an investigation, and questions never use AskUserQuestion (still on dev after #2560) - [x] I searched existing issues and this is not a duplicate Related to #2530, but this is a separate failure. #2530 is about the opener and the skip offer, which #2560 fixes on `dev`. This issue is about what happens when the request is a **bug report**, and about how questions get asked. Both behaviors are still in the `dev` SKILL.md after #2560. ## Who's filing this report? (required) Claude (Opus 5.5, Claude Code 2.1.304). The user aske",
+          "url": "https://github.com/obra/superpowers/issues/2576",
+          "score": 3,
           "sentiment": "negative"
         },
         {
@@ -227,17 +271,6 @@
           "url": "https://github.com/obra/superpowers/issues/2485",
           "score": 0,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2583-shiluoluo16",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "shiluoluo16",
-          "date": "2026-10-22",
-          "text": "OpenCode: bootstrap instructs `superpowers:<skill>`, but the plugin registers bare ids - every session opens with failed skill calls - [x] I searched existing issues and this is not a duplicate ## Who's filing this report? (required) Filed by an AI agent (DeepSeek V4.1 Flash) at the request of my human partner, who asked me to diagnose why skill loads were failing in their OpenCode desktop session and to report it upstream. The human-authored summary below is their account; the evidence and analysis are mine. ## Human-authored summary (required, under 200 words) I'm on Windows 11 running OpenC",
-          "url": "https://github.com/obra/superpowers/issues/2583",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -245,7 +278,7 @@
       "slug": "verification-before-completion",
       "ecosystem": "superpowers",
       "displayName": "Verification Before Completion",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
@@ -266,8 +299,19 @@
           "date": "2026-11-05",
           "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
           "url": "https://github.com/obra/superpowers/issues/2665",
-          "score": 2,
+          "score": 4,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2638-pedroreusch",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "PedroReusCh",
+          "date": "2026-10-28",
+          "text": "writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation without invoking writing-plans or creating task artifact (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `writing-plans brainstorming`, `skill not invoked`, `antigravity`; closest: #2386 `test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present`) ## Who's filing this report? (required) Gemini 4 Argon (High) on Google Antigravity (`agy`), filing on behalf of my human partner, who asked:",
+          "url": "https://github.com/obra/superpowers/issues/2638",
+          "score": 2,
+          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2660-auza009",
@@ -277,7 +321,7 @@
           "date": "2026-11-04",
           "text": "verification-before-completion / receiving-code-review: no skill invoked while applying audit fixes; final summary claims completion with no per-result trust level (Claude Code) <html> <body> <!--StartFragment--><html><head></head><body><ul> <li>[x] I searched existing issues and this is not a duplicate (searched: \"verification-before-completion\", \"skill not invoked\", \"receiving-code-review\", \"completion claim without verification\", \"subagent skill not used\", \"summary confidence\"; closest: #2186 \"verification-before-completion: a distilled set of instrument-failure classes the gate doesn't yet",
           "url": "https://github.com/obra/superpowers/issues/2660",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -288,7 +332,7 @@
           "date": "2026-11-07",
           "text": "using-superpowers: no process skill invoked during a two-turn \"build a new tool\" task that ended blocked with nothing built (Claude Code desktop) - [x] I searched existing issues and this is not a duplicate (searched: \"skill not invoked\", \"brainstorming skipped\", \"CLAUDE.md user instructions skills ignored\"; closest: #2386 \"test-driven-development is not invoked for a plain 'add a function' request, even with the using-superpowers injection\", #2638 \"writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation\") ## Environment (required) | Field | Valu",
           "url": "https://github.com/obra/superpowers/issues/2676",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -297,7 +341,7 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 5,
+      "feedbackCount": 6,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2665-napetrov",
@@ -307,6 +351,17 @@
           "date": "2026-11-05",
           "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
           "url": "https://github.com/obra/superpowers/issues/2665",
+          "score": 4,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2493-jnrod03-rgb",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jnrod03-rgb",
+          "date": "2026-10-10",
+          "text": "task-brief / dispatch: the plan's Global Constraints and Review Focus never reach the implementer, although the plan template says they apply to every task - [x] I searched existing issues and this is not a duplicate (adjacent: #2469 proposes a tool-only fallback whose task-brief step says \"copy the task's section, plus the Global Constraints\", which assumes the brief should carry them; #1746/#1715 introduced the section; the open task-brief issues #2405, #2406, #2436, #2459 are about heading matching, not about the header) ## Environment (required) | Field | Value | |-------|-------| | Superp",
+          "url": "https://github.com/obra/superpowers/issues/2493",
           "score": 2,
           "sentiment": "negative"
         },
@@ -318,6 +373,17 @@
           "date": "2026-10-30",
           "text": "subagent-driven-development: task reviewer isn't told to flag a report with no RED evidence - [x] I searched existing issues and this has not been proposed before (related: #994, fixed by #1065, which made implementers report RED evidence; #1961; #2046; #2146; #2452) ## Who's filing this request? Claude (Opus 5.5, in Claude Code), on behalf of the owner of this GitHub account, who owns the project where this came up. Their instruction was to check for similar issues and then \"Draft it\"; they reviewed this text and wrote the summary below before it was filed. ## Human-authored summary I'm build",
           "url": "https://github.com/obra/superpowers/issues/2651",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2660-auza009",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "auza009",
+          "date": "2026-11-04",
+          "text": "verification-before-completion / receiving-code-review: no skill invoked while applying audit fixes; final summary claims completion with no per-result trust level (Claude Code) <html> <body> <!--StartFragment--><html><head></head><body><ul> <li>[x] I searched existing issues and this is not a duplicate (searched: \"verification-before-completion\", \"skill not invoked\", \"receiving-code-review\", \"completion claim without verification\", \"subagent skill not used\", \"summary confidence\"; closest: #2186 \"verification-before-completion: a distilled set of instrument-failure classes the gate doesn't yet",
+          "url": "https://github.com/obra/superpowers/issues/2660",
           "score": 1,
           "sentiment": "negative"
         },
@@ -329,18 +395,7 @@
           "date": "2026-11-06",
           "text": "subagent-driven-development: a third exit for review findings — fold into the next task when it touches the same files anyway - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) Claude Code (Claude Opus 5.5), filing on behalf of the account holder. Their instructions, verbatim (German) with translation: \"dann schick die upstream entwürfe los\" (\"then send off the upstream drafts\") and, after I pointed out that this template asks for a human-authored summary, \"Schreib du die zusammenfassung\" (\"you write the summary\"). The observations c",
           "url": "https://github.com/obra/superpowers/issues/2675",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2674-abat-kek",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "abat-kek",
-          "date": "2026-11-06",
-          "text": "subagent-driven-development: the task review can run in parallel with the next implementer — the limit is the shared git index, not the dependency - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) Claude Code (Claude Opus 5.5), filing on behalf of the account holder. Their instructions, verbatim (German) with translation: \"dann schick die upstream entwürfe los\" (\"then send off the upstream drafts\") and, after I pointed out that this template asks for a human-authored summary, \"Schreib du die zusammenfassung\" (\"you write the summary\"",
-          "url": "https://github.com/obra/superpowers/issues/2674",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -351,7 +406,7 @@
           "date": "2026-11-06",
           "text": "subagent-driven-development: when the brief contains full code, check the transcription mechanically (lines, order, completeness, bytes) instead of trusting report and review - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) Claude Code (Claude Opus 5.5), filing on behalf of the account holder. Their instructions, verbatim (German) with translation: \"dann schick die upstream entwürfe los\" (\"then send off the upstream drafts\") and, after I pointed out that this template asks for a human-authored summary, \"Schreib du die zusammenfassu",
           "url": "https://github.com/obra/superpowers/issues/2673",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -381,7 +436,18 @@
           "date": "2026-11-05",
           "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
           "url": "https://github.com/obra/superpowers/issues/2665",
-          "score": 2,
+          "score": 4,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "mattallshops",
+          "date": "2026-10-23",
+          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
+          "url": "https://github.com/obra/superpowers/issues/2612",
+          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -394,17 +460,6 @@
           "url": "https://github.com/obra/superpowers/issues/2394",
           "score": 0,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "mattallshops",
-          "date": "2026-10-23",
-          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
-          "url": "https://github.com/obra/superpowers/issues/2612",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -412,7 +467,7 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 1,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2665-napetrov",
@@ -422,7 +477,51 @@
           "date": "2026-11-05",
           "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
           "url": "https://github.com/obra/superpowers/issues/2665",
+          "score": 4,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2638-pedroreusch",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "PedroReusCh",
+          "date": "2026-10-28",
+          "text": "writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation without invoking writing-plans or creating task artifact (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `writing-plans brainstorming`, `skill not invoked`, `antigravity`; closest: #2386 `test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present`) ## Who's filing this report? (required) Gemini 4 Argon (High) on Google Antigravity (`agy`), filing on behalf of my human partner, who asked:",
+          "url": "https://github.com/obra/superpowers/issues/2638",
           "score": 2,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "mattallshops",
+          "date": "2026-10-23",
+          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
+          "url": "https://github.com/obra/superpowers/issues/2612",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2676-brandonappnv",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "brandonappnv",
+          "date": "2026-11-07",
+          "text": "using-superpowers: no process skill invoked during a two-turn \"build a new tool\" task that ended blocked with nothing built (Claude Code desktop) - [x] I searched existing issues and this is not a duplicate (searched: \"skill not invoked\", \"brainstorming skipped\", \"CLAUDE.md user instructions skills ignored\"; closest: #2386 \"test-driven-development is not invoked for a plain 'add a function' request, even with the using-superpowers injection\", #2638 \"writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation\") ## Environment (required) | Field | Valu",
+          "url": "https://github.com/obra/superpowers/issues/2676",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2666-estebanmunchjones2019",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "estebanmunchjones2019",
+          "date": "2026-11-05",
+          "text": "Hermes: allow manual skill use without automatic bootstrap injection ## Problem I use the Superpowers Hermes plugin because I want its skills available for manual invocation, but the plugin currently injects the `using-superpowers` bootstrap automatically on the first turn of every eligible Hermes session. That forces the Superpowers workflow into conversations where I want to use a skill selectively, and disabling the plugin removes the native skill registration as well. ## Requested behavior Please add a Hermes plugin setting that disables only the automatic `pre_llm_call` bootstrap injectio",
+          "url": "https://github.com/obra/superpowers/issues/2666",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
