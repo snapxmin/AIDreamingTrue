@@ -1,28 +1,5 @@
 {
-  "generatedAt": "2026-11-11T06:53:50Z",
+  "generatedAt": "2026-11-12T07:29:19Z",
   "isBaselineRun": false,
-  "changes": [
-    {
-      "type": "added",
-      "key": "awesome-copilot/scout-issue",
-      "ecosystem": "awesome-copilot",
-      "slug": "scout-issue",
-      "displayName": "Scout Issue",
-      "summary": "生态新增 Skill：Scout Issue",
-      "detectedAt": "2026-11-11T06:55:24Z"
-    },
-    {
-      "type": "updated",
-      "key": "awesome-copilot/gdpr-compliant",
-      "ecosystem": "awesome-copilot",
-      "slug": "gdpr-compliant",
-      "displayName": "Gdpr Compliant",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/github/awesome-copilot/tree/main/skills/gdpr-compliant",
-      "detectedAt": "2026-11-11T06:55:24Z"
-    }
-  ]
+  "changes": []
 }

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-11T06:57:04Z",
+    "lastUpdated": "2026-11-12T07:32:30Z",
     "skillCount": 20,
-    "totalComments": 74,
+    "totalComments": 77,
     "sources": [
       "hacker-news",
       "github",
@@ -15,39 +15,28 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2655-dougss",
+          "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "dougss",
-          "date": "2026-11-03",
-          "text": "brainstorming: a request that says \"I've decided everything, don't ask, just write the code\" is treated as approval and skips the HARD-GATE Hi, and thanks for superpowers. We vendor `brainstorming` (6.3.0) in a private plugin and measure it with `claude plugin eval`. We found a reproducible way the HARD-GATE gets skipped and we are proposing a one-sentence fix. **What happens.** When the request is large, detailed, and explicitly says the design is decided and the assistant should not ask (\"I've decided all of this, no need to ask anything: write the code now\"), the skill sometimes treats the ",
-          "url": "https://github.com/obra/superpowers/issues/2655",
-          "score": 2,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "mattallshops",
-          "date": "2026-10-23",
-          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
-          "url": "https://github.com/obra/superpowers/issues/2612",
-          "score": 1,
+          "author": "mbcrawfo",
+          "date": "2026-10-16",
+          "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
+          "url": "https://github.com/obra/superpowers/issues/2530",
+          "score": 41,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2653-rrojasmsa",
+          "id": "github-https-github-com-obra-superpowers-issues-2685-finleyjb",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "rrojasmsa",
-          "date": "2026-11-01",
-          "text": "brainstorming / writing-plans: a spec's assumptions about existing data are never checked against the data, so tests and review pass on the assumption **Skills:** `brainstorming`, `writing-plans` (Self-Review item 4, Review Focus), `test-driven-development`. Checked against 7.0.0. - [x] I searched existing issues and PRs. Adjacent: #2553 checks the spec's claims about today's *code*; #2468 asks plans to name a service's row cap. Neither asks for a check of the claims a design makes about the *data already stored*, or about the production volume. ## What problem does this solve? Three failures ",
-          "url": "https://github.com/obra/superpowers/issues/2653",
-          "score": 1,
+          "author": "finleyjb",
+          "date": "2026-11-12",
+          "text": "writing-plans / execution chain: after Claude Code native plan-mode approval, no superpowers skill after brainstorming fires (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"plan mode writing-plans\", \"plan mode brainstorming\", \"ExitPlanMode\", \"skills not invoked claude code\", \"only brainstorming\"; closest: #1667 \"Skills not triggered when Claude Code Plan Mode is active\" (closed), #1260 \"[FEATURE] Integrate writing-plans with Claude Code's native Plan Mode / Plan panel\" (closed)) ## Environment (required) | Field | Value | Provenance / supporting evidence ",
+          "url": "https://github.com/obra/superpowers/issues/2685",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -56,7 +45,7 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 4,
+      "feedbackCount": 6,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
@@ -77,7 +66,7 @@
           "date": "2026-10-30",
           "text": "subagent-driven-development: task reviewer isn't told to flag a report with no RED evidence - [x] I searched existing issues and this has not been proposed before (related: #994, fixed by #1065, which made implementers report RED evidence; #1961; #2046; #2146; #2452) ## Who's filing this request? Claude (Opus 5.5, in Claude Code), on behalf of the owner of this GitHub account, who owns the project where this came up. Their instruction was to check for similar issues and then \"Draft it\"; they reviewed this text and wrote the summary below before it was filed. ## Human-authored summary I'm build",
           "url": "https://github.com/obra/superpowers/issues/2651",
-          "score": 2,
+          "score": 3,
           "sentiment": "negative"
         },
         {
@@ -101,6 +90,28 @@
           "url": "https://github.com/obra/superpowers/issues/2653",
           "score": 1,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2686-gingertonik",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "gingertonik",
+          "date": "2026-11-12",
+          "text": "Hermes bootstrap instructs models to read_file skills the user disabled via skills.disabled # Hermes bootstrap teaches models to bypass `skills.disabled` via direct file read **Component:** Hermes integration, `.hermes-plugin/__init__.py` (the `pre_llm_call` bootstrap block, superpowers 7.0.2) ## The problem The bootstrap injected into every Hermes session tells the model: > If a namespaced lookup returns 'not found', read the skill file directly instead: > `read_file(\"/home/nooj/.hermes/plugins/superpowers/skills/skill-name/SKILL.md\")` Hermes enforces `skills.disabled` at the `skill_view` lay",
+          "url": "https://github.com/obra/superpowers/issues/2686",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2685-finleyjb",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "finleyjb",
+          "date": "2026-11-12",
+          "text": "writing-plans / execution chain: after Claude Code native plan-mode approval, no superpowers skill after brainstorming fires (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"plan mode writing-plans\", \"plan mode brainstorming\", \"ExitPlanMode\", \"skills not invoked claude code\", \"only brainstorming\"; closest: #1667 \"Skills not triggered when Claude Code Plan Mode is active\" (closed), #1260 \"[FEATURE] Integrate writing-plans with Claude Code's native Plan Mode / Plan panel\" (closed)) ## Environment (required) | Field | Value | Provenance / supporting evidence ",
+          "url": "https://github.com/obra/superpowers/issues/2685",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -108,39 +119,17 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 3,
+      "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
+          "id": "github-https-github-com-obra-superpowers-issues-2685-finleyjb",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "kpdbcdt",
-          "date": "2026-09-25",
-          "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
-          "url": "https://github.com/obra/superpowers/issues/2386",
-          "score": 7,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2493-jnrod03-rgb",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jnrod03-rgb",
-          "date": "2026-10-10",
-          "text": "task-brief / dispatch: the plan's Global Constraints and Review Focus never reach the implementer, although the plan template says they apply to every task - [x] I searched existing issues and this is not a duplicate (adjacent: #2469 proposes a tool-only fallback whose task-brief step says \"copy the task's section, plus the Global Constraints\", which assumes the brief should carry them; #1746/#1715 introduced the section; the open task-brief issues #2405, #2406, #2436, #2459 are about heading matching, not about the header) ## Environment (required) | Field | Value | |-------|-------| | Superp",
-          "url": "https://github.com/obra/superpowers/issues/2493",
-          "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2653-rrojasmsa",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "rrojasmsa",
-          "date": "2026-11-01",
-          "text": "brainstorming / writing-plans: a spec's assumptions about existing data are never checked against the data, so tests and review pass on the assumption **Skills:** `brainstorming`, `writing-plans` (Self-Review item 4, Review Focus), `test-driven-development`. Checked against 7.0.0. - [x] I searched existing issues and PRs. Adjacent: #2553 checks the spec's claims about today's *code*; #2468 asks plans to name a service's row cap. Neither asks for a check of the claims a design makes about the *data already stored*, or about the production volume. ## What problem does this solve? Three failures ",
-          "url": "https://github.com/obra/superpowers/issues/2653",
-          "score": 1,
+          "author": "finleyjb",
+          "date": "2026-11-12",
+          "text": "writing-plans / execution chain: after Claude Code native plan-mode approval, no superpowers skill after brainstorming fires (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"plan mode writing-plans\", \"plan mode brainstorming\", \"ExitPlanMode\", \"skills not invoked claude code\", \"only brainstorming\"; closest: #1667 \"Skills not triggered when Claude Code Plan Mode is active\" (closed), #1260 \"[FEATURE] Integrate writing-plans with Claude Code's native Plan Mode / Plan panel\" (closed)) ## Environment (required) | Field | Value | Provenance / supporting evidence ",
+          "url": "https://github.com/obra/superpowers/issues/2685",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -149,7 +138,7 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2665-napetrov",
@@ -163,14 +152,25 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2576-enriquephl",
+          "id": "github-https-github-com-obra-superpowers-issues-2686-gingertonik",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "enriquephl",
-          "date": "2026-10-21",
-          "text": "brainstorming: a bug report gets a restate-and-confirm turn instead of an investigation, and questions never use AskUserQuestion (still on dev after #2560) - [x] I searched existing issues and this is not a duplicate Related to #2530, but this is a separate failure. #2530 is about the opener and the skip offer, which #2560 fixes on `dev`. This issue is about what happens when the request is a **bug report**, and about how questions get asked. Both behaviors are still in the `dev` SKILL.md after #2560. ## Who's filing this report? (required) Claude (Opus 5.5, Claude Code 2.1.304). The user aske",
-          "url": "https://github.com/obra/superpowers/issues/2576",
-          "score": 3,
+          "author": "gingertonik",
+          "date": "2026-11-12",
+          "text": "Hermes bootstrap instructs models to read_file skills the user disabled via skills.disabled # Hermes bootstrap teaches models to bypass `skills.disabled` via direct file read **Component:** Hermes integration, `.hermes-plugin/__init__.py` (the `pre_llm_call` bootstrap block, superpowers 7.0.2) ## The problem The bootstrap injected into every Hermes session tells the model: > If a namespaced lookup returns 'not found', read the skill file directly instead: > `read_file(\"/home/nooj/.hermes/plugins/superpowers/skills/skill-name/SKILL.md\")` Hermes enforces `skills.disabled` at the `skill_view` lay",
+          "url": "https://github.com/obra/superpowers/issues/2686",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2685-finleyjb",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "finleyjb",
+          "date": "2026-11-12",
+          "text": "writing-plans / execution chain: after Claude Code native plan-mode approval, no superpowers skill after brainstorming fires (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"plan mode writing-plans\", \"plan mode brainstorming\", \"ExitPlanMode\", \"skills not invoked claude code\", \"only brainstorming\"; closest: #1667 \"Skills not triggered when Claude Code Plan Mode is active\" (closed), #1260 \"[FEATURE] Integrate writing-plans with Claude Code's native Plan Mode / Plan panel\" (closed)) ## Environment (required) | Field | Value | Provenance / supporting evidence ",
+          "url": "https://github.com/obra/superpowers/issues/2685",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -179,7 +179,7 @@
       "slug": "verification-before-completion",
       "ecosystem": "superpowers",
       "displayName": "Verification Before Completion",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2665-napetrov",
@@ -224,6 +224,17 @@
           "url": "https://github.com/obra/superpowers/issues/2676",
           "score": 1,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2685-finleyjb",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "finleyjb",
+          "date": "2026-11-12",
+          "text": "writing-plans / execution chain: after Claude Code native plan-mode approval, no superpowers skill after brainstorming fires (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"plan mode writing-plans\", \"plan mode brainstorming\", \"ExitPlanMode\", \"skills not invoked claude code\", \"only brainstorming\"; closest: #1667 \"Skills not triggered when Claude Code Plan Mode is active\" (closed), #1260 \"[FEATURE] Integrate writing-plans with Claude Code's native Plan Mode / Plan panel\" (closed)) ## Environment (required) | Field | Value | Provenance / supporting evidence ",
+          "url": "https://github.com/obra/superpowers/issues/2685",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -231,8 +242,19 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 6,
+      "feedbackCount": 5,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2651-swmacdonald",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "swmacdonald",
+          "date": "2026-10-30",
+          "text": "subagent-driven-development: task reviewer isn't told to flag a report with no RED evidence - [x] I searched existing issues and this has not been proposed before (related: #994, fixed by #1065, which made implementers report RED evidence; #1961; #2046; #2146; #2452) ## Who's filing this request? Claude (Opus 5.5, in Claude Code), on behalf of the owner of this GitHub account, who owns the project where this came up. Their instruction was to check for similar issues and then \"Draft it\"; they reviewed this text and wrote the summary below before it was filed. ## Human-authored summary I'm build",
+          "url": "https://github.com/obra/superpowers/issues/2651",
+          "score": 3,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2493-jnrod03-rgb",
           "source": "github",
@@ -242,39 +264,6 @@
           "text": "task-brief / dispatch: the plan's Global Constraints and Review Focus never reach the implementer, although the plan template says they apply to every task - [x] I searched existing issues and this is not a duplicate (adjacent: #2469 proposes a tool-only fallback whose task-brief step says \"copy the task's section, plus the Global Constraints\", which assumes the brief should carry them; #1746/#1715 introduced the section; the open task-brief issues #2405, #2406, #2436, #2459 are about heading matching, not about the header) ## Environment (required) | Field | Value | |-------|-------| | Superp",
           "url": "https://github.com/obra/superpowers/issues/2493",
           "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2651-swmacdonald",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "swmacdonald",
-          "date": "2026-10-30",
-          "text": "subagent-driven-development: task reviewer isn't told to flag a report with no RED evidence - [x] I searched existing issues and this has not been proposed before (related: #994, fixed by #1065, which made implementers report RED evidence; #1961; #2046; #2146; #2452) ## Who's filing this request? Claude (Opus 5.5, in Claude Code), on behalf of the owner of this GitHub account, who owns the project where this came up. Their instruction was to check for similar issues and then \"Draft it\"; they reviewed this text and wrote the summary below before it was filed. ## Human-authored summary I'm build",
-          "url": "https://github.com/obra/superpowers/issues/2651",
-          "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "mattallshops",
-          "date": "2026-10-23",
-          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
-          "url": "https://github.com/obra/superpowers/issues/2612",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2660-auza009",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "auza009",
-          "date": "2026-11-04",
-          "text": "verification-before-completion / receiving-code-review: no skill invoked while applying audit fixes; final summary claims completion with no per-result trust level (Claude Code) <html> <body> <!--StartFragment--><html><head></head><body><ul> <li>[x] I searched existing issues and this is not a duplicate (searched: \"verification-before-completion\", \"skill not invoked\", \"receiving-code-review\", \"completion claim without verification\", \"subagent skill not used\", \"summary confidence\"; closest: #2186 \"verification-before-completion: a distilled set of instrument-failure classes the gate doesn't yet",
-          "url": "https://github.com/obra/superpowers/issues/2660",
-          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -297,6 +286,17 @@
           "text": "subagent-driven-development: when the brief contains full code, check the transcription mechanically (lines, order, completeness, bytes) instead of trusting report and review - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) Claude Code (Claude Opus 5.5), filing on behalf of the account holder. Their instructions, verbatim (German) with translation: \"dann schick die upstream entwürfe los\" (\"then send off the upstream drafts\") and, after I pointed out that this template asks for a human-authored summary, \"Schreib du die zusammenfassu",
           "url": "https://github.com/obra/superpowers/issues/2673",
           "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2685-finleyjb",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "finleyjb",
+          "date": "2026-11-12",
+          "text": "writing-plans / execution chain: after Claude Code native plan-mode approval, no superpowers skill after brainstorming fires (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"plan mode writing-plans\", \"plan mode brainstorming\", \"ExitPlanMode\", \"skills not invoked claude code\", \"only brainstorming\"; closest: #1667 \"Skills not triggered when Claude Code Plan Mode is active\" (closed), #1260 \"[FEATURE] Integrate writing-plans with Claude Code's native Plan Mode / Plan panel\" (closed)) ## Environment (required) | Field | Value | Provenance / supporting evidence ",
+          "url": "https://github.com/obra/superpowers/issues/2685",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -341,13 +341,13 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2394-adrian-85",
+          "id": "github-https-github-com-obra-superpowers-issues-2685-finleyjb",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "adrian-85",
-          "date": "2026-09-26",
-          "text": "pi extension: resources_discover re-adds every skill, defeating package skill filters (pi) - [x] I searched existing issues and this is not a duplicate (searched: `resources_discover`, `pi config skills`, `skill collision`, `package filter`; closest: #2083 — different bug, same file) ## Environment (required) | Field | Value | Provenance / supporting evidence | |-------|-------|-------| | Superpowers version | 6.4.2 (8ca22db) | current observation; `~/.pi/agent/git/github.com/obra/superpowers` checkout | | Harness | pi | current observation; `pi --version` | | Harness version | 0.87.1 | curren",
-          "url": "https://github.com/obra/superpowers/issues/2394",
+          "author": "finleyjb",
+          "date": "2026-11-12",
+          "text": "writing-plans / execution chain: after Claude Code native plan-mode approval, no superpowers skill after brainstorming fires (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"plan mode writing-plans\", \"plan mode brainstorming\", \"ExitPlanMode\", \"skills not invoked claude code\", \"only brainstorming\"; closest: #1667 \"Skills not triggered when Claude Code Plan Mode is active\" (closed), #1260 \"[FEATURE] Integrate writing-plans with Claude Code's native Plan Mode / Plan panel\" (closed)) ## Environment (required) | Field | Value | Provenance / supporting evidence ",
+          "url": "https://github.com/obra/superpowers/issues/2685",
           "score": 0,
           "sentiment": "negative"
         }
@@ -357,17 +357,28 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
+          "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "kpdbcdt",
-          "date": "2026-09-25",
-          "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
-          "url": "https://github.com/obra/superpowers/issues/2386",
-          "score": 7,
+          "author": "mbcrawfo",
+          "date": "2026-10-16",
+          "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
+          "url": "https://github.com/obra/superpowers/issues/2530",
+          "score": 41,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2685-finleyjb",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "finleyjb",
+          "date": "2026-11-12",
+          "text": "writing-plans / execution chain: after Claude Code native plan-mode approval, no superpowers skill after brainstorming fires (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"plan mode writing-plans\", \"plan mode brainstorming\", \"ExitPlanMode\", \"skills not invoked claude code\", \"only brainstorming\"; closest: #1667 \"Skills not triggered when Claude Code Plan Mode is active\" (closed), #1260 \"[FEATURE] Integrate writing-plans with Claude Code's native Plan Mode / Plan panel\" (closed)) ## Environment (required) | Field | Value | Provenance / supporting evidence ",
+          "url": "https://github.com/obra/superpowers/issues/2685",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -743,8 +754,19 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 4,
+      "feedbackCount": 6,
       "comments": [
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-1352-liam-ai-reality",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "liam-ai-reality",
+          "date": "2026-06-25",
+          "text": "skill-creator: run_eval.py parallel workers cross-match skill UUIDs, producing false-negative trigger rates ## Summary `skills/skill-creator/scripts/run_eval.py` produces **systematically wrong (near-zero) trigger rates whenever `--num-workers > 1`** (the default is 10). The failure is silent: every query — including ones that obviously *should* trigger — comes back with `trigger_rate ≈ 0`, which then makes all `should_trigger: false` cases \"pass\" trivially and all `should_trigger: true` cases \"fail\". The aggregate looks like a bad skill description when in fact the *measurement* is broken. ##",
+          "url": "https://github.com/anthropics/skills/issues/1352",
+          "score": 6,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-anthropics-skills-issues-1706-stillpimpn",
           "source": "github",
@@ -755,6 +777,17 @@
           "url": "https://github.com/anthropics/skills/issues/1706",
           "score": 3,
           "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-2190-junpei-8",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "junpei-8",
+          "date": "2026-11-11",
+          "text": "skill-creator: eval viewer SIGTERMs unrelated processes on an occupied port ## Problem The skill-creator eval viewer terminates processes using the requested port before it tries to bind, without checking that those processes belong to the viewer. Starting a review can therefore terminate an unrelated development server or another accessible process using that port. ## Current source Verified at commit `2c5958ecac7cee2b583967a2c4981d0f4a75c579`: - [`skills/skill-creator/eval-viewer/generate_review.py:288-306`](https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/s",
+          "url": "https://github.com/anthropics/skills/issues/2190",
+          "score": 1,
+          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-anthropics-skills-issues-1960-kennethje",
