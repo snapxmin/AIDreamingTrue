@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-12T07:32:30Z",
+    "lastUpdated": "2026-11-13T07:03:19Z",
     "skillCount": 20,
-    "totalComments": 77,
+    "totalComments": 86,
     "sources": [
       "hacker-news",
       "github",
@@ -15,7 +15,7 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 2,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
@@ -25,7 +25,29 @@
           "date": "2026-10-16",
           "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
           "url": "https://github.com/obra/superpowers/issues/2530",
-          "score": 41,
+          "score": 42,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2693-kaylalamp",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "KaylaLamp",
+          "date": "2026-11-12",
+          "text": "subagent-driven-development: a question escalated to the human is written in the work's own words, and asks them to already know the work - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) I'm a developer filing this from my own account. Claude Code drafted it from a note it logged in a real session where this came up; I asked it to prepare these for upstream, and I've read and edited it before posting. ## Human-authored summary (required, under 200 words) We spent a whole day working on one feature, and then a question was escalated",
+          "url": "https://github.com/obra/superpowers/issues/2693",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2687-kaylalamp",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "KaylaLamp",
+          "date": "2026-11-12",
+          "text": "writing-plans: a \"confirm the environment\" step that reads a menu verifies the wrong layer — end it in the cheapest action the platform would refuse - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) I'm a developer filing this from my own account. Claude Code drafted it from a note it logged in a real session where this came up; I asked it to prepare these for upstream, and I've read and edited it before posting. ## Human-authored summary (required, under 200 words) The first part of my plan involved checking the build platform to m",
+          "url": "https://github.com/obra/superpowers/issues/2687",
+          "score": 0,
           "sentiment": "negative"
         },
         {
@@ -119,8 +141,52 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 1,
+      "feedbackCount": 5,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2690-kaylalamp",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "KaylaLamp",
+          "date": "2026-11-12",
+          "text": "subagent-driven-development: a ruling that names a concrete value (a format, a token, a comparison) is a claim about the codebase - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) I'm a developer filing this from my own account. Claude Code drafted it from a note it logged in a real session where this came up; I asked it to prepare these for upstream, and I've read and edited it before posting. ## Human-authored summary (required, under 200 words) The plan was incomplete, and the controller filled the gap with a date format and a co",
+          "url": "https://github.com/obra/superpowers/issues/2690",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2694-kaylalamp",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "KaylaLamp",
+          "date": "2026-11-12",
+          "text": "writing-plans: file lists and positional instructions are never checked against the tree — the compiler would name the omissions - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) I'm a developer filing this from my own account. Claude Code drafted it from a note it logged in a real session where this came up; I asked it to prepare these for upstream, and I've read and edited it before posting. ## Human-authored summary (required, under 200 words) The plan contained 15 tasks. Files were listed and code was placed from memory of the d",
+          "url": "https://github.com/obra/superpowers/issues/2694",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2688-kaylalamp",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "KaylaLamp",
+          "date": "2026-11-12",
+          "text": "writing-plans / task reviewer: plan text that fixes UI copy or behaviour is a claim against the spec, and the per-task review never checks it - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) I'm a developer filing this from my own account. Claude Code drafted it from a note it logged in a real session where this came up; I asked it to prepare these for upstream, and I've read and edited it before posting. ## Human-authored summary (required, under 200 words) Two pieces of text in the UI did not match the design. They were built as ",
+          "url": "https://github.com/obra/superpowers/issues/2688",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2687-kaylalamp",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "KaylaLamp",
+          "date": "2026-11-12",
+          "text": "writing-plans: a \"confirm the environment\" step that reads a menu verifies the wrong layer — end it in the cheapest action the platform would refuse - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) I'm a developer filing this from my own account. Claude Code drafted it from a note it logged in a real session where this came up; I asked it to prepare these for upstream, and I've read and edited it before posting. ## Human-authored summary (required, under 200 words) The first part of my plan involved checking the build platform to m",
+          "url": "https://github.com/obra/superpowers/issues/2687",
+          "score": 0,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2685-finleyjb",
           "source": "github",
@@ -193,6 +259,17 @@
           "sentiment": "negative"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2231-abhineshkr",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "abhineshkr",
+          "date": "2026-08-31",
+          "text": "skills/verification-before-completion: `git checkout` in a verified-red loop destroys uncommitted work *Found in real use over ~10 days on a single large project, captured in a skill-observation log and triaged in a review on 2026-08-31. Filed upstream rather than patched locally because the plugin is version-pinned — a local edit is erased on the next update.* *Version: **superpowers 6.3.0 (`b36e0829c6d0`), via the claude-plugins-official marketplace**. Each item below gives what happened, a concrete suggested change, and the generalisable principle. Happy to open a PR for any of them if you'",
+          "url": "https://github.com/obra/superpowers/issues/2231",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2638-pedroreusch",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -215,17 +292,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2676-brandonappnv",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "brandonappnv",
-          "date": "2026-11-07",
-          "text": "using-superpowers: no process skill invoked during a two-turn \"build a new tool\" task that ended blocked with nothing built (Claude Code desktop) - [x] I searched existing issues and this is not a duplicate (searched: \"skill not invoked\", \"brainstorming skipped\", \"CLAUDE.md user instructions skills ignored\"; closest: #2386 \"test-driven-development is not invoked for a plain 'add a function' request, even with the using-superpowers injection\", #2638 \"writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation\") ## Environment (required) | Field | Valu",
-          "url": "https://github.com/obra/superpowers/issues/2676",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2685-finleyjb",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -242,60 +308,71 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 5,
+      "feedbackCount": 6,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2651-swmacdonald",
+          "id": "github-https-github-com-obra-superpowers-issues-2689-kaylalamp",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "swmacdonald",
-          "date": "2026-10-30",
-          "text": "subagent-driven-development: task reviewer isn't told to flag a report with no RED evidence - [x] I searched existing issues and this has not been proposed before (related: #994, fixed by #1065, which made implementers report RED evidence; #1961; #2046; #2146; #2452) ## Who's filing this request? Claude (Opus 5.5, in Claude Code), on behalf of the owner of this GitHub account, who owns the project where this came up. Their instruction was to check for similar issues and then \"Draft it\"; they reviewed this text and wrote the summary below before it was filed. ## Human-authored summary I'm build",
-          "url": "https://github.com/obra/superpowers/issues/2651",
-          "score": 3,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2493-jnrod03-rgb",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "jnrod03-rgb",
-          "date": "2026-10-10",
-          "text": "task-brief / dispatch: the plan's Global Constraints and Review Focus never reach the implementer, although the plan template says they apply to every task - [x] I searched existing issues and this is not a duplicate (adjacent: #2469 proposes a tool-only fallback whose task-brief step says \"copy the task's section, plus the Global Constraints\", which assumes the brief should carry them; #1746/#1715 introduced the section; the open task-brief issues #2405, #2406, #2436, #2459 are about heading matching, not about the header) ## Environment (required) | Field | Value | |-------|-------| | Superp",
-          "url": "https://github.com/obra/superpowers/issues/2493",
-          "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2675-abat-kek",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "abat-kek",
-          "date": "2026-11-06",
-          "text": "subagent-driven-development: a third exit for review findings — fold into the next task when it touches the same files anyway - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) Claude Code (Claude Opus 5.5), filing on behalf of the account holder. Their instructions, verbatim (German) with translation: \"dann schick die upstream entwürfe los\" (\"then send off the upstream drafts\") and, after I pointed out that this template asks for a human-authored summary, \"Schreib du die zusammenfassung\" (\"you write the summary\"). The observations c",
-          "url": "https://github.com/obra/superpowers/issues/2675",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2673-abat-kek",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "abat-kek",
-          "date": "2026-11-06",
-          "text": "subagent-driven-development: when the brief contains full code, check the transcription mechanically (lines, order, completeness, bytes) instead of trusting report and review - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) Claude Code (Claude Opus 5.5), filing on behalf of the account holder. Their instructions, verbatim (German) with translation: \"dann schick die upstream entwürfe los\" (\"then send off the upstream drafts\") and, after I pointed out that this template asks for a human-authored summary, \"Schreib du die zusammenfassu",
-          "url": "https://github.com/obra/superpowers/issues/2673",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2685-finleyjb",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "finleyjb",
+          "author": "KaylaLamp",
           "date": "2026-11-12",
-          "text": "writing-plans / execution chain: after Claude Code native plan-mode approval, no superpowers skill after brainstorming fires (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"plan mode writing-plans\", \"plan mode brainstorming\", \"ExitPlanMode\", \"skills not invoked claude code\", \"only brainstorming\"; closest: #1667 \"Skills not triggered when Claude Code Plan Mode is active\" (closed), #1260 \"[FEATURE] Integrate writing-plans with Claude Code's native Plan Mode / Plan panel\" (closed)) ## Environment (required) | Field | Value | Provenance / supporting evidence ",
-          "url": "https://github.com/obra/superpowers/issues/2685",
+          "text": "finishing-a-development-branch: a merge that changes package.json or adds a migration needs the install/migrate in the same block as the merge, before the merged-result test run - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) I'm a developer filing this from my own account. Claude Code drafted it from a note it logged in a real session where this came up; I asked it to prepare these for upstream, and I've read and edited it before posting. ## Human-authored summary (required, under 200 words) I merged a branch which introduced a n",
+          "url": "https://github.com/obra/superpowers/issues/2689",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2693-kaylalamp",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "KaylaLamp",
+          "date": "2026-11-12",
+          "text": "subagent-driven-development: a question escalated to the human is written in the work's own words, and asks them to already know the work - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) I'm a developer filing this from my own account. Claude Code drafted it from a note it logged in a real session where this came up; I asked it to prepare these for upstream, and I've read and edited it before posting. ## Human-authored summary (required, under 200 words) We spent a whole day working on one feature, and then a question was escalated",
+          "url": "https://github.com/obra/superpowers/issues/2693",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2690-kaylalamp",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "KaylaLamp",
+          "date": "2026-11-12",
+          "text": "subagent-driven-development: a ruling that names a concrete value (a format, a token, a comparison) is a claim about the codebase - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) I'm a developer filing this from my own account. Claude Code drafted it from a note it logged in a real session where this came up; I asked it to prepare these for upstream, and I've read and edited it before posting. ## Human-authored summary (required, under 200 words) The plan was incomplete, and the controller filled the gap with a date format and a co",
+          "url": "https://github.com/obra/superpowers/issues/2690",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2692-kaylalamp",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "KaylaLamp",
+          "date": "2026-11-12",
+          "text": "subagent-driven-development: the helpers assume the repo shares the controller's filesystem — a remote-shell repo needs a documented path - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) I'm a developer filing this from my own account. Claude Code drafted it from a note it logged in a real session where this came up; I asked it to prepare these for upstream, and I've read and edited it before posting. ## Human-authored summary (required, under 200 words) My repo is on a different machine and can only be accessed via a remote shell.",
+          "url": "https://github.com/obra/superpowers/issues/2692",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2691-kaylalamp",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "KaylaLamp",
+          "date": "2026-11-12",
+          "text": "dispatching-parallel-agents: a launch reported as rejected may already have run — inspect every workspace before reporting state or relaunching - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) I'm a developer filing this from my own account. Claude Code drafted it from a note it logged in a real session where this came up; I asked it to prepare these for upstream, and I've read and edited it before posting. ## Human-authored summary (required, under 200 words) I rejected a launch of six background agents, but they had already been ",
+          "url": "https://github.com/obra/superpowers/issues/2691",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2688-kaylalamp",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "KaylaLamp",
+          "date": "2026-11-12",
+          "text": "writing-plans / task reviewer: plan text that fixes UI copy or behaviour is a claim against the spec, and the per-task review never checks it - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) I'm a developer filing this from my own account. Claude Code drafted it from a note it logged in a real session where this came up; I asked it to prepare these for upstream, and I've read and edited it before posting. ## Human-authored summary (required, under 200 words) Two pieces of text in the UI did not match the design. They were built as ",
+          "url": "https://github.com/obra/superpowers/issues/2688",
           "score": 0,
           "sentiment": "negative"
         }
@@ -367,7 +444,7 @@
           "date": "2026-10-16",
           "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
           "url": "https://github.com/obra/superpowers/issues/2530",
-          "score": 41,
+          "score": 42,
           "sentiment": "negative"
         },
         {
@@ -430,7 +507,7 @@
           "date": "2026-11-06",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 793 resources - **Aging (14–30 days):** 58 resources - **Fresh (<14 days):** 33 resources (not listed below) Scope: agents, instructions, hooks, skills (`prompts/` does not exist). Commits whose messages indicate renames, formatting, line endings, or bulk/normalize updates were skipped when dating changes. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>793 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instructions/nextj",
           "url": "https://github.com/github/awesome-copilot/issues/6277",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -493,7 +570,7 @@
           "date": "2026-11-06",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 793 resources - **Aging (14–30 days):** 58 resources - **Fresh (<14 days):** 33 resources (not listed below) Scope: agents, instructions, hooks, skills (`prompts/` does not exist). Commits whose messages indicate renames, formatting, line endings, or bulk/normalize updates were skipped when dating changes. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>793 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instructions/nextj",
           "url": "https://github.com/github/awesome-copilot/issues/6277",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -567,7 +644,7 @@
           "date": "2026-11-06",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 793 resources - **Aging (14–30 days):** 58 resources - **Fresh (<14 days):** 33 resources (not listed below) Scope: agents, instructions, hooks, skills (`prompts/` does not exist). Commits whose messages indicate renames, formatting, line endings, or bulk/normalize updates were skipped when dating changes. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>793 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instructions/nextj",
           "url": "https://github.com/github/awesome-copilot/issues/6277",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -641,7 +718,7 @@
           "date": "2026-11-06",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 793 resources - **Aging (14–30 days):** 58 resources - **Fresh (<14 days):** 33 resources (not listed below) Scope: agents, instructions, hooks, skills (`prompts/` does not exist). Commits whose messages indicate renames, formatting, line endings, or bulk/normalize updates were skipped when dating changes. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>793 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instructions/nextj",
           "url": "https://github.com/github/awesome-copilot/issues/6277",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -697,17 +774,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-4480-matinomari906-cloud",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "matinomari906-cloud",
-          "date": "2026-10-04",
-          "text": "## Skills (part 1) ## Skills (part 1) ``` npm warn EBADENGINE Unsupported engine { — @github/awesome-copilot-content-reviewers npm warn EBADENGINE package: 'commander@15.0.0', — @github/awesome-copilot-content-reviewers npm warn EBADENGINE required: { node: '>=22.12.0' }, — @github/awesome-copilot-content-reviewers npm warn EBADENGINE current: { node: 'v20.20.2', npm: '10.8.2' } — @github/awesome-copilot-content-reviewers npm warn EBADENGINE } — @github/awesome-copilot-content-reviewers npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant ",
-          "url": "https://github.com/github/awesome-copilot/issues/4480",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-github-awesome-copilot-issues-6277-github-actions-bot-",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -715,6 +781,17 @@
           "date": "2026-11-06",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 793 resources - **Aging (14–30 days):** 58 resources - **Fresh (<14 days):** 33 resources (not listed below) Scope: agents, instructions, hooks, skills (`prompts/` does not exist). Commits whose messages indicate renames, formatting, line endings, or bulk/normalize updates were skipped when dating changes. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>793 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instructions/nextj",
           "url": "https://github.com/github/awesome-copilot/issues/6277",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-github-awesome-copilot-issues-4480-matinomari906-cloud",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "matinomari906-cloud",
+          "date": "2026-10-04",
+          "text": "## Skills (part 1) ## Skills (part 1) ``` npm warn EBADENGINE Unsupported engine { — @github/awesome-copilot-content-reviewers npm warn EBADENGINE package: 'commander@15.0.0', — @github/awesome-copilot-content-reviewers npm warn EBADENGINE required: { node: '>=22.12.0' }, — @github/awesome-copilot-content-reviewers npm warn EBADENGINE current: { node: 'v20.20.2', npm: '10.8.2' } — @github/awesome-copilot-content-reviewers npm warn EBADENGINE } — @github/awesome-copilot-content-reviewers npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant ",
+          "url": "https://github.com/github/awesome-copilot/issues/4480",
           "score": 0,
           "sentiment": "negative"
         }
@@ -754,7 +831,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 6,
+      "feedbackCount": 7,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1352-liam-ai-reality",
@@ -790,17 +867,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-anthropics-skills-issues-1960-kennethje",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "kennethje",
-          "date": "2026-10-03",
-          "text": "pdf/forms.md: unconditional zoom pass and shouted ordering rule Checked at `main` 8a1541c. **1. `skills/pdf/forms.md:189-204`: the zoom pass runs on every field** https://github.com/anthropics/skills/blob/8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4/skills/pdf/forms.md#L189-L204 B.3 crops and zooms around each field, even when the full-page estimate is already unambiguous. On long forms this multiplies image calls. Suggest making B.3 conditional on fields whose position is uncertain: small, dense or overlapping ones. **2. `skills/pdf/forms.md:1`: the ordering rule is shouted** https://github.com/a",
-          "url": "https://github.com/anthropics/skills/issues/1960",
-          "score": 0,
-          "sentiment": "positive"
-        },
-        {
           "id": "github-https-github-com-anthropics-skills-issues-2084-benharvey-bis",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -821,6 +887,28 @@
           "url": "https://github.com/anthropics/skills/issues/2139",
           "score": 0,
           "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-2195-louis8408",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "louis8408",
+          "date": "2026-11-12",
+          "text": "Proposal: add metadata.source (and version) to SKILL.md so copies can be checked for updates **The problem** When these skills are installed as Claude Code plugins, the plugin system tracks updates. But many people use copies: a `.skill` zip uploaded to Claude.ai, a folder copied into `~/.claude/skills`, or a skill vendored into a project for another agent. Once copied, nothing in the skill records where it came from, so neither the user nor their agent can tell that `pdf` or `skill-creator` has changed here since. #228 describes the team version of this: \"different versions everywhere… nobody",
+          "url": "https://github.com/anthropics/skills/issues/2195",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-2202-siegblink",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "siegblink",
+          "date": "2026-11-13",
+          "text": "skill-creator: references/schemas.md example uses the retired model ID claude-sonnet-4-20250514 `skills/skill-creator/references/schemas.md` line 228, in the `benchmark.json` example: ```json \"executor_model\": \"claude-sonnet-4-20250514\", ``` Claude Sonnet 4 (`claude-sonnet-4-20250514`) is listed as retired since June 15, 2026. The example is the kind of thing that gets copied into benchmark metadata and run configurations as it stands. Suggested fix: use a placeholder, as the next line already does (`\"analyzer_model\": \"most-capable-model\"`), or a current model ID.",
+          "url": "https://github.com/anthropics/skills/issues/2202",
+          "score": 0,
+          "sentiment": "neutral"
         }
       ]
     },
@@ -828,7 +916,7 @@
       "slug": "mcp-builder",
       "ecosystem": "anthropics-skills",
       "displayName": "MCP Builder",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-2033-gltknky",
@@ -862,6 +950,17 @@
           "url": "https://github.com/anthropics/skills/issues/1960",
           "score": 0,
           "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-2201-siegblink",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "siegblink",
+          "date": "2026-11-13",
+          "text": "mcp-builder: evaluation.py answers only the first tool_use block, and treats max_tokens and refusal stops as final answers Two problems in the agent loop of `skills/mcp-builder/scripts/evaluation.py`. ### 1. Only the first `tool_use` block of a turn is answered Lines 109-110: ```python while response.stop_reason == \"tool_use\": tool_use = next(block for block in response.content if block.type == \"tool_use\") ``` The loop runs that one tool and appends a user message with a single `tool_result`. Parallel tool use is on by default, so a turn can contain several `tool_use` blocks. The Messages API ",
+          "url": "https://github.com/anthropics/skills/issues/2201",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -1012,7 +1111,7 @@
           "date": "2026-11-06",
           "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 793 resources - **Aging (14–30 days):** 58 resources - **Fresh (<14 days):** 33 resources (not listed below) Scope: agents, instructions, hooks, skills (`prompts/` does not exist). Commits whose messages indicate renames, formatting, line endings, or bulk/normalize updates were skipped when dating changes. ### 🔴 Stale Resources (>30 days since last major change) <details><summary>793 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instructions/nextj",
           "url": "https://github.com/github/awesome-copilot/issues/6277",
-          "score": 0,
+          "score": 1,
           "sentiment": "negative"
         }
       ]
