@@ -1,24 +1,5 @@
 {
-  "generatedAt": "2026-11-13T07:00:38Z",
+  "generatedAt": "2026-11-14T06:50:21Z",
   "isBaselineRun": false,
-  "changes": [
-    {
-      "type": "added",
-      "key": "awesome-copilot/on-device-delegate",
-      "ecosystem": "awesome-copilot",
-      "slug": "on-device-delegate",
-      "displayName": "On Device Delegate",
-      "summary": "生态新增 Skill：On Device Delegate",
-      "detectedAt": "2026-11-13T07:01:23Z"
-    },
-    {
-      "type": "added",
-      "key": "awesome-copilot/sap-cloud-integration",
-      "ecosystem": "awesome-copilot",
-      "slug": "sap-cloud-integration",
-      "displayName": "Sap Cloud Integration",
-      "summary": "生态新增 Skill：Sap Cloud Integration",
-      "detectedAt": "2026-11-13T07:01:23Z"
-    }
-  ]
+  "changes": []
 }

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-13T07:03:19Z",
+    "lastUpdated": "2026-11-14T06:53:45Z",
     "skillCount": 20,
-    "totalComments": 86,
+    "totalComments": 80,
     "sources": [
       "hacker-news",
       "github",
@@ -67,7 +67,7 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 6,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
@@ -89,17 +89,6 @@
           "text": "subagent-driven-development: task reviewer isn't told to flag a report with no RED evidence - [x] I searched existing issues and this has not been proposed before (related: #994, fixed by #1065, which made implementers report RED evidence; #1961; #2046; #2146; #2452) ## Who's filing this request? Claude (Opus 5.5, in Claude Code), on behalf of the owner of this GitHub account, who owns the project where this came up. Their instruction was to check for similar issues and then \"Draft it\"; they reviewed this text and wrote the summary below before it was filed. ## Human-authored summary I'm build",
           "url": "https://github.com/obra/superpowers/issues/2651",
           "score": 3,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2635-strongastheunion",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "strongastheunion",
-          "date": "2026-10-28",
-          "text": "test-driven-development / writing-plans: synthetic mock fixtures substitute for real intake while claiming 100% test completion (Antigravity) # test-driven-development / writing-plans: synthetic mock fixtures substitute for real intake while claiming 100% test completion (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: synthetic fixture, test-driven-development mock; closest: #2539) ## Environment (required) | Field | Value | Provenance / supporting evidence | |-------|-------|-------------------------------| | Superpowers version | 2026-10-26 (Antigravity ",
-          "url": "https://github.com/obra/superpowers/issues/2635",
-          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -141,7 +130,7 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2690-kaylalamp",
@@ -186,17 +175,6 @@
           "url": "https://github.com/obra/superpowers/issues/2687",
           "score": 0,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2685-finleyjb",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "finleyjb",
-          "date": "2026-11-12",
-          "text": "writing-plans / execution chain: after Claude Code native plan-mode approval, no superpowers skill after brainstorming fires (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"plan mode writing-plans\", \"plan mode brainstorming\", \"ExitPlanMode\", \"skills not invoked claude code\", \"only brainstorming\"; closest: #1667 \"Skills not triggered when Claude Code Plan Mode is active\" (closed), #1260 \"[FEATURE] Integrate writing-plans with Claude Code's native Plan Mode / Plan panel\" (closed)) ## Environment (required) | Field | Value | Provenance / supporting evidence ",
-          "url": "https://github.com/obra/superpowers/issues/2685",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -204,19 +182,8 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2665-napetrov",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "napetrov",
-          "date": "2026-11-05",
-          "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
-          "url": "https://github.com/obra/superpowers/issues/2665",
-          "score": 4,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2686-gingertonik",
           "source": "github",
@@ -308,8 +275,19 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 6,
+      "feedbackCount": 5,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-1543-gigman2",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "Gigman2",
+          "date": "2026-05-13",
+          "text": "subagent-driven-development: subagents can detach HEAD with bare `git checkout <sha>`, silently orphaning subsequent commits ## Summary While running `subagent-driven-development` (v5.1.0) on a 17-task plan, a spec-reviewer subagent detached HEAD on the controller's feature branch by running `git checkout <sha>` (without `-- <path>`) as part of a parent-commit comparison. The branch ref froze at that commit; every subsequent commit from later subagents accumulated on the detached HEAD. Eleven commits were orphaned this way before the controller noticed (the next `git commit` line read `[detach",
+          "url": "https://github.com/obra/superpowers/issues/1543",
+          "score": 5,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2689-kaylalamp",
           "source": "github",
@@ -353,28 +331,6 @@
           "url": "https://github.com/obra/superpowers/issues/2692",
           "score": 0,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2691-kaylalamp",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "KaylaLamp",
-          "date": "2026-11-12",
-          "text": "dispatching-parallel-agents: a launch reported as rejected may already have run — inspect every workspace before reporting state or relaunching - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) I'm a developer filing this from my own account. Claude Code drafted it from a note it logged in a real session where this came up; I asked it to prepare these for upstream, and I've read and edited it before posting. ## Human-authored summary (required, under 200 words) I rejected a launch of six background agents, but they had already been ",
-          "url": "https://github.com/obra/superpowers/issues/2691",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2688-kaylalamp",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "KaylaLamp",
-          "date": "2026-11-12",
-          "text": "writing-plans / task reviewer: plan text that fixes UI copy or behaviour is a claim against the spec, and the per-task review never checks it - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) I'm a developer filing this from my own account. Claude Code drafted it from a note it logged in a real session where this came up; I asked it to prepare these for upstream, and I've read and edited it before posting. ## Human-authored summary (required, under 200 words) Two pieces of text in the UI did not match the design. They were built as ",
-          "url": "https://github.com/obra/superpowers/issues/2688",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -382,19 +338,8 @@
       "slug": "requesting-code-review",
       "ecosystem": "superpowers",
       "displayName": "Requesting Code Review",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-1664-bbbbbbbbbbb114",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "bbbbbbbbbbb114",
-          "date": "2026-05-31",
-          "text": "Proposal: Add a Human Acceptance Matrix for user-facing validation alongside TDD - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? While using Superpowers in Codex App on a user-facing project, I found that the current workflow is very strong at enforcing true red/green TDD, systematic debugging, code review, and fresh verification before completion. The gap I ran into is that some user-facing behavior cannot be fully proven by automated tests: - visual feedback - real browser behavior - multi-page user flows - notifications / realtime UI -",
-          "url": "https://github.com/obra/superpowers/issues/1664",
-          "score": 4,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2665-napetrov",
           "source": "github",
@@ -434,7 +379,7 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
@@ -446,6 +391,17 @@
           "url": "https://github.com/obra/superpowers/issues/2530",
           "score": 42,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2260-kei-h0-9hgh",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "kei-H0-9HgH",
+          "date": "2026-09-05",
+          "text": "Codex reference assumes spawn capabilities unavailable in an observed desktop session ## Summary The Codex reference in Superpowers 6.3.0 conflicts with the `collaboration.spawn_agent` contract supplied to one inspected desktop session: 1. The reference says full-history forks accept model and reasoning-effort overrides, while this session's contract prohibits them. 2. The reference describes `agent_type`, but this session's tool schema does not expose that parameter. These findings are specific to the inspected environment. They do not establish that all Codex versions, presets, or tool surfa",
+          "url": "https://github.com/obra/superpowers/issues/2260",
+          "score": 2,
+          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2685-finleyjb",
@@ -831,19 +787,8 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 7,
+      "feedbackCount": 5,
       "comments": [
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-1352-liam-ai-reality",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "liam-ai-reality",
-          "date": "2026-06-25",
-          "text": "skill-creator: run_eval.py parallel workers cross-match skill UUIDs, producing false-negative trigger rates ## Summary `skills/skill-creator/scripts/run_eval.py` produces **systematically wrong (near-zero) trigger rates whenever `--num-workers > 1`** (the default is 10). The failure is silent: every query — including ones that obviously *should* trigger — comes back with `trigger_rate ≈ 0`, which then makes all `should_trigger: false` cases \"pass\" trivially and all `should_trigger: true` cases \"fail\". The aggregate looks like a bad skill description when in fact the *measurement* is broken. ##",
-          "url": "https://github.com/anthropics/skills/issues/1352",
-          "score": 6,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-anthropics-skills-issues-1706-stillpimpn",
           "source": "github",
@@ -856,15 +801,15 @@
           "sentiment": "positive"
         },
         {
-          "id": "github-https-github-com-anthropics-skills-issues-2190-junpei-8",
+          "id": "github-https-github-com-anthropics-skills-issues-2202-siegblink",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "junpei-8",
-          "date": "2026-11-11",
-          "text": "skill-creator: eval viewer SIGTERMs unrelated processes on an occupied port ## Problem The skill-creator eval viewer terminates processes using the requested port before it tries to bind, without checking that those processes belong to the viewer. Starting a review can therefore terminate an unrelated development server or another accessible process using that port. ## Current source Verified at commit `2c5958ecac7cee2b583967a2c4981d0f4a75c579`: - [`skills/skill-creator/eval-viewer/generate_review.py:288-306`](https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/s",
-          "url": "https://github.com/anthropics/skills/issues/2190",
+          "author": "siegblink",
+          "date": "2026-11-13",
+          "text": "skill-creator: references/schemas.md example uses the retired model ID claude-sonnet-4-20250514 `skills/skill-creator/references/schemas.md` line 228, in the `benchmark.json` example: ```json \"executor_model\": \"claude-sonnet-4-20250514\", ``` Claude Sonnet 4 (`claude-sonnet-4-20250514`) is listed as retired since June 15, 2026. The example is the kind of thing that gets copied into benchmark metadata and run configurations as it stands. Suggested fix: use a placeholder, as the next line already does (`\"analyzer_model\": \"most-capable-model\"`), or a current model ID.",
+          "url": "https://github.com/anthropics/skills/issues/2202",
           "score": 1,
-          "sentiment": "negative"
+          "sentiment": "neutral"
         },
         {
           "id": "github-https-github-com-anthropics-skills-issues-2084-benharvey-bis",
@@ -898,17 +843,6 @@
           "url": "https://github.com/anthropics/skills/issues/2195",
           "score": 0,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-2202-siegblink",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "siegblink",
-          "date": "2026-11-13",
-          "text": "skill-creator: references/schemas.md example uses the retired model ID claude-sonnet-4-20250514 `skills/skill-creator/references/schemas.md` line 228, in the `benchmark.json` example: ```json \"executor_model\": \"claude-sonnet-4-20250514\", ``` Claude Sonnet 4 (`claude-sonnet-4-20250514`) is listed as retired since June 15, 2026. The example is the kind of thing that gets copied into benchmark metadata and run configurations as it stands. Suggested fix: use a placeholder, as the next line already does (`\"analyzer_model\": \"most-capable-model\"`), or a current model ID.",
-          "url": "https://github.com/anthropics/skills/issues/2202",
-          "score": 0,
-          "sentiment": "neutral"
         }
       ]
     },
