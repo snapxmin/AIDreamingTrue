@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-14T06:53:45Z",
+    "lastUpdated": "2026-11-15T06:57:10Z",
     "skillCount": 20,
-    "totalComments": 80,
+    "totalComments": 81,
     "sources": [
       "hacker-news",
       "github",
@@ -29,6 +29,17 @@
           "sentiment": "negative"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "mattallshops",
+          "date": "2026-10-23",
+          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
+          "url": "https://github.com/obra/superpowers/issues/2612",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2693-kaylalamp",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -49,17 +60,6 @@
           "url": "https://github.com/obra/superpowers/issues/2687",
           "score": 0,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2685-finleyjb",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "finleyjb",
-          "date": "2026-11-12",
-          "text": "writing-plans / execution chain: after Claude Code native plan-mode approval, no superpowers skill after brainstorming fires (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"plan mode writing-plans\", \"plan mode brainstorming\", \"ExitPlanMode\", \"skills not invoked claude code\", \"only brainstorming\"; closest: #1667 \"Skills not triggered when Claude Code Plan Mode is active\" (closed), #1260 \"[FEATURE] Integrate writing-plans with Claude Code's native Plan Mode / Plan panel\" (closed)) ## Environment (required) | Field | Value | Provenance / supporting evidence ",
-          "url": "https://github.com/obra/superpowers/issues/2685",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -67,38 +67,16 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 5,
+      "feedbackCount": 3,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
+          "id": "github-https-github-com-obra-superpowers-issues-2510-animeshios7",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "kpdbcdt",
-          "date": "2026-09-25",
-          "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
-          "url": "https://github.com/obra/superpowers/issues/2386",
-          "score": 7,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2651-swmacdonald",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "swmacdonald",
-          "date": "2026-10-30",
-          "text": "subagent-driven-development: task reviewer isn't told to flag a report with no RED evidence - [x] I searched existing issues and this has not been proposed before (related: #994, fixed by #1065, which made implementers report RED evidence; #1961; #2046; #2146; #2452) ## Who's filing this request? Claude (Opus 5.5, in Claude Code), on behalf of the owner of this GitHub account, who owns the project where this came up. Their instruction was to check for similar issues and then \"Draft it\"; they reviewed this text and wrote the summary below before it was filed. ## Human-authored summary I'm build",
-          "url": "https://github.com/obra/superpowers/issues/2651",
-          "score": 3,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2653-rrojasmsa",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "rrojasmsa",
-          "date": "2026-11-01",
-          "text": "brainstorming / writing-plans: a spec's assumptions about existing data are never checked against the data, so tests and review pass on the assumption **Skills:** `brainstorming`, `writing-plans` (Self-Review item 4, Review Focus), `test-driven-development`. Checked against 7.0.0. - [x] I searched existing issues and PRs. Adjacent: #2553 checks the spec's claims about today's *code*; #2468 asks plans to name a service's row cap. Neither asks for a check of the claims a design makes about the *data already stored*, or about the production volume. ## What problem does this solve? Three failures ",
-          "url": "https://github.com/obra/superpowers/issues/2653",
+          "author": "animeshios7",
+          "date": "2026-10-13",
+          "text": "executing-plans: agent changed an approved plan by a ledger \"Ruling:\" without asking, while CLAUDE.md said \"flag real problems and wait\", then claimed the phase done with verify lines unmet (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"rulings not stalls\", \"executing-plans ruling deviates plan\", \"follow plan exactly CLAUDE.md conflict\", \"deviated from plan without asking\", \"claimed complete verify\", \"verification-before-completion plan verify lines\", \"executing-plans user instructions precedence\", \"ruling\", \"deviation\", \"plan deviation\", \"ledger ruling\"",
+          "url": "https://github.com/obra/superpowers/issues/2510",
           "score": 1,
           "sentiment": "negative"
         },
@@ -130,8 +108,19 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "mattallshops",
+          "date": "2026-10-23",
+          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
+          "url": "https://github.com/obra/superpowers/issues/2612",
+          "score": 2,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2690-kaylalamp",
           "source": "github",
@@ -182,7 +171,7 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2686-gingertonik",
@@ -203,6 +192,17 @@
           "date": "2026-11-12",
           "text": "writing-plans / execution chain: after Claude Code native plan-mode approval, no superpowers skill after brainstorming fires (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"plan mode writing-plans\", \"plan mode brainstorming\", \"ExitPlanMode\", \"skills not invoked claude code\", \"only brainstorming\"; closest: #1667 \"Skills not triggered when Claude Code Plan Mode is active\" (closed), #1260 \"[FEATURE] Integrate writing-plans with Claude Code's native Plan Mode / Plan panel\" (closed)) ## Environment (required) | Field | Value | Provenance / supporting evidence ",
           "url": "https://github.com/obra/superpowers/issues/2685",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2699-nverheyen",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "NVerheyen",
+          "date": "2026-11-14",
+          "text": "using-superpowers: pressure wording over-triggers skills on current Claude models The `using-superpowers` skill (7.0.2, `skills/using-superpowers/SKILL.md`) relies on high-pressure wording to make the model reach for skills: - `<EXTREMELY-IMPORTANT>` blocks - \"If you think there is even a 1% chance a skill might apply … you ABSOLUTELY MUST invoke the skill.\" - \"IF A SKILL APPLIES TO YOUR TASK, YOU DO NOT HAVE A CHOICE.\" - a 12-row \"Red Flags\" table that treats any judgment about skipping a skill as rationalizing The same wording appears in `writing-skills` (\"you MUST STOP\", \"MANDATORY for EACH",
+          "url": "https://github.com/obra/superpowers/issues/2699",
           "score": 0,
           "sentiment": "negative"
         }
@@ -237,15 +237,15 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2638-pedroreusch",
+          "id": "github-https-github-com-obra-superpowers-issues-2510-animeshios7",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "PedroReusCh",
-          "date": "2026-10-28",
-          "text": "writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic recommendation without invoking writing-plans or creating task artifact (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `writing-plans brainstorming`, `skill not invoked`, `antigravity`; closest: #2386 `test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present`) ## Who's filing this report? (required) Gemini 4 Argon (High) on Google Antigravity (`agy`), filing on behalf of my human partner, who asked:",
-          "url": "https://github.com/obra/superpowers/issues/2638",
-          "score": 2,
-          "sentiment": "neutral"
+          "author": "animeshios7",
+          "date": "2026-10-13",
+          "text": "executing-plans: agent changed an approved plan by a ledger \"Ruling:\" without asking, while CLAUDE.md said \"flag real problems and wait\", then claimed the phase done with verify lines unmet (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"rulings not stalls\", \"executing-plans ruling deviates plan\", \"follow plan exactly CLAUDE.md conflict\", \"deviated from plan without asking\", \"claimed complete verify\", \"verification-before-completion plan verify lines\", \"executing-plans user instructions precedence\", \"ruling\", \"deviation\", \"plan deviation\", \"ledger ruling\"",
+          "url": "https://github.com/obra/superpowers/issues/2510",
+          "score": 1,
+          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2660-auza009",
@@ -289,6 +289,28 @@
           "sentiment": "negative"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "mattallshops",
+          "date": "2026-10-23",
+          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
+          "url": "https://github.com/obra/superpowers/issues/2612",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2510-animeshios7",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "animeshios7",
+          "date": "2026-10-13",
+          "text": "executing-plans: agent changed an approved plan by a ledger \"Ruling:\" without asking, while CLAUDE.md said \"flag real problems and wait\", then claimed the phase done with verify lines unmet (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"rulings not stalls\", \"executing-plans ruling deviates plan\", \"follow plan exactly CLAUDE.md conflict\", \"deviated from plan without asking\", \"claimed complete verify\", \"verification-before-completion plan verify lines\", \"executing-plans user instructions precedence\", \"ruling\", \"deviation\", \"plan deviation\", \"ledger ruling\"",
+          "url": "https://github.com/obra/superpowers/issues/2510",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2689-kaylalamp",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -308,28 +330,6 @@
           "text": "subagent-driven-development: a question escalated to the human is written in the work's own words, and asks them to already know the work - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) I'm a developer filing this from my own account. Claude Code drafted it from a note it logged in a real session where this came up; I asked it to prepare these for upstream, and I've read and edited it before posting. ## Human-authored summary (required, under 200 words) We spent a whole day working on one feature, and then a question was escalated",
           "url": "https://github.com/obra/superpowers/issues/2693",
           "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2690-kaylalamp",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "KaylaLamp",
-          "date": "2026-11-12",
-          "text": "subagent-driven-development: a ruling that names a concrete value (a format, a token, a comparison) is a claim about the codebase - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) I'm a developer filing this from my own account. Claude Code drafted it from a note it logged in a real session where this came up; I asked it to prepare these for upstream, and I've read and edited it before posting. ## Human-authored summary (required, under 200 words) The plan was incomplete, and the controller filled the gap with a date format and a co",
-          "url": "https://github.com/obra/superpowers/issues/2690",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2692-kaylalamp",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "KaylaLamp",
-          "date": "2026-11-12",
-          "text": "subagent-driven-development: the helpers assume the repo shares the controller's filesystem — a remote-shell repo needs a documented path - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) I'm a developer filing this from my own account. Claude Code drafted it from a note it logged in a real session where this came up; I asked it to prepare these for upstream, and I've read and edited it before posting. ## Human-authored summary (required, under 200 words) My repo is on a different machine and can only be accessed via a remote shell.",
-          "url": "https://github.com/obra/superpowers/issues/2692",
-          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -359,7 +359,7 @@
           "date": "2026-10-23",
           "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
           "url": "https://github.com/obra/superpowers/issues/2612",
-          "score": 1,
+          "score": 2,
           "sentiment": "negative"
         },
         {
@@ -382,35 +382,35 @@
       "feedbackCount": 3,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
+          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "mbcrawfo",
-          "date": "2026-10-16",
-          "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
-          "url": "https://github.com/obra/superpowers/issues/2530",
-          "score": 42,
+          "author": "mattallshops",
+          "date": "2026-10-23",
+          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
+          "url": "https://github.com/obra/superpowers/issues/2612",
+          "score": 2,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2260-kei-h0-9hgh",
+          "id": "github-https-github-com-obra-superpowers-issues-2510-animeshios7",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "kei-H0-9HgH",
-          "date": "2026-09-05",
-          "text": "Codex reference assumes spawn capabilities unavailable in an observed desktop session ## Summary The Codex reference in Superpowers 6.3.0 conflicts with the `collaboration.spawn_agent` contract supplied to one inspected desktop session: 1. The reference says full-history forks accept model and reasoning-effort overrides, while this session's contract prohibits them. 2. The reference describes `agent_type`, but this session's tool schema does not expose that parameter. These findings are specific to the inspected environment. They do not establish that all Codex versions, presets, or tool surfa",
-          "url": "https://github.com/obra/superpowers/issues/2260",
-          "score": 2,
-          "sentiment": "neutral"
+          "author": "animeshios7",
+          "date": "2026-10-13",
+          "text": "executing-plans: agent changed an approved plan by a ledger \"Ruling:\" without asking, while CLAUDE.md said \"flag real problems and wait\", then claimed the phase done with verify lines unmet (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"rulings not stalls\", \"executing-plans ruling deviates plan\", \"follow plan exactly CLAUDE.md conflict\", \"deviated from plan without asking\", \"claimed complete verify\", \"verification-before-completion plan verify lines\", \"executing-plans user instructions precedence\", \"ruling\", \"deviation\", \"plan deviation\", \"ledger ruling\"",
+          "url": "https://github.com/obra/superpowers/issues/2510",
+          "score": 1,
+          "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2685-finleyjb",
+          "id": "github-https-github-com-obra-superpowers-issues-2699-nverheyen",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "finleyjb",
-          "date": "2026-11-12",
-          "text": "writing-plans / execution chain: after Claude Code native plan-mode approval, no superpowers skill after brainstorming fires (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"plan mode writing-plans\", \"plan mode brainstorming\", \"ExitPlanMode\", \"skills not invoked claude code\", \"only brainstorming\"; closest: #1667 \"Skills not triggered when Claude Code Plan Mode is active\" (closed), #1260 \"[FEATURE] Integrate writing-plans with Claude Code's native Plan Mode / Plan panel\" (closed)) ## Environment (required) | Field | Value | Provenance / supporting evidence ",
-          "url": "https://github.com/obra/superpowers/issues/2685",
+          "author": "NVerheyen",
+          "date": "2026-11-14",
+          "text": "using-superpowers: pressure wording over-triggers skills on current Claude models The `using-superpowers` skill (7.0.2, `skills/using-superpowers/SKILL.md`) relies on high-pressure wording to make the model reach for skills: - `<EXTREMELY-IMPORTANT>` blocks - \"If you think there is even a 1% chance a skill might apply … you ABSOLUTELY MUST invoke the skill.\" - \"IF A SKILL APPLIES TO YOUR TASK, YOU DO NOT HAVE A CHOICE.\" - a 12-row \"Red Flags\" table that treats any judgment about skipping a skill as rationalizing The same wording appears in `writing-skills` (\"you MUST STOP\", \"MANDATORY for EACH",
+          "url": "https://github.com/obra/superpowers/issues/2699",
           "score": 0,
           "sentiment": "negative"
         }
@@ -787,7 +787,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 5,
+      "feedbackCount": 6,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1706-stillpimpn",
@@ -841,6 +841,17 @@
           "date": "2026-11-12",
           "text": "Proposal: add metadata.source (and version) to SKILL.md so copies can be checked for updates **The problem** When these skills are installed as Claude Code plugins, the plugin system tracks updates. But many people use copies: a `.skill` zip uploaded to Claude.ai, a folder copied into `~/.claude/skills`, or a skill vendored into a project for another agent. Once copied, nothing in the skill records where it came from, so neither the user nor their agent can tell that `pdf` or `skill-creator` has changed here since. #228 describes the team version of this: \"different versions everywhere… nobody",
           "url": "https://github.com/anthropics/skills/issues/2195",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-2220-raffaelefarinaro",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "raffaelefarinaro",
+          "date": "2026-11-14",
+          "text": "Consider a bounded entrypoint for skill-creator ## Problem The public `skills/skill-creator/SKILL.md` is 33,168 bytes at blob `65b3a402dbd09b8e83f9d637c6b553875189085c`. Some agent environments impose a roughly 15 KiB skill-entry or tool-output budget. Loading an entry of this size in such an environment can truncate the instructions; this is not a claim that every host has this limit. ## Reproduce the size ```sh curl -fsSL https://raw.githubusercontent.com/anthropics/skills/main/skills/skill-creator/SKILL.md | wc -c ``` ## Proposed direction Consider keeping the entrypoint focused on the main",
+          "url": "https://github.com/anthropics/skills/issues/2220",
           "score": 0,
           "sentiment": "negative"
         }
