@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-15T06:57:10Z",
+    "lastUpdated": "2026-11-16T07:04:05Z",
     "skillCount": 20,
-    "totalComments": 81,
+    "totalComments": 80,
     "sources": [
       "hacker-news",
       "github",
@@ -17,17 +17,6 @@
       "displayName": "Brainstorming",
       "feedbackCount": 4,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "mbcrawfo",
-          "date": "2026-10-16",
-          "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
-          "url": "https://github.com/obra/superpowers/issues/2530",
-          "score": 42,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
           "source": "github",
@@ -58,6 +47,17 @@
           "date": "2026-11-12",
           "text": "writing-plans: a \"confirm the environment\" step that reads a menu verifies the wrong layer — end it in the cheapest action the platform would refuse - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) I'm a developer filing this from my own account. Claude Code drafted it from a note it logged in a real session where this came up; I asked it to prepare these for upstream, and I've read and edited it before posting. ## Human-authored summary (required, under 200 words) The first part of my plan involved checking the build platform to m",
           "url": "https://github.com/obra/superpowers/issues/2687",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2709-sgersh72",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "SGersh72",
+          "date": "2026-11-16",
+          "text": "using-superpowers: in plan mode no skill fires; agent asks a procedural question before answering, then answers over the user's \"clarify\" (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"AskUserQuestion clarify\", \"answers before asking question\", \"clarify interrupted\", \"recommendation without checking git\", \"using-superpowers plan mode\", \"plan mode\", \"skill not triggered\", \"question before answering\", \"diagnosing-superpowers\"; closest: #1667 \"Skills not triggered when Claude Code Plan Mode is active\" (closed, not planned), #2685 \"after Claude Code native p",
+          "url": "https://github.com/obra/superpowers/issues/2709",
           "score": 0,
           "sentiment": "negative"
         }
@@ -122,6 +122,17 @@
           "sentiment": "negative"
         },
         {
+          "id": "github-https-github-com-obra-superpowers-issues-1747-jbach-dev",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "jbach-dev",
+          "date": "2026-06-13",
+          "text": "SDD has no effort-level dimension: subagents run at session effort regardless of task complexity <html> <body> <!--StartFragment--><html><head></head><body><ul> <li>[x] I searched existing issues and this has not been proposed before</li> </ul> <p><em>(Closest prior art, checked open and closed: #1631 covers the model half of this — workers inherit the parent <strong>model</strong> — and the #1744/#1717/#1716 cost-tiering stack fixes which <strong>model</strong> each role runs on, with zero mentions of effort. #1120 is review cadence. This proposal is the reasoning-effort dimension of the same",
+          "url": "https://github.com/obra/superpowers/issues/1747",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2690-kaylalamp",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -144,24 +155,13 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2688-kaylalamp",
+          "id": "github-https-github-com-obra-superpowers-issues-2709-sgersh72",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "KaylaLamp",
-          "date": "2026-11-12",
-          "text": "writing-plans / task reviewer: plan text that fixes UI copy or behaviour is a claim against the spec, and the per-task review never checks it - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) I'm a developer filing this from my own account. Claude Code drafted it from a note it logged in a real session where this came up; I asked it to prepare these for upstream, and I've read and edited it before posting. ## Human-authored summary (required, under 200 words) Two pieces of text in the UI did not match the design. They were built as ",
-          "url": "https://github.com/obra/superpowers/issues/2688",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2687-kaylalamp",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "KaylaLamp",
-          "date": "2026-11-12",
-          "text": "writing-plans: a \"confirm the environment\" step that reads a menu verifies the wrong layer — end it in the cheapest action the platform would refuse - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) I'm a developer filing this from my own account. Claude Code drafted it from a note it logged in a real session where this came up; I asked it to prepare these for upstream, and I've read and edited it before posting. ## Human-authored summary (required, under 200 words) The first part of my plan involved checking the build platform to m",
-          "url": "https://github.com/obra/superpowers/issues/2687",
+          "author": "SGersh72",
+          "date": "2026-11-16",
+          "text": "using-superpowers: in plan mode no skill fires; agent asks a procedural question before answering, then answers over the user's \"clarify\" (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"AskUserQuestion clarify\", \"answers before asking question\", \"clarify interrupted\", \"recommendation without checking git\", \"using-superpowers plan mode\", \"plan mode\", \"skill not triggered\", \"question before answering\", \"diagnosing-superpowers\"; closest: #1667 \"Skills not triggered when Claude Code Plan Mode is active\" (closed, not planned), #2685 \"after Claude Code native p",
+          "url": "https://github.com/obra/superpowers/issues/2709",
           "score": 0,
           "sentiment": "negative"
         }
@@ -171,7 +171,7 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2686-gingertonik",
@@ -203,6 +203,17 @@
           "date": "2026-11-14",
           "text": "using-superpowers: pressure wording over-triggers skills on current Claude models The `using-superpowers` skill (7.0.2, `skills/using-superpowers/SKILL.md`) relies on high-pressure wording to make the model reach for skills: - `<EXTREMELY-IMPORTANT>` blocks - \"If you think there is even a 1% chance a skill might apply … you ABSOLUTELY MUST invoke the skill.\" - \"IF A SKILL APPLIES TO YOUR TASK, YOU DO NOT HAVE A CHOICE.\" - a 12-row \"Red Flags\" table that treats any judgment about skipping a skill as rationalizing The same wording appears in `writing-skills` (\"you MUST STOP\", \"MANDATORY for EACH",
           "url": "https://github.com/obra/superpowers/issues/2699",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2709-sgersh72",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "SGersh72",
+          "date": "2026-11-16",
+          "text": "using-superpowers: in plan mode no skill fires; agent asks a procedural question before answering, then answers over the user's \"clarify\" (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"AskUserQuestion clarify\", \"answers before asking question\", \"clarify interrupted\", \"recommendation without checking git\", \"using-superpowers plan mode\", \"plan mode\", \"skill not triggered\", \"question before answering\", \"diagnosing-superpowers\"; closest: #1667 \"Skills not triggered when Claude Code Plan Mode is active\" (closed, not planned), #2685 \"after Claude Code native p",
+          "url": "https://github.com/obra/superpowers/issues/2709",
           "score": 0,
           "sentiment": "negative"
         }
@@ -275,7 +286,7 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-1543-gigman2",
@@ -311,25 +322,14 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2689-kaylalamp",
+          "id": "github-https-github-com-obra-superpowers-issues-2706-vigneshm1995personal",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "KaylaLamp",
-          "date": "2026-11-12",
-          "text": "finishing-a-development-branch: a merge that changes package.json or adds a migration needs the install/migrate in the same block as the merge, before the merged-result test run - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) I'm a developer filing this from my own account. Claude Code drafted it from a note it logged in a real session where this came up; I asked it to prepare these for upstream, and I've read and edited it before posting. ## Human-authored summary (required, under 200 words) I merged a branch which introduced a n",
-          "url": "https://github.com/obra/superpowers/issues/2689",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2693-kaylalamp",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "KaylaLamp",
-          "date": "2026-11-12",
-          "text": "subagent-driven-development: a question escalated to the human is written in the work's own words, and asks them to already know the work - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) I'm a developer filing this from my own account. Claude Code drafted it from a note it logged in a real session where this came up; I asked it to prepare these for upstream, and I've read and edited it before posting. ## Human-authored summary (required, under 200 words) We spent a whole day working on one feature, and then a question was escalated",
-          "url": "https://github.com/obra/superpowers/issues/2693",
-          "score": 1,
+          "author": "vigneshm1995personal",
+          "date": "2026-11-15",
+          "text": "finishing-a-development-branch deletes never-committed worktree files during \"merge and clean up\" (24/24 runs); executing-plans commits to main without consent (21/21). Fix attached, 0/21 after. - [x] I searched existing issues and this is not a duplicate ## Who's filing this report? (required) An agent is filing this on behalf of Vignesh M (@vigneshm1995personal). He reviewed the findings, the proposed fix, and this report, and asked me to file the issue and a follow-up PR. His instruction: \"Yes file the issue and PR\". ## Human-authored summary (required, under 200 words) I asked a coding age",
+          "url": "https://github.com/obra/superpowers/issues/2706",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -379,19 +379,8 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "mattallshops",
-          "date": "2026-10-23",
-          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
-          "url": "https://github.com/obra/superpowers/issues/2612",
-          "score": 2,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2510-animeshios7",
           "source": "github",
@@ -404,13 +393,13 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2699-nverheyen",
+          "id": "github-https-github-com-obra-superpowers-issues-2709-sgersh72",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "NVerheyen",
-          "date": "2026-11-14",
-          "text": "using-superpowers: pressure wording over-triggers skills on current Claude models The `using-superpowers` skill (7.0.2, `skills/using-superpowers/SKILL.md`) relies on high-pressure wording to make the model reach for skills: - `<EXTREMELY-IMPORTANT>` blocks - \"If you think there is even a 1% chance a skill might apply … you ABSOLUTELY MUST invoke the skill.\" - \"IF A SKILL APPLIES TO YOUR TASK, YOU DO NOT HAVE A CHOICE.\" - a 12-row \"Red Flags\" table that treats any judgment about skipping a skill as rationalizing The same wording appears in `writing-skills` (\"you MUST STOP\", \"MANDATORY for EACH",
-          "url": "https://github.com/obra/superpowers/issues/2699",
+          "author": "SGersh72",
+          "date": "2026-11-16",
+          "text": "using-superpowers: in plan mode no skill fires; agent asks a procedural question before answering, then answers over the user's \"clarify\" (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"AskUserQuestion clarify\", \"answers before asking question\", \"clarify interrupted\", \"recommendation without checking git\", \"using-superpowers plan mode\", \"plan mode\", \"skill not triggered\", \"question before answering\", \"diagnosing-superpowers\"; closest: #1667 \"Skills not triggered when Claude Code Plan Mode is active\" (closed, not planned), #2685 \"after Claude Code native p",
+          "url": "https://github.com/obra/superpowers/issues/2709",
           "score": 0,
           "sentiment": "negative"
         }
@@ -741,15 +730,15 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-github-awesome-copilot-issues-4480-matinomari906-cloud",
+          "id": "github-https-github-com-github-awesome-copilot-issues-6433-pothead42o",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "matinomari906-cloud",
-          "date": "2026-10-04",
-          "text": "## Skills (part 1) ## Skills (part 1) ``` npm warn EBADENGINE Unsupported engine { — @github/awesome-copilot-content-reviewers npm warn EBADENGINE package: 'commander@15.0.0', — @github/awesome-copilot-content-reviewers npm warn EBADENGINE required: { node: '>=22.12.0' }, — @github/awesome-copilot-content-reviewers npm warn EBADENGINE current: { node: 'v20.20.2', npm: '10.8.2' } — @github/awesome-copilot-content-reviewers npm warn EBADENGINE } — @github/awesome-copilot-content-reviewers npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant ",
-          "url": "https://github.com/github/awesome-copilot/issues/4480",
+          "author": "pothead42o",
+          "date": "2026-11-15",
+          "text": "full game brain and everything controler gh skills install github/awesome-copilot acquire-codebase-knowledge",
+          "url": "https://github.com/github/awesome-copilot/issues/6433",
           "score": 0,
-          "sentiment": "negative"
+          "sentiment": "positive"
         }
       ]
     },
