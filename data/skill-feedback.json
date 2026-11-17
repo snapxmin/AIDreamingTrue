@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-16T07:31:49Z",
+    "lastUpdated": "2026-11-17T08:17:43Z",
     "skillCount": 20,
-    "totalComments": 80,
+    "totalComments": 79,
     "sources": [
       "hacker-news",
       "github",
@@ -17,6 +17,17 @@
       "displayName": "Brainstorming",
       "feedbackCount": 4,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "mbcrawfo",
+          "date": "2026-10-16",
+          "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
+          "url": "https://github.com/obra/superpowers/issues/2530",
+          "score": 46,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
           "source": "github",
@@ -37,17 +48,6 @@
           "text": "subagent-driven-development: a question escalated to the human is written in the work's own words, and asks them to already know the work - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) I'm a developer filing this from my own account. Claude Code drafted it from a note it logged in a real session where this came up; I asked it to prepare these for upstream, and I've read and edited it before posting. ## Human-authored summary (required, under 200 words) We spent a whole day working on one feature, and then a question was escalated",
           "url": "https://github.com/obra/superpowers/issues/2693",
           "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2687-kaylalamp",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "KaylaLamp",
-          "date": "2026-11-12",
-          "text": "writing-plans: a \"confirm the environment\" step that reads a menu verifies the wrong layer — end it in the cheapest action the platform would refuse - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) I'm a developer filing this from my own account. Claude Code drafted it from a note it logged in a real session where this came up; I asked it to prepare these for upstream, and I've read and edited it before posting. ## Human-authored summary (required, under 200 words) The first part of my plan involved checking the build platform to m",
-          "url": "https://github.com/obra/superpowers/issues/2687",
-          "score": 0,
           "sentiment": "negative"
         },
         {
@@ -223,19 +223,8 @@
       "slug": "verification-before-completion",
       "ecosystem": "superpowers",
       "displayName": "Verification Before Completion",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2665-napetrov",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "napetrov",
-          "date": "2026-11-05",
-          "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
-          "url": "https://github.com/obra/superpowers/issues/2665",
-          "score": 4,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2231-abhineshkr",
           "source": "github",
@@ -382,14 +371,14 @@
       "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2510-animeshios7",
+          "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "animeshios7",
-          "date": "2026-10-13",
-          "text": "executing-plans: agent changed an approved plan by a ledger \"Ruling:\" without asking, while CLAUDE.md said \"flag real problems and wait\", then claimed the phase done with verify lines unmet (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"rulings not stalls\", \"executing-plans ruling deviates plan\", \"follow plan exactly CLAUDE.md conflict\", \"deviated from plan without asking\", \"claimed complete verify\", \"verification-before-completion plan verify lines\", \"executing-plans user instructions precedence\", \"ruling\", \"deviation\", \"plan deviation\", \"ledger ruling\"",
-          "url": "https://github.com/obra/superpowers/issues/2510",
-          "score": 1,
+          "author": "mbcrawfo",
+          "date": "2026-10-16",
+          "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
+          "url": "https://github.com/obra/superpowers/issues/2530",
+          "score": 46,
           "sentiment": "negative"
         },
         {
