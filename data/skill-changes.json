@@ -1,32 +1,15 @@
 {
-  "generatedAt": "2026-11-17T08:14:23Z",
+  "generatedAt": "2026-11-18T07:47:47Z",
   "isBaselineRun": false,
   "changes": [
     {
-      "type": "updated",
-      "key": "anthropics-skills/docx",
-      "ecosystem": "anthropics-skills",
-      "slug": "docx",
-      "displayName": "Docx",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/docx",
-      "detectedAt": "2026-11-17T08:16:00Z"
-    },
-    {
-      "type": "updated",
-      "key": "anthropics-skills/pptx",
-      "ecosystem": "anthropics-skills",
-      "slug": "pptx",
-      "displayName": "Pptx",
-      "changedFields": [
-        "content"
-      ],
-      "summary": "Skill 内容已更新",
-      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/pptx",
-      "detectedAt": "2026-11-17T08:16:00Z"
+      "type": "added",
+      "key": "awesome-copilot/polytype-middleware",
+      "ecosystem": "awesome-copilot",
+      "slug": "polytype-middleware",
+      "displayName": "Polytype Middleware",
+      "summary": "生态新增 Skill：Polytype Middleware",
+      "detectedAt": "2026-11-18T07:49:25Z"
     }
   ]
 }
