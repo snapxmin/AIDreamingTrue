@@ -1,15 +1,5 @@
 {
-  "generatedAt": "2026-11-18T07:47:47Z",
+  "generatedAt": "2026-11-19T07:43:35Z",
   "isBaselineRun": false,
-  "changes": [
-    {
-      "type": "added",
-      "key": "awesome-copilot/polytype-middleware",
-      "ecosystem": "awesome-copilot",
-      "slug": "polytype-middleware",
-      "displayName": "Polytype Middleware",
-      "summary": "生态新增 Skill：Polytype Middleware",
-      "detectedAt": "2026-11-18T07:49:25Z"
-    }
-  ]
+  "changes": []
 }

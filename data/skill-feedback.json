@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-18T07:51:08Z",
+    "lastUpdated": "2026-11-19T07:45:57Z",
     "skillCount": 20,
     "totalComments": 77,
     "sources": [
@@ -163,6 +163,17 @@
       "feedbackCount": 4,
       "comments": [
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2699-nverheyen",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "NVerheyen",
+          "date": "2026-11-14",
+          "text": "using-superpowers: pressure wording over-triggers skills on current Claude models The `using-superpowers` skill (7.0.2, `skills/using-superpowers/SKILL.md`) relies on high-pressure wording to make the model reach for skills: - `<EXTREMELY-IMPORTANT>` blocks - \"If you think there is even a 1% chance a skill might apply … you ABSOLUTELY MUST invoke the skill.\" - \"IF A SKILL APPLIES TO YOUR TASK, YOU DO NOT HAVE A CHOICE.\" - a 12-row \"Red Flags\" table that treats any judgment about skipping a skill as rationalizing The same wording appears in `writing-skills` (\"you MUST STOP\", \"MANDATORY for EACH",
+          "url": "https://github.com/obra/superpowers/issues/2699",
+          "score": 1,
+          "sentiment": "negative"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2686-gingertonik",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -181,17 +192,6 @@
           "date": "2026-11-12",
           "text": "writing-plans / execution chain: after Claude Code native plan-mode approval, no superpowers skill after brainstorming fires (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"plan mode writing-plans\", \"plan mode brainstorming\", \"ExitPlanMode\", \"skills not invoked claude code\", \"only brainstorming\"; closest: #1667 \"Skills not triggered when Claude Code Plan Mode is active\" (closed), #1260 \"[FEATURE] Integrate writing-plans with Claude Code's native Plan Mode / Plan panel\" (closed)) ## Environment (required) | Field | Value | Provenance / supporting evidence ",
           "url": "https://github.com/obra/superpowers/issues/2685",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2699-nverheyen",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "NVerheyen",
-          "date": "2026-11-14",
-          "text": "using-superpowers: pressure wording over-triggers skills on current Claude models The `using-superpowers` skill (7.0.2, `skills/using-superpowers/SKILL.md`) relies on high-pressure wording to make the model reach for skills: - `<EXTREMELY-IMPORTANT>` blocks - \"If you think there is even a 1% chance a skill might apply … you ABSOLUTELY MUST invoke the skill.\" - \"IF A SKILL APPLIES TO YOUR TASK, YOU DO NOT HAVE A CHOICE.\" - a 12-row \"Red Flags\" table that treats any judgment about skipping a skill as rationalizing The same wording appears in `writing-skills` (\"you MUST STOP\", \"MANDATORY for EACH",
-          "url": "https://github.com/obra/superpowers/issues/2699",
           "score": 0,
           "sentiment": "negative"
         },
@@ -267,17 +267,6 @@
       "feedbackCount": 4,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-1543-gigman2",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Gigman2",
-          "date": "2026-05-13",
-          "text": "subagent-driven-development: subagents can detach HEAD with bare `git checkout <sha>`, silently orphaning subsequent commits ## Summary While running `subagent-driven-development` (v5.1.0) on a 17-task plan, a spec-reviewer subagent detached HEAD on the controller's feature branch by running `git checkout <sha>` (without `-- <path>`) as part of a parent-commit comparison. The branch ref froze at that commit; every subsequent commit from later subagents accumulated on the detached HEAD. Eleven commits were orphaned this way before the controller noticed (the next `git commit` line read `[detach",
-          "url": "https://github.com/obra/superpowers/issues/1543",
-          "score": 5,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -307,6 +296,17 @@
           "date": "2026-11-15",
           "text": "finishing-a-development-branch deletes never-committed worktree files during \"merge and clean up\" (24/24 runs); executing-plans commits to main without consent (21/21). Fix attached, 0/21 after. - [x] I searched existing issues and this is not a duplicate ## Who's filing this report? (required) An agent is filing this on behalf of Vignesh M (@vigneshm1995personal). He reviewed the findings, the proposed fix, and this report, and asked me to file the issue and a follow-up PR. His instruction: \"Yes file the issue and PR\". ## Human-authored summary (required, under 200 words) I asked a coding age",
           "url": "https://github.com/obra/superpowers/issues/2706",
+          "score": 0,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2716-shotanamerikawa",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ShotaNamerikawa",
+          "date": "2026-11-19",
+          "text": "subagent-driven-development: the fix-loop model escalation (rounds 4-5) has no stated scope, so the escalated implementer carries on into later tasks - [x] I searched existing issues and this has not been proposed before (searched: escalation, tier above, rounds 4-5, fix round model, resume implementer, reuse implementer). Closest: - #1986 (closed, not planned): cross-task subagent reuse in general. - #2612: token use in long sessions. This request is narrower. It covers only when the fix-loop escalation ends. ## Who's filing this request? (required) Claude Code (Opus 5.5), at the request of i",
+          "url": "https://github.com/obra/superpowers/issues/2716",
           "score": 0,
           "sentiment": "negative"
         }
@@ -371,14 +371,14 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2709-sgersh72",
+          "id": "github-https-github-com-obra-superpowers-issues-2699-nverheyen",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "SGersh72",
-          "date": "2026-11-16",
-          "text": "using-superpowers: in plan mode no skill fires; agent asks a procedural question before answering, then answers over the user's \"clarify\" (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"AskUserQuestion clarify\", \"answers before asking question\", \"clarify interrupted\", \"recommendation without checking git\", \"using-superpowers plan mode\", \"plan mode\", \"skill not triggered\", \"question before answering\", \"diagnosing-superpowers\"; closest: #1667 \"Skills not triggered when Claude Code Plan Mode is active\" (closed, not planned), #2685 \"after Claude Code native p",
-          "url": "https://github.com/obra/superpowers/issues/2709",
-          "score": 0,
+          "author": "NVerheyen",
+          "date": "2026-11-14",
+          "text": "using-superpowers: pressure wording over-triggers skills on current Claude models The `using-superpowers` skill (7.0.2, `skills/using-superpowers/SKILL.md`) relies on high-pressure wording to make the model reach for skills: - `<EXTREMELY-IMPORTANT>` blocks - \"If you think there is even a 1% chance a skill might apply … you ABSOLUTELY MUST invoke the skill.\" - \"IF A SKILL APPLIES TO YOUR TASK, YOU DO NOT HAVE A CHOICE.\" - a 12-row \"Red Flags\" table that treats any judgment about skipping a skill as rationalizing The same wording appears in `writing-skills` (\"you MUST STOP\", \"MANDATORY for EACH",
+          "url": "https://github.com/obra/superpowers/issues/2699",
+          "score": 1,
           "sentiment": "negative"
         }
       ]
@@ -439,19 +439,8 @@
       "slug": "security-review",
       "ecosystem": "awesome-copilot",
       "displayName": "Security Review",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
-        {
-          "id": "github-https-github-com-github-awesome-copilot-issues-4746-github-actions-bot-",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "github-actions[bot]",
-          "date": "2026-10-09",
-          "text": "📋 Resource Staleness Report ### Summary - **Stale (>30 days):** 813 resources - **Aging (14–30 days):** 24 resources - **Fresh (<14 days):** 14 resources (not listed below) _Dates use the latest non-formatting/non-rename modification (or add) commit per file; folder resources use their newest file. Many dates are early because of history shape, so age alone is a weak signal._ ### 🔴 Stale Resources (>30 days since last major change) <details><summary>Show 813 stale resources</summary> | Resource | Type | Last Major Change | Days Ago | |----------|------|-------------------|----------| | `instru",
-          "url": "https://github.com/github/awesome-copilot/issues/4746",
-          "score": 1,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-github-awesome-copilot-issues-5114-github-actions-bot-",
           "source": "github",
@@ -817,7 +806,7 @@
       "slug": "mcp-builder",
       "ecosystem": "anthropics-skills",
       "displayName": "MCP Builder",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-2033-gltknky",
@@ -862,6 +851,17 @@
           "url": "https://github.com/anthropics/skills/issues/2201",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-2246-giri-kondisetty",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "giri-kondisetty",
+          "date": "2026-11-19",
+          "text": "mcp-builder: the v1 Node streamable-HTTP example listens on every interface with no Host validation, contradicting the skill's own best practices **Summary** The skill's own `mcp_best_practices.md` says to \"Enable DNS rebinding protection\" and \"Bind to `127.0.0.1` rather than `0.0.0.0`\", and the v2 guide does exactly that with `createMcpExpressApp()`. The v1 Node guide's streamable HTTP examples do the opposite: they build the server with a bare `express()` app and call `app.listen(port)` / `app.listen(3000)` with no host. A server built from them listens on every interface and accepts any `Ho",
+          "url": "https://github.com/anthropics/skills/issues/2246",
+          "score": 0,
+          "sentiment": "neutral"
         }
       ]
     },
