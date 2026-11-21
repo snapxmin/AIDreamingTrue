@@ -1,5 +1,20 @@
 [
   {
+    "id": "auto-claude-v2-1-330",
+    "title": "Claude Code v2.1.330 发布",
+    "date": "2026-11-20",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "Anthropic",
+    "heat": 75,
+    "growth": 8,
+    "sourceTier": "A",
+    "summary": "## What's changed  - Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after `claude auth login`, Claude Code applies the organization's settings and uses its cloud provi",
+    "whyImportant": "Claude Code 持续高频迭代，终端 Agent 能力不断增强。",
+    "impact": "关注 release notes 中的权限、MCP 和 subagent 相关变更。",
+    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330"
+  },
+  {
     "id": "auto-claude-v2-1-328",
     "title": "Claude Code v2.1.328 发布",
     "date": "2026-11-19",

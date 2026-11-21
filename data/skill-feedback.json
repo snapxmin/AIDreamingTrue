@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-20T07:37:48Z",
+    "lastUpdated": "2026-11-21T07:33:54Z",
     "skillCount": 20,
     "totalComments": 81,
     "sources": [
@@ -15,30 +15,8 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "mbcrawfo",
-          "date": "2026-10-16",
-          "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
-          "url": "https://github.com/obra/superpowers/issues/2530",
-          "score": 46,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2709-sgersh72",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "SGersh72",
-          "date": "2026-11-16",
-          "text": "using-superpowers: in plan mode no skill fires; agent asks a procedural question before answering, then answers over the user's \"clarify\" (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"AskUserQuestion clarify\", \"answers before asking question\", \"clarify interrupted\", \"recommendation without checking git\", \"using-superpowers plan mode\", \"plan mode\", \"skill not triggered\", \"question before answering\", \"diagnosing-superpowers\"; closest: #1667 \"Skills not triggered when Claude Code Plan Mode is active\" (closed, not planned), #2685 \"after Claude Code native p",
-          "url": "https://github.com/obra/superpowers/issues/2709",
-          "score": 1,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2583-shiluoluo16",
           "source": "github",
@@ -49,6 +27,39 @@
           "url": "https://github.com/obra/superpowers/issues/2583",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2720-rully-saputra15",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "rully-saputra15",
+          "date": "2026-11-20",
+          "text": "brainstorming: add inversion (failure question, premortem) so designs account for how they could fail - [x] I searched existing issues and this has not been proposed before (searched: inversion, premortem, anti-goals, devil's advocate, red team; related: #1266, #1803, #2530) ## Who's filing this request? (required) Filed by Claude (Claude Opus 5.5) on behalf of @rully-saputra15. Their instruction, close to their words: \"enhance brainstorming superpowers by obra skills to have inversion thinking to show the better result\", referencing https://jamesclear.com/inversion, then \"i want to create a n",
+          "url": "https://github.com/obra/superpowers/issues/2720",
+          "score": 0,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2726-robbiesierra",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "robbiesierra",
+          "date": "2026-11-21",
+          "text": "superpowers: README workflow lines describe an older flow (worktree timing, plan code, review stages, finish options) ## Who's filing this report? (Filer: say who you are and that this came from reading the source, not from a session.) ## Human-authored summary (Filer: write this section yourself, in your own words, before filing.) ## What happened? Several lines in the README's workflow description no longer match the skills, so a new user plans around steps that do not happen. - \"using-git-worktrees - Activates after design approval\" (https://github.com/obra/superpowers/blob/22f0b463e7a5e579",
+          "url": "https://github.com/obra/superpowers/issues/2726",
+          "score": 0,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2725-robbiesierra",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "robbiesierra",
+          "date": "2026-11-21",
+          "text": "superpowers: visual companion drops brainstorm.choice() events and loses its screen directory after a restart ## Who's filing this report? (Filer: say who you are and that this came from reading the source, not from a session.) ## Human-authored summary (Filer: write this section yourself, in your own words, before filing.) ## What happened? Two paths in the brainstorming visual companion lose the link between what the agent does and what the server sees. **1. `brainstorm.choice()` events are dropped.** `helper.js` exposes `window.brainstorm.choice(value, metadata)`, which sends `{ type: 'choi",
+          "url": "https://github.com/obra/superpowers/issues/2725",
+          "score": 0,
+          "sentiment": "positive"
         }
       ]
     },
@@ -122,17 +133,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2690-kaylalamp",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "KaylaLamp",
-          "date": "2026-11-12",
-          "text": "subagent-driven-development: a ruling that names a concrete value (a format, a token, a comparison) is a claim about the codebase - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) I'm a developer filing this from my own account. Claude Code drafted it from a note it logged in a real session where this came up; I asked it to prepare these for upstream, and I've read and edited it before posting. ## Human-authored summary (required, under 200 words) The plan was incomplete, and the controller filled the gap with a date format and a co",
-          "url": "https://github.com/obra/superpowers/issues/2690",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2709-sgersh72",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -153,6 +153,17 @@
           "url": "https://github.com/obra/superpowers/issues/2583",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2726-robbiesierra",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "robbiesierra",
+          "date": "2026-11-21",
+          "text": "superpowers: README workflow lines describe an older flow (worktree timing, plan code, review stages, finish options) ## Who's filing this report? (Filer: say who you are and that this came from reading the source, not from a session.) ## Human-authored summary (Filer: write this section yourself, in your own words, before filing.) ## What happened? Several lines in the README's workflow description no longer match the skills, so a new user plans around steps that do not happen. - \"using-git-worktrees - Activates after design approval\" (https://github.com/obra/superpowers/blob/22f0b463e7a5e579",
+          "url": "https://github.com/obra/superpowers/issues/2726",
+          "score": 0,
+          "sentiment": "neutral"
         }
       ]
     },
@@ -267,28 +278,6 @@
       "feedbackCount": 5,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "mattallshops",
-          "date": "2026-10-23",
-          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
-          "url": "https://github.com/obra/superpowers/issues/2612",
-          "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2510-animeshios7",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "animeshios7",
-          "date": "2026-10-13",
-          "text": "executing-plans: agent changed an approved plan by a ledger \"Ruling:\" without asking, while CLAUDE.md said \"flag real problems and wait\", then claimed the phase done with verify lines unmet (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"rulings not stalls\", \"executing-plans ruling deviates plan\", \"follow plan exactly CLAUDE.md conflict\", \"deviated from plan without asking\", \"claimed complete verify\", \"verification-before-completion plan verify lines\", \"executing-plans user instructions precedence\", \"ruling\", \"deviation\", \"plan deviation\", \"ledger ruling\"",
-          "url": "https://github.com/obra/superpowers/issues/2510",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2583-shiluoluo16",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -296,17 +285,6 @@
           "date": "2026-10-22",
           "text": "OpenCode: bootstrap instructs `superpowers:<skill>`, but the plugin registers bare ids - every session opens with failed skill calls - [x] I searched existing issues and this is not a duplicate ## Who's filing this report? (required) Filed by an AI agent (DeepSeek V4.1 Flash) at the request of my human partner, who asked me to diagnose why skill loads were failing in their OpenCode desktop session and to report it upstream. The human-authored summary below is their account; the evidence and analysis are mine. ## Human-authored summary (required, under 200 words) I'm on Windows 11 running OpenC",
           "url": "https://github.com/obra/superpowers/issues/2583",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2706-vigneshm1995personal",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "vigneshm1995personal",
-          "date": "2026-11-15",
-          "text": "finishing-a-development-branch deletes never-committed worktree files during \"merge and clean up\" (24/24 runs); executing-plans commits to main without consent (21/21). Fix attached, 0/21 after. - [x] I searched existing issues and this is not a duplicate ## Who's filing this report? (required) An agent is filing this on behalf of Vignesh M (@vigneshm1995personal). He reviewed the findings, the proposed fix, and this report, and asked me to file the issue and a follow-up PR. His instruction: \"Yes file the issue and PR\". ## Human-authored summary (required, under 200 words) I asked a coding age",
-          "url": "https://github.com/obra/superpowers/issues/2706",
           "score": 0,
           "sentiment": "negative"
         },
@@ -320,6 +298,39 @@
           "url": "https://github.com/obra/superpowers/issues/2716",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2726-robbiesierra",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "robbiesierra",
+          "date": "2026-11-21",
+          "text": "superpowers: README workflow lines describe an older flow (worktree timing, plan code, review stages, finish options) ## Who's filing this report? (Filer: say who you are and that this came from reading the source, not from a session.) ## Human-authored summary (Filer: write this section yourself, in your own words, before filing.) ## What happened? Several lines in the README's workflow description no longer match the skills, so a new user plans around steps that do not happen. - \"using-git-worktrees - Activates after design approval\" (https://github.com/obra/superpowers/blob/22f0b463e7a5e579",
+          "url": "https://github.com/obra/superpowers/issues/2726",
+          "score": 0,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2724-robbiesierra",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "robbiesierra",
+          "date": "2026-11-21",
+          "text": "superpowers: requesting-code-review defaults BASE to HEAD~1, which reviews only the last commit of multi-commit work ## Who's filing this report? (Filer: say who you are and that this came from reading the source, not from a session.) ## Human-authored summary (Filer: write this section yourself, in your own words, before filing.) ## What happened? `requesting-code-review` still defaults the review base to `HEAD~1`, which the subagent-driven-development skill now warns against. `requesting-code-review/SKILL.md`: > BASE_SHA=$(git rev-parse HEAD~1) # or: git merge-base origin/main HEAD (https://",
+          "url": "https://github.com/obra/superpowers/issues/2724",
+          "score": 0,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2723-robbiesierra",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "robbiesierra",
+          "date": "2026-11-21",
+          "text": "superpowers: executing-plans helpers still exec sibling scripts directly, so Native execution fails where exec bits are stripped ## Who's filing this report? (Filer: say who you are and that this came from reading the source, not from a session.) ## Human-authored summary (Filer: write this section yourself, in your own words, before filing.) ## What happened? The Native executor's helper scripts still run sibling scripts by direct exec, so they fail on installs where a packager strips executable bits. The v6.4.1 release notes say this case was fixed for every bundled script: > Skill prose now",
+          "url": "https://github.com/obra/superpowers/issues/2723",
+          "score": 0,
+          "sentiment": "neutral"
         }
       ]
     },
@@ -327,19 +338,8 @@
       "slug": "requesting-code-review",
       "ecosystem": "superpowers",
       "displayName": "Requesting Code Review",
-      "feedbackCount": 3,
+      "feedbackCount": 4,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2665-napetrov",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "napetrov",
-          "date": "2026-11-05",
-          "text": "What Haiku 5.5 and Sonnet 5.5 already know from each superpowers skill What the models already know without each skill, and what the skills add: a fact-by-fact measurement made with [dokimi](https://github.com/intel/dokimi). Data and charts: https://github.com/napetrov/obra-superpowers/tree/586f82373fa984f941bbaaee4d3118f7c8a30f14 ## What we measured - We extracted 478 facts (about 25 to 60 per skill) from the SKILL.md of 15 superpowers skills, then asked Haiku 5.5 and Sonnet 5.5 each fact's question with and without the skill in context. - Each fact is graded correct or not, paired by atom, s",
-          "url": "https://github.com/obra/superpowers/issues/2665",
-          "score": 4,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
           "source": "github",
@@ -361,6 +361,28 @@
           "url": "https://github.com/obra/superpowers/issues/2685",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2726-robbiesierra",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "robbiesierra",
+          "date": "2026-11-21",
+          "text": "superpowers: README workflow lines describe an older flow (worktree timing, plan code, review stages, finish options) ## Who's filing this report? (Filer: say who you are and that this came from reading the source, not from a session.) ## Human-authored summary (Filer: write this section yourself, in your own words, before filing.) ## What happened? Several lines in the README's workflow description no longer match the skills, so a new user plans around steps that do not happen. - \"using-git-worktrees - Activates after design approval\" (https://github.com/obra/superpowers/blob/22f0b463e7a5e579",
+          "url": "https://github.com/obra/superpowers/issues/2726",
+          "score": 0,
+          "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2724-robbiesierra",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "robbiesierra",
+          "date": "2026-11-21",
+          "text": "superpowers: requesting-code-review defaults BASE to HEAD~1, which reviews only the last commit of multi-commit work ## Who's filing this report? (Filer: say who you are and that this came from reading the source, not from a session.) ## Human-authored summary (Filer: write this section yourself, in your own words, before filing.) ## What happened? `requesting-code-review` still defaults the review base to `HEAD~1`, which the subagent-driven-development skill now warns against. `requesting-code-review/SKILL.md`: > BASE_SHA=$(git rev-parse HEAD~1) # or: git merge-base origin/main HEAD (https://",
+          "url": "https://github.com/obra/superpowers/issues/2724",
+          "score": 0,
+          "sentiment": "neutral"
         }
       ]
     },
@@ -368,19 +390,8 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 3,
+      "feedbackCount": 1,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2709-sgersh72",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "SGersh72",
-          "date": "2026-11-16",
-          "text": "using-superpowers: in plan mode no skill fires; agent asks a procedural question before answering, then answers over the user's \"clarify\" (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"AskUserQuestion clarify\", \"answers before asking question\", \"clarify interrupted\", \"recommendation without checking git\", \"using-superpowers plan mode\", \"plan mode\", \"skill not triggered\", \"question before answering\", \"diagnosing-superpowers\"; closest: #1667 \"Skills not triggered when Claude Code Plan Mode is active\" (closed, not planned), #2685 \"after Claude Code native p",
-          "url": "https://github.com/obra/superpowers/issues/2709",
-          "score": 1,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2583-shiluoluo16",
           "source": "github",
@@ -389,17 +400,6 @@
           "date": "2026-10-22",
           "text": "OpenCode: bootstrap instructs `superpowers:<skill>`, but the plugin registers bare ids - every session opens with failed skill calls - [x] I searched existing issues and this is not a duplicate ## Who's filing this report? (required) Filed by an AI agent (DeepSeek V4.1 Flash) at the request of my human partner, who asked me to diagnose why skill loads were failing in their OpenCode desktop session and to report it upstream. The human-authored summary below is their account; the evidence and analysis are mine. ## Human-authored summary (required, under 200 words) I'm on Windows 11 running OpenC",
           "url": "https://github.com/obra/superpowers/issues/2583",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2666-estebanmunchjones2019",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "estebanmunchjones2019",
-          "date": "2026-11-05",
-          "text": "Hermes: allow manual skill use without automatic bootstrap injection ## Problem I use the Superpowers Hermes plugin because I want its skills available for manual invocation, but the plugin currently injects the `using-superpowers` bootstrap automatically on the first turn of every eligible Hermes session. That forces the Superpowers workflow into conversations where I want to use a skill selectively, and disabling the plugin removes the native skill registration as well. ## Requested behavior Please add a Hermes plugin setting that disables only the automatic `pre_llm_call` bootstrap injectio",
-          "url": "https://github.com/obra/superpowers/issues/2666",
           "score": 0,
           "sentiment": "negative"
         }
