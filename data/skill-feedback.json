@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-21T07:33:54Z",
+    "lastUpdated": "2026-11-22T07:14:12Z",
     "skillCount": 20,
-    "totalComments": 81,
+    "totalComments": 80,
     "sources": [
       "hacker-news",
       "github",
@@ -850,19 +850,8 @@
       "slug": "mcp-builder",
       "ecosystem": "anthropics-skills",
       "displayName": "MCP Builder",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
-        {
-          "id": "github-https-github-com-anthropics-skills-issues-2033-gltknky",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "gltknky",
-          "date": "2026-10-15",
-          "text": "Office validators parse document XML with lxml's default parser (XXE on lxml < 5) ## Summary The Office validators (`skills/{docx,pptx,xlsx}/scripts/office/validators/base.py`, and `pptx.py`) parse the XML parts of the document being validated with lxml's default parser: ```python lxml.etree.parse(str(xml_file)) ``` On **lxml < 5.0** the default parser resolves external entities, so a crafted `.docx` / `.pptx` / `.xlsx` makes the validator read local files into the parsed tree. lxml 5.0 changed the default, but the skills don't pin lxml, and the system packages on two current LTS releases are ",
-          "url": "https://github.com/anthropics/skills/issues/2033",
-          "score": 1,
-          "sentiment": "neutral"
-        },
         {
           "id": "github-https-github-com-anthropics-skills-issues-1091-agentupskill",
           "source": "github",
