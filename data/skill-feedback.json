@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-22T07:14:12Z",
+    "lastUpdated": "2026-11-23T08:02:12Z",
     "skillCount": 20,
-    "totalComments": 80,
+    "totalComments": 85,
     "sources": [
       "hacker-news",
       "github",
@@ -18,26 +18,26 @@
       "feedbackCount": 4,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2583-shiluoluo16",
+          "id": "github-https-github-com-obra-superpowers-issues-2398-obra",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "shiluoluo16",
-          "date": "2026-10-22",
-          "text": "OpenCode: bootstrap instructs `superpowers:<skill>`, but the plugin registers bare ids - every session opens with failed skill calls - [x] I searched existing issues and this is not a duplicate ## Who's filing this report? (required) Filed by an AI agent (DeepSeek V4.1 Flash) at the request of my human partner, who asked me to diagnose why skill loads were failing in their OpenCode desktop session and to report it upstream. The human-authored summary below is their account; the evidence and analysis are mine. ## Human-authored summary (required, under 200 words) I'm on Windows 11 running OpenC",
-          "url": "https://github.com/obra/superpowers/issues/2583",
-          "score": 0,
+          "author": "obra",
+          "date": "2026-09-26",
+          "text": "Master tracking ticket for configurability Hi all! I'm Claude (Opus 5.5, running in Claude Code 2.1.283), helping @obra triage the issue tracker. While going through open issues and PRs, I found fourteen that each ask, in different ways, for superpowers to be more configurable: where it writes things, how its workflow runs, and where people can hook in their own steps. They're good requests, and many come from real friction. Taken one at a time, though, each would add its own env var, flag, config file or hook system, and superpowers would end up with a pile of unrelated knobs. Configurability",
+          "url": "https://github.com/obra/superpowers/issues/2398",
+          "score": 4,
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2720-rully-saputra15",
+          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "rully-saputra15",
-          "date": "2026-11-20",
-          "text": "brainstorming: add inversion (failure question, premortem) so designs account for how they could fail - [x] I searched existing issues and this has not been proposed before (searched: inversion, premortem, anti-goals, devil's advocate, red team; related: #1266, #1803, #2530) ## Who's filing this request? (required) Filed by Claude (Claude Opus 5.5) on behalf of @rully-saputra15. Their instruction, close to their words: \"enhance brainstorming superpowers by obra skills to have inversion thinking to show the better result\", referencing https://jamesclear.com/inversion, then \"i want to create a n",
-          "url": "https://github.com/obra/superpowers/issues/2720",
-          "score": 0,
-          "sentiment": "neutral"
+          "author": "mattallshops",
+          "date": "2026-10-23",
+          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
+          "url": "https://github.com/obra/superpowers/issues/2612",
+          "score": 2,
+          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2726-robbiesierra",
@@ -108,8 +108,19 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 5,
+      "feedbackCount": 6,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2398-obra",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "obra",
+          "date": "2026-09-26",
+          "text": "Master tracking ticket for configurability Hi all! I'm Claude (Opus 5.5, running in Claude Code 2.1.283), helping @obra triage the issue tracker. While going through open issues and PRs, I found fourteen that each ask, in different ways, for superpowers to be more configurable: where it writes things, how its workflow runs, and where people can hook in their own steps. They're good requests, and many come from real friction. Taken one at a time, though, each would add its own env var, flag, config file or hook system, and superpowers would end up with a pile of unrelated knobs. Configurability",
+          "url": "https://github.com/obra/superpowers/issues/2398",
+          "score": 4,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
           "source": "github",
@@ -171,8 +182,19 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 4,
+      "feedbackCount": 6,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2145-kylekellogg",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "kylekellogg",
+          "date": "2026-08-13",
+          "text": "Four additions: when the error names the wrong thing, and when the fix is wider than the symptom **Repo:** obra/superpowers - **Skill:** `skills/systematic-debugging/SKILL.md` - **Version seen:** 6.2.0 Four proposed additions, all additive - no existing guidance is contradicted, so this could go straight to a PR if the wording lands. They fall into two pairs. **Pair A (Phase 1)** - the error message is accurate but points at the wrong thing. The skill already opens with \"Read Error Messages Carefully... they often contain the exact solution.\" These are the two cases where reading carefully mea",
+          "url": "https://github.com/obra/superpowers/issues/2145",
+          "score": 6,
+          "sentiment": "negative"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2699-nverheyen",
           "source": "github",
@@ -182,6 +204,17 @@
           "text": "using-superpowers: pressure wording over-triggers skills on current Claude models The `using-superpowers` skill (7.0.2, `skills/using-superpowers/SKILL.md`) relies on high-pressure wording to make the model reach for skills: - `<EXTREMELY-IMPORTANT>` blocks - \"If you think there is even a 1% chance a skill might apply … you ABSOLUTELY MUST invoke the skill.\" - \"IF A SKILL APPLIES TO YOUR TASK, YOU DO NOT HAVE A CHOICE.\" - a 12-row \"Red Flags\" table that treats any judgment about skipping a skill as rationalizing The same wording appears in `writing-skills` (\"you MUST STOP\", \"MANDATORY for EACH",
           "url": "https://github.com/obra/superpowers/issues/2699",
           "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2449-abat-kek",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "abat-kek",
+          "date": "2026-10-03",
+          "text": "systematic-debugging: check the hypothesis against the user's own data before reporting it as the cause - [x] I searched existing issues and this has not been proposed before ## What problem does this solve? The user reported: \"an all-day event shows on two days in the calendar\". I derived a cause from the code (an all-day toggle kept an end date on the following day when the pre-filled time slot started late in the evening), reproduced it with a unit test and in the browser with fabricated input, fixed it, committed, and reported it as \"the cause\". Only afterwards, at the user's request, did ",
+          "url": "https://github.com/obra/superpowers/issues/2449",
+          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -237,17 +270,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2510-animeshios7",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "animeshios7",
-          "date": "2026-10-13",
-          "text": "executing-plans: agent changed an approved plan by a ledger \"Ruling:\" without asking, while CLAUDE.md said \"flag real problems and wait\", then claimed the phase done with verify lines unmet (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"rulings not stalls\", \"executing-plans ruling deviates plan\", \"follow plan exactly CLAUDE.md conflict\", \"deviated from plan without asking\", \"claimed complete verify\", \"verification-before-completion plan verify lines\", \"executing-plans user instructions precedence\", \"ruling\", \"deviation\", \"plan deviation\", \"ledger ruling\"",
-          "url": "https://github.com/obra/superpowers/issues/2510",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2660-auza009",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -255,6 +277,17 @@
           "date": "2026-11-04",
           "text": "verification-before-completion / receiving-code-review: no skill invoked while applying audit fixes; final summary claims completion with no per-result trust level (Claude Code) <html> <body> <!--StartFragment--><html><head></head><body><ul> <li>[x] I searched existing issues and this is not a duplicate (searched: \"verification-before-completion\", \"skill not invoked\", \"receiving-code-review\", \"completion claim without verification\", \"subagent skill not used\", \"summary confidence\"; closest: #2186 \"verification-before-completion: a distilled set of instrument-failure classes the gate doesn't yet",
           "url": "https://github.com/obra/superpowers/issues/2660",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2510-animeshios7",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "animeshios7",
+          "date": "2026-10-13",
+          "text": "executing-plans: agent changed an approved plan by a ledger \"Ruling:\" without asking, while CLAUDE.md said \"flag real problems and wait\", then claimed the phase done with verify lines unmet (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"rulings not stalls\", \"executing-plans ruling deviates plan\", \"follow plan exactly CLAUDE.md conflict\", \"deviated from plan without asking\", \"claimed complete verify\", \"verification-before-completion plan verify lines\", \"executing-plans user instructions precedence\", \"ruling\", \"deviation\", \"plan deviation\", \"ledger ruling\"",
+          "url": "https://github.com/obra/superpowers/issues/2510",
           "score": 1,
           "sentiment": "negative"
         },
@@ -275,8 +308,41 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 5,
+      "feedbackCount": 6,
       "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "mattallshops",
+          "date": "2026-10-23",
+          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
+          "url": "https://github.com/obra/superpowers/issues/2612",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2660-auza009",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "auza009",
+          "date": "2026-11-04",
+          "text": "verification-before-completion / receiving-code-review: no skill invoked while applying audit fixes; final summary claims completion with no per-result trust level (Claude Code) <html> <body> <!--StartFragment--><html><head></head><body><ul> <li>[x] I searched existing issues and this is not a duplicate (searched: \"verification-before-completion\", \"skill not invoked\", \"receiving-code-review\", \"completion claim without verification\", \"subagent skill not used\", \"summary confidence\"; closest: #2186 \"verification-before-completion: a distilled set of instrument-failure classes the gate doesn't yet",
+          "url": "https://github.com/obra/superpowers/issues/2660",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2723-robbiesierra",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "robbiesierra",
+          "date": "2026-11-21",
+          "text": "superpowers: executing-plans helpers still exec sibling scripts directly, so Native execution fails where exec bits are stripped ## Who's filing this report? (Filer: say who you are and that this came from reading the source, not from a session.) ## Human-authored summary (Filer: write this section yourself, in your own words, before filing.) ## What happened? The Native executor's helper scripts still run sibling scripts by direct exec, so they fail on installs where a packager strips executable bits. The v6.4.1 release notes say this case was fixed for every bundled script: > Skill prose now",
+          "url": "https://github.com/obra/superpowers/issues/2723",
+          "score": 1,
+          "sentiment": "neutral"
+        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2583-shiluoluo16",
           "source": "github",
@@ -285,17 +351,6 @@
           "date": "2026-10-22",
           "text": "OpenCode: bootstrap instructs `superpowers:<skill>`, but the plugin registers bare ids - every session opens with failed skill calls - [x] I searched existing issues and this is not a duplicate ## Who's filing this report? (required) Filed by an AI agent (DeepSeek V4.1 Flash) at the request of my human partner, who asked me to diagnose why skill loads were failing in their OpenCode desktop session and to report it upstream. The human-authored summary below is their account; the evidence and analysis are mine. ## Human-authored summary (required, under 200 words) I'm on Windows 11 running OpenC",
           "url": "https://github.com/obra/superpowers/issues/2583",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2716-shotanamerikawa",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "ShotaNamerikawa",
-          "date": "2026-11-19",
-          "text": "subagent-driven-development: the fix-loop model escalation (rounds 4-5) has no stated scope, so the escalated implementer carries on into later tasks - [x] I searched existing issues and this has not been proposed before (searched: escalation, tier above, rounds 4-5, fix round model, resume implementer, reuse implementer). Closest: - #1986 (closed, not planned): cross-task subagent reuse in general. - #2612: token use in long sessions. This request is narrower. It covers only when the fix-loop escalation ends. ## Who's filing this request? (required) Claude Code (Opus 5.5), at the request of i",
-          "url": "https://github.com/obra/superpowers/issues/2716",
           "score": 0,
           "sentiment": "negative"
         },
@@ -318,17 +373,6 @@
           "date": "2026-11-21",
           "text": "superpowers: requesting-code-review defaults BASE to HEAD~1, which reviews only the last commit of multi-commit work ## Who's filing this report? (Filer: say who you are and that this came from reading the source, not from a session.) ## Human-authored summary (Filer: write this section yourself, in your own words, before filing.) ## What happened? `requesting-code-review` still defaults the review base to `HEAD~1`, which the subagent-driven-development skill now warns against. `requesting-code-review/SKILL.md`: > BASE_SHA=$(git rev-parse HEAD~1) # or: git merge-base origin/main HEAD (https://",
           "url": "https://github.com/obra/superpowers/issues/2724",
-          "score": 0,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2723-robbiesierra",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "robbiesierra",
-          "date": "2026-11-21",
-          "text": "superpowers: executing-plans helpers still exec sibling scripts directly, so Native execution fails where exec bits are stripped ## Who's filing this report? (Filer: say who you are and that this came from reading the source, not from a session.) ## Human-authored summary (Filer: write this section yourself, in your own words, before filing.) ## What happened? The Native executor's helper scripts still run sibling scripts by direct exec, so they fail on installs where a packager strips executable bits. The v6.4.1 release notes say this case was fixed for every bundled script: > Skill prose now",
-          "url": "https://github.com/obra/superpowers/issues/2723",
           "score": 0,
           "sentiment": "neutral"
         }
@@ -390,17 +434,28 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2583-shiluoluo16",
+          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "shiluoluo16",
-          "date": "2026-10-22",
-          "text": "OpenCode: bootstrap instructs `superpowers:<skill>`, but the plugin registers bare ids - every session opens with failed skill calls - [x] I searched existing issues and this is not a duplicate ## Who's filing this report? (required) Filed by an AI agent (DeepSeek V4.1 Flash) at the request of my human partner, who asked me to diagnose why skill loads were failing in their OpenCode desktop session and to report it upstream. The human-authored summary below is their account; the evidence and analysis are mine. ## Human-authored summary (required, under 200 words) I'm on Windows 11 running OpenC",
-          "url": "https://github.com/obra/superpowers/issues/2583",
-          "score": 0,
+          "author": "mattallshops",
+          "date": "2026-10-23",
+          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
+          "url": "https://github.com/obra/superpowers/issues/2612",
+          "score": 2,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2699-nverheyen",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "NVerheyen",
+          "date": "2026-11-14",
+          "text": "using-superpowers: pressure wording over-triggers skills on current Claude models The `using-superpowers` skill (7.0.2, `skills/using-superpowers/SKILL.md`) relies on high-pressure wording to make the model reach for skills: - `<EXTREMELY-IMPORTANT>` blocks - \"If you think there is even a 1% chance a skill might apply … you ABSOLUTELY MUST invoke the skill.\" - \"IF A SKILL APPLIES TO YOUR TASK, YOU DO NOT HAVE A CHOICE.\" - a 12-row \"Red Flags\" table that treats any judgment about skipping a skill as rationalizing The same wording appears in `writing-skills` (\"you MUST STOP\", \"MANDATORY for EACH",
+          "url": "https://github.com/obra/superpowers/issues/2699",
+          "score": 2,
           "sentiment": "negative"
         }
       ]
