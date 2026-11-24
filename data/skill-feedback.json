@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-23T08:29:45Z",
+    "lastUpdated": "2026-11-24T10:15:17Z",
     "skillCount": 20,
-    "totalComments": 85,
+    "totalComments": 84,
     "sources": [
       "hacker-news",
       "github",
@@ -15,7 +15,7 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 4,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2398-obra",
@@ -38,28 +38,6 @@
           "url": "https://github.com/obra/superpowers/issues/2612",
           "score": 2,
           "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2726-robbiesierra",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "robbiesierra",
-          "date": "2026-11-21",
-          "text": "superpowers: README workflow lines describe an older flow (worktree timing, plan code, review stages, finish options) ## Who's filing this report? (Filer: say who you are and that this came from reading the source, not from a session.) ## Human-authored summary (Filer: write this section yourself, in your own words, before filing.) ## What happened? Several lines in the README's workflow description no longer match the skills, so a new user plans around steps that do not happen. - \"using-git-worktrees - Activates after design approval\" (https://github.com/obra/superpowers/blob/22f0b463e7a5e579",
-          "url": "https://github.com/obra/superpowers/issues/2726",
-          "score": 0,
-          "sentiment": "neutral"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2725-robbiesierra",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "robbiesierra",
-          "date": "2026-11-21",
-          "text": "superpowers: visual companion drops brainstorm.choice() events and loses its screen directory after a restart ## Who's filing this report? (Filer: say who you are and that this came from reading the source, not from a session.) ## Human-authored summary (Filer: write this section yourself, in your own words, before filing.) ## What happened? Two paths in the brainstorming visual companion lose the link between what the agent does and what the server sees. **1. `brainstorm.choice()` events are dropped.** `helper.js` exposes `window.brainstorm.choice(value, metadata)`, which sends `{ type: 'choi",
-          "url": "https://github.com/obra/superpowers/issues/2725",
-          "score": 0,
-          "sentiment": "positive"
         }
       ]
     },
@@ -842,7 +820,7 @@
       "slug": "skill-creator",
       "ecosystem": "anthropics-skills",
       "displayName": "Skill Creator",
-      "feedbackCount": 5,
+      "feedbackCount": 6,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1706-stillpimpn",
@@ -854,6 +832,17 @@
           "url": "https://github.com/anthropics/skills/issues/1706",
           "score": 3,
           "sentiment": "positive"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-2190-junpei-8",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "junpei-8",
+          "date": "2026-11-11",
+          "text": "skill-creator: eval viewer SIGTERMs unrelated processes on an occupied port ## Problem The skill-creator eval viewer terminates processes using the requested port before it tries to bind, without checking that those processes belong to the viewer. Starting a review can therefore terminate an unrelated development server or another accessible process using that port. ## Current source Verified at commit `2c5958ecac7cee2b583967a2c4981d0f4a75c579`: - [`skills/skill-creator/eval-viewer/generate_review.py:288-306`](https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/s",
+          "url": "https://github.com/anthropics/skills/issues/2190",
+          "score": 2,
+          "sentiment": "negative"
         },
         {
           "id": "github-https-github-com-anthropics-skills-issues-2195-louis8408",
