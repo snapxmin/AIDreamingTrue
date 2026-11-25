@@ -1,5 +1,20 @@
 [
   {
+    "id": "auto-claude-v2-1-332",
+    "title": "Claude Code v2.1.332 发布",
+    "date": "2026-11-25",
+    "category": "产品",
+    "topic": "Agent",
+    "company": "Anthropic",
+    "heat": 75,
+    "growth": 8,
+    "sourceTier": "A",
+    "summary": "## What's changed  - Added skills from MCP servers (beta). They show as `server:skill` in the `/` menu; other skills keep their names - Added a `PreSkillShellCommand` hook event that can refuse a skil",
+    "whyImportant": "Claude Code 持续高频迭代，终端 Agent 能力不断增强。",
+    "impact": "关注 release notes 中的权限、MCP 和 subagent 相关变更。",
+    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332"
+  },
+  {
     "id": "auto-claude-v2-1-331",
     "title": "Claude Code v2.1.331 发布",
     "date": "2026-11-23",
