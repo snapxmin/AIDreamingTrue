@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-25T08:59:47Z",
+    "lastUpdated": "2026-11-26T08:46:32Z",
     "skillCount": 20,
     "totalComments": 76,
     "sources": [
@@ -15,18 +15,18 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 3,
+      "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
+          "id": "github-https-github-com-obra-superpowers-issues-2034-vida994",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "mbcrawfo",
-          "date": "2026-10-16",
-          "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
-          "url": "https://github.com/obra/superpowers/issues/2530",
-          "score": 47,
-          "sentiment": "negative"
+          "author": "vida994",
+          "date": "2026-07-24",
+          "text": "Subagent dispatches outside SDD have no model guidance, so they inherit the session model ### Summary `subagent-driven-development` treats the subagent model as a required, explicit choice. Every other skill that dispatches a subagent omits it entirely, so those dispatches silently inherit the session model — the exact failure SDD's own guidance calls out. ### The inconsistency SDD's prompt templates make it a required field: ``` Subagent (general-purpose): model: [MODEL — REQUIRED: choose per SKILL.md Model Selection; an omitted model silently inherits the session's most expensive one] ``` an",
+          "url": "https://github.com/obra/superpowers/issues/2034",
+          "score": 3,
+          "sentiment": "positive"
         },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2734-adi-jaya",
@@ -34,19 +34,8 @@
           "sourceLabel": "GitHub",
           "author": "adi-jaya",
           "date": "2026-11-24",
-          "text": "brainstorming/visual-companion: local server reaped immediately on subshell exit in modern agent harnesses without daemon flag - [x] I searched existing issues and this is not a duplicate ## Who's filing this report? (required) Filing on behalf of user @adi-jaya using Antigravity AI assistant. Instruction from user: \"Kembali ke pertanyaan github issue tadi, saya setuju draft issue di atas di-submit sekarang ke obra/superpowers melalui gh issue create\" ## Human-authored summary (required, under 200 words) \"URL tersebut tidak menampilkan mockup karena proses server lokal (node server.cjs) otomat",
+          "text": "brainstorming/visual-companion: local server reaped immediately on subshell exit in modern agent harnesses without daemon flag - [x] I searched existing issues and this is not a duplicate ## Who's filing this report? Filing on behalf of user @adi-jaya using Antigravity AI assistant. ## Human-authored summary \"The URL does not display the mockup because the local server process (node server.cjs) is automatically terminated (reaped) by the runner system as soon as the initialization command finishes executing. In the current agent execution environment, non-daemon subshell processes are automati",
           "url": "https://github.com/obra/superpowers/issues/2734",
-          "score": 0,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2749-ayushm-create",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "ayushm-create",
-          "date": "2026-11-25",
-          "text": "Antigravity IDE: ship a root plugin.json so the context provider stops warning and installs need no manual copy - [x] I searched existing issues and this is not a duplicate <!-- Searched open+closed for \"plugin.json\" and \"antigravity\". Closest related: #2247 (hooks.json parse failure), #2638/#2635 (Antigravity skill behaviour). Neither covers the root plugin.json lookup or this warning. --> ## Who's filing this report? (required) An Antigravity CLI agent (`agy` 1.5.16) on behalf of **@ayushm-create**, who asked in their own words: > \"Open an issue on obra/superpowers explaining that Antigravit",
-          "url": "https://github.com/obra/superpowers/issues/2749",
           "score": 0,
           "sentiment": "negative"
         }
@@ -70,14 +59,14 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2686-gingertonik",
+          "id": "github-https-github-com-obra-superpowers-issues-2750-hephyrian",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "gingertonik",
-          "date": "2026-11-12",
-          "text": "Hermes bootstrap instructs models to read_file skills the user disabled via skills.disabled # Hermes bootstrap teaches models to bypass `skills.disabled` via direct file read **Component:** Hermes integration, `.hermes-plugin/__init__.py` (the `pre_llm_call` bootstrap block, superpowers 7.0.2) ## The problem The bootstrap injected into every Hermes session tells the model: > If a namespaced lookup returns 'not found', read the skill file directly instead: > `read_file(\"/home/nooj/.hermes/plugins/superpowers/skills/skill-name/SKILL.md\")` Hermes enforces `skills.disabled` at the `skill_view` lay",
-          "url": "https://github.com/obra/superpowers/issues/2686",
-          "score": 1,
+          "author": "Hephyrian",
+          "date": "2026-11-25",
+          "text": "using-superpowers: session-start auto-triggering does not fire and no superpowers skill is invoked (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `\"antigravity\"`, `\"SessionStart\"`, `\"bootstrap\"`, `\"hooks.json\"`, `\"auto-trigger\"`; closest: #2247 `\"Antigravity (agy): plugin hooks.json fails to parse — the using-superpowers bootstrap never loads\"` [closed on v7.0.0, inviting a new issue with agy version and transcript if `using-superpowers` still does not load], #2638 `\"writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic ",
+          "url": "https://github.com/obra/superpowers/issues/2750",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -86,7 +75,7 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
@@ -100,37 +89,26 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2398-obra",
+          "id": "github-https-github-com-obra-superpowers-issues-2034-vida994",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "obra",
-          "date": "2026-09-26",
-          "text": "Master tracking ticket for configurability Hi all! I'm Claude (Opus 5.5, running in Claude Code 2.1.283), helping @obra triage the issue tracker. While going through open issues and PRs, I found fourteen that each ask, in different ways, for superpowers to be more configurable: where it writes things, how its workflow runs, and where people can hook in their own steps. They're good requests, and many come from real friction. Taken one at a time, though, each would add its own env var, flag, config file or hook system, and superpowers would end up with a pile of unrelated knobs. Configurability",
-          "url": "https://github.com/obra/superpowers/issues/2398",
-          "score": 4,
-          "sentiment": "negative"
+          "author": "vida994",
+          "date": "2026-07-24",
+          "text": "Subagent dispatches outside SDD have no model guidance, so they inherit the session model ### Summary `subagent-driven-development` treats the subagent model as a required, explicit choice. Every other skill that dispatches a subagent omits it entirely, so those dispatches silently inherit the session model — the exact failure SDD's own guidance calls out. ### The inconsistency SDD's prompt templates make it a required field: ``` Subagent (general-purpose): model: [MODEL — REQUIRED: choose per SKILL.md Model Selection; an omitted model silently inherits the session's most expensive one] ``` an",
+          "url": "https://github.com/obra/superpowers/issues/2034",
+          "score": 3,
+          "sentiment": "positive"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
+          "id": "github-https-github-com-obra-superpowers-issues-2750-hephyrian",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "mattallshops",
-          "date": "2026-10-23",
-          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
-          "url": "https://github.com/obra/superpowers/issues/2612",
-          "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2726-robbiesierra",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "robbiesierra",
-          "date": "2026-11-21",
-          "text": "superpowers: README workflow lines describe an older flow (worktree timing, plan code, review stages, finish options) ## Who's filing this report? (Filer: say who you are and that this came from reading the source, not from a session.) ## Human-authored summary (Filer: write this section yourself, in your own words, before filing.) ## What happened? Several lines in the README's workflow description no longer match the skills, so a new user plans around steps that do not happen. - \"using-git-worktrees - Activates after design approval\" (https://github.com/obra/superpowers/blob/22f0b463e7a5e579",
-          "url": "https://github.com/obra/superpowers/issues/2726",
+          "author": "Hephyrian",
+          "date": "2026-11-25",
+          "text": "using-superpowers: session-start auto-triggering does not fire and no superpowers skill is invoked (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `\"antigravity\"`, `\"SessionStart\"`, `\"bootstrap\"`, `\"hooks.json\"`, `\"auto-trigger\"`; closest: #2247 `\"Antigravity (agy): plugin hooks.json fails to parse — the using-superpowers bootstrap never loads\"` [closed on v7.0.0, inviting a new issue with agy version and transcript if `using-superpowers` still does not load], #2638 `\"writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic ",
+          "url": "https://github.com/obra/superpowers/issues/2750",
           "score": 0,
-          "sentiment": "neutral"
+          "sentiment": "negative"
         }
       ]
     },
@@ -138,7 +116,7 @@
       "slug": "systematic-debugging",
       "ecosystem": "superpowers",
       "displayName": "Systematic Debugging",
-      "feedbackCount": 5,
+      "feedbackCount": 4,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2145-kylekellogg",
@@ -174,24 +152,13 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2709-sgersh72",
+          "id": "github-https-github-com-obra-superpowers-issues-2750-hephyrian",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "SGersh72",
-          "date": "2026-11-16",
-          "text": "using-superpowers: in plan mode no skill fires; agent asks a procedural question before answering, then answers over the user's \"clarify\" (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"AskUserQuestion clarify\", \"answers before asking question\", \"clarify interrupted\", \"recommendation without checking git\", \"using-superpowers plan mode\", \"plan mode\", \"skill not triggered\", \"question before answering\", \"diagnosing-superpowers\"; closest: #1667 \"Skills not triggered when Claude Code Plan Mode is active\" (closed, not planned), #2685 \"after Claude Code native p",
-          "url": "https://github.com/obra/superpowers/issues/2709",
-          "score": 1,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2583-shiluoluo16",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "shiluoluo16",
-          "date": "2026-10-22",
-          "text": "OpenCode: bootstrap instructs `superpowers:<skill>`, but the plugin registers bare ids - every session opens with failed skill calls - [x] I searched existing issues and this is not a duplicate ## Who's filing this report? (required) Filed by an AI agent (DeepSeek V4.1 Flash) at the request of my human partner, who asked me to diagnose why skill loads were failing in their OpenCode desktop session and to report it upstream. The human-authored summary below is their account; the evidence and analysis are mine. ## Human-authored summary (required, under 200 words) I'm on Windows 11 running OpenC",
-          "url": "https://github.com/obra/superpowers/issues/2583",
+          "author": "Hephyrian",
+          "date": "2026-11-25",
+          "text": "using-superpowers: session-start auto-triggering does not fire and no superpowers skill is invoked (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `\"antigravity\"`, `\"SessionStart\"`, `\"bootstrap\"`, `\"hooks.json\"`, `\"auto-trigger\"`; closest: #2247 `\"Antigravity (agy): plugin hooks.json fails to parse — the using-superpowers bootstrap never loads\"` [closed on v7.0.0, inviting a new issue with agy version and transcript if `using-superpowers` still does not load], #2638 `\"writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic ",
+          "url": "https://github.com/obra/superpowers/issues/2750",
           "score": 0,
           "sentiment": "negative"
         }
@@ -237,13 +204,13 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2685-finleyjb",
+          "id": "github-https-github-com-obra-superpowers-issues-2750-hephyrian",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "finleyjb",
-          "date": "2026-11-12",
-          "text": "writing-plans / execution chain: after Claude Code native plan-mode approval, no superpowers skill after brainstorming fires (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"plan mode writing-plans\", \"plan mode brainstorming\", \"ExitPlanMode\", \"skills not invoked claude code\", \"only brainstorming\"; closest: #1667 \"Skills not triggered when Claude Code Plan Mode is active\" (closed), #1260 \"[FEATURE] Integrate writing-plans with Claude Code's native Plan Mode / Plan panel\" (closed)) ## Environment (required) | Field | Value | Provenance / supporting evidence ",
-          "url": "https://github.com/obra/superpowers/issues/2685",
+          "author": "Hephyrian",
+          "date": "2026-11-25",
+          "text": "using-superpowers: session-start auto-triggering does not fire and no superpowers skill is invoked (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `\"antigravity\"`, `\"SessionStart\"`, `\"bootstrap\"`, `\"hooks.json\"`, `\"auto-trigger\"`; closest: #2247 `\"Antigravity (agy): plugin hooks.json fails to parse — the using-superpowers bootstrap never loads\"` [closed on v7.0.0, inviting a new issue with agy version and transcript if `using-superpowers` still does not load], #2638 `\"writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic ",
+          "url": "https://github.com/obra/superpowers/issues/2750",
           "score": 0,
           "sentiment": "negative"
         }
@@ -256,15 +223,15 @@
       "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
+          "id": "github-https-github-com-obra-superpowers-issues-2034-vida994",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "mattallshops",
-          "date": "2026-10-23",
-          "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
-          "url": "https://github.com/obra/superpowers/issues/2612",
-          "score": 2,
-          "sentiment": "negative"
+          "author": "vida994",
+          "date": "2026-07-24",
+          "text": "Subagent dispatches outside SDD have no model guidance, so they inherit the session model ### Summary `subagent-driven-development` treats the subagent model as a required, explicit choice. Every other skill that dispatches a subagent omits it entirely, so those dispatches silently inherit the session model — the exact failure SDD's own guidance calls out. ### The inconsistency SDD's prompt templates make it a required field: ``` Subagent (general-purpose): model: [MODEL — REQUIRED: choose per SKILL.md Model Selection; an omitted model silently inherits the session's most expensive one] ``` an",
+          "url": "https://github.com/obra/superpowers/issues/2034",
+          "score": 3,
+          "sentiment": "positive"
         }
       ]
     },
@@ -275,6 +242,17 @@
       "feedbackCount": 4,
       "comments": [
         {
+          "id": "github-https-github-com-obra-superpowers-issues-2034-vida994",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "vida994",
+          "date": "2026-07-24",
+          "text": "Subagent dispatches outside SDD have no model guidance, so they inherit the session model ### Summary `subagent-driven-development` treats the subagent model as a required, explicit choice. Every other skill that dispatches a subagent omits it entirely, so those dispatches silently inherit the session model — the exact failure SDD's own guidance calls out. ### The inconsistency SDD's prompt templates make it a required field: ``` Subagent (general-purpose): model: [MODEL — REQUIRED: choose per SKILL.md Model Selection; an omitted model silently inherits the session's most expensive one] ``` an",
+          "url": "https://github.com/obra/superpowers/issues/2034",
+          "score": 3,
+          "sentiment": "positive"
+        },
+        {
           "id": "github-https-github-com-obra-superpowers-issues-2612-mattallshops",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -283,17 +261,6 @@
           "text": "subagent-driven-development: 15-task port of a ~2,000-line R script hit 5 session limits; coordinator context grew to 830k tokens (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: token, tokens, context window, controller, expensive, rate limit, long session, session limit, cost, test suite slow; closest: #1152 \"Codex: Implementation of relatively simple plan with subagent-driven development consumes full 5h token budget in a single run (PLUS plan)\", which is on Codex with 5.0.7) ## Environment (required) | Field | Value | Provenance / supporting evidence | ",
           "url": "https://github.com/obra/superpowers/issues/2612",
           "score": 2,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2685-finleyjb",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "finleyjb",
-          "date": "2026-11-12",
-          "text": "writing-plans / execution chain: after Claude Code native plan-mode approval, no superpowers skill after brainstorming fires (Claude Code) - [x] I searched existing issues and this is not a duplicate (searched: \"plan mode writing-plans\", \"plan mode brainstorming\", \"ExitPlanMode\", \"skills not invoked claude code\", \"only brainstorming\"; closest: #1667 \"Skills not triggered when Claude Code Plan Mode is active\" (closed), #1260 \"[FEATURE] Integrate writing-plans with Claude Code's native Plan Mode / Plan panel\" (closed)) ## Environment (required) | Field | Value | Provenance / supporting evidence ",
-          "url": "https://github.com/obra/superpowers/issues/2685",
-          "score": 0,
           "sentiment": "negative"
         },
         {
@@ -308,15 +275,15 @@
           "sentiment": "neutral"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2724-robbiesierra",
+          "id": "github-https-github-com-obra-superpowers-issues-2750-hephyrian",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "robbiesierra",
-          "date": "2026-11-21",
-          "text": "superpowers: requesting-code-review defaults BASE to HEAD~1, which reviews only the last commit of multi-commit work ## Who's filing this report? (Filer: say who you are and that this came from reading the source, not from a session.) ## Human-authored summary (Filer: write this section yourself, in your own words, before filing.) ## What happened? `requesting-code-review` still defaults the review base to `HEAD~1`, which the subagent-driven-development skill now warns against. `requesting-code-review/SKILL.md`: > BASE_SHA=$(git rev-parse HEAD~1) # or: git merge-base origin/main HEAD (https://",
-          "url": "https://github.com/obra/superpowers/issues/2724",
+          "author": "Hephyrian",
+          "date": "2026-11-25",
+          "text": "using-superpowers: session-start auto-triggering does not fire and no superpowers skill is invoked (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `\"antigravity\"`, `\"SessionStart\"`, `\"bootstrap\"`, `\"hooks.json\"`, `\"auto-trigger\"`; closest: #2247 `\"Antigravity (agy): plugin hooks.json fails to parse — the using-superpowers bootstrap never loads\"` [closed on v7.0.0, inviting a new issue with agy version and transcript if `using-superpowers` still does not load], #2638 `\"writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic ",
+          "url": "https://github.com/obra/superpowers/issues/2750",
           "score": 0,
-          "sentiment": "neutral"
+          "sentiment": "negative"
         }
       ]
     },
@@ -324,28 +291,17 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 2,
+      "feedbackCount": 1,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
+          "id": "github-https-github-com-obra-superpowers-issues-2750-hephyrian",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "mbcrawfo",
-          "date": "2026-10-16",
-          "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
-          "url": "https://github.com/obra/superpowers/issues/2530",
-          "score": 47,
-          "sentiment": "negative"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "kpdbcdt",
-          "date": "2026-09-25",
-          "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
-          "url": "https://github.com/obra/superpowers/issues/2386",
-          "score": 8,
+          "author": "Hephyrian",
+          "date": "2026-11-25",
+          "text": "using-superpowers: session-start auto-triggering does not fire and no superpowers skill is invoked (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `\"antigravity\"`, `\"SessionStart\"`, `\"bootstrap\"`, `\"hooks.json\"`, `\"auto-trigger\"`; closest: #2247 `\"Antigravity (agy): plugin hooks.json fails to parse — the using-superpowers bootstrap never loads\"` [closed on v7.0.0, inviting a new issue with agy version and transcript if `using-superpowers` still does not load], #2638 `\"writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic ",
+          "url": "https://github.com/obra/superpowers/issues/2750",
+          "score": 0,
           "sentiment": "negative"
         }
       ]
@@ -806,7 +762,7 @@
       "slug": "mcp-builder",
       "ecosystem": "anthropics-skills",
       "displayName": "MCP Builder",
-      "feedbackCount": 4,
+      "feedbackCount": 5,
       "comments": [
         {
           "id": "github-https-github-com-anthropics-skills-issues-1091-agentupskill",
@@ -851,6 +807,17 @@
           "url": "https://github.com/anthropics/skills/issues/2246",
           "score": 0,
           "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-anthropics-skills-issues-2278-ujjwald16",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "ujjwalD16",
+          "date": "2026-11-25",
+          "text": "Stale dependency floors in mcp-builder + slack-gif-creator (mcp 1.1.0, pillow 10.0.0) Hi — I scanned the skills repo at `e4bb5d96` and your own code came out clean: 166 scanner findings across two runs, every one a false positive on firsthand review (docs prose, example code, hardened eval-report builders). The issue is two stale `>=` floors in the requirements files — they're not pins, so a fresh install today resolves to the clean latest versions, but anyone installing at the floors gets old vulnerable versions: - `skills/mcp-builder/scripts/requirements.txt`: `mcp>=1.1.0` — the 1.1.0 floor ",
+          "url": "https://github.com/anthropics/skills/issues/2278",
+          "score": 0,
+          "sentiment": "negative"
         }
       ]
     },
@@ -858,14 +825,26 @@
       "slug": "security-best-practices",
       "ecosystem": "openai-skills",
       "displayName": "Security Best Practices",
-      "feedbackCount": 0,
-      "comments": []
+      "feedbackCount": 1,
+      "comments": [
+        {
+          "id": "github-https-github-com-openai-skills-issues-557-peterostrander2",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "peterostrander2",
+          "date": "2026-11-25",
+          "text": "Skill authoring audit: suggested fixes for 18 skills An audit of the installed skills against Anthropic's Agent Skills authoring best practices (https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices); suggestions only, and line numbers refer to the audited copy. ### Fixes that repeat across skills - **Add evals.** Add `evals/evals.json` with 3 realistic prompts, plus notes from a baseline run without the skill. Applies to all 18 skills below. sentry already has evals; it needs 2 more prompts and a baseline note. - **Add a progress checklist.** Add a copyable `- [ ]` ",
+          "url": "https://github.com/openai/skills/issues/557",
+          "score": 0,
+          "sentiment": "positive"
+        }
+      ]
     },
     "openai-skills/gh-fix-ci": {
       "slug": "gh-fix-ci",
       "ecosystem": "openai-skills",
       "displayName": "GitHub Fix CI",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
         {
           "id": "github-https-github-com-openai-skills-issues-498-optimization2026",
@@ -877,6 +856,17 @@
           "url": "https://github.com/openai/skills/issues/498",
           "score": 0,
           "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-openai-skills-issues-557-peterostrander2",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "peterostrander2",
+          "date": "2026-11-25",
+          "text": "Skill authoring audit: suggested fixes for 18 skills An audit of the installed skills against Anthropic's Agent Skills authoring best practices (https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices); suggestions only, and line numbers refer to the audited copy. ### Fixes that repeat across skills - **Add evals.** Add `evals/evals.json` with 3 realistic prompts, plus notes from a baseline run without the skill. Applies to all 18 skills below. sentry already has evals; it needs 2 more prompts and a baseline note. - **Add a progress checklist.** Add a copyable `- [ ]` ",
+          "url": "https://github.com/openai/skills/issues/557",
+          "score": 0,
+          "sentiment": "positive"
         }
       ]
     },
@@ -884,7 +874,7 @@
       "slug": "playwright",
       "ecosystem": "openai-skills",
       "displayName": "Playwright",
-      "feedbackCount": 6,
+      "feedbackCount": 7,
       "comments": [
         {
           "id": "github-https-github-com-openai-skills-issues-228-jonmartinau",
@@ -951,6 +941,17 @@
           "url": "https://github.com/openai/skills/issues/537",
           "score": 0,
           "sentiment": "neutral"
+        },
+        {
+          "id": "github-https-github-com-openai-skills-issues-557-peterostrander2",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "peterostrander2",
+          "date": "2026-11-25",
+          "text": "Skill authoring audit: suggested fixes for 18 skills An audit of the installed skills against Anthropic's Agent Skills authoring best practices (https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices); suggestions only, and line numbers refer to the audited copy. ### Fixes that repeat across skills - **Add evals.** Add `evals/evals.json` with 3 realistic prompts, plus notes from a baseline run without the skill. Applies to all 18 skills below. sentry already has evals; it needs 2 more prompts and a baseline note. - **Add a progress checklist.** Add a copyable `- [ ]` ",
+          "url": "https://github.com/openai/skills/issues/557",
+          "score": 0,
+          "sentiment": "positive"
         }
       ]
     },
