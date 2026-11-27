@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-26T08:46:32Z",
+    "lastUpdated": "2026-11-27T08:56:33Z",
     "skillCount": 20,
-    "totalComments": 76,
+    "totalComments": 72,
     "sources": [
       "hacker-news",
       "github",
@@ -18,24 +18,24 @@
       "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2034-vida994",
+          "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "vida994",
-          "date": "2026-07-24",
-          "text": "Subagent dispatches outside SDD have no model guidance, so they inherit the session model ### Summary `subagent-driven-development` treats the subagent model as a required, explicit choice. Every other skill that dispatches a subagent omits it entirely, so those dispatches silently inherit the session model — the exact failure SDD's own guidance calls out. ### The inconsistency SDD's prompt templates make it a required field: ``` Subagent (general-purpose): model: [MODEL — REQUIRED: choose per SKILL.md Model Selection; an omitted model silently inherits the session's most expensive one] ``` an",
-          "url": "https://github.com/obra/superpowers/issues/2034",
-          "score": 3,
-          "sentiment": "positive"
+          "author": "mbcrawfo",
+          "date": "2026-10-16",
+          "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
+          "url": "https://github.com/obra/superpowers/issues/2530",
+          "score": 49,
+          "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2734-adi-jaya",
+          "id": "github-https-github-com-obra-superpowers-issues-2753-umeshkumar20540-oss",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "adi-jaya",
-          "date": "2026-11-24",
-          "text": "brainstorming/visual-companion: local server reaped immediately on subshell exit in modern agent harnesses without daemon flag - [x] I searched existing issues and this is not a duplicate ## Who's filing this report? Filing on behalf of user @adi-jaya using Antigravity AI assistant. ## Human-authored summary \"The URL does not display the mockup because the local server process (node server.cjs) is automatically terminated (reaped) by the runner system as soon as the initialization command finishes executing. In the current agent execution environment, non-daemon subshell processes are automati",
-          "url": "https://github.com/obra/superpowers/issues/2734",
+          "author": "umeshkumar20540-oss",
+          "date": "2026-11-27",
+          "text": "Feature request: lightweight \"fast-track\" mode for small, single-file changes and quick bug fixes - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) I am a human developer (`@umeshkumar20540-oss`) filing this request directly based on my own workflow. ## Human-authored summary (required, under 200 words) Superpowers' full pipeline (brainstorming, worktree setup, multi-task planning, subagent dispatch, and TDD) is great for building new features, but it feels too heavy for tiny, well-scoped tasks like a 3-line bug fix or a single-file",
+          "url": "https://github.com/obra/superpowers/issues/2753",
           "score": 0,
           "sentiment": "negative"
         }
@@ -45,19 +45,8 @@
       "slug": "test-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Test-Driven Development",
-      "feedbackCount": 2,
+      "feedbackCount": 1,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "kpdbcdt",
-          "date": "2026-09-25",
-          "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
-          "url": "https://github.com/obra/superpowers/issues/2386",
-          "score": 8,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2750-hephyrian",
           "source": "github",
@@ -75,19 +64,8 @@
       "slug": "writing-plans",
       "ecosystem": "superpowers",
       "displayName": "Writing Plans",
-      "feedbackCount": 3,
+      "feedbackCount": 1,
       "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2386-kpdbcdt",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "kpdbcdt",
-          "date": "2026-09-25",
-          "text": "test-driven-development is not invoked for a plain \"add a function\" request, even with the using-superpowers injection present **Version:** superpowers 6.4.1, Claude Code 2.1.282, model `claude-opus-5-5`. **What we measured.** With `claude plugin eval` on a copy of the installed plugin (with/without ablation, 3 runs per arm), in an empty working directory with Read/Write/Edit/Glob/Grep/Skill, we asked: > Add a function `slugify(text: str) -> str` to utils.py: lowercase the text, turn every run of > non-alphanumeric characters into one hyphen, and strip leading and trailing hyphens. The directo",
-          "url": "https://github.com/obra/superpowers/issues/2386",
-          "score": 8,
-          "sentiment": "negative"
-        },
         {
           "id": "github-https-github-com-obra-superpowers-issues-2034-vida994",
           "source": "github",
@@ -98,17 +76,6 @@
           "url": "https://github.com/obra/superpowers/issues/2034",
           "score": 3,
           "sentiment": "positive"
-        },
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2750-hephyrian",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "Hephyrian",
-          "date": "2026-11-25",
-          "text": "using-superpowers: session-start auto-triggering does not fire and no superpowers skill is invoked (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `\"antigravity\"`, `\"SessionStart\"`, `\"bootstrap\"`, `\"hooks.json\"`, `\"auto-trigger\"`; closest: #2247 `\"Antigravity (agy): plugin hooks.json fails to parse — the using-superpowers bootstrap never loads\"` [closed on v7.0.0, inviting a new issue with agy version and transcript if `using-superpowers` still does not load], #2638 `\"writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic ",
-          "url": "https://github.com/obra/superpowers/issues/2750",
-          "score": 0,
-          "sentiment": "negative"
         }
       ]
     },
@@ -220,26 +187,14 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 1,
-      "comments": [
-        {
-          "id": "github-https-github-com-obra-superpowers-issues-2034-vida994",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "vida994",
-          "date": "2026-07-24",
-          "text": "Subagent dispatches outside SDD have no model guidance, so they inherit the session model ### Summary `subagent-driven-development` treats the subagent model as a required, explicit choice. Every other skill that dispatches a subagent omits it entirely, so those dispatches silently inherit the session model — the exact failure SDD's own guidance calls out. ### The inconsistency SDD's prompt templates make it a required field: ``` Subagent (general-purpose): model: [MODEL — REQUIRED: choose per SKILL.md Model Selection; an omitted model silently inherits the session's most expensive one] ``` an",
-          "url": "https://github.com/obra/superpowers/issues/2034",
-          "score": 3,
-          "sentiment": "positive"
-        }
-      ]
+      "feedbackCount": 0,
+      "comments": []
     },
     "superpowers/requesting-code-review": {
       "slug": "requesting-code-review",
       "ecosystem": "superpowers",
       "displayName": "Requesting Code Review",
-      "feedbackCount": 4,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2034-vida994",
@@ -264,17 +219,6 @@
           "sentiment": "negative"
         },
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2726-robbiesierra",
-          "source": "github",
-          "sourceLabel": "GitHub",
-          "author": "robbiesierra",
-          "date": "2026-11-21",
-          "text": "superpowers: README workflow lines describe an older flow (worktree timing, plan code, review stages, finish options) ## Who's filing this report? (Filer: say who you are and that this came from reading the source, not from a session.) ## Human-authored summary (Filer: write this section yourself, in your own words, before filing.) ## What happened? Several lines in the README's workflow description no longer match the skills, so a new user plans around steps that do not happen. - \"using-git-worktrees - Activates after design approval\" (https://github.com/obra/superpowers/blob/22f0b463e7a5e579",
-          "url": "https://github.com/obra/superpowers/issues/2726",
-          "score": 0,
-          "sentiment": "neutral"
-        },
-        {
           "id": "github-https-github-com-obra-superpowers-issues-2750-hephyrian",
           "source": "github",
           "sourceLabel": "GitHub",
@@ -291,16 +235,27 @@
       "slug": "using-superpowers",
       "ecosystem": "superpowers",
       "displayName": "Using Superpowers",
-      "feedbackCount": 1,
+      "feedbackCount": 2,
       "comments": [
         {
-          "id": "github-https-github-com-obra-superpowers-issues-2750-hephyrian",
+          "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
           "source": "github",
           "sourceLabel": "GitHub",
-          "author": "Hephyrian",
-          "date": "2026-11-25",
-          "text": "using-superpowers: session-start auto-triggering does not fire and no superpowers skill is invoked (Antigravity) - [x] I searched existing issues and this is not a duplicate (searched: `\"antigravity\"`, `\"SessionStart\"`, `\"bootstrap\"`, `\"hooks.json\"`, `\"auto-trigger\"`; closest: #2247 `\"Antigravity (agy): plugin hooks.json fails to parse — the using-superpowers bootstrap never loads\"` [closed on v7.0.0, inviting a new issue with agy version and transcript if `using-superpowers` still does not load], #2638 `\"writing-plans / using-superpowers: multi-step cleanup executed directly after diagnostic ",
-          "url": "https://github.com/obra/superpowers/issues/2750",
+          "author": "mbcrawfo",
+          "date": "2026-10-16",
+          "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
+          "url": "https://github.com/obra/superpowers/issues/2530",
+          "score": 49,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2753-umeshkumar20540-oss",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "umeshkumar20540-oss",
+          "date": "2026-11-27",
+          "text": "Feature request: lightweight \"fast-track\" mode for small, single-file changes and quick bug fixes - [x] I searched existing issues and this has not been proposed before ## Who's filing this request? (required) I am a human developer (`@umeshkumar20540-oss`) filing this request directly based on my own workflow. ## Human-authored summary (required, under 200 words) Superpowers' full pipeline (brainstorming, worktree setup, multi-task planning, subagent dispatch, and TDD) is great for building new features, but it feels too heavy for tiny, well-scoped tasks like a 3-line bug fix or a single-file",
+          "url": "https://github.com/obra/superpowers/issues/2753",
           "score": 0,
           "sentiment": "negative"
         }
