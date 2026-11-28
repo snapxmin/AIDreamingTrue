@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-27T08:56:33Z",
+    "lastUpdated": "2026-11-28T08:16:41Z",
     "skillCount": 20,
-    "totalComments": 72,
+    "totalComments": 74,
     "sources": [
       "hacker-news",
       "github",
@@ -15,7 +15,7 @@
       "slug": "brainstorming",
       "ecosystem": "superpowers",
       "displayName": "Brainstorming",
-      "feedbackCount": 2,
+      "feedbackCount": 3,
       "comments": [
         {
           "id": "github-https-github-com-obra-superpowers-issues-2530-mbcrawfo",
@@ -26,6 +26,17 @@
           "text": "v7's brainstorm questions are rather annoying Using v7 of the plugin with Claude Code, all results mention are from Opus 5.5. Since I started using superpowers I have always used the brainstorming skill as the entrypoint to all work. I usually use it even when there's an existing spec file or partially completed design, with my intent being \"ensure this work is well defined, spec is accurate, up to date, and complete.\" This does seem to be what the skill has driven models to do, and this flow has worked very well. v7's changes that force model to ask questions during brainstorming lead to some",
           "url": "https://github.com/obra/superpowers/issues/2530",
           "score": 49,
+          "sentiment": "negative"
+        },
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2734-adi-jaya",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "adi-jaya",
+          "date": "2026-11-24",
+          "text": "brainstorming/visual-companion: local server reaped immediately on subshell exit in modern agent harnesses without daemon flag - [x] I searched existing issues and this is not a duplicate ## Who's filing this report? Filing on behalf of user @adi-jaya using Antigravity AI assistant. ## Human-authored summary \"The URL does not display the mockup because the local server process (node server.cjs) is automatically terminated (reaped) by the runner system as soon as the initialization command finishes executing. In the current agent execution environment, non-daemon subshell processes are automati",
+          "url": "https://github.com/obra/superpowers/issues/2734",
+          "score": 1,
           "sentiment": "negative"
         },
         {
@@ -187,8 +198,20 @@
       "slug": "subagent-driven-development",
       "ecosystem": "superpowers",
       "displayName": "Subagent-Driven Development",
-      "feedbackCount": 0,
-      "comments": []
+      "feedbackCount": 1,
+      "comments": [
+        {
+          "id": "github-https-github-com-obra-superpowers-issues-2723-robbiesierra",
+          "source": "github",
+          "sourceLabel": "GitHub",
+          "author": "robbiesierra",
+          "date": "2026-11-21",
+          "text": "superpowers: executing-plans helpers still exec sibling scripts directly, so Native execution fails where exec bits are stripped ## Who's filing this report? (Filer: say who you are and that this came from reading the source, not from a session.) ## Human-authored summary (Filer: write this section yourself, in your own words, before filing.) ## What happened? The Native executor's helper scripts still run sibling scripts by direct exec, so they fail on installs where a packager strips executable bits. The v6.4.1 release notes say this case was fixed for every bundled script: > Skill prose now",
+          "url": "https://github.com/obra/superpowers/issues/2723",
+          "score": 2,
+          "sentiment": "neutral"
+        }
+      ]
     },
     "superpowers/requesting-code-review": {
       "slug": "requesting-code-review",
